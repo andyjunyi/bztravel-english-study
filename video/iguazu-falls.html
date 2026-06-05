@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Iguazu Falls — 英文自學講義 | BZ Travel</title>
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:#f0f4ff;
+  color:#1e293b;
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  max-width:100vw;overflow-x:hidden;
+  padding:0;margin:0;
+  line-height:1.7;
+}
+/* ===== HEADER ===== */
+.header{
+  background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);
+  padding:20px 16px 60px;position:relative;
+  color:#fff;text-align:center;
+}
+.header::after{
+  content:'';position:absolute;bottom:-1px;left:0;right:0;
+  height:30px;background:#f0f4ff;
+  border-radius:30px 30px 0 0;
+}
+.header-badge{
+  display:inline-block;background:rgba(255,255,255,.15);
+  padding:4px 14px;border-radius:20px;
+  font-size:12px;letter-spacing:1px;margin-bottom:10px;
+  backdrop-filter:blur(4px);
+}
+.header h1{font-size:22px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:14px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:13px;opacity:.9}
+.header-meta span{display:inline-flex;align-items:center;gap:4px}
+
+/* ===== MAIN WRAP ===== */
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+
+/* ===== VIDEO EMBED ===== */
+.video-wrap{
+  position:relative;margin-top:-40px;z-index:2;
+  border-radius:16px;overflow:hidden;
+  box-shadow:0 8px 30px rgba(0,0,0,.15);
+  background:#000;
+}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+
+/* ===== SECTION NAV ===== */
+.section-nav{
+  display:flex;gap:6px;overflow-x:auto;
+  padding:14px 0 10px;margin-bottom:6px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{
+  flex-shrink:0;padding:7px 16px;border-radius:20px;
+  font-size:13px;font-weight:600;text-decoration:none;
+  background:#e2e8f0;color:#475569;transition:all .2s;
+  white-space:nowrap;
+}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+
+/* ===== SECTIONS ===== */
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{
+  font-size:17px;font-weight:700;margin-bottom:14px;
+  display:flex;align-items:center;gap:8px;
+}
+.section-title .icon{font-size:20px}
+
+/* ===== AUDIO PLAYER ===== */
+.audio-bar{
+  display:flex;align-items:center;gap:10px;
+  background:#f8fafc;border-radius:12px;padding:8px 14px;
+  margin-bottom:14px;border:1px solid #e2e8f0;
+}
+.audio-bar .btn-play{
+  width:40px;height:40px;border-radius:50%;border:none;
+  background:#1e40af;color:#fff;font-size:18px;
+  cursor:pointer;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s;
+}
+.audio-bar .btn-play:hover{background:#1e3a8a}
+.audio-bar .label{font-size:13px;font-weight:600;color:#334155;flex:1}
+.audio-bar audio{width:100%;height:36px;border-radius:8px}
+
+/* ===== ARTICLE ===== */
+.article-paragraph{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid #f1f5f9}
+.article-paragraph:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.article-paragraph .para-heading{font-size:14px;font-weight:700;color:#1e40af;margin-bottom:6px}
+.para-en{font-size:15px;line-height:1.8;color:#1e293b}
+.para-zh-toggle{
+  display:inline-block;margin-top:8px;
+  color:#3b82f6;font-size:13px;cursor:pointer;
+  background:#eff6ff;padding:4px 12px;border-radius:6px;
+  font-weight:600;border:none;
+}
+.para-zh-toggle:hover{background:#dbeafe}
+.para-zh{
+  margin-top:8px;font-size:14px;color:#64748b;line-height:1.8;
+  display:none;padding:10px 14px;background:#f8fafc;
+  border-radius:8px;border-left:3px solid #3b82f6;
+}
+
+/* ===== COLLOCATIONS ===== */
+.collo-grid{display:grid;gap:10px}
+.collo-card{
+  border:1px solid #e2e8f0;border-radius:12px;padding:14px;
+  transition:all .2s;
+}
+.collo-card:hover{border-color:#93c5fd;box-shadow:0 2px 8px rgba(59,130,246,.1)}
+.collo-phrase{
+  font-size:17px;font-weight:700;color:#1e40af;
+  margin-bottom:2px;
+}
+.collo-meaning{font-size:13px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:13px;color:#334155;background:#f8fafc;padding:8px 10px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{
+  font-size:13px;color:#92400e;
+  background:#fffbeb;padding:8px 10px;border-radius:6px;
+  border-left:3px solid #f59e0b;
+  margin-top:4px;
+}
+.collo-practice .blank{cursor:pointer;color:#1e40af;font-weight:700;border-bottom:2px dashed #3b82f6}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:13px}
+
+/* ===== GRAMMAR ===== */
+.grammar-card{
+  border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin-bottom:10px;
+}
+.grammar-point{
+  font-size:16px;font-weight:700;color:#7c3aed;margin-bottom:4px;
+  display:flex;align-items:center;gap:6px;
+}
+.grammar-explain{font-size:13px;color:#64748b;margin-bottom:10px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:10px 12px;margin-bottom:10px}
+.grammar-examples .ge-item{margin-bottom:8px}
+.grammar-examples .ge-item:last-child{margin-bottom:0}
+.ge-from{font-size:13px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:12px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:12px;color:#7c3aed;font-weight:600;margin-top:2px;padding:3px 8px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{
+  font-size:13px;color:#92400e;
+  background:#fffbeb;padding:8px 10px;border-radius:6px;
+  border-left:3px solid #f59e0b;
+}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+
+/* ===== SENTENCE PATTERNS ===== */
+.pattern-card{
+  border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin-bottom:10px;
+}
+.pattern-formula{
+  font-size:16px;font-weight:700;color:#0891b2;margin-bottom:2px;
+}
+.pattern-meaning{font-size:13px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:13px;color:#334155;background:#ecfeff;padding:8px 10px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:12px;color:#0891b2;font-weight:600;background:#ecfeff;padding:4px 8px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:13px;color:#92400e;background:#fffbeb;padding:8px 10px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+
+/* ===== QUIZ ===== */
+.quiz-question{
+  border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin-bottom:12px;transition:all .3s;
+}
+.quiz-q{font-size:15px;font-weight:600;margin-bottom:8px;line-height:1.5}
+.quiz-choices{display:grid;gap:6px}
+.quiz-choice{
+  padding:10px 14px;border:2px solid #e2e8f0;border-radius:10px;
+  font-size:14px;cursor:pointer;transition:all .2s;
+  background:#fafafa;
+}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.selected{border-color:#3b82f6;background:#dbeafe;font-weight:600}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:10px;padding:10px 12px;border-radius:8px;font-size:13px;line-height:1.6}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{
+  text-align:center;padding:16px;font-size:18px;font-weight:700;
+  background:#f0f4ff;border-radius:12px;margin-bottom:14px;
+}
+.quiz-reset{
+  display:block;width:100%;padding:12px;
+  border:none;border-radius:10px;background:#e2e8f0;
+  color:#475569;font-size:15px;font-weight:600;
+  cursor:pointer;transition:all .2s;margin-top:4px;
+}
+.quiz-reset:hover{background:#cbd5e1}
+
+/* ===== FOOTER ===== */
+.footer{
+  text-align:center;padding:30px 16px 20px;
+  font-size:13px;color:#94a3b8;
+}
+.footer a{color:#3b82f6;text-decoration:none}
+
+/* ===== SCROLL INDICATOR ===== */
+.scroll-hint{
+  text-align:center;font-size:12px;color:#94a3b8;
+  margin:-4px 0 10px;animation:fadeIn 1s ease 2s both;
+}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:480px){
+  .header h1{font-size:18px}
+  .header-meta{gap:8px;font-size:12px}
+  .section{padding:14px}
+  .collo-phrase{font-size:15px}
+  .quiz-q{font-size:14px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-badge">🌎 BZ Travel · 英文自學講義</div>
+  <h1>Iguazu Falls: The Most Powerful Waterfall on Earth</h1>
+  <div class="sub">從巴西到阿根廷，體驗地球上最震撼的瀑布</div>
+  <div class="header-meta">
+    <span>⏱️ 17:05</span>
+    <span>🌍 巴西 / 阿根廷</span>
+    <span>🏷️ 自然奇景</span>
+    <span>👁️ 63K 觀看</span>
+  </div>
+</div>
+
+<div class="main-wrap">
+
+  <!-- VIDEO -->
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/xW5SlCvx2W0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <!-- SECTION NAV -->
+  <div class="section-nav">
+    <a href="#reading" class="active">📖 閱讀</a>
+    <a href="#collocations">🔗 搭配詞</a>
+    <a href="#grammar">📐 文法</a>
+    <a href="#patterns">🧩 句型</a>
+    <a href="#quiz">📝 測驗</a>
+  </div>
+  <div class="scroll-hint">👆 點擊快速跳轉</div>
+
+  <!-- ===== READING ===== -->
+  <div id="reading" class="section">
+    <div class="section-title"><span class="icon">📖</span> 全文閱讀</div>
+
+    <div class="audio-bar">
+      <button class="btn-play" onclick="document.getElementById('audioFull').play()">▶</button>
+      <span class="label">🔊 全文朗讀</span>
+      <audio id="audioFull" src="../audio/iguazu/full.mp3" preload="none" onplay="this.previousElementSibling.textContent='⏸'" onpause="this.previousElementSibling.textContent='▶'" onended="this.previousElementSibling.textContent='▶'"></audio>
+    </div>
+
+    <div id="articleContainer"></div>
+  </div>
+
+  <!-- ===== COLLOCATIONS ===== -->
+  <div id="collocations" class="section">
+    <div class="section-title"><span class="icon">🔗</span> 實用搭配詞 <span style="font-size:13px;font-weight:400;color:#94a3b8">8 組</span></div>
+
+    <div class="audio-bar" style="margin-bottom:14px">
+      <button class="btn-play" onclick="document.getElementById('audioCollo').play()">▶</button>
+      <span class="label">🔊 搭配詞朗讀</span>
+      <audio id="audioCollo" src="../audio/iguazu/collocations.mp3" preload="none"></audio>
+    </div>
+
+    <div class="collo-grid" id="colloContainer"></div>
+  </div>
+
+  <!-- ===== GRAMMAR ===== -->
+  <div id="grammar" class="section">
+    <div class="section-title"><span class="icon">📐</span> 文法重點 <span style="font-size:13px;font-weight:400;color:#94a3b8">3 點</span></div>
+    <div id="grammarContainer"></div>
+  </div>
+
+  <!-- ===== SENTENCE PATTERNS ===== -->
+  <div id="patterns" class="section">
+    <div class="section-title"><span class="icon">🧩</span> 關鍵句型 <span style="font-size:13px;font-weight:400;color:#94a3b8">5 組</span></div>
+    <div id="patternContainer"></div>
+  </div>
+
+  <!-- ===== QUIZ ===== -->
+  <div id="quiz" class="section">
+    <div class="section-title"><span class="icon">📝</span> 閱讀測驗 <span style="font-size:13px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div id="quizContainer"></div>
+  </div>
+
+  <div class="footer">
+    <p>📺 影片來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 英文自學教材</p>
+  </div>
+</div>
+
+<script>
+// ===== DATA =====
+const ARTICLE = [
+  {heading:"A Waterfall Unlike Any Other", en:"There are places in this world that silence you the moment you arrive. Iguazu Falls is one of them. Stretching across the border of Brazil and Argentina, this is the most powerful waterfall on Earth. A short flight from Buenos Aires brings visitors to the jungle border, where 275 individual falls scatter across the rainforest in every direction. Friends had told the travelers that Iguazu was something else entirely — something no other waterfall could match. Having seen Niagara and stood at the misty edge of Victoria Falls, they arrived expecting something roughly the same. Then they took their first look, and everything they had assumed collapsed in an instant.", zh:"世界上有些地方，你一到達就會被震懾得說不出話來。伊瓜蘇瀑布就是其中之一。橫跨巴西與阿根廷的邊界，這是地球上最強大的瀑布。從布宜諾斯艾利斯搭乘短程航班，就能抵達這片叢林邊境，275條瀑布朝各個方向散布在雨林中。朋友們曾說伊瓜蘇是截然不同的存在——沒有任何瀑布能與之匹敵。去過尼加拉瀑布、也站過維多利亞瀑布霧氣瀰漫的邊緣，他們抵達時心裡想的大概差不多就是那樣。然而當他們親眼一看，所有預設的想法瞬間瓦解。"},
+  {heading:"The Brazilian Side: A Panoramic Introduction", en:"The Brazilian side offers a gradual reveal of the falls. Each bend in the path exposes something new, building slowly and deliberately toward a full panoramic view. The biggest surprise is the sheer overwhelming scale. What they expected to be a single dramatic drop turns out to be 275 individual falls scattered across the jungle as far as the eye can see. A mist hangs permanently in the distance, and the roar grows louder with every step. The path keeps descending, and the falls keep revealing themselves layer by layer. Nothing — not a photograph, not a travel blog, not a single video — prepares you for what Iguazu actually is.", zh:"巴西側提供了一種漸進式的瀑布展現。小徑的每個彎道都展現新的景象，緩慢而刻意地鋪陳，最終迎來完整的全景視野。最大的驚喜是那壓倒性的規模。他們原本預期會看到一個單一的壯觀水幕，結果卻是275條瀑布散布在叢林中，綿延到視線的盡頭。遠處薄霧終年瀰漫，轟隆聲隨著每一步越來越響亮。小徑持續向下延伸，瀑布一層一層地展現自己。沒有任何事物——不是照片、不是旅遊部落格、不是任何影片——能讓你真正準備好面對伊瓜蘇的真實面貌。"},
+  {heading:"Immersed in the Waterfall", en:"At other waterfalls, you stand across. You find your spot, you look, and the waterfall performs for you. You are the audience. It is magnificent theater, but still just theater. At Niagara, you watch from across a river. At Victoria, from across a gorge. At Iguazu, there is no across. The bridge does not take you around the water or above it at a safe distance. It takes you into it. You walk out over the actual river with water flowing beneath your feet, falls surrounding you on multiple sides, and spray hitting you from every angle. The sound is no longer around you — it is inside you. There is no railing between you and the experience. By any reasonable definition, you are inside a waterfall.", zh:"在其他瀑布，你站在對面。你找好位置，看著瀑布為你表演。你是觀眾。那是宏偉的劇場，但終究只是劇場。在尼加拉，你隔著河流觀看。在維多利亞，你隔著峽谷觀看。但在伊瓜蘇，沒有「對面」這種事。橋樑不會帶你繞過水、或在安全距離之上通過——它帶你走進水裡。你走在真正的河流上方，水流在腳下流動，瀑布從四面八方包圍你，水花從每個角度襲來。聲音不再環繞你——它在你的體內。你和體驗之間沒有任何欄杆。用任何合理的定義來說，你都在一座瀑布之中。"},
+  {heading:"Devil's Throat: The Centerpiece", en:"The Argentine side is bigger — significantly bigger. A small park train takes visitors directly to the catwalk for Devil's Throat, the dramatic centerpiece of the entire Iguazu system. A kilometer of elevated walkways crosses from island to island above the river, with the jungle pressing in and water moving fast beneath your feet. At Devil's Throat, 14 of the most powerful falls converge at a single point and plunge 82 meters straight down. The water curves into a vast, terrifying horseshoe and disappears into a void that gives back nothing but thunder and white mist. It looks less like a waterfall and more like the Earth simply swallowing the river whole. Millions of gallons pour over that edge every single second. You do not admire it — you stand inside it, soaked through, and you let it happen to you.", zh:"阿根廷側更大——明顯大得多。園區小火車直接帶遊客前往惡魔之喉的棧道，這是整個伊瓜蘇系統最具戲劇性的核心景點。一公里長的高架步道越過一個個小島，橫跨河流之上，叢林從兩側逼近，腳下水流湍急。在惡魔之喉，14條最強大的瀑布匯聚於一點，垂直落下82公尺。水流彎成一個巨大的、令人恐懼的馬蹄形，消失在虛空之中，只傳來雷鳴和白色水霧。它看起來與其說是瀑布，更像是地球直接把整條河流吞了下去。每秒鐘數百萬加侖的水從邊緣傾瀉而下。你不是在欣賞它——你站在它裡面，全身濕透，任由它衝擊你。"},
+  {heading:"From the Air and the Water", en:"From the air, the helicopter ride reveals the full picture. Three kilometers of falls stretch beneath you, with jungle pressing in from every side. From the ground, you collect pieces. From the air, you finally see the whole. But the most thrilling part comes when they board the speedboat. This is not a scenic cruise — the boat hammers against the current at full speed, throwing you over rapids. Then it drives straight into the curtain of falling water, and the world disappears. Just noise, white water, and cold hitting like a wall. The adrenaline detonates the moment the water hits, leaving you completely, absolutely, undeniably alive.", zh:"從空中俯瞰，直升機之旅展現了全貌。三公里長的瀑布在你腳下延伸，叢林從四面八方逼近。在地面上，你收集的是碎片。從空中，你終於看見整體。但最令人興奮的部分是當他們搭上快艇的時候。這不是一趟風景遊船——船隻以全速逆流衝擊，將你拋過急流。然後它直接駛入傾瀉而下的水幕之中，整個世界隨之消失。只剩下噪音、白水、和像牆一樣撞擊過來的冰冷。腎上腺素在海水衝擊的瞬間引爆，讓你徹底地、絕對地、無可否認地感受到活著。"}
+];
+
+const COLLOCATIONS = [
+  {phrase:"leave someone speechless", meaning:"讓某人說不出話來（震驚到無法言語）", example:"There are places in this world that silence you the moment you arrive.", practice:"The view from the mountaintop ______ (讓我們說不出話).", answer:"left us speechless"},
+  {phrase:"sheer overwhelming scale", meaning:"壓倒性的規模；極其龐大的尺度", example:"The biggest surprise was the sheer overwhelming scale of it all.", practice:"Visitors are often shocked by the ______ (龐大規模) of the Grand Canyon.", answer:"sheer scale"},
+  {phrase:"as far as the eye can see", meaning:"一望無際；視線所及之處", example:"275 individual falls scattered across the jungle as far as the eye could see.", practice:"The desert stretched out ______ (一望無際).", answer:"as far as the eye could see"},
+  {phrase:"pressing in from every side", meaning:"從四面八方逼近／湧來", example:"The jungle pressing in, water moving fast beneath your feet.", practice:"During the parade, the crowd was ______ (從四面八方湧來).", answer:"pressing in from every side"},
+  {phrase:"borders on frightening", meaning:"近乎令人害怕", example:"The roar is raw, deafening, alive in a way that borders on frightening.", practice:"His obsession with perfection ______ (近乎病態).", answer:"borders on unhealthy"},
+  {phrase:"beyond description", meaning:"難以形容", example:"Some things exist beyond description. This is one of them.", practice:"The beauty of the sunset was ______ (難以形容).", answer:"beyond description"},
+  {phrase:"hammer against", meaning:"猛烈衝擊；猛力撞擊", example:"The boat hammers against the current at full speed.", practice:"Waves ______ (猛烈拍打) the rocky shore during the storm.", answer:"hammered against"},
+  {phrase:"hit like a wall", meaning:"像牆一樣迎面襲來（形容衝擊力極強）", example:"Noise, white water, cold, hitting like a wall.", practice:"When he walked outside, the heat ______ (像牆一樣襲來).", answer:"hit him like a wall"}
+];
+
+const GRAMMAR = [
+  {point:"分詞構句 — V-ing 開頭表伴隨情況", explain:"分詞構句（Participle Phrase）可以將兩個相關的動作或狀態合併成一句，讓句子更簡潔優雅。當主句和附屬句的主詞相同時，附屬句的動詞改為 V-ing 形式。", from:[{text:"\"Having seen Niagara and stood at the misty edge of Victoria Falls, they arrived expecting something roughly the same.\"", analysis:"→ 'Having seen...' = After they had seen...（完成式分詞構句，強調先發生）\n→ 'expecting...' = and they expected...（簡單分詞構句，表伴隨狀態）", pattern:"Having + p.p. + ..., S + V ... → 「完成某事之後，主詞做...」"},{text:"\"The boat hammers against the current, throwing you over rapids.\"", analysis:"→ 'throwing you over rapids' = and it throws you over rapids\n→ 表伴隨結果：主動作造成的副效果", pattern:"S + V + O, V-ing + O ... → 「主詞做某事，因而產生...」"}], practice:"______ (走進房間), she noticed something strange on the table.", answer:"Walking into the room / Having walked into the room"},
+  {point:"比較結構 — 否定詞 + 比較級", explain:"用否定詞（nothing, no, never）+ 比較級，可以表達「沒有什麼比...更...」的超級最高級意味，比直接使用最高級更有強調效果。", from:[{text:"\"Nothing — not a photograph, not a travel blog, not a single video — prepares you for what Iguazu actually is.\"", analysis:"→ 用三個 not 排比強調「沒有任何方式能讓你準備好」\n→ 比直接說 'No one can prepare you' 更有感染力", pattern:"Nothing / No + N + ... 強調「沒有任何...能...」"},{text:"\"None of them come close.\"", analysis:"→ 'none... come close' = 沒有任何一個能相提並論\n→ 口語中極高頻的比較否定用法", pattern:"None come close = 無人能及"}], practice:"______ (沒有什麼比賽) is more exciting than the World Cup final.", answer:"Nothing / No competition"},
+  {point:"對比平行結構 — At X..., at Y..., at Z...", explain:"使用三個以上平行的對比結構，可以強化差異、製造韻律感，是英文寫作中的華麗修辭手法（稱為「排比」或 parallel structure）。", from:[{text:"\"At Niagara, you watch from across a river. At Victoria, from across a gorge. At Iguazu, there is no across.\"", analysis:"→ 三個 'At...' 開頭，前兩個描述其他瀑布的相似點\n→ 第三個來個反轉（'there is no across'），達到強烈的對比效果", pattern:"At [A]..., at [B]..., at [C]... (反轉) — 排比對比修辭"}], practice:"In spring, the flowers bloom. In summer, ______ (太陽炙熱). In autumn, the leaves fall.", answer:"the sun burns hot"}
+];
+
+const PATTERNS = [
+  {formula:"There are places in this world that + V...", meaning:"世界上有些地方...（強烈推薦的開場句）", example:"\"There are places in this world that silence you the moment you arrive.\"", template:"There are [places/things/people] in this world that [描述性動詞] you the moment you [動詞].", practice:"There are ______ (世界上有些城市) that make you feel at home the moment you step off the plane.", answer:"cities in this world"},
+  {formula:"Some things exist beyond... / No words are adequate for...", meaning:"無法用言語形容...（表達極致感受）", example:"\"We wish we had better words. We do not. Some things exist beyond description.\"", template:"No words are adequate for [名詞]. / Some things exist beyond [名詞].", practice:"No words are adequate for ______ (她在婚禮上看起來有多美).", answer:"how beautiful she looked at the wedding"},
+  {formula:"If it's not on your [名詞], it needs to be.", meaning:"如果它不在你的...清單上，它應該要在（強烈推薦）", example:"\"If it's not on your bucket list, it needs to be.\"", template:"If [事物] is not on your [list/schedule/radar], it needs to be.", practice:"If this restaurant ______ (不在你的口袋名單上), it needs to be.", answer:"is not on your list"},
+  {formula:"The one that sits above all others with nothing close behind.", meaning:"遙遙領先，後無來者（最高級強調句）", example:"\"The one that sits above all others with nothing close behind.\"", template:"[事物] sits above all others with nothing close behind.", practice:"In terms of service, this company ______ (遙遙領先，後無來者).", answer:"sits above all others with nothing close behind"},
+  {formula:"You do not [A] it — you [B] it, and you let it [C] you.", meaning:"否定→轉折強調的修辭手法（你不是在...而是...）", example:"\"You do not admire it. You stand inside it, soaked through, and you let it happen to you.\"", template:"You do not [消極動詞] it — you [積極動詞] it, and you let it [動詞] you.", practice:"You don't just watch the aurora — ______ (你感受它，讓它包圍你).", answer:"you experience it, and you let it surround you"}
+];
+
+const QUIZ = [
+  {q:"What is the main purpose of this video?", choices:["To compare Iguazu Falls with other famous waterfalls","To describe the experience of visiting Iguazu Falls from multiple perspectives","To explain how Iguazu Falls was formed geologically","To give practical travel tips for visiting Brazil and Argentina"], answer:1, explain:"The video shows Iguazu from every angle — the Brazilian side, the Argentine side, from the air in a helicopter, and from the water in a speedboat — all to convey the full experience."},
+  {q:"What does the phrase 'there is no across' at Iguazu Falls mean?", choices:["You cannot see the falls from the opposite side","The falls are too wide to see across","The walkways take you directly into the waterfall rather than letting you watch from a distance","The border between Brazil and Argentina blocks the view"], answer:2, explain:"The narrator explains: 'At other waterfalls, you stand across... at Iguazu, there is no across.' The bridge takes you into the water, not around it. You are 'inside a waterfall.'"},
+  {q:"The word 'sheer' in 'the sheer overwhelming scale' is closest in meaning to:", choices:["thin and transparent","complete and total","steep and vertical","surprising and unexpected"], answer:1, explain:"Here, 'sheer' means 'complete and total' — emphasizing the absolute nature. 'Sheer' is a common intensifier: sheer luck, sheer terror, sheer beauty."},
+  {q:"How does the narrator create a sense of contrast between Iguazu and other waterfalls?", choices:["By listing the heights of different waterfalls","By using a parallel structure: 'At Niagara... At Victoria... At Iguazu...'","By showing photographs of each waterfall","By interviewing other tourists about their experiences"], answer:1, explain:"The narrator uses a powerful parallel structure (排比) — 'At Niagara... At Victoria... At Iguazu...' — to create rhythm and emphasize the unique nature of Iguazu."},
+  {q:"Which sentence best captures the overall feeling the narrator wants to convey?", choices:["Iguazu Falls is an affordable travel destination.","Iguazu Falls is an experience that cannot be fully described in words.","The Brazilian side is better than the Argentine side.","The helicopter ride is the best part of the visit."], answer:1, explain:"The narrator repeatedly emphasizes that words fall short: 'We wish we had better words. We do not. Some things exist beyond description. This is one of them.'"}
+];
+
+// ===== RENDER FUNCTIONS =====
+function renderArticle(){
+  var c = document.getElementById('articleContainer');
+  var h = '';
+  for(var i=0;i<ARTICLE.length;i++){
+    var p = ARTICLE[i];
+    h += '<div class="article-paragraph">';
+    h += '<div class="para-heading">' + p.heading + '</div>';
+    h += '<div class="para-en">' + p.en + '</div>';
+    h += '<button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>';
+    h += '<div class="para-zh">' + p.zh + '</div>';
+    h += '</div>';
+  }
+  c.innerHTML = h;
+}
+
+function toggleZh(btn){
+  var zh = btn.nextElementSibling;
+  if(zh.style.display === 'block'){
+    zh.style.display = 'none';
+    btn.textContent = '📖 顯示中文翻譯';
+  } else {
+    zh.style.display = 'block';
+    btn.textContent = '📕 隱藏中文翻譯';
+  }
+}
+
+function renderCollocations(){
+  var c = document.getElementById('colloContainer');
+  var h = '';
+  for(var i=0;i<COLLOCATIONS.length;i++){
+    var co = COLLOCATIONS[i];
+    h += '<div class="collo-card">';
+    h += '<div class="collo-phrase">#' + (i+1) + ' ' + co.phrase + '</div>';
+    h += '<div class="collo-meaning">' + co.meaning + '</div>';
+    h += '<div class="collo-example"><span class="label">📌 文中例句</span><br>' + co.example + '</div>';
+    h += '<div class="collo-practice">✏️ ' + co.practice + '<br><span class="collo-answer" id="ca' + i + '">✅ ' + co.answer + '</span></div>';
+    h += '</div>';
+  }
+  c.innerHTML = h;
+}
+
+function renderGrammar(){
+  var c = document.getElementById('grammarContainer');
+  var h = '';
+  for(var i=0;i<GRAMMAR.length;i++){
+    var g = GRAMMAR[i];
+    h += '<div class="grammar-card">';
+    h += '<div class="grammar-point">📌 ' + g.point + '</div>';
+    h += '<div class="grammar-explain">' + g.explain + '</div>';
+    h += '<div class="grammar-examples">';
+    for(var j=0;j<g.from.length;j++){
+      var f = g.from[j];
+      h += '<div class="ge-item">';
+      h += '<div class="ge-from">▸ ' + f.text + '</div>';
+      h += '<div class="ge-analysis">' + f.analysis.replace(/\n/g,'<br>') + '</div>';
+      h += '<div class="ge-pattern">' + f.pattern + '</div>';
+      h += '</div>';
+    }
+    h += '</div>';
+    h += '<div class="grammar-practice">✏️ ' + g.practice + '<br><span class="grammar-answer" id="ga' + i + '">✅ ' + g.answer + '</span></div>';
+    h += '</div>';
+  }
+  c.innerHTML = h;
+}
+
+function renderPatterns(){
+  var c = document.getElementById('patternContainer');
+  var h = '';
+  for(var i=0;i<PATTERNS.length;i++){
+    var pt = PATTERNS[i];
+    h += '<div class="pattern-card">';
+    h += '<div class="pattern-formula">' + pt.formula + '</div>';
+    h += '<div class="pattern-meaning">' + pt.meaning + '</div>';
+    h += '<div class="pattern-example">📌 文中範例<br>' + pt.example + '</div>';
+    h += '<div class="pattern-template">📐 ' + pt.template + '</div>';
+    h += '<div class="pattern-practice">✏️ ' + pt.practice + '<br><span class="pattern-answer" id="pa' + i + '">✅ ' + pt.answer + '</span></div>';
+    h += '</div>';
+  }
+  c.innerHTML = h;
+}
+
+function renderQuiz(){
+  var c = document.getElementById('quizContainer');
+  var h = '<div class="quiz-score" id="quizScore">📊 0 / ' + QUIZ.length + ' 題正確</div>';
+  for(var i=0;i<QUIZ.length;i++){
+    var q = QUIZ[i];
+    h += '<div class="quiz-question" id="qq' + i + '">';
+    h += '<div class="quiz-q">Q' + (i+1) + '. ' + q.q + '</div>';
+    h += '<div class="quiz-choices">';
+    for(var j=0;j<q.choices.length;j++){
+      h += '<div class="quiz-choice" onclick="selectAnswer(' + i + ',' + j + ')" id="qc' + i + '_' + j + '">' + q.choices[j] + '</div>';
+    }
+    h += '</div>';
+    h += '<div class="quiz-feedback" id="qf' + i + '"></div>';
+    h += '</div>';
+  }
+  h += '<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';
+  c.innerHTML = h;
+}
+
+var quizState = [];
+
+function selectAnswer(qIdx, cIdx){
+  var q = QUIZ[qIdx];
+  var fb = document.getElementById('qf' + qIdx);
+  var choices = document.querySelectorAll('#qq' + qIdx + ' .quiz-choice');
+
+  // Disable all choices
+  for(var i=0;i<choices.length;i++){
+    choices[i].style.pointerEvents = 'none';
+    choices[i].classList.remove('selected');
+    if(i === q.answer){
+      choices[i].classList.add('correct');
+    }
+    if(i === cIdx && i !== q.answer){
+      choices[i].classList.add('wrong');
+    }
+  }
+
+  var isCorrect = (cIdx === q.answer);
+  quizState[qIdx] = isCorrect;
+  fb.className = 'quiz-feedback show ' + (isCorrect ? 'correct' : 'wrong');
+  fb.innerHTML = (isCorrect ? '✅ 正確！' : '❌ 答錯了。') + '<br>' + q.explain;
+
+  updateScore();
+}
+
+function updateScore(){
+  var correct = 0;
+  for(var i=0;i<quizState.length;i++){
+    if(quizState[i]) correct++;
+  }
+  document.getElementById('quizScore').textContent = '📊 ' + correct + ' / ' + QUIZ.length + ' 題正確';
+}
+
+function resetQuiz(){
+  quizState = [];
+  for(var i=0;i<QUIZ.length;i++){
+    quizState.push(false);
+    var fb = document.getElementById('qf' + i);
+    fb.className = 'quiz-feedback';
+    fb.innerHTML = '';
+    var choices = document.querySelectorAll('#qq' + i + ' .quiz-choice');
+    for(var j=0;j<choices.length;j++){
+      choices[j].className = 'quiz-choice';
+      choices[j].style.pointerEvents = '';
+    }
+  }
+  updateScore();
+}
+
+// ===== INIT =====
+renderArticle();
+renderCollocations();
+renderGrammar();
+renderPatterns();
+renderQuiz();
+
+// ===== SCROLL SPY =====
+(function(){
+  var links = document.querySelectorAll('.section-nav a');
+  var sections = [];
+  for(var i=0;i<links.length;i++){
+    var id = links[i].getAttribute('href').substring(1);
+    sections.push(document.getElementById(id));
+  }
+  window.addEventListener('scroll', function(){
+    var scrollY = window.scrollY + 80;
+    var active = 0;
+    for(var i=0;i<sections.length;i++){
+      if(sections[i] && sections[i].offsetTop <= scrollY){
+        active = i;
+      }
+    }
+    for(var i=0;i<links.length;i++){
+      links[i].className = (i === active) ? 'active' : '';
+    }
+  });
+})();
+</script>
+</body>
+</html>
