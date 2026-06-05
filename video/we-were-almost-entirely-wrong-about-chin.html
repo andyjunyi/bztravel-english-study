@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>We Were Almost Entirely Wrong About China — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,79 +32,66 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.grammar-answer{display:none;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-answer{display:none;color:#059669;font-weight:600}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
-.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="header-badge">🎭 BZ Travel · 英文自學講義</div>
-  <h1>We Were Almost Entirely Wrong About China</h1>
-  <div class="sub">中國</div>
-  <div class="header-meta">
-    <span>20:38</span>
-    <span>🎭 文化體驗</span>
-  </div>
-</div>
-<div class="main-wrap">
-  <div class="video-wrap">
-    <iframe src="https://www.youtube.com/embed/AOEr5FrW-lY" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
-  </div>
-  <div class="section-nav">
-    <a href="#section-reading" class="active">📖 閱讀</a>
-    <a href="#section-collocations">🔗 搭配詞</a>
-    <a href="#section-grammar">📐 文法</a>
-    <a href="#section-patterns">🧩 句型</a>
-    <a href="#section-quiz">📝 測驗</a>
-  </div>
-  <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+<div class="header"><div class="header-badge">🎭 BZ Travel · 英文自學講義</div><h1>We Were Almost Entirely Wrong About China</h1><div class="sub">中國</div><div class="header-meta"><span>20:38</span><span>🎭 文化體驗</span></div></div>
+<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/AOEr5FrW-lY" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
+<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
         <span class="acc-label">1. First Impressions Can Be Deceiving</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
+        <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Tresa and Zarko arrived in China with assumptions built from news reports and secondhand stories. They believed they understood what to expect. However, from the moment they arrived, their assumptions began to crumble. The reality was far more complex and surprising than anything they had imagined. This video is the first in a series documenting 22 days of private travel through China, without tour buses or group schedules.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Tresa和Zarko帶著從新聞報導和二手故事中建立的假設抵達中國。他們相信自己對即將面對的情況有合理的預期。然而，從他們抵達的那一刻起，他們的假設就開始崩潰。現實遠遠比他們想像的任何情況都更加複雜和令人驚訝。這部影片是一個系列的第一集，記錄了在中國22天的私人旅行，沒有旅遊巴士也沒有團體行程。</div>
@@ -116,6 +103,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
+        <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The couple traveled with a different local guide in each city, allowing them to experience China beyond the typical tourist path. They explored independently, moving through landscapes and cities without the constraints of organized tours. Their goal was not just to see the famous sights but to understand the country&#39;s deeper story — its history, its mindset, and the forces that shaped it.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">這對夫婦在每個城市都有一位不同的當地導遊陪同，讓他們能夠體驗超越典型旅遊路線的中國。他們獨立探索，穿梭於風景和城市之間，不受組團旅遊的限制。他們的目標不僅是欣賞著名景點，更是要了解這個國家更深層的故事——它的歷史、心態以及塑造它的力量。</div>
@@ -127,6 +115,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
+        <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Tresa grew up in the United States with a specific worldview shaped by Cold War narratives. Communism was presented as an enemy, and China seemed distant and mysterious. Zarko, on the other hand, grew up under communism in Bulgaria. He experienced one-party rule and state control firsthand. These contrasting backgrounds gave them a unique lens through which to process what they encountered in China.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Tresa在美國長大，她的世界觀深受冷戰敘事的影響。共產主義被描繪成敵人，而中國則顯得很遙遠而神秘。另一方面，Zarko在保加利亞的共產主義制度下長大。他親身經歷了一黨專政和國家控制。這些截然不同的背景給了他們一個獨特的視角來理解在中國的所見所聞。</div>
@@ -138,6 +127,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
+        <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">After 22 days in China, the couple came back with more questions than answers. Rather than viewing this as a failure, they consider it the best possible outcome of any journey. The trip forced them to reconsider long-held beliefs and recognize how little they actually knew. Travel, they suggest, is most valuable when it unsettles your certainties.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">在中國待了22天後，這對夫婦帶回的問題比答案多。他們不認為這是失敗，反而認為這是任何旅行中最好的結果。這次旅行迫使他們重新審視長期以來的信念，並認識到自己對這個國家的了解是多麼有限。他們認為，旅行最有價值的地方在於它能夠動搖你的確定性。</div>
@@ -149,107 +139,104 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
+        <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Future episodes will explore China&#39;s landscapes, food, and iconic sights. But the series aims to go deeper, examining what the country actually is, how it thinks, what it has been through, and why it arrived at its current state. The creators warn that focusing only on pretty pictures would mean missing the entire story.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">未來的集數將探索中國的風景、美食和標誌性景點。但該系列旨在更深入地探討這個國家的真實面貌、它的思考方式、它經歷過的一切，以及它為何走到今天這一步。創作者警告說，如果只看漂亮的圖片，就會錯過整個故事。</div>
       </div>
     </div>
-  </div>
-  <div id="section-collocations" class="section">
-    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
-    <div class="section-sub">點選搭配詞展開完整內容</div>
+</div>
+<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. build assumptions</span>
+        <span class="acc-label">1. build assumptions <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">建立假設；形成先入為主的看法</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"We had built assumptions about China from news reports."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We had built assumptions about China from news reports." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex1')">🔊</span></div>
         <div class="collo-practice">Before visiting a new country, it&#39;s easy to ______ from what you read online.<br><span class="collo-answer" id="ca1">build assumptions</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. crumble</span>
+        <span class="acc-label">2. crumble <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">崩潰；瓦解</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Our assumptions began to crumble the moment we arrived."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Our assumptions began to crumble the moment we arrived." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex2')">🔊</span></div>
         <div class="collo-practice">When I saw the real city, all my preconceptions started to ______.<br><span class="collo-answer" id="ca2">crumble</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. keep your head down</span>
+        <span class="acc-label">3. keep your head down <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">低調行事；不引人注目</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Under communism, you kept your head down and did not ask the wrong questions."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Under communism, you kept your head down and did not ask the wrong questions." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex3')">🔊</span></div>
         <div class="collo-practice">In a strict environment, it&#39;s often safer to ______ and follow the rules.<br><span class="collo-answer" id="ca3">keep your head down</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. political refugee</span>
+        <span class="acc-label">4. political refugee <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">政治難民</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"He left Bulgaria at 25 as a political refugee."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"He left Bulgaria at 25 as a political refugee." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex4')">🔊</span></div>
         <div class="collo-practice">Many people flee their home country as a ______ due to persecution.<br><span class="collo-answer" id="ca4">political refugee</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. reasonable picture</span>
+        <span class="acc-label">5. reasonable picture <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">合理的認識；合理的畫面</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"We thought we had a reasonable picture of what to expect."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We thought we had a reasonable picture of what to expect." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex5')">🔊</span></div>
         <div class="collo-practice">After reading the guidebook, I felt I had a ______ of the city.<br><span class="collo-answer" id="ca5">reasonable picture</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. more questions than answers</span>
+        <span class="acc-label">6. more questions than answers <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">問題多於答案</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"We came back with more questions than answers."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We came back with more questions than answers." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex6')">🔊</span></div>
         <div class="collo-practice">The documentary left me with ______ about the political situation.<br><span class="collo-answer" id="ca6">more questions than answers</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. state control</span>
+        <span class="acc-label">7. state control <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">國家控制</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Zarko lived under one party and state control over everything."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Zarko lived under one party and state control over everything." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex7')">🔊</span></div>
         <div class="collo-practice">Under ______, the government decides what businesses can produce.<br><span class="collo-answer" id="ca7">state control</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. miss the whole story</span>
+        <span class="acc-label">8. miss the whole story <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">錯過整個故事；未能理解全貌</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"If you only watch the pretty pictures, you will miss the whole story."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"If you only watch the pretty pictures, you will miss the whole story." <span class="collo-play-sm" onclick="playAudio('AOEr5FrW-lY','ex8')">🔊</span></div>
         <div class="collo-practice">If you judge a country only by its tourist attractions, you ______.<br><span class="collo-answer" id="ca8">miss the whole story</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-grammar" class="section">
-    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
-    <div class="section-sub">點選文法點展開說明</div>
+</div>
+<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Past Perfect Tense for Background Information</span>
@@ -288,10 +275,8 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="grammar-practice">完成句子：&#39;My experience was different from my friend&#39;s. I grew up in a small town, which means ________.&#39;<br><span class="grammar-answer" id="ga2">&#39;My experience was different from my friend&#39;s. I grew up in a small town, which means I had a simpler view of the world.&#39;</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-patterns" class="section">
-    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
-    <div class="section-sub">點選句型展開範例與練習</div>
+</div>
+<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div><div class="section-sub">點選句型展開範例</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">We thought we had a [adjective] picture of [noun]</span>
@@ -340,26 +325,20 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="pattern-practice">用這個句型說明為什麼只看表面是不夠的。<br><span class="pattern-answer" id="pa4">If you only visit tourist attractions, you will miss the real life of the city.</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-quiz" class="section">
-    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
-    <div class="section-sub">點選答案即時對答</div>
-    <div id="quizContainer"></div>
-  </div>
-  <div class="footer">
-    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
-    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
-  </div>
+</div>
+<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
+<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "How long did Tresa and Zarko travel through China?", "choices": ["14 days", "22 days", "30 days", "7 days"], "answer": 1, "explain": "The video states they spent 22 days traveling China privately."},{"q": "Where did Zarko grow up?", "choices": ["The United States", "China", "Bulgaria", "Russia"], "answer": 2, "explain": "Zarko grew up in Bulgaria under communism."},{"q": "According to the video, what was the best possible outcome of the trip?", "choices": ["Finding cheap flights", "Taking great photos", "Coming back with more questions than answers", "Meeting local guides"], "answer": 2, "explain": "Tresa says they came back with more questions than answers, which is 'the best possible outcome from any trip.'"},{"q": "At what age did Zarko leave Bulgaria?", "choices": ["18", "21", "25", "30"], "answer": 2, "explain": "Zarko left Bulgaria at age 25 as a political refugee."},{"q": "What warning does the video give to viewers?", "choices": ["Don't travel to China without a guide", "If you only watch the pretty pictures, you will miss the whole story", "China is too expensive for budget travelers", "You need at least a month to see China"], "answer": 1, "explain": "The narrator warns: 'If you only watch the pretty pictures, you will miss the whole story.'"}];
-var quizState = [];
-function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
+var quizState=[];
+function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()}
 renderQuiz();
 </script>
 </body>

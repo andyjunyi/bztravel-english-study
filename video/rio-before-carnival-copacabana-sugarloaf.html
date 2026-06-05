@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Rio Before Carnival: Copacabana, Sugarloaf & Santa Teresa — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,79 +32,66 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.grammar-answer{display:none;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-answer{display:none;color:#059669;font-weight:600}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
-.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
-  <h1>Rio Before Carnival: Copacabana, Sugarloaf & Santa Teresa</h1>
-  <div class="sub">巴西</div>
-  <div class="header-meta">
-    <span>15:28</span>
-    <span>🏙️ 城市探索</span>
-  </div>
-</div>
-<div class="main-wrap">
-  <div class="video-wrap">
-    <iframe src="https://www.youtube.com/embed/Aoa6o2LX1qw" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
-  </div>
-  <div class="section-nav">
-    <a href="#section-reading" class="active">📖 閱讀</a>
-    <a href="#section-collocations">🔗 搭配詞</a>
-    <a href="#section-grammar">📐 文法</a>
-    <a href="#section-patterns">🧩 句型</a>
-    <a href="#section-quiz">📝 測驗</a>
-  </div>
-  <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+<div class="header"><div class="header-badge">🏙️ BZ Travel · 英文自學講義</div><h1>Rio Before Carnival: Copacabana, Sugarloaf & Santa Teresa</h1><div class="sub">巴西</div><div class="header-meta"><span>15:28</span><span>🏙️ 城市探索</span></div></div>
+<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/Aoa6o2LX1qw" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
+<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
         <span class="acc-label">1. Rio de Janeiro: A Third Visit</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
+        <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Tresa and Zarko&#39;s South American adventure ends in Rio de Janeiro, one of the world&#39;s most picturesque cities. This is their third visit, this time in February just before Carnival. They deliberately leave before the festival starts, finding the crowds a little too wild and crazy for their taste. Rio, they explain, has two unmissable moments: New Year&#39;s Eve and Carnival.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Tresa和Zarko的南美洲冒險在里約熱內盧畫下句點，這是世界上風景最美的城市之一。這是他們第三次造訪，這次是在二月，嘉年華會前夕。他們刻意在嘉年華開始前離開，覺得人群對他們來說有點太瘋狂了。他們解釋說，里約有兩個不容錯過的時刻：新年夜和嘉年華。</div>
@@ -116,6 +103,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
+        <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The couple stays in Copacabana at a hotel right on the beachfront. From their room, they enjoy an incredible ocean view of the famous beach. They notice something surprising — the sidewalks with their distinctive wave-like designs are made of small mosaic tiles. Copacabana, one of the world&#39;s most famous beaches, is almost empty during their visit due to rainy weather.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">這對夫婦住在Copacabana一家就在海灘正前方的飯店。從他們的房間，可以欣賞到著名海灘令人難以置信的海景。他們注意到一件令人驚訝的事——那些有著獨特波浪圖案的人行道是由小馬賽克瓷磚鋪成的。Copacabana這個世界上最有名的海灘之一，在他們造訪時因為下雨幾乎空無一人。</div>
@@ -127,6 +115,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
+        <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Most visitors take the train up Corcovado Mountain to Christ the Redeemer, and the couple did the same on their previous visit. This time, they choose a different approach, seeking a fresh perspective on the iconic statue that watches over the city. The video promises to show Rio beyond the usual tourist routes.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">大多數遊客會搭乘火車上Corcovado山參觀基督像，這對夫婦上次造訪時也是如此。這次，他們選擇了不同的方式，希望對這座俯瞰城市的標誌性雕像有全新的視角。影片承諾展示超越一般旅遊路線的里約風貌。</div>
@@ -138,6 +127,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
+        <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The video covers two other major Rio landmarks: Sugarloaf Mountain, which offers panoramic views of the city&#39;s beautiful beaches and bays, and the bohemian neighborhood of Santa Teresa. These locations provide different angles on Rio&#39;s stunning geography and cultural richness.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">影片涵蓋了另外兩個里約主要地標：能一覽城市美麗海灘和海灣全景的糖麵包山，以及波西米亞風格的Santa Teresa社區。這些地點提供了欣賞里約令人驚嘆的地理環境和文化豐富性的不同角度。</div>
@@ -149,107 +139,104 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
+        <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The video emphasizes the massive scale of Rio&#39;s celebrations. New Year&#39;s Eve fireworks draw 2 million people to Copacabana beach, and Carnival draws 6 million — the largest in the world. Even with rain and gray skies, the city&#39;s natural beauty and vibrant culture shine through, making it clear why Rio remains a bucket-list destination.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">影片強調了里約慶祝活動的龐大規模。新年夜的煙火吸引了200萬人到Copacabana海灘，而嘉年華則吸引600萬人——這是世界上最大的。即使下雨和陰天，這座城市的自然美景和充滿活力的文化依然閃耀，說明了為什麼里約仍然是人生必訪的目的地。</div>
       </div>
     </div>
-  </div>
-  <div id="section-collocations" class="section">
-    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
-    <div class="section-sub">點選搭配詞展開完整內容</div>
+</div>
+<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. picturesque city</span>
+        <span class="acc-label">1. picturesque city <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">風景如畫的城市</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Rio de Janeiro is one of the world&#39;s most picturesque cities."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Rio de Janeiro is one of the world&#39;s most picturesque cities." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex1')">🔊</span></div>
         <div class="collo-practice">The ______ is full of colorful buildings and cobblestone streets.<br><span class="collo-answer" id="ca1">picturesque city</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. iconic views</span>
+        <span class="acc-label">2. iconic views <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">標誌性景觀</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"You have seen the iconic views of Rio from photos and films."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You have seen the iconic views of Rio from photos and films." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex2')">🔊</span></div>
         <div class="collo-practice">The Eiffel Tower offers some of Paris&#39;s most ______.<br><span class="collo-answer" id="ca2">iconic views</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. unmissable moments</span>
+        <span class="acc-label">3. unmissable moments <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">不容錯過的時刻</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Rio has two unmissable moments: New Year&#39;s Eve and Carnival."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Rio has two unmissable moments: New Year&#39;s Eve and Carnival." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex3')">🔊</span></div>
         <div class="collo-practice">The cherry blossom season is one of Japan&#39;s ______.<br><span class="collo-answer" id="ca3">unmissable moments</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. draw [number] people</span>
+        <span class="acc-label">4. draw [number] people <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">吸引多少人</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Carnival will draw 6 million, the largest in the world."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Carnival will draw 6 million, the largest in the world." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex4')">🔊</span></div>
         <div class="collo-practice">The music festival ______ over 100,000 visitors each year.<br><span class="collo-answer" id="ca4">draws</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. ocean view</span>
+        <span class="acc-label">5. ocean view <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">海景</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"We have a hotel room with an ocean view of Copacabana."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We have a hotel room with an ocean view of Copacabana." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex5')">🔊</span></div>
         <div class="collo-practice">I always book a room with an ______ when I visit the coast.<br><span class="collo-answer" id="ca5">ocean view</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. right on the beachfront</span>
+        <span class="acc-label">6. right on the beachfront <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">就在海灘邊</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The hotel is right on the very front of the beach area."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The hotel is right on the very front of the beach area." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex6')">🔊</span></div>
         <div class="collo-practice">We stayed at a resort ______ of Copacabana.<br><span class="collo-answer" id="ca6">right on the beachfront</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. the weather had other plans</span>
+        <span class="acc-label">7. the weather had other plans <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">天氣另有安排（不如預期）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The weather had other plans. Rain, gray skies..."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The weather had other plans. Rain, gray skies..." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex7')">🔊</span></div>
         <div class="collo-practice">We planned a picnic, but ______, so we stayed indoors.<br><span class="collo-answer" id="ca7">the weather had other plans</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. bucket-list destination</span>
+        <span class="acc-label">8. bucket-list destination <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">人生必訪目的地</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Rio is a bucket-list destination for travelers worldwide."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Rio is a bucket-list destination for travelers worldwide." <span class="collo-play-sm" onclick="playAudio('Aoa6o2LX1qw','ex8')">🔊</span></div>
         <div class="collo-practice">Seeing the Northern Lights is a ______ for many people.<br><span class="collo-answer" id="ca8">bucket-list destination</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-grammar" class="section">
-    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
-    <div class="section-sub">點選文法點展開說明</div>
+</div>
+<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Present Simple for Scheduled Events</span>
@@ -284,10 +271,8 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="grammar-practice">用 &#39;even with&#39; 完成句子：&#39;______ the rain, the beach was still beautiful.&#39;<br><span class="grammar-answer" id="ga2">&#39;Even with the rain, the beach was still beautiful.&#39;</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-patterns" class="section">
-    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
-    <div class="section-sub">點選句型展開範例與練習</div>
+</div>
+<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">You have seen the [adjective] [noun]. Now, come along as we [verb]</span>
@@ -324,26 +309,20 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="pattern-practice">用這個句型表達某事不符合你的喜好。<br><span class="pattern-answer" id="pa3">The nightclub was a little too loud for my taste.</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-quiz" class="section">
-    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
-    <div class="section-sub">點選答案即時對答</div>
-    <div id="quizContainer"></div>
-  </div>
-  <div class="footer">
-    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
-    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
-  </div>
+</div>
+<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
+<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "Which of these is the third visit for the couple?", "choices": ["Buenos Aires", "Rio de Janeiro", "Santiago", "Lima"], "answer": 1, "explain": "The video states 'Our third visit to Rio' and 'Our South American adventure ends in Rio de Janeiro.'"},{"q": "How many people does Carnival in Rio draw?", "choices": ["2 million", "4 million", "6 million", "8 million"], "answer": 2, "explain": "The video says Carnival will draw 6 million, the largest in the world."},{"q": "What was the weather like during their visit to Copacabana?", "choices": ["Sunny and hot", "Rainy with gray skies", "Snowy", "Windy but warm"], "answer": 1, "explain": "The weather had other plans — rain, gray skies, the kind of morning that sends beach crowds away."},{"q": "What are the two unmissable moments in Rio according to the video?", "choices": ["Summer and Winter", "New Year's Eve and Carnival", "Christmas and Easter", "Spring and Fall festivals"], "answer": 1, "explain": "Rio has two unmissable moments: New Year's Eve and Carnival."},{"q": "How did the couple get to Christ the Redeemer this time?", "choices": ["By train like before", "By a different approach", "They didn't visit it", "By helicopter"], "answer": 1, "explain": "Most visitors take the train, and they did that two years ago. This time, they chose a different way."}];
-var quizState = [];
-function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
+var quizState=[];
+function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()}
 renderQuiz();
 </script>
 </body>

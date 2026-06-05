@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>48 Hours in Buenos Aires — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,79 +32,66 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.grammar-answer{display:none;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-answer{display:none;color:#059669;font-weight:600}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
-.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
-  <h1>48 Hours in Buenos Aires</h1>
-  <div class="sub">阿根廷</div>
-  <div class="header-meta">
-    <span>16:26</span>
-    <span>🏙️ 城市探索</span>
-  </div>
-</div>
-<div class="main-wrap">
-  <div class="video-wrap">
-    <iframe src="https://www.youtube.com/embed/hIxeU4CfQTs" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
-  </div>
-  <div class="section-nav">
-    <a href="#section-reading" class="active">📖 閱讀</a>
-    <a href="#section-collocations">🔗 搭配詞</a>
-    <a href="#section-grammar">📐 文法</a>
-    <a href="#section-patterns">🧩 句型</a>
-    <a href="#section-quiz">📝 測驗</a>
-  </div>
-  <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+<div class="header"><div class="header-badge">🏙️ BZ Travel · 英文自學講義</div><h1>48 Hours in Buenos Aires</h1><div class="sub">阿根廷</div><div class="header-meta"><span>16:26</span><span>🏙️ 城市探索</span></div></div>
+<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/hIxeU4CfQTs" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
+<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
         <span class="acc-label">1. Welcome to Buenos Aires</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
+        <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">After two great days in Mendoza, Tresa and Zarko take a short flight to Buenos Aires. They describe the city as the perfect destination for anyone who loves tango, good wine, incredible food, and a good time. The video covers their favorite neighborhoods and the things they genuinely enjoy doing in Argentina&#39;s vibrant capital.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">在Mendoza度過了愉快的兩天後，Tresa和Zarko搭機前往布宜諾斯艾利斯。他們形容這座城市是熱愛探戈、美酒、美食和享樂的人的完美目的地。影片涵蓋了他們最喜愛的街區以及在阿根廷這個充滿活力的首都他們真正喜歡做的事情。</div>
@@ -116,6 +103,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
+        <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The couple starts their exploration in San Telmo, the center of tango culture known for its cobblestone streets and historic buildings. The main attraction is the San Telmo Market (Mercado San Telmo), which is open every day — unlike the famous Sunday street fair. It&#39;s described as the perfect spot to spend a lazy afternoon browsing, eating, and watching people go by.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">這對夫婦從San Telmo開始他們的探索，這是探戈文化的中心，以鵝卵石街道和歷史建築聞名。主要景點是San Telmo市場（Mercado San Telmo），與著名的週日街頭市集不同，這個市場每天營業。它被形容為度過悠閒下午的完美地點，可以逛街、吃東西和欣賞來往的人群。</div>
@@ -127,6 +115,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
+        <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">At the market, visitors can grab a seat at one of the counters and dig into artisanal empanadas, sizzling steaks, and classic choripán, all made right in front of them. They recommend washing it down with a local craft beer or a glass of Malbec. The experience of sitting shoulder-to-shoulder with strangers somehow makes it even better.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">在市場裡，遊客可以在櫃檯前找個位子坐下，品嚐手工製作的肉餡捲餅、滋滋作響的牛排和經典的choripán香腸三明治，全部都在你面前現做。他們建議搭配當地的精釀啤酒或一杯Malbec紅酒。與陌生人肩並肩坐在一起，不知為何讓這一切變得更加美好。</div>
@@ -138,6 +127,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
+        <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The aisles of Mercado San Telmo are narrow and maze-like, a little rough around the edges, and that&#39;s exactly why it works. The market is a living piece of what Buenos Aires actually is — old nostalgia and fresh energy sitting side by side. You don&#39;t come here with a shopping list; you come to wander and see what you find.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Mercado San Telmo的走道狹窄如迷宮，有點粗糙未經修飾，而這正是它之所以成功的原因。這個市場是布宜諾斯艾利斯真實面貌的活生生縮影——懷舊氛圍與新鮮能量並存。你不是帶著購物清單來的；你是來漫遊，看看能發現什麼。</div>
@@ -149,107 +139,104 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
+        <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">What strikes visitors most is the contrast. San Telmo residents shop for groceries alongside old vendors next to craft beer stands and vintage record sellers. The market isn&#39;t just a building — it&#39;s a microcosm of Buenos Aires itself, blending the traditional and the modern in a way that feels authentic and unforced.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">最讓遊客印象深刻的是這種對比。San Telmo的居民在購買日常雜貨的同時，旁邊就是老攤販、精釀啤酒攤和黑膠唱片賣家。這個市場不僅僅是一座建築——它是布宜諾斯艾利斯本身的縮影，以一種真實而不造作的方式融合了傳統與現代。</div>
       </div>
     </div>
-  </div>
-  <div id="section-collocations" class="section">
-    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
-    <div class="section-sub">點選搭配詞展開完整內容</div>
+</div>
+<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. cobblestone streets</span>
+        <span class="acc-label">1. cobblestone streets <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">鵝卵石街道</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"San Telmo is known for its cobblestone streets and historic buildings."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"San Telmo is known for its cobblestone streets and historic buildings." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex1')">🔊</span></div>
         <div class="collo-practice">The old town&#39;s ______ give it a charming, historic feel.<br><span class="collo-answer" id="ca1">cobblestone streets</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. dig in</span>
+        <span class="acc-label">2. dig in <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">開始大快朵頤；開動</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Grab a seat at one of the counters and just dig in."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Grab a seat at one of the counters and just dig in." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex2')">🔊</span></div>
         <div class="collo-practice">The food is ready — let&#39;s ______!<br><span class="collo-answer" id="ca2">dig in</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. rough around the edges</span>
+        <span class="acc-label">3. rough around the edges <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">未經修飾的；有些粗糙但有其魅力</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The market is a little rough around the edges, and that&#39;s exactly why it works."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The market is a little rough around the edges, and that&#39;s exactly why it works." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex3')">🔊</span></div>
         <div class="collo-practice">The neighborhood is ______, but that&#39;s what gives it character.<br><span class="collo-answer" id="ca3">rough around the edges</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. wash it down with</span>
+        <span class="acc-label">4. wash it down with <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">用飲料搭配（食物）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Wash it down with a local craft beer or a glass of Malbec."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Wash it down with a local craft beer or a glass of Malbec." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex4')">🔊</span></div>
         <div class="collo-practice">After the spicy tacos, I ______ a cold glass of lemonade.<br><span class="collo-answer" id="ca4">washed it down with</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. shoulder-to-shoulder</span>
+        <span class="acc-label">5. shoulder-to-shoulder <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">肩並肩；緊密地</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"You&#39;re sitting shoulder-to-shoulder with strangers."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You&#39;re sitting shoulder-to-shoulder with strangers." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex5')">🔊</span></div>
         <div class="collo-practice">The market was so crowded that we stood ______ with other shoppers.<br><span class="collo-answer" id="ca5">shoulder-to-shoulder</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. wander and see what you find</span>
+        <span class="acc-label">6. wander and see what you find <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">隨意逛逛，看能發現什麼</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"You come here to wander and see what you find."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You come here to wander and see what you find." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex6')">🔊</span></div>
         <div class="collo-practice">I love to explore a new city by just ______.<br><span class="collo-answer" id="ca6">wandering and seeing what I find</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. side by side</span>
+        <span class="acc-label">7. side by side <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">並存；並列</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Old nostalgia and fresh energy sitting side by side."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Old nostalgia and fresh energy sitting side by side." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex7')">🔊</span></div>
         <div class="collo-practice">In this city, modern skyscrapers and ancient temples exist ______.<br><span class="collo-answer" id="ca7">side by side</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. worth the visit</span>
+        <span class="acc-label">8. worth the visit <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">值得一訪</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The San Telmo Market alone is worth the visit."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The San Telmo Market alone is worth the visit." <span class="collo-play-sm" onclick="playAudio('hIxeU4CfQTs','ex8')">🔊</span></div>
         <div class="collo-practice">The museum is small but definitely ______.<br><span class="collo-answer" id="ca8">worth the visit</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-grammar" class="section">
-    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
-    <div class="section-sub">點選文法點展開說明</div>
+</div>
+<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Imperative Sentences for Direct Advice</span>
@@ -284,10 +271,8 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="grammar-practice">用類似句型描述一個你最喜歡的地方。<br><span class="grammar-answer" id="ga2">&#39;The riverside park is the perfect spot to spend a sunny afternoon reading, relaxing, and watching boats go by.&#39;</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-patterns" class="section">
-    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
-    <div class="section-sub">點選句型展開範例與練習</div>
+</div>
+<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">If you love [thing A], [thing B], and [thing C], this is your [place]</span>
@@ -324,26 +309,20 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="pattern-practice">描述一個地方最讓你印象深刻的特點。<br><span class="pattern-answer" id="pa3">What strikes you most is the silence of the desert at night.</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-quiz" class="section">
-    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
-    <div class="section-sub">點選答案即時對答</div>
-    <div id="quizContainer"></div>
-  </div>
-  <div class="footer">
-    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
-    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
-  </div>
+</div>
+<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
+<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "Which neighborhood do they start exploring in Buenos Aires?", "choices": ["Palermo", "San Telmo", "Recoleta", "La Boca"], "answer": 1, "explain": "The video says 'We're starting in San Telmo. It's the center of tango culture.'"},{"q": "What is San Telmo famous for?", "choices": ["Skyscrapers and modern art", "Tango culture and its street fair", "Beaches and surfing", "Ski resorts"], "answer": 1, "explain": "San Telmo is the center of tango culture, known for its cobblestone streets and massive Sunday street fair."},{"q": "What does the couple recommend drinking with the food?", "choices": ["Water", "Local craft beer or Malbec", "Coca-Cola", "Tea"], "answer": 1, "explain": "They recommend washing it down with a local craft beer or a glass of Malbec."},{"q": "Why is the Mercado San Telmo special according to the video?", "choices": ["It's very clean and modern", "It's rough around the edges and full of character", "It's the biggest market in the world", "It only sells souvenirs"], "answer": 1, "explain": "The aisles are narrow and maze-like, a little rough around the edges, and that's exactly why it works."},{"q": "What type of food do they mention eating at the market?", "choices": ["Sushi and ramen", "Artisanal empanadas, sizzling steaks, and choripán", "Pizza and pasta", "Tacos and burritos"], "answer": 1, "explain": "They mention artisanal empanadas, sizzling steaks, and classic choripán made right in front of you."}];
-var quizState = [];
-function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
+var quizState=[];
+function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()}
 renderQuiz();
 </script>
 </body>

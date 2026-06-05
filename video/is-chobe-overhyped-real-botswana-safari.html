@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Is Chobe Overhyped? Real Botswana Safari — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,79 +32,66 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.grammar-answer{display:none;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-answer{display:none;color:#059669;font-weight:600}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
-.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
-  <h1>Is Chobe Overhyped? Real Botswana Safari</h1>
-  <div class="sub">波札那</div>
-  <div class="header-meta">
-    <span>18:39</span>
-    <span>🌿 自然奇景</span>
-  </div>
-</div>
-<div class="main-wrap">
-  <div class="video-wrap">
-    <iframe src="https://www.youtube.com/embed/g3ACqCX0m-w" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
-  </div>
-  <div class="section-nav">
-    <a href="#section-reading" class="active">📖 閱讀</a>
-    <a href="#section-collocations">🔗 搭配詞</a>
-    <a href="#section-grammar">📐 文法</a>
-    <a href="#section-patterns">🧩 句型</a>
-    <a href="#section-quiz">📝 測驗</a>
-  </div>
-  <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+<div class="header"><div class="header-badge">🌿 BZ Travel · 英文自學講義</div><h1>Is Chobe Overhyped? Real Botswana Safari</h1><div class="sub">波札那</div><div class="header-meta"><span>18:39</span><span>🌿 自然奇景</span></div></div>
+<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/g3ACqCX0m-w" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
+<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
         <span class="acc-label">1. Chobe: Botswana&#39;s Raw Safari Paradise</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
+        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The title asks the same bold question: Is Chobe overhyped? The travelers are ready for Botswana to blow their minds. Brochures and Instagram do not cut it — it is time to experience the real thing. For the next three days, Chobe Game Lodge is their home, and they explore in open safari vehicles. On the way to the park, they pass through a fascinating border intersection where four countries — Namibia, Zambia, Zimbabwe, and Botswana — meet at a single point.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">標題提出了同樣大膽的問題：丘比被過度吹捧了嗎？旅行者們準備好讓波札那震撼他們的心靈。旅遊手冊和Instagram不夠看——是時候體驗真實的一切了。接下來三天，丘比野生動物旅館是他們的家，他們乘坐開放式遊獵車輛探索。在前往公園的路上，他們經過一個迷人的邊境交匯點——納米比亞、尚比亞、辛巴威和波札那四個國家在這裡匯聚於一點。</div>
@@ -116,6 +103,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
+        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Chobe Game Lodge is the only lodge inside Chobe National Park. It is more boutique hotel than bush camp — a luxury oasis on the riverbanks, right on the edge of a vast 4,500-square-mile wilderness. The lodge has a fascinating history: Elizabeth Taylor and Richard Burton married here in the 1970s. The contrast between the luxury of the lodge and the raw wilderness just beyond its walls is striking.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">丘比野生動物旅館是丘比國家公園內唯一的旅館。與其說是叢林營地，不如說是精品酒店——河岸上的奢華綠洲，位於4,500平方英里的廣闊荒野邊緣。這個旅館有著迷人的歷史：伊莉莎白·泰勒和理查·波頓在1970年代在此結婚。旅館的奢華與僅一牆之隔的原始荒野之間的對比令人驚嘆。</div>
@@ -127,6 +115,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
+        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">One of the most spectacular experiences is the boat safari along the Chobe River. From the water, the wildlife viewing is extraordinary. Herds of elephants wade in the shallows, hippos surface with a grunt, and crocodiles bask on the sandbanks. The river itself is the lifeline of the park, drawing animals from miles around. Watching the sunset over the water with wildlife all around is a moment that no Instagram post could ever fully capture.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">最壯觀的體驗之一是沿著丘比河進行的船遊。從水面上看，野生動物觀賞效果非凡。成群的大象在淺灘中涉水，河馬浮出水面發出咕嚕聲，鱷魚在沙洲上曬太陽。河流本身就是公園的生命線，吸引著方圓數英里的動物。看著夕陽在水面上落下，四周環繞著野生動物，這是任何Instagram貼文都無法完全捕捉的時刻。</div>
@@ -138,6 +127,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
+        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">It is winter in Africa, and the land is dry, brown, and almost bare. The only green that remains clings stubbornly to the tops of trees and bushes. This harsh season concentrates wildlife around the river, making game viewing particularly rewarding. The travelers experience land and water game drives, each offering a different perspective on the park&#39;s incredible biodiversity.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">現在是非洲的冬天，大地乾燥、棕黃、幾乎光禿。僅存的綠色頑固地附著在樹木和灌木的頂端。這個嚴酷的季節將野生動物集中在河流周圍，使觀賞動物特別有收穫。旅行者們體驗了陸地和河上兩種遊獵方式，每一種都提供了公園驚人生物多樣性的不同視角。</div>
@@ -149,107 +139,104 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
+        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Chobe National Park delivers on its reputation. The combination of the river-based safari and the land game drives offers a complete African safari experience. The concentration of wildlife — especially elephants — is staggering. The honesty of the video&#39;s title sets the right expectation: Chobe is not overhyped. It is a genuine, raw, and unforgettable encounter with one of Africa&#39;s greatest ecosystems.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">丘比國家公園不負盛名。河流safari和陸地遊獵的結合提供了完整的非洲safari體驗。野生動物的密度——尤其是大象——是驚人的。影片標題的誠實設定了正確的期望：丘比沒有被過度吹捧。這是一次真實、原始且令人難忘的非洲最大生態系統之一的邂逅。</div>
       </div>
     </div>
-  </div>
-  <div id="section-collocations" class="section">
-    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
-    <div class="section-sub">點選搭配詞展開完整內容</div>
+</div>
+<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. blow someone&#39;s mind</span>
+        <span class="acc-label">1. blow someone&#39;s mind <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">讓某人震驚/大開眼界</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"We&#39;re ready for Botswana to blow our minds."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We&#39;re ready for Botswana to blow our minds." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex1')">🔊</span></div>
         <div class="collo-practice">The view from the mountaintop ______ (讓我們大開眼界).<br><span class="collo-answer" id="ca1">blew our minds</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. don&#39;t cut it</span>
+        <span class="acc-label">2. don&#39;t cut it <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">不夠好；不夠看</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Brochures and Instagram don&#39;t cut it."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Brochures and Instagram don&#39;t cut it." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex2')">🔊</span></div>
         <div class="collo-practice">Photos alone ______ (不夠看) — you have to see the Grand Canyon in person.<br><span class="collo-answer" id="ca2">don&#39;t cut it</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. cling stubbornly</span>
+        <span class="acc-label">3. cling stubbornly <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">頑固地附著/堅持</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The only green that&#39;s left clings stubbornly to the tops of trees."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The only green that&#39;s left clings stubbornly to the tops of trees." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex3')">🔊</span></div>
         <div class="collo-practice">Despite the drought, a few leaves ______ (頑固地附著) on the branches.<br><span class="collo-answer" id="ca3">clung stubbornly</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. right on the edge of</span>
+        <span class="acc-label">4. right on the edge of <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">就在...的邊緣</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The lodge is right on the edge of this vast wilderness."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The lodge is right on the edge of this vast wilderness." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex4')">🔊</span></div>
         <div class="collo-practice">The house is ______ (就在懸崖的邊緣).<br><span class="collo-answer" id="ca4">right on the edge of the cliff</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. staggering concentration</span>
+        <span class="acc-label">5. staggering concentration <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">驚人的密集程度</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The concentration of wildlife — especially elephants — is staggering."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The concentration of wildlife — especially elephants — is staggering." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex5')">🔊</span></div>
         <div class="collo-practice">The ______ (驚人的密集程度) of flamingos at the lake was unforgettable.<br><span class="collo-answer" id="ca5">staggering concentration</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. lifeline of the park</span>
+        <span class="acc-label">6. lifeline of the park <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">公園的生命線</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The river itself is the lifeline of the park."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The river itself is the lifeline of the park." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex6')">🔊</span></div>
         <div class="collo-practice">The spring is the ______ (沙漠的生命線) for all wildlife.<br><span class="collo-answer" id="ca6">lifeline of the desert</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. deliver on its reputation</span>
+        <span class="acc-label">7. deliver on its reputation <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">不負盛名</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Chobe National Park delivers on its reputation."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Chobe National Park delivers on its reputation." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex7')">🔊</span></div>
         <div class="collo-practice">The award-winning restaurant ______ (不負盛名).<br><span class="collo-answer" id="ca7">delivered on its reputation</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. boutique hotel</span>
+        <span class="acc-label">8. boutique hotel <span class="collo-play" onclick="event.stopPropagation();playAudio('g3ACqCX0m-w','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">精品酒店</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s more boutique hotel than bush camp."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s more boutique hotel than bush camp." <span class="collo-play-sm" onclick="playAudio('g3ACqCX0m-w','ex8')">🔊</span></div>
         <div class="collo-practice">We stayed at a charming ______ (精品酒店) in the heart of the city.<br><span class="collo-answer" id="ca8">boutique hotel</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-grammar" class="section">
-    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
-    <div class="section-sub">點選文法點展開說明</div>
+</div>
+<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">現在分詞片語作後位修飾 — V-ing 修飾名詞</span>
@@ -287,10 +274,8 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="grammar-practice">The beauty of the Northern Lights is something ______ (沒有照片能完全捕捉).<br><span class="grammar-answer" id="ga2">that no photo could ever fully capture</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-patterns" class="section">
-    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
-    <div class="section-sub">點選句型展開範例與練習</div>
+</div>
+<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">Brochures and Instagram don&#39;t cut it.</span>
@@ -327,26 +312,20 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="pattern-practice">The five-star resort ______ (不負其奢華度假勝地的盛名).<br><span class="pattern-answer" id="pa3">delivers on its reputation as a luxury getaway</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-quiz" class="section">
-    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
-    <div class="section-sub">點選答案即時對答</div>
-    <div id="quizContainer"></div>
-  </div>
-  <div class="footer">
-    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
-    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
-  </div>
+</div>
+<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
+<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "What is unique about the location of Chobe National Park?", "choices": ["It is the smallest national park in Africa", "It is near a point where four countries meet", "It is entirely surrounded by desert", "It is located on an island"], "answer": 1, "explain": "The narrator explains that near the border bridge, 'there's four different countries that share that border — Namibia, Zambia, Zimbabwe, and Botswana.' This makes the area geographically fascinating."},{"q": "What famous couple has a connection to Chobe Game Lodge?", "choices": ["Prince William and Kate Middleton", "Elizabeth Taylor and Richard Burton", "Barack and Michelle Obama", "John F. Kennedy and Jackie Kennedy"], "answer": 1, "explain": "The transcript states: 'Elizabeth Taylor and Richard Burton married here in the 70s.' This historical fact adds to the lodge's charm and prestige."},{"q": "What makes the boat safari on the Chobe River special?", "choices": ["It is the only way to see hippos", "The river is the lifeline that concentrates wildlife, offering extraordinary viewing", "The boat goes all the way to Victoria Falls", "It is the longest boat safari in Africa"], "answer": 1, "explain": "The river serves as the park's lifeline, especially during the dry winter season, drawing animals from miles around. This concentration makes the boat safari particularly rewarding for wildlife viewing."},{"q": "What season is it during this video, and how does it affect the landscape?", "choices": ["Spring — flowers are blooming everywhere", "Winter — the land is dry and brown, with green only at tree tops", "Summer — lush and green with heavy rainfall", "Autumn — leaves are changing colors"], "answer": 1, "explain": "The narrator says: 'It's winter in Africa. The land is dry, brown, almost bare. The only green that's left clings stubbornly to the tops of trees and bushes.' This harsh season concentrates wildlife around water."},{"q": "What is the final verdict on Chobe according to this video?", "choices": ["Chobe is overhyped and not worth visiting", "Chobe is worth visiting only for the boat safari", "Chobe is not overhyped — it delivers a genuine, unforgettable safari experience", "Chobe is only good for elephant viewing"], "answer": 2, "explain": "The title asks 'Is Chobe Overhyped?' and the video answers with a clear no. The combination of river and land safaris, the staggering concentration of wildlife, and the unique location all contribute to Chobe delivering on its reputation."}];
-var quizState = [];
-function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
+var quizState=[];
+function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()}
 renderQuiz();
 </script>
 </body>

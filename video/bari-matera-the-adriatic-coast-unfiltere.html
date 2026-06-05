@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Bari, Matera & the Adriatic Coast Unfiltered — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,79 +32,66 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.grammar-answer{display:none;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-answer{display:none;color:#059669;font-weight:600}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
-.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
-  <h1>Bari, Matera & the Adriatic Coast Unfiltered</h1>
-  <div class="sub">義大利</div>
-  <div class="header-meta">
-    <span>24:14</span>
-    <span>🏙️ 城市探索</span>
-  </div>
-</div>
-<div class="main-wrap">
-  <div class="video-wrap">
-    <iframe src="https://www.youtube.com/embed/-SdS5FIRPRQ" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
-  </div>
-  <div class="section-nav">
-    <a href="#section-reading" class="active">📖 閱讀</a>
-    <a href="#section-collocations">🔗 搭配詞</a>
-    <a href="#section-grammar">📐 文法</a>
-    <a href="#section-patterns">🧩 句型</a>
-    <a href="#section-quiz">📝 測驗</a>
-  </div>
-  <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+<div class="header"><div class="header-badge">🏙️ BZ Travel · 英文自學講義</div><h1>Bari, Matera & the Adriatic Coast Unfiltered</h1><div class="sub">義大利</div><div class="header-meta"><span>24:14</span><span>🏙️ 城市探索</span></div></div>
+<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/-SdS5FIRPRQ" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
+<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
         <span class="acc-label">1. The Surprise of Southern Italy</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
+        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Tresa and Zarko begin by reflecting on how certain places take you by surprise — not because you didn&#39;t know they existed, but because you thought you already understood them. Puglia, they explain, is exactly that kind of place. They arrived with pictures in their minds, only to have everything they assumed dissolve upon arrival.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Tresa和Zarko首先反思了某些地方如何帶給人驚喜——不是因為你不知道它們的存在，而是因為你以為你已經了解它們了。他們解釋說，Puglia正是那種地方。他們帶著腦海中的畫面抵達，結果所有假設在到達時都煙消雲散。</div>
@@ -116,6 +103,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
+        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">A major theme of this video is how living in Burgas, Bulgaria has transformed their travel possibilities. Unlike their previous home in Seattle, where the world felt far away, Bulgaria sits at a crossroads between Europe, Asia, and Africa. From Sofia, Europe is practically next door. They illustrate this with a concrete example: a one-way flight from Sofia to Bari cost just 33 euros.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">這部影片的一個重要主題是，住在保加利亞Burgas如何改變了他們的旅行可能性。與他們之前在Seattle的家不同，那裡世界感覺很遙遠，而保加利亞位於歐洲、亞洲和非洲的交匯處。從Sofia出發，歐洲幾乎就在隔壁。他們用一個具體的例子來說明：從Sofia到Bari的單程機票僅需33歐元。</div>
@@ -127,6 +115,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
+        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The couple details their travel costs transparently. The round trip from Sofia to Bari, including luggage, seat selection, and exit row comfort, came to about $400 for two people. This affordability stands in stark contrast to their experience living in the United States, where even a trip to Hawaii required six hours of flight time and months of planning.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">這對夫婦透明地列出了他們的旅行費用。從Sofia到Bari的往返機票，包括行李、選座和出口排舒適座位，兩人總共約400美元。這種價格與他們在美國生活的經歷形成了鮮明對比，在那裡即使去夏威夷也需要六小時的飛行時間和數月的規劃。</div>
@@ -138,6 +127,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
+        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Their approach to Puglia is intentional: they want to explore genuinely, without rushing or simply checking boxes. The video promises to show why this corner of Southern Italy has quietly become one of the most talked-about destinations in Europe. Their slow travel philosophy allows them to discover details that hurried tourists would miss.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">他們探索Puglia的方式是有意為之的：他們想要真正地探索，不匆忙，也不只是為了打卡。影片承諾會展示為什麼南義大利的這個角落已經悄然成為歐洲最受歡迎的目的地之一。他們的慢旅行哲學使他們能夠發現匆忙的遊客會錯過的細節。</div>
@@ -149,107 +139,104 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
+        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The gap between expectation and reality is a recurring theme. Before arriving, both travelers had seen postcards and formed mental images of what Puglia would be like. But arriving in person revealed a place far richer and more complex than any photograph could capture. The video invites viewers to understand exactly why Puglia has earned its growing reputation.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">期望與現實之間的差距是一個反覆出現的主題。在到達之前，兩位旅行者都看過明信片，並對Puglia的樣子形成了心理圖像。但親身到達後，他們發現了一個遠比任何照片所能捕捉的更豐富、更複雜的地方。影片邀請觀眾了解為什麼Puglia贏得了日益增長的聲譽。</div>
       </div>
     </div>
-  </div>
-  <div id="section-collocations" class="section">
-    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
-    <div class="section-sub">點選搭配詞展開完整內容</div>
+</div>
+<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. take you by surprise</span>
+        <span class="acc-label">1. take you by surprise <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">讓你感到意外；使你驚訝</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"There are places that take you by surprise."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"There are places that take you by surprise." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex1')">🔊</span></div>
         <div class="collo-practice">The beauty of the small town completely ______.<br><span class="collo-answer" id="ca1">took me by surprise</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. checking boxes</span>
+        <span class="acc-label">2. checking boxes <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">按表操課；走馬看花式地完成清單</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"We&#39;re exploring genuinely, not rushing, not checking boxes."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We&#39;re exploring genuinely, not rushing, not checking boxes." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex2')">🔊</span></div>
         <div class="collo-practice">I prefer slow travel over just ______ on a tourist list.<br><span class="collo-answer" id="ca2">checking boxes</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. at a crossroads</span>
+        <span class="acc-label">3. at a crossroads <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">處於十字路口；位於交匯點</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Bulgaria is at a crossroads between Europe, Asia, and Africa."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Bulgaria is at a crossroads between Europe, Asia, and Africa." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex3')">🔊</span></div>
         <div class="collo-practice">The city is ______ of major trade routes.<br><span class="collo-answer" id="ca3">at a crossroads</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. practically next door</span>
+        <span class="acc-label">4. practically next door <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">幾乎就在隔壁；非常近</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"From Sofia, Europe is practically next door."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"From Sofia, Europe is practically next door." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex4')">🔊</span></div>
         <div class="collo-practice">With the new train line, the capital is ______.<br><span class="collo-answer" id="ca4">practically next door</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. talked about</span>
+        <span class="acc-label">5. talked about <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">備受討論的；受歡迎的</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"One of the most talked about destinations in Europe."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"One of the most talked about destinations in Europe." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex5')">🔊</span></div>
         <div class="collo-practice">This restaurant is one of the most ______ in the city.<br><span class="collo-answer" id="ca5">talked about</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. by the time</span>
+        <span class="acc-label">6. by the time <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">到...的時候</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"By the time we added luggage and seat selection, the total was $400."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"By the time we added luggage and seat selection, the total was $400." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex6')">🔊</span></div>
         <div class="collo-practice">______ we finished dinner, it was already midnight.<br><span class="collo-answer" id="ca6">By the time</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. mental image / picture in your mind</span>
+        <span class="acc-label">7. mental image / picture in your mind <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">心中的畫面；心理印象</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"You had the picture in your mind. You had seen the postcards."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You had the picture in your mind. You had seen the postcards." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex7')">🔊</span></div>
         <div class="collo-practice">Before visiting, I had a ______ of what Paris would look like.<br><span class="collo-answer" id="ca7">picture in my mind</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. dissolve / everything you assumed dissolves</span>
+        <span class="acc-label">8. dissolve / everything you assumed dissolves <span class="collo-play" onclick="event.stopPropagation();playAudio('-SdS5FIRPRQ','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">瓦解；所有假設都煙消雲散</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"You arrive and everything you assumed dissolves."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You arrive and everything you assumed dissolves." <span class="collo-play-sm" onclick="playAudio('-SdS5FIRPRQ','ex8')">🔊</span></div>
         <div class="collo-practice">When I saw the real city, my preconceptions ______.<br><span class="collo-answer" id="ca8">dissolved</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-grammar" class="section">
-    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
-    <div class="section-sub">點選文法點展開說明</div>
+</div>
+<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Rhetorical Questions for Engagement</span>
@@ -284,10 +271,8 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="grammar-practice">用 &#39;Unlike&#39; 或 &#39;Here, it&#39;s different&#39; 結構來對比兩種旅行方式。<br><span class="grammar-answer" id="ga2">&#39;When I traveled by bus, everything felt slow and tiring. Here, with the high-speed train, it&#39;s different, completely different. The trip takes only two hours.&#39;</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-patterns" class="section">
-    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
-    <div class="section-sub">點選句型展開範例與練習</div>
+</div>
+<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">[Subject] takes you by surprise not because [reason A], but because [reason B]</span>
@@ -324,26 +309,20 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="pattern-practice">用這個句型描述一個隱藏版景點。<br><span class="pattern-answer" id="pa3">This noodle shop is the kind of place that doesn&#39;t appear on any tourist map.</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-quiz" class="section">
-    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
-    <div class="section-sub">點選答案即時對答</div>
-    <div id="quizContainer"></div>
-  </div>
-  <div class="footer">
-    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
-    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
-  </div>
+</div>
+<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
+<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "How much did the one-way flight from Sofia to Bari cost?", "choices": ["100 euros", "33 euros", "50 euros", "75 euros"], "answer": 1, "explain": "They found a flight from Sofia to Bari, Italy, for 33 euros one way."},{"q": "How much was the round trip for two people including extras?", "choices": ["About $200", "About $400", "About $600", "About $800"], "answer": 1, "explain": "After adding luggage, seat selection, and exit row comfort, the round trip for both came to about $400."},{"q": "How long is a flight from Seattle to Hawaii?", "choices": ["2 hours", "4 hours", "6 hours", "8 hours"], "answer": 2, "explain": "They mention that from Seattle, a flight to Hawaii takes 6 hours."},{"q": "What is special about Bulgaria's location according to the video?", "choices": ["It's on an island", "It's at a crossroads between Europe, Asia, and Africa", "It's the highest country in Europe", "It has the largest airport"], "answer": 1, "explain": "Bulgaria is described as being at a crossroads, close to the Middle East, Asia, Western Europe, and Africa."},{"q": "What is the couple's approach to exploring Puglia?", "choices": ["Rushing to see everything", "Following a strict schedule", "Genuinely exploring without rushing", "Only visiting famous landmarks"], "answer": 2, "explain": "They say they are 'genuinely exploring, not rushing, not checking boxes.'"}];
-var quizState = [];
-function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
+var quizState=[];
+function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()}
 renderQuiz();
 </script>
 </body>

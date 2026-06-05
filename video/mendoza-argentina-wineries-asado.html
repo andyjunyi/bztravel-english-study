@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Mendoza Argentina: Wineries & Asado — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,79 +32,66 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.grammar-answer{display:none;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-answer{display:none;color:#059669;font-weight:600}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
-.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="header-badge">🎭 BZ Travel · 英文自學講義</div>
-  <h1>Mendoza Argentina: Wineries & Asado</h1>
-  <div class="sub">阿根廷</div>
-  <div class="header-meta">
-    <span>13:55</span>
-    <span>🎭 文化體驗</span>
-  </div>
-</div>
-<div class="main-wrap">
-  <div class="video-wrap">
-    <iframe src="https://www.youtube.com/embed/gK8KeV3atMs" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
-  </div>
-  <div class="section-nav">
-    <a href="#section-reading" class="active">📖 閱讀</a>
-    <a href="#section-collocations">🔗 搭配詞</a>
-    <a href="#section-grammar">📐 文法</a>
-    <a href="#section-patterns">🧩 句型</a>
-    <a href="#section-quiz">📝 測驗</a>
-  </div>
-  <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+<div class="header"><div class="header-badge">🎭 BZ Travel · 英文自學講義</div><h1>Mendoza Argentina: Wineries & Asado</h1><div class="sub">阿根廷</div><div class="header-meta"><span>13:55</span><span>🎭 文化體驗</span></div></div>
+<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/gK8KeV3atMs" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
+<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
         <span class="acc-label">1. Arriving in Mendoza</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
+        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Tresa and Zarko fly from Santiago to Mendoza, choosing the one-hour flight over a risky mountain pass. Upon arrival, they encounter a major hailstorm — unusual for this desert city. The temperature dropped from 36°C to 20°C, and it became dark at 4:00 PM. The storm was so intense that it felt like the whole year&#39;s worth of rain was coming down at once.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Tresa和Zarko從Santiago飛往Mendoza，選擇了一小時的飛行而不是危險的山口路線。抵達後，他們遇到了一場強烈的冰雹風暴——對這座沙漠城市來說很不尋常。氣溫從36°C降至20°C，下午4點天就黑了。風暴非常強烈，感覺一整年的雨量都同時傾瀉而下。</div>
@@ -116,6 +103,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
+        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Mendoza is a desert, one of Argentina&#39;s driest spots with only 8 inches of rain per year. Its location at the foot of the Andes makes it a global hotspot for severe hailstorms. Cold mountain air from the Andes collides with warm, humid air from the Atlantic, creating massive, powerful storm cells. This explains why a sudden hailstorm, while dramatic, is a natural part of life here.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Mendoza是沙漠，阿根廷最乾燥的地區之一，每年僅有8英寸的降雨量。它位於安第斯山脈腳下的地理位置使其成為全球強烈冰雹風暴的熱點。來自安第斯山脈的寒冷空氣與來自大西洋的溫暖潮濕空氣碰撞，產生巨大而強勁的風暴雲。這說明了為什麼突如其來的冰雹風暴雖然戲劇化，卻是這裡生活中自然的一部分。</div>
@@ -127,6 +115,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
+        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">The video points out an interesting feature of Mendoza&#39;s streets: deep, open concrete trenches running along almost every street. These aren&#39;t ordinary drainage ditches. Most of the year, they carry water from the Andes snowmelt to irrigate the trees planted along every street. It&#39;s a simple but intelligent solution to the region&#39;s water management challenges.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">影片指出了Mendoza街道上一個有趣的特點：幾乎每條街道旁都有深邃的露天混凝土溝渠。這些不是普通的排水溝。一年中大部分時間，它們將安第斯山脈的融雪水引導到沿途種植的樹木進行灌溉。這是該地區水資源管理挑戰的一個簡單而聰明的解決方案。</div>
@@ -138,6 +127,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
+        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Hailstones in Mendoza can reach the size of tennis balls, causing massive damage to vehicles. Locals have a simple but effective solution: every person keeps a heavy blanket in their car specifically to throw over it during a hailstorm. This practical approach reflects the resilience and resourcefulness of the people living in this extreme climate.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Mendoza的冰雹可以達到網球大小，對車輛造成嚴重損壞。當地人有一個簡單但有效的解決方案：每個人在車上都備有一條厚毯子，專門在冰雹風暴時用來蓋住車子。這種實用的方法反映了生活在這種極端氣候中的人們的韌性和智慧。</div>
@@ -149,107 +139,104 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
+        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">Mendoza is South America&#39;s wine capital, particularly famous for Malbec. The video promises to explore the region&#39;s wineries and the tradition of Asado, Argentina&#39;s iconic barbecue. Despite the dramatic weather, Mendoza&#39;s reputation as a world-class wine destination and its stunning Andean backdrop make it a must-visit location for travelers to Argentina.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">Mendoza是南美洲的葡萄酒首都，尤其以Malbec聞名。影片承諾探索該地區的酒莊和Asado（阿根廷標誌性烤肉）的傳統。儘管天氣戲劇化，Mendoza作為世界級葡萄酒目的地的聲譽和壯麗的安第斯山脈背景，使其成為前往阿根廷的旅客必訪的地點。</div>
       </div>
     </div>
-  </div>
-  <div id="section-collocations" class="section">
-    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
-    <div class="section-sub">點選搭配詞展開完整內容</div>
+</div>
+<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. world&#39;s driest spots</span>
+        <span class="acc-label">1. world&#39;s driest spots <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">世界上最乾燥的地方之一</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Mendoza is one of Argentina&#39;s driest spots with only 8 inches of rain a year."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Mendoza is one of Argentina&#39;s driest spots with only 8 inches of rain a year." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex1')">🔊</span></div>
         <div class="collo-practice">The Atacama Desert is one of the ______ on Earth.<br><span class="collo-answer" id="ca1">world&#39;s driest spots</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. at the foot of</span>
+        <span class="acc-label">2. at the foot of <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">在...的山腳下</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Mendoza sits at the foot of the Andes mountains."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Mendoza sits at the foot of the Andes mountains." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex2')">🔊</span></div>
         <div class="collo-practice">The village is located ______ the volcano.<br><span class="collo-answer" id="ca2">at the foot of</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. global hotspot for</span>
+        <span class="acc-label">3. global hotspot for <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">全球...的熱點地區</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Mendoza is a global hotspot for severe hailstorms."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Mendoza is a global hotspot for severe hailstorms." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex3')">🔊</span></div>
         <div class="collo-practice">The city is a ______ street art and graffiti.<br><span class="collo-answer" id="ca3">global hotspot for</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. reach the size of</span>
+        <span class="acc-label">4. reach the size of <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">達到...的大小</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Hailstones can reach the size of tennis balls."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Hailstones can reach the size of tennis balls." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex4')">🔊</span></div>
         <div class="collo-practice">The snowflakes ______ golf balls during the storm.<br><span class="collo-answer" id="ca4">reached the size of</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. massive damage</span>
+        <span class="acc-label">5. massive damage <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">巨大損害</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Hailstones cause massive damage to vehicles."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Hailstones cause massive damage to vehicles." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex5')">🔊</span></div>
         <div class="collo-practice">The earthquake caused ______ to buildings across the city.<br><span class="collo-answer" id="ca5">massive damage</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. throw over (a blanket)</span>
+        <span class="acc-label">6. throw over (a blanket) <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">用毯子蓋住</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Locals keep a blanket in their car to throw over it during a hailstorm."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Locals keep a blanket in their car to throw over it during a hailstorm." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex6')">🔊</span></div>
         <div class="collo-practice">When it started to hail, I grabbed a blanket to ______ the windshield.<br><span class="collo-answer" id="ca6">throw over</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. simple solution</span>
+        <span class="acc-label">7. simple solution <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">簡單的解決方案</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Locals have a simple solution — keep a blanket in your car."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Locals have a simple solution — keep a blanket in your car." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex7')">🔊</span></div>
         <div class="collo-practice">There&#39;s a ______ to this problem: just unplug and restart the device.<br><span class="collo-answer" id="ca7">simple solution</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. water from snowmelt</span>
+        <span class="acc-label">8. water from snowmelt <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">融雪水</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The trenches carry water from the Andes snowmelt to irrigate trees."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The trenches carry water from the Andes snowmelt to irrigate trees." <span class="collo-play-sm" onclick="playAudio('gK8KeV3atMs','ex8')">🔊</span></div>
         <div class="collo-practice">Farmers rely on ______ to irrigate their crops in the spring.<br><span class="collo-answer" id="ca8">water from snowmelt</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-grammar" class="section">
-    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
-    <div class="section-sub">點選文法點展開說明</div>
+</div>
+<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Cause and Effect: &#39;makes it&#39; + result</span>
@@ -284,10 +271,8 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="grammar-practice">用現在簡單式描述你所在城市的氣候特徵。<br><span class="grammar-answer" id="ga2">&#39;The average temperature in my city reaches 35°C in summer and drops to 10°C in winter.&#39;</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-patterns" class="section">
-    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
-    <div class="section-sub">點選句型展開範例與練習</div>
+</div>
+<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">To cross [geography], you can [option A] or [option B]</span>
@@ -324,26 +309,20 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
         <div class="pattern-practice">用這個句型引導觀察一個有趣的細節。<br><span class="pattern-answer" id="pa3">Look closely at the building&#39;s entrance and you&#39;ll notice tiny carvings on the stone pillars.</span></div>
       </div>
     </div>
-  </div>
-  <div id="section-quiz" class="section">
-    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
-    <div class="section-sub">點選答案即時對答</div>
-    <div id="quizContainer"></div>
-  </div>
-  <div class="footer">
-    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
-    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
-  </div>
+</div>
+<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
+<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "How did Tresa and Zarko travel from Santiago to Mendoza?", "choices": ["By bus", "By car", "By a one-hour flight", "By train"], "answer": 2, "explain": "They chose the 1-hour flight from Santiago to Mendoza to avoid risky mountain passes."},{"q": "How much rain does Mendoza get per year?", "choices": ["8 inches", "20 inches", "40 inches", "80 inches"], "answer": 0, "explain": "Mendoza is a desert with only 8 inches of rain per year."},{"q": "What size can hailstones reach in Mendoza?", "choices": ["Pea-sized", "Marble-sized", "Tennis ball-sized", "Grapefruit-sized"], "answer": 2, "explain": "Hailstones can reach the size of tennis balls, causing massive damage to vehicles."},{"q": "What do locals use to protect their cars during hailstorms?", "choices": ["Car covers", "Heavy blankets", "Umbrellas", "Garages"], "answer": 1, "explain": "Every person here keeps a heavy blanket in their car to throw over it during a hailstorm."},{"q": "What is Mendoza best known for according to the video?", "choices": ["Beaches and surfing", "Wineries and Malbec wine", "Ski resorts", "Ancient ruins"], "answer": 1, "explain": "Mendoza is South America's wine capital, home for Malbec and Asado."}];
-var quizState = [];
-function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
+var quizState=[];
+function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()}
 renderQuiz();
 </script>
 </body>

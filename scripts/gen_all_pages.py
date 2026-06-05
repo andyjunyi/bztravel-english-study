@@ -59,6 +59,7 @@ def gen_html(v):
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p{i+1}">
+        <div class="acc-audio"><audio src="../audio/{vid}/p{i+1}.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
         <div class="para-en">{en_text}</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">{zh_text}</div>
@@ -74,12 +75,12 @@ def gen_html(v):
         answer = esc(c.get("practice_answer",""))
         collos.append(f'''    <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c{i+1}')">
-        <span class="acc-label">{i+1}. {phrase}</span>
+        <span class="acc-label">{i+1}. {phrase} <span class="collo-play" onclick="event.stopPropagation();playAudio('{vid}','collo{i+1}')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c{i+1}">
         <div class="collo-meaning">{meaning}</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"{example}"</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"{example}" <span class="collo-play-sm" onclick="playAudio('{vid}','ex{i+1}')">🔊</span></div>
         <div class="collo-practice">{practice}<br><span class="collo-answer" id="ca{i+1}">{answer}</span></div>
       </div>
     </div>''')
@@ -140,7 +141,8 @@ def gen_html(v):
     quiz_js = gen_quiz_js(v["quiz"])
     
     # JS core (minimal inline to avoid f-string conflicts)
-    js_core = '''function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+    js_core = '''var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \\u663e\\u793a\\u4e2d\\u6587\\u7ffb\\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \\u9690\\u85cf\\u4e2d\\u6587\\u7ffb\\u8bd1';}}'''
     
     html = '''<!DOCTYPE html>
@@ -197,6 +199,12 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
 .quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
