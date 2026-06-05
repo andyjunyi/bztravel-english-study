@@ -93,6 +93,21 @@ body{
 .collo-example{font-size:13px;color:#334155;background:#f8fafc;padding:8px 10px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
 .collo-practice{font-size:13px;color:#92400e;background:#fffbeb;padding:8px 10px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-play,.collo-play-sm{
+  display:inline-flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .2s;border-radius:50%;
+  flex-shrink:0;
+}
+.collo-play{
+  width:28px;height:28px;font-size:14px;background:rgba(30,64,175,.1);
+  vertical-align:middle;margin-left:4px;
+}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{
+  width:24px;height:24px;font-size:12px;background:rgba(16,185,129,.1);
+  vertical-align:middle;margin-left:3px;
+}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .collo-practice .collo-show-answer{
   color:#1e40af;font-weight:700;cursor:pointer;border-bottom:2px dashed #3b82f6;
 }
@@ -274,96 +289,96 @@ body{
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. leave someone speechless</span>
+        <span class="acc-label">1. leave someone speechless <span class="collo-play" onclick="event.stopPropagation();playCollo('collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">讓某人說不出話來（震驚到無法言語）</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"There are places in this world that silence you the moment you arrive."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"There are places in this world that silence you the moment you arrive." <span class="collo-play-sm" onclick="playCollo('ex1')">🔊</span></div>
         <div class="collo-practice">✏️ The view from the mountaintop ______ (讓我們說不出話).<br><span class="collo-answer" id="ca1">✅ left us speechless</span></div>
       </div>
     </div>
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. sheer overwhelming scale</span>
+        <span class="acc-label">2. sheer overwhelming scale <span class="collo-play" onclick="event.stopPropagation();playCollo('collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">壓倒性的規模；極其龐大的尺度</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The biggest surprise was the sheer overwhelming scale of it all."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The biggest surprise was the sheer overwhelming scale of it all." <span class="collo-play-sm" onclick="playCollo('ex2')">🔊</span></div>
         <div class="collo-practice">✏️ Visitors are shocked by the ______ (龐大規模) of the Grand Canyon.<br><span class="collo-answer" id="ca2">✅ sheer scale</span></div>
       </div>
     </div>
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. as far as the eye can see</span>
+        <span class="acc-label">3. as far as the eye can see <span class="collo-play" onclick="event.stopPropagation();playCollo('collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">一望無際；視線所及之處</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"275 individual falls scattered across the jungle as far as the eye could see."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"275 individual falls scattered across the jungle as far as the eye could see." <span class="collo-play-sm" onclick="playCollo('ex3')">🔊</span></div>
         <div class="collo-practice">✏️ The desert stretched out ______ (一望無際).<br><span class="collo-answer" id="ca3">✅ as far as the eye could see</span></div>
       </div>
     </div>
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. pressing in from every side</span>
+        <span class="acc-label">4. pressing in from every side <span class="collo-play" onclick="event.stopPropagation();playCollo('collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">從四面八方逼近／湧來</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The jungle pressing in, water moving fast beneath your feet."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The jungle pressing in, water moving fast beneath your feet." <span class="collo-play-sm" onclick="playCollo('ex4')">🔊</span></div>
         <div class="collo-practice">✏️ The crowd was ______ (從四面八方湧來).<br><span class="collo-answer" id="ca4">✅ pressing in from every side</span></div>
       </div>
     </div>
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. borders on frightening</span>
+        <span class="acc-label">5. borders on frightening <span class="collo-play" onclick="event.stopPropagation();playCollo('collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">近乎令人害怕</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The roar is raw, deafening, alive in a way that borders on frightening."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The roar is raw, deafening, alive in a way that borders on frightening." <span class="collo-play-sm" onclick="playCollo('ex5')">🔊</span></div>
         <div class="collo-practice">✏️ His obsession with perfection ______ (近乎病態).<br><span class="collo-answer" id="ca5">✅ borders on unhealthy</span></div>
       </div>
     </div>
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. beyond description</span>
+        <span class="acc-label">6. beyond description <span class="collo-play" onclick="event.stopPropagation();playCollo('collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">難以形容</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"Some things exist beyond description. This is one of them."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"Some things exist beyond description. This is one of them." <span class="collo-play-sm" onclick="playCollo('ex6')">🔊</span></div>
         <div class="collo-practice">✏️ The beauty of the sunset was ______ (難以形容).<br><span class="collo-answer" id="ca6">✅ beyond description</span></div>
       </div>
     </div>
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. hammer against</span>
+        <span class="acc-label">7. hammer against <span class="collo-play" onclick="event.stopPropagation();playCollo('collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">猛烈衝擊；猛力撞擊</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The boat hammers against the current at full speed."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"The boat hammers against the current at full speed." <span class="collo-play-sm" onclick="playCollo('ex7')">🔊</span></div>
         <div class="collo-practice">✏️ Waves ______ (猛烈拍打) the rocky shore during the storm.<br><span class="collo-answer" id="ca7">✅ hammered against</span></div>
       </div>
     </div>
 
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. hit like a wall</span>
+        <span class="acc-label">8. hit like a wall <span class="collo-play" onclick="event.stopPropagation();playCollo('collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">像牆一樣迎面襲來</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>"Noise, white water, cold, hitting like a wall."</div>
+        <div class="collo-example"><span class="label">📌 文中例句</span><br>"Noise, white water, cold, hitting like a wall." <span class="collo-play-sm" onclick="playCollo('ex8')">🔊</span></div>
         <div class="collo-practice">✏️ When he walked outside, the heat ______ (像牆一樣襲來).<br><span class="collo-answer" id="ca8">✅ hit him like a wall</span></div>
       </div>
     </div>
@@ -564,6 +579,14 @@ function toggleZh(btn) {
     zh.style.display = 'block';
     btn.innerHTML = '📕 隱藏中文翻譯';
   }
+}
+
+// ===== COLLOCATION AUDIO PLAYER =====
+var colloAudio = null;
+function playCollo(name) {
+  if (colloAudio) { colloAudio.pause(); colloAudio.currentTime = 0; }
+  colloAudio = new Audio('../audio/iguazu/' + name + '.mp3');
+  colloAudio.play();
 }
 
 // ===== QUIZ =====
