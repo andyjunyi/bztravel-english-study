@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Okavango Delta: Is It Overhyped? — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>Okavango Delta: Is It Overhyped?</h1>
+  <div class="sub">波札那</div>
+  <div class="header-meta">
+    <span>16:50</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/mleW-igGD2k" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. The Question Everyone Asks</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">The title of this video asks a bold question: Is the Okavango Delta overhyped or the real deal? The travelers promise to share it raw — the amazing, the beautiful, and yes, even the disappointing. Flying camp to camp across Botswana, they land at Kugana, their second stop, right in the heart of the Okavango Delta. A safari in Botswana costs plenty, and the reason is simple: the only real way between camps is flying, which keeps the experience exclusive and expensive.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">這部影片的標題提出了一個大膽的問題：奧卡萬戈三角洲是被過度吹捧，還是貨真價實？旅行者們承諾真實呈現——驚人的、美麗的，甚至令人失望的部分。他們搭乘飛機在波札那的各個營地之間移動，抵達第二站庫加納，位於奧卡萬戈三角洲的心臟地帶。波札那的 safari 價格不菲，原因很簡單：往來營地的唯一方式是飛行，這使得體驗既獨特又昂貴。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. The Arrival at Kugana</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">Arriving at Kugana involves a scenic boat transfer from the airstrip. The Okavango Delta is reachable only by light aircraft or boat, which adds to its mystique. The lodge is stunning, blending seamlessly with the natural surroundings. From every angle, the delta reveals itself as an intricate network of waterways, islands, and floodplains. The sense of isolation is profound — there are no roads, no cities, just wilderness stretching endlessly in every direction.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">抵達庫加納需要從簡易機場乘坐風景優美的船隻接駁。奧卡萬戈三角洲只能通過輕型飛機或船隻到達，這增添了它的神秘感。營地令人驚嘆，與自然環境完美融合。從每個角度看，三角洲都是一個由水道、島嶼和洪泛區組成的複雜網絡。那種與世隔絕的感覺非常強烈——沒有道路、沒有城市，只有無邊無際的荒野向四面八方延伸。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. The Beauty and the Challenges</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">The landscape of the Okavango Delta is undeniably breathtaking. Waterways snake through seasonal floodplains, forests brush up against savannah, and the reflections in the water create scenes that look more like paintings than reality. However, the travelers also experience some disappointing moments. The flood season is higher than usual this year, meaning the animals are more spread out. Sightings are not as concentrated as expected, and sometimes they drive for long stretches without seeing much.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">奧卡萬戈三角洲的景色無可否認地令人屏息。水道蜿蜒穿過季節性洪泛區，森林與稀樹草原交錯，水中的倒影創造出看起來更像是畫作而非現實的場景。然而，旅行者們也經歷了一些令人失望的時刻。今年的洪水季節比往常更高，意味著動物更加分散。目擊動物不如預期的那樣集中，有時候他們開車很長一段時間也看不到太多東西。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. The Dining Experience Falls Short</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">One specific letdown comes at mealtime. At a luxury camp that charges premium rates, the travelers expect exceptional food. But for a high-end resort, the meals do not live up to expectations. As one traveler puts it, luxury should taste as good as it looks. This honest critique underscores the theme of the video: the Okavango Delta is spectacular, but it is also expensive, and not every aspect delivers on the promise of perfection.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">一個具體的失望發生在用餐時間。在一個收費高昂的豪華營地，旅行者們期待著非凡的食物。但對於一個高級度假村來說，餐點沒有達到預期。正如一位旅行者所說，奢華的味道應該和它的外表一樣好。這個誠實的批評凸顯了影片的主題：奧卡萬戈三角洲壯麗非凡，但也價格昂貴，並非每個方面都達到了完美的承諾。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. The Verdict: Real Deal or Overhyped?</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">By the end, the verdict is nuanced. The Okavango Delta is absolutely the real deal when it comes to landscape and uniqueness. There is simply nowhere else on Earth like it. However, the experience comes with caveats: it is extremely expensive, wildlife sightings depend heavily on seasonal factors, and some luxury aspects may fall short of expectations. For those who can afford it and manage their expectations, the Okavango remains one of the world&#39;s great natural wonders.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">到了最後，結論是複雜的。就景觀和獨特性而言，奧卡萬戈三角洲絕對是貨真價實的。地球上沒有任何其他地方能與之相比。然而，這種體驗有其前提：價格極其昂貴，野生動物目擊與季節因素密切相關，有些高端服務可能不如預期。對於那些能夠承擔費用並管理好期望的人來說，奧卡萬戈仍然是世界上最偉大的自然奇觀之一。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. overhyped or the real deal</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">被過度吹捧還是貨真價實</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Okavango Delta: Overhyped or the real deal?"</div>
+        <div class="collo-practice">Many travelers wonder if popular destinations are ______ (被過度吹捧還是貨真價實).<br><span class="collo-answer" id="ca1">overhyped or the real deal</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. costs plenty</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">價格不菲</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"A safari in Botswana costs plenty."</div>
+        <div class="collo-practice">A trip to the Maldives ______ (價格不菲), but it&#39;s worth it.<br><span class="collo-answer" id="ca2">costs plenty</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. blend seamlessly with</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">與...完美融合</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The lodge blends seamlessly with the natural surroundings."</div>
+        <div class="collo-practice">The modern architecture ______ (與歷史街區完美融合).<br><span class="collo-answer" id="ca3">blends seamlessly with the historic neighborhood</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. live up to expectations</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">達到期望；不負眾望</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The meals did not live up to expectations."</div>
+        <div class="collo-practice">The highly anticipated movie ______ (未能達到期望).<br><span class="collo-answer" id="ca4">did not live up to expectations</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. comes with caveats</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">帶有前提條件/注意事項</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The experience comes with caveats: it is expensive and seasonal."</div>
+        <div class="collo-practice">The investment opportunity ______ (帶有重要的注意事項).<br><span class="collo-answer" id="ca5">comes with important caveats</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. fall short of expectations</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">未達預期</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Some luxury aspects may fall short of expectations."</div>
+        <div class="collo-practice">The service at the hotel ______ (未達預期).<br><span class="collo-answer" id="ca6">fell short of our expectations</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. manage expectations</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">管理期望；調節心理預期</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"For those who manage their expectations, it remains a wonder."</div>
+        <div class="collo-practice">It&#39;s important to ______ (管理期望) when traveling to popular destinations.<br><span class="collo-answer" id="ca7">manage expectations</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. nuanced verdict</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">複雜的結論；非黑即白的判斷</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"By the end, the verdict is nuanced."</div>
+        <div class="collo-practice">The review gave a ______ (複雜的結論) rather than a simple yes or no.<br><span class="collo-answer" id="ca8">nuanced verdict</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">讓步與轉折 — though/but/yet 的用法</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">英語中常用轉折詞來表達對比或讓步。&#39;Yet&#39; 和 &#39;but&#39; 可以引出與前面句子相反的事實，讓評斷更加平衡公正。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">The Okavango Delta is spectacular, but it is also expensive, and not every aspect delivers on the promise of perfection.</div>
+            <div class="ge-analysis">→ &#39;但也是&#39;（but it is also）引出了對立面
+→ 先肯定再轉折，讓觀點更全面平衡</div>
+            <div class="ge-pattern">[肯定], but [否定/限制] → &quot;雖然...但是...&quot;（平衡觀點）</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">The Okavango Delta is absolutely the real deal when it comes to landscape and uniqueness.</div>
+            <div class="ge-analysis">→ &#39;when it comes to&#39; = 當談到...時
+→ 用於在特定方面做出評斷</div>
+            <div class="ge-pattern">When it comes to [主題], S + V → &quot;談到...時...&quot;</div>
+          </div></div>
+        <div class="grammar-practice">The hotel was beautiful, ______ (但是服務未達預期).<br><span class="grammar-answer" id="ga1">but the service did not live up to expectations</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">條件句 — For those who...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">&#39;For those who...&#39; 是一個常用的條件修辭，用來限定理論的適用範圍。後面接的句子是對特定人群的建議或評價。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">For those who can afford it and manage their expectations, the Okavango remains one of the world&#39;s great natural wonders.</div>
+            <div class="ge-analysis">→ &#39;For those who...&#39; = 對於那些...的人來說
+→ 限定條件使評斷更加精準</div>
+            <div class="ge-pattern">For those who + V, S + V → &quot;對於那些...的人來說...&quot;</div>
+          </div></div>
+        <div class="grammar-practice">______ (對於那些喜歡冒險的人來說), this trail is perfect.<br><span class="grammar-answer" id="ga2">For those who love adventure</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">The question everyone asks: Is [X] overhyped or the real deal?</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">每個人都想問的問題：X被過度吹捧還是貨真價實？（懸念式開頭）</div>
+        <div class="pattern-example">Is the Okavango Delta overhyped or the real deal?</div>
+        <div class="pattern-template">The question everyone asks: Is [目的地] overhyped or the real deal?</div>
+        <div class="pattern-practice">The question everyone asks: ______ (威尼斯是被過譽還是真的值得一訪？)<br><span class="pattern-answer" id="pa1">Is Venice overhyped or the real deal?</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">[X] is simply [描述] when it comes to [主題]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">在...方面，X 簡直就是...（限定範圍的強烈讚美）</div>
+        <div class="pattern-example">The Okavango Delta is absolutely the real deal when it comes to landscape and uniqueness.</div>
+        <div class="pattern-template">[主詞] is absolutely [形容詞] when it comes to [主題].</div>
+        <div class="pattern-practice">This restaurant is absolutely the best ______ (當談到海鮮時).<br><span class="pattern-answer" id="pa2">when it comes to seafood</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">There is simply nowhere else on Earth like [X]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">地球上沒有其他地方像X一樣（極致獨特性）</div>
+        <div class="pattern-example">There is simply nowhere else on Earth like it.</div>
+        <div class="pattern-template">There is simply nowhere else on Earth like [名詞].</div>
+        <div class="pattern-practice">There is simply nowhere else on Earth like ______ (這個隱藏在山中的小村莊).<br><span class="pattern-answer" id="pa3">this hidden village in the mountains</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">[A] is undeniably [adj], but [B]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">A無可否認是adj，但B（先肯定後轉折的平衡結構）</div>
+        <div class="pattern-example">The landscape of the Okavango Delta is undeniably breathtaking, but some aspects fall short.</div>
+        <div class="pattern-template">[優點] is undeniably [形容詞], but [缺點/限制].</div>
+        <div class="pattern-practice">The hotel is undeniably luxurious, ______ (但價格對大多數人來說太高了).<br><span class="pattern-answer" id="pa4"></span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "What is the central question of this video?", "choices": ["How to get to the Okavango Delta cheaply", "Whether the Okavango Delta is overhyped or worth visiting", "What animals can be seen in the Okavango Delta", "Which is the best camp in the Okavango Delta"], "answer": 1, "explain": "The video title is 'Okavango Delta: Is It Overhyped?' and the narrator starts by saying: 'Okavango Delta. Overhyped or the real deal? Watch it till the end.' The entire video is framed as an honest assessment."},{"q": "Why does a safari in Botswana cost so much according to the video?", "choices": ["The government charges high taxes on tourists", "The only way to travel between camps is by expensive bush planes", "All food must be imported from Europe", "There are only a few luxury camps with limited availability"], "answer": 1, "explain": "The narrator explains: 'A safari in Botswana costs plenty. And the reason, well, the only real way between camps is flying.' This makes the experience exclusive and expensive."},{"q": "What specific complaint do the travelers have about the luxury camp?", "choices": ["The tents are uncomfortable", "The guides are inexperienced", "The food does not match the high price or the luxury setting", "The water is unsafe to drink"], "answer": 2, "explain": "The narrator states: 'For a luxury resort, it shouldn't be this weak. Luxury should taste as good as it looks.' This indicates the food fell short of expectations for a premium-priced camp."},{"q": "What seasonal factor affects wildlife sightings in this video?", "choices": ["It is the dry season, so animals gather at water sources", "The flood season is higher than usual, spreading animals out", "It is winter, so most animals have migrated", "There is a drought, so few animals remain"], "answer": 1, "explain": "The narrator mentions: 'the floods are higher this year, so sightings aren't as good as usual.' Higher flood waters mean animals are more dispersed across the delta rather than concentrated."},{"q": "What is the final verdict on the Okavango Delta?", "choices": ["It is completely overhyped and not worth visiting", "It is absolutely perfect in every way", "It is genuinely spectacular but expensive and seasonal — a nuanced verdict", "It is only worth visiting during the flood season"], "answer": 2, "explain": "The verdict is nuanced: the landscape is 'absolutely the real deal' but 'comes with caveats' — it is expensive, sightings depend on season, and some luxury aspects may disappoint. This balanced assessment is the essence of the video."}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

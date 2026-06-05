@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Lucerne to Interlaken: Switzerland's Panoramic Train — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>Lucerne to Interlaken: Switzerland's Panoramic Train</h1>
+  <div class="sub">瑞士</div>
+  <div class="header-meta">
+    <span>10:16</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/3v6-o7aWXpc" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. Switzerland&#39;s Train Adventure Begins</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Switzerland is a country that seems too perfect to be real. When the travelers arrive in Lucerne, they are immediately struck by the beauty of the city. The mountains pose majestically in the distance, the lake catches the light just right, and everything feels balanced and polished. Lucerne looks like it was made for travel brochures — calm, clean, and so naturally beautiful that even the best photographs cannot fully capture how impressive it is in person. This is the starting point of their panoramic train adventure across Switzerland, a journey meant to test whether the country truly deserves its perfect reputation.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">瑞士是一個看似完美到不真實的國家。當旅行者抵達琉森時，他們立刻被這座城市的美麗所震撼。群山雄偉地矗立在遠方，湖泊恰到好處地捕捉光線，一切都感覺平衡而精緻。琉森看起來就像是為旅遊手冊而生的——寧靜、潔淨，自然美景即使是最佳照片也無法完全捕捉到親眼所見時的震撼。這是他們穿越瑞士的全景火車之旅的起點，旨在測試這個國家是否真正配得上它的完美聲譽。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. Exploring Lucerne&#39;s Old Town</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">The old town of Lucerne is walkable and every site is within easy reach. The weather is perfect as they wander around, taking in the sights. The Lion Monument hits them harder than expected — a dying lion carved into the rock, pierced by a spear, commemorating the Swiss guards massacred during the French Revolution. There are fountains everywhere, and locals fill their bottles straight from the crisp mountain waters. Switzerland takes chocolate seriously, and the average Swiss consumes 11 kilograms a year. Walking around, the travelers wonder what makes this small mountain country so special.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">琉森老城區適合步行，每個景點都近在咫尺。天氣完美，他們四處漫步，欣賞風景。獅子紀念碑帶來的衝擊比預期更強烈——一隻垂死的獅子雕刻在岩石上，被長矛刺穿，紀念在法國大革命期間被屠殺的瑞士衛兵。到處都是噴泉，當地人直接將瓶子裝滿清涼的山泉水。瑞士非常重視巧克力，瑞士人平均每年消耗11公斤。四處走動時，旅行者們思考著這個小山國究竟有何特別之處。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. The Iconic Chapel Bridge</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">The Chapel Bridge steals the spotlight in Lucerne. Stretching 170 meters across the river, it was built back in 1333 as part of the city&#39;s defenses. The bridge burned in 1993 due to a careless cigarette, but the Swiss rebuilt it perfectly. Now it is covered in flowers, and over a million people cross it each year. The bridge once displayed 111 painted panels depicting saints and battles — Lucerne&#39;s past told in triangles of wood. Thirty of them survived the fire, while a hundred recreated paintings keep alive a time when bridges taught history to those who could not read.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">教堂橋是琉森的焦點所在。這座橋橫跨河流170公尺，建於1333年，是城市防禦系統的一部分。1993年，一根隨意丟棄的香菸引發火災，但瑞士人將其完美重建。如今橋上覆蓋著鮮花，每年有超過一百萬人從橋上走過。這座橋曾經展示111幅描繪聖人和戰爭的畫板——用三角形的木片講述琉森的歷史。其中三十幅在火災中倖存下來，而一百幅重建的畫作延續了橋樑為不識字的人們傳授歷史的時代。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. Riding the Panoramic Train</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">The train ride from Lucerne to Interlaken is nothing short of spectacular. It winds along lakes and climbs toward the Brun Pass, with water mirroring the sky and mountains so perfectly that it is hard to tell which way is up. Morning mist floats above meadows, cows are scattered below like lazy punctuation marks, and every view feels painted. The train climbs a 25 percent gradient, leaning on its rack and pinion grip, crawling towards the Brun Tunnel — hand dug by 1,200 men. It is a masterpiece of muscle, steel, and stubborn Swiss ambition.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">從琉森到因特拉肯的火車之旅壯麗無比。火車沿著湖泊蜿蜒行駛，向布倫山口攀登，水面完美地倒映著天空和山巒，讓人難以分辨上下。晨霧漂浮在草地上方，牛群散落在下方，像懶惰的標點符號，每個視角都像畫作一般。火車以25%的坡度攀爬，依靠齒軌系統抓緊軌道，緩緩駛向布倫隧道——由1,200名工人手工挖掘而成。這是肌肉、鋼鐵和頑強的瑞士雄心的傑作。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. Switzerland: A Curated Paradise</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">The landscape of Switzerland seems curated rather than natural. The meadows look more like golf courses than farmlands; farmhouses are perfectly situated, beautifully painted and tidy. There is no garbage, no weeds, not a fence out of line. The pristine, postcard-perfect look is intentional — the whole country feels landscaped, trimmed, and polished. It is a model of order, cleanliness, and precision. After the pass, the train dives into emerald valleys and rolls into Interlaken — one journey down, five more rides to go. Switzerland&#39;s hype, it turns out, is well deserved.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">瑞士的景觀與其說是自然的，不如說是經過精心策劃的。草地看起來更像是高爾夫球場而非農田；農舍位置絕佳，油漆精美，整潔有序。沒有垃圾，沒有雜草，沒有一道籬笆歪斜。這種一塵不染、明信片般完美的外觀是刻意的——整個國家都經過景觀設計、修剪和打磨。這是秩序、整潔和精確的典範。越過山口後，火車駛入翡翠般的山谷，抵達因特拉肯——一段旅程完成，還有五段旅程等待著他們。瑞士的盛名，事實證明，是實至名歸的。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. clockwork perfection</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">像鐘錶一樣完美精準</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Swiss trains are clockwork perfection."</div>
+        <div class="collo-practice">The service at this hotel runs with ______ (像鐘錶一樣完美).<br><span class="collo-answer" id="ca1">clockwork perfection</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. steal the spotlight</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">搶盡風頭；成為焦點</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Chapel Bridge steals the spotlight in Lucerne."</div>
+        <div class="collo-practice">The Eiffel Tower ______ (搶盡風頭) in Paris.<br><span class="collo-answer" id="ca2">steals the spotlight</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. nothing short of spectacular</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">極其壯觀；不折不扣的精彩</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The train ride is nothing short of spectacular."</div>
+        <div class="collo-practice">The sunset over the ocean was ______ (極其壯觀).<br><span class="collo-answer" id="ca3">nothing short of spectacular</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. hard to tell which way is up</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">難以分辨上下；令人迷失方向</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s hard to tell which way is up when the water mirrors the sky."</div>
+        <div class="collo-practice">In the mirrored room, it was ______ (難以分辨方向).<br><span class="collo-answer" id="ca4">hard to tell which way was up</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. carved into the rock</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">雕刻在岩石中</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Lion Monument is a dying lion carved into the rock."</div>
+        <div class="collo-practice">The ancient temple was ______ (雕刻在岩石中).<br><span class="collo-answer" id="ca5">carved into the rock</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. postcard-perfect</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">明信片般完美的</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The pristine postcard-perfect look is intentional."</div>
+        <div class="collo-practice">The coastal village was absolutely ______ (明信片般完美).<br><span class="collo-answer" id="ca6">postcard-perfect</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. hand dug</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">手工挖掘的</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Brun Tunnel was hand dug by 1,200 men."</div>
+        <div class="collo-practice">The ancient well was ______ (手工挖掘的) centuries ago.<br><span class="collo-answer" id="ca7">hand dug</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. not a fence out of line</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">井然有序；沒有任何東西出錯</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"There&#39;s no garbage, no weeds, not a fence out of line."</div>
+        <div class="collo-practice">The garden was perfectly maintained, ______ (井然有序).<br><span class="collo-answer" id="ca8">not a fence out of line</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">such...that 結構 — 表達「如此...以至於」</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">使用 &#39;such + (a/an) + 形容詞 + 名詞 + that...&#39; 的句型可以強調某種程度導致特定的結果。這個結構在描述極致感受時非常實用。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">It&#39;s calm, polished, and so naturally beautiful that even the best photos don&#39;t quite capture how impressive it is in person.</div>
+            <div class="ge-analysis">→ &#39;so naturally beautiful that...&#39; = 如此自然美麗以至於...
+→ &#39;so + adj + that&#39; 是常見的因果強調句型</div>
+            <div class="ge-pattern">so + 形容詞 + that + 子句 → &quot;如此...以至於...&quot;</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">Lucerne looks like it was made for travel brochures.</div>
+            <div class="ge-analysis">→ &#39;looks like it was made for...&#39; = 看起來像是為了...而生的
+→ 比喻性的表達方式，強調完美合適</div>
+            <div class="ge-pattern">look like + S + was made for + N → &quot;看起來像是為...量身打造的&quot;</div>
+          </div></div>
+        <div class="grammar-practice">The view was ______ (如此壯麗以至於) we couldn&#39;t stop staring.<br><span class="grammar-answer" id="ga1">so breathtaking that</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">否定比較級 — No/Nothing 開頭的強調句</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">用否定詞開頭加上比較級，可以製造出最高級的強調效果。例如 &#39;Nothing could...&#39; 比 &#39;It was very...&#39; 更有力量。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">It&#39;s impossible not to stop and stare.</div>
+            <div class="ge-analysis">→ &#39;impossible not to&#39; = 不可能不... → 雙重否定表示強烈肯定
+→ 比直接說 &#39;You must stop and stare&#39; 更有感染力</div>
+            <div class="ge-pattern">It&#39;s impossible not to + V → &quot;不可能不...；一定會...&quot;</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">Even the best photos don&#39;t quite capture how impressive it is.</div>
+            <div class="ge-analysis">→ &#39;don&#39;t quite capture&#39; = 無法完全捕捉
+→ &#39;not quite&#39; 是委婉的否定，比 &#39;can&#39;t&#39; 更優雅</div>
+            <div class="ge-pattern">Even + 名詞 + don&#39;t quite + V → &quot;即使...也無法完全...&quot;</div>
+          </div></div>
+        <div class="grammar-practice">It&#39;s ______ (不可能不愛上) this charming little town.<br><span class="grammar-answer" id="ga2">impossible not to fall in love with</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g3')">
+        <span class="acc-label">分詞構句表伴隨狀態</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g3">
+        <div class="grammar-explain">分詞構句可以將兩個相關的動作合併成一句，讓描述更加流暢優雅。當主詞相同時，附屬動詞改為 V-ing 形式。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">We&#39;re wandering around and we&#39;re having a great time.</div>
+            <div class="ge-analysis">→ 兩個並列句用 &#39;and&#39; 連接
+→ 可以改為：Wandering around, we&#39;re having a great time.</div>
+            <div class="ge-pattern">V-ing + O, S + V → &quot;一邊...一邊...&quot; 的伴隨狀態</div>
+          </div></div>
+        <div class="grammar-practice">______ (沿著湖邊漫步), we enjoyed the beautiful sunset.<br><span class="grammar-answer" id="ga3">Walking along the lake / Strolling along the lake</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">Switzerland is a country that + V...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">瑞士是一個...的國家（下定義式的開場句）</div>
+        <div class="pattern-example">Switzerland is a country that seems too perfect to be real.</div>
+        <div class="pattern-template">[國家/地方] is a [名詞] that [描述].</div>
+        <div class="pattern-practice">Japan is a country ______ (讓每次造訪都像一場冒險的國家).<br><span class="pattern-answer" id="pa1">that makes every visit feel like an adventure</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">It&#39;s hard to believe that + S + V...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">很難相信...（表達驚嘆之情）</div>
+        <div class="pattern-example">It&#39;s hard to believe that this exists in the middle of nowhere.</div>
+        <div class="pattern-template">It&#39;s hard to believe that [令人驚訝的事實].</div>
+        <div class="pattern-practice">It&#39;s hard to believe that ______ (如此美麗的地方竟然真實存在).<br><span class="pattern-answer" id="pa2">such a beautiful place actually exists</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">[地點] feels like + N... / looks like + N...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">某地感覺像/看起來像...（比喻式描寫）</div>
+        <div class="pattern-example">Lucern feels staged like someone painted it and forgot to stop.</div>
+        <div class="pattern-template">[地點] feels/looks like [比喻的對象].</div>
+        <div class="pattern-practice">The old town ______ (感覺像穿越回了中世紀).<br><span class="pattern-answer" id="pa3">feels like stepping back into the Middle Ages</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">Every [N] feels + 形容詞...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">每一個...都感覺...（強調整體品質一致）</div>
+        <div class="pattern-example">Every view feels painted, every reflection intentional.</div>
+        <div class="pattern-template">Every [名詞] feels [形容詞], every [名詞] [形容詞].</div>
+        <div class="pattern-practice">Every dish at the restaurant ______ (感覺像藝術品).<br><span class="pattern-answer" id="pa4">feels like a work of art</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "What is the main purpose of this video?", "choices": ["To show the restaurants of Lucerne", "To document a panoramic train journey across Switzerland starting from Lucerne", "To compare Swiss and German trains", "To demonstrate how to travel cheaply in Switzerland"], "answer": 1, "explain": "The video begins with the travelers arriving in Lucerne and taking the panoramic train to Interlaken. The narrator says 'Our panoramic train adventure starts right here in Lucerne' and that they are riding 'every famous route' to see if Switzerland's reputation holds up."},{"q": "What does the narrator mean by 'Switzerland doesn't just exist, it's curated'?", "choices": ["Switzerland is extremely expensive", "Everything in Switzerland looks intentional and perfectly maintained", "Switzerland is full of museums and galleries", "Swiss people are unfriendly to tourists"], "answer": 1, "explain": "The narrator observes that the meadows look like golf courses, there is no garbage or weeds, and everything is trimmed and polished. This leads to the conclusion that the pristine look is intentional — the country feels 'landscaped, trimmed, and polished.'"},{"q": "The phrase 'clockwork perfection' is used to describe:", "choices": ["The Swiss chocolate industry", "The Lion Monument", "Swiss trains", "The Chapel Bridge"], "answer": 2, "explain": "The transcript states: 'Swiss trains are clockwork perfection. Everyone rides them. The Swiss don't drive, they glide.' This emphasizes the precision and reliability of Swiss rail service."},{"q": "What happened to the Chapel Bridge in 1993?", "choices": ["It was demolished for a new highway", "It was damaged by a flood", "It burned due to a careless cigarette", "It collapsed under the weight of too many visitors"], "answer": 2, "explain": "The narrator explains that the bridge 'burned in 1993 thanks to a careless cigarette, but the Swiss rebuilt it perfectly.' This story illustrates both the vulnerability and the precision of Swiss restoration."},{"q": "Which word best describes the tone of this video?", "choices": ["Skeptical and critical", "Awestruck and admiring", "Humorous and sarcastic", "Practical and instructional"], "answer": 1, "explain": "The narrator uses phrases like 'I am in awe,' 'absolutely gorgeous,' and 'it's impossible not to stop and stare.' The overall tone is one of wonder and admiration for Switzerland's beauty and precision."}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

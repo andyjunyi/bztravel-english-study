@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Our Biggest Year Yet: Planning a 2026 World Tour — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">💡 BZ Travel · 英文自學講義</div>
+  <h1>Our Biggest Year Yet: Planning a 2026 World Tour</h1>
+  <div class="sub">旅行</div>
+  <div class="header-meta">
+    <span>17:45</span>
+    <span>💡 旅遊技巧</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/2XgCVknUKvI" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. A Year of Ambitious Travel Plans</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Having explored over 100 countries, BZ Travel had never planned a year quite like this. In this video, Tresa and Zarko share their entire 2026 travel calendar and ask viewers for input. Their calendar is packed — starting in January with Peru and Bolivia, then continuing through Chile, Argentina, Brazil, Oman or India, China, and South Africa. They have booked several small-group tours with premium providers like G Adventures and Intrepid Travel, and are looking for audience suggestions to fill in the gaps.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在探索了超過100個國家之後，BZ Travel從未計劃過像今年這樣的一年。在這部影片中，Tresa和Zarko分享了他們整個2026年的旅行日曆，並徵求觀眾的意見。他們的行程排得滿滿的——從一月的祕魯和玻利維亞開始，接著是智利、阿根廷、巴西、阿曼或印度、中國和南非。他們已經預訂了幾個由G Adventures和Intrepid Travel等高端旅行社安排的小團行程，並希望觀眾提供建議來填補空缺。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. South America: The First Big Block</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">The year begins with a 15-day G Adventures National Geographic journey through Peru and Bolivia. Highlights include Machu Picchu, the Uyuni Salt Flats, Potosi&#39;s silver mines, Lake Titicaca, and La Paz — all at high altitude. Next comes Chile and Argentina with Intrepid Travel: Valparaíso, Mendoza for wine tasting, Buenos Aires for tango, and finally Iguazu Falls from both the Argentine and Brazilian sides. The tour ends in Rio de Janeiro with three extra days to explore Copacabana and Ipanema on their own.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">今年從為期15天的G Adventures國家地理祕魯和玻利維亞之旅開始。亮點包括馬丘比丘、烏尤尼鹽沼、波托西銀礦、的的喀喀湖和拉巴斯——全都在高海拔地區。接下來是智利和阿根廷的Intrepid Travel行程：瓦爾帕萊索、門多薩品酒、布宜諾斯艾利斯探戈，最後從阿根廷和巴西兩側欣賞伊瓜蘇瀑布。行程在里約熱內盧結束，額外三天自由探索科帕卡巴納和伊帕內瑪。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. Oman and the Middle East Options</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">After returning home in mid-February to edit videos, the team plans to head out again in mid-March. They are strongly considering Oman — described as an undiscovered gem with a fascinating camel auction in the town of Nizwa every Friday morning. They debate whether to rent a car or hire a private driver. India and the Philippines are also under consideration. The couple asks viewers for advice on driving conditions and must-see attractions in Oman.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在二月中旬回家剪輯影片後，團隊計劃在三月中旬再次出發。他們正在認真考慮阿曼——被形容為一顆未被發現的寶石，每週五早上在尼茲瓦鎮有迷人的駱駝拍賣。他們在討論要租車還是聘請私人司機。印度和菲律賓也在考慮之中。這對夫妻請觀眾提供關於阿曼路況和必看景點的建議。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. China: A 30-Day Immersive Private Tour</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">One of the most exciting plans is a 30-day private, all-inclusive tour of China and Tibet. The itinerary covers everything from the Terracotta Warriors in Xi&#39;an to pandas in Chengdu, the Great Wall, and Tibet. Since they previously visited China for business, this will be their first time experiencing it as tourists. They also want to revisit a painting village near Shenzhen, where they once sourced artwork and fell in love with the local galleries.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">最令人興奮的計劃之一是為期30天的中國和西藏私人全包旅行。行程涵蓋一切：從西安的兵馬俑到成都的熊貓、萬里長城和西藏。由於他們之前因商務訪問中國，這將是他們第一次以遊客身份體驗中國。他們還想重訪深圳附近的一個畫村，他們曾在那裡採購藝術品並愛上了當地的畫廊。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. Summer Adventures and Viewer Input</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">In June, friends are visiting Bulgaria and the group plans an electric bike trip to Serbia. In July, it&#39;s back to South Africa for another safari — the team fell in love with the private game reserves on their last trip. Throughout the video, Tresa and Zarko repeatedly ask viewers for suggestions: where to stay in Brazil, whether to drive in Oman, and what hidden gems to include. The video is part travel plan, part conversation with their audience.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">六月，朋友們將訪問保加利亞，團隊計劃騎電動自行車去塞爾維亞。七月，他們將重返南非進行另一次野生動物獵遊——團隊在上次旅行中愛上了私人野生動物保護區。整部影片中，Tresa和Zarko反覆請求觀眾提供建議：巴西住哪裡、是否在阿曼開車，以及還有哪些隱藏寶石值得造訪。這部影片既是旅行計劃，也是與觀眾的對話。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. fill in the gaps</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">填補空缺；填補不足之處</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We&#39;re looking for audience suggestions to fill in the gaps in our itinerary."</div>
+        <div class="collo-practice">I took a few online courses to ______ (填補空缺) in my knowledge.<br><span class="collo-answer" id="ca1">fill in the gaps</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. undiscovered gem</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">未被發現的寶藏（指鮮為人知的好地方）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Oman sounds very interesting — kind of like an undiscovered gem."</div>
+        <div class="collo-practice">This small coastal town is a true ______ (未被發現的寶石).<br><span class="collo-answer" id="ca2">undiscovered gem</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. pull the trigger on</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">下定決心做某事；付諸行動</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We have some plans, but we haven&#39;t pulled the trigger yet."</div>
+        <div class="collo-practice">After months of犹豫, we finally ______ (下定決心) buying the house.<br><span class="collo-answer" id="ca3">pulled the trigger on</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. fall in love with</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">愛上；深深喜愛</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"I just absolutely fell in love with the animals and the beautiful lodges."</div>
+        <div class="collo-practice">On our first trip to Japan, we ______ (愛上了) the culture and food.<br><span class="collo-answer" id="ca4">fell in love with</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. hidden gems</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">隱藏版景點；不為人知的好去處</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We&#39;re looking for hidden gems to include in our trip."</div>
+        <div class="collo-practice">The guidebook helped us discover several ______ (隱藏版景點) in the old town.<br><span class="collo-answer" id="ca5">hidden gems</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. itch to get back out there</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">迫不及待想再次出發旅行</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"By mid-March, I think we&#39;ll be itching to get back out there."</div>
+        <div class="collo-practice">After being home for a month, I&#39;m ______ (迫不及待想再次出發).<br><span class="collo-answer" id="ca6">itching to get back out there</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. a little bit of an unknown thing</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">有點未知的事物</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"That&#39;s a little bit unknown — I don&#39;t think there&#39;s many tourists that go there."</div>
+        <div class="collo-practice">Traveling to that remote island is ______ (有點未知).<br><span class="collo-answer" id="ca7">a bit of an unknown thing</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. sourcing products from</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">從...採購產品</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We used to source products from China for our business."</div>
+        <div class="collo-practice">The company has been ______ (採購原料) local farmers for decades.<br><span class="collo-answer" id="ca8">sourcing materials from</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">現在完成式 + 表示經驗的 ever/never</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">現在完成式（have + p.p.）用來表達從過去到現在的經歷。&#39;Have you ever...&#39; 詢問是否有過某經驗；&#39;have never been&#39; 表示從未有過某經驗。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">We&#39;ve explored over 100 countries, but we&#39;ve never planned a year quite like this.</div>
+            <div class="ge-analysis">→ &#39;We&#39;ve explored&#39; = 到目前為止已經探索過
+→ &#39;have never planned&#39; = 從未計劃過
+→ &#39;I&#39;ve never been there&#39; = 從未去過</div>
+            <div class="ge-pattern">S + have/has + p.p. + but + have/has + never + p.p. → 「已經...但從未...」</div>
+          </div></div>
+        <div class="grammar-practice">I ______ (去過) many countries, but I ______ (從未去過) South America.<br><span class="grammar-answer" id="ga1">have visited / have never been to</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">No + 比較級 + than... → 最高級意味</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">&#39;Nobody beats...&#39; 的意思是「沒有人比...更好」，等於最高級的表達方式，但更有強調效果。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">Nobody beats the private reserves in South Africa.</div>
+            <div class="ge-analysis">→ Nobody beats = Nobody is better than
+→ 等於 &#39;Private reserves in South Africa are the best&#39;</div>
+            <div class="ge-pattern">Nobody beats + [名詞] + in [類別] → 「在...方面沒有人比...更好」</div>
+          </div></div>
+        <div class="grammar-practice">______ (沒有人比得上) the service at this hotel in all of Southeast Asia.<br><span class="grammar-answer" id="ga2">Nobody beats</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">We&#39;ve done [A], but we&#39;ve never done [B] (我們做過A，但從未做過B)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">用對比來強調某個新體驗的獨特性</div>
+        <div class="pattern-example">We&#39;ve explored over 100 countries, but we&#39;ve never planned a year quite like this.</div>
+        <div class="pattern-template">We&#39;ve [過去分詞] [數量], but we&#39;ve never [過去分詞] [新事物].</div>
+        <div class="pattern-practice">I&#39;ve eaten Thai food before, ______ (但從未去過泰國).<br><span class="pattern-answer" id="pa1">but I&#39;ve never been to Thailand</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">If you&#39;re familiar with [A] and have suggestions, please [B] (如果你熟悉A，請B)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">禮貌地向聽眾或朋友請求建議</div>
+        <div class="pattern-example">If you&#39;re familiar with Rio and have some great suggestions for us, please help us out.</div>
+        <div class="pattern-template">If you&#39;re familiar with [主題], please [請求].</div>
+        <div class="pattern-practice">______ (如果你熟悉京都) and have restaurant recommendations, please let me know.<br><span class="pattern-answer" id="pa2">If you&#39;re familiar with Kyoto</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">We&#39;re considering [A], but we&#39;re also looking at [B] (我們在考慮A，也在考慮B)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">表達有多個選項正在考慮中</div>
+        <div class="pattern-example">We&#39;re considering Oman, we&#39;re considering India, we&#39;re considering the Philippines.</div>
+        <div class="pattern-template">We&#39;re considering [A], but we&#39;re also looking at [B/C/D].</div>
+        <div class="pattern-practice">For our next vacation, ______ (我們在考慮日本，也在考慮韓國).<br><span class="pattern-answer" id="pa3">we&#39;re considering Japan, but we&#39;re also looking at Korea</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">The difference between [A] and [B] is that... (A和B的區別在於...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">明確區分兩個事物的不同之處</div>
+        <div class="pattern-example">The difference between a private reserve and a park is that in the park you&#39;re restricted.</div>
+        <div class="pattern-template">The difference between [A] and [B] is that [解釋].</div>
+        <div class="pattern-practice">______ (跟團和自由行的區別在於) you have more flexibility with independent travel.<br><span class="pattern-answer" id="pa4">The difference between a tour and independent travel is that</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "What type of tours does BZ Travel primarily use for their 2026 plans?", "choices": ["Budget backpacker hostels", "Premium small-group tours with G Adventures and Intrepid", "Solo independent travel only", "Cruise ship packages"], "answer": 1, "explain": "They booked with 'G Adventures for 15 days' using 'the premium National Geographic journeys small group tour' and Intrepid Travel's 'premium level' with 'extremely nice places.'"},{"q": "Why is Oman particularly interesting to the travelers?", "choices": ["It has the best beaches in the world", "It has a fascinating camel auction every Friday in Nizwa", "It is the cheapest destination they could find", "They have already booked flights there"], "answer": 1, "explain": "Tresa explains: 'Every Friday morning they have the camel gold auction... the locals actually buy and sell camels. That'd be kind of neat to see.'"},{"q": "What is different about visiting China as a tourist vs. for business?", "choices": ["Tourist visas are harder to get", "It's a completely different experience", "Business travelers get better hotels", "There is no difference"], "answer": 1, "explain": "Zarko says: 'But it's completely different when you travel for business and a tourist. I've never been a tourist in China.'"},{"q": "What unique place do they want to visit near Shenzhen, China?", "choices": ["A tea plantation", "A painting village with many galleries", "A panda sanctuary", "A silk factory"], "answer": 1, "explain": "They mention: 'We went to painting village... they actually source the most oil paintings to the world... gallery next to gallery.' They fell in love with it on a previous business trip."},{"q": "What is the main reason for making this video?", "choices": ["To show off their luxury lifestyle", "To get viewer input and suggestions for their travel plans", "To announce their retirement from travel", "To complain about travel difficulties"], "answer": 1, "explain": "Tresa explains early on: 'We want to get some of your comments. We're kind of stuck... it might help us confirm what we're going to do.' They repeatedly ask viewers for suggestions throughout the video."}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

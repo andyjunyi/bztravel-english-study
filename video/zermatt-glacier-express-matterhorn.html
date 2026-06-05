@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Zermatt, Glacier Express & Matterhorn — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>Zermatt, Glacier Express & Matterhorn</h1>
+  <div class="sub">瑞士</div>
+  <div class="header-meta">
+    <span>15:31</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/jb1RyVyIgCI" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. Zermatt: A Car-Free Alpine Paradise</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Three Swiss legends await — Zermatt, the mighty Matterhorn, and the Glacier Express. Zermatt has been car-free for decades. Visitors must park 5 km away and ride a shuttle train into town. Inside, only electric taxis and small electric buses are allowed, keeping the streets quiet and the air crisp even at altitude. Zermatt is renowned for its alpine access — cable cars reach in all directions, heading straight up to the highest cable car station in Europe.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">三個瑞士傳奇等著我們——策馬特、雄偉的馬特洪峰和冰川快車。策馬特已實施無車政策數十年。遊客必須將車停在5公里外，搭乘接駁火車進城。城內只允許電動計程車和小型電動巴士行駛，即使在海拔高處也保持街道安靜和空氣清新。策馬特以其阿爾卑斯通道聞名——纜車通往各個方向，直達歐洲最高的纜車站。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. Climbing to the Top of Europe</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">The team heads up to Klein Matterhorn at 3,883 meters. Swiss cable cars don&#39;t mess around — these gondolas hold 100 people and run with terrifying precision. To reach the top, they switch through three lifts, each steeper than the last. Everywhere you look, there are cable cars and runs that make your stomach drop. The system hauls 2,000 skiers an hour in winter. From inside the cable car, the views are jaw-dropping — spinning in circles, trying to take it all in.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">團隊前往海拔3,883公尺的小馬特洪峰。瑞士纜車可不是開玩笑的——這些纜車可容納100人，以驚人的精準度運行。要抵達山頂，他們需要轉乘三條纜車，一條比一條陡峭。放眼望去，盡是纜車和讓人胃部翻攪的滑雪道。這個系統冬季每小時運送2,000名滑雪客。從纜車內部望去，景色令人目瞪口呆——他們在原地轉圈，試圖把所有美景都收進眼底。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. The Matterhorn Glacier Paradise</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">At 3,883 meters, the air is thin, dry, and hits your lungs. The panoramic view is remarkable — Switzerland on one side, Italy on the other, Mont Blanc visible to the west. The most striking is the Matterhorn itself, seen from an uncommon angle, almost level with its shoulder. This position offers a rare perspective of its dramatic north face — a nearly vertical wall of rock and ice notorious for the number of climbers who have perished attempting to scale it.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在3,883公尺的高度，空氣稀薄乾燥，直接衝擊你的肺部。全景視野令人驚嘆——一邊是瑞士，另一邊是義大利，西邊可以清楚看到白朗峰。最引人注目的是馬特洪峰本身，從一個不常見的角度觀看，幾乎與它的山肩平行。這個位置提供了其戲劇性北壁的罕見視角——一面幾乎垂直的岩石和冰壁，因許多嘗試攀登它而喪生的登山者數量而惡名昭彰。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. The Glacier Express: Elegance on Rails</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">Boarding the Glacier Express is like stepping into elegance on rails. First class, panoramic windows, and a front-row seat as the Swiss Alps unfold. The train is built for the view — huge glass windows curve into the ceilings. It&#39;s less transportation and more a glass bubble gliding through mountains. The route includes 91 tunnels and 291 bridges. The Oberalp Pass climbs to 2,033 meters, one of Europe&#39;s highest rail lines. The engineering is as breathtaking as the landscape.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">登上冰川快車，就像踏入軌道上的優雅世界。頭等艙、全景車窗，前排座位觀賞瑞士阿爾卑斯山的展開。這列火車是為景觀而建——巨大的玻璃窗 curved 延伸到車頂。與其說是交通工具，不如說是一個穿越山脈的玻璃泡泡。路線包括91條隧道和291座橋樑。上阿爾卑斯山口爬升到2,033公尺，是歐洲最高的鐵路路線之一。工程設計和景觀一樣令人屏息。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. 8 Hours of Pure Alpine Theater</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">The Glacier Express takes 8 hours to travel from Zermatt to St. Moritz. It&#39;s slow and spectacular. The experience is notably unhurried but never tedious. Passengers enjoy uninterrupted views of majestic mountains, alpine valleys, charming villages, and historic bridges. The consistent visual stimulation combined with the smooth ride produces a meditative effect. At the end, the team reflects on the off-season quiet — no lines, no crowds, just them and the Alps.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">冰川快車從策馬特到聖莫里茨需要8小時。緩慢而壯觀。這種體驗從容不迫但絕不無聊。乘客可以欣賞到連綿不絕的雄偉山脈、阿爾卑斯山谷、迷人的村莊和歷史悠久的橋樑。持續的視覺刺激加上平穩的行駛產生了冥想般的效果。最後，團隊反思了淡季的寧靜——沒有排隊、沒有人潮，只有他們和阿爾卑斯山。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. car-free for decades</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">數十年來禁止車輛通行</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Zermatt has been car-free for decades."</div>
+        <div class="collo-practice">The old town center has been ______ (禁止車輛通行) since the 1980s.<br><span class="collo-answer" id="ca1">car-free for decades</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. jaw-dropping</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">令人目瞪口呆的</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"From inside the cable car, the views are jaw-dropping."</div>
+        <div class="collo-practice">The view from the top of the mountain was absolutely ______ (令人目瞪口呆的).<br><span class="collo-answer" id="ca2">jaw-dropping</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. make your stomach drop</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">讓你的胃翻攪（形容非常驚險刺激）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Runs that make your stomach drop just watching."</div>
+        <div class="collo-practice">The roller coaster ______ (讓我的胃翻攪) as it plunged downward.<br><span class="collo-answer" id="ca3">made my stomach drop</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. perished attempting to</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">在嘗試...時喪生</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The north face is notorious for the number of climbers who have perished attempting to scale it."</div>
+        <div class="collo-practice">Several explorers ______ (在嘗試時喪生) to reach the South Pole.<br><span class="collo-answer" id="ca4">perished attempting</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. take it all in</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">盡情欣賞；全盤接收（美景或資訊）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We were spinning in circles, trying to take it all in."</div>
+        <div class="collo-practice">The view was so breathtaking that I just stood there, ______ (盡情欣賞).<br><span class="collo-answer" id="ca5">taking it all in</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. unhurried but never tedious</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">從容不迫但絕不無聊</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The experience is notably unhurried, but it&#39;s never tedious."</div>
+        <div class="collo-practice">The river cruise was ______ (從容不迫但絕不無聊).<br><span class="collo-answer" id="ca6">unhurried but never tedious</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. a front-row seat to</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">觀賞...的前排座位（絕佳觀賞位置）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"First class, panoramic windows, a front-row seat as the Swiss Alps unfold."</div>
+        <div class="collo-practice">Our hotel balcony was ______ (觀賞煙火的前排座位).<br><span class="collo-answer" id="ca7">a front-row seat to the fireworks</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. grind it out</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">刻苦訓練；咬牙撐過去</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Olympic teams are up here grinding it out on the glacier."</div>
+        <div class="collo-practice">The athletes wake up at 5 AM every day to ______ (刻苦訓練).<br><span class="collo-answer" id="ca8">grind it out</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">比較級疊加 — each + 比較級 + than the last (一個比一個更...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">用 &#39;each + 比較級 + than the last&#39; 來描述一系列事物逐次遞增的程度，是一種優雅的英文修辭結構。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">To reach the Klein Matterhorn, we switch through three lifts. Each one steeper than the last.</div>
+            <div class="ge-analysis">→ Each one steeper than the last = 第三條比第二條陡，第二條比第一條陡
+→ 強調逐漸增加的變化</div>
+            <div class="ge-pattern">Each + N + 比較級 + than the last → 「一個比一個更...」</div>
+          </div></div>
+        <div class="grammar-practice">We visited three museums in one day. ______ (一個比一個更令人印象深刻).<br><span class="grammar-answer" id="ga1">Each one more impressive than the last</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">S + V + 名詞片語 (同位語補充說明)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">用名詞片語放在句尾補充說明主詞或受詞的身份或性質。同位語（appositive）是一個名詞或名詞片語放在另一個名詞旁邊，用來補充說明它的身份。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">The Matterhorn — that mountain that&#39;s on that Toblerone candy bar.</div>
+            <div class="ge-analysis">→ &#39;that mountain...&#39; 是 The Matterhorn 的同位語
+→ 補充說明馬特洪峰的身份</div>
+            <div class="ge-pattern">[名詞] — [同位語補充說明]</div>
+          </div></div>
+        <div class="grammar-practice">Zermatt — ______ (那個禁止車輛通行的阿爾卑斯小鎮) — is a paradise for nature lovers.<br><span class="grammar-answer" id="ga2">that car-free alpine town</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">This place isn&#39;t just [Adj], it&#39;s a [N] (這裡不只是...，它是一台...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">否定→肯定，強調某事物的功能性</div>
+        <div class="pattern-example">This place isn&#39;t just pretty, it&#39;s a machine.</div>
+        <div class="pattern-template">[地點] isn&#39;t just [形容詞], it&#39;s a [名詞].</div>
+        <div class="pattern-practice">This cable car system isn&#39;t just transportation — ______ (它是一台工程奇蹟).<br><span class="pattern-answer" id="pa1">it&#39;s an engineering machine</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">You can literally [動詞] from [A] to [B] (你真的可以從A到B)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">強調某事雖然聽起來誇張但卻是事實</div>
+        <div class="pattern-example">You can literally ski from Switzerland to Italy and be back for lunch.</div>
+        <div class="pattern-template">You can literally [動詞] from [A] to [B].</div>
+        <div class="pattern-practice">______ (你真的可以) walk from one country to another in just 10 minutes.<br><span class="pattern-answer" id="pa2">You can literally</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">It&#39;s less [A] and more [B] (與其說是A，不如說是B)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">否定A而肯定B，重新定義某事物</div>
+        <div class="pattern-example">It&#39;s less transportation and more a glass bubble gliding through mountains.</div>
+        <div class="pattern-template">It&#39;s less [A] and more [B].</div>
+        <div class="pattern-practice">The Glacier Express is ______ (與其說是火車，不如說是一場移動的表演).<br><span class="pattern-answer" id="pa3">less a train and more a moving show</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">It&#39;s hard to describe [N] (很難形容...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">表達某事物美到難以言喻</div>
+        <div class="pattern-example">It&#39;s hard to describe the beauty of this place.</div>
+        <div class="pattern-template">It&#39;s hard to describe [名詞] of [地點/事物].</div>
+        <div class="pattern-practice">______ (很難形容) the feeling of standing on top of the Matterhorn.<br><span class="pattern-answer" id="pa4">It&#39;s hard to describe</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "How has Zermatt kept its streets quiet and air clean?", "choices": ["By limiting the number of visitors", "By banning all cars for decades and using electric taxis", "By building roads underground", "By charging high entry fees"], "answer": 1, "explain": "The video states: 'Zermatt has been car-free for decades. Only electric taxis and small electric buses are allowed, keeping the streets quiet and the air crisp.'"},{"q": "What is special about skiing on the Matterhorn Glacier?", "choices": ["It is only open in summer", "You can ski 365 days a year on 21 km of groomed runs", "It is the cheapest ski resort in Switzerland", "Only professional skiers are allowed"], "answer": 1, "explain": "The video says: 'You can ski this mountain every single day of the year... 21 km of groomed runs across a real glacier.'"},{"q": "How many tunnels does the Glacier Express pass through?", "choices": ["45", "91", "150", "291"], "answer": 1, "explain": "The video states: 'There's 91 tunnels, 291 bridges, and a route carved over half a century.'"},{"q": "What makes the north face of the Matterhorn notorious?", "choices": ["It is the most beautiful face of the mountain", "Many climbers have died attempting to climb it", "It has the best ski runs in Europe", "It is covered in glaciers year-round"], "answer": 1, "explain": "The video describes it as: 'a nearly vertical wall of rock and ice. It is infamous for its difficulty and the number of climbers who have perished attempting to scale it.'"},{"q": "What feeling does the Glacier Express ride produce in passengers?", "choices": ["Boredom from the slow speed", "A meditative effect from the constant scenery and smooth ride", "Fear from the steep drops", "Excitement from the high speed"], "answer": 1, "explain": "The video describes: 'The consistent visual stimulation combined with the train's quiet, smooth ride produces a meditative effect.'"}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

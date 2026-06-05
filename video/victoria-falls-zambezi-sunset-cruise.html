@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Victoria Falls & Zambezi Sunset Cruise — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>Victoria Falls & Zambezi Sunset Cruise</h1>
+  <div class="sub">辛巴威</div>
+  <div class="header-meta">
+    <span>10:37</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/kC1OAiEQKeQ" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. One of Earth&#39;s Rawest Wonders</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Victoria Falls is one of Earth&#39;s rawest, most violent, and most beautiful sites. The travelers stroll along the rim of the falls and later relax on a sunset cruise along the Zambezi River. Victoria Falls sits right where Zimbabwe, Zambia, and Namibia come together — nature&#39;s border and spectacular all-in-one. The city of Victoria Falls thrives under the shadow of its namesake, and this single destination pumps 15 percent into Zimbabwe&#39;s GDP.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">維多利亞瀑布是地球上最原始、最猛烈、最美麗的景點之一。旅行者沿著瀑布邊緣漫步，隨後在尚比西河上享受日落遊船。維多利亞瀑布位於辛巴威、尚比亞和納米比亞的交界處——大自然與壯麗景觀的完美結合。維多利亞瀑布城在其同名瀑布的陰影下蓬勃發展，這個單一目的地為辛巴威的GDP貢獻了15%。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. A Waterfall Unlike Any Other</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">Victoria Falls is different from any waterfall you have ever seen. Other waterfalls tumble off cliffs, but Victoria Falls — the Zambezi River flows gently for a thousand kilometers, then drops suddenly into a crack in the Earth&#39;s crust. From a helicopter, you really see it: it does not fall over, it falls in. A chasm carved by ancient volcanoes and time, this is what sets it apart. The drop is over 100 meters straight down, and the thunder can be heard from 40 kilometers away.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">維多利亞瀑布與你所見過的任何瀑布都不同。其他瀑布從懸崖邊傾瀉而下，而維多利亞瀑布——尚比西河平靜地流淌了一千公里，然後突然墜入地殼的一條裂縫中。從直升機上你才能真正看到：它不是流下來，而是流進去。一個由古代火山和時間共同雕刻而成的深淵，這就是它的與眾不同之處。落差超過100公尺，雷鳴般的轟響在40公里外都能聽到。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. Walking Through the Rainforest of Mist</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">On the Zimbabwean side, jungle trails lead to numbered viewpoints where you can stare directly into the wall of falling water. The mist creates a rainforest ecosystem, lush and dripping. Without a poncho, you will get completely drenched. The contrast is remarkable — everywhere else is dry and brown, but here it is a lush jungle. Standing before the falls, the narrator says, &#39;I&#39;ve stood before many waterfalls, yet none rival the raw power of this.&#39;</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在辛巴威一側，叢林小徑通向編號的觀景點，你可以直接凝視傾瀉而下的水牆。水霧創造了一個雨林生態系統，鬱鬱蔥蔥、濕潤欲滴。沒有雨衣，你一定會全身濕透。對比非常明顯——其他地方乾燥棕黃，但這裡是茂密的叢林。站在瀑布前，敘述者說：「我去過許多瀑布，但沒有一個能與這座的原始力量相比。」</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. Sunset on the Zambezi</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">The sunset cruise on the Zambezi Explorer is the perfect way to end the day. Glass in hand, the horizon is on fire. It is almost impossible to imagine this peaceful river soon plunging into the chaos of Victoria Falls. Wide waters stretch between Zambia and Zimbabwe, with riverfront lodges glimmering on the Zambian banks. Far ahead, the mist of Victoria Falls towers into the sky. Along the shores, hippos surface and elephants strip trees — wild Africa alive beside the calm waters.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在尚比西探險者號上的日落遊船是結束一天的完美方式。手持酒杯，地平線燃燒如火。很難想像這條平靜的河流很快就會衝入維多利亞瀑布的混亂之中。寬闊的水域在尚比亞和辛巴威之間延伸，尚比亞岸邊的河畔小屋閃爍著光芒。遠方，維多利亞瀑布的水霧聳入天際。沿岸，河馬浮出水面，大象剝食樹枝——狂野的非洲在平靜的水域旁生機勃勃。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. The Story of Zimbabwe</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">The video also touches on Zimbabwe&#39;s complex history. Most tourists see only two days here for the falls, but the real country is different — rich land, a broken economy, a people who have endured war and hardship. Once called Rhodesia, it was the breadbasket of Africa with productive farms. After independence in 1980, land seizures led to collapse, starvation, and hyperinflation. Zimbabwe&#39;s 100 trillion dollar note became worthless, a stark reminder of a nation&#39;s struggles beyond its natural wonders.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">影片也觸及了辛巴威複雜的歷史。大多數遊客只為了瀑布在這裡待兩天，但真正的國家是不同的——土地富饒，經濟破碎，人民經歷了戰爭和苦難。曾經被稱為羅德西亞，它是非洲的糧倉，擁有富饒的農場。1980年獨立後，土地掠奪導致了崩潰、飢荒和惡性通貨膨脹。辛巴威的100兆元紙幣變得一文不值，這是一個國家在其自然奇觀之外掙扎的嚴酷提醒。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. rawest, most violent, most beautiful</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">最原始、最猛烈、最美麗的（三重最高級修辭）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Victoria Falls is one of Earth&#39;s rawest, most violent, most beautiful sites."</div>
+        <div class="collo-practice">The storm was one of nature&#39;s ______ (最原始、最猛烈、最美麗的展示).<br><span class="collo-answer" id="ca1">rawest, most violent, most beautiful displays</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. pumps into the GDP</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">為GDP貢獻</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"This one destination pumps 15% into Zimbabwe&#39;s GDP."</div>
+        <div class="collo-practice">Tourism ______ (為該島嶼的GDP貢獻了) over 30%.<br><span class="collo-answer" id="ca2">pumps over 30% into the island&#39;s GDP</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. tumble off cliffs</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">從懸崖傾瀉而下</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Others tumble off cliffs. This one falls into a crack in the Earth."</div>
+        <div class="collo-practice">The waterfall ______ (從懸崖傾瀉而下) into the pool below.<br><span class="collo-answer" id="ca3">tumbles off the cliff</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. sets it apart</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">使其與眾不同</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"That&#39;s what sets it apart from other waterfalls."</div>
+        <div class="collo-practice">Her unique teaching style ______ (使她與其他老師不同).<br><span class="collo-answer" id="ca4">sets her apart from other teachers</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. staggering drop</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">驚人的落差</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The drop is staggering — over 100 meters straight down."</div>
+        <div class="collo-practice">The canyon has a ______ (驚人的落差) of nearly 300 meters.<br><span class="collo-answer" id="ca5">staggering drop</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. horizon is on fire</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">地平線如火燃燒（形容壯觀的日落）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Glass in hand and the horizon is on fire."</div>
+        <div class="collo-practice">At sunset, ______ (地平線如火燃燒) over the ocean.<br><span class="collo-answer" id="ca6">the horizon is on fire</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. breadbasket of Africa</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">非洲的糧倉</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Rhodesia was the bread basket of Africa."</div>
+        <div class="collo-practice">The region was known as the ______ (糧倉) of the country.<br><span class="collo-answer" id="ca7">breadbasket</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. lost for words / speechless</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">說不出話來</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"I&#39;m lost for words. Seeing this leaves me speechless."</div>
+        <div class="collo-practice">The beauty of the scenery left me ______ (說不出話來).<br><span class="collo-answer" id="ca8">lost for words / speechless</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">比較否定結構 — No/none/nothing + 比較級</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">使用否定詞搭配比較級可以表達最高級的強調效果。&#39;None rival the raw power&#39; 比 &#39;It is the most powerful&#39; 更有修辭力量。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">I&#39;ve stood before many waterfalls, yet none rival the raw power of this.</div>
+            <div class="ge-analysis">→ &#39;none rival&#39; = 沒有一個能比得上
+→ &#39;yet&#39; 連接前後對比，加強語氣</div>
+            <div class="ge-pattern">None rival + 名詞 → &quot;沒有任何事物能與...相比&quot;</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">It doesn&#39;t fall over, it falls in.</div>
+            <div class="ge-analysis">→ &#39;doesn&#39;t fall over, it falls in&#39; = 不是流下來，而是流進去
+→ 否定—肯定對比結構，強調獨特性</div>
+            <div class="ge-pattern">It doesn&#39;t [A], it [B] → &quot;不是A，而是B&quot;</div>
+          </div></div>
+        <div class="grammar-practice">I have traveled to many countries, yet ______ (沒有能與日本之美相比).<br><span class="grammar-answer" id="ga1">none rival the beauty of Japan</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">such...that / so...that 因果強調句</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">使用 &#39;so + 形容詞 + that&#39; 或 &#39;such + 名詞 + that&#39; 可以表達某種程度導致的結果。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">The thunder that follows is so immense it can be heard from 40 kilometers away.</div>
+            <div class="ge-analysis">→ &#39;so immense...it can be heard&#39; = 如此巨大以至於能聽到
+→ that 被省略了，口語中常見</div>
+            <div class="ge-pattern">S + be + so + adj + (that) + 結果子句 → &quot;如此...以至於...&quot;</div>
+          </div></div>
+        <div class="grammar-practice">The mist from the falls was ______ (如此濃密以至於我們看不到彼此).<br><span class="grammar-answer" id="ga2">so thick that we couldn&#39;t see each other</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">[X] is one of Earth&#39;s rawest, most violent, most beautiful [N].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">X是地球上最原始、最猛烈、最美麗的...（三重最高級修辭）</div>
+        <div class="pattern-example">Victoria Falls is one of Earth&#39;s rawest, most violent, most beautiful sites.</div>
+        <div class="pattern-template">[名詞] is one of [地方]&#39;s [adj1]est, most [adj2], most [adj3] [名詞].</div>
+        <div class="pattern-practice">The Grand Canyon is one of the world&#39;s ______ (最深、最廣闊、最壯麗的景觀).<br><span class="pattern-answer" id="pa1">deepest, most expansive, most magnificent landscapes</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">From a [perspective], you really [verb] it.</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">從某個視角，你才能真正看到/理解它</div>
+        <div class="pattern-example">From a helicopter, you really see it.</div>
+        <div class="pattern-template">From [某個視角], you really [動詞] [事物].</div>
+        <div class="pattern-practice">From the top of the mountain, ______ (你才能真正理解它有多宏偉).<br><span class="pattern-answer" id="pa2">you really understand how magnificent it is</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">It doesn&#39;t [A], it [B].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">它不是A，而是B（否定轉肯定強調句）</div>
+        <div class="pattern-example">It doesn&#39;t fall over, it falls in.</div>
+        <div class="pattern-template">[主詞] doesn&#39;t [常見的A], it [獨特的B].</div>
+        <div class="pattern-practice">This restaurant ______ (不是讓你吃飽，而是讓你享受美食的藝術).<br><span class="pattern-answer" id="pa3">doesn&#39;t just fill you up, it lets you enjoy the art of food</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">It&#39;s almost impossible to imagine [A] [V-ing] [B].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">很難想像A正在做B（對比反差修辭）</div>
+        <div class="pattern-example">It&#39;s almost impossible to imagine this peaceful river soon plunging into the chaos of Victoria Falls.</div>
+        <div class="pattern-template">It&#39;s almost impossible to imagine [平靜的A] [猛烈動作] [B].</div>
+        <div class="pattern-practice">It&#39;s almost impossible to imagine this calm lake ______ (吞噬一切在暴風雨中).<br><span class="pattern-answer" id="pa4">swallowing everything in a storm</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "What makes Victoria Falls geologically unique compared to other waterfalls?", "choices": ["It is the tallest waterfall in the world", "It does not fall over a cliff — it drops into a crack in the Earth's crust", "It is the only waterfall that flows north", "It is made of multiple small waterfalls"], "answer": 1, "explain": "The narrator explains: 'Others tumble off cliffs. This one... drops suddenly into a crack in the Earth's crust. It doesn't fall over, it falls in.' This geological formation is what makes Victoria Falls distinct."},{"q": "What does the narrator mean by 'the smoke that thunders'?", "choices": ["The sound of local thunderstorms", "The mist from Victoria Falls that rises to great heights", "The noise from nearby factories", "The traditional music played at the falls"], "answer": 1, "explain": "The transcript says: 'The mist, smoke that thunders, as locals call it, rises to astonishing heights, sometimes as tall as New York's Empire State Building.' This is the local name for the spray of Victoria Falls."},{"q": "What economic fact about Victoria Falls is mentioned?", "choices": ["It attracts 10 million tourists annually", "It contributes 15% of Zimbabwe's GDP", "It is the most expensive tourist attraction in the world", "It employs 50% of Zimbabwe's workforce"], "answer": 1, "explain": "The narrator states: 'This one destination pumps 15% into Zimbabwe's GDP. Nearly every household is connected to tourism. 90% of the residents working in hotels, guiding or hospitality.'"},{"q": "What happens to Zimbabwe's $100 trillion note?", "choices": ["It is still used as currency today", "It became a collector's item worth millions", "It became worthless due to hyperinflation", "It was replaced by the US dollar"], "answer": 2, "explain": "The video explains: 'Zimbabwe's $100 trillion note became worthless.' This illustrates the severity of the country's hyperinflation crisis, contrasting with the natural wonder of the falls."},{"q": "What is the contrast described between the area around the falls and the surrounding region?", "choices": ["The falls area is cold while the region is hot", "The falls area is lush rainforest while the surrounding area is dry", "The falls area is urban while the region is rural", "The falls area is quiet while the region is loud"], "answer": 1, "explain": "The narrator observes: 'So green like everywhere. Everywhere else is dry, dry, dry. And here it's like a jungle. It's a rainforest.' The mist from the falls creates a dramatically different microclimate."}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

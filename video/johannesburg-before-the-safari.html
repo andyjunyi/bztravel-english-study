@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Johannesburg Before the Safari — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
+  <h1>Johannesburg Before the Safari</h1>
+  <div class="sub">南非</div>
+  <div class="header-meta">
+    <span>6:27</span>
+    <span>🏙️ 城市探索</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/kNvUJvkpLH0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. Johannesburg: The Gateway to Safari</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Johannesburg often bookends a safari adventure. Travelers have a choice: stick close to the airport for ease or head into the city for a quick taste. After three weeks of unforgettable safaris, this video shows a little of Johannesburg. Living in Bulgaria means most trips pass through Istanbul Airport — probably one of the most travel-friendly hubs anywhere, with direct flights to just about every corner of the world.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">約翰尼斯堡常常是 safari 冒險的起點或終點。旅行者可以選擇：靠近機場以便利為主，或者進城快速體驗一下。經過三週難忘的 safari 後，這部影片展示了約翰尼斯堡的一小部分。住在保加利亞意味著大多數行程都會經過伊斯坦堡機場——這可能是世界上最適合轉機的樞紐之一，有直飛航班到世界各地。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. The Istanbul Airport Experience</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">The Turkish Airlines business lounge is described as one of the best — seriously impressive. It does get crowded, though, because their business class fares are often much cheaper than other airlines, making the upgrade tempting for many travelers. After the narrator pinched a nerve on a long-haul flight, they decided to switch to business class for anything over six hours. There is a saying: &#39;If you don&#39;t fly business, your kids will.&#39;</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">土耳其航空的商務艙貴賓室被形容為最好的之一——令人印象深刻。不過它確實很擁擠，因為他們的商務艙票價通常比其他航空公司便宜很多，使得升等對許多旅客來說很有吸引力。在敘述者在一次長途飛行中神經被壓迫後，他們決定任何超過六小時的飛行都改搭商務艙。有句俗話說：「如果你不搭商務艙，你的孩子會搭。」</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. Arriving in Johannesburg</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">The flight experience includes a meal, a movie, some wine, and a nap — and suddenly they are there. Johannesburg is massive and not exactly tourist-friendly. With its safety reputation in mind, figuring out where to stay had the travelers scratching their heads. They chose to stay near the airport at Emperor&#39;s Palace, which has three hotels wrapped around a casino — Johannesburg&#39;s mini version of Las Vegas.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">飛行體驗包括一頓餐點、一部電影、一些葡萄酒和小睡——然後突然就到了。約翰尼斯堡很大，而且不太適合觀光。考慮到它的安全聲譽，決定住在哪裡讓旅行者們傷透了腦筋。他們選擇住在機場附近的皇宮酒店，那裡有三家酒店環繞著一家賭場——約翰尼斯堡的迷你拉斯維加斯。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. Emperor&#39;s Palace: A Safe Haven</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">Emperor&#39;s Palace offers convenience and comfort. The room is not ready when they arrive, so they have to kill a few hours after a 24-hour journey. The hotel is nice, not too far from the airport, and provides a comfortable base before heading into the bush. For travelers concerned about Johannesburg&#39;s safety, Emperor&#39;s Palace offers a practical solution — comfort and security without the stress of navigating the city.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">皇宮酒店提供了便利和舒適。抵達時房間還沒準備好，所以他們需要在24小時的旅程後打發幾個小時。酒店不錯，離機場不遠，提供了進入叢林前舒適的基地。對於擔心約翰尼斯堡安全的旅行者來說，皇宮酒店提供了一個實用的解決方案——舒適和安全，不必擔心在城市中穿梭的壓力。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. Practical Advice for Future Travelers</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">The video concludes with practical advice. If you have a long layover or a day before your safari, Emperor&#39;s Palace is a solid choice. There is great food, a lively vibe, and it is just minutes from the airport. It is perfect when your real adventure is happening out in the bush, not in the city. Next up, the start of their safari adventure — heading into the Klaserie Private Nature Reserve for unforgettable game drives.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">影片最後提供了實用建議。如果你在safari之前有長時間的轉機停留或一天的空檔，皇宮酒店是一個不錯的選擇。那裡有美食、熱鬧的氛圍，而且離機場只有幾分鐘的路程。當你的真正冒險是在叢林中而不是城市裡時，這是最完美的選擇。接下來，他們的safari冒險即將開始——前往克拉塞里私人自然保護區進行難忘的遊獵。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. bookend a safari</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">為safari冒險畫上開始或結束的句點</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Johannesburg often bookends a safari adventure."</div>
+        <div class="collo-practice">The farewell dinner ______ (為我們的旅程畫上句點).<br><span class="collo-answer" id="ca1">bookended our journey</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. travel-friendly hub</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">適合轉機的樞紐</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Istanbul is probably one of the most travel friendly hubs anywhere."</div>
+        <div class="collo-practice">Singapore Changi Airport is known as one of the most ______ (適合轉機的樞紐).<br><span class="collo-answer" id="ca2">travel-friendly hubs</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. pinched a nerve</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">神經受到壓迫</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"After I pinched a nerve on a long haul flight, we decided to switch to business class."</div>
+        <div class="collo-practice">Sitting in a cramped seat for hours made me ______ (神經受到壓迫).<br><span class="collo-answer" id="ca3">pinch a nerve</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. kill a few hours</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">打發幾個小時</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Our room&#39;s not ready yet, so we have to kill a few hours."</div>
+        <div class="collo-practice">We visited a nearby museum to ______ (打發時間) before our flight.<br><span class="collo-answer" id="ca4">kill some time / kill a few hours</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. scratching our heads</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">傷腦筋；摸不著頭緒</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Figuring out where to stay kind of had us scratching our heads."</div>
+        <div class="collo-practice">The complicated instructions left us ______ (傷透了腦筋).<br><span class="collo-answer" id="ca5">scratching our heads</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. mini version of Las Vegas</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">迷你版的拉斯維加斯</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Think of it as Johannesburg&#39;s mini version of Las Vegas."</div>
+        <div class="collo-practice">The entertainment complex is like a ______ (迷你版的拉斯維加斯).<br><span class="collo-answer" id="ca6">mini version of Las Vegas</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. solid choice</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">不錯的選擇</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Emperor&#39;s Palace is a solid choice."</div>
+        <div class="collo-practice">For budget travelers, this hostel is a ______ (不錯的選擇).<br><span class="collo-answer" id="ca7">solid choice</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. lively vibe</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">熱鬧的氛圍</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"There&#39;s great food, lively vibe, and it&#39;s just minutes from the airport."</div>
+        <div class="collo-practice">The night market has a ______ (熱鬧的氛圍) that draws crowds every evening.<br><span class="collo-answer" id="ca8">lively vibe</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">條件句 — If you don&#39;t [A], your [N] will.</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">這是一種口語化的條件句結構，省略了後半句的重複動詞。常用於表達因果或警告性的建議。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">There&#39;s a saying, if you don&#39;t fly business, your kids will.</div>
+            <div class="ge-analysis">→ &#39;if you don&#39;t...your kids will&#39; = 如果你不...你的孩子會
+→ 省略了後半句的 &#39;fly business&#39;</div>
+            <div class="ge-pattern">If you don&#39;t + V, your + N + will → &quot;如果你不...你的...會&quot;</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">We figured might as well enjoy it ourselves.</div>
+            <div class="ge-analysis">→ &#39;might as well&#39; = 不妨；還不如
+→ 表示在某種情況下最好的選擇</div>
+            <div class="ge-pattern">might as well + V → &quot;不妨...；還是...好了&quot;</div>
+          </div></div>
+        <div class="grammar-practice">If you don&#39;t take the chance, ______ (別人會).<br><span class="grammar-answer" id="ga1">someone else will</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">動名詞做主詞</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">動名詞（V-ing）可以作為句子的主詞，表示一個抽象的概念或活動。這種結構比用 &#39;To V&#39; 做主詞更口語化。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">Figuring out where to stay kind of had us scratching our heads.</div>
+            <div class="ge-analysis">→ &#39;Figuring out where to stay&#39; = 動名詞片語當主詞
+→ 後面接 &#39;had us scratching our heads&#39; 表示導致的結果</div>
+            <div class="ge-pattern">V-ing + O + V + O → &quot;做某事使得某人...&quot;</div>
+          </div></div>
+        <div class="grammar-practice">______ (在陌生的城市找路) can be challenging.<br><span class="grammar-answer" id="ga2">Finding your way around a strange city / Navigating a strange city</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">[X] often bookends [Y].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">X通常是Y的開始或結束（框架式結構）</div>
+        <div class="pattern-example">Johannesburg often bookends a safari adventure.</div>
+        <div class="pattern-template">[地點] often bookends [旅行/冒險].</div>
+        <div class="pattern-practice">A welcome dinner often ______ (是旅程的完美開始).<br><span class="pattern-answer" id="pa1">bookends the start of a journey perfectly</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">Your choice: [A] or [B].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">你的選擇：A或B（提供選項）</div>
+        <div class="pattern-example">Your choice: stick close to the airport for ease or head into the city for a quick taste.</div>
+        <div class="pattern-template">Your choice: [選項A] or [選項B].</div>
+        <div class="pattern-practice">Your choice: ______ (留在酒店休息) or explore the night market.<br><span class="pattern-answer" id="pa2">stay at the hotel and rest</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">[X] is massive, and it&#39;s not exactly [Y].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">X很大，而且不太適合Y（先肯定後轉折的委婉批評）</div>
+        <div class="pattern-example">Johannesburg is massive, and it&#39;s not exactly tourist friendly.</div>
+        <div class="pattern-template">[地點] is [形容詞], and it&#39;s not exactly [正面形容詞].</div>
+        <div class="pattern-practice">The city is exciting, and it&#39;s not exactly ______ (適合預算有限的旅客).<br><span class="pattern-answer" id="pa3">budget-friendly</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">Think of it as [X]&#39;s mini version of [Y].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">把它想像成X的迷你版Y（比喻式描述）</div>
+        <div class="pattern-example">Think of it as Johannesburg&#39;s mini version of Las Vegas.</div>
+        <div class="pattern-template">Think of it as [A]&#39;s mini version of [B].</div>
+        <div class="pattern-practice">Think of the night market as ______ (台北的迷你版東京).<br><span class="pattern-answer" id="pa4">Taipei&#39;s mini version of Tokyo</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "What is the main purpose of this video?", "choices": ["To show the best hotels in downtown Johannesburg", "To document the travelers' experience in Johannesburg before starting their safari", "To compare different airlines flying to South Africa", "To warn tourists against visiting Johannesburg"], "answer": 1, "explain": "The video is about the travelers' brief stay in Johannesburg before their safari adventure. As the title says, this is 'Johannesburg Before the Safari' — a quick look at the gateway city."},{"q": "Why do the travelers fly through Istanbul?", "choices": ["It has the cheapest flights to anywhere in the world", "They live in Bulgaria, so most trips pass through Istanbul Airport", "They have family in Istanbul", "Turkish Airlines is the only airline they use"], "answer": 1, "explain": "The narrator explains: 'Living in Bulgaria means that most of our trips pass through the Istanbul airport.' This is a practical geographical consideration."},{"q": "Where did the travelers stay in Johannesburg?", "choices": ["In a downtown Johannesburg hotel", "At Emperor's Palace, near the airport", "At a backpacker hostel in Soweto", "At a friend's house in the suburbs"], "answer": 1, "explain": "The narrator states: 'Before starting our safari, we stayed near the airport at Emperor's Palace. There's three hotels wrapped around a casino.' This was a practical choice given safety concerns."},{"q": "The saying 'If you don't fly business, your kids will' is used to suggest what?", "choices": ["Children should fly business class", "You might as well enjoy the upgrade yourself rather than leaving inheritance", "Business class tickets are a good investment for the future", "Kids always get better treatment on flights"], "answer": 1, "explain": "The narrator uses this saying humorously to justify their decision to upgrade to business class. The implication is: if you save money instead of spending on comfort, your children will inherit that money and spend it on themselves."},{"q": "What advice does the video offer about Johannesburg?", "choices": ["Avoid Johannesburg at all costs", "Emperor's Palace near the airport is a solid, safe choice for a layover before safari", "Spend at least a week exploring Johannesburg's attractions", "Book a downtown hotel for the best experience"], "answer": 1, "explain": "The video concludes: 'I'd stick with Emperor's Palace. There's great food, lively vibe, and it's just minutes from the airport. Perfect when your real adventure is happening out in the bush.'"}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

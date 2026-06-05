@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>We Flew Into Africa's Eden | Okavango Delta Safari — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>We Flew Into Africa's Eden | Okavango Delta Safari</h1>
+  <div class="sub">波札那</div>
+  <div class="header-meta">
+    <span>11:26</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/bqC_TPAP8L4" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. Flying into Africa&#39;s Garden of Eden</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">The journey takes the travelers to the Moremi Game Reserve at the heart of the Okavango Delta — a place often described as Africa&#39;s Garden of Eden. For three days, their home is Camp Kakanaka, one of the best-known safari camps, perched on the Kakanaka Lagoon and surrounded by prime wildlife. The only way to hop between camps is by small bush planes lifting off from dirt airstrips. It is a quirky, unforgettable part of the safari experience, and even the flight becomes a safari itself.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">旅程帶領旅行者來到奧卡萬戈三角洲核心的莫雷米野生動物保護區——一個常被稱為非洲伊甸園的地方。接下來三天，他們的家是卡卡納卡營地，這是知名的 safari 營地之一，坐落在卡卡納卡潟湖邊，四周環繞著豐富的野生動物。往來營地的唯一方式是乘坐小型叢林飛機，從泥土跑道起飛。這是 safari 體驗中奇特且令人難忘的一部分，連飛行本身也成了一場 safari。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. A View from the Sky</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">Flying low over the Okavango Delta, the world stretches wide beneath you. The delta unfolds as a horizon-to-horizon masterpiece, painted in water, grass, and light. It feels alive, shifting, and endless. Herds of elephants wander below, buffalo herds scatter, and hippos break the surface. From the air, the Okavango is pure poetry. The magic is not just in arriving at the destination — it is in the journey itself, watching the landscape transform with every minute of flight.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在奧卡萬戈三角洲低空飛行時，世界在你腳下寬闊地展開。三角洲像一幅從地平線到地平線的傑作，由水、草和光線繪製而成。它充滿生命力、變幻莫測、無邊無際。成群的大象在下方漫步，水牛群四散奔逃，河馬浮出水面。從空中看，奧卡萬戈就是純粹的詩篇。魔力不僅在於抵達目的地——更在於旅程本身，看著地貌隨著每一分鐘的飛行而變換。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. The Charm of Camp Kakanaka</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">Upon arrival, the travelers are welcomed with warm smiles and voices rising in song. The camp has an authentic &#39;Out of Africa&#39; charm, with timber buildings blending rustic beauty with modern comfort. The atmosphere is laid-back, unhurried, and timeless. There are 11 canvas tents, all raised on decks facing the lagoon. These are not ordinary tents — they have bathrooms, real beds, verandas, and plenty of thoughtful comfort. It feels authentic, simple yet elegant.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">抵達時，旅行者們受到溫暖的笑容和歌聲的歡迎。營地散發著真實的「遠離非洲」魅力，木造建築融合了原始之美與現代舒適。氛圍悠閒、從容，彷彿不受時間影響。這裡有11頂帆布帳篷，全都建在面向潟湖的平台上。這些不是普通的帳篷——它們有浴室、真正的床、陽台和許多貼心的舒適設施。感覺真實、簡單卻優雅。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. Extraordinary Wildlife Encounters</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">Every game drive at Camp Kakanaka feels like a hunt. What really grabs you here is not just the animals but the landscape — a mosaic of water and land all stitched together. Being close enough to meet a lion&#39;s stare is unsettling, thrilling, and unforgettable. At lunch, they get a visit from Oscar the Hippo, the camp&#39;s most famous resident. Oscar is a wild hippo evicted from his pod by a dominant male, and he has found safety near the camp.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">卡卡納卡營地的每次遊獵都像一場狩獵。這裡真正吸引人的不僅是動物，還有景觀——水和陸地交織而成的馬賽克。如此近距離地與獅子對視，令人不安、刺激且難以忘懷。午餐時，奧斯卡河馬來訪，他是營地最有名的居民。奧斯卡是一隻被優勢雄性趕出群體的野生河馬，他在營地附近找到了安全之所。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. The Harsh Reality of the Wild</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">Not every sighting is beautiful. The travelers spot a young elephant missing its trunk — likely torn off by a crocodile. Few trunkless calves make it past weaning, and most never reach adulthood. It is a gut-wrenching reminder that the wild is not a Disney movie. Yet standing there, the narrator understands why they call this the Garden of Eden. The Okavango Delta delivers a raw, unfiltered experience that no photograph can truly capture.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">並非每次目擊都是美好的。旅行者們發現了一頭失去象鼻的小象——很可能是被鱷魚咬掉的。失去象鼻的小象很少能撐過斷奶期，大多數無法長大成年。這是一個令人心痛的事實，提醒人們大自然不是迪士尼電影。然而站在那裡，敘述者明白了為什麼人們稱這裡為伊甸園。奧卡萬戈三角洲提供的是原始、不加修飾的體驗，沒有任何照片能夠真正捕捉。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. Africa&#39;s Garden of Eden</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">非洲的伊甸園（形容極度美麗的自然之地）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Okavango Delta is often described as Africa&#39;s Garden of Eden."</div>
+        <div class="collo-practice">The tropical island is often called ______ (太平洋的伊甸園).<br><span class="collo-answer" id="ca1">the Garden of Eden of the Pacific</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. horizon to horizon</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">從地平線到地平線；一望無際</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The delta unfolds as a horizon to horizon masterpiece."</div>
+        <div class="collo-practice">The savannah stretched ______ (一望無際) in every direction.<br><span class="collo-answer" id="ca2">from horizon to horizon</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. pure poetry</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">純粹的詩篇（形容極美的事物）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"From the air, the Okavango is pure poetry."</div>
+        <div class="collo-practice">The way the light hit the mountains at sunset was ______ (純粹的詩篇).<br><span class="collo-answer" id="ca3">pure poetry</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. meet a lion&#39;s stare</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">與獅子的凝視相遇</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Being close enough to meet a lion&#39;s stare is unsettling, thrilling."</div>
+        <div class="collo-practice">Nothing compares to ______ (與獅子對視的體驗) in the wild.<br><span class="collo-answer" id="ca4">meeting a lion&#39;s stare</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. thoughtful comfort</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">貼心的舒適設施</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"These tents have bathrooms, real beds, verandas, and plenty of thoughtful comfort."</div>
+        <div class="collo-practice">The hotel room was filled with ______ (貼心的舒適設施).<br><span class="collo-answer" id="ca5">thoughtful comfort</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. gut-wrenching</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">令人揪心的；令人極度難受的</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We spotted something gut-wrenching — a young elephant missing its trunk."</div>
+        <div class="collo-practice">The news of the endangered species was ______ (令人揪心的).<br><span class="collo-answer" id="ca6">gut-wrenching</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. a mosaic of water and land</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">水與陸地的馬賽克拼圖</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"A mosaic of water and land all stitched together."</div>
+        <div class="collo-practice">The delta was ______ (水和陸地的馬賽克), stunning from above.<br><span class="collo-answer" id="ca7">a mosaic of water and land</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. slows your pulse</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">讓你心跳放緩（形容放鬆）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The kind of place that slows your pulse the moment you arrive."</div>
+        <div class="collo-practice">The peaceful garden is the kind of place that ______ (讓你心跳放緩).<br><span class="collo-answer" id="ca8">slows your pulse</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">分詞構句 — 表伴隨狀態與結果</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">分詞構句可以簡化句子結構，將兩個動作合併。現在分詞（V-ing）表示主動或同時發生的動作，過去分詞（p.p.）表示被動或已完成。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">We&#39;re welcomed with warm smiles, voices rising in song before being shown around the camp.</div>
+            <div class="ge-analysis">→ &#39;voices rising in song&#39; = and voices are rising in song（伴隨狀態）
+→ &#39;before being shown around&#39; = before we were shown around（被動涵義）</div>
+            <div class="ge-pattern">S + V + O, N + V-ing... → &quot;伴隨著名詞正在做某事&quot;</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">Being close enough to meet a lion&#39;s stare is unsettling, thrilling, unforgettable.</div>
+            <div class="ge-analysis">→ &#39;Being close enough...&#39; = 動名詞片語當主詞
+→ 三個形容詞排比加強感受</div>
+            <div class="ge-pattern">Being + 形容詞 + enough to + V → &quot;足夠...以至於能夠...&quot;</div>
+          </div></div>
+        <div class="grammar-practice">______ (被美景包圍), we sat in silence for hours.<br><span class="grammar-answer" id="ga1">Surrounded by the beautiful scenery / Being surrounded by the beautiful scenery</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">倒裝句 — 否定副詞開頭</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">當否定詞或具有否定意味的副詞放在句首時，主詞和動詞需要倒裝（aux + S + V）。這在書面英語中非常常見，能增強語氣。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">That&#39;s the closest I&#39;ve ever been to a hippo.</div>
+            <div class="ge-analysis">→ &#39;...the closest...ever&#39; = 這是我離河馬最近的一次
+→ 不是倒裝句，但 &#39;ever&#39; 與最高級連用表達經驗</div>
+            <div class="ge-pattern">This is the + 最高級 + (that) + S + have ever + p.p. → &quot;這是我所...過最...的&quot;</div>
+          </div></div>
+        <div class="grammar-practice">This is the most beautiful sunset ______ (我見過的).<br><span class="grammar-answer" id="ga2">I have ever seen</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">The only way to [V] is by [V-ing/N]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">做某事的唯一方式是...（強調必要性）</div>
+        <div class="pattern-example">The only way to hop between camps is by these small bush planes.</div>
+        <div class="pattern-template">The only way to [動詞] is by [動名詞/名詞].</div>
+        <div class="pattern-practice">The only way to reach the remote village ______ (是徒步翻山).<br><span class="pattern-answer" id="pa1">is by hiking over the mountain</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">It&#39;s the kind of place that + V...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">這是那種...的地方（描述性定義）</div>
+        <div class="pattern-example">It&#39;s the kind of place that slows your pulse the moment you arrive.</div>
+        <div class="pattern-template">It&#39;s the kind of [名詞] that [描述] the moment you [動詞].</div>
+        <div class="pattern-practice">It&#39;s the kind of restaurant ______ (讓你一進門就感到賓至如歸).<br><span class="pattern-answer" id="pa2">that makes you feel at home the moment you walk in</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">What really [動詞] you here isn&#39;t [A], it&#39;s [B]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">真正打動你的不是A，而是B（轉折強調）</div>
+        <div class="pattern-example">What really grabs you here isn&#39;t the animals. You&#39;ll see those across Africa. It&#39;s the landscape.</div>
+        <div class="pattern-template">What really [動詞] you here isn&#39;t [A]. It&#39;s [B].</div>
+        <div class="pattern-practice">What really surprised me about the city wasn&#39;t the architecture. ______ (是這裡的人們).<br><span class="pattern-answer" id="pa3">It was the people here</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">Don&#39;t be fooled by [N]. This/These have [N].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">不要被...騙了。它們有...（轉折強調真實情況）</div>
+        <div class="pattern-example">Don&#39;t be fooled by tents. These have bathrooms, real beds, verandas.</div>
+        <div class="pattern-template">Don&#39;t be fooled by [表面]. [主詞] + [真實情況].</div>
+        <div class="pattern-practice">Don&#39;t be fooled by the small entrance. ______ (裡面有寬敞的餐廳和豪華套房).<br><span class="pattern-answer" id="pa4">Inside, there are spacious dining rooms and luxury suites</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "What makes the Okavango Delta unique according to this video?", "choices": ["It has the largest collection of five-star hotels in Africa", "It is a vast mosaic of water and land, accessible only by small planes or boats", "It is located in the middle of the Sahara Desert", "It is the only place in Africa where you can see penguins"], "answer": 1, "explain": "The narrator emphasizes: 'The only way to hop between camps is by these small bush planes lifting off dirt air strips. Reachable only by light aircraft or boat.' The landscape is described as 'a mosaic of water and land all stitched together.'"},{"q": "Who is Oscar?", "choices": ["The camp manager", "A resident hippo who was evicted from his pod", "The travelers' pilot", "An elephant with a missing trunk"], "answer": 1, "explain": "Oscar is introduced as 'Camp Kakanaka's most famous resident' — a wild hippo 'evicted from his pod by a dominant male' who found safety near the camp. He grazes freely by the lagoon."},{"q": "What does the phrase 'the flight becomes a safari' imply?", "choices": ["The flight is very long and boring", "The aerial view reveals so much wildlife that the flight itself is like a game drive", "The plane is escorted by wild animals", "Passengers must hunt for their own food"], "answer": 1, "explain": "The narrator says: 'There's herds of elephants below, a buffalo herd scattering, hippos breaking the surface. From the air, the Okavango is pure poetry. Even the flight becomes a safari.' The aerial view provides wildlife sightings just like a ground safari."},{"q": "What does the young elephant without a trunk represent in the video?", "choices": ["The success of conservation efforts", "The brutal reality and harshness of life in the wild", "A rare genetic mutation", "The result of poaching by humans"], "answer": 1, "explain": "The narrator calls it 'gut-wrenching' and explains that 'few trunkless calves make it past weaning.' It serves as a reminder that 'the wild is not a Disney movie' and that nature can be cruel."},{"q": "What is the overall tone of the narrator regarding the Okavango Delta?", "choices": ["Disappointed and critical", "Awestruck but honest about both beauty and hardship", "Indifferent and bored", "Comedic and lighthearted"], "answer": 1, "explain": "The narrator expresses wonder ('Africa's Garden of Eden,' 'pure poetry') while also being honest about difficult moments (the trunkless elephant, the guide saying sightings aren't as good as usual). This balanced, authentic tone is characteristic of BZ Travel's style."}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Exploring LIMA Like a Local — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
+  <h1>Exploring LIMA Like a Local</h1>
+  <div class="sub">秘魯</div>
+  <div class="header-meta">
+    <span>12:31</span>
+    <span>🏙️ 城市探索</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/kZSdNRqXoMs" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. A City Tour With a Local Guide</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">To truly understand the heartbeat of Lima, the travelers hired a private guide to show them the city&#39;s most famous spots. Exploring a city with a local is simply the best way to do it — that personal connection is irreplaceable. Rather than following a flag or staring out of a crowded bus window, they experienced Lima through the eyes of someone who knows the absolute ins and outs of their city. The tour began at the breathtaking Love Park, perched right on top of a cliff overlooking the Pacific Ocean.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">為了真正了解利馬的脈動，旅客聘請了一位私人導遊來帶他們參觀城市最著名的景點。和當地人一起探索城市無疑是最棒的方式——那種人與人之間的連結是無可取代的。他們不是跟著旗子走，也不是擠在遊覽車上看風景，而是透過一個對城市瞭若指掌的人的眼睛來體驗利馬。旅程從令人屏息的愛情公園開始，它坐落在俯瞰太平洋的懸崖上。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. Love Park and Miraflores</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">Love Park, or Parque del Amor, is arguably Lima&#39;s top destination. Nestled on a cliff in the upscale Miraflores neighborhood, it offers sweeping views of the Pacific. The park features colorful undulating walls covered in beautiful mosaics, where each tile design carries a different meaning about life and romance. Lovers come here to lock padlocks on the fences and throw away the key. In the center stands a massive sculpture called El Beso — The Kiss. The nearby Miraflores district is safe, pristine, and filled with lush parks, luxury hotels, and high-end restaurants.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">愛情公園可以說是利馬的頂級景點。它坐落在高檔的米拉弗洛雷斯區的懸崖上，享有太平洋的遼闊景觀。公園擁有色彩繽紛的波浪狀牆面，覆蓋著美麗的馬賽克，每個瓷磚設計都承載著關於生活和愛情的不同含義。戀人們來到這裡，在欄杆上鎖上掛鎖，然後把鑰匙丟掉。公園中央矗立著一座名為「吻」的巨大雕塑。附近的米拉弗洛雷斯區安全、純淨，充滿了綠意盎然的公園、豪華酒店和高級餐廳。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. Barranco: The Bohemian Heart</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">Next, they visited Barranco, the bohemian heart of Lima. This vibrant neighborhood has historically been home to the city&#39;s artists and intellectuals. The streets are packed with striking murals and cozy cafes. Every wall tells a different story. Artists paint directly on the streets to make their work completely accessible to everyone who walks by. A famous landmark here is the Puente de los Suspiros — the Bridge of Sighs. Local legend says if you can hold your breath all the way across and make a wish, that wish will come true.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">接下來，他們參觀了巴蘭科——利馬的波希米亞之心。這個充滿活力的街區歷來是城市藝術家和知識分子的家園。街道上布滿了引人注目的壁畫和舒適的咖啡館。每一面牆都在訴說著不同的故事。藝術家直接在街頭作畫，讓每個路過的人都能欣賞他們的作品。這裡著名的地標是嘆息橋。當地傳說，如果你能屏住呼吸走完整座橋並許個願望，那個願望就會實現。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. Historic Center and Grand Hotel Bolivar</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">Continuing into the historic Lima City Center, the travelers passed the impressive Palace of Justice and the famous Grand Hotel Bolivar. This historic hotel has hosted an incredible roster of famous guests including John F. Kennedy, Richard Nixon, Ernest Hemingway, John Wayne, and Clark Gable. The lobby features intricate stonework, grand marble columns, and a spectacular stained-glass dome that filters the Peruvian sunlight beautifully. An antique reception ledger and a vintage elevator offer glimpses into a bygone era of luxury travel.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">繼續深入利馬歷史中心，旅客經過了令人印象深刻的司法宮和著名的玻利瓦爾大飯店。這家歷史悠久的飯店接待過許多著名賓客，包括約翰·F·甘迺迪、理查·尼克森、厄尼斯特·海明威、約翰·韋恩和克拉克·蓋博。大廳有著精緻的石雕、宏偉的大理石柱，以及一個壯觀的彩繪玻璃穹頂，美麗地過濾了秘魯的燦爛陽光。古董登記簿和復古電梯讓人一窺那個已逝去的奢華旅行年代。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. Pisco Tasting and Plaza de Armas</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">No visit to Peru would be complete without trying Pisco, a distilled grape spirit. The travelers did a proper Pisco tasting, sampling different variations including the famous Pisco Sour. They then visited Plaza de Armas, the main square dating back to 1535. Surrounded by bright yellow colonial buildings with dark wooden balconies, the square is home to the Presidential Palace and Lima Cathedral, where Francisco Pizarro is buried. A massive pre-Incan adobe complex, Huaca Pucllana, stands right in the middle of the modern city — a stunning reminder of Peru&#39;s layered history.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">造訪秘魯不能不品嚐皮斯可酒——一種蒸餾葡萄烈酒。旅客進行了一場正式的皮斯可品酒會，品嚐了多種不同風味，包括著名的皮斯可酸酒。接著他們參觀了武器廣場，這個主要廣場的歷史可追溯到1535年。廣場周圍是明亮的黃色殖民建築，带有深色木製陽台，廣場上有總統府和埋葬著法蘭西斯科·皮薩羅的利馬大教堂。一座巨大的前印加土坯建築群——普克拉納遺址——就矗立在現代城市中心，令人驚嘆地提醒著人們秘魯層層累積的歷史。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. the heartbeat of a city/culture</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">城市/文化的脈動與核心</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"To truly understand the heartbeat of the culture, we hired a private guide."</div>
+        <div class="collo-practice">Walking through the local market is the best way to feel ______ (這座城市的脈動).<br><span class="collo-answer" id="ca1">the heartbeat of the city</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. ins and outs</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">所有細節；來龍去脈</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You&#39;re with a local who knows the absolute ins and outs of their city."</div>
+        <div class="collo-practice">After living here for ten years, she knows all the ______ (所有細節) of the neighborhood.<br><span class="collo-answer" id="ca2">ins and outs</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. nestled on / in / between</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">坐落於；安躺在（風景優美的地方）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s nestled right on top of a cliff offering sweeping views of the Pacific."</div>
+        <div class="collo-practice">The village is ______ (坐落在) a green valley between two mountains.<br><span class="collo-answer" id="ca3">nestled in</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. sweeping views</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">遼闊的全景視野</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"It offers sweeping, incredible views of the Pacific Ocean."</div>
+        <div class="collo-practice">The hotel balcony offers ______ (遼闊的全景) of the entire coastline.<br><span class="collo-answer" id="ca4">sweeping views</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. arguably the + 最高級</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">可以說是（最...的）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Love Park is arguably Lima&#39;s top destination."</div>
+        <div class="collo-practice">This is ______ (可以說是) the best sushi restaurant in the city.<br><span class="collo-answer" id="ca5">arguably</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. a bygone era</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">一個已逝去的時代</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The antique ledger offers glimpses into a bygone era of luxury travel."</div>
+        <div class="collo-practice">The vintage train station feels like stepping back into ______ (一個已逝去的時代).<br><span class="collo-answer" id="ca6">a bygone era</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. come true</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">實現（願望）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"If you can hold your breath the entire time and make a wish, that wish will come true."</div>
+        <div class="collo-practice">After years of hard work, her dream finally ______ (實現了).<br><span class="collo-answer" id="ca7">came true</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. layered history</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">多層次的歷史（文化堆疊的歷史）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"A stunning reminder of Peru&#39;s layered history."</div>
+        <div class="collo-practice">Rome is a city with incredible ______ (多層次的歷史).<br><span class="collo-answer" id="ca8">layered history</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">不定詞片語表達目的 — To truly understand..., S + V...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">不定詞片語放在句首可以表達目的，等於 In order to...。這是一種正式的寫作結構，用來強調行動的動機。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">To truly understand the heartbeat of the culture, we hired a private guide.</div>
+            <div class="ge-analysis">→ &#39;To truly understand&#39; = In order to truly understand
+→ 句首不定詞強調目的，主句說明採取的行動</div>
+            <div class="ge-pattern">To + V..., S + V... → 「為了...，主詞做...」</div>
+          </div></div>
+        <div class="grammar-practice">______ (為了真正體驗當地生活), you should stay in a residential neighborhood.<br><span class="grammar-answer" id="ga1">To truly experience local life</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">你以為...其實不然 — You&#39;d be forgiven for thinking that..., but...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">這個句型用來表達「如果某人這樣想是可以理解的」，先承認對方的合理假設，再提出反轉的事實。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">You&#39;d be forgiven for thinking it was plucked straight out of Paris.</div>
+            <div class="ge-analysis">→ 先承認建築看起來像巴黎搬來的→暗示其實是在利馬
+→ You&#39;d be forgiven for = 你這樣想是可以被原諒的</div>
+            <div class="ge-pattern">You&#39;d be forgiven for thinking + that 子句</div>
+          </div></div>
+        <div class="grammar-practice">______ (你會以為這是在歐洲) when you see the architecture.<br><span class="grammar-answer" id="ga2">You&#39;d be forgiven for thinking you&#39;re in Europe</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">S + is arguably the + 最高級 + N... (可以說是...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">用來委婉地表達某事物是最好的之一</div>
+        <div class="pattern-example">Love Park is arguably Lima&#39;s top destination.</div>
+        <div class="pattern-template">[主詞] is arguably the [最高級形容詞] [名詞] in [地點].</div>
+        <div class="pattern-practice">This restaurant ______ (可以說是全市最好的).<br><span class="pattern-answer" id="pa1">is arguably the best in the city</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">There is, of course, another side to... (當然，還有另一面)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">用來引入對比或反面觀點</div>
+        <div class="pattern-example">But there it is, of course, another side to Lima.</div>
+        <div class="pattern-template">There is, of course, another side to [事物].</div>
+        <div class="pattern-practice">______ (當然還有另一面) this neighborhood that tourists rarely see.<br><span class="pattern-answer" id="pa2">There is, of course, another side to</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">Local legend says that if S + V, S + will + V (傳說如果...就會...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">用來介紹當地傳說或民間信仰</div>
+        <div class="pattern-example">Local legend says that if you can hold your breath the entire time you cross, that wish will come true.</div>
+        <div class="pattern-template">Local legend says that if [條件], [結果] will [動詞].</div>
+        <div class="pattern-practice">______ (當地傳說) if you throw a coin into the fountain, your wish will come true.<br><span class="pattern-answer" id="pa3">Local legend says that</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">No visit to [地點] would be complete without [名詞/V-ing] (如果不...就不算完整)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">強烈推薦某事，認為它是必不可少的體驗</div>
+        <div class="pattern-example">No visit to Peru would be complete without trying Pisco.</div>
+        <div class="pattern-template">No visit to [地點] would be complete without [名詞/V-ing].</div>
+        <div class="pattern-practice">______ (造訪巴黎不能不品嚐) a fresh croissant.<br><span class="pattern-answer" id="pa4">No visit to Paris would be complete without trying</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "According to the video, what is the best way to explore a city?", "choices": ["Following a tour flag", "Staring out of a crowded bus window", "Exploring with a local guide", "Using a GPS app"], "answer": 2, "explain": "The narrator states: 'Exploring a city with a local is simply the best way to do it. That personal connection is irreplaceable.'"},{"q": "What happens at Love Park according to local tradition?", "choices": ["Couples get married there every Sunday", "Lovers lock padlocks on fences and throw away the key", "Artists paint murals every evening", "People swim in the ocean below"], "answer": 1, "explain": "The video explains: 'Lovers come here to lock their hearts together on the fences, and then they just throw away the key.'"},{"q": "What is the legend associated with the Bridge of Sighs in Barranco?", "choices": ["If you sing on the bridge, you will find love", "If you hold your breath across the bridge and make a wish, it will come true", "If you drop a coin from the bridge, you will return to Lima", "If you walk backwards across the bridge, you will have good luck"], "answer": 1, "explain": "The video says: 'Local legend says that if you can hold your breath the entire time you cross the bridge and make a wish, that wish will come true.'"},{"q": "Which famous figures have stayed at the Grand Hotel Bolivar?", "choices": ["Elvis Presley and The Beatles", "John F. Kennedy, Ernest Hemingway, and John Wayne", "Albert Einstein and Marie Curie", "Queen Elizabeth and Prince Philip"], "answer": 1, "explain": "The narrator lists: 'John F. Kennedy, Richard Nixon, Ernest Hemingway, John Wayne, and Clark Gable' as famous guests."},{"q": "What is unique about the Huaca Pucllana archaeological site?", "choices": ["It is located inside a modern shopping mall", "It is made entirely of adobe mud bricks and sits in the middle of modern Lima", "It is the oldest pyramid in South America", "It was built by the Spanish in the 16th century"], "answer": 1, "explain": "The video describes it as: 'a massive towering pre-Incan archaeological complex that's made entirely of adobe mud bricks' standing 'right in the middle of the modern city.'"}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

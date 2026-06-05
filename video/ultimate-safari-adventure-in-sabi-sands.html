@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Ultimate Safari Adventure in Sabi Sands — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>Ultimate Safari Adventure in Sabi Sands</h1>
+  <div class="sub">南非</div>
+  <div class="header-meta">
+    <span>22:24</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/O09X6VVgXUA" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. Big Cat Country</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Sabi Sands is world-famous as Big Cat Country, bordering Kruger National Park. For three days and six game drives, the travelers experience non-stop wild encounters. The transfer from the nearby town reveals rural South Africa — small villages, dirt roads, kids playing barefoot, daily life unfolding far from safari lodges. Their destination is Enoro Bush Lodge, with just seven suites, an intimate escape in the heart of Sabi Sands.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">薩比沙地以「大型貓科動物之鄉」聞名世界，毗鄰克魯格國家公園。在三天六場的遊獵中，旅行者們體驗了不間斷的野生動物邂逅。從附近城鎮的接駁途中展現了南非的鄉村風貌——小村莊、泥土路、赤腳玩耍的孩子們，日常生活遠離safari營地。他們的目的地是伊諾羅叢林小屋，僅有七間套房，是薩比沙地中心的一個私密避世之所。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. Enoro Bush Lodge: An Intimate Escape</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">Enoro Bush Lodge sits within 65,000 acres of private reserve, unfolding into unfenced wilderness that seamlessly blends into Kruger National Park. It is remote, raw, and exclusive. The main lodge and pool face a wide grass plain where animals wander and graze right in front of you. At the far end, a watering hole draws elephants, zebras, and many more. This is where the real safari magic begins.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">伊諾羅叢林小屋坐落在65,000英畝的私人保護區內，廣闊的無柵欄荒野與克魯格國家公園無縫相連。這裡偏遠、原始且獨特。主小屋和泳池面向一片寬廣的草原，動物就在你面前漫步吃草。遠端的水塘吸引著大象、斑馬和更多動物。這就是真正的safari魔力開始的地方。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. Rare Encounters: Rhinos and Lions</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">On the first game drive, the travelers experience something incredibly rare — a baby rhino, just four months old, sleeping beside its mother. Over 95 percent of the world&#39;s white rhinos disappeared in the 20th century, slaughtered for their horns. Seeing a rhino in the wild is witnessing survival itself. Later, they encounter a pride of ten lions, including young males. Lions are social animals living in family groups, and watching them in their natural habitat is unforgettable.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在第一次遊獵中，旅行者們經歷了極其罕見的一幕——一頭僅四個月大的犀牛寶寶在母親身旁睡覺。世界上超過95%的白犀牛在20世紀消失，被盜獵者為了犀牛角而屠殺。在野外看到犀牛，就是見證生存本身。隨後，他們遇到了一個由十頭獅子組成的獅群，包括年輕的雄獅。獅子是群居動物，生活在家庭群體中，在自然棲息地觀察牠們令人難忘。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. Leopards: Masters of the Trees</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">Leopards are the true stars of Sabi Sands. The travelers follow a leopard mother and her nearly-grown daughter. Leopards are master climbers, able to spring more than three meters straight up to reach safety on a high branch. They stash their kills high in trees to keep them from lions and hyenas. Watching a young leopard tugging at the remains of an impala while balancing like an acrobat is an unreal experience.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">花豹是薩比沙地真正的明星。旅行者們跟蹤一對花豹母女。花豹是攀爬大師，能跳起三公尺多高到達高處的安全樹枝。牠們將獵物藏在樹上，防止獅子和鬣狗搶奪。看著一頭年輕花豹像雜技演員一樣保持平衡，撕扯著一頭黑斑羚的殘骸，是一種超現實的體驗。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. The Circle of Life in the Bush</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">Every moment in Sabi Sands reveals the raw reality of the wild. Lions stalk buffalo but think twice when the herd holds its ground. Hyenas prowl beneath leopard kills, waiting for scraps. Elephants drink 200 liters of water a day, led by the matriarch who remembers every path and secret spring. The buffalo form a fortress around their calves at night. This is why they film, why they share — to capture the unfiltered drama of the African bush.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">薩比沙地的每一刻都揭示了荒野的原始現實。獅子潛伏跟蹤水牛，但當牛群堅守陣地時便會三思而後行。鬣狗在花豹藏獵物的樹下徘徊，等待殘渣落下。大象每天喝200公升水，由記住每條路徑和秘密泉源的母象首領帶領。水牛在夜間圍繞著小牛形成堡壘。這就是他們拍攝、分享的原因——捕捉非洲叢林不加修飾的戲劇。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. non-stop wild encounters</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">不間斷的野生動物邂逅</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"3 days, six drives, non-stop wild encounters."</div>
+        <div class="collo-practice">The safari offered ______ (不間斷的野生動物邂逅) from dawn to dusk.<br><span class="collo-answer" id="ca1">non-stop wild encounters</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. blending seamlessly into</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">與...無縫融合</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The reserve seamlessly blends into Kruger National Park."</div>
+        <div class="collo-practice">The garden ______ (與周圍的森林無縫融合).<br><span class="collo-answer" id="ca2">blends seamlessly into the surrounding forest</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. witnessing survival itself</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">見證生存本身</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Seeing a rhino in the wild is witnessing survival itself."</div>
+        <div class="collo-practice">Watching the sea turtles hatch is ______ (見證生存本身).<br><span class="collo-answer" id="ca3">witnessing survival itself</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. master climber</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">攀爬大師</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Leopards are master climbers. They can spring more than 3 meters straight up."</div>
+        <div class="collo-practice">Mountain goats are ______ (攀爬大師) of the Rockies.<br><span class="collo-answer" id="ca4">master climbers</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. stash kills</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">藏匿獵物</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Leopards always stash their kills high on a branch."</div>
+        <div class="collo-practice">The leopard ______ (將獵物藏在樹上) to keep it safe from hyenas.<br><span class="collo-answer" id="ca5">stashed its kill in the tree</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. acrobat</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">雜技演員（比喻平衡技巧）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Watching this young leopard balancing like an acrobat is something unreal."</div>
+        <div class="collo-practice">The monkey swung through the trees ______ (像雜技演員一樣).<br><span class="collo-answer" id="ca6">like an acrobat</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. held together by memory</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">靠記憶維繫在一起</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"This society is held together by memory and matriarchal power."</div>
+        <div class="collo-practice">The tribe&#39;s culture is ______ (靠口述歷史維繫).<br><span class="collo-answer" id="ca7">held together by oral history</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. folksy charm</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">樸實的魅力</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The lodge has a folksy charm."</div>
+        <div class="collo-practice">The bed and breakfast had a wonderful ______ (樸實的魅力).<br><span class="collo-answer" id="ca8">folksy charm</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">獨立分詞構句 — 伴隨結果</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">分詞構句可以表示伴隨主要動作而產生的結果。這種結構讓句子更簡潔流暢。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">The main lodge and pool face a wide grass plain where animals wander and graze right in front of you.</div>
+            <div class="ge-analysis">→ &#39;where animals wander and graze&#39; = 關係子句修飾 plain
+→ 描述動物在人眼前活動的場景</div>
+            <div class="ge-pattern">S + V + O + where + S + V → &quot;在...的地方...&quot;</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">Sabi Sands is world famous as Big Cat Country, bordering Kruger National Park.</div>
+            <div class="ge-analysis">→ &#39;bordering Kruger National Park&#39; = 現在分詞修飾 Sabi Sands
+→ 等於 which borders Kruger National Park</div>
+            <div class="ge-pattern">N + V-ing + O → &quot;名詞 + 修飾性分詞片語&quot;</div>
+          </div></div>
+        <div class="grammar-practice">The safari lodge sits on the riverbank, ______ (俯瞰著水塘).<br><span class="grammar-answer" id="ga1">overlooking the watering hole</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">強調句 — This is why...</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">&#39;This is why + S + V&#39; 是一個非常實用的強調句型，用來解釋某個行為或感受的原因。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">This is why we film, why we share — to capture the unfiltered drama of the African bush.</div>
+            <div class="ge-analysis">→ &#39;This is why...why...&#39; = 這就是為什麼...為什麼...
+→ 重複 &#39;why&#39; 加強語氣的修辭效果</div>
+            <div class="ge-pattern">This is why + S + V, why + S + V → &quot;這就是為什麼...為什麼...&quot;</div>
+          </div></div>
+        <div class="grammar-practice">______ (這就是為什麼我們旅行) — to discover the unknown.<br><span class="grammar-answer" id="ga2">This is why we travel</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">This isn&#39;t a [A]. It&#39;s [B].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">這不是A，而是B（否定轉肯定強調句）</div>
+        <div class="pattern-example">This isn&#39;t a zoo. It&#39;s the wild.</div>
+        <div class="pattern-template">This isn&#39;t [表面的A]. It&#39;s [真實的B].</div>
+        <div class="pattern-practice">This isn&#39;t just a vacation. ______ (這是一生一次的冒險).<br><span class="pattern-answer" id="pa1">It&#39;s a once-in-a-lifetime adventure</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">Seeing [X] in the wild isn&#39;t just [Y], it&#39;s [Z].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">在野外看到X不只是Y，而是Z（遞進強調）</div>
+        <div class="pattern-example">Seeing a rhino in the wild isn&#39;t just a sighting. It&#39;s witnessing survival itself.</div>
+        <div class="pattern-template">Seeing [動物] in the wild isn&#39;t just [普通體驗]. It&#39;s [深刻體驗].</div>
+        <div class="pattern-practice">Seeing a snow leopard in the wild isn&#39;t just a sighting. ______ (這是見證奇蹟).<br><span class="pattern-answer" id="pa2">It&#39;s witnessing a miracle</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">Every [time] could reveal [something].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">每一次...都可能展現出...（充滿期待）</div>
+        <div class="pattern-example">And on game drives, every bend could reveal something incredible.</div>
+        <div class="pattern-template">Every [時間/地點] could reveal [驚喜].</div>
+        <div class="pattern-practice">Every corner of the old city ______ (可能展現出隱藏的歷史寶藏).<br><span class="pattern-answer" id="pa3">could reveal a hidden piece of history</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">[X] is [Y], and that&#39;s why [Z].</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">X是Y，這就是為什麼Z（因果推論句）</div>
+        <div class="pattern-example">Birth is sacred. The entire herd gathers, trunks extended, gently touching the newborn.</div>
+        <div class="pattern-template">[事實] is [形容詞], and that&#39;s why [結果].</div>
+        <div class="pattern-practice">The wildlife here is truly special, and that&#39;s why ______ (我們一次又一次地回來).<br><span class="pattern-answer" id="pa4">we keep coming back again and again</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "What makes Sabi Sands famous?", "choices": ["It is the largest national park in South Africa", "It is world-famous as Big Cat Country", "It has the most luxury hotels in Africa", "It is the only place to see penguins"], "answer": 1, "explain": "The video opens with: 'Sabi Sands. World famous Big Cat Country bordering Kruger National Park.' The area is particularly well-known for its leopard and lion populations."},{"q": "How is Enoro Bush Lodge described?", "choices": ["A large resort with 200 rooms", "An intimate escape with just seven suites in a 65,000-acre private reserve", "A budget camp with basic tents", "A city hotel near Johannesburg"], "answer": 1, "explain": "The narrator describes Enoro as 'just seven suites, an intimate escape in the heart of Sabi Sands' within '65,000 acres of private reserve' that 'unfold into unfenced wilderness.'"},{"q": "Why is the baby rhino sighting described as 'incredibly rare'?", "choices": ["Rhinos are nocturnal and hard to see", "Over 95% of white rhinos have disappeared due to poaching", "Baby rhinos are born only once every decade", "Rhinos are not native to South Africa"], "answer": 1, "explain": "The narrator explains: 'Over 95% of the world's white rhinos disappeared in the 20th century, slaughtered for their horns. Seeing a rhino in the wild... is witnessing survival itself.'"},{"q": "Why do leopards stash their kills in trees?", "choices": ["To keep the meat fresh in the shade", "To protect them from lions and hyenas", "To mark their territory", "To attract a mate"], "answer": 1, "explain": "The transcript states: 'Leopards always stash their kills high on a branch to keep the scavengers like hyenas and lions from stealing them.' This is a key survival strategy for leopards."},{"q": "How do buffalo protect their calves at night?", "choices": ["They hide them in caves", "They form a solid wall with the calves in the middle", "They take turns standing guard", "They move to higher ground"], "answer": 1, "explain": "The narrator describes: 'The calves are tucked safely in the middle. Adults form a solid wall around them, a fortress of horn, hide, and muscle against anything daring to come close.'"}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

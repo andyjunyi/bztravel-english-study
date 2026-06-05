@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>From Lima to La Paz: A Journey with an Oxygen Tank — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">💡 BZ Travel · 英文自學講義</div>
+  <h1>From Lima to La Paz: A Journey with an Oxygen Tank</h1>
+  <div class="sub">秘魯/玻利維亞</div>
+  <div class="header-meta">
+    <span>11:08</span>
+    <span>💡 旅遊技巧</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/R2FO8sojBKo" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. The High Altitude Journey Begins</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Tresa and Zarko fly from Lima to Juliaca, stepping off the plane at 12,500 feet. They immediately notice the surprisingly thin air and low oxygen. Their journey continues toward the Bolivian border, stopping for lunch in Puno, which is known as Peru&#39;s folklore capital and the base for exploring Lake Titicaca&#39;s famous floating islands.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">Tresa和Zarko從Lima飛往Juliaca，在12,500英尺的高度下了飛機。他們立刻注意到令人驚訝的稀薄空氣和低氧量。他們的旅程繼續前往玻利維亞邊境，在Puno停下來吃午餐，Puno被稱為秘魯的民俗首府，也是探索的的喀喀湖著名漂浮島嶼的基地。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. Flight Delays and Missed Opportunities</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">What should have been a one-hour flight to Juliaca took seven hours. Thick fog forced the plane back to Lima to refuel and wait. As a result, they missed visiting the floating islands entirely, and could only manage a late lunch in Puno. Despite the setbacks, they describe Puno as a very cute town they would gladly explore with more time.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">原本應該是一小時到Juliaca的航班花了七個小時。濃霧迫使飛機返回Lima加油和等待。結果，他們完全錯過了參觀漂浮島嶼，只能在Puno吃個遲來的午餐。儘管遭遇了這些挫折，他們形容Puno是一個非常可愛的小鎮，如果有更多時間，他們很樂意探索。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. Lake Titicaca&#39;s Fresh Trout</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">In Puno, the couple enjoys a lunch of fresh trout from Lake Titicaca, the world&#39;s highest navigable lake. The trout is described as rich, juicy, and orange in color, surprisingly looking and tasting much more like fresh salmon. This meal becomes a highlight despite the travel difficulties.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在Puno，這對夫婦享用了來自的的喀喀湖的新鮮鱒魚午餐，這是世界上海拔最高的可航行湖泊。鱒魚被形容為豐富、多汁、呈橘色，令人驚訝地看起來和吃起來都更像新鮮的鮭魚。儘管旅途困難，這頓飯成了一個亮點。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. Dealing with Altitude Sickness</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">To fight altitude sickness, the couple drinks coca tea and buys coca candy, which mildly improves oxygen uptake. After crossing the border into Bolivia, the thin air becomes even more noticeable. Walking across the border feels like climbing a mountain, with profound weakness, headaches, and dizziness affecting them.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">為了對抗高山症，這對夫婦喝了古柯茶，並購買了古柯糖，這能輕微改善氧氣吸收。穿過邊境進入玻利維亞後，稀薄的空氣變得更加明顯。步行穿越邊境感覺就像爬山一樣，伴隨著嚴重的無力感、頭痛和頭暈。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. Crossing into Bolivia</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">The border crossing from Peru to Bolivia is an experience in itself. They walk across with the massive Lake Titicaca to their left, passing farmers working small quinoa and potato plots. The thin air makes even walking feel like a strenuous activity. Once in Bolivia, they head to Copacabana, where the high-altitude adventure continues.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">從秘魯到玻利維亞的邊境過境本身就是一種體驗。他們步行穿過，左側是的的喀喀湖，經過在小型藜麥和馬鈴薯田裡工作的農民。稀薄的空氣使得即使是走路也感覺像劇烈運動。進入玻利維亞後，他們前往Copacabana，高海拔探險仍在繼續。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. thin air</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">稀薄空氣</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We immediately noticed the surprisingly thin air and low oxygen."</div>
+        <div class="collo-practice">At high altitudes, the ______ makes it difficult to breathe.<br><span class="collo-answer" id="ca1">thin air</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. altitude sickness</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">高山症</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"To fight settling altitude sickness, we drank coca tea."</div>
+        <div class="collo-practice">Travelers to high-altitude destinations often experience ______.<br><span class="collo-answer" id="ca2">altitude sickness</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. oxygen uptake</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">氧氣吸收</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Coca candy mildly improves oxygen uptake."</div>
+        <div class="collo-practice">Regular exercise can improve your body&#39;s ______.<br><span class="collo-answer" id="ca3">oxygen uptake</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. profound weakness</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">嚴重的無力感</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You feel the lack of oxygen, profound weakness, headaches, and dizziness."</div>
+        <div class="collo-practice">The illness caused ______ that made it hard to even stand up.<br><span class="collo-answer" id="ca4">profound weakness</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. high altitude travel</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">高海拔旅行</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The dizziness of this high altitude travel is challenging."</div>
+        <div class="collo-practice">______ requires special preparation and gradual acclimatization.<br><span class="collo-answer" id="ca5">High altitude travel</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. folkloric capital</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">民俗首府</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Puno is known as Peru&#39;s folkloric capital."</div>
+        <div class="collo-practice">The city is considered the ______ of the region for its traditional festivals.<br><span class="collo-answer" id="ca6">folkloric capital</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. navigable lake</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">可航行的湖泊</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Lake Titicaca is the world&#39;s highest navigable lake."</div>
+        <div class="collo-practice">The ______ connects several towns along its shore.<br><span class="collo-answer" id="ca7">navigable lake</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. feel like climbing a mountain</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">感覺像爬山一樣吃力</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Walking this border feels just like climbing a mountain."</div>
+        <div class="collo-practice">Even a short walk at this altitude ______.<br><span class="collo-answer" id="ca8">feels like climbing a mountain</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">Past Simple for Sequential Narrative</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">使用簡單過去式來按時間順序敘述事件。這種敘事結構清楚地展示了事件的先後順序，使讀者能夠跟隨旅行者的經歷。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">We just flew from Lima to Juliaca. Stepping off the plane at 12,500 ft, we immediately noticed the surprisingly thin air.</div>
+            <div class="ge-analysis">使用 &#39;flew&#39; 和 &#39;noticed&#39; 兩個簡單過去式動詞來敘述連續事件。&#39;Stepping off&#39; 是現在分詞短語，表示伴隨動作。</div>
+            <div class="ge-pattern">Subject + simple past + [action]. [Verb-ing] + [detail], subject + simple past + [observation].</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">We planned to visit, but our 1-hour flight to Juliaca took 7 hours. Thick fog forced our plane back to Lima to refuel and wait. Since we missed the islands completely, we&#39;re just having a late lunch in Puno.</div>
+            <div class="ge-analysis">混合使用過去式（planned, took, forced, missed）和現在進行式（&#39;re having）來表達從過去到現在的時間過渡。&#39;Since&#39; 表示原因。</div>
+            <div class="ge-pattern">Subject + planned to [verb], but [unexpected event] happened. [Adverse condition] + forced + [result]. Since [consequence], [current situation].</div>
+          </div></div>
+        <div class="grammar-practice">用簡單過去式按時間順序描述一個旅行經歷中的三次事件。<br><span class="grammar-answer" id="ga1">&#39;We arrived at the airport at 6 AM. The flight was delayed by three hours. We finally landed at noon, exhausted but excited.&#39;</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">Comparative Adjectives for Contrast</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">比較級形容詞用於對比不同的事物或狀態。影片中使用比較級來強調高海拔環境與正常環境的差異。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">This rich, juicy, orange trout, surprisingly looks and tastes much more like fresh salmon.</div>
+            <div class="ge-analysis">&#39;Much more like&#39; 是比較級結構，將湖鱒魚的味道和口感與鮭魚進行比較。&#39;Surprisingly&#39; 修飾整個句子，表達意外之情。</div>
+            <div class="ge-pattern">[Subject] looks and tastes [comparative] like [something else].</div>
+          </div></div>
+        <div class="grammar-practice">用 &#39;much more like&#39; 比較兩個相似的事物。<br><span class="grammar-answer" id="ga2">&#39;This local cheese tastes much more like the one I had in France than the processed kind from the supermarket.&#39;</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">Stepping off [transport] at [altitude], [subject] [immediate reaction]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">從某交通工具下來時在某高度，某人立即產生了某種反應</div>
+        <div class="pattern-example">Stepping off the plane at 12,500 ft, we immediately noticed the surprisingly thin air.</div>
+        <div class="pattern-template">Stepping off [the plane / the bus / the train] at [altitude / location], [subject] immediately [noticed / felt / experienced] [reaction].</div>
+        <div class="pattern-practice">用這個句型描述一個到達高海拔地區的經驗。<br><span class="pattern-answer" id="pa1">Stepping off the bus at 10,000 ft, I immediately felt a strange lightness in my head.</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">What should have been [time A] took [time B]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">本應是A時間卻花了B時間</div>
+        <div class="pattern-example">Our 1-hour flight to Juliaca took 7 hours.</div>
+        <div class="pattern-template">What should have been [short time / simple task] took [much longer time / effort].</div>
+        <div class="pattern-practice">用這個句型描述一次意料之外的延誤。<br><span class="pattern-answer" id="pa2">What should have been a 30-minute drive took two hours because of the traffic jam.</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">To fight [condition], [subject] [remedy]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">為了對抗某狀況，某人採取了某種補救措施</div>
+        <div class="pattern-example">To fight settling altitude sickness, we drank coca tea.</div>
+        <div class="pattern-template">To fight [sickness / jet lag / fatigue / heat], [subject] [took / drank / used] [remedy].</div>
+        <div class="pattern-practice">用這個句型描述一個應對旅行不適的方法。<br><span class="pattern-answer" id="pa3">To fight jet lag, I tried to stay awake until the local bedtime.</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "At what altitude did they land in Juliaca?", "choices": ["8,000 ft", "10,000 ft", "12,500 ft", "15,000 ft"], "answer": 2, "explain": "They stepped off the plane at 12,500 ft and immediately noticed the thin air."},{"q": "Why did the flight to Juliaca take 7 hours instead of 1?", "choices": ["Mechanical problems", "Thick fog forced the plane back to Lima", "A storm diverted them to another city", "Overbooking caused delays"], "answer": 1, "explain": "Thick fog forced their plane back to Lima to refuel and wait."},{"q": "What is Lake Titicaca described as?", "choices": ["The deepest lake in the world", "The world's highest navigable lake", "The largest lake in South America", "The saltiest lake in the world"], "answer": 1, "explain": "Lake Titicaca is described as the world's highest navigable lake."},{"q": "What did they drink to fight altitude sickness?", "choices": ["Coffee", "Coca tea", "Energy drinks", "Green tea"], "answer": 1, "explain": "To fight altitude sickness, they drank coca tea and bought coca candy."},{"q": "Which country is Puno in?", "choices": ["Bolivia", "Chile", "Peru", "Argentina"], "answer": 2, "explain": "Puno is in Peru, described as Peru's folkloric capital."}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

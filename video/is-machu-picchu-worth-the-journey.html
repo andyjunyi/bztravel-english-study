@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Is Machu Picchu Worth the Journey? — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>Is Machu Picchu Worth the Journey?</h1>
+  <div class="sub">秘魯</div>
+  <div class="header-meta">
+    <span>8:41</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/F09ZsBdvRtM" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. A Bucket List Dream Realized</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">Tresa and Zarko, two retirees traveling the world, finally visit Machu Picchu — one of the seven wonders of the world and a long-time item on their bucket list. The only way to reach the site is via Aguas Calientes, a bustling base camp town built by railroad workers that now focuses entirely on hosting tourists.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">Tresa和Zarko，兩位環遊世界的退休人士，終於造訪了馬丘比丘——世界七大奇蹟之一，也是他們長久以來的願望清單項目。到達該遺址的唯一方式是經由熱水鎮(Aguas Calientes)，這是一個由鐵路工人建立的繁華基地小鎮，現在完全專注於接待遊客。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. Getting to Aguas Calientes</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">Travelers arrive at Aguas Calientes by train from Cusco or Ollantaytambo. From this convenient base, a dedicated shuttle bus takes visitors straight up the mountain to Machu Picchu. The town is filled with hostels, hotels, and restaurants, serving as the gateway to the ancient Incan citadel.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">遊客從庫斯科或奧揚泰坦博搭乘火車抵達熱水鎮。從這個便利的基地，專車接駁巴士可以輕鬆地將遊客直接送上山到馬丘比丘。小鎮裡充滿了青年旅館、酒店和餐廳，是通往古代印加堡壘的門戶。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. A Dramatic Bus Ride Up the Mountain</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">The scenic bus ride to Machu Picchu is described as an unforgettable adventure in itself. For 30 minutes, they climbed straight up the mountain on an incredibly steep road, navigating intense switchbacks. They were completely surrounded by beautiful towering mountains, thick rolling mist, and fluffy white rain clouds.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">前往馬丘比丘的觀光巴士之旅本身就被形容為一次難忘的冒險。在30分鐘內，他們沿著極度陡峭的道路直線上山，經歷了密集的髮夾彎。他們完全被美麗的高聳山脈、濃厚的翻滾雲霧和 fluffy 的白色雨雲所包圍。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. The Mystery of Machu Picchu</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">At 8,000 feet, the mountains literally touch the sky. The couple marvels at why anyone would build a city at such an elevation. Spanish conquistadors never found Machu Picchu, leaving the site totally intact. Amazingly, an 11-year-old boy named Pablito first guided American explorer Hiram Bingham to these hidden ruins in 1911.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">在8,000英尺的高度，山巒 literally 觸及天空。這對夫婦驚嘆為什麼有人會在這個海拔建造一座城市。西班牙征服者從未找到馬丘比丘，使得該遺址完全完好無損。令人驚奇的是，一個名叫Pablito的11歲男孩在1911年首先引導美國探險家Hiram Bingham來到這些隱藏的廢墟。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. Worth Every Moment</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">Despite initial worries about fog potentially covering the ruins, the experience exceeds expectations. The video suggests that Machu Picchu is absolutely worth the journey — the challenging travel, the altitude, and the effort all pay off when you stand among the ancient stones surrounded by clouds and mountains.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">儘管最初擔心濃霧可能會遮蓋遺址，但最終的體驗超出了預期。影片暗示馬丘比丘絕對值得這段旅程——艱難的交通、高海拔和付出的努力，當你站在被雲霧和群山環繞的古老石頭間時，一切都值得了。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. bucket list</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">人生願望清單</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Crossing Machu Picchu off the bucket list after all these years feels amazing."</div>
+        <div class="collo-practice">Seeing the Northern Lights is at the top of my ______.<br><span class="collo-answer" id="ca1">bucket list</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. seven wonders of the world</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">世界七大奇蹟</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Machu Picchu is one of the seven wonders of the world."</div>
+        <div class="collo-practice">The Great Wall of China is also considered one of the ______.<br><span class="collo-answer" id="ca2">seven wonders of the world</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. base camp</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">基地營</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Aguas Calientes is the busy base camp town below Machu Picchu."</div>
+        <div class="collo-practice">The climbers set up ______ at the foot of the mountain.<br><span class="collo-answer" id="ca3">base camp</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. intact</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">完好無損的</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Spanish conquistadors never found Machu Picchu, leaving it totally intact."</div>
+        <div class="collo-practice">The ancient temple remained ______ for centuries.<br><span class="collo-answer" id="ca4">intact</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. roll over the mountain</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">翻滾過山巒</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"They were surrounded by thick rolling mist and clouds."</div>
+        <div class="collo-practice">The fog ______, hiding the peak from view.<br><span class="collo-answer" id="ca5">rolled over</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. touch the sky</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">觸及天空（形容極高）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"At 8,000 ft, these incredibly mountains literally touch the sky."</div>
+        <div class="collo-practice">The skyscraper seemed to ______ as we looked up from the ground.<br><span class="collo-answer" id="ca6">touch the sky</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. worth the journey</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">值得一遊</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The video asks: Is Machu Picchu worth the journey?"</div>
+        <div class="collo-practice">Despite the long flight, the destination is absolutely ______.<br><span class="collo-answer" id="ca7">worth the journey</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. scenic bus</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">觀光巴士</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The scenic bus is an absolutely unforgettable adventure on its own."</div>
+        <div class="collo-practice">We took a ______ that wound through the mountains with spectacular views.<br><span class="collo-answer" id="ca8">scenic bus</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">Present Simple for Historical Facts &amp; Descriptions</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">現在簡單式用於描述歷史事實和永久性的狀態，即使事件發生在過去，但事實本身仍然成立。影片中用現在簡單式來描述馬丘比丘的歷史地位和地理特徵。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">Machu Picchu is one of the seven wonders of the world.</div>
+            <div class="ge-analysis">使用現在簡單式 &#39;is&#39; 來陳述一個持續存在的事實——馬丘比丘是世界奇蹟之一的地位不會改變。</div>
+            <div class="ge-pattern">[Subject] + is/are + [classification].</div>
+          </div>          <div class="ge-item">
+            <div class="ge-from">Spanish conquistadors never found Machu Picchu, leaving the site totally intact.</div>
+            <div class="ge-analysis">使用過去式 &#39;found&#39; 和現在分詞 &#39;leaving&#39;。&#39;Never found&#39; 表示過去的歷史事實，而 &#39;leaving&#39; 是結果狀語。</div>
+            <div class="ge-pattern">[Historical subject] never [past verb] [object], [verb-ing] [result].</div>
+          </div></div>
+        <div class="grammar-practice">用現在簡單式描述一個你所在地的著名地標。<br><span class="grammar-answer" id="ga1">&#39;The National Palace Museum is one of the largest museums in the world, housing over 700,000 artifacts.&#39;</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">Rhetorical Questions</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">反問句不期待回答，而是用來引發思考或強調觀點。影片中的 &#39;Why would anyone build a city up here?&#39; 引導觀眾思考印加文明的偉大和神秘。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">Why would anyone build a city up here?</div>
+            <div class="ge-analysis">反問句 &#39;Why would anyone...&#39; 表達驚訝和好奇，而不是真正在提問。它引發讀者思考這個地方的不凡之處。</div>
+            <div class="ge-pattern">Why would anyone [verb] [object] [preposition] [location]?</div>
+          </div></div>
+        <div class="grammar-practice">用反問句表達對一個歷史遺跡的驚嘆。<br><span class="grammar-answer" id="ga2">&#39;Why would ancient people carve such enormous statues on a remote island?&#39;</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">The only way to [verb] [place] is by [means of transport]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">到達某地的唯一方式是某種交通工具</div>
+        <div class="pattern-example">The only way to get to Aguas Calientes is by train.</div>
+        <div class="pattern-template">The only way to [reach / get to / access] [place] is by [train / boat / plane / foot].</div>
+        <div class="pattern-practice">用這個句型描述一個偏遠地點的交通方式。<br><span class="pattern-answer" id="pa1">The only way to reach the village is by boat across the river.</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">Waking up to [weather], with [preparation], we worried [concern]</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">在...天氣中醒來，準備好了某物，我們擔心某事</div>
+        <div class="pattern-example">Waking up to cloudy skies with our bus tickets ready, we really worried thick fog might completely cover Machu Picchu.</div>
+        <div class="pattern-template">Waking up to [weather condition], with [preparations done], we worried [potential problem].</div>
+        <div class="pattern-practice">用這個句型描述一次旅行前的擔憂。<br><span class="pattern-answer" id="pa2">Waking up to pouring rain with our hiking gear ready, we worried the trail might be closed.</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">[Number] minutes, we [verb] straight [direction] the mountain/road</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">花了幾分鐘，我們沿著某方向直上</div>
+        <div class="pattern-example">For 30 minutes, we climbed straight up the mountain on an incredibly steep road.</div>
+        <div class="pattern-template">For [time period], we [climbed / drove / walked] straight [up/down] the [mountain/road] on [description of path].</div>
+        <div class="pattern-practice">用這個句型描述一段陡峭的旅程。<br><span class="pattern-answer" id="pa3">For 20 minutes, we hiked straight up the trail on a narrow dirt path.</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "Which wonder of the world is Machu Picchu?", "choices": ["One of the five wonders", "One of the seven wonders", "One of the ten wonders", "One of the three wonders"], "answer": 1, "explain": "Machu Picchu is described as one of the seven wonders of the world."},{"q": "What is the name of the base camp town below Machu Picchu?", "choices": ["Cusco", "Ollantaytambo", "Aguas Calientes", "Lima"], "answer": 2, "explain": "Aguas Calientes is the busy base camp town that's right below Machu Picchu."},{"q": "How do travelers get to Machu Picchu from Aguas Calientes?", "choices": ["By hiking for 2 days", "By dedicated shuttle bus", "By helicopter", "By cable car"], "answer": 1, "explain": "A dedicated shuttle bus takes visitors straight up to Machu Picchu."},{"q": "Who first guided Hiram Bingham to Machu Picchu in 1911?", "choices": ["A local farmer", "An 11-year-old boy named Pablito", "A Spanish explorer", "An Incan descendant"], "answer": 1, "explain": "An 11-year-old boy named Pablito first guided the American explorer Hiram Bingham to the hidden ruins in 1911."},{"q": "Why was Machu Picchu never found by Spanish conquistadors?", "choices": ["It was destroyed before they arrived", "It was hidden in the clouds", "The question is not answered in the video", "The Spanish never looked for it"], "answer": 2, "explain": "The Spanish conquistadors never found Machu Picchu, leaving the site totally intact."}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>

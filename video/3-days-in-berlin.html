@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>3 Days in Berlin — 英文自學講義 | BZ Travel</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+.header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
+.header .sub{font-size:13px;opacity:.85}
+.header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
+.main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
+.video-wrap{position:relative;margin-top:-40px;z-index:2;border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.15);background:#000}
+.video-wrap iframe{display:block;width:100%;aspect-ratio:16/9;border:none}
+.section{border-radius:16px;background:#fff;padding:20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.section-title{font-size:17px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
+.accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
+.accordion:last-child{margin-bottom:0}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
+.acc-header:hover{background:#eff6ff}
+.acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
+.acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
+.acc-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:#e2e8f0;color:#64748b;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;transition:all .3s}
+.acc-header.open .acc-icon{background:#1e40af;color:#fff;transform:rotate(180deg)}
+.acc-body{display:none;padding:12px;background:#fff;animation:fadeIn .2s ease}
+.acc-body.open{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
+.collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
+.collo-example .label{font-weight:600;color:#10b981;font-size:11px}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
+.collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
+.grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
+.grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
+.ge-analysis{font-size:11px;color:#475569;line-height:1.5}
+.ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
+.grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
+.pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
+.pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
+.pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
+.pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.quiz-choices{display:grid;gap:5px}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
+.quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
+.quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
+.quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
+.quiz-feedback.show{display:block}
+.quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
+.quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
+.quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
+.quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
+.section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.section-nav::-webkit-scrollbar{display:none}
+.section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
+.section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
+.footer a{color:#3b82f6;text-decoration:none}
+@media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
+  <h1>3 Days in Berlin</h1>
+  <div class="sub">德國</div>
+  <div class="header-meta">
+    <span>19:39</span>
+    <span>🏙️ 城市探索</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/vMYxjauZeF4" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+        <span class="acc-label">1. A Practical Base in Berlin</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p1">
+        <div class="para-en">The BZ Travel team spends three days exploring Berlin. They book an apartment in a residential area near Alexanderplatz because it gives them a clearer read on the city. The neighborhood offers solid food options and walkable streets, making it a practical base. From there, metros, trams, and trains connect the entire region. Berlin&#39;s public transport is described as extremely easy to use — with a smartphone app, navigating between trains, trams, and metros is simple and fast.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">BZ Travel團隊花了三天探索柏林。他們在亞歷山大廣場附近的住宅區訂了一間公寓，因為這樣能讓他們更清楚地感受這座城市。這個社區提供多樣的美食選擇和適合步行的街道，是一個實用的基地。從那裡，地鐵、電車和火車連接整個區域。柏林的公共交通被形容為極易使用——有了智慧型手機應用程式，在火車、電車和地鐵之間轉乘既簡單又快速。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+        <span class="acc-label">2. A Medical Reason for the Trip</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p2">
+        <div class="para-en">Berlin wasn&#39;t just a sightseeing trip — Tresa came for an advanced medical test available in Germany&#39;s top-notch healthcare system. They have a global health insurance policy called Global Sigma that covers them anywhere in the world. The couple explains that Germany has excellent doctors and treatment, which is why they chose Berlin for this particular test. It&#39;s a glimpse into the practical realities of full-time travel and managing health on the road.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">柏林不僅僅是觀光之旅——Tresa來這裡進行一項先進的醫療檢查，德國擁有頂尖的醫療體系。他們有一個名為Global Sigma的全球健康保險，涵蓋世界任何地方。這對夫妻解釋說，德國有優秀的醫生和治療，這就是為什麼他們選擇柏林進行這項特殊檢查。這讓人一窺全職旅行和在路上管理健康的實際現實。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+        <span class="acc-label">3. The Canal Cruise: Berlin from the Water</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p3">
+        <div class="para-en">A three-hour canal cruise offers a unique perspective on Berlin. The team saw Museum Island from the water, which helped piece together the logic behind this part of the city. They passed Berlin Cathedral, the Reichstag, and the modern glass cube building that plays tricks with its angles. Moving into residential areas, they noticed privately-owned apartments common in much of Europe, contrasting with American rental culture. Old brick warehouses converted into homes lined the waterways.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">三小時的運河遊船提供了柏林獨特的視角。團隊從水面看到博物館島，這有助於理解柏林的這片區域的規劃邏輯。他們經過了柏林大教堂、國會大廈和現代的玻璃立方體建築，它會隨著角度變換光影。進入住宅區時，他們注意到歐洲常見的私有公寓與美國租賃文化的對比。改建成住宅的舊磚造倉庫沿著水道排列。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+        <span class="acc-label">4. East vs. West: Visible Contrasts</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p4">
+        <div class="para-en">Taking public transport across the city, the team noticed clear differences between the west and east sides of Berlin. Public transport is incredibly efficient — they tried the metro, tram, and train, and were looking for bus 100 near Brandenburg Gate. At the gate itself, crosses and portraits serve as reminders that Berlin isn&#39;t just sightseeing — it carries real stories of loss and history. The city&#39;s past still guides it in small ways today.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">搭乘公共交通穿越城市時，團隊注意到柏林東西兩側的明顯差異。公共交通效率極高——他們嘗試了地鐵、電車和火車，並在布蘭登堡門附近尋找100號公車。在城門處，十字架和肖像提醒人們柏林不只是觀光——它承載著真實的失落與歷史故事。這座城市的過去至今仍在以細微的方式引導著它。</div>
+      </div>
+    </div>
+    <div class="accordion" data-group="reading">
+      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+        <span class="acc-label">5. Potsdam and Sanssouci Palace</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="reading-p5">
+        <div class="para-en">The team also visited Potsdam and Sanssouci Palace, the former summer palace of Frederick the Great. This UNESCO World Heritage site showcases stunning Rococo architecture and beautiful terraced vineyards. Berlin in three days is a whirlwind, but the combination of history, architecture, efficient transport, and world-class healthcare makes it a uniquely rewarding destination. The canal cruise, while long, gave them a genuine sense of local life beyond the tourist center.</div>
+        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
+        <div class="para-zh">團隊還參觀了波茨坦和無憂宮——腓特烈大帝的前夏宮。這個聯合國教科文組織世界遺產展示了令人驚嘆的洛可可建築和美麗的梯田葡萄園。三天遊柏林雖然短暫，但歷史、建築、高效的交通和世界級的醫療保健使它成為一個獨特而值得的目的地。運河遊船雖然時間長，但讓他們在旅遊中心之外，真正感受到了當地生活。</div>
+      </div>
+    </div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
+        <span class="acc-label">1. give someone a clearer read on</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c1">
+        <div class="collo-meaning">讓某人更清楚地了解</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"We book apartments in residential areas because they give us a clearer read on the city."</div>
+        <div class="collo-practice">Staying with a local family gave us ______ (更清楚地了解) the culture.<br><span class="collo-answer" id="ca1">a clearer read on</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
+        <span class="acc-label">2. piece together</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c2">
+        <div class="collo-meaning">拼湊；理清</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Seeing Museum Island from the water helped me piece together the logic behind this part of Berlin."</div>
+        <div class="collo-practice">The detective tried to ______ (拼湊) what happened that night.<br><span class="collo-answer" id="ca2">piece together</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
+        <span class="acc-label">3. play tricks with</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c3">
+        <div class="collo-meaning">玩弄；產生幻覺效果</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The cube building plays tricks with its angles, throwing back bits of sky and river."</div>
+        <div class="collo-practice">The mirror maze ______ (玩弄) your sense of direction.<br><span class="collo-answer" id="ca3">plays tricks with</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
+        <span class="acc-label">4. top-notch</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c4">
+        <div class="collo-meaning">一流的；頂尖的</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"In Germany, they have top-notch doctors and treatment."</div>
+        <div class="collo-practice">The hotel we stayed at had ______ (一流的) service.<br><span class="collo-answer" id="ca4">top-notch</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
+        <span class="acc-label">5. shift gears</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c5">
+        <div class="collo-meaning">換檔；改變節奏或方向</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Passing Berlin&#39;s central station feels like watching the city shift gears."</div>
+        <div class="collo-practice">After the busy morning, it was time to ______ (放慢節奏) and relax.<br><span class="collo-answer" id="ca5">shift gears</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
+        <span class="acc-label">6. a practical base for</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c6">
+        <div class="collo-meaning">做...的實用基地</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The neighborhood makes a practical base for exploring the city."</div>
+        <div class="collo-practice">The hostel near the station is ______ (探索整座城市的實用基地).<br><span class="collo-answer" id="ca6">a practical base for exploring the whole city</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
+        <span class="acc-label">7. bustling with shoppers</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c7">
+        <div class="collo-meaning">擠滿了購物的人潮（形容非常熱鬧）</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"During winter months, the same streets are bustling with shoppers."</div>
+        <div class="collo-practice">On weekends, the market is ______ (擠滿了購物人潮).<br><span class="collo-answer" id="ca7">bustling with shoppers</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="collo">
+      <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
+        <span class="acc-label">8. a contrast between A and B</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="collo-c8">
+        <div class="collo-meaning">A與B之間的對比</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"What a contrast between the old and the new architecture."</div>
+        <div class="collo-practice">There is a striking ______ (對比) the bustling city and the peaceful countryside.<br><span class="collo-answer" id="ca8">contrast between</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
+        <span class="acc-label">關係代名詞 which 的非限定用法</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g1">
+        <div class="grammar-explain">非限定關係子句用逗號隔開，which 指代前面的整個名詞或概念，提供額外資訊而非必要資訊。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">This neighborhood offers plenty of solid food options and a walkable street, making it a practical base for exploring the day.</div>
+            <div class="ge-analysis">→ &#39;making it a practical base&#39; = which makes it a practical base
+→ &#39;which&#39; 指代前面整個情況</div>
+            <div class="ge-pattern">[主句], which + V... / [主句], V-ing... → 非限定關係子句</div>
+          </div></div>
+        <div class="grammar-practice">Berlin has excellent public transport, ______ (這使得) easy to get around without a car.<br><span class="grammar-answer" id="ga1">which makes it</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="grammar">
+      <div class="acc-header" onclick="toggleAccordion(this,'grammar','g2')">
+        <span class="acc-label">S + V + Adj + enough + to + V 的變化形式</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="grammar-g2">
+        <div class="grammar-explain">&#39;Good for anywhere&#39; 是 &#39;good enough to be used anywhere&#39; 的簡化版，形容詞直接接 &#39;for + 名詞&#39;。</div>
+        <div class="grammar-examples">          <div class="ge-item">
+            <div class="ge-from">It&#39;s good for anywhere in the world.</div>
+            <div class="ge-analysis">→ good for = suitable for
+→ 介系詞 for 直接接 anywhere，表達適用的範圍</div>
+            <div class="ge-pattern">S + be + Adj + for + [任意範圍]</div>
+          </div></div>
+        <div class="grammar-practice">This jacket is ______ (適合任何天氣) in spring.<br><span class="grammar-answer" id="ga2">good for any weather</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
+        <span class="acc-label">Berlin isn&#39;t just [A] — it&#39;s [B] (柏林不只是A，它是B)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt1">
+        <div class="pattern-meaning">否定前句，然後用轉折強調更深層的意義</div>
+        <div class="pattern-example">Berlin isn&#39;t just sightseeing. It&#39;s real stories, real loss.</div>
+        <div class="pattern-template">[地點/事物] isn&#39;t just [表面的事物] — it&#39;s [更深層的事物].</div>
+        <div class="pattern-practice">Travel isn&#39;t just about seeing new places — ______ (它是關於成長與發現).<br><span class="pattern-answer" id="pa1">it&#39;s about growth and discovery</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt2')">
+        <span class="acc-label">The reason why S + V is because... (原因是因為...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt2">
+        <div class="pattern-meaning">明確解釋某個決定或現象的原因</div>
+        <div class="pattern-example">The reason why we&#39;re here in Berlin to begin with is because they have a very advanced test.</div>
+        <div class="pattern-template">The reason why [主詞 + 動詞] is because [原因].</div>
+        <div class="pattern-practice">______ (我們選擇柏林的原因) is because of its excellent public transport.<br><span class="pattern-answer" id="pa2">The reason why we chose Berlin</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt3')">
+        <span class="acc-label">You&#39;d be forgiven for thinking that... (你這樣想是可以理解的)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt3">
+        <div class="pattern-meaning">禮貌地指出某人的常見誤解是可以理解的</div>
+        <div class="pattern-example">You&#39;d be forgiven for thinking it was plucked straight out of Paris.</div>
+        <div class="pattern-template">You&#39;d be forgiven for thinking + [子句].</div>
+        <div class="pattern-practice">______ (你會以為這是博物館) when you see the interior of this hotel.<br><span class="pattern-answer" id="pa3">You&#39;d be forgiven for thinking it&#39;s a museum</span></div>
+      </div>
+    </div>
+    <div class="accordion" data-group="pattern">
+      <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt4')">
+        <span class="acc-label">I get why S + V... (我了解為什麼...)</span>
+        <span class="acc-icon">▾</span>
+      </div>
+      <div class="acc-body" id="pattern-pt4">
+        <div class="pattern-meaning">表達理解某個決定或現象背後的原因</div>
+        <div class="pattern-example">Moving along the canal, I get why the early planners put so many institutions here.</div>
+        <div class="pattern-template">I get why [主詞] [動詞]...</div>
+        <div class="pattern-practice">After visiting the city, ______ (我了解為什麼) everyone loves Berlin.<br><span class="pattern-answer" id="pa4">I get why</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
+</div>
+<script>
+function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
+function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
+var QUIZ = [{"q": "Why did the team choose to stay near Alexanderplatz?", "choices": ["It is the cheapest area in Berlin", "It's close to major transit lines and easy to reach from the airport", "It has the best nightlife in the city", "It is right next to Brandenburg Gate"], "answer": 1, "explain": "The video explains: 'We stay near Alexanderplatz. It's close to major transit lines and it's easy to reach from the airport.'"},{"q": "What was Tresa's additional reason for visiting Berlin beyond sightseeing?", "choices": ["To attend a film festival", "To have an advanced medical test", "To visit a friend", "To go shopping for designer clothes"], "answer": 1, "explain": "Tresa says: 'The reason why we're here in Berlin to begin with is because they have a test here, a very advanced test that I'm going to do.'"},{"q": "According to the video, what is unique about apartments in much of Europe compared to the US?", "choices": ["They are much larger", "They are usually purchased (condos) rather than rented", "They are all rent-controlled", "They come fully furnished"], "answer": 1, "explain": "The narrator explains: 'The term can confuse visitors from the US, where apartment usually signals a rental. Here, it generally refers to a purchased unit, more like a condo.'"},{"q": "What does the narrator suggest about the 3-hour vs 1-hour canal tour?", "choices": ["The 3-hour tour was much better value", "The 1-hour tour would have been enough", "Both tours were equally good", "The 3-hour tour was too short"], "answer": 1, "explain": "The narrator says: '3 hours is the whole tour. Honestly, I think 1 hour tour would have been enough. The stretch outside central Berlin isn't very exciting.'"},{"q": "What reminded the team that Berlin carries 'real stories, real loss'?", "choices": ["A visit to a war museum", "Crosses and portraits near Brandenburg Gate", "An old cemetery they visited", "A documentary they watched at the hotel"], "answer": 1, "explain": "The video shows: 'Right by the Brandenburg Gate, those crosses and portraits remind you Berlin isn't just sightseeing. It's real stories, real loss.'"}];
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()}
+renderQuiz();
+</script>
+</body>
+</html>
