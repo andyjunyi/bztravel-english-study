@@ -529,11 +529,19 @@ function toggleAccordion(el, group, id) {
   var body = document.getElementById(group + '-' + id);
   var isOpen = body.classList.contains('open');
 
-  // Close all in same group
-  var allHeaders = document.querySelectorAll('.accordion[data-group="' + group + '"] .acc-header');
+  // Close all in same group — and pause their audio
   var allBodies = document.querySelectorAll('.accordion[data-group="' + group + '"] .acc-body');
+  var allHeaders = document.querySelectorAll('.accordion[data-group="' + group + '"] .acc-header');
   for (var i = 0; i < allBodies.length; i++) {
     allBodies[i].classList.remove('open');
+    // Pause any audio playing inside the closing body
+    var audios = allBodies[i].querySelectorAll('audio');
+    for (var a = 0; a < audios.length; a++) {
+      if (!audios[a].paused) {
+        audios[a].pause();
+        audios[a].currentTime = 0;
+      }
+    }
   }
   for (var i = 0; i < allHeaders.length; i++) {
     allHeaders[i].classList.remove('open');
