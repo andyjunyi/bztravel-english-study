@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>Rio Before Carnival: Copacabana, Sugarloaf & Santa Teresa — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,121 +32,520 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
-.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
-.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
-.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
-.collo-play:active{background:#1e40af;transform:scale(.9)}
-.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
-.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;color:#059669;font-weight:600}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;color:#059669;font-weight:600}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-badge">🏙️ BZ Travel · 英文自學講義</div><h1>Rio Before Carnival: Copacabana, Sugarloaf & Santa Teresa</h1><div class="sub">巴西</div><div class="header-meta"><span>15:28</span><span>🏙️ 城市探索</span></div></div>
-<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/Aoa6o2LX1qw" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
-<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
+<div class="header">
+  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
+  <h1>Rio Before Carnival: Copacabana, Sugarloaf & Santa Teresa</h1>
+  <div class="sub">巴西</div>
+  <div class="header-meta">
+    <span>15:28</span>
+    <span>🏙️ 城市探索</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/Aoa6o2LX1qw" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Rio de Janeiro: A Third Visit</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
         <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Tresa and Zarko&#39;s South American adventure ends in Rio de Janeiro, one of the world&#39;s most picturesque cities. This is their third visit, this time in February just before Carnival. They deliberately leave before the festival starts, finding the crowds a little too wild and crazy for their taste. Rio, they explain, has two unmissable moments: New Year&#39;s Eve and Carnival.</div>
+        <div class="para-en">Our South American adventure ends
+ in one of the world&#39;s most
+picturesque cities,
+Rio de Janeiro.
+You have seen the iconic views.
+Now, come along as we get up close.
+From Christ the Redeemer watching over
+the city
+to Sugarloaf Mountain revealing all the
+beautiful beaches and bays below.
+Our third visit to Rio,
+February this time, just before
+Carnival, leaving before it starts.
+A little too wild and crazy for us.
+Rio has two unmissable moments, New
+Year&#39;s Eve and Carnival.
+Two years ago, we watched the fireworks
+from a cruise ship right across
+Copacabana.
+Panoramic view across the entire beach,
+world&#39;s number one ranked display, over
+12 minutes, 2 million people on that
+sand.
+Carnival will draw 6 million, the
+largest in the world.
+We&#39;re staying in Copacabana and we have
+a a 
+a hotel that&#39;s right on the very front
+of the beach area, but let me show you
+the view from our room.
+This incredible.
+Sometimes, if you can get a room that
+has this the
+you know, ocean view,
+book it because now we can see
+Copacabana.
+And what What&#39;s surprising is is all
+those
+sidewalks that you see with the designs
+is all small mosaic tiles.
+So, check it out. Copacabana.
+Welcome to Rio.
+Copacabana, one of the  world&#39;s
+most famous beaches, almost entirely
+empty.
+Just clusters  of people
+exercising, surfing, keeping fit along
+the shore.
+The weather had other plans. Rain, gray
+skies, the kind of morning that sends
+beach crowds away.
+Surprising still  with Carnival
+only days around the corner.
+Most visitors take the train up
+Corcovado Mountain to Christ the
+Redeemer, and so did we two years ago.
+This time, our small group had a private
+van take us straight to the top.
+So, we&#39;re we&#39;re going on the escalator.
+We&#39;re going up to see the Christ the
+Redeemer, and it&#39;s right there.
+It&#39;s not crowded.
+We&#39;re early.
+The Christ the Redeemer is looking down
+on the city, which is very cool.
+There it is.
+Busy now, but on New Year&#39;s Eve, we
+stood here packed among 3,000 people,
+shoulder to shoulder. So, you you have
+to get way back at the end where
+everybody else is so you can turn around
+and get a good picture um because it&#39;s
+so big.
+See it.
+Standing here among the crowd, the awe
+is  contagious.
+Everyone feels it.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Tresa和Zarko的南美洲冒險在里約熱內盧畫下句點，這是世界上風景最美的城市之一。這是他們第三次造訪，這次是在二月，嘉年華會前夕。他們刻意在嘉年華開始前離開，覺得人群對他們來說有點太瘋狂了。他們解釋說，里約有兩個不容錯過的時刻：新年夜和嘉年華。</div>
+        <div class="para-zh">我們的南美洲冒險在里約熱內盧畫下句點，這是世界上風景最美的城市之一。你看過那些標誌性的景觀了，現在跟我們一起近距離體驗吧。從俯瞰城市的基督像，到揭示下方所有美麗海灘和海灣的糖麵包山。這是我們第三次造訪里約，這次是二月，就在嘉年華前夕，我們在嘉年華開始前離開，對我們來說有點太瘋狂了。里約有兩個不容錯過的時刻：新年夜和嘉年華。兩年前，我們在科帕卡巴納正對面的郵輪上觀賞煙火，全景視野橫跨整個沙灘，世界排名第一的表演，超過12分鐘，兩百萬人擠在那片沙灘上。嘉年華則將吸引六百萬人，世界最大。我們住在科帕卡巴納，飯店就在沙灘區的正前方。讓我給你看從我們房間看到的景色，太不可思議了。有時候，如果你能訂到有這種海景的房間，就訂下去吧，因為我們現在可以看到整個科帕卡巴納。而且令人驚訝的是，那些你看到的有圖案的人行道，全都是小馬賽克瓷磚鋪成的。來看看吧，科帕卡巴納。歡迎來到里約。科帕卡巴納，世界上最著名的海灘之一，幾乎完全空無一人。只有零星的人在運動、衝浪、沿著海岸健身。天氣另有打算，下雨、陰天，那種會讓沙灘人群散去的那種早晨。更令人驚訝的是，嘉年華就在幾天後了。大多數遊客會搭火車上科爾科瓦多山去看基督像，我們兩年前也是這樣。這次，我們的小團有私人廂型車直接載我們到山頂。所以我們要搭電扶梯上去，去看基督像，它就在那裡。人不擠，我們來得早。基督像俯瞰著整個城市，非常酷。就在那裡。現在人很多，但在新年夜，我們曾擠在三千人之間，肩並肩。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Copacabana Beach and the Hotel View</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
         <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The couple stays in Copacabana at a hotel right on the beachfront. From their room, they enjoy an incredible ocean view of the famous beach. They notice something surprising — the sidewalks with their distinctive wave-like designs are made of small mosaic tiles. Copacabana, one of the world&#39;s most famous beaches, is almost empty during their visit due to rainy weather.</div>
+        <div class="para-en">t.
+Standing here among the crowd, the awe
+is  contagious.
+Everyone feels it. That shared electric
+energy rubs off on you completely.
+At 2,300 
+ft, the city unfolds dramatically
+beneath you.
+One of the world&#39;s great overlooks,
+the urban  sprawl, the beaches,
+the surrounding mountains,
+and a lifting fog that adds just the
+right layer of mystery to all of it.
+At 38 m, it is not the world&#39;s tallest,
+but perched on Corcovado, those
+outstretched  arms create a
+powerful illusion of embracing the
+entire city.
+This is where the most iconic images of
+Rio are captured,
+and you understand exactly why the
+moment you step out onto this platform.
+Mountains and favelas rising steeply
+behind you,
+the city base and the entire urban
+sprawl laid out completely in full,
+beautifully,  dramatically,
+completely framed
+from every single direction and angle.
+The beaches of Ipanema and Copacabana
+stretching out beautifully far below.
+Sugarloaf Mountain sitting perfectly
+framed in the distance.
+Third time here, and we will come back
+every time we return to Rio. No
+hesitation whatsoever.
+The 360°
+view from this platform
+is reason enough on its own.
+From Corcovado heading down towards
+Santa Teresa, three favelas on the way.
+Rio has almost 800 of them, home to 1
+and 1/2 million people, roughly 25% of
+the city&#39;s population.
+The density is striking. Narrow
+alleyways, no real streets, motorbikes
+and foot traffic, residents 
+carrying everything uphill themselves.
+Water tanks on every rooftop, wires in
+every direction.
+Urban planning, if it exists here at
+all, is invisible.
+Rio is a city of extraordinary beauty
+and sharp contrast,
+and these  hillsides make both
+impossible to ignore.
+Rio is a city of sharp contrasts.
+Ipanema  and its boutiques,
+favelas clinging to the hillsides.
+Some neighborhoods safe and
+tourist-friendly, others carrying harder
+reputations.
+And then Santa Teresa, which 
+feels like it belongs to a completely
+different city.
+Up on a hill above the financial
+district, winding narrow streets,
+colonial buildings in faded color,
+exactly the kind of place we are drawn
+to.
+Somewhere with a genuine soul.
+Show anyone a</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這對夫婦住在Copacabana一家就在海灘正前方的飯店。從他們的房間，可以欣賞到著名海灘令人難以置信的海景。他們注意到一件令人驚訝的事——那些有著獨特波浪圖案的人行道是由小馬賽克瓷磚鋪成的。Copacabana這個世界上最有名的海灘之一，在他們造訪時因為下雨幾乎空無一人。</div>
+        <div class="para-zh">站在人群中，敬畏感是會傳染的。每個人都感受到了。那種共享的、帶電的能量會完全感染你。在兩千三百英尺的高度，城市在你腳下戲劇性地展開。世界上最棒的觀景點之一，城市蔓延、沙灘、周圍的山脈，以及一層正在升起的薄霧，為這一切增添了恰到好處的神秘感。它只有38公尺高，不是世界最高的，但矗立在科爾科瓦多山上，那雙伸出的雙臂創造了擁抱整個城市的強烈幻覺。這就是捕捉里約最具標誌性畫面的地方，而當你踏上這個平台的那一刻，你就完全理解為什麼了。山脈和貧民窟在你身後陡峭升起，城市底層和整個都市景觀完整地鋪展在眼前，美麗地、戲劇性地、從每一個方向和角度完美地框住。伊帕內馬和科帕卡巴納的海灘在下方美麗地延伸，糖麵包山在遠方完美地框在視野中。第三次來這裡了，我們以後每次回到里約都會再來，毫無猶豫。這個平台的360度景觀本身就足夠成為理由。從科爾科瓦多下山往聖特雷莎的方向，沿途會經過三個貧民窟。里約有將近八百個貧民窟，住著一百五十萬人，大約是城市人口的25%。密度驚人，狹窄的小巷、沒有真正的街道、摩托車和行人、居民自己扛著所有東西上山。每個屋頂上都有水塔，電線四處交錯。都市規劃如果存在的話，也是看不見的。里約是一座擁有非凡之美的城市，同時也存在著尖銳的對比，而這些山坡讓兩者都無法忽視。里約是一座充滿尖銳對比的城市。伊帕內馬及其精品店，貧民窟緊貼在山坡上。有些街區安全且適合觀光，有些則背負著較危險的名聲。然後是聖特雷莎，感覺像是屬於一個完全不同的城市。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Choosing a Different Path to Christ the Redeemer</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
         <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Most visitors take the train up Corcovado Mountain to Christ the Redeemer, and the couple did the same on their previous visit. This time, they choose a different approach, seeking a fresh perspective on the iconic statue that watches over the city. The video promises to show Rio beyond the usual tourist routes.</div>
+        <div class="para-en">photo and they would never
+place this in Rio.
+If we return, I would stay here without
+hesitation.
+Boutique hotels, galleries, artists,
+painters,
+&gt;&gt; 
+&gt;&gt; writers, a whole creative community.
+The yellow trolley still rolls through,
+iconic,
+decades old, now mostly for tourists.
+Bohemian,
+charming,
+a genuine alternative to Rio&#39;s
+beach-driven culture.
+I wish we had more time here.
+&gt;&gt; 
+&gt;&gt; Santa Teresa has a vibe that is
+completely, quietly its own.
+The Escadaria Selarón
+links Santa Teresa to the Lapa nightlife
+district.
+215 steps, 125 m, and one of the most
+iconic staircases on Earth.
+Before 1990,
+forgotten and crumbling,
+Jorge Selarón,
+&gt;&gt; 
+&gt;&gt; a Chilean painter living right
+alongside, transformed it tile by tile,
+sourcing pieces from construction sites,
+antique shops, worldwide travelers.
+Now over 2,000 tiles from 60 plus
+nations. As the footage shows, one of
+Rio&#39;s top Instagram spots.
+No surprise.
+Every postcard of Rio features it, and
+coming here, you simply have to go up.
+Sugarloaf Mountain.
+What surprised us for a major attraction
+of this scale, zero queue.
+We walk straight in, and within minutes,
+we&#39;re in a cable car
+heading to the first station.
+The ride up happens in two stages.
+First from ground level to Urca
+Mountain,
+the midpoint.
+As the cable car climbs, the view shift
+and expand. 
+The bays, the beaches,
+the full coastal spread of the city
+below,
+more and more of everything that makes
+ Rio instantly iconic.
+Most visitors actually spend more time
+on this first level than at the summit
+itself.
+There&#39;s simply more happening here.
+Up here, there is considerably more to
+explore.
+Gift shops, restaurants, vendors, and
+open viewpoints in every direction.
+You can even board a helicopter from
+Urca and fly a full circle directly over
+Christ the Redeemer.
+Then the second cable car carries you
+all the way to the top of 
+Sugarloaf.
+The higher the cable car climbs, the
+wider  everything becomes.
+Flamengo Beach on the left, long,
+sweeping, instantly 
+recognizable.
+Then Botafogo Beach and its bay,
+sailboats quietly anchored in the water
+below.
+Right beneath that, little Urca Beach,
+small and tucked away</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">大多數遊客會搭乘火車上Corcovado山參觀基督像，這對夫婦上次造訪時也是如此。這次，他們選擇了不同的方式，希望對這座俯瞰城市的標誌性雕像有全新的視角。影片承諾展示超越一般旅遊路線的里約風貌。</div>
+        <div class="para-zh">如果給任何人看照片，他們絕對不會認為這是里約。如果再來一次，我會毫不猶豫地住在這裡。精品酒店、畫廊、藝術家、畫家、作家，一個完整的創意社群。黃色電車仍然穿梭其間，標誌性的、數十年的歷史，現在主要是給觀光客搭乘的。波西米亞、迷人，是里約以沙灘為主的文化之外另一個真正的選擇。我希望我們有更多時間在這裡。聖特雷莎有一種完全屬於自己的寧靜氛圍。塞拉隆階梯連接了聖特雷莎和拉帕夜生活區。215級台階，125公尺，是地球上最具標誌性的階梯之一。在1990年之前，它被遺忘、逐漸崩壞。智利畫家豪爾赫·塞拉隆就住在旁邊，一磚一瓦地改造了它，從建築工地、古董店和來自世界各地的旅人那裡收集瓷磚。現在有來自超過60個國家的兩千多片瓷磚。如影片所示，這是里約最熱門的Instagram景點之一，毫不意外。每張里約的明信片上都有它，來到這裡，你一定要走上去。糖麵包山。讓我們驚訝的是，對於這麼大規模的主要景點，竟然完全不用排隊。我們直接走進去，幾分鐘之內，我們就坐上了纜車，前往第一站。上山分為兩段。第一段從地面到烏爾卡山，中點站。隨著纜車上升，視野開始變化和擴大，海灣、沙灘、下方城市的整個海岸線，越來越多讓里約瞬間成為標誌的一切。大多數遊客實際上在第一站停留的時間比在山頂還要久。這裡有更多可以看的。禮品店、餐廳、攤販，以及每個方向都有開放的觀景點。你甚至可以在烏爾卡搭乘直升機，直接繞基督像飛一整圈。然後第二段纜車將你一路載到糖麵包山的山頂。纜車爬得越高，一切就變得越寬廣。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Sugarloaf Mountain and Santa Teresa</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
         <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The video covers two other major Rio landmarks: Sugarloaf Mountain, which offers panoramic views of the city&#39;s beautiful beaches and bays, and the bohemian neighborhood of Santa Teresa. These locations provide different angles on Rio&#39;s stunning geography and cultural richness.</div>
+        <div class="para-en">, 
+oddly charming seen from this height.
+Further out, the long bridge stretching
+across to Niterói.
+Thousands of people live on that side
+
+and commute into Rio every day.
+And behind the bridge, barely visible in
+the distance,
+&gt;&gt; 
+&gt;&gt; the island where Rio&#39;s international
+airport sits.
+The suspension bridge here frames
+ it perfectly.
+Copacabana and Ipanema stretching out
+ahead.
+Christ the Redeemer on Corcovado 
+to the right.
+Ragged coastline, hills, mountains,
+bays, and beaches all combining into
+ one breathtaking panoramic view.
+This is  exactly what makes Rio
+so famous.
+We expected crowds, packed beaches, long
+lines, but Rio surprised us.
+No queues, no chaos, no rush anywhere we
+went.
+With Carnival just around the corner,
+this feels  like the calm before
+the storm.
+We like the calm.
+&gt;&gt; 
+&gt;&gt; We like the quiet. That&#39;s why we&#39;re not
+staying for Carnival.
+Last year, Rio welcomed over 12 million
+visitors.
+A 40% increase from 2024.
+7 million of them international.
+Big numbers from Argentina, Chile, and
+across Europe.
+A classic holiday destination for
+Brazilians and a bucket-list destination
+for the rest of the world.
+&gt;&gt; 
+&gt;&gt; For food, Rio covers the full range.
+Michelin-style restaurants at one end.
+Brazilian barbecue at the other and it&#39;s
+a must.
+Peek into the kitchen and you&#39;ll see the
+rotisserie.
+Different meats on sticks
+served continuously, all you can eat.
+Then the beachfront spots.
+Casual, simple, perfect for a cold beer
+and  an easy lunch. Cheers from
+Rio.
+I&#39;m sorry.
+One of the what
+one of those balls. Look at this.
+Huge beers.
+This is how we remember Copacabana.
+Packed chairs, umbrellas everywhere.
+Right before Carnival, we found the
+opposite. Near empty.
+Is Copacabana only packed in December
+and the rest of the year looks like
+this?
+Or does the occasional rain have
+something to do with it?
+If you&#39;re local, comment below. We&#39;re
+still curious.
+The rain is warm and doesn&#39;t last long.
+Hot, muggy weather.
+Getting a little wet is no problem.
+The fitness culture in Rio is seriously
+strong.
+Walking along the beach, everyone seems
+to be working out.
+Swimmers in the water.
+Circuit training groups, ou</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">影片涵蓋了另外兩個里約主要地標：能一覽城市美麗海灘和海灣全景的糖麵包山，以及波西米亞風格的Santa Teresa社區。這些地點提供了欣賞里約令人驚嘆的地理環境和文化豐富性的不同角度。</div>
+        <div class="para-zh">從這個高度看，有種奇異的魅力。再遠一點，是橫跨到尼泰羅伊的長橋。數千人在那一邊生活，每天通勤到里約。橋後方，遠方幾乎看不見的，是里約國際機場所在的島嶼。這座懸索橋完美地框住了它。科帕卡巴納和伊帕內馬在前方延伸，基督像在右邊的科爾科瓦多山上。崎嶇的海岸線、山丘、山脈、海灣和海灘全部結合在一起，形成了一個令人屏息的全景。這就是里約如此聞名的原因。我們預期會看到人群、擠滿的沙灘和長長的隊伍，但里約讓我們驚訝了。沒有排隊、沒有混亂、沒有匆忙，我們去哪裡都不用趕。嘉年華就在轉角，這感覺就像是暴風雨前的寧靜。我們喜歡這樣的平靜。我們喜歡安靜，這就是為什麼我們不留下來參加嘉年華。去年，里約迎接了超過1200萬遊客，比2024年增長了40%。其中700萬是國際遊客，大量來自阿根廷、智利和歐洲各國。對巴西人來說是經典的度假目的地，對全世界來說是人生必去清單上的目的地。說到食物，里約應有盡有。一端是米其林等級的餐廳，另一端是巴西烤肉，那是必須要吃的。偷看廚房，你會看到旋轉烤架，不同種類的肉串在棍子上不斷供應，吃到飽。還有海灘邊的店，隨意簡單，非常適合來杯冰啤酒和簡單的午餐。里約敬你一杯！抱歉。你看這個，超大杯的啤酒。這就是我們記憶中的科帕卡巴納，滿滿的椅子，到處都是陽傘。但在嘉年華前夕，我們看到的是相反的景象，幾乎空無一人。科帕卡巴納只有在十二月才這麼擠，其他時候都是這樣嗎？還是偶爾的下雨也有關係？如果你是在地人，請在下方留言，我們還是很好奇。雨是溫暖的，而且不會持續太久。天氣炎熱潮濕，稍微淋濕不是問題。里約的健身文化非常盛行。沿著海灘走，每個人似乎都在運動。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Rio&#39;s Grand Scale</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
         <div class="acc-audio"><audio src="../audio/Aoa6o2LX1qw/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The video emphasizes the massive scale of Rio&#39;s celebrations. New Year&#39;s Eve fireworks draw 2 million people to Copacabana beach, and Carnival draws 6 million — the largest in the world. Even with rain and gray skies, the city&#39;s natural beauty and vibrant culture shine through, making it clear why Rio remains a bucket-list destination.</div>
+        <div class="para-en">tdoor
+classes.
+Free exercise equipment along the whole
+stretch.
+If you&#39;re going to show your body, it
+has to look good.
+This is Ipanema Beach.
+Quite a few surf lesson schools set up
+right along the shore.
+Wave height is perfect. Genuinely ideal
+conditions for any beginner just getting
+started.
+Few cities in the world can match Rio
+for beaches.
+The longest is Copacabana at 4 km.
+Slightly wider than Ipanema at 2 and
+1/2.
+Ipanema  is the trendier,
+somewhat narrower of the two.
+Every kilometer along both beaches sits
+a numbered lifeguard station with
+facilities and showers. Locals use them
+as landmarks.
+Our hotel was at station five.
+Approximately where the two beaches
+meet.
+Ipanema begins at station seven.
+Five posts on one side, three on the
+ other. Tell your taxi station
+three and they know where to drop you.
+The promenade running alongside 
+is central to daily life.
+Walking, cycling, socializing,
+&gt;&gt; 
+&gt;&gt; exercising, cold beers by the ocean.
+In December when the crowds arrive,
+vendors set up many chairs and
+umbrellas.
+Caipirinhas, food, drinks all on tap.
+Pay before you leave.
+And when New Year&#39;s Eve comes, this
+stretch becomes one of the biggest
+celebrations on Earth.
+2 million people, fireworks  from
+end to end.
+At night, the vibe completely shifts.
+Concerts, live music, drinks, and
+socializing at the beach.
+But when the young crowd heads out, we
+call it a night.
+Tell us what you think about Rio in the
+comments. We&#39;d love to hear from you.
+Did it live up to its reputation?
+Was there something that surprised you?
+And if you enjoyed what you saw, the
+like button helps this channel more than
+you might think.
+It makes a real difference. Thank you.
+This brings our South American adventure
+to a close.
+We&#39;re heading home for a short rest
+before the next destination. 
+Our plan shifted a little. Oman was
+supposed to be next,
+but with the ongoing situation in the
+Middle East, that trip had to be
+canceled.
+We&#39;re replacing  it with
+something we&#39;re excited about, Italy.
+Specifically, the heel of the boot, the
+beautiful, sun-drenched region of
+Puglia.
+Thank you so much for watching and we&#39;ll
+see you in Italy.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">影片強調了里約慶祝活動的龐大規模。新年夜的煙火吸引了200萬人到Copacabana海灘，而嘉年華則吸引600萬人——這是世界上最大的。即使下雨和陰天，這座城市的自然美景和充滿活力的文化依然閃耀，說明了為什麼里約仍然是人生必訪的目的地。</div>
+        <div class="para-zh">戶外課程，整條海灘都有免費的運動器材。如果你要展現身材，它必須看起來很好。這是伊帕內馬海灘。有不少衝浪學校就在岸邊設立。浪高非常完美，對任何初學者來說都是非常理想的條件。世界上沒有幾個城市能在沙灘方面與里約匹敵。最長的是科帕卡巴納，有四公里。伊帕內馬稍微窄一點，有兩公里半。伊帕內馬是兩者中較時尚、也較窄的一個。這兩片沙灘每隔一公里就有一個編號的救生站，附有設施和淋浴間，當地人把它們當作地標。我們的飯店在第五站，大約是兩片沙灘的交會處。伊帕內馬從第七站開始。一邊有五個站，另一邊有三個。告訴計程車司機第三站，他們就知道要在哪裡讓你下車。旁邊的海濱長廊是日常生活的核心，散步、騎車、社交、運動、在海邊喝冰啤酒。十二月人潮湧入時，攤販會設置許多椅子和陽傘。卡琵莉亞、食物、飲料應有盡有，離開前再付錢。而當新年夜到來時，這片海灘會成為地球上最大的慶祝活動之一，兩百萬人，煙火從頭到尾照亮夜空。到了晚上，氣氛完全不同。音樂會、現場表演、喝酒、在海灘上交際。但當年輕人出動時，我們就收工了。在留言區告訴我們你對里約的看法，我們很想知道。它符合它的名聲嗎？有什麼讓你驚訝的地方嗎？如果你喜歡你看到的內容，按讚對這個頻道的幫助比你想像的更大。它真的能帶來改變。謝謝你。這也為我們的南美洲冒險畫上了句點。我們要回家短暫休息，然後前往下一個目的地。我們的計劃有點變動，本來下一站是阿曼，但由於中東的局勢，那趟旅行不得不取消。我們用一個我們很期待的地方來取代它：義大利。具體來說，是靴子跟部，美麗的、陽光普照的普利亞地區。非常感謝你的收看，我們義大利見。</div>
       </div>
     </div>
-</div>
-<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
         <span class="acc-label">1. picturesque city <span class="collo-play" onclick="event.stopPropagation();playAudio('Aoa6o2LX1qw','collo1')">🔊</span></span>
@@ -235,8 +634,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="collo-practice">Seeing the Northern Lights is a ______ for many people.<br><span class="collo-answer" id="ca8">bucket-list destination</span></div>
       </div>
     </div>
-</div>
-<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Present Simple for Scheduled Events</span>
@@ -271,8 +672,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="grammar-practice">用 &#39;even with&#39; 完成句子：&#39;______ the rain, the beach was still beautiful.&#39;<br><span class="grammar-answer" id="ga2">&#39;Even with the rain, the beach was still beautiful.&#39;</span></div>
       </div>
     </div>
-</div>
-<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">You have seen the [adjective] [noun]. Now, come along as we [verb]</span>
@@ -309,20 +712,27 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="pattern-practice">用這個句型表達某事不符合你的喜好。<br><span class="pattern-answer" id="pa3">The nightclub was a little too loud for my taste.</span></div>
       </div>
     </div>
-</div>
-<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
-<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
 </div>
 <script>
 var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "Which of these is the third visit for the couple?", "choices": ["Buenos Aires", "Rio de Janeiro", "Santiago", "Lima"], "answer": 1, "explain": "The video states 'Our third visit to Rio' and 'Our South American adventure ends in Rio de Janeiro.'"},{"q": "How many people does Carnival in Rio draw?", "choices": ["2 million", "4 million", "6 million", "8 million"], "answer": 2, "explain": "The video says Carnival will draw 6 million, the largest in the world."},{"q": "What was the weather like during their visit to Copacabana?", "choices": ["Sunny and hot", "Rainy with gray skies", "Snowy", "Windy but warm"], "answer": 1, "explain": "The weather had other plans — rain, gray skies, the kind of morning that sends beach crowds away."},{"q": "What are the two unmissable moments in Rio according to the video?", "choices": ["Summer and Winter", "New Year's Eve and Carnival", "Christmas and Easter", "Spring and Fall festivals"], "answer": 1, "explain": "Rio has two unmissable moments: New Year's Eve and Carnival."},{"q": "How did the couple get to Christ the Redeemer this time?", "choices": ["By train like before", "By a different approach", "They didn't visit it", "By helicopter"], "answer": 1, "explain": "Most visitors take the train, and they did that two years ago. This time, they chose a different way."}];
-var quizState=[];
-function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
 renderQuiz();
 </script>
 </body>

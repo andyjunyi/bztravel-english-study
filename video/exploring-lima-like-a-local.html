@@ -52,6 +52,12 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
 .quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
@@ -101,55 +107,373 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. A City Tour With a Local Guide</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
-        <div class="para-en">To truly understand the heartbeat of Lima, the travelers hired a private guide to show them the city&#39;s most famous spots. Exploring a city with a local is simply the best way to do it — that personal connection is irreplaceable. Rather than following a flag or staring out of a crowded bus window, they experienced Lima through the eyes of someone who knows the absolute ins and outs of their city. The tour began at the breathtaking Love Park, perched right on top of a cliff overlooking the Pacific Ocean.</div>
+        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">Join us today for an incredible tour of
+Lima, Peru. We&#39;ll be tasting 
+authentic Pisco, wandering through the
+historic city center, exploring Bohemian
+neighborhoods, and taking in the
+breathtaking Love Park.
+To truly understand the heartbeat of the
+culture, we hired a private guide to
+show us Lema&#39;s most famous spots.
+Exploring a city with the local is
+simply the best way to do it. That
+personal connection is irreplaceable.
+You&#39;re not just following a flag or
+staring out of a crowded bus window.
+You&#39;re with a local who knows the
+absolute ins and outs of their city.
+&gt;&gt; Welcome to the Love Park, a romantic
+place. You know, we had a Peruan artist
+called Victor Delpin. This Peruven
+artist traveled around the world. But
+when he arrived to Spain, Barcelona, he
+fall in love about the gu park
+in Barcelona, right? But when this
+Peruvian artist Victor Delinim come back
+to Peru,
+&gt;&gt; okay,
+&gt;&gt; he decide to use this place to make a
+similar park.
+&gt;&gt; Oh,
+&gt;&gt; you can see the shape, the color.
+&gt;&gt; Yeah, you can see the color, the
+designs. Park Delmore or the love park
+is arguably Lima&#39;s top destination. It&#39;s
+nestled right on top of a cliff and it&#39;s
+offering sweeping, incredible views of
+the Pacific Ocean and the upscale Mir
+Flores neighborhood.
+The park features colorful undulating
+walls covered in beautiful mosaics and
+each tile design carries a different
+meaning about life and romance.
+&gt;&gt; Well, look at the surfers out there. A
+lot of surfers. Oh, they put their name
+on it. get the names of them, the date.
+They take the keys, ask for a wish, and
+throw to the cliff.
+&gt;&gt; Lovers come here to lock their hearts
+together on the fences, and then they
+just throw away the key.
+&gt;&gt; The meaning of
+is let&#39;s love each other.
+Right in the center, the space is
+dominated by a massive passionate
+sculpture called El Bessel or the Kiss.
+&gt;&gt; Down there are restaurants and stuff or
+&gt;&gt; Yes. And the the building in the middle
+of the ocean is a restaurant so popular
+called Rosa Nautica.
+&gt;&gt; Play has good seafood, I bet.
+&gt;&gt; Yes.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">為了真正了解利馬的脈動，旅客聘請了一位私人導遊來帶他們參觀城市最著名的景點。和當地人一起探索城市無疑是最棒的方式——那種人與人之間的連結是無可取代的。他們不是跟著旗子走，也不是擠在遊覽車上看風景，而是透過一個對城市瞭若指掌的人的眼睛來體驗利馬。旅程從令人屏息的愛情公園開始，它坐落在俯瞰太平洋的懸崖上。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Love Park and Miraflores</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
-        <div class="para-en">Love Park, or Parque del Amor, is arguably Lima&#39;s top destination. Nestled on a cliff in the upscale Miraflores neighborhood, it offers sweeping views of the Pacific. The park features colorful undulating walls covered in beautiful mosaics, where each tile design carries a different meaning about life and romance. Lovers come here to lock padlocks on the fences and throw away the key. In the center stands a massive sculpture called El Beso — The Kiss. The nearby Miraflores district is safe, pristine, and filled with lush parks, luxury hotels, and high-end restaurants.</div>
+        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">ing in the middle
+of the ocean is a restaurant so popular
+called Rosa Nautica.
+&gt;&gt; Play has good seafood, I bet.
+&gt;&gt; Yes. So good. In the evening have a
+beautiful view, good food. Oh, it&#39;s
+amazing in the place.
+&gt;&gt; And this cold water have a lot of
+seaweed and the seaweed gives the color
+green to the ocean.
+&gt;&gt; Oh, okay.
+&gt;&gt; And also guys, this seaweed is the food
+of a small fish.
+&gt;&gt; Mhm.
+&gt;&gt; And a small fish is the food of biggest
+fish.
+&gt;&gt; Yeah. So, there&#39;s a lot of fish out
+there.
+&gt;&gt; We have more than 700 kind of fishes
+here.
+&gt;&gt; Oh, wow.
+&gt;&gt; And the water is cold. For example, in
+winter the w the temperature of the
+water is 16 Celsius.
+in summer
+24.  No, we are in the beginning.
+So,
+&gt;&gt; Mir Flores is probably the most
+prestigious and prosperous district in
+Lima. It&#39;s incredibly safe, pristine,
+and beautiful. It features lush parks,
+luxury five-star hotels, high-end
+restaurants,  and the famous
+Lumar Shopping Mall.
+But there it is, of course, another side
+to Lima. Further out, you&#39;ll find much
+poorer FLLA style neighborhoods. These
+are the areas that traditional tourists
+rarely ever see. Next, the Bohemian
+heart of Lima, the Baranco district.
+It&#39;s located right next to Mira Flores.
+This vibrant, affluent neighborhood has
+historically been home to  the
+city&#39;s artists and intellectuals. It&#39;s
+packed with striking street murals and
+cozy cafes.
+The buildings here have a much more
+traditional  colonial feel.
+&gt;&gt; Look, that&#39;s the the frog.
+&gt;&gt; Oh, the frog. Yeah. Okay, I see the
+frog. Yeah.
+&gt;&gt; Represent the shaman.
+&gt;&gt; Oh,
+&gt;&gt; look under the frog. You can see a lot
+of plants with that native plants that
+people prepare.
+I will explain you now. If you see under
+you see the smoke
+the smoke go to the go to the heaven
+exactly to the sun and the moon because
+the native used to believe in many gods
+believe in the m in the in the mother
+earth in the sun in the moon right and
+this native used to prepare this drink
+because they said that this drink
+connect them and they can get divine
+message from their god.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">愛情公園可以說是利馬的頂級景點。它坐落在高檔的米拉弗洛雷斯區的懸崖上，享有太平洋的遼闊景觀。公園擁有色彩繽紛的波浪狀牆面，覆蓋著美麗的馬賽克，每個瓷磚設計都承載著關於生活和愛情的不同含義。戀人們來到這裡，在欄杆上鎖上掛鎖，然後把鑰匙丟掉。公園中央矗立著一座名為「吻」的巨大雕塑。附近的米拉弗洛雷斯區安全、純淨，充滿了綠意盎然的公園、豪華酒店和高級餐廳。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Barranco: The Bohemian Heart</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
-        <div class="para-en">Next, they visited Barranco, the bohemian heart of Lima. This vibrant neighborhood has historically been home to the city&#39;s artists and intellectuals. The streets are packed with striking murals and cozy cafes. Every wall tells a different story. Artists paint directly on the streets to make their work completely accessible to everyone who walks by. A famous landmark here is the Puente de los Suspiros — the Bridge of Sighs. Local legend says if you can hold your breath all the way across and make a wish, that wish will come true.</div>
+        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">sed to prepare this drink
+because they said that this drink
+connect them and they can get divine
+message from their god. No guys, this
+way.
+&gt;&gt; Do they still make it?
+&gt;&gt; Yes, they still make it.
+&gt;&gt; Like a truck.
+&gt;&gt; Yeah, I bet it is.
+&gt;&gt; Yeah. Similar similar similar.
+&gt;&gt; It&#39;s a 
+Can we try it somewhere?
+&gt;&gt; I think Yeah. But
+&gt;&gt; I I wouldn&#39;t recommend it.
+&gt;&gt; Exactly. I don&#39;t recommend.
+&gt;&gt; It&#39;s a psychedelic. Evidently, you could
+tell it&#39;s a psychedelic.
+&gt;&gt; It&#39;s a
+&gt;&gt; Yeah. If you think if you could think it
+does that to your head. 
+There are countless murals scattered
+around Baranco and every single wall
+tells a different story. Artists, they
+paint directly on the streets to make
+their work completely accessible,
+sharing local history and culture with
+everyone who walks by. Right in front of
+us is a famous Poente de los Spirals,
+the bridge of size. Local legend says
+that if you can hold your breath the
+entire time you cross the bridge and
+make a wish, that wish will come true.
+So naturally, we have to give it a try.
+Time to take a deep breath and wish for
+something special.
+I made  it.
+Are you still holding your breath? I
+managed to hold my breath all the way
+across. The final verdict, my wish is
+definitely coming true. As for Zarko, he
+didn&#39;t quite make it to the other side
+without taking a breath. Sorry, Zarko.
+Better luck next time.
+&gt;&gt; All our dishes have started.
+&gt;&gt; Okay.
+&gt;&gt; Did the potatoes come from here?
+&gt;&gt; Huh?
+&gt;&gt; Did the potatoes originate from here?
+&gt;&gt; Did they originate from here? The
+potatoes? Okay. Well, because I know you
+have I read that there the seeds they&#39;re
+keeping the seeds in the vault that&#39;s in
+um uh Norway.
+&gt;&gt; Yeah. Yeah. Yeah.
+&gt;&gt; Oh, that&#39;s beautiful.
+&gt;&gt; Wow.
+&gt;&gt; Blue color, yellow, red.
+&gt;&gt; Wow.
+&gt;&gt; How cool is that?
+&gt;&gt; This drink is so healthy.
+&gt;&gt; Okay.
+&gt;&gt; Because to in a cooking pot, you put the
+you put the corn the yellow. No, the
+pineapple,
+red, green apple, passion fruit, and you
+boil together.
+&gt;&gt; Oh,
+&gt;&gt; and you get this drink.
+&gt;&gt; Wow.
+&gt;&gt; Kora.
+&gt;&gt; Kora.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">接下來，他們參觀了巴蘭科——利馬的波希米亞之心。這個充滿活力的街區歷來是城市藝術家和知識分子的家園。街道上布滿了引人注目的壁畫和舒適的咖啡館。每一面牆都在訴說著不同的故事。藝術家直接在街頭作畫，讓每個路過的人都能欣賞他們的作品。這裡著名的地標是嘆息橋。當地傳說，如果你能屏住呼吸走完整座橋並許個願望，那個願望就會實現。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Historic Center and Grand Hotel Bolivar</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
-        <div class="para-en">Continuing into the historic Lima City Center, the travelers passed the impressive Palace of Justice and the famous Grand Hotel Bolivar. This historic hotel has hosted an incredible roster of famous guests including John F. Kennedy, Richard Nixon, Ernest Hemingway, John Wayne, and Clark Gable. The lobby features intricate stonework, grand marble columns, and a spectacular stained-glass dome that filters the Peruvian sunlight beautifully. An antique reception ledger and a vintage elevator offer glimpses into a bygone era of luxury travel.</div>
+        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">ed, green apple, passion fruit, and you
+boil together.
+&gt;&gt; Oh,
+&gt;&gt; and you get this drink.
+&gt;&gt; Wow.
+&gt;&gt; Kora.
+&gt;&gt; Kora. What is that?
+&gt;&gt; Kora. Kora. It means stuff. It&#39;s made
+with a fermentation of the corn.
+&gt;&gt; Oh, kora.
+&gt;&gt; Yeah. They use corn a lot.
+&gt;&gt; Continuing our tour, we head into the
+historic Lima City Center. The stunning
+building passing that&#39;s on our right is
+the Palace of Justice.
+It has impressive classical European
+architecture. You&#39;d be forgiven for
+thinking it was plucked straight out of
+Paris.
+Perhaps the most famous hotel in the
+entire city is the historic Grand Hotel
+Boulevard.
+This place has hosted an incredible
+roster of famous guests. John F.
+Kennedy, Richard Nixon, Ernest
+Hemingway, John Wayne, and Clark Gable.
+The hotel is still fully operational
+today.
+The hotel lobby is absolutely
+magnificent, featuring intricate
+stonework and grand marble columns. But
+the true showstopper is when you look up
+at the spectacular 
+stained glass dome, which beautifully
+filters the bright Peruvian sunlight.
+&gt;&gt; 
+&gt;&gt; want this car.
+&gt;&gt; History and nostalgia are around every
+corner here. From the pristine Model T
+Ford to the beautifully ornate vintage
+elevator.
+&gt;&gt; They kept it.
+&gt;&gt; One of the one of the oldest elevators.
+We even spotted an antique reception
+ledger. Checking into a luxury hotel
+before the age of computers was
+certainly a different experience.
+&gt;&gt; Look at the old boxes they have for the
+keys.
+The hotel faces Plaza San Martin,
+arguably the second most important
+square in Lima. It&#39;s surrounded by
+gorgeous architecture, including the
+Grand Cologne Theater, but the focal
+point is the bronze monument in the
+center dedicated to Joseé San Martin.
+He&#39;s a monumental figure in this part of
+the world, famous for liberating Peru,
+Argentina, and other 
+parts of South America from Spanish
+rule. You&#39;ll see his name on streets and
+squares all over the continent.
+When you&#39;re in Peru, trying Pisco is an
+absolute must.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">繼續深入利馬歷史中心，旅客經過了令人印象深刻的司法宮和著名的玻利瓦爾大飯店。這家歷史悠久的飯店接待過許多著名賓客，包括約翰·F·甘迺迪、理查·尼克森、厄尼斯特·海明威、約翰·韋恩和克拉克·蓋博。大廳有著精緻的石雕、宏偉的大理石柱，以及一個壯觀的彩繪玻璃穹頂，美麗地過濾了秘魯的燦爛陽光。古董登記簿和復古電梯讓人一窺那個已逝去的奢華旅行年代。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Pisco Tasting and Plaza de Armas</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
-        <div class="para-en">No visit to Peru would be complete without trying Pisco, a distilled grape spirit. The travelers did a proper Pisco tasting, sampling different variations including the famous Pisco Sour. They then visited Plaza de Armas, the main square dating back to 1535. Surrounded by bright yellow colonial buildings with dark wooden balconies, the square is home to the Presidential Palace and Lima Cathedral, where Francisco Pizarro is buried. A massive pre-Incan adobe complex, Huaca Pucllana, stands right in the middle of the modern city — a stunning reminder of Peru&#39;s layered history.</div>
+        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">re in Peru, trying Pisco is an
+absolute must. It&#39;s a distilled grape
+spirit very similar to Italian grapa or
+our own Bulgarian rakia.
+But instead of drinking it straight,
+Peruvians masterly blend it into
+cocktails. The most famous, of course,
+is the Pisco Sour. We decided to do a
+proper piece tasting so we could sample
+ a few different variations.
+&gt;&gt; Okay, one shot.
+One, two, three, four, five. Swallow.
+ Take
+and smile. Perfect.
+&gt;&gt; This is the tornado.
+&gt;&gt; Tastes like custer. 
+So here we are right in the middle of
+the action, Plaza de Armis, the main
+square in Lima. This place is a historic
+core of the city of kings, dating all
+the way back to 1535.
+That big building on one side is the
+presidential palace. It&#39;s got a huge
+fence around it, mainly because the
+square gets pretty lively with protests
+and political rallies.
+Over on the right is a Lima Cathedral.
+It&#39;s absolutely massive, packed with
+history, and it&#39;s actually where
+Francisco Pizaro was buried. The coolest
+part is looking around all these bright
+yellow colonial buildings. They&#39;ve got
+these amazing dark wooden balconies
+hanging off of them which have a really
+cool Spanish moorish vibe.
+Just hanging out here by the big bronze
+fountain in the middle. You can
+genuinely feel how old and important
+this place is.
+Right in the middle of the modern city
+Sisa Huaka Puklana. This is a massive
+towering pre-Incinka archeological
+complex that&#39;s made entirely of adobe
+mud bricks. That wraps up our time in
+Lima.  Join us in our next video
+as we catch a flight high up into the
+breathtaking Andes mountains. We&#39;ll be
+exploring historic Inca capital of
+Cusco, visiting a traditional potato
+farming and craft community, and hanging
+out with some adorable alpacas.
+We&#39;ll even stop at a local spa in
+ the Sacred Valley where guinea
+pigs, a traditional Andian delicacy, run
+right across the kitchen floor. You
+won&#39;t want to  miss it.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">造訪秘魯不能不品嚐皮斯可酒——一種蒸餾葡萄烈酒。旅客進行了一場正式的皮斯可品酒會，品嚐了多種不同風味，包括著名的皮斯可酸酒。接著他們參觀了武器廣場，這個主要廣場的歷史可追溯到1535年。廣場周圍是明亮的黃色殖民建築，带有深色木製陽台，廣場上有總統府和埋葬著法蘭西斯科·皮薩羅的利馬大教堂。一座巨大的前印加土坯建築群——普克拉納遺址——就矗立在現代城市中心，令人驚嘆地提醒著人們秘魯層層累積的歷史。</div>
       </div>
@@ -160,89 +484,89 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. the heartbeat of a city/culture</span>
+        <span class="acc-label">1. the heartbeat of a city/culture <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">城市/文化的脈動與核心</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"To truly understand the heartbeat of the culture, we hired a private guide."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"To truly understand the heartbeat of the culture, we hired a private guide." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex1')">🔊</span></div>
         <div class="collo-practice">Walking through the local market is the best way to feel ______ (這座城市的脈動).<br><span class="collo-answer" id="ca1">the heartbeat of the city</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. ins and outs</span>
+        <span class="acc-label">2. ins and outs <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">所有細節；來龍去脈</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"You&#39;re with a local who knows the absolute ins and outs of their city."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"You&#39;re with a local who knows the absolute ins and outs of their city." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex2')">🔊</span></div>
         <div class="collo-practice">After living here for ten years, she knows all the ______ (所有細節) of the neighborhood.<br><span class="collo-answer" id="ca2">ins and outs</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. nestled on / in / between</span>
+        <span class="acc-label">3. nestled on / in / between <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">坐落於；安躺在（風景優美的地方）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s nestled right on top of a cliff offering sweeping views of the Pacific."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s nestled right on top of a cliff offering sweeping views of the Pacific." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex3')">🔊</span></div>
         <div class="collo-practice">The village is ______ (坐落在) a green valley between two mountains.<br><span class="collo-answer" id="ca3">nestled in</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. sweeping views</span>
+        <span class="acc-label">4. sweeping views <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">遼闊的全景視野</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"It offers sweeping, incredible views of the Pacific Ocean."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"It offers sweeping, incredible views of the Pacific Ocean." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex4')">🔊</span></div>
         <div class="collo-practice">The hotel balcony offers ______ (遼闊的全景) of the entire coastline.<br><span class="collo-answer" id="ca4">sweeping views</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. arguably the + 最高級</span>
+        <span class="acc-label">5. arguably the + 最高級 <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">可以說是（最...的）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Love Park is arguably Lima&#39;s top destination."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Love Park is arguably Lima&#39;s top destination." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex5')">🔊</span></div>
         <div class="collo-practice">This is ______ (可以說是) the best sushi restaurant in the city.<br><span class="collo-answer" id="ca5">arguably</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. a bygone era</span>
+        <span class="acc-label">6. a bygone era <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">一個已逝去的時代</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The antique ledger offers glimpses into a bygone era of luxury travel."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The antique ledger offers glimpses into a bygone era of luxury travel." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex6')">🔊</span></div>
         <div class="collo-practice">The vintage train station feels like stepping back into ______ (一個已逝去的時代).<br><span class="collo-answer" id="ca6">a bygone era</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. come true</span>
+        <span class="acc-label">7. come true <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">實現（願望）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"If you can hold your breath the entire time and make a wish, that wish will come true."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"If you can hold your breath the entire time and make a wish, that wish will come true." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex7')">🔊</span></div>
         <div class="collo-practice">After years of hard work, her dream finally ______ (實現了).<br><span class="collo-answer" id="ca7">came true</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. layered history</span>
+        <span class="acc-label">8. layered history <span class="collo-play" onclick="event.stopPropagation();playAudio('kZSdNRqXoMs','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">多層次的歷史（文化堆疊的歷史）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"A stunning reminder of Peru&#39;s layered history."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"A stunning reminder of Peru&#39;s layered history." <span class="collo-play-sm" onclick="playAudio('kZSdNRqXoMs','ex8')">🔊</span></div>
         <div class="collo-practice">Rome is a city with incredible ______ (多層次的歷史).<br><span class="collo-answer" id="ca8">layered history</span></div>
       </div>
     </div>
@@ -346,6 +670,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
   </div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "According to the video, what is the best way to explore a city?", "choices": ["Following a tour flag", "Staring out of a crowded bus window", "Exploring with a local guide", "Using a GPS app"], "answer": 2, "explain": "The narrator states: 'Exploring a city with a local is simply the best way to do it. That personal connection is irreplaceable.'"},{"q": "What happens at Love Park according to local tradition?", "choices": ["Couples get married there every Sunday", "Lovers lock padlocks on fences and throw away the key", "Artists paint murals every evening", "People swim in the ocean below"], "answer": 1, "explain": "The video explains: 'Lovers come here to lock their hearts together on the fences, and then they just throw away the key.'"},{"q": "What is the legend associated with the Bridge of Sighs in Barranco?", "choices": ["If you sing on the bridge, you will find love", "If you hold your breath across the bridge and make a wish, it will come true", "If you drop a coin from the bridge, you will return to Lima", "If you walk backwards across the bridge, you will have good luck"], "answer": 1, "explain": "The video says: 'Local legend says that if you can hold your breath the entire time you cross the bridge and make a wish, that wish will come true.'"},{"q": "Which famous figures have stayed at the Grand Hotel Bolivar?", "choices": ["Elvis Presley and The Beatles", "John F. Kennedy, Ernest Hemingway, and John Wayne", "Albert Einstein and Marie Curie", "Queen Elizabeth and Prince Philip"], "answer": 1, "explain": "The narrator lists: 'John F. Kennedy, Richard Nixon, Ernest Hemingway, John Wayne, and Clark Gable' as famous guests."},{"q": "What is unique about the Huaca Pucllana archaeological site?", "choices": ["It is located inside a modern shopping mall", "It is made entirely of adobe mud bricks and sits in the middle of modern Lima", "It is the oldest pyramid in South America", "It was built by the Spanish in the 16th century"], "answer": 1, "explain": "The video describes it as: 'a massive towering pre-Incan archaeological complex that's made entirely of adobe mud bricks' standing 'right in the middle of the modern city.'"}];

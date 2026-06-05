@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>Mendoza Argentina: Wineries & Asado — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,121 +32,472 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
-.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
-.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
-.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
-.collo-play:active{background:#1e40af;transform:scale(.9)}
-.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
-.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;color:#059669;font-weight:600}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;color:#059669;font-weight:600}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-badge">🎭 BZ Travel · 英文自學講義</div><h1>Mendoza Argentina: Wineries & Asado</h1><div class="sub">阿根廷</div><div class="header-meta"><span>13:55</span><span>🎭 文化體驗</span></div></div>
-<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/gK8KeV3atMs" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
-<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
+<div class="header">
+  <div class="header-badge">🎭 BZ Travel · 英文自學講義</div>
+  <h1>Mendoza Argentina: Wineries & Asado</h1>
+  <div class="sub">阿根廷</div>
+  <div class="header-meta">
+    <span>13:55</span>
+    <span>🎭 文化體驗</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/gK8KeV3atMs" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Arriving in Mendoza</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
         <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Tresa and Zarko fly from Santiago to Mendoza, choosing the one-hour flight over a risky mountain pass. Upon arrival, they encounter a major hailstorm — unusual for this desert city. The temperature dropped from 36°C to 20°C, and it became dark at 4:00 PM. The storm was so intense that it felt like the whole year&#39;s worth of rain was coming down at once.</div>
+        <div class="para-en">Welcome to BZ Travel.
+Today, we explore South America&#39;s wine
+capital, home for Malbec and Asado.
+To cross the Andes range, you can brave
+a risky mountain pass or face a
+turbulent flight.
+We are flying from Santiago to Mendoza.
+We chose the 1-hour flight.
+So, we&#39;re going from the airport to our
+hotel and they&#39;re having a major storm
+here in Mendoza.
+With hail.
+Yeah, we went from 36 to to 20° C.
+It&#39;s and it&#39;s dark out.
+Mendoza is a desert, one of Argentina&#39;s
+driest spots with only 8 in of rain a
+year. So,  this storm is hard to
+believe.
+&gt;&gt; 
+&gt;&gt; Feels like the whole year&#39;s worth is
+coming down right now. All people are
+hiding under the bridge.
+Look at these cars are going to get
+washed away.
+Mendoza sits at the foot of the Andes
+and that location makes it a global
+hotspot for severe hailstorms.
+Cold mountain air from the Andes
+collides with warm, humid air pushing in
+from the Atlantic and the result is
+massive, powerful storm cells.
+But look closely at the sidewalk edges
+and you&#39;ll notice something interesting.
+
+There are deep, open concrete trenches
+running along almost every street in the
+city.
+These aren&#39;t drainage ditches in the
+traditional sense.
+Most of the year, they actually carry
+water from the Andes snowmelt to
+irrigate the trees planted along every
+street in Mendoza.
+Our guide mentioned that hailstones in
+Mendoza can reach the size of tennis
+balls, which causes massive damage to
+vehicles.
+So, locals have a simple solution. Every
+person here keeps a heavy blanket in
+their car specifically to throw over it
+during a hail storm.
+The annual rainfall in Mendoza averages
+only about 8 in per year.
+Like all of it is falling right now.
+What surprises us most though is that
+traffic is still moving. People aren&#39;t
+stopping. They&#39;re not panicking. They
+are just driving. Wow, it&#39;s well a
+bicycle. Yeah.
+Something.
+That&#39;s crazy.
+I did it.
+You did it.
+Look at this. Just look. That is not a
+puddle. That is not flooding. That</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Tresa和Zarko從Santiago飛往Mendoza，選擇了一小時的飛行而不是危險的山口路線。抵達後，他們遇到了一場強烈的冰雹風暴——對這座沙漠城市來說很不尋常。氣溫從36°C降至20°C，下午4點天就黑了。風暴非常強烈，感覺一整年的雨量都同時傾瀉而下。</div>
+        <div class="para-zh">歡迎來到BZ Travel。今天，我們探索南美洲的葡萄酒首都——馬爾貝克和炭烤肉的故鄉。要穿越安第斯山脈，你可以選擇冒險通過危險的山口，或面對顛簸的飛行。我們從聖地牙哥飛往門多薩。我們選擇了一小時的航班。所以，我們正在從機場前往酒店的路上，門多薩這裡正在下大暴風雨——還有冰雹。對，氣溫從36度降到了20度，外面天黑了。門多薩是沙漠，阿根廷最乾燥的地區之一，每年只有8英寸的降雨量。所以這場暴風雨讓人難以置信。感覺一整年的雨量都在這一刻傾瀉而下。所有人都在橋下躲雨。看這些車，它們快要被沖走了。門多薩位於安第斯山脈腳下，這個地理位置使它成為全球強烈冰雹風暴的熱點。來自安第斯山脈的寒冷空氣與來自大西洋的溫暖潮濕空氣碰撞，產生了巨大的、強勁的暴風雨雲團。但仔細看人行道邊緣，你會注意到一些有趣的事情。沿著城市幾乎每條街道，都有深邃的露天混凝土溝渠。這些不是傳統意義上的排水溝。一年中大部分時間，它們實際上是將安第斯山脈的融雪水引到門多薩每條街道上的樹木進行灌溉。我們的導遊提到，門多薩的冰雹可以達到網球大小，會對車輛造成巨大損壞。所以當地人有一個簡單的解決方案：這裡每個人的車上都備有一條厚毯子，專門在冰雹風暴時蓋在車上。門多薩的年降雨量平均每年只有8英寸左右。就像所有雨量都在此刻傾瀉而下。最讓我們驚訝的是，交通仍然在運轉。人們沒有停下來，沒有驚慌，他們就只是繼續開車。哇，還有一輛腳踏車。太瘋狂了。看看這個。那不是在積水——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Mendoza&#39;s Unique Climate</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
         <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Mendoza is a desert, one of Argentina&#39;s driest spots with only 8 inches of rain per year. Its location at the foot of the Andes makes it a global hotspot for severe hailstorms. Cold mountain air from the Andes collides with warm, humid air from the Atlantic, creating massive, powerful storm cells. This explains why a sudden hailstorm, while dramatic, is a natural part of life here.</div>
+        <div class="para-en">is a
+moving river on a city street and those
+cars are just driving through it.
+Electric buses.
+This looks a little bit too deep.
+At this point I&#39;m genuinely wondering,
+are we even going to make it out
+tonight?
+We have a dinner and a tour tomorrow but
+looking at this street  I&#39;m not
+so sure.
+Look at this one here.
+Oh my gosh. That was the Oh and that&#39;s a
+big tree. It took down power lines.
+Look at this tree.
+1 hour later, street&#39;s almost dry like
+it never happened.
+The dining experience in Argentina is
+one you&#39;ll remember for a long time.
+Restaurants here usually keep the
+kitchen completely open and the grill
+master will gladly show you the whole
+process. Long charcoal grills loaded
+with all kinds of meat and sausages
+sizzling and filling the air with an
+incredible aroma.
+Meat here is almost as culturally
+important as wine. The asado is what
+Argentinians call their barbecue and
+it&#39;s truly in a league of its own. No
+gas grills, no shortcuts,
+just charcoal, quality meat, and a
+master at the grill.
+Be careful, it&#39;s very hot.
+&gt;&gt; Yeah, it&#39;s very hot. Next to the main
+grill, there&#39;s a dedicated charcoal oven
+and it&#39;s what makes the Argentine method
+stand out. Most people think barbecue
+means lighting charcoal and cooking
+directly.
+Here they heat the coals in the oven
+first, then transfer them to the grill.
+The meat cooks over perfectly prepared
+heat.
+When the grill master pulled a fresh
+piece off the fire, he held it up to
+show us the juiciness,
+then explained that every type of meat
+has its own technique.
+Different heat, different timing,
+different position on the grill.
+Dinner in Argentina is a cultural
+experience, not just a meal.
+We sat family style with our new friends
+we made on this tour through South
+America.
+The Malbec kept flowing and the meat
+kept coming. Multiple cuts, all grilled
+to perfection with chimichurri sauce
+that tied everything together.
+I had my first Tomahawk steak here.
+&gt;&gt; 
+&gt;&gt; A massive cut with the full rib bone
+still attached, juicy and perfectly
+done.
+But what stood out most was the pace and
+the atmosphere.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Mendoza是沙漠，阿根廷最乾燥的地區之一，每年僅有8英寸的降雨量。它位於安第斯山脈腳下的地理位置使其成為全球強烈冰雹風暴的熱點。來自安第斯山脈的寒冷空氣與來自大西洋的溫暖潮濕空氣碰撞，產生巨大而強勁的風暴雲。這說明了為什麼突如其來的冰雹風暴雖然戲劇化，卻是這裡生活中自然的一部分。</div>
+        <div class="para-zh">那是城市街道上的一條流動河流，而那些車就這麼開過去。電動巴士。這個看起來有點太深了。到這個時候，我真的在想，我們今晚還能不能出得去？我們明天還有晚餐和行程，但看著這條街，我不太確定了。看看這棵樹。哦，天啊。那是一棵大樹，它壓斷了電線。一小時後，街道幾乎乾了，好像什麼都沒發生過一樣。阿根廷的用餐體驗你會記得很久。餐廳通常把廚房完全開放，烤肉大師會很樂意向你展示整個過程。長長的炭火烤架上擺滿了各種肉類和香腸，滋滋作響，空氣中充滿了令人難以置信的香氣。在這裡，肉幾乎和葡萄酒一樣具有文化重要性。Asado——阿根廷人稱之為他們的烤肉——確實獨樹一幟。沒有瓦斯烤爐，沒有捷徑——只有炭火、優質的肉和一位烤肉大師。小心，非常燙。對，很燙。在主烤架旁邊，有一個專門的炭火爐——這正是阿根廷方法與眾不同的原因。大多數人認為烤肉就是點燃炭火直接烤。但在這裡，他們先在爐子裡加熱煤炭，然後再轉移到烤架上。肉是在完美準備好的熱源上烤熟的。當烤肉大師從火上取下一塊新鮮的肉時，他舉起來讓我們看肉汁的程度，然後解釋說每一種肉都有各自的技術——不同的火候、不同的時間、烤架上不同的位置。在阿根廷，晚餐是一種文化體驗，而不只是一頓飯。我們和這趟南美之旅結交的新朋友一起圍坐在家庭式的餐桌旁。馬爾貝克葡萄酒不斷斟上，肉也不斷送上來——多種部位，全部烤得恰到好處，配上奇米丘里醬，把所有味道融合在一起。我在這裡第一次吃到了戰斧牛排——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Clever Infrastructure</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
         <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The video points out an interesting feature of Mendoza&#39;s streets: deep, open concrete trenches running along almost every street. These aren&#39;t ordinary drainage ditches. Most of the year, they carry water from the Andes snowmelt to irrigate the trees planted along every street. It&#39;s a simple but intelligent solution to the region&#39;s water management challenges.</div>
+        <div class="para-en">the full rib bone
+still attached, juicy and perfectly
+done.
+But what stood out most was the pace and
+the atmosphere. Argentinians don&#39;t rush
+dinner. It&#39;s social time.
+Restaurants here typically don&#39;t fill up
+until p.m. For us, that took some
+adjusting. At p.m. back home, we
+are already in bed.
+After a dinner like that, a walk was
+exactly what we needed and there is no
+better place to walk in Mendoza than
+Avenida Aristides.
+It&#39;s still relatively early and the
+avenue is already alive.
+Young people are just starting to come
+out, groups forming, tables filling up
+slowly.
+I can only imagine what this place looks
+like at midnight.
+Our guide told us that&#39;s when it really
+peaks. Restaurants, bars, and pubs
+completely packed. And most places stay
+open well past that.
+The avenue feels brand new, clean,
+well-lit, and buzzing with energy.
+This is clearly where the city comes to
+life at night. And we are just at the
+beginning  of it.
+Good morning from Mendoza.
+Today we&#39;re visiting three wineries.
+So yes, wine tasting for breakfast is
+officially on the schedule.
+And look at the streets, completely dry.
+No puddles, no trace of that storm.
+If we didn&#39;t see it yesterday, we&#39;d
+never believe it happened.
+So this little winery, Casa Aurora, the
+guy, he lives in uh the States. He&#39;s in
+the a financial guru whatever, but he
+bought these wineries for a hobby.
+And he took it over after many years of
+being dilapidated.
+And he has a lot of bottles sent home.
+It&#39;s really quite beautiful.
+Our first stop is a boutique winery,
+small by Mendoza standards. That&#39;s one
+style you&#39;ll find here.
+But Mendoza has 1,200 wineries in total,
+ranging from these small estates all the
+way up to massive operations that fill
+supermarket 
+shelves in 80 countries.
+This region alone produces 70% 
+of all the wine in Argentina.
+Mendoza&#39;s best known for Malbec, but
+they grow and produce many other
+varieties here, too.
+&gt;&gt; 
+&gt;&gt; The only problem with all of this, it&#39;s
+morning and honestly our 
+bodies are still asking for coffee, not
+wine.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">影片指出了Mendoza街道上一個有趣的特點：幾乎每條街道旁都有深邃的露天混凝土溝渠。這些不是普通的排水溝。一年中大部分時間，它們將安第斯山脈的融雪水引導到沿途種植的樹木進行灌溉。這是該地區水資源管理挑戰的一個簡單而聰明的解決方案。</div>
+        <div class="para-zh">整根肋骨仍然附著，多汁且完美火候。但最突出的是節奏和氛圍。阿根廷人不急著吃完晚餐——這是社交時間。餐廳通常要到晚上才開始有人。對我們來說，這需要一些調整——在家鄉，晚上我們已經上床睡覺了。吃完這樣的晚餐，散步正是我們需要的，而在門多薩沒有比阿里斯蒂德斯大道更適合散步的地方了。時間還算早，但大道已經活躍起來了。年輕人剛開始出門，群體聚攏，桌子慢慢被佔滿。我只能想像午夜時分這裡會是什麼樣子。我們的導遊告訴我們，那時候才是真正的高峰——餐廳、酒吧、酒館全部爆滿，而且大多數店家會營業到很晚。這條大道感覺嶄新、乾淨、燈光明亮、充滿活力。這顯然是這座城市夜晚甦醒的地方，而我們才剛剛開始。早安，門多薩。今天我們要參觀三家酒莊。沒錯，早餐品酒正式列入行程。看看街道——完全乾了。沒有水坑，沒有那場暴風雨的任何痕跡。如果我們昨天沒親眼看到，我們絕對不會相信發生過暴風雨。這是一家小型酒莊Casa Aurora，主人住在美國，是什麼金融大師之類的，但他買下這些酒莊當作興趣。他在多年廢棄之後接手了這裡。他寄了很多酒回家。真的很美。我們的第一站是一家精品酒莊——以門多薩的標準來說算是小型。這只是你在這裡能找到的一種風格。但門多薩總共有1,200家酒莊，從這些小型莊園一直到供應80個國家超市貨架的大型企業。僅這一個地區就生產了阿根廷所有葡萄酒的70%。門多薩最出名的是馬爾貝克，但他們也在這裡種植和生產許多其他品種。唯一的問題是——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Local Solutions to Hail</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
         <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Hailstones in Mendoza can reach the size of tennis balls, causing massive damage to vehicles. Locals have a simple but effective solution: every person keeps a heavy blanket in their car specifically to throw over it during a hailstorm. This practical approach reflects the resilience and resourcefulness of the people living in this extreme climate.</div>
+        <div class="para-en">ning and honestly our 
+bodies are still asking for coffee, not
+wine. But here we  are.
+The owner of this winery is Peter
+Dartley,
+the former vice chairman of Pequot
+Capital, one of the largest hedge funds
+in the world.
+His four vineyards are named Jamila,
+Naoki, Lauren and Owen, after each of
+his grandchildren.
+Not a bad hobby for retirement.
+Down in the basement is a private vault.
+Perfect temperature, perfect humidity,
+built for aging wine in the bottle.
+This is Peter&#39;s personal collection and
+none of it is for sale.
+Every now and then he ships some out for
+a special event or maybe just to impress
+a few friends.
+Speaking of collecting,
+what do you collect? Drop it in the
+comments below.
+We collect memories.
+Look at those fermentation tanks on the
+ right. Concrete, not steel.
+Huge. Not what most we picture when we
+think winemaking.
+Wow, that&#39;s a beautiful room.
+Y&#39;all. Oh, wow.
+Beautiful. 
+Well, check them.
+Ready for this?
+&gt;&gt; 
+&gt;&gt; Okay.
+So, it looks like we&#39;re going to try
+three different  wines. A Malbec,
+a blend, and a Cabernet Sauvignon. Oh,
+Cabernet Sauvignon. It&#39;s in the
+morning. We&#39;re not really in the mood
+for it, but we&#39;ll try.
+&gt;&gt; 
+&gt;&gt; Okay.
+So, our first tasting is 
+a blend. It&#39;s a It&#39;s a Malbec, but it&#39;s
+a blend from three different 
+three different uh vineyards.
+So, let&#39;s try it. Judging wine at this
+hour is not easy.
+But honestly, they were pretty good.
+The winery also has a retail shop and a
+restaurant on site.
+And when you think about the fact that
+this whole place was once completely
+abandoned, what they&#39;ve built here is
+genuinely  impressive.
+Mendoza has 150,000 hectares of
+vineyards, and every single one depends
+on snowmelt from the Andes.
+That water fills rivers and reservoirs,
+then flows through gravity-fed trenches
+directly into the vineyards.
+Winemakers just open a small gate, and
+the water floods right in.
+Okay, we&#39;re about to go into our second
+winery
+out of the three, and
+it&#39;s a totally diffe</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Mendoza的冰雹可以達到網球大小，對車輛造成嚴重損壞。當地人有一個簡單但有效的解決方案：每個人在車上都備有一條厚毯子，專門在冰雹風暴時用來蓋住車子。這種實用的方法反映了生活在這種極端氣候中的人們的韌性和智慧。</div>
+        <div class="para-zh">老實說，我們的身體還在要咖啡，不是葡萄酒。但我們就在這裡了。這家酒莊的主人是Peter Dartley——Pequot Capital的前副主席，這是世界上最大的對沖基金之一。他的四個葡萄園分別以他每個孫子的名字命名：Jamila、Naoki、Lauren和Owen。退休後有這樣的興趣愛好還不錯。地下室裡有一個私人酒窖——完美的溫度、完美的濕度，專為瓶陳而建。這是Peter的個人收藏，全部非賣品。他只是偶爾運一些出去用於特殊活動，或者只是為了給幾個朋友留下深刻印象。說到收藏——你收藏什麼？在下面的留言區告訴我們。我們收藏回憶。看右邊那些發酵槽——是水泥的，不是鋼的。非常大。不是大多數人想像的釀酒場景。哇，這房間真美。各位，哦，哇。太美了。準備好了嗎？好了。看來我們要品嚐三種不同的酒——一款馬爾貝克、一款調和酒、一款卡本內蘇維濃。哦，卡本內蘇維濃。現在是早上，我們實在沒什麼心情喝，但還是試試吧。好了，第一款品的是調和酒——是馬爾貝克，但來自三個不同的葡萄園。來試試吧。在這個時間品酒可不容易。但老實說，它們相當不錯。酒莊還附設零售店和餐廳。考慮到這裡曾經完全廢棄，他們所建造的一切著實令人印象深刻。門多薩有15萬公頃的葡萄園，每一座都依賴安第斯山脈的融雪水。這些水注入河流和水庫，然後通過重力供水渠道直接流入葡萄園。釀酒師只需要打開一個小閘門，水就會直接灌進來。好了，我們準備去第二家酒莊了——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Wine Capital and Asado</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
         <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Mendoza is South America&#39;s wine capital, particularly famous for Malbec. The video promises to explore the region&#39;s wineries and the tradition of Asado, Argentina&#39;s iconic barbecue. Despite the dramatic weather, Mendoza&#39;s reputation as a world-class wine destination and its stunning Andean backdrop make it a must-visit location for travelers to Argentina.</div>
+        <div class="para-en">rent feel.
+Piatelli Vineyards.
+This winery is owned by another
+American, John Malinski from Minnesota.
+Unlike the first winery, they use a drip
+irrigation system here for the vines.
+The reservoir on the property makes
+everything look beautiful, and that
+fountain isn&#39;t just decorative. It
+aerates the water to keep it from going
+stagnant. Wow, what a
+nice view.
+Huge vineyard.
+We tasted more wines here  and
+they were good.
+But what really stood out was the
+setting. Beautiful  landscaping,
+open views, birds everywhere.
+The grounds alone make this winery worth
+visiting.
+&gt;&gt; 
+&gt;&gt; Now we&#39;re heading to lunch at Chamera
+Bistro inside Achaval Ferrer, one of the
+most prestigious wineries in Mendoza.
+The owner is Yuri Shefler,
+a Russian-born billionaire who also owns
+the Stoli Group, the company behind
+Stolichnaya Vodka.
+He acquired this estate to expand their
+luxury wine portfolio.
+Our third and final winery and here
+we&#39;re going to have a four-course lunch
+with pairings of different wines. Sun&#39;s
+finally coming out.
+Oh, I like it. This is  very
+pretty.
+Look at the view of the vineyard.
+Wow. And we&#39;re we&#39;re starting with a
+glass.
+&gt;&gt; 
+&gt;&gt; Got the asado going.
+&gt;&gt; 
+&gt;&gt; Oh, wow.
+It&#39;s like a
+Michelin-star restaurant.
+Chamera Bistro serves a full
+multi-course menu with wines paired to
+every single course.
+From the appetizer straight through to
+dessert.
+Everything was delicious. Michelin-level
+presentation and taste.
+Honestly, one of the best lunches we&#39;ve
+ever had.
+&gt;&gt; 
+&gt;&gt; We didn&#39;t get a full winery tour,
+but there&#39;s a lookout window at the back
+of the restaurant where you can see the
+fermentation tanks.
+Very impressive operation.
+When money is no object and the passion
+is there, the results speak for
+themselves.
+Mendoza was incredible.
+But Buenos Aires is next and that city
+is on a completely different level.
+One of our favorite places in the world
+and we made the most of every hour
+there. Join us for that one.
+See you in Buenos Aires.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Mendoza是南美洲的葡萄酒首都，尤其以Malbec聞名。影片承諾探索該地區的酒莊和Asado（阿根廷標誌性烤肉）的傳統。儘管天氣戲劇化，Mendoza作為世界級葡萄酒目的地的聲譽和壯麗的安第斯山脈背景，使其成為前往阿根廷的旅客必訪的地點。</div>
+        <div class="para-zh">不同的感覺。Piatelli Vineyards。這家酒莊由另一位美國人John Malinski（來自明尼蘇達）擁有。與第一家酒莊不同，他們在這裡使用滴灌系統灌溉葡萄藤。莊園裡的水庫讓一切看起來很美，那個噴泉不只是裝飾——它為水曝氣，防止水質停滯。哇，景色真好。廣闊的葡萄園。我們在這裡品嚐了更多酒，味道都不錯。但真正突出的是環境——美麗的園林景觀、開闊的視野、鳥兒到處都是。光是這片庭園就讓這家酒莊值得一訪。現在我們要去Achaval Ferrer內的Chamera Bistro吃午餐——這是門多薩最負盛名的酒莊之一。主人是Yuri Shefler，一位俄羅斯出生的億萬富翁，他也擁有Stoli Group——Stolichnaya伏特加的公司。他收購這座莊園是為了擴充他們的奢華葡萄酒組合。這是我們的第三家也是最後一家酒莊，我們要在這裡享用搭配不同葡萄酒的四道菜午餐。太陽終於出來了。哦，我喜歡。這真美。看看葡萄園的景色。哇。我們先來一杯。炭烤肉開始了。哦，哇。就像米其林星級餐廳一樣。Chamera Bistro提供完整的多道菜菜單，每道菜都配有不同的葡萄酒——從開胃菜一直到甜點。每一樣都美味極了——米其林水準的呈現和口感。老實說，這是我們吃過最好的午餐之一。我們沒有參觀完整的酒莊，但餐廳後面有一個觀景窗，可以看到發酵槽。非常令人印象深刻的規模。當金錢不是問題、而熱情又到位的時候，結果自然不言而喻。門多薩太棒了。但接下來是布宜諾斯艾利斯——那是一個完全不同層次的城市。它是我們在世界上最喜歡的地方之一，我們充分利用了在那裡的每一小時。加入我們——</div>
       </div>
     </div>
-</div>
-<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
         <span class="acc-label">1. world&#39;s driest spots <span class="collo-play" onclick="event.stopPropagation();playAudio('gK8KeV3atMs','collo1')">🔊</span></span>
@@ -235,8 +586,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="collo-practice">Farmers rely on ______ to irrigate their crops in the spring.<br><span class="collo-answer" id="ca8">water from snowmelt</span></div>
       </div>
     </div>
-</div>
-<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Cause and Effect: &#39;makes it&#39; + result</span>
@@ -271,8 +624,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="grammar-practice">用現在簡單式描述你所在城市的氣候特徵。<br><span class="grammar-answer" id="ga2">&#39;The average temperature in my city reaches 35°C in summer and drops to 10°C in winter.&#39;</span></div>
       </div>
     </div>
-</div>
-<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">To cross [geography], you can [option A] or [option B]</span>
@@ -309,20 +664,27 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="pattern-practice">用這個句型引導觀察一個有趣的細節。<br><span class="pattern-answer" id="pa3">Look closely at the building&#39;s entrance and you&#39;ll notice tiny carvings on the stone pillars.</span></div>
       </div>
     </div>
-</div>
-<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
-<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
 </div>
 <script>
 var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "How did Tresa and Zarko travel from Santiago to Mendoza?", "choices": ["By bus", "By car", "By a one-hour flight", "By train"], "answer": 2, "explain": "They chose the 1-hour flight from Santiago to Mendoza to avoid risky mountain passes."},{"q": "How much rain does Mendoza get per year?", "choices": ["8 inches", "20 inches", "40 inches", "80 inches"], "answer": 0, "explain": "Mendoza is a desert with only 8 inches of rain per year."},{"q": "What size can hailstones reach in Mendoza?", "choices": ["Pea-sized", "Marble-sized", "Tennis ball-sized", "Grapefruit-sized"], "answer": 2, "explain": "Hailstones can reach the size of tennis balls, causing massive damage to vehicles."},{"q": "What do locals use to protect their cars during hailstorms?", "choices": ["Car covers", "Heavy blankets", "Umbrellas", "Garages"], "answer": 1, "explain": "Every person here keeps a heavy blanket in their car to throw over it during a hailstorm."},{"q": "What is Mendoza best known for according to the video?", "choices": ["Beaches and surfing", "Wineries and Malbec wine", "Ski resorts", "Ancient ruins"], "answer": 1, "explain": "Mendoza is South America's wine capital, home for Malbec and Asado."}];
-var quizState=[];
-function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
 renderQuiz();
 </script>
 </body>

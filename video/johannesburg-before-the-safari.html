@@ -52,6 +52,12 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
 .quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
@@ -101,55 +107,185 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Johannesburg: The Gateway to Safari</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
-        <div class="para-en">Johannesburg often bookends a safari adventure. Travelers have a choice: stick close to the airport for ease or head into the city for a quick taste. After three weeks of unforgettable safaris, this video shows a little of Johannesburg. Living in Bulgaria means most trips pass through Istanbul Airport — probably one of the most travel-friendly hubs anywhere, with direct flights to just about every corner of the world.</div>
+        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">Johannesburg. It often bookends a safari
+adventure. Your choice. Stick close to
+the airport for ease or head into the
+city for a quick taste.
+We&#39;ve had 3 weeks of unforgettable
+safaris, but in this video, we&#39;ll show
+you a little of Johannesburg.
+Living in Bulgaria means that most of
+our trips pass through the Istanbul
+airport.
+It&#39;s probably one of the most travel
+friendly hubs anywhere with direct
+flights to just about every corner of
+the world.
+The Turkish Airlines business lounge is
+one of the best. Seriously impressive.
+It does get crowded though because their
+business class fairs are often much
+cheaper than other airlines, making the
+upgrade tempting for a lot more
+travelers.
+
+After I pinched a nerve on a long haul
+flight, we decided to switch to business
+class for anything over 6 hours.
+There&#39;s a saying, if you don&#39;t fly
+business, your kids will.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">約翰尼斯堡常常是 safari 冒險的起點或終點。旅行者可以選擇：靠近機場以便利為主，或者進城快速體驗一下。經過三週難忘的 safari 後，這部影片展示了約翰尼斯堡的一小部分。住在保加利亞意味著大多數行程都會經過伊斯坦堡機場——這可能是世界上最適合轉機的樞紐之一，有直飛航班到世界各地。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. The Istanbul Airport Experience</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
-        <div class="para-en">The Turkish Airlines business lounge is described as one of the best — seriously impressive. It does get crowded, though, because their business class fares are often much cheaper than other airlines, making the upgrade tempting for many travelers. After the narrator pinched a nerve on a long-haul flight, they decided to switch to business class for anything over six hours. There is a saying: &#39;If you don&#39;t fly business, your kids will.&#39;</div>
+        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">, we decided to switch to business
+class for anything over 6 hours.
+There&#39;s a saying, if you don&#39;t fly
+business, your kids will. So, we figured
+might as well enjoy it ourselves.
+
+We had a meal, watched a movie, drank
+some wine, took a nap, and then suddenly
+we&#39;re there.
+Johannesburg is massive, and it&#39;s not
+exactly tourist friendly. With that
+safety reputation in mind, figuring out
+where to stay kind of had us scratching
+our heads.
+
+Before starting our safari, we stayed
+near the airport at Emperor&#39;s Palace.
+There&#39;s three hotels wrapped around a
+casino. Think of it as Johannesburg&#39;s
+mini version of Las Vegas.
+Hey, we made it to Johannesburg. Our our
+room&#39;s not ready yet, so we have to kill
+a few hours. And by the time we left and
+by the time we got here, it&#39;s like a
+24-hour trip.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">土耳其航空的商務艙貴賓室被形容為最好的之一——令人印象深刻。不過它確實很擁擠，因為他們的商務艙票價通常比其他航空公司便宜很多，使得升等對許多旅客來說很有吸引力。在敘述者在一次長途飛行中神經被壓迫後，他們決定任何超過六小時的飛行都改搭商務艙。有句俗話說：「如果你不搭商務艙，你的孩子會搭。」</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Arriving in Johannesburg</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
-        <div class="para-en">The flight experience includes a meal, a movie, some wine, and a nap — and suddenly they are there. Johannesburg is massive and not exactly tourist-friendly. With its safety reputation in mind, figuring out where to stay had the travelers scratching their heads. They chose to stay near the airport at Emperor&#39;s Palace, which has three hotels wrapped around a casino — Johannesburg&#39;s mini version of Las Vegas.</div>
+        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">and
+by the time we got here, it&#39;s like a
+24-hour trip. So, we&#39;re a little tired.
+Really nice hotel. They have some nice
+hotels here. Not too far from the from
+the airport. We just have um this
+evening and then in the morning, early
+in the morning, then we&#39;re flying out to
+Krueger. So, welcome to Johannesburg.
+We&#39;re having local beer and we&#39;ve
+ordered lunch. We got our order. It&#39;s
+crazy big. Like, it looks like a half a
+chicken. We&#39;re shocked. And the plates
+are so hot the guy the waiters couldn&#39;t
+hardly carry the plates over the table.
+I said these fries are African African
+size.
+Oh my gosh. Mosmb beek chicken. So let&#39;s
+find out what what it&#39;s all about.
+&gt;&gt; I don&#39;t I don&#39;t even know where Mosmb
+beek is. We&#39;ll find out.
+&gt;&gt; We stayed at the Piermont D oral Grand.
+It&#39;s a five-star one and everything
+about it was completely over the top.
+&gt;&gt; Excuse me.
+
+&gt;&gt; Hello.
+&gt;&gt; Whoa.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">飛行體驗包括一頓餐點、一部電影、一些葡萄酒和小睡——然後突然就到了。約翰尼斯堡很大，而且不太適合觀光。考慮到它的安全聲譽，決定住在哪裡讓旅行者們傷透了腦筋。他們選擇住在機場附近的皇宮酒店，那裡有三家酒店環繞著一家賭場——約翰尼斯堡的迷你拉斯維加斯。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Emperor&#39;s Palace: A Safe Haven</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
-        <div class="para-en">Emperor&#39;s Palace offers convenience and comfort. The room is not ready when they arrive, so they have to kill a few hours after a 24-hour journey. The hotel is nice, not too far from the airport, and provides a comfortable base before heading into the bush. For travelers concerned about Johannesburg&#39;s safety, Emperor&#39;s Palace offers a practical solution — comfort and security without the stress of navigating the city.</div>
+        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">stayed at the Piermont D oral Grand.
+It&#39;s a five-star one and everything
+about it was completely over the top.
+&gt;&gt; Excuse me.
+
+&gt;&gt; Hello.
+&gt;&gt; Whoa. Where?
+&gt;&gt; We are at the hotel in Johannesburg.
+&gt;&gt; We&#39;re not in Vegas.
+&gt;&gt; Looks like it.
+&gt;&gt; Since we&#39;re not gamblers, we were a bit
+hesitant to book here.
+They&#39;ve gone all in on the Vegas vibe.
+There&#39;s three hotels and they&#39;re all
+connected to the casino through a food
+and shopping court.
+There&#39;s plenty of dining options and
+it&#39;s a great way to spend the evening.
+Dinner and some people watching along
+the indoor prominade as the world
+strolls by.
+After 3 weeks chasing wildlife back in
+Johannesburg, we figured it was time to
+switch things up and try something
+different.
+We stayed in the</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">皇宮酒店提供了便利和舒適。抵達時房間還沒準備好，所以他們需要在24小時的旅程後打發幾個小時。酒店不錯，離機場不遠，提供了進入叢林前舒適的基地。對於擔心約翰尼斯堡安全的旅行者來說，皇宮酒店提供了一個實用的解決方案——舒適和安全，不必擔心在城市中穿梭的壓力。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Practical Advice for Future Travelers</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
-        <div class="para-en">The video concludes with practical advice. If you have a long layover or a day before your safari, Emperor&#39;s Palace is a solid choice. There is great food, a lively vibe, and it is just minutes from the airport. It is perfect when your real adventure is happening out in the bush, not in the city. Next up, the start of their safari adventure — heading into the Klaserie Private Nature Reserve for unforgettable game drives.</div>
+        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">Santin area right in
+the city beside a massive mall and the
+Mandela Square.
+And the mall is just huge, full of all
+the usual bigname brands.
+We&#39;re not big shoppers, but the
+steakhouse on the square served a
+fantastic dinner.
+If you&#39;re not exploring Johannesburg,
+and it&#39;s just a pre or post safari stop,
+I&#39;d stick with Emperor&#39;s Palace.
+There&#39;s great food, lively vibe, and
+it&#39;s just minutes from the airport.
+Perfect when your real adventure is
+happening out in the bush and not in the
+city.
+Next up, the start of our safari
+adventure.
+We&#39;re heading into the Cleri Private
+Nature Reserve from Camp George for
+unforgettable game drives.
+There&#39;s wild encounters, stunning
+landscapes. You won&#39;t want to miss
+what&#39;s coming. See you there.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">影片最後提供了實用建議。如果你在safari之前有長時間的轉機停留或一天的空檔，皇宮酒店是一個不錯的選擇。那裡有美食、熱鬧的氛圍，而且離機場只有幾分鐘的路程。當你的真正冒險是在叢林中而不是城市裡時，這是最完美的選擇。接下來，他們的safari冒險即將開始——前往克拉塞里私人自然保護區進行難忘的遊獵。</div>
       </div>
@@ -160,89 +296,89 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. bookend a safari</span>
+        <span class="acc-label">1. bookend a safari <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">為safari冒險畫上開始或結束的句點</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Johannesburg often bookends a safari adventure."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Johannesburg often bookends a safari adventure." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex1')">🔊</span></div>
         <div class="collo-practice">The farewell dinner ______ (為我們的旅程畫上句點).<br><span class="collo-answer" id="ca1">bookended our journey</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. travel-friendly hub</span>
+        <span class="acc-label">2. travel-friendly hub <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">適合轉機的樞紐</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Istanbul is probably one of the most travel friendly hubs anywhere."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Istanbul is probably one of the most travel friendly hubs anywhere." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex2')">🔊</span></div>
         <div class="collo-practice">Singapore Changi Airport is known as one of the most ______ (適合轉機的樞紐).<br><span class="collo-answer" id="ca2">travel-friendly hubs</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. pinched a nerve</span>
+        <span class="acc-label">3. pinched a nerve <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">神經受到壓迫</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"After I pinched a nerve on a long haul flight, we decided to switch to business class."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"After I pinched a nerve on a long haul flight, we decided to switch to business class." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex3')">🔊</span></div>
         <div class="collo-practice">Sitting in a cramped seat for hours made me ______ (神經受到壓迫).<br><span class="collo-answer" id="ca3">pinch a nerve</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. kill a few hours</span>
+        <span class="acc-label">4. kill a few hours <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">打發幾個小時</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Our room&#39;s not ready yet, so we have to kill a few hours."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Our room&#39;s not ready yet, so we have to kill a few hours." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex4')">🔊</span></div>
         <div class="collo-practice">We visited a nearby museum to ______ (打發時間) before our flight.<br><span class="collo-answer" id="ca4">kill some time / kill a few hours</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. scratching our heads</span>
+        <span class="acc-label">5. scratching our heads <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">傷腦筋；摸不著頭緒</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Figuring out where to stay kind of had us scratching our heads."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Figuring out where to stay kind of had us scratching our heads." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex5')">🔊</span></div>
         <div class="collo-practice">The complicated instructions left us ______ (傷透了腦筋).<br><span class="collo-answer" id="ca5">scratching our heads</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. mini version of Las Vegas</span>
+        <span class="acc-label">6. mini version of Las Vegas <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">迷你版的拉斯維加斯</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Think of it as Johannesburg&#39;s mini version of Las Vegas."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Think of it as Johannesburg&#39;s mini version of Las Vegas." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex6')">🔊</span></div>
         <div class="collo-practice">The entertainment complex is like a ______ (迷你版的拉斯維加斯).<br><span class="collo-answer" id="ca6">mini version of Las Vegas</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. solid choice</span>
+        <span class="acc-label">7. solid choice <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">不錯的選擇</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Emperor&#39;s Palace is a solid choice."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Emperor&#39;s Palace is a solid choice." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex7')">🔊</span></div>
         <div class="collo-practice">For budget travelers, this hostel is a ______ (不錯的選擇).<br><span class="collo-answer" id="ca7">solid choice</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. lively vibe</span>
+        <span class="acc-label">8. lively vibe <span class="collo-play" onclick="event.stopPropagation();playAudio('kNvUJvkpLH0','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">熱鬧的氛圍</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"There&#39;s great food, lively vibe, and it&#39;s just minutes from the airport."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"There&#39;s great food, lively vibe, and it&#39;s just minutes from the airport." <span class="collo-play-sm" onclick="playAudio('kNvUJvkpLH0','ex8')">🔊</span></div>
         <div class="collo-practice">The night market has a ______ (熱鬧的氛圍) that draws crowds every evening.<br><span class="collo-answer" id="ca8">lively vibe</span></div>
       </div>
     </div>
@@ -351,6 +487,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
   </div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "What is the main purpose of this video?", "choices": ["To show the best hotels in downtown Johannesburg", "To document the travelers' experience in Johannesburg before starting their safari", "To compare different airlines flying to South Africa", "To warn tourists against visiting Johannesburg"], "answer": 1, "explain": "The video is about the travelers' brief stay in Johannesburg before their safari adventure. As the title says, this is 'Johannesburg Before the Safari' — a quick look at the gateway city."},{"q": "Why do the travelers fly through Istanbul?", "choices": ["It has the cheapest flights to anywhere in the world", "They live in Bulgaria, so most trips pass through Istanbul Airport", "They have family in Istanbul", "Turkish Airlines is the only airline they use"], "answer": 1, "explain": "The narrator explains: 'Living in Bulgaria means that most of our trips pass through the Istanbul airport.' This is a practical geographical consideration."},{"q": "Where did the travelers stay in Johannesburg?", "choices": ["In a downtown Johannesburg hotel", "At Emperor's Palace, near the airport", "At a backpacker hostel in Soweto", "At a friend's house in the suburbs"], "answer": 1, "explain": "The narrator states: 'Before starting our safari, we stayed near the airport at Emperor's Palace. There's three hotels wrapped around a casino.' This was a practical choice given safety concerns."},{"q": "The saying 'If you don't fly business, your kids will' is used to suggest what?", "choices": ["Children should fly business class", "You might as well enjoy the upgrade yourself rather than leaving inheritance", "Business class tickets are a good investment for the future", "Kids always get better treatment on flights"], "answer": 1, "explain": "The narrator uses this saying humorously to justify their decision to upgrade to business class. The implication is: if you save money instead of spending on comfort, your children will inherit that money and spend it on themselves."},{"q": "What advice does the video offer about Johannesburg?", "choices": ["Avoid Johannesburg at all costs", "Emperor's Palace near the airport is a solid, safe choice for a layover before safari", "Spend at least a week exploring Johannesburg's attractions", "Book a downtown hotel for the best experience"], "answer": 1, "explain": "The video concludes: 'I'd stick with Emperor's Palace. There's great food, lively vibe, and it's just minutes from the airport. Perfect when your real adventure is happening out in the bush.'"}];

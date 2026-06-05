@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>We Were Almost Entirely Wrong About China — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,121 +32,504 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
-.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
-.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
-.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
-.collo-play:active{background:#1e40af;transform:scale(.9)}
-.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
-.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;color:#059669;font-weight:600}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;color:#059669;font-weight:600}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-badge">🎭 BZ Travel · 英文自學講義</div><h1>We Were Almost Entirely Wrong About China</h1><div class="sub">中國</div><div class="header-meta"><span>20:38</span><span>🎭 文化體驗</span></div></div>
-<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/AOEr5FrW-lY" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
-<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
+<div class="header">
+  <div class="header-badge">🎭 BZ Travel · 英文自學講義</div>
+  <h1>We Were Almost Entirely Wrong About China</h1>
+  <div class="sub">中國</div>
+  <div class="header-meta">
+    <span>20:38</span>
+    <span>🎭 文化體驗</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/AOEr5FrW-lY" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. First Impressions Can Be Deceiving</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
         <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Tresa and Zarko arrived in China with assumptions built from news reports and secondhand stories. They believed they understood what to expect. However, from the moment they arrived, their assumptions began to crumble. The reality was far more complex and surprising than anything they had imagined. This video is the first in a series documenting 22 days of private travel through China, without tour buses or group schedules.</div>
+        <div class="para-en">We had a theory about China. We had read
+things, watched the news, talked to
+people who had been there. We thought we
+had a reasonable picture of what to
+expect.
+We were wrong. Not a little wrong,
+almost entirely wrong. This is the first
+video in a series about 22 days inside
+China.
+We traveled privately, just the two of
+us, with a different local guide in each
+city.
+No tour buses, no group schedules, just
+us moving through one of the most
+extraordinary countries on earth trying
+our best to understand it. We are going
+to show you the landscapes and the food
+and the things you come to China to see.
+But we are also going to try to explain
+something harder. What this country
+actually is, how it thinks, what it has
+been through, why it ended up here.
+Because if you only watch the pretty
+pictures, you will miss the whole story.
+My name is Tresa. That guy you keep
+seeing on screen exploring everything,
+sitting in every car, that&#39;s my husband,
+Zarko.
+Together, we run this channel and
+together we spent 22 days traveling
+China privately.
+We came back with more questions than
+answers, which honestly is the best
+possible outcome from any trip.
+I&#39;m American, born and raised in the US,
+which means I grew up with a pretty
+specific picture of the world.
+Communism was the enemy. The Soviet
+block was gray and scary.
+And China was this distant, mysterious
+place you only heard about when
+something went wrong.
+Zarko&#39;s story is different. He grew up
+in Bulgaria under communism. Not reading
+about it, living it. one party, state
+control over everything. You kept your
+head down and you did not ask the wrong
+questions.
+He left at 25 as a political refugee,
+built a business in Seattle that
+supported 125 families. And when we
+retired, we moved back to Bulgaria to
+Burgus on the Black Sea. That was 7
+years ago.
+I&#39;m telling you all of this because it
+matters for everything you&#39;re about to
+see. When I look at China, I&#39;m looking
+through American eyes. When Zarko looks
+at China, he&#39;s looking through the eyes
+of someone who actually lived inside a
+communist system.
+Our questions are completely different.
+And when we compare notes at the end of
+the day, neither one of us has the full
+picture alone, but together we get a
+little closer to something real. That&#39;s
+what this series is about. Getting
+closer to something real about China.
+Before we left, we spent weeks trying to
+prepare,
+reading, watching documentaries,
+talking to anyone who&#39;d actually been
+there. And we kept coming back to the
+sam</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Tresa和Zarko帶著從新聞報導和二手故事中建立的假設抵達中國。他們相信自己對即將面對的情況有合理的預期。然而，從他們抵達的那一刻起，他們的假設就開始崩潰。現實遠遠比他們想像的任何情況都更加複雜和令人驚訝。這部影片是一個系列的第一集，記錄了在中國22天的私人旅行，沒有旅遊巴士也沒有團體行程。</div>
+        <div class="para-zh">我們對中國有一套理論。我們讀過一些東西、看過新聞、也和去過那裡的人聊過。我們以為自己對即將面對的情況有合理的認識。我們錯了——不是小錯，而是幾乎全錯。這是一個關於我們在中國境內旅行22天的系列影片的第一集。我們以私人方式旅行，只有我們兩個人，每個城市都有不同的當地導遊陪同。沒有旅遊巴士，沒有團體行程，只有我們穿梭在這顆星球上最非凡的國度之一，盡全力去理解它。我們會帶你去看風景、品美食、看那些你來中國想看的一切。但我們也想試著解釋更難的東西——這個國家到底是什麼樣子、它如何思考、它經歷過什麼、為什麼走到了今天這一步。因為如果你只看漂亮的畫面，你就會錯過整個故事。我叫Tresa。你在螢幕上一直看到的那個探索一切、坐在每輛車裡的男人，是我的丈夫Zarko。我們一起經營這個頻道，一起在中國私人旅行了22天。我們帶回來的問題比答案多——說實話，這是一趟旅行最好的結果。我是美國人，在美國出生長大。這意味著我對世界有一套相當特定的認識：共產主義是敵人，蘇聯陣營是灰暗而可怕的，而中國則是個遙遠而神祕的地方，只有在出問題的時候才會聽說它。Zarko的故事不一樣。他在保加利亞的共產主義制度下長大——不是讀到而已，而是親身經歷。一黨專政、國家控制一切。你必須低調行事，不能問不該問的問題。他在25歲時以政治難民身份離開，後來在西雅圖創辦了一家養活125個家庭的企業。我們退休後搬回了保加利亞，住在黑海邊的布爾加斯。那是七年前的事了。我告訴你這些，是因為這對你即將看到的一切都很重要。當我看著中國時，我帶著一個美國人的眼光——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Traveling Privately Through China</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
         <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The couple traveled with a different local guide in each city, allowing them to experience China beyond the typical tourist path. They explored independently, moving through landscapes and cities without the constraints of organized tours. Their goal was not just to see the famous sights but to understand the country&#39;s deeper story — its history, its mindset, and the forces that shaped it.</div>
+        <div class="para-en">tanbul has become one
+of the great travel hubs in the world,
+connected to almost everywhere. With
+business class fairs that are a fraction
+of what you&#39;d pay on a European carrier.
+On a 10-hour flight, business class
+stops being a luxury. It becomes
+self-preservation.
+We landed early morning at Shanghai
+Puong. And for our very first experience
+of China, we decided to take the magv
+into the city. Magnetic levitation, no
+wheels on the track, top speed of 430
+kmh.
+It felt like exactly the right way to
+arrive.
+Honest review, it&#39;s 20 years old. The
+technology is actually German, invented
+in Germany, built here, then largely
+abandoned worldwide because it was too
+expensive and too inflexible to scale.
+The train was nearly empty on a weekday
+morning. The interior felt dated, and
+the top speed we actually hit was around
+300 km hour, which sounds impressive
+until you learn that China&#39;s regular
+high-speed trains now reach similar
+speeds across the entire country. We&#39;d
+see that for ourselves on our first
+bullet train ride a few days later. Our
+hotel was right on Nanjing Road, not
+near it, on it. We opened the curtains
+and there it was, directly below us. The
+most famous commercial street in
+Shanghai, running from the bun straight
+through the heart of the city. It never
+stops, day or night. We slept for a few
+hours. The 7-hour time difference from
+Bulgaria is not kind. And then we went
+walking.
+This is the moment, the one I&#39;d heard
+other travelers talk about but hadn&#39;t
+quite believed.
+when what you expected and what you&#39;re
+actually standing inside quietly come
+apart.
+The streets are spotless. The
+architecture is extraordinary.
+Every luxury brand you&#39;ve ever heard of
+is here
+alongside Chinese brands I&#39;d never
+encountered.
+People are well-dressed, unhurried,
+going about their lives. Everything
+moves with this purposeful efficiency. I
+can only describe as organized.
+People compare Nanjing Road at night to
+Time Square. I&#39;ve been to Time Square.
+Time Square is loud and chaotic in a way
+that feels almost accidental.
+Nanjing Road feels deliberate, like
+someone asked what a great city street
+should actually look like and then built
+the answer.
+There&#39;s a robot that makes coffee right
+there on the street. You walk up, tap
+your order on a screen, and a mechanical
+arm makes your espresso.
+We walked to the Bund as the sun was
+going down, the famous waterfront
+prominade along the Hangpoo River with
+grand colonial era European buildings on
+one side and the futuristic towers of
+Puong </div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這對夫婦在每個城市都有一位不同的當地導遊陪同，讓他們能夠體驗超越典型旅遊路線的中國。他們獨立探索，穿梭於風景和城市之間，不受組團旅遊的限制。他們的目標不僅是欣賞著名景點，更是要了解這個國家更深層的故事——它的歷史、心態以及塑造它的力量。</div>
+        <div class="para-zh">伊斯坦堡已經成為世界上最大的旅行樞紐之一，幾乎可以連接任何地方。商務艙的價格僅是歐洲航空公司的幾分之一。在十小時的飛行中，商務艙不再是一種奢侈品，而是一種自我保護。我們在清晨抵達上海浦東。作為對中國的第一個體驗，我們決定搭乘磁浮列車進城——磁力懸浮，軌道上沒有輪子，最高時速430公里。這是抵達這座城市最恰當的方式。老實說，這項技術已經有20年了。它其實是德國技術，在德國發明，在這裡建造，然後在全球大部分地區被放棄，因為它太昂貴、太缺乏彈性、難以規模化。列車在平日上午幾乎空無一人，內部裝潢感覺有點過時，我們實際達到的最高時速約為300公里——這聽起來很厲害，直到你發現中國的常規高鐵現在在全國範圍內都能達到類似的速度。我們幾天後第一次搭乘高鐵時就會親身體驗到。我們的酒店就在南京路上——不是靠近它，而是在它上面。我們拉開窗簾，它就在我們正下方——上海最著名的商業街道，從外灘一直延伸到城市的心臟。它從不停歇，日夜不分。我們睡了幾個小時。與保加利亞七小時的時差可不客氣。然後我們就出門散步了。這就是那個時刻——我曾聽其他旅行者說起過但不太相信的那個時刻——當你的預期和你實際上站立其中的現實靜靜地分道揚鑣的時候。街道一塵不染。建築令人嘆為觀止。所有你聽說過的奢侈品牌都在這裡，還有我從未見過的中國品牌。人們穿著得體，步調從容，過著自己的生活。一切都帶著一種我只能形容為「有條不紊」的高效節奏運轉。人們把夜晚的南京路比作——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Two Different Perspectives</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
         <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Tresa grew up in the United States with a specific worldview shaped by Cold War narratives. Communism was presented as an enemy, and China seemed distant and mysterious. Zarko, on the other hand, grew up under communism in Bulgaria. He experienced one-party rule and state control firsthand. These contrasting backgrounds gave them a unique lens through which to process what they encountered in China.</div>
+        <div class="para-en">utright banned, considered a national
+security risk.
+In Europe, there&#39;s ongoing debate.
+And then you walk into their flagship
+store in Shanghai and you immediately
+understand why they make governments
+nervous.
+This is not a phone company. Huawei is
+an entire ecosystem.
+Smartphones, tablets, laptops,
+smartwatches, home automation, and cars.
+Full electric vehicles, multiple models,
+beautiful things. Zarko moved through
+that showroom like a kid the week before
+Christmas. He sat in every single one.
+The ST9, the Z7, the M9, every one of
+them.
+What stopped us both was a laptop called
+the Matebook Fold.
+It opens like a normal laptop.
+Then the screen unfolds into a fulls
+size display.
+Something between a tablet and a
+workstation in a single piece of
+hardware.
+The engineering is genuinely remarkable.
+Zarko stood at that table for a long
+time.
+Then the Xiaomi store. Xiaomi makes
+everything. Phones, TVs, rice cookers,
+scooters, robot vacuums,
+and a car. The Xiaomi SU7 is an electric
+sedan that&#39;s been making European and
+American automakers quietly nervous.
+It looks better than most of what it
+competes with,
+and it costs considerably less.
+the DJI store. Everything you&#39;re
+watching right now was filmed on a DJI
+Osmo Pocket 4. Zarko&#39;s camera of choice
+for this channel. Walking into the DJI
+flagship felt a little ceremonial.
+Walking store to store that morning,
+something kept pulling at me. This isn&#39;t
+innovation arriving from nowhere. China
+graduates more engineers every year than
+any other country on Earth. The
+government identified AI, electric
+vehicles, and advanced manufacturing as
+national priorities and then sustained
+that investment for decades. Whatever
+you think of the political system behind
+those decisions, the output is sitting
+right in front of you and it works.
+&gt;&gt; You can go 1,000 km on this 1,400
+hybrid.
+One of the most remarkable things we saw
+in Shanghai wasn&#39;t a landmark or a tech
+showroom. It was a supermarket. Hearesh,
+owned by Alibaba, looks like an upscale
+grocery at first. Seafood tanks where
+you point at your fish and they prepare
+it for you. Beautiful produce, a hot
+food section, normal aisles. But look
+up. Running above the entire store is a
+conveyor belt. A whole network of
+ceiling tracks with bags hanging from
+them, moving in every direction. A
+silent river of orders flowing overhead
+while people shop below. HEA isn&#39;t just
+a supermarket. It&#39;s a fulfillment center
+that also lets people shop in person.
+Employees walk the aisles filling online
+o</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Tresa在美國長大，她的世界觀深受冷戰敘事的影響。共產主義被描繪成敵人，而中國則顯得很遙遠而神秘。另一方面，Zarko在保加利亞的共產主義制度下長大。他親身經歷了一黨專政和國家控制。這些截然不同的背景給了他們一個獨特的視角來理解在中國的所見所聞。</div>
+        <div class="para-zh">被徹底禁止，被視為國家安全風險。在歐洲，這項爭論仍在持續。然後你走進它們在上海的旗艦店，立刻就明白為什麼它們讓各國政府感到不安。這不是一家手機公司。華為是一整個生態系統——智慧型手機、平板電腦、筆記型電腦、智慧手錶、家庭自動化設備，還有汽車。純電動車，多種型號，美輪美奐。Zarko在那個展廳裡走動的樣子就像聖誕節前一週的小孩，他每一輛都坐過了——ST9、Z7、M9，每一輛。真正讓我們倆都停下來的是一台叫做Matebook Fold的筆記型電腦。它像普通筆電一樣打開，然後螢幕展開成一個全尺寸顯示器——介於平板電腦和工作站之間的一體機。這項工程技術確實令人驚嘆。Zarko在那張桌子前站了很久。然後是小米專賣店。小米什麼都做——手機、電視、電鍋、滑板車、掃地機器人，還有一輛車。小米SU7是一款電動轎車，讓歐美汽車製造商暗自緊張。它比大多數競爭對手更好看，而且價格低得多。然後是大疆創新。你現在看到的一切都是用大疆Osmo Pocket 4拍攝的——Zarko為這個頻道選擇的相機。走進大疆旗艦店的感覺有點像朝聖。那天早上從一家店走到另一家店，有件事一直困擾著我：這不是憑空出現的創新。中國每年培養的工程師比世界上任何國家都多。政府將人工智慧、電動車和先進製造業定為國家優先事項，然後持續投入數十年。不管你對這些決策背後的政治體制怎麼看，產出就在你面前，而且它確實有效。這輛混合動力車可以跑1000公里。我們在上海看到的最了不起的事情之一不是地標建築，也不是科技展廳——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. More Questions Than Answers</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
         <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">After 22 days in China, the couple came back with more questions than answers. Rather than viewing this as a failure, they consider it the best possible outcome of any journey. The trip forced them to reconsider long-held beliefs and recognize how little they actually knew. Travel, they suggest, is most valuable when it unsettles your certainties.</div>
+        <div class="para-en">here,
+a drone arrived. an actual drone
+descending from above the buildings with
+a food bag hanging underneath it,
+landing precisely on a marked drop zone.
+The food came from a restaurant on the
+rooftop of a nearby mall. From the
+moment someone placed the order to the
+moment the drone landed, 12 minutes.
+Our guide told us her mother, an elderly
+woman living alone, gets almost
+everything delivered this way.
+groceries, meals, household items. She
+orders on WeChat, pays on WeChat, and it
+arrives at her door. She never has to
+carry heavy bags or fight through
+crowded markets. I found that genuinely
+moving. And that&#39;s when I started to
+understand why everyone in China is on
+their phone. It isn&#39;t mindless
+scrolling. Their phone isn&#39;t a
+distraction from their life. It is the
+system that runs their life. And in
+China, it runs it remarkably well.
+We also spent time in the BYD showroom.
+Build your dreams.
+Now the largest electric vehicle
+manufacturer in the world by sales.
+Bigger than Tesla.
+Bigger than Volkswagen.
+In China, electric vehicles aren&#39;t a
+trend or a glimpse of the future.
+They&#39;re just what cars are.
+One of the malls we visited had car
+dealerships on the ground floor. Inside
+the shopping mall, not in the parking
+lot, between the restaurant and the
+clothing store. You could buy an
+electric vehicle and then go up two
+floors for dinner. The contrast with the
+Tesla showroom nearby was hard to
+ignore. Huawei had eight or nine models
+filling the floor. And Neo is similar.
+multiple models, lounge atmosphere,
+salespeople who genuinely wanted to walk
+you through everything. Tesla had two
+cars. It felt sparse by comparison.
+On our last morning in Shanghai, our
+guide did something we weren&#39;t
+expecting.
+Instead of another landmark or another
+showroom, she took us to a park. It was
+early, maybe , in the morning,
+and the park was full. Not full like a
+tourist site. Full of people who belong
+there. Retired people mostly spread
+across the whole space in different
+groups. Each one doing something
+completely different.
+&gt;&gt; What is the name of this park?
+&gt;&gt; Pushing Park.
+&gt;&gt; Pushing Park. Pushing Park.
+&gt;&gt; Pushing Park.
+&gt;&gt; Those are for disabled people.
+&gt;&gt; Wow.
+&gt;&gt; Tai Chi in one corner. a ballroom
+dancing group nearby. 20 people partner
+dancing on the paving stones to music
+from a small speaker on a bench.
+Further along, a group of musicians
+playing traditional instruments
+together.
+And then further still, a group just
+singing together like they did this
+every single morning.
+</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在中國待了22天後，這對夫婦帶回的問題比答案多。他們不認為這是失敗，反而認為這是任何旅行中最好的結果。這次旅行迫使他們重新審視長期以來的信念，並認識到自己對這個國家的了解是多麼有限。他們認為，旅行最有價值的地方在於它能夠動搖你的確定性。</div>
+        <div class="para-zh">一架無人機出現在那裡——一架真正的無人機從建築物上方降下來，下面掛著一個餐袋，精準地降落在標記好的投放區。食物來自附近一座購物中心屋頂上的餐廳。從有人下單到無人機落地，總共12分鐘。我們的導遊告訴我們，她的母親——一位獨居的老太太——幾乎所有的東西都是用這種方式送達的：雜貨、餐點、日用品。她在微信上下單，用微信付款，東西就送到家門口。她再也不需要提重物或在擁擠的市場裡擠來擠去。我覺得這個故事真的很打動人。從那一刻起，我開始明白為什麼在中國每個人都盯著手機看。那不是無意識的滑動。他們的手機不是生活的干擾物——而是運行生活的系統。而在中國，它運行得非常好。我們還去了比亞迪的展廳——Build Your Dreams。它是現在全球銷量最大的電動車製造商，比特斯拉還大，比福斯還大。在中國，電動車不是一種趨勢或未來的預覽——它們就是汽車本來的樣子。我們去的一個購物中心，一樓就有汽車經銷商——在購物中心裡面，不是在停車場，而是在餐廳和服裝店之間。你可以買一輛電動車，然後上兩層樓去吃晚飯。這與附近特斯拉展廳的對比難以忽視。華為有八九個型號擺滿了整個樓層，蔚來也差不多——多種型號、 Lounge氛圍、真心想為你詳細介紹的銷售人員。特斯拉只有兩輛車。相比之下顯得空空蕩蕩。在上海的最後一個早晨，我們的導遊做了一件我們意想不到的事。她沒有帶我們去另一個地標或另一個展廳，而是帶我們去了公園。當時大概清晨，公園裡已經滿了——不是像旅遊景點那樣滿，而是滿了屬於那裡的人。退休的——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. What This Series Will Show</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
         <div class="acc-audio"><audio src="../audio/AOEr5FrW-lY/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Future episodes will explore China&#39;s landscapes, food, and iconic sights. But the series aims to go deeper, examining what the country actually is, how it thinks, what it has been through, and why it arrived at its current state. The creators warn that focusing only on pretty pictures would mean missing the entire story.</div>
+        <div class="para-en">fterwards that I
+keep coming back to. He said, &quot;This is
+what retirement should look like.&quot; I
+couldn&#39;t argue with him. After those
+first few days in Shanghai, one question
+kept coming back. We&#39;d walked Nanjing
+Road, stood at the Bund, watched a drone
+deliver lunch in 12 minutes, danced with
+strangers in a park at in the
+morning. How did this happen? Here&#39;s
+what I knew going in. In 1950, China was
+one of the poorest countries on Earth.
+The average person here earned less than
+the average person in subsaharan Africa.
+A century of war, invasion, famine, and
+political upheaval had torn the country
+apart. No electricity in most villages,
+no paved roads, no real industry. And
+then it got worse before it got better.
+In 1958, Mao Zaong launched what he
+called the Great Leap Forward. The plan
+was to transform China into a modern
+industrial power. Within 15 years,
+private farming was abolished.
+The people at home had nothing left to
+eat. Between 15 and 45 million people
+died in the famine that followed.
+This is the China that existed within
+living memory.
+Many of the older people we met on this
+trip, guides, hotel staff, people who
+looked roughly our age, were born into
+that world, or their parents were. Real
+hollow stomach starvation isn&#39;t distant
+history here. It&#39;s one generation back.
+Then in 1978, something changed. Mao had
+died two years earlier. A man named Dung
+Xiaoing took power. And Dung looked at
+the wreckage of the previous 30 years
+and made a decision that was remarkable
+for how simple it was. Whatever works,
+he said, if a cat catches mice, it
+doesn&#39;t matter if it&#39;s black or white.
+He opened China to foreign investment,
+allowed private business alongside the
+state, created special zones where
+market capitalism was explicitly
+permitted just to test it, to see what
+happened. He sent Chinese students
+abroad to study in western universities.
+He rewarded results. He kept the
+communist party in political control,
+kept the one party system, the state
+surveillance, the control of
+information. But onto all of that he
+grafted a form of capitalism so
+aggressive and competitive. It makes
+most western economies look cautious.
+And the result, China today is not
+communist in any way Markx would
+recognize. It&#39;s something with no clean
+name. A one party political structure
+running on top of an extraordinarily
+dynamic market economy.
+The government sets direction. The
+market does the work. The people get
+richer and in exchange for that rising
+prosperity, they accept a leve</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">未來的集數將探索中國的風景、美食和標誌性景點。但該系列旨在更深入地探討這個國家的真實面貌、它的思考方式、它經歷過的一切，以及它為何走到今天這一步。創作者警告說，如果只看漂亮的圖片，就會錯過整個故事。</div>
+        <div class="para-zh">之後我一直想起他說的話。他說：「這就是退休生活應該有的樣子。」我無話可說。在上海那最初幾天之後，有一個問題一直縈繞心頭。我們走過南京路、站在外灘、看著無人機在12分鐘內送來午餐、清晨在公園裡和陌生人一起跳舞——這一切是怎麼發生的？這是我事先知道的：1950年，中國是地球上最貧窮的國家之一。這裡的人均收入低於撒哈拉以南非洲的人均水平。一個世紀的戰爭、侵略、饑荒和政治動盪將這個國家撕裂——大多數村莊沒有電、沒有鋪設道路、沒有真正的工業。然後情況變得更加糟糕。1958年，毛澤東發動了他所謂的「大躍進」，目標是將中國轉變為現代工業強國。15年內，私人農業被廢除。人民家裡沒有東西可吃。隨後的饑荒導致1500萬到4500萬人死亡。這就是存在於人們記憶中的中國。我們這趟旅行遇到的許多老年人——導遊、酒店員工、看起來和我們差不多年紀的人——都出生在那個世界，或者他們的父母是。真實的、飢腸轆轆的饑荒在這裡不是遙遠的歷史——它只隔了一代人。然後在1978年，情況發生了變化。毛澤東兩年前去世了。一個叫鄧小平的人掌握了權力。鄧小平看著過去30年的廢墟，做出了一個簡單到令人矚目的決定：「不管黑貓白貓，能捉老鼠的就是好貓。」他向外國投資開放了中國，允許私營企業與國營企業並存，創建了明確允許市場資本主義的經濟特區——只是為了測試它，看看會發生什麼。他派遣中國學生到西方大學留學。他獎勵成果。他讓共產黨繼續掌握政治權力——</div>
       </div>
     </div>
-</div>
-<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
         <span class="acc-label">1. build assumptions <span class="collo-play" onclick="event.stopPropagation();playAudio('AOEr5FrW-lY','collo1')">🔊</span></span>
@@ -235,8 +618,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="collo-practice">If you judge a country only by its tourist attractions, you ______.<br><span class="collo-answer" id="ca8">miss the whole story</span></div>
       </div>
     </div>
-</div>
-<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Past Perfect Tense for Background Information</span>
@@ -275,8 +660,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="grammar-practice">完成句子：&#39;My experience was different from my friend&#39;s. I grew up in a small town, which means ________.&#39;<br><span class="grammar-answer" id="ga2">&#39;My experience was different from my friend&#39;s. I grew up in a small town, which means I had a simpler view of the world.&#39;</span></div>
       </div>
     </div>
-</div>
-<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div><div class="section-sub">點選句型展開範例</div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">We thought we had a [adjective] picture of [noun]</span>
@@ -325,20 +712,27 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="pattern-practice">用這個句型說明為什麼只看表面是不夠的。<br><span class="pattern-answer" id="pa4">If you only visit tourist attractions, you will miss the real life of the city.</span></div>
       </div>
     </div>
-</div>
-<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
-<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
 </div>
 <script>
 var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "How long did Tresa and Zarko travel through China?", "choices": ["14 days", "22 days", "30 days", "7 days"], "answer": 1, "explain": "The video states they spent 22 days traveling China privately."},{"q": "Where did Zarko grow up?", "choices": ["The United States", "China", "Bulgaria", "Russia"], "answer": 2, "explain": "Zarko grew up in Bulgaria under communism."},{"q": "According to the video, what was the best possible outcome of the trip?", "choices": ["Finding cheap flights", "Taking great photos", "Coming back with more questions than answers", "Meeting local guides"], "answer": 2, "explain": "Tresa says they came back with more questions than answers, which is 'the best possible outcome from any trip.'"},{"q": "At what age did Zarko leave Bulgaria?", "choices": ["18", "21", "25", "30"], "answer": 2, "explain": "Zarko left Bulgaria at age 25 as a political refugee."},{"q": "What warning does the video give to viewers?", "choices": ["Don't travel to China without a guide", "If you only watch the pretty pictures, you will miss the whole story", "China is too expensive for budget travelers", "You need at least a month to see China"], "answer": 1, "explain": "The narrator warns: 'If you only watch the pretty pictures, you will miss the whole story.'"}];
-var quizState=[];
-function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
 renderQuiz();
 </script>
 </body>

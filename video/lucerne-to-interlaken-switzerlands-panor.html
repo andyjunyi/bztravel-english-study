@@ -52,6 +52,12 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
 .quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
@@ -101,55 +107,237 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Switzerland&#39;s Train Adventure Begins</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
-        <div class="para-en">Switzerland is a country that seems too perfect to be real. When the travelers arrive in Lucerne, they are immediately struck by the beauty of the city. The mountains pose majestically in the distance, the lake catches the light just right, and everything feels balanced and polished. Lucerne looks like it was made for travel brochures — calm, clean, and so naturally beautiful that even the best photographs cannot fully capture how impressive it is in person. This is the starting point of their panoramic train adventure across Switzerland, a journey meant to test whether the country truly deserves its perfect reputation.</div>
+        <div class="acc-audio"><audio src="../audio/3v6-o7aWXpc/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">Welcome to Switzerland. Our panoramic
+train adventure starts right here in
+Lousern.
+&gt;&gt; We&#39;re heading to Lassern.
+&gt;&gt; Swiss trains are clockwork perfection.
+Everyone rides them. The Swiss don&#39;t
+drive, they glide.
+Lassern kicks off our grand panoramic
+train adventure across Switzerland.
+From here, we&#39;ll ride every famous
+route, one episode at a time, to see if
+this place truly deserves its perfect
+reputation.
+There&#39;s mountains, lakes, chocolate,
+cheese, and precision. They all claim to
+be the best.
+We&#39;re here to find out if Switzerland&#39;s
+hype holds up when the wheels start
+rolling.
+
+Lucern feels staged like someone painted
+it and forgot to stop.
+The mountains pose in the distance. The
+lake catches the light just right. And I
+wonder if anyone living here still looks
+up.
+Everything is so balanced, incredibly
+polished, like nature and architecture
+made a secret deal.
+I&#39;m walking the waterfront and I am in
+awe.
+Lucern looks like it was made for travel
+brochures.
+It&#39;s calm, polished, and so naturally
+beautiful that even the best photos
+don&#39;t quite capture how impressive it is
+in person.
+The old town is walkable and every site
+is within reach.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">瑞士是一個看似完美到不真實的國家。當旅行者抵達琉森時，他們立刻被這座城市的美麗所震撼。群山雄偉地矗立在遠方，湖泊恰到好處地捕捉光線，一切都感覺平衡而精緻。琉森看起來就像是為旅遊手冊而生的——寧靜、潔淨，自然美景即使是最佳照片也無法完全捕捉到親眼所見時的震撼。這是他們穿越瑞士的全景火車之旅的起點，旨在測試這個國家是否真正配得上它的完美聲譽。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Exploring Lucerne&#39;s Old Town</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
-        <div class="para-en">The old town of Lucerne is walkable and every site is within easy reach. The weather is perfect as they wander around, taking in the sights. The Lion Monument hits them harder than expected — a dying lion carved into the rock, pierced by a spear, commemorating the Swiss guards massacred during the French Revolution. There are fountains everywhere, and locals fill their bottles straight from the crisp mountain waters. Switzerland takes chocolate seriously, and the average Swiss consumes 11 kilograms a year. Walking around, the travelers wonder what makes this small mountain country so special.</div>
+        <div class="acc-audio"><audio src="../audio/3v6-o7aWXpc/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">uite capture how impressive it is
+in person.
+The old town is walkable and every site
+is within reach. Today the weather is
+perfect. We&#39;re wandering around and
+we&#39;re having a great time.
+The lion monument. It hits us harder
+than we expected. It&#39;s huge.
+&gt;&gt; And it&#39;s a dying lion that&#39;s carved into
+the rock. And if you look, it&#39;s pierced
+by a spear that&#39;s draped over a shield.
+And what it does, it it remembers the
+Swiss guards that were massacred during
+the French Revolution. They were
+mercenaries loyal to the French king,
+cut down far from home.
+
+
+There&#39;s fountains everywhere and the
+locals fill their bottles straight from
+the crisp mountain waters.
+Switzerland takes chocolate seriously.
+Lind, Nestle, Toblon, they all started
+here. And the average Swiss devour 11
+kilos a year.
+Walking around, we wonder what really
+makes Switzerland so special.
+The Alps covers 60% of the land, is
+landlocked, home to just 8.7 million
+people, and has no major natural
+resources.
+Yet somehow this small mountain country
+built an economy that is the envy for
+the rest of the world.
+Across the river from Chapel Bridge,
+there&#39;s hotels and cafes that crowd the
+edge.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">琉森老城區適合步行，每個景點都近在咫尺。天氣完美，他們四處漫步，欣賞風景。獅子紀念碑帶來的衝擊比預期更強烈——一隻垂死的獅子雕刻在岩石上，被長矛刺穿，紀念在法國大革命期間被屠殺的瑞士衛兵。到處都是噴泉，當地人直接將瓶子裝滿清涼的山泉水。瑞士非常重視巧克力，瑞士人平均每年消耗11公斤。四處走動時，旅行者們思考著這個小山國究竟有何特別之處。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. The Iconic Chapel Bridge</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
-        <div class="para-en">The Chapel Bridge steals the spotlight in Lucerne. Stretching 170 meters across the river, it was built back in 1333 as part of the city&#39;s defenses. The bridge burned in 1993 due to a careless cigarette, but the Swiss rebuilt it perfectly. Now it is covered in flowers, and over a million people cross it each year. The bridge once displayed 111 painted panels depicting saints and battles — Lucerne&#39;s past told in triangles of wood. Thirty of them survived the fire, while a hundred recreated paintings keep alive a time when bridges taught history to those who could not read.</div>
+        <div class="acc-audio"><audio src="../audio/3v6-o7aWXpc/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">rest of the world.
+Across the river from Chapel Bridge,
+there&#39;s hotels and cafes that crowd the
+edge. It&#39;s a perfect place to try some
+Swiss cheese and a cold beer.
+We&#39;re here in late September. It&#39;s the
+off season and Lucern feels calm. There
+are no crowds, just quiet beauty.
+The Chapel Bridge steals the spotlight.
+Stretching 170 m across the river built
+back in 1333
+as part of the city&#39;s defenses.
+It burned in 1993 thanks to a careless
+cigarette, but the Swiss rebuilt it
+perfectly.
+Now it&#39;s covered in flowers.
+More than a million people cross it each
+year, and for good reason.
+
+At dusk, when the lights dance on the
+water, the bridge glows like something
+out of a Renaissance painting.
+It&#39;s impossible not to stop and stare.
+standing here looking looking at this
+mountain with the green and the way the
+sun is. It&#39;s in the evening. It looks
+like a movie set, like a green screen.
+It it it it almost doesn&#39;t even look
+real with it with the bridge back there
+and the river and these hanging terraces
+with restaurants.
+It&#39;s absolutely gorgeous.
+The water tower built for spotting
+enemies escaped the flames.
+The bridge once displayed 111 paintings,
+saints, battles.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">教堂橋是琉森的焦點所在。這座橋橫跨河流170公尺，建於1333年，是城市防禦系統的一部分。1993年，一根隨意丟棄的香菸引發火災，但瑞士人將其完美重建。如今橋上覆蓋著鮮花，每年有超過一百萬人從橋上走過。這座橋曾經展示111幅描繪聖人和戰爭的畫板——用三角形的木片講述琉森的歷史。其中三十幅在火災中倖存下來，而一百幅重建的畫作延續了橋樑為不識字的人們傳授歷史的時代。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Riding the Panoramic Train</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
-        <div class="para-en">The train ride from Lucerne to Interlaken is nothing short of spectacular. It winds along lakes and climbs toward the Brun Pass, with water mirroring the sky and mountains so perfectly that it is hard to tell which way is up. Morning mist floats above meadows, cows are scattered below like lazy punctuation marks, and every view feels painted. The train climbs a 25 percent gradient, leaning on its rack and pinion grip, crawling towards the Brun Tunnel — hand dug by 1,200 men. It is a masterpiece of muscle, steel, and stubborn Swiss ambition.</div>
+        <div class="acc-audio"><audio src="../audio/3v6-o7aWXpc/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">The water tower built for spotting
+enemies escaped the flames.
+The bridge once displayed 111 paintings,
+saints, battles. It was Lucer&#39;s past in
+triangles of wood.
+30 of them survived the fire. Now a
+hundred recreated paintings keep alive a
+time when bridges taught history to
+those who couldn&#39;t read.
+This isn&#39;t a commute. It&#39;s a moving
+masterpiece.
+the train. It winds along lakes and it
+feels more like Fjords.
+We&#39;re climbing towards the Brun Pass.
+
+The water mirrors the sky and mountains
+so perfectly, it&#39;s hard to tell which
+way is up.
+
+Morning mist floats above the meadows.
+Cows are scattered below like lazy
+punctuation marks.
+
+Every view feels painted. every
+reflection intentional.
+You don&#39;t just ride through Switzerland,
+you drift through its postcards, one
+breathtaking frame at a time.
+We just started climbing.
+From here on out, he said, &quot;We&#39;re
+climbing.&quot; And you can sure feel it.
+It&#39;s a huge steep.
+Every direction I look, the landscape,
+it seems too perfect, like someone mows
+the entire country for a living.
+The meadows, they look</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">從琉森到因特拉肯的火車之旅壯麗無比。火車沿著湖泊蜿蜒行駛，向布倫山口攀登，水面完美地倒映著天空和山巒，讓人難以分辨上下。晨霧漂浮在草地上方，牛群散落在下方，像懶惰的標點符號，每個視角都像畫作一般。火車以25%的坡度攀爬，依靠齒軌系統抓緊軌道，緩緩駛向布倫隧道——由1,200名工人手工挖掘而成。這是肌肉、鋼鐵和頑強的瑞士雄心的傑作。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Switzerland: A Curated Paradise</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
-        <div class="para-en">The landscape of Switzerland seems curated rather than natural. The meadows look more like golf courses than farmlands; farmhouses are perfectly situated, beautifully painted and tidy. There is no garbage, no weeds, not a fence out of line. The pristine, postcard-perfect look is intentional — the whole country feels landscaped, trimmed, and polished. It is a model of order, cleanliness, and precision. After the pass, the train dives into emerald valleys and rolls into Interlaken — one journey down, five more rides to go. Switzerland&#39;s hype, it turns out, is well deserved.</div>
+        <div class="acc-audio"><audio src="../audio/3v6-o7aWXpc/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">more like golf
+courses than farmlands.
+Even the farm houses are perfectly
+situated,
+beautifully painted and tidy, dotting
+the slopes all the way up the mountains.
+There&#39;s no garbage, no weeds, not a
+fence out of line.
+It&#39;s as if Switzerland doesn&#39;t just
+exist, it&#39;s curated.
+This is a deeply rooted part of Swiss
+culture. That pristine postcard perfect
+look, it&#39;s intentional. The whole
+country feels landscaped, trimmed, and
+polished. It&#39;s a model of order and
+cleanliness and precision. That&#39;s
+impressive.
+Climbing a 25% gradient, the train leans
+on its rack and pinion grip, crawling
+towards the brun tunnel, hand dug by
+1,200 men back in 1988.
+It&#39;s a masterpiece of muscle, steel, and
+stubborn Swiss ambition.
+After the pass, we dive into Emerald
+Valleys and roll into Inter Laken. One
+down, five more rides to go.
+
+Next up, we explore Inter Laken and we
+climb to a view that&#39;s truly out of this
+world. Come along.
+We&#39;ll also ride the Golden Pass Express
+West toward the Swiss Riviera and the
+French side of Switzerland. See you
+lakeside in Montru.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">瑞士的景觀與其說是自然的，不如說是經過精心策劃的。草地看起來更像是高爾夫球場而非農田；農舍位置絕佳，油漆精美，整潔有序。沒有垃圾，沒有雜草，沒有一道籬笆歪斜。這種一塵不染、明信片般完美的外觀是刻意的——整個國家都經過景觀設計、修剪和打磨。這是秩序、整潔和精確的典範。越過山口後，火車駛入翡翠般的山谷，抵達因特拉肯——一段旅程完成，還有五段旅程等待著他們。瑞士的盛名，事實證明，是實至名歸的。</div>
       </div>
@@ -160,89 +348,89 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. clockwork perfection</span>
+        <span class="acc-label">1. clockwork perfection <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">像鐘錶一樣完美精準</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Swiss trains are clockwork perfection."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Swiss trains are clockwork perfection." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex1')">🔊</span></div>
         <div class="collo-practice">The service at this hotel runs with ______ (像鐘錶一樣完美).<br><span class="collo-answer" id="ca1">clockwork perfection</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. steal the spotlight</span>
+        <span class="acc-label">2. steal the spotlight <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">搶盡風頭；成為焦點</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The Chapel Bridge steals the spotlight in Lucerne."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Chapel Bridge steals the spotlight in Lucerne." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex2')">🔊</span></div>
         <div class="collo-practice">The Eiffel Tower ______ (搶盡風頭) in Paris.<br><span class="collo-answer" id="ca2">steals the spotlight</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. nothing short of spectacular</span>
+        <span class="acc-label">3. nothing short of spectacular <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">極其壯觀；不折不扣的精彩</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The train ride is nothing short of spectacular."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The train ride is nothing short of spectacular." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex3')">🔊</span></div>
         <div class="collo-practice">The sunset over the ocean was ______ (極其壯觀).<br><span class="collo-answer" id="ca3">nothing short of spectacular</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. hard to tell which way is up</span>
+        <span class="acc-label">4. hard to tell which way is up <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">難以分辨上下；令人迷失方向</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s hard to tell which way is up when the water mirrors the sky."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"It&#39;s hard to tell which way is up when the water mirrors the sky." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex4')">🔊</span></div>
         <div class="collo-practice">In the mirrored room, it was ______ (難以分辨方向).<br><span class="collo-answer" id="ca4">hard to tell which way was up</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. carved into the rock</span>
+        <span class="acc-label">5. carved into the rock <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">雕刻在岩石中</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The Lion Monument is a dying lion carved into the rock."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Lion Monument is a dying lion carved into the rock." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex5')">🔊</span></div>
         <div class="collo-practice">The ancient temple was ______ (雕刻在岩石中).<br><span class="collo-answer" id="ca5">carved into the rock</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. postcard-perfect</span>
+        <span class="acc-label">6. postcard-perfect <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">明信片般完美的</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The pristine postcard-perfect look is intentional."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The pristine postcard-perfect look is intentional." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex6')">🔊</span></div>
         <div class="collo-practice">The coastal village was absolutely ______ (明信片般完美).<br><span class="collo-answer" id="ca6">postcard-perfect</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. hand dug</span>
+        <span class="acc-label">7. hand dug <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">手工挖掘的</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The Brun Tunnel was hand dug by 1,200 men."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The Brun Tunnel was hand dug by 1,200 men." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex7')">🔊</span></div>
         <div class="collo-practice">The ancient well was ______ (手工挖掘的) centuries ago.<br><span class="collo-answer" id="ca7">hand dug</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. not a fence out of line</span>
+        <span class="acc-label">8. not a fence out of line <span class="collo-play" onclick="event.stopPropagation();playAudio('3v6-o7aWXpc','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">井然有序；沒有任何東西出錯</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"There&#39;s no garbage, no weeds, not a fence out of line."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"There&#39;s no garbage, no weeds, not a fence out of line." <span class="collo-play-sm" onclick="playAudio('3v6-o7aWXpc','ex8')">🔊</span></div>
         <div class="collo-practice">The garden was perfectly maintained, ______ (井然有序).<br><span class="collo-answer" id="ca8">not a fence out of line</span></div>
       </div>
     </div>
@@ -372,6 +560,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
   </div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "What is the main purpose of this video?", "choices": ["To show the restaurants of Lucerne", "To document a panoramic train journey across Switzerland starting from Lucerne", "To compare Swiss and German trains", "To demonstrate how to travel cheaply in Switzerland"], "answer": 1, "explain": "The video begins with the travelers arriving in Lucerne and taking the panoramic train to Interlaken. The narrator says 'Our panoramic train adventure starts right here in Lucerne' and that they are riding 'every famous route' to see if Switzerland's reputation holds up."},{"q": "What does the narrator mean by 'Switzerland doesn't just exist, it's curated'?", "choices": ["Switzerland is extremely expensive", "Everything in Switzerland looks intentional and perfectly maintained", "Switzerland is full of museums and galleries", "Swiss people are unfriendly to tourists"], "answer": 1, "explain": "The narrator observes that the meadows look like golf courses, there is no garbage or weeds, and everything is trimmed and polished. This leads to the conclusion that the pristine look is intentional — the country feels 'landscaped, trimmed, and polished.'"},{"q": "The phrase 'clockwork perfection' is used to describe:", "choices": ["The Swiss chocolate industry", "The Lion Monument", "Swiss trains", "The Chapel Bridge"], "answer": 2, "explain": "The transcript states: 'Swiss trains are clockwork perfection. Everyone rides them. The Swiss don't drive, they glide.' This emphasizes the precision and reliability of Swiss rail service."},{"q": "What happened to the Chapel Bridge in 1993?", "choices": ["It was demolished for a new highway", "It was damaged by a flood", "It burned due to a careless cigarette", "It collapsed under the weight of too many visitors"], "answer": 2, "explain": "The narrator explains that the bridge 'burned in 1993 thanks to a careless cigarette, but the Swiss rebuilt it perfectly.' This story illustrates both the vulnerability and the precision of Swiss restoration."},{"q": "Which word best describes the tone of this video?", "choices": ["Skeptical and critical", "Awestruck and admiring", "Humorous and sarcastic", "Practical and instructional"], "answer": 1, "explain": "The narrator uses phrases like 'I am in awe,' 'absolutely gorgeous,' and 'it's impossible not to stop and stare.' The overall tone is one of wonder and admiration for Switzerland's beauty and precision."}];

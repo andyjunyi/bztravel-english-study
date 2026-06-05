@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>48 Hours in Buenos Aires — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,121 +32,556 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
-.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
-.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
-.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
-.collo-play:active{background:#1e40af;transform:scale(.9)}
-.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
-.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;color:#059669;font-weight:600}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;color:#059669;font-weight:600}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-badge">🏙️ BZ Travel · 英文自學講義</div><h1>48 Hours in Buenos Aires</h1><div class="sub">阿根廷</div><div class="header-meta"><span>16:26</span><span>🏙️ 城市探索</span></div></div>
-<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/hIxeU4CfQTs" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
-<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
+<div class="header">
+  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
+  <h1>48 Hours in Buenos Aires</h1>
+  <div class="sub">阿根廷</div>
+  <div class="header-meta">
+    <span>16:26</span>
+    <span>🏙️ 城市探索</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/hIxeU4CfQTs" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Welcome to Buenos Aires</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
         <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">After two great days in Mendoza, Tresa and Zarko take a short flight to Buenos Aires. They describe the city as the perfect destination for anyone who loves tango, good wine, incredible food, and a good time. The video covers their favorite neighborhoods and the things they genuinely enjoy doing in Argentina&#39;s vibrant capital.</div>
+        <div class="para-en">After two great days in Mendoza, short
+flight to Buenos Aires. If you love
+tango, good wine, incredible food, and a
+good time, this is your city.
+In this video, we cover our favorite
+neighborhoods and the things we
+genuinely enjoy doing in Buenos Aires.
+We&#39;re starting in San Telmo. It&#39;s the
+center of tango culture, 
+known for its cobblestone streets and
+historic buildings.
+The San Telmo Market  alone is
+worth the visit. Antiques, local crafts,
+bars, and great energy all in one place.
+San Telmo is famous for its massive
+Sunday street fair,
+but the Mercado San Telmo is open every
+day.
+It&#39;s the perfect spot to spend a lazy
+afternoon
+browsing, eating,
+and watching people go by.
+Grab a seat at one of the counters and
+just dig in.
+Artisanal empanadas, sizzling steaks, a
+classic choripán, all made right in
+front of you.
+&gt;&gt; 
+&gt;&gt; Wash it down with a local craft beer or
+a glass of Malbec.
+You&#39;re sitting shoulder-to-shoulder with
+strangers, 
+and somehow that makes it even better.
+There&#39;s a certain  feeling you
+get walking through a Mercado San Telmo.
+The aisles are narrow and maze-like, a
+little rough around the edges, and
+that&#39;s exactly why it works.
+Old nostalgia and fresh energy sitting
+side by side. Antiques, food, art,
+people.
+&gt;&gt; 
+&gt;&gt; You don&#39;t come here with a shopping
+list.
+You come here to wander and see what you
+find.
+This market isn&#39;t just a building. It&#39;s
+a living  piece of what Buenos
+Aires actually is.
+What strikes you most is the contrast.
+San Telmo residents shopping for
+groceries,
+old vendors next  to craft beer
+stands, and vintage record sellers.
+This indoor market is essentially a
+living museum.
+You can spend hours going through
+carefully curated collections of
+Argentine history and craftsmanship.
+I walked out with something I didn&#39;t
+expect.
+&gt;&gt; 
+&gt;&gt; A necklace with a pinkish red stone.
+The national gemstone of Argentina.
+San Telmo is unlike any other
+neighborhood in Buenos Aires. 
+The history, the street life, the
+market, the tango, it all comes together
+in a way that&#39;s hard to describe,
+
+but very easy to feel. Some places just
+have a character that sticks with
+ you. This is one of them.
+Tango is Argentina&#39;s most 
+passionate and melancholic art form.
+And almost every visitor  makes a
+point to see it live.
+First time here, we did what most
+tourists do.
+Booked a grand show  in a massive
+theater.
+Hundreds of guests, bus after bus, a
+production built purely for volume. Far
+ from personal.
+Buenos Aires actually has over 30 small
+intimate tango venues beyond</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在Mendoza度過了愉快的兩天後，Tresa和Zarko搭機前往布宜諾斯艾利斯。他們形容這座城市是熱愛探戈、美酒、美食和享樂的人的完美目的地。影片涵蓋了他們最喜愛的街區以及在阿根廷這個充滿活力的首都他們真正喜歡做的事情。</div>
+        <div class="para-zh">在門多薩度過了愉快的兩天後，搭個短程航班就到了布宜諾斯艾利斯。如果你喜歡探戈、美酒、美食和美好的時光，這就是你的城市。在這部影片中，我們會介紹我們最喜歡的街區和我們在布宜諾斯艾利斯真正喜歡做的事。我們從聖特爾莫開始，這裡是探戈文化的中心，以鵝卵石街道和歷史建築聞名。光是聖特爾莫市場就值得一訪，古董、當地手工藝品、酒吧和滿滿的能量，全在一個地方。聖特爾莫以它的大型週日市集聞名，但聖特爾莫市場每天都有營業。它是度過悠閒午後的最佳地點，逛逛、吃東西、看來往的人群。在櫃檯找個位子坐下，直接開動吧。手工肉餡捲餅、滋滋作響的牛排、經典的阿根廷香腸三明治，全都在你面前現做。搭配一杯當地精釀啤酒或一杯馬爾貝克紅酒。你和陌生人肩並肩坐著，不知為何，這讓一切變得更好。走在聖特爾莫市場裡有一種特別的感覺。走道狹窄如迷宮，有點粗糙未經修飾，而這正是它之所以成功的原因。懷舊的氛圍和全新的能量並存，古董、美食、藝術、人們。你不是帶著購物清單來的，你是來漫遊，看看能發現什麼。這個市場不僅僅是一棟建築，它是布宜諾斯艾利斯真實面貌的活生生縮影。最讓你印象深刻的是那種對比，聖特爾莫的居民在買日常雜貨，旁邊是老攤販、精釀啤酒攤和黑膠唱片賣家。這個室內市場本質上就是一座活的博物館。你可以花上好幾個小時瀏覽精心策劃的阿根廷歷史和工藝品。我離開時買了一個我沒預料的東西，一條有著粉紅色寶石的項鍊，那是阿根廷的國石。聖特爾莫和布宜諾斯艾利斯的任何其他街區都不一樣。歷史、街頭生活、市場、探戈，一切以一種難以形容但非常容易感受的方式融合在一起。有些地方就是有一種會留在你心裡的特質，這裡就是其中之一。探戈是阿根廷最熱情也最憂傷的藝術形式，幾乎每個遊客都會想辦法去現場看一次。第一次來的時候，我們做了大多數觀光客會做的事，預訂了一間大型劇院的豪華表演，數百位賓客，一輛接一輛的遊覽車，純粹為了大量觀眾而製作的表演，一點也不個人化。布宜諾斯艾利斯其實有超過30個小型親密的探戈場地。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. San Telmo: The Heart of Tango</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
         <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The couple starts their exploration in San Telmo, the center of tango culture known for its cobblestone streets and historic buildings. The main attraction is the San Telmo Market (Mercado San Telmo), which is open every day — unlike the famous Sunday street fair. It&#39;s described as the perfect spot to spend a lazy afternoon browsing, eating, and watching people go by.</div>
+        <div class="para-en">Montserrat neighborhood
+is El Querandi Tango Show.
+The moment you step inside, the
+atmosphere wraps around you completely.
+Intimate 
+and romantic with a maximum of just 120
+people. You are close enough to hear the
+sharp scuff of the dancers&#39; shoes
+ on the floorboards
+and see the raw passion in their faces.
+The 75-minute show takes you on a
+journey  through tango history
+from its gritty roots in the late 19th
+century all the way to its modern form.
+Dinner is a generous three-course
+ meal. Bife de chorizo, a thick
+cut of Argentine steak paired with
+Malbec that keeps flowing throughout the
+evening.
+The food is great,
+but the real reason you are here 
+is what happens on that stage.
+Raw energy,
+historical storytelling, 
+dancers so close you feel every move.
+This is what tango&#39;s supposed to feel
+like.
+Not a production built for busloads of
+tourists,
+something personal, 
+something real,
+and one of the best  evenings
+we&#39;ve had in Buenos Aires.
+Greater Buenos Aires is one of the
+largest metro areas in South America.
+16 million people, 1,500 square miles.
+The city center itself is home to just 3
+million of them.
+The rest spreads far into the suburbs.
+Next stop is Puerto Madero,
+&gt;&gt; 
+&gt;&gt; and the transformation of this place is
+hard to believe.
+Not long ago, this was a decaying
+stretch of empty warehouses going
+nowhere.
+Today, it&#39;s one of the most successful
+urban waterfront restorations in the
+world. Luxury lofts, corporate offices,
+and pedestrian-friendly cobblestone
+promenades along the water. 
+The waterfront is lined with upscale
+restaurants, from elegant Italian
+bistros to famous  high-end
+parrillas.
+Patios spill right out onto the docks.
+Connecting the east and west sides is
+the neighborhood&#39;s most iconic landmark,
+Puente de la Mujer, the Women&#39;s Bridge.
+Now, we&#39;re heading to the Paraná Delta.
+This is where the Paraná and Uruguay
+rivers meet in a vast maze of small
+islands. The wide stretch of water
+between Buenos Aires and Uruguay is
+called Rio de la Plata,
+the Delta is where it all begins. The
+Paraná Delta covers 7,000 square miles,
+200 miles long, up to 37 miles wide.
+Thousands of islands interwoven by
+waterways.
+Tigre is the entrance town and a
+favorite getaway for Buenos Aires
+locals.
+What stopped us were the supply boats at
+the docks.
+Delta residents have no stores and no
+running water. Everything is delivered
+by boat.
+Groceries, drinking water, household
+supplies, all of it.
+The logistics behind that system
+fascinate us. If you know how it works,
+tell us in</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這對夫婦從San Telmo開始他們的探索，這是探戈文化的中心，以鵝卵石街道和歷史建築聞名。主要景點是San Telmo市場（Mercado San Telmo），與著名的週日街頭市集不同，這個市場每天營業。它被形容為度過悠閒下午的完美地點，可以逛街、吃東西和欣賞來往的人群。</div>
+        <div class="para-zh">位於蒙特塞拉特街區的埃爾克蘭迪探戈秀。一走進去，氣氛就完全將你包圍。親密而浪漫，最多只有120人。你近到可以聽到舞者鞋子在地板上摩擦的聲音，看到他們臉上原始的情感。75分鐘的表演帶你穿越探戈的歷史，從19世紀末粗獷的起源，一直到現代的形式。晚餐是豐盛的三道菜。比費德喬里索，一塊厚切的阿根廷牛排，搭配整晚不斷續杯的馬爾貝克紅酒。食物很棒，但你來這裡真正的理由是舞台上的表演，原始的能量、歷史的敘事、舞者近到你可以感受到每一個動作。這才是探戈該有的感覺。不是為了整車整車的觀光客而製作的表演，而是個人化的、真實的，是我們在布宜諾斯艾利斯度過的最美好的夜晚之一。大布宜諾斯艾利斯是南美洲最大的都會區之一，1600萬人，1500平方英里。市中心本身只有300萬人，其餘的散佈在廣大的郊區。下一站是馬德羅港，這個地方的轉變令人難以置信。不久之前，這裡還是一片腐朽的廢棄倉庫，毫無生氣。今天，它是世界上最成功的都市濱水區改造之一，豪華閣樓、企業辦公室、適合步行的鵝卵石海濱長廊。海濱沿途是高級餐廳，從優雅的義大利小館到著名的高級烤肉店，戶外座位直接延伸到碼頭上。連接東西兩側的是這個街區最具標誌性的地標，女人橋。現在，我們要前往巴拉那三角洲。這是巴拉那河和烏拉圭河交會的地方，形成了一個由小島組成的巨大迷宮。布宜諾斯艾利斯和烏拉圭之間廣闊的水域叫做拉普拉塔河，而三角洲就是一切的起點。巴拉那三角洲覆蓋7000平方英里，長200英里，寬達37英里。數千個島嶼被水道交織在一起。蒂格雷是入口小鎮，也是布宜諾斯艾利斯當地人最喜歡的度假去處。讓我們停下腳步的是碼頭上的補給船。三角洲的居民沒有商店，也沒有自來水，一切都靠船運送。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. The Market Experience</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
         <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">At the market, visitors can grab a seat at one of the counters and dig into artisanal empanadas, sizzling steaks, and classic choripán, all made right in front of them. They recommend washing it down with a local craft beer or a glass of Malbec. The experience of sitting shoulder-to-shoulder with strangers somehow makes it even better.</div>
+        <div class="para-en">r.
+Public transport, daily supplies, and
+recreation all share the same channels.
+The main terminal in Tigre runs just
+like a bus station. Ticket windows,
+waiting areas, and separate boarding
+ramps for each boat line.
+Beyond the grocery boats, wooden water
+buses with mahogany finishes run fixed
+routes on a schedule,
+dropping islanders at different docks,
+just like a city bus.
+Water taxis handle private trips to
+specific islands faster and direct.
+School boats, emergency boats, garbage
+collection, all by water, too.
+Private yachts, kayaks, and tour boats
+fill the rest.
+We hired a private boat for our small
+group.
+Next stop, a family living on one of the
+Delta islands.
+15,000 people live out here permanently.
+5 million visit every year. The water
+bus keeps it all moving.
+Every 30 minutes for the closer islands,
+once or twice a day for the remote ones
+deep in the Delta.
+For residents, that schedule is
+everything.
+No roads, no cars, no quick run to the
+store.
+Every errand, every school morning,
+every emergency depends on that boat.
+It is their grocery store, their bus,
+their ambulance,
+and their only real thread connecting
+them to the rest of the world.
+15 rowing clubs line the Tigre River
+bank, all still operating.
+British, Italian, French immigrants,
+each built their own here. Monthly fees
+cover a boat yard, gym, pool, and
+restaurant.
+People row every day, old traditions
+very much alive.
+We pass several small boutique hotels
+along the way. Quiet, resort-style
+retreats sitting right on the water.
+
+A perfect weekend escape from the city.
+Private homes filled the gaps. Quite a
+few available as a vacation rentals.
+Every property has its own dock. There
+is simply no other way in or out. To
+reach some, you  leave the main
+channel and follow smaller waterways
+threading between the islands.
+We turned into one of those now, heading
+toward our destination.
+Out here, the city feels very far away.
+Some waterways are too narrow and
+shallow for bigger boats.
+So, you dock on the main channel and
+walk the rest through nature.
+Following a shaded path toward a local
+family that runs a small guest house.
+You ring the bell.
+Renting rooms and serving home-cooked
+ meals.
+No lobby, no check-in desk, just a
+family and their home deep in the Delta.
+Quiet, green, and completely unlike any
+hotel.
+It is peaceful out here in a way that is
+hard to describe.
+This is the Delta most visitors never
+reach.
+January is the middle of summer and the
+heat was real.
+We had a great lunch in the shade</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在市場裡，遊客可以在櫃檯前找個位子坐下，品嚐手工製作的肉餡捲餅、滋滋作響的牛排和經典的choripán香腸三明治，全部都在你面前現做。他們建議搭配當地的精釀啤酒或一杯Malbec紅酒。與陌生人肩並肩坐在一起，不知為何讓這一切變得更加美好。</div>
+        <div class="para-zh">公共運輸、日常用品和休閒娛樂都使用同樣的水道。蒂格雷的主要碼頭就像一個公車站，售票窗口、等候區、每個船線都有各自的登船坡道。除了運送雜貨的船之外，還有桃花心木飾面的木製水上巴士，按照固定路線和時刻表行駛，像市區公車一樣把島民送到不同的碼頭。水上計程車處理前往特定島嶼的私人行程，更快更直接。校船、急救船、垃圾收集，也都靠水運。私人遊艇、獨木舟和觀光船填補了其餘的部分。我們為我們的小團體租了一艘私人船。下一站，是住在三角洲其中一個島上的一戶人家。有一萬五千人永久性地住在這裡，每年有五百萬人造訪。水上巴士讓一切得以運轉，靠近的島嶼每三十分鐘一班，偏遠的島嶼一天只有一到兩班。對居民來說，這個時刻表就是一切。沒有道路、沒有汽車、不能隨時跑去商店。每一件差事、每一個上學的早晨、每一次緊急情況，都依賴那艘船。它是他們的雜貨店、他們的公車、他們的救護車，也是他們與世界其他地方唯一的聯繫。蒂格雷河岸邊有15個划船俱樂部，全部仍在運作。英國、義大利、法國的移民各自在這裡建造了屬於自己的俱樂部。月費包含船塢、健身房、游泳池和餐廳。人們每天都在划船，古老的傳統仍然鮮活存在。沿途我們經過幾間小型精品酒店，寧靜的度假型住宿，就坐落在水邊。是逃離城市的完美週末去處。私人住宅填滿了間隙，不少可以作為度假租賃。每棟房產都有自己的碼頭，沒有其他進出的方式。要到達某些地方，你必須離開主水道，沿著較小的水路在島嶼之間穿梭。我們現在就轉進了其中一條，朝著我們的目的地前進。在這裡，城市感覺非常遙遠。有些水道太窄太淺，無法通行較大的船隻。所以你必須在主水道下船，步行穿越自然小徑。沿著一條林蔭小徑，前往一個經營小型民宿的當地家庭。你按門鈴。他們出租房間，並提供家常菜。沒有大廳、沒有入住櫃檯，只有一戶人家和他們在三角洲深處的家。安靜、翠綠，完全不像任何飯店。這裡的寧靜難以形容。這是大多數遊客從未到達的三角洲。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. A Labyrinth of Sights and Sounds</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
         <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The aisles of Mercado San Telmo are narrow and maze-like, a little rough around the edges, and that&#39;s exactly why it works. The market is a living piece of what Buenos Aires actually is — old nostalgia and fresh energy sitting side by side. You don&#39;t come here with a shopping list; you come to wander and see what you find.</div>
+        <div class="para-en">h the island
+after. Others jumped in the pool. A
+simple relaxed afternoon in nature deep
+in the Delta. For us, the middle of
+nowhere. For this family living out here
+every day, the center of their universe.
+The Delta is wonderful to visit,
+&gt;&gt; 
+&gt;&gt; but living here is a completely
+different story. Our guide explained
+that many  people buy homes
+because they are far cheaper than on the
+mainland.
+Then commute all the way to Buenos Aires
+for work each day.
+The morning starts on a wooden boat bus
+to Tigre, then the train to the city,
+and the same long journey in reverse
+each evening.
+Many homes have no running water. Some
+are off the grid. Riding along the
+river, you can feel it.
+Beautiful, but isolated.
+And when winter arrives with its storms,
+floods, and rain, the picture changes
+completely.
+The quiet and the nature or the pulse of
+the city.
+Our hotel is in Palermo,
+the largest and most dynamic
+neighborhood in Buenos Aires, and the
+city&#39;s main hub for food, nightlife, and
+green spaces.
+By day, it feels like a relaxed,
+walkable village with people sitting
+outside at cafes and working remotely
+under the open sky.
+&gt;&gt; 
+&gt;&gt; By night, it transforms completely,
+locals filling the bars and traditional
+steak houses until the early hours of
+the morning.
+First stop in Recoleta,
+a rubber tree over 200 years old, canopy
+stretching more than 50 m wide. The
+branches are so heavy,
+they need structural support.
+Just across the park stands the church,
+nearly 300 years old, white colonial
+architecture on the outside. 
+Step through the doors and everything
+changes.
+The original baroque interior is richly
+detailed, carefully decorated, a
+beautiful contrast between the calm
+exterior and what waits inside.
+Paying to walk through a cemetery,
+&gt;&gt; 
+&gt;&gt; not the obvious choice, but Recoleta
+Cemetery is unlike anything you have
+seen before, a city for the dead,
+ultimate status symbol of Argentina&#39;s
+elite.
+Plots here cost as much as luxury
+estates in the city&#39;s finest
+neighborhoods. And today, with no space
+remaining, they almost never come on
+sale.
+&gt;&gt; 
+&gt;&gt; When they do, the price runs into the
+hundreds of thousands. Families 
+competed for prestige, importing Carrara
+marble from Italy, iron work from
+England, 
+and stained glass from Paris.
+At street level, are only the family
+chapels. Coffins sit  stacked in
+basements and upper floors, visible
+through the glass, intentionally so.
+Here, the dead are meant to be seen,
+visited,  and kept close.
+No tour of Buenos Aires  is
+complete without Plaza de</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Mercado San Telmo的走道狹窄如迷宮，有點粗糙未經修飾，而這正是它之所以成功的原因。這個市場是布宜諾斯艾利斯真實面貌的活生生縮影——懷舊氛圍與新鮮能量並存。你不是帶著購物清單來的；你是來漫遊，看看能發現什麼。</div>
+        <div class="para-zh">有些人在島上閒晃，其他人跳進泳池。一個簡單悠閒的午後，深入大自然，在三角洲的深處。對我們來說是偏遠的荒野，對這個每天生活在這裡的家庭來說，是他們宇宙的中心。三角洲很適合來訪，但住在這裡是完全不同的故事。我們的導遊解釋說，很多人因為房價比陸地上便宜很多而在這裡買房，然後每天通勤到布宜諾斯艾利斯上班。早上先搭木製船公車到蒂格雷，再轉火車進城，傍晚再沿著同樣漫長的路線回家。許多房屋沒有自來水，有些完全離網。沿著河流行進時，你能感受到這一切，美麗但孤獨。而當冬天帶著風暴、洪水和雨水到來時，景象又會完全不同。是選擇寧靜與自然，還是城市的脈動？我們的飯店在巴勒摩，布宜諾斯艾利斯最大、最有活力的街區，也是城市美食、夜生活和綠地的主要中心。白天，它感覺像一個悠閒、適合步行的村莊，人們坐在戶外咖啡館，在戶外遠距工作。到了夜晚，它完全變身，當地人擠滿酒吧和傳統牛排館，直到凌晨。在雷科萊塔的第一站，是一棵超過兩百年歷史的橡膠樹，樹冠寬達50公尺以上。樹枝太重了，需要結構支撐。公園對面是一座近三百年歷史的教堂，外觀是白色殖民風格建築。推開門，一切都變了。原始的巴洛克內部裝飾華麗細緻，精心裝飾，是沉穩的外觀與內部等待你的景象之間美麗的對比。付費走進一座墓地，不是一個顯而易見的選擇，但雷科萊塔墓地和你以前見過的任何東西都不一樣。一座亡者之城，阿根廷菁英的終極地位象徵。這裡的墓地價格相當於城市最精華地段豪宅的價格。而現在，由於沒有空間了，它們幾乎從不出售。當它們真的釋出時，價格動輒數十萬美元。家族之間為了 prestige 而競爭，從義大利進口卡拉拉大理石、從英國進口鐵製品、從巴黎進口彩繪玻璃。在街道層，只有家族禮拜堂。棺材堆疊在地下室和上層，透過玻璃可以看到，故意如此設計。在這裡，死者是要被看見、被探望、被緊緊記住的。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Contrast and Character</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
         <div class="acc-audio"><audio src="../audio/hIxeU4CfQTs/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">What strikes visitors most is the contrast. San Telmo residents shop for groceries alongside old vendors next to craft beer stands and vintage record sellers. The market isn&#39;t just a building — it&#39;s a microcosm of Buenos Aires itself, blending the traditional and the modern in a way that feels authentic and unforced.</div>
+        <div class="para-en">lace.
+Weekend visits are possible, but you
+need to book well in advance.
+Over the centuries, this square has been
+the central stage 
+for the country&#39;s most defining
+political protests and major public
+gatherings. Few places in Argentina
+carry this much weight.
+Teatro Colón is considered one of the
+finest opera houses in the world. We had
+no time for a show, but daily tours are
+available and we joined one.
+Construction lasted over 20 years,
+several European architects taking the
+lead at different points.
+Walking through you feel every
+influence, Italian  Renaissance,
+French Art Nouveau, German structural
+design.
+Stained glass cupolas in the main foyers
+came directly from Paris.
+Inside it feels more like Versailles
+than an opera house. 24-karat gold leaf,
+crystal chandeliers, and columns of
+imported Italian marble.
+The acoustics at Teatro Colón are
+legendary. 
+Consistently ranked among the top three
+in the world. The horseshoe-shaped hall
+curves sound naturally, eliminating dead
+spots.
+&gt;&gt; 
+&gt;&gt; Below the stage, a hollow pine chamber
+acts like the body of a giant violin,
+amplifying the voices.
+The dome and chandelier bounce sound
+upwards so precisely that those in the
+highest seats hear every whisper from
+the stage just as clearly as the front
+row.
+No trip to Buenos Aires is complete
+without La Boca, the most colorful
+neighborhood in the city.
+&gt;&gt; 
+&gt;&gt; El Caminito, the famous pedestrian
+street, is touristy but 
+genuinely fun.
+Great for souvenirs, food, asados, and
+cafes.
+The vivid buildings were built by
+Italian immigrants using leftover
+shipyard materials,
+&gt;&gt; 
+&gt;&gt; corrugated metal, scrap wood, marine
+paint. When one color ran out, they
+ used another. That accidental
+choice became the neighborhood&#39;s famous
+patchwork look.
+Some lunches  you remember for
+the food. This one I will remember for
+the live tango show right next to our
+table.
+Only Buenos Aires serves  lunch
+like this.
+Just 3 days and we barely scratched the
+surface. Know Buenos Aires? Share your
+tips in the comments.
+A like  truly helps us stand out
+from the AI generated stock footage
+flooding the platform. Comment and
+subscribe.  And if you are not
+yet subscribed, we appreciate your
+support.
+The next video is one you absolutely do
+not want to miss. If you have seen
+waterfalls and thought they were
+spectacular,
+trust me, you have not seen anything
+like this.
+We are taking you to Iguazu Falls and we
+are doing it the right way.
+Both sides, the Brazilian and the
+Argentinian.
+We fly above it, hike down into t</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">最讓遊客印象深刻的是這種對比。San Telmo的居民在購買日常雜貨的同時，旁邊就是老攤販、精釀啤酒攤和黑膠唱片賣家。這個市場不僅僅是一座建築——它是布宜諾斯艾利斯本身的縮影，以一種真實而不造作的方式融合了傳統與現代。</div>
+        <div class="para-zh">週末可以參觀，但需要提前預訂。幾個世紀以來，這個廣場一直是阿根廷最具代表性的政治抗議和大型公眾集會的中心舞台。阿根廷很少有地方承載著這麼重的分量。科隆劇院被認為是世界上最頂尖的歌劇院之一。我們沒有時間看表演，但每天都有導覽，我們參加了一場。建造工程持續了超過20年，由多位歐洲建築師在不同時期主導。走過其中，你能感受到每一種風格的影響，義大利文藝復興、法國新藝術、德國結構設計。主要大廳的彩繪玻璃穹頂直接來自巴黎。內部感覺更像凡爾賽宮而不是歌劇院，24K金箔、水晶吊燈、進口義大利大理石柱。科隆劇院的音響效果是傳奇性的， consistently 被評為世界前三名。馬蹄形的大廳自然地彎曲聲音，消除了死角。舞台下方，一個中空的松木腔室像一把巨型小提琴的琴身，放大著歌聲。穹頂和吊燈如此精確地將聲音向上反射，使得最高層座位的人聽到舞台上每一個低語，跟前排一樣清晰。沒有造訪拉博卡，布宜諾斯艾利斯之旅就不算完整，這是城市裡色彩最繽紛的街區。卡米尼托，這條著名的步行街，雖然很觀光化，但真的很有趣。非常適合買紀念品、吃美食、烤肉和喝咖啡。這些鮮豔的建築是由義大利移民利用剩下的造船材料建造的，波紋鐵皮、廢木料、船舶油漆。用完一種顏色就換另一種。這個偶然的選擇成為了這個街區著名的拼貼風格。有些午餐你會因為食物而記住，而這一頓我會因為餐桌旁邊的現場探戈表演而記住。只有布宜諾斯艾利斯能端出這樣的午餐。只有三天，我們 barely 觸及了表面。你認識布宜諾斯艾利斯嗎？在留言區分享你的 tips。按讚真的能幫助我們從平台上氾濫的AI生成素材中脫穎而出。留言、訂閱。如果你還沒訂閱，我們很感謝你的支持。下一部影片是你絕對不想錯過的。如果你看過瀑布，並認為它們很壯觀，相信我，你還沒看過像這樣的。我們要帶你去伊瓜蘇瀑布，而且要用正確的方式。兩邊都要去，巴西側和阿根廷側。</div>
       </div>
     </div>
-</div>
-<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
         <span class="acc-label">1. cobblestone streets <span class="collo-play" onclick="event.stopPropagation();playAudio('hIxeU4CfQTs','collo1')">🔊</span></span>
@@ -235,8 +670,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="collo-practice">The museum is small but definitely ______.<br><span class="collo-answer" id="ca8">worth the visit</span></div>
       </div>
     </div>
-</div>
-<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Imperative Sentences for Direct Advice</span>
@@ -271,8 +708,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="grammar-practice">用類似句型描述一個你最喜歡的地方。<br><span class="grammar-answer" id="ga2">&#39;The riverside park is the perfect spot to spend a sunny afternoon reading, relaxing, and watching boats go by.&#39;</span></div>
       </div>
     </div>
-</div>
-<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">If you love [thing A], [thing B], and [thing C], this is your [place]</span>
@@ -309,20 +748,27 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="pattern-practice">描述一個地方最讓你印象深刻的特點。<br><span class="pattern-answer" id="pa3">What strikes you most is the silence of the desert at night.</span></div>
       </div>
     </div>
-</div>
-<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
-<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
 </div>
 <script>
 var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "Which neighborhood do they start exploring in Buenos Aires?", "choices": ["Palermo", "San Telmo", "Recoleta", "La Boca"], "answer": 1, "explain": "The video says 'We're starting in San Telmo. It's the center of tango culture.'"},{"q": "What is San Telmo famous for?", "choices": ["Skyscrapers and modern art", "Tango culture and its street fair", "Beaches and surfing", "Ski resorts"], "answer": 1, "explain": "San Telmo is the center of tango culture, known for its cobblestone streets and massive Sunday street fair."},{"q": "What does the couple recommend drinking with the food?", "choices": ["Water", "Local craft beer or Malbec", "Coca-Cola", "Tea"], "answer": 1, "explain": "They recommend washing it down with a local craft beer or a glass of Malbec."},{"q": "Why is the Mercado San Telmo special according to the video?", "choices": ["It's very clean and modern", "It's rough around the edges and full of character", "It's the biggest market in the world", "It only sells souvenirs"], "answer": 1, "explain": "The aisles are narrow and maze-like, a little rough around the edges, and that's exactly why it works."},{"q": "What type of food do they mention eating at the market?", "choices": ["Sushi and ramen", "Artisanal empanadas, sizzling steaks, and choripán", "Pizza and pasta", "Tacos and burritos"], "answer": 1, "explain": "They mention artisanal empanadas, sizzling steaks, and classic choripán made right in front of you."}];
-var quizState=[];
-function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
 renderQuiz();
 </script>
 </body>

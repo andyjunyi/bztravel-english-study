@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>Ultimate Safari Adventure in Sabi Sands — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,121 +32,522 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
-.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
-.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
-.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
-.collo-play:active{background:#1e40af;transform:scale(.9)}
-.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
-.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;color:#059669;font-weight:600}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;color:#059669;font-weight:600}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-badge">🌿 BZ Travel · 英文自學講義</div><h1>Ultimate Safari Adventure in Sabi Sands</h1><div class="sub">南非</div><div class="header-meta"><span>22:24</span><span>🌿 自然奇景</span></div></div>
-<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/O09X6VVgXUA" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
-<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
+<div class="header">
+  <div class="header-badge">🌿 BZ Travel · 英文自學講義</div>
+  <h1>Ultimate Safari Adventure in Sabi Sands</h1>
+  <div class="sub">南非</div>
+  <div class="header-meta">
+    <span>22:24</span>
+    <span>🌿 自然奇景</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/O09X6VVgXUA" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Big Cat Country</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
         <div class="acc-audio"><audio src="../audio/O09X6VVgXUA/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Sabi Sands is world-famous as Big Cat Country, bordering Kruger National Park. For three days and six game drives, the travelers experience non-stop wild encounters. The transfer from the nearby town reveals rural South Africa — small villages, dirt roads, kids playing barefoot, daily life unfolding far from safari lodges. Their destination is Enoro Bush Lodge, with just seven suites, an intimate escape in the heart of Sabi Sands.</div>
+        <div class="para-en">Join us on another epic safari to Sabi
+Sands. World famous Big Cat Country
+bordering Krueger National Park.
+3 days, six drives, non-stop wild
+encounters. Enjoy it until the end.
+The transfer from Cleri to Sabi Sands
+revealed rural South Africa. Small
+villages, dirt roads, kids playing
+barefoot, daily life unfolding far from
+safari lodges.
+Our destination is Enoro Bush Lodge.
+Just seven suites, an intimate escape in
+the heart of Sabi Sandy.
+Here, 65,000 acres of private reserve
+unfold into unfenced wilderness,
+seamlessly blending into the Krueger
+National Park.
+It&#39;s remote, raw, and exclusive. This is
+where the real safari magic begins.
+The main lodge and pool face a wide
+grass plane where animals wander and
+graze right in front of you. At the far
+end, a watering hole draws elephants,
+zebras, and many more.
+It&#39;s our first game drive and our first
+stop at the lodg&#39;s watering hole.
+Here we meet Hank and he&#39;s the resident
+hippo.
+
+Um, so his back is quite exposed to the
+sun, but that&#39;s not a problem. All that
+Hank needs to do is he rolls around. So,
+see, hippos feel most safe in the water.
+That&#39;s why we can get so close to Hank.
+If it was a female hippo with a small
+baby, um, obviously they will be a lot
+more aggressive with our presence as
+close, but usually hippos are quite fine
+cuz they don&#39;t feel much distress once
+they inside the water.
+In the front sits our tracker. He&#39;s the
+bush GPS. He reads the footprints and
+finds the animals.
+&gt;&gt; Two years ago of the two male curus also
+the horns locked and then there came a
+pack of wild dogs.
+&gt;&gt; Oh my god.
+&gt;&gt; And they were starting to eat the other
+one.
+&gt;&gt; Oh my god.
+&gt;&gt; Yeah. Whilst the other one is just
+standing there.
+
+&gt;&gt; Zebras form her. One stallion, several
+marers and fos.
+Sometimes many herands join, merging
+into a massive herd, hundreds strong.
+&gt;&gt; Very, very nice. Looks like a bunch of
+males.
+&gt;&gt; It&#39;s a really pretty setting with this
+the light,
+&gt;&gt; the sun.
+&gt;&gt; The sun is beauty pretty. It&#39;s
+&gt;&gt; gorgeous.
+Oh, look at that.
+&gt;&gt; Oh, yeah. Look at the colors.
+&gt;&gt; Oh, it&#39;s so cute.
+&gt;&gt; Oh my gosh.
+&gt;&gt; Yeah.
+&gt;&gt; How old is the baby?
+&gt;&gt; I would say about 4 months.
+&gt;&gt; 4 months.
+&gt;&gt; Just a little bit over 4 months now.
+Yeah. But
+it&#39;s just amazing. I&#39;m just so
+speechless. Every time you see something
+as small as that, I mean, you can&#39;t get
+over.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">薩比沙地以「大型貓科動物之鄉」聞名世界，毗鄰克魯格國家公園。在三天六場的遊獵中，旅行者們體驗了不間斷的野生動物邂逅。從附近城鎮的接駁途中展現了南非的鄉村風貌——小村莊、泥土路、赤腳玩耍的孩子們，日常生活遠離safari營地。他們的目的地是伊諾羅叢林小屋，僅有七間套房，是薩比沙地中心的一個私密避世之所。</div>
+        <div class="para-zh">加入我們另一場史詩級的safari之旅，前往薩比沙地，世界著名的大型貓科動物之鄉，毗鄰克魯格國家公園。三天、六場遊獵、不間斷的野生動物邂逅。請看到最後。從克萊里到薩比沙地的接駁展現了南非的鄉村風貌，小村莊、泥土路、赤腳玩耍的孩子們，日常生活遠離safari木屋。我們的目的地是伊諾羅叢林木屋，只有七間套房，是薩比沙地中心的一個私密避世之所。在這裡，六萬五千英畝的私人保護區展開成無柵欄的荒野，與克魯格國家公園無縫相連。它偏遠、原始且獨特。這就是真正的safari魔法開始的地方。主木屋和泳池面向一片寬廣的草原，動物就在你面前漫步吃草。在遠端，一個水塘吸引著大象、斑馬和更多動物。這是我們第一次遊獵，第一站是木屋的水塘。在這裡我們遇到了漢克，他是這裡的 resident 河馬。「嗯，他的背部暴露在陽光下，但這沒問題。漢克只需要翻身就行了。你看，河馬在水裡最有安全感。這就是為什麼我們可以離漢克這麼近。如果是一頭帶著小河馬的母河馬，很明顯牠們會對我們靠這麼近更有攻擊性，但通常河馬是沒問題的，因為一旦在水裡，牠們不會感到太多威脅。」在前方坐著我們的追蹤員。他是叢林中的GPS，他讀取足跡並尋找動物。「兩年前，兩頭雄性捻角羚的角鎖住了，然後來了一群野狗。」「哦天哪。」「然後牠們開始吃其中一頭。」「哦天哪。」「沒錯，而另一頭就站在那裡。」斑馬形成群體，一頭公馬、幾頭母馬和幼馬。有時候許多群體會合併，形成數百頭的大型群體。「真的很漂亮，看起來像一群雄性。」「光線真的很美。」「哦，看那個。」「哦，好可愛。」「寶寶多大了？」「大約四個月。」「才剛過四個月。」「太神奇了，我每次看到這麼小的東西都說不出話來。」</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Enoro Bush Lodge: An Intimate Escape</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
         <div class="acc-audio"><audio src="../audio/O09X6VVgXUA/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Enoro Bush Lodge sits within 65,000 acres of private reserve, unfolding into unfenced wilderness that seamlessly blends into Kruger National Park. It is remote, raw, and exclusive. The main lodge and pool face a wide grass plain where animals wander and graze right in front of you. At the far end, a watering hole draws elephants, zebras, and many more. This is where the real safari magic begins.</div>
+        <div class="para-en">ing
+as small as that, I mean, you can&#39;t get
+over. But I mean, yes, lions are
+special, leopards are special,
+everything is special. But given the
+fact that rhinos are so rare to find
+today, especially baby rhino. Um,
+&gt;&gt; we don&#39;t see this every day. Maybe once
+a year we see this.
+&gt;&gt; Yeah. That&#39;s why it&#39;s very special for
+us to share this experience and for that
+baby to get so close
+&gt;&gt; and the trust that this mother had
+&gt;&gt; in the car, but it also shows you that
+you handle them with respect, which is
+the number one thing. And that&#39;s why
+they&#39;re so calm and relaxed because they
+they know we don&#39;t mean any any harm.
+And look, the baby is sleeping there.
+It&#39;s as if mom say, &quot;Okay, it&#39;s your job
+to look after him now.&quot; But she will
+call him soon. And then she would move
+again because it&#39;s still a tiny rhino.
+It needs to rest as well because they do
+move far distances. So, it needs to rest
+as much as possible, too. We feel
+incredibly lucky. Right here, so close.
+A baby rhino. Clumsy, curious,
+unbelievably cute. A moment we&#39;ll never
+forget.
+&gt;&gt; Oh my god.
+&gt;&gt; He&#39;s like, &quot;Are you guys following me?&quot;
+&gt;&gt; Hello.
+&gt;&gt; Try me. Try me.
+&gt;&gt; Yeah. Try something cute.
+&gt;&gt; It&#39;s a little boy. You see that flap in
+the back? Yeah. That&#39;s where his manic
+parts are. So, it&#39;s a little baby male.
+&gt;&gt; Over 95% of the world&#39;s white rhinos
+disappeared in the 20th century,
+slaughtered for their horns.
+By the 1990s, fewer than 100 remained.
+Conservation brought them back, but the
+threat still lingers.
+Seeing a rhino in the wild, it isn&#39;t
+just a sighting. It&#39;s witnessing
+survival itself.
+It&#39;s a privilege.
+
+
+Heading back to the lodge after sunset.
+It&#39;s almost dark. Please excuse the bad
+video quality, but this was too good not
+to share.
+Two little elephants right in the road
+playing like kids while their moms were
+just busy flattening bushes. One of
+those unexpected safari moments you
+never forget.
+
+&gt;&gt; Okay, we see what you can do.
+the destruction and then you&#39;re going to
+probably chase us again. There we go.
+&gt;&gt; It&#39;s not the best acting, but no.
+&gt;&gt; There we go. Demolish it.
+
+&gt;&gt; You&#39;re playing. Are you looking, guys?
+Are you looking?
+&gt;&gt; Elephant calves stay close for years.
+They&#39;re nursing, watching, and copying
+mom and aunties.
+
+Birth is sacred. The entire herd
+gathe</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">伊諾羅叢林小屋坐落在65,000英畝的私人保護區內，廣闊的無柵欄荒野與克魯格國家公園無縫相連。這裡偏遠、原始且獨特。主小屋和泳池面向一片寬廣的草原，動物就在你面前漫步吃草。遠端的水塘吸引著大象、斑馬和更多動物。這就是真正的safari魔力開始的地方。</div>
+        <div class="para-zh">這麼小的東西，我的意思是，你無法克服它。但獅子很特別，花豹也很特別，一切都很特別。但考慮到犀牛現在有多罕見，尤其是犀牛寶寶。「我們不是每天都能看到這個，也許一年一次。」「是的，這就是為什麼分享這個體驗對我們來說非常特別。而且那隻寶寶靠得這麼近。」「還有這頭母親對車子裡的我們有這樣的信任。」「這也向你們展示，如果你們尊重牠們，這是最重要的事，這就是為什麼牠們如此冷靜放鬆，因為牠們知道我們沒有惡意。你看，寶寶在那裡睡覺。好像媽媽在說：好了，現在輪到你看顧他了。但她很快就會叫他。然後她會再移動，因為牠還是小犀牛，也需要休息，因為牠們要走很遠的距離，所以牠也需要盡可能多休息。我們覺得自己無比幸運，就在這裡，這麼近。一頭犀牛寶寶，笨拙、好奇、可愛到難以置信。一個我們永遠不會忘記的時刻。」「哦天哪。」「他好像在說：你們在跟蹤我嗎？」「你好。」「試試看，試試看。」「做點可愛的事。」「是個小男孩。你看到後面那塊 flap 了嗎？那就是他的生殖器所在。所以是一頭小公犀牛。」「世界上超過95%的白犀牛在20世紀消失了，為了牠們的角而被屠殺。到了1990年代，剩下不到100頭。保育工作讓牠們回來了，但威脅仍然存在。在野外看到犀牛，不僅僅是目擊，而是見證生存本身。這是一份特權。」日落後返回木屋。天幾乎全黑了，請原諒影片畫質不好，但這真的太棒了，不能不分享。兩頭小象就在路中間，像孩子一樣玩耍，而牠們的媽媽正忙著推平灌木叢。那些你永遠不會忘記的意外safari時刻之一。「好，我們看到你能做什麼了。破壞之後你可能又要追我們了。來吧。」「你在玩嗎？你們在看嗎？」「象寶寶會待在母親身邊好幾年，吃奶、觀察、模仿媽媽和阿姨們。」「生產是神聖的。整個象群會聚集起來，」</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Rare Encounters: Rhinos and Lions</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
         <div class="acc-audio"><audio src="../audio/O09X6VVgXUA/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">On the first game drive, the travelers experience something incredibly rare — a baby rhino, just four months old, sleeping beside its mother. Over 95 percent of the world&#39;s white rhinos disappeared in the 20th century, slaughtered for their horns. Seeing a rhino in the wild is witnessing survival itself. Later, they encounter a pride of ten lions, including young males. Lions are social animals living in family groups, and watching them in their natural habitat is unforgettable.</div>
+        <div class="para-en">rs,
+&gt;&gt; trunks extended, gently touching the
+newborn.
+Food is life, and elephants eat for 16
+hours straight, the roots, leaves,
+fruit, and the grass.
+A giant adult consumes over 100 kilos
+daily and 200 L of water.
+They don&#39;t just live in the land, they
+shape it.
+
+What a first day. At the end, these
+videos are our memory bank, our way of
+keeping days like this alive forever.
+This one.
+&gt;&gt; Evenings blend comfort and culture.
+Gourmet meals, South African wine,
+laughter around the fire, and the
+staff&#39;s vibrant music and their dance.
+
+
+It&#39;s a.m. and it&#39;s still dark. Just
+10 minutes from the camp, the tracker.
+He spots two young lions on the move.
+On a private reserve, we&#39;re free to
+leave the road, following them straight
+through the bush.
+
+&gt;&gt; Oh, you&#39;re blind.
+&gt;&gt; Not at all. We&#39;re not blinding any
+animal. We&#39;re not damaging their eyes.
+The light doesn&#39;t bother them in any
+way.
+&gt;&gt; Okay.
+&gt;&gt; Oh my god.
+&gt;&gt; After a while and back onto the road and
+soon after more lions appeared.
+&gt;&gt; That&#39;s a a big pride.
+&gt;&gt; Apparently there&#39;s about 10 of them
+here. There&#39;s another one that side.
+And it&#39;s also maybe Oh, we&#39;ve got a
+piece of a mop.
+&gt;&gt; Yeah.
+&gt;&gt; It&#39;s nice. It&#39;s like a wig.
+&gt;&gt; Quite a few young males here.
+&gt;&gt; It&#39;s a pride we don&#39;t often see around
+here called the Seu Pride. We&#39;re not
+really familiar with this pride, but
+it&#39;s good that we can see new lions
+again.
+Lions are different from any other big
+cat. They&#39;re social, living in family
+groups, prides anywhere from a handful
+to 30 strong.
+The females stay together for life,
+raising cubs as a unit, and the males,
+they&#39;re just passing through.
+
+Every couple of years, new males take
+over. And when they do, it&#39;s bloody.
+They kill the cubs so the females can
+breed again. Harsh. But that&#39;s the
+reality of the bush.
+Lions usually live 8 to 12 years in the
+wild, and the males rarely grow old.
+Too many fights, too many enemies. Out
+here, nothing comes easy.
+Lions and leopards, they don&#39;t get
+along. If given the chance, a lion will
+kill a leopard.
+That&#39;s why this young leopard hides high
+in the tree, perfectly camouflaged
+against the branches.
+Most of the prey animals prefer the open
+plains where they can spot danger early
+and run.
+It&#39;s in the thick brush where predators
+get ambushed and then survival g</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在第一次遊獵中，旅行者們經歷了極其罕見的一幕——一頭僅四個月大的犀牛寶寶在母親身旁睡覺。世界上超過95%的白犀牛在20世紀消失，被盜獵者為了犀牛角而屠殺。在野外看到犀牛，就是見證生存本身。隨後，他們遇到了一個由十頭獅子組成的獅群，包括年輕的雄獅。獅子是群居動物，生活在家庭群體中，在自然棲息地觀察牠們令人難忘。</div>
+        <div class="para-zh">象鼻伸出來，溫柔地觸摸新生兒。食物就是生命，大象一連吃16個小時，根、葉、果實和草。一頭巨大的成年象每天消耗超過100公斤食物和200公升水。牠們不只是生活在這片土地上，牠們塑造了這片土地。多麼棒的第一天。最後，這些影片是我們的記憶庫，是我們讓這樣的日子永遠活著的方式。這一天。夜晚融合了舒適與文化，美食餐點、南非葡萄酒、圍繞著營火的笑聲，以及工作人員充滿活力的音樂和舞蹈。清晨，天還黑著。離營地只有十分鐘，追蹤員發現了兩頭年輕的獅子在移動。在私人保護區，我們可以自由離開道路，直接穿過灌木叢跟蹤牠們。「哦，你在blinding牠們。」「完全沒有。我們沒有blinding任何動物。我們沒有傷害牠們的眼睛。光線一點也不困擾牠們。」「哦天哪。」過了一會兒，回到路上，不久後出現了更多獅子。「那是個很大的獅群。」「看起來大約有十頭。那邊還有一頭。」「有幾頭年輕的雄獅。」「這是我們不常在這一帶看到的獅群，叫做塞烏獅群。我們不太熟悉這個獅群，但能看到新的獅子是好事。」獅子和任何其他大型貓科動物都不一樣。牠們是群居動物，生活在家庭群體中，獅群從幾頭到三十頭不等。母獅終生待在一起，共同撫養幼獅。而雄獅，牠們只是過客。每過幾年，新的雄獅會接管。當牠們這麼做時，場面很血腥。牠們殺死幼獅，讓母獅可以再次繁殖。殘酷，但這就是叢林的現實。獅子在野外的壽命通常為8到12年，雄獅很少能活到老，太多打鬥、太多敵人。在這裡，沒有什麼是容易的。獅子和花豹合不來。如果有機會，獅子會殺了花豹。這就是為什麼這頭年輕的花豹躲在高高的樹上，完美地偽裝在樹枝間。大多數獵物動物喜歡開闊的平原，可以在那裡及早發現危險並逃跑。在茂密的灌木叢中，掠食者才有機會伏擊，然後生存就變得</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Leopards: Masters of the Trees</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
         <div class="acc-audio"><audio src="../audio/O09X6VVgXUA/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Leopards are the true stars of Sabi Sands. The travelers follow a leopard mother and her nearly-grown daughter. Leopards are master climbers, able to spring more than three meters straight up to reach safety on a high branch. They stash their kills high in trees to keep them from lions and hyenas. Watching a young leopard tugging at the remains of an impala while balancing like an acrobat is an unreal experience.</div>
+        <div class="para-en">ets
+tricky.
+
+The morning safari ends with coffee in
+the bush, then breakfast at the lodge, a
+quiet rest until the wild calls again at
+300 p.m.
+Lions nap all day, our engines humming,
+and they don&#39;t even care. They&#39;re deep
+asleep.
+So, just down that side, she made a
+fresh gill. She left it up in a tree and
+she&#39;s on her way to fetch a She went to
+fetch her daughter and then uh now
+she&#39;s uh going down
+taking her daughter back towards the
+&gt;&gt; Where&#39;s the daughter
+with her?
+&gt;&gt; There&#39;s the daughter there.
+Leopard cubs usually stick with their
+mom for about 2 years before they&#39;re on
+their own. And that&#39;s when life gets
+hard.
+This young daughter is almost as big as
+her mom, but she&#39;s not yet a good
+hunter.
+Still, mom lets her go first, waiting
+down on the riverbed while her hungry
+daughter climbs up the tree.
+
+
+Leopards are master climbers. They can
+spring more than 3 m straight up to
+reach safety on a high branch.
+For them, trees are everything. Their
+pantry, their bedroom, and their
+fortress.
+Their strength is staggering. A leopard
+can haul prey twice its own weight up
+into the branches.
+up there. It&#39;s safe. They don&#39;t share.
+Not with lions, not with hyenas,
+not even with other leopards.
+
+Morning drives always end with coffee,
+but evenings are different. cocktails at
+sunset.
+
+&gt;&gt; We&#39;re out in the middle of an empty air
+strip. There&#39;s no planes in sight, just
+us, a drink in hand, and a few impalas
+grazing in the distance.
+Next day, first stop, the leopards.
+They&#39;re still up in the tree with their
+impala. They&#39;ll be here for a few days
+just sleeping, eating, and guarding
+their prize until it&#39;s gone.
+Life of a leopard is simple. They eat,
+rest, and repeat.
+
+Beneath the tree, the hyena prowls. He&#39;s
+restless, scavenging every fragment that
+drops.
+He lingers hungry, eyes fixed upward,
+waiting for gravity to deliver a feast.
+But the impala is locked firm, perched
+above, out of reach.
+&gt;&gt; Then we came across a herd of buffalo
+scattered through the bush, their heavy
+bodies blending into the trees and the
+brush as they slowly grazed.
+Just at the edge of the herd, there&#39;s
+three young male lions stalking,
+creeping closer, hoping for a kill.
+The lions make a clumsy rush. Buffalo
+hold their ground. No panic, no retreat,
+just horns lowering, bulls advancing.
+The lions, they think twice.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">花豹是薩比沙地真正的明星。旅行者們跟蹤一對花豹母女。花豹是攀爬大師，能跳起三公尺多高到達高處的安全樹枝。牠們將獵物藏在樹上，防止獅子和鬣狗搶奪。看著一頭年輕花豹像雜技演員一樣保持平衡，撕扯著一頭黑斑羚的殘骸，是一種超現實的體驗。</div>
+        <div class="para-zh">變得棘手。早晨的遊獵以叢林中的咖啡結束，然後是回到木屋吃早餐，安靜地休息，直到下午三點荒野再次呼喚。獅子整天都在睡覺，我們的引擎聲嗡嗡作響，牠們毫不在意，牠們睡得很沉。「就在那一邊，她剛剛獵殺了一隻，她把獵物留在樹上，然後她去接她的女兒。現在她正帶著女兒往回走。」「女兒在哪？」「女兒在那裡。」花豹幼崽通常會和媽媽待在一起大約兩年，然後才獨立生活。而那時，生活就變得艱難了。這頭年輕的女兒幾乎和媽媽一樣大了，但她還不是一個好的獵手。儘管如此，媽媽讓她先走，自己在河床上等待，而餓著肚子的女兒爬上樹。花豹是攀爬大師。牠們可以跳起三公尺多高，到達高處的安全樹枝。對牠們來說，樹木就是一切，牠們的儲藏室、臥室和堡壘。牠們的力量驚人，一頭花豹可以將相當於自己體重兩倍的獵物拖到樹枝上。在那上面是安全的。牠們不分享，不和獅子、不和鬣狗、甚至不和其他的花豹分享。早晨的遊獵總是以咖啡結束，但傍晚不同，日落雞尾酒。「我們在一片空曠的簡易跑道上，看不到任何飛機，只有我們、手中的飲料，和幾頭在遠方吃草的黑斑羚。」第二天，第一站，花豹。牠們還在樹上，和那頭黑斑羚在一起。牠們會在這裡待上幾天，只是睡覺、吃東西、守護戰利品，直到吃完為止。花豹的生活很簡單，吃、休息、重複。在樹下，鬣狗在巡邏。牠不安地走動， scavenging 每一塊掉下來的碎片。牠飢餓地徘徊，眼睛向上盯著，等待重力送來一頓大餐。但黑斑羚被牢牢卡住，掛在高處，觸不可及。「然後我們遇到了一群水牛，散布在灌木叢中，沉重的身軀融入樹木和灌木叢中，緩慢地吃草。就在牛群的邊緣，有三頭年輕的雄獅正在跟蹤，悄悄靠近，希望能夠獵殺。獅子笨拙地衝了出去。水牛堅守陣地，沒有恐慌、沒有退縮，只有低下的牛角、前進的公牛。獅子三思而後行了。」</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. The Circle of Life in the Bush</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
         <div class="acc-audio"><audio src="../audio/O09X6VVgXUA/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Every moment in Sabi Sands reveals the raw reality of the wild. Lions stalk buffalo but think twice when the herd holds its ground. Hyenas prowl beneath leopard kills, waiting for scraps. Elephants drink 200 liters of water a day, led by the matriarch who remembers every path and secret spring. The buffalo form a fortress around their calves at night. This is why they film, why they share — to capture the unfiltered drama of the African bush.</div>
+        <div class="para-en">dvancing.
+The lions, they think twice. Big five
+doesn&#39;t mean rare. It means dangerous.
+And buffalo have earned their place.
+&gt;&gt; They&#39;re chasing them.
+&gt;&gt; Mhm. F10.
+Yeah. Comforfeing each other, not
+knowing how to hunt.
+Meet the Warthog, Savannah&#39;s oddball
+mascot. Dirt sniffing, tail up trotting,
+half tank, half cartoon. He&#39;s not pretty
+and he&#39;s not graceful.
+An elephant can drink 200 L of water a
+day. And in the dry season, watering
+holes become lifelines.
+The herds are led by the matriarch.
+She&#39;s the oldest and wisest female who
+remembers every path, danger, and secret
+spring.
+Her
+family comprises of mothers, sisters,
+aunts, and calves.
+The males leave as teenagers wandering
+solely or in basher games.
+This society is held together by memory
+and matriarchal power.
+Safaris aren&#39;t just for land animals.
+Look up. There&#39;s beauty in the air, too.
+Hard to believe, but this striking bird
+is actually an eagle.
+As night falls, the buffalo settle by
+the small lake.
+The calves are tucked safely in the
+middle. Adults form a solid wall around
+them, a fortress of horn, hide, and
+muscle against anything daring to come
+close.
+It&#39;s our final game drive. We find the
+leopard family again.
+The mother lies draped across the
+branch, bellies swollen from the feast.
+Pure contentment in the wild.
+Leopards are probably my favorite.
+They&#39;ve got this elegance, exotic beauty
+that nothing else in the bush can touch.
+Unlike lions, they live alone.
+Every day is survival. No family pride
+to lean on.
+Here in Sabi Sands, they still thrive.
+Leopards are ambush hunters. They don&#39;t
+waste any energy chasing.
+They stalk, creep, and wait.
+Then one leap and it&#39;s over.
+Sometimes they even hunt from the trees
+because impalas they never look up.
+
+While sitting under this tree, watching
+this young leopard tugging at the
+remains of an impala, balancing like an
+acrobat
+is something unreal.
+This is why we film, why we share, and
+honestly, your comments push us to keep
+going.
+
+
+If you like these adventures, hit like,
+share it with a friend, and subscribe.
+It really does help.
+Don&#39;t miss our next adventure.
+We&#39;re off to Zimbabwe to see the
+Victoria Falls and take a sunset cruise
+on the Zambzi River.
+We&#39;re busy travel and we&#39;re busy
+traveling the world. Catch you in the
+next one.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">薩比沙地的每一刻都揭示了荒野的原始現實。獅子潛伏跟蹤水牛，但當牛群堅守陣地時便會三思而後行。鬣狗在花豹藏獵物的樹下徘徊，等待殘渣落下。大象每天喝200公升水，由記住每條路徑和秘密泉源的母象首領帶領。水牛在夜間圍繞著小牛形成堡壘。這就是他們拍攝、分享的原因——捕捉非洲叢林不加修飾的戲劇。</div>
+        <div class="para-zh">獅子三思而後行了。五大動物不意味著稀有，它意味著危險。而水牛已經贏得了牠們的地位。「牠們在追趕牠們。」「嗯。」「互相鼓勵，卻不知道如何狩獵。」來認識一下疣豬，稀樹草原的奇葩吉祥物。聞泥土、翹尾巴、小跑步，一半像坦克，一半像卡通。牠不漂亮，也不優雅。一頭大象每天可以喝200公升的水。在旱季，水塘成為生命線。象群由母象首領帶領，她是年紀最大、最有智慧的母象，記得每一條路徑、每一處危險和秘密的泉水。她的家族由母親、姐妹、阿姨和幼象組成。公象在青少年時期就離開了，獨自流浪或結成單身漢群。這個社會是靠記憶和母系權力維繫在一起的。Safari 不只是為了陸地動物，抬頭看。空中也有美景。很難相信，但這隻引人注目的鳥實際上是一隻老鷹。夜幕降臨，水牛在小湖邊安頓下來。幼牛被安全地圍在中間，成年牛在牠們周圍形成一道堅固的牆，一個由角、皮和肌肉組成的堡壘，對抗任何膽敢靠近的東西。這是最後一次遊獵了。我們又找到了花豹家族。母親橫躺在樹枝上，肚子因為盛宴而鼓脹，野生世界裡純粹的滿足。花豹可能是我最喜歡的。牠們有著叢林中無可比擬的優雅和異國之美。不像獅子，牠們獨居。每一天都是生存，沒有獅群可以依靠。但在薩比沙地，牠們仍然 thriving。花豹是伏擊獵手。牠們不會浪費精力追逐，牠們跟蹤、潛行、等待。然後一躍，就結束了。有時候牠們甚至從樹上狩獵，因為黑斑羚從不抬頭看。坐在這棵樹下，看著這頭年輕的花豹拉扯著黑斑羚的殘骸，像雜技演員一樣保持平衡，是一種超現實的體驗。這就是我們拍攝、我們分享的原因，而老實說，你們的留言推動我們繼續前進。如果你喜歡這些冒險，按讚、分享給朋友、訂閱。這真的很有幫助。別錯過我們的下一次冒險。我們要去辛巴威看維多利亞瀑布，並在贊比西河上享受一次日落巡遊。</div>
       </div>
     </div>
-</div>
-<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
         <span class="acc-label">1. non-stop wild encounters <span class="collo-play" onclick="event.stopPropagation();playAudio('O09X6VVgXUA','collo1')">🔊</span></span>
@@ -235,8 +636,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="collo-practice">The bed and breakfast had a wonderful ______ (樸實的魅力).<br><span class="collo-answer" id="ca8">folksy charm</span></div>
       </div>
     </div>
-</div>
-<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">獨立分詞構句 — 伴隨結果</span>
@@ -274,8 +677,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="grammar-practice">______ (這就是為什麼我們旅行) — to discover the unknown.<br><span class="grammar-answer" id="ga2">This is why we travel</span></div>
       </div>
     </div>
-</div>
-<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div><div class="section-sub">點選句型展開範例</div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">4 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">This isn&#39;t a [A]. It&#39;s [B].</span>
@@ -324,20 +729,27 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="pattern-practice">The wildlife here is truly special, and that&#39;s why ______ (我們一次又一次地回來).<br><span class="pattern-answer" id="pa4">we keep coming back again and again</span></div>
       </div>
     </div>
-</div>
-<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
-<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
 </div>
 <script>
 var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "What makes Sabi Sands famous?", "choices": ["It is the largest national park in South Africa", "It is world-famous as Big Cat Country", "It has the most luxury hotels in Africa", "It is the only place to see penguins"], "answer": 1, "explain": "The video opens with: 'Sabi Sands. World famous Big Cat Country bordering Kruger National Park.' The area is particularly well-known for its leopard and lion populations."},{"q": "How is Enoro Bush Lodge described?", "choices": ["A large resort with 200 rooms", "An intimate escape with just seven suites in a 65,000-acre private reserve", "A budget camp with basic tents", "A city hotel near Johannesburg"], "answer": 1, "explain": "The narrator describes Enoro as 'just seven suites, an intimate escape in the heart of Sabi Sands' within '65,000 acres of private reserve' that 'unfold into unfenced wilderness.'"},{"q": "Why is the baby rhino sighting described as 'incredibly rare'?", "choices": ["Rhinos are nocturnal and hard to see", "Over 95% of white rhinos have disappeared due to poaching", "Baby rhinos are born only once every decade", "Rhinos are not native to South Africa"], "answer": 1, "explain": "The narrator explains: 'Over 95% of the world's white rhinos disappeared in the 20th century, slaughtered for their horns. Seeing a rhino in the wild... is witnessing survival itself.'"},{"q": "Why do leopards stash their kills in trees?", "choices": ["To keep the meat fresh in the shade", "To protect them from lions and hyenas", "To mark their territory", "To attract a mate"], "answer": 1, "explain": "The transcript states: 'Leopards always stash their kills high on a branch to keep the scavengers like hyenas and lions from stealing them.' This is a key survival strategy for leopards."},{"q": "How do buffalo protect their calves at night?", "choices": ["They hide them in caves", "They form a solid wall with the calves in the middle", "They take turns standing guard", "They move to higher ground"], "answer": 1, "explain": "The narrator describes: 'The calves are tucked safely in the middle. Adults form a solid wall around them, a fortress of horn, hide, and muscle against anything daring to come close.'"}];
-var quizState=[];
-function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
 renderQuiz();
 </script>
 </body>

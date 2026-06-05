@@ -2,16 +2,16 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <title>Is Santiago Worth Visiting? — 英文自學講義 | BZ Travel</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
+body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;max-width:100vw;overflow-x:hidden;line-height:1.6}
 .header{background:linear-gradient(135deg,#0c4a6e,#1e40af,#3b82f6);padding:20px 16px 60px;position:relative;color:#fff;text-align:center}
-.header::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
-.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;margin-bottom:10px}
-.header h1{font-size:20px;font-weight:700;margin-bottom:4px}
+.header::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:30px;background:#f0f4ff;border-radius:30px 30px 0 0}
+.header-badge{display:inline-block;background:rgba(255,255,255,.15);padding:4px 14px;border-radius:20px;font-size:12px;letter-spacing:1px;margin-bottom:10px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:4px;line-height:1.3}
 .header .sub{font-size:13px;opacity:.85}
 .header-meta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:12px;opacity:.9}
 .main-wrap{max-width:800px;margin:0 auto;padding:0 16px 100px}
@@ -22,7 +22,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .section-sub{font-size:12px;color:#94a3b8;margin-bottom:14px}
 .accordion{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .accordion:last-child{margin-bottom:0}
-.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;user-select:none;gap:6px}
+.acc-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;cursor:pointer;background:#fafafa;transition:all .2s;user-select:none;gap:6px}
 .acc-header:hover{background:#eff6ff}
 .acc-header.open{background:#eff6ff;border-bottom:1px solid #e2e8f0}
 .acc-label{font-size:13px;font-weight:600;flex:1;line-height:1.3}
@@ -32,121 +32,500 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
 .acc-body.open{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 .para-en{font-size:14px;line-height:1.8;color:#1e293b;margin-bottom:8px}
-.para-zh-toggle{font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
+.para-zh-toggle{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:#3b82f6;cursor:pointer;background:#eff6ff;padding:4px 10px;border-radius:6px;border:none;margin-bottom:6px}
 .para-zh{display:none;font-size:13px;color:#64748b;line-height:1.8;padding:8px 10px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6}
-.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
 .collo-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .collo-example{font-size:12px;color:#334155;background:#f8fafc;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
 .collo-example .label{font-weight:600;color:#10b981;font-size:11px}
-.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
+.collo-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}
 .collo-answer{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:12px}
-.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
-.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
-.collo-play:active{background:#1e40af;transform:scale(.9)}
-.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
-.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .grammar-explain{font-size:12px;color:#64748b;margin-bottom:8px;line-height:1.6}
 .grammar-examples{background:#f5f3ff;border-radius:8px;padding:8px 10px;margin-bottom:8px}
 .ge-from{font-size:12px;color:#6d28d9;font-style:italic;margin-bottom:2px}
 .ge-analysis{font-size:11px;color:#475569;line-height:1.5}
 .ge-pattern{font-size:11px;color:#7c3aed;font-weight:600;margin-top:2px;padding:2px 6px;background:#ede9fe;border-radius:4px;display:inline-block}
 .grammar-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.grammar-answer{display:none;color:#059669;font-weight:600}
+.grammar-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
 .pattern-formula{font-size:14px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:12px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:12px;color:#334155;background:#ecfeff;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
-.pattern-answer{display:none;color:#059669;font-weight:600}
+.pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
-.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px}
+.quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
-.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;background:#fafafa}
+.quiz-choice{padding:8px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;cursor:pointer;transition:all .2s;background:#fafafa}
 .quiz-choice:hover{border-color:#93c5fd;background:#eff6ff}
 .quiz-choice.correct{border-color:#059669;background:#d1fae5;color:#065f46}
 .quiz-choice.wrong{border-color:#dc2626;background:#fef2f2;color:#991b1b}
-.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px}
+.quiz-feedback{display:none;margin-top:8px;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5}
 .quiz-feedback.show{display:block}
 .quiz-feedback.correct{background:#d1fae5;border-left:4px solid #059669;color:#065f46}
 .quiz-feedback.wrong{background:#fef2f2;border-left:4px solid #dc2626;color:#991b1b}
 .quiz-score{text-align:center;padding:12px;font-size:16px;font-weight:700;background:#f0f4ff;border-radius:12px;margin-bottom:10px}
 .quiz-reset{display:block;width:100%;padding:10px;border:none;border-radius:8px;background:#e2e8f0;color:#475569;font-size:14px;font-weight:600;cursor:pointer}
+.quiz-reset:hover{background:#cbd5e1}
 .section-nav{display:flex;gap:5px;overflow-x:auto;padding:12px 0 6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .section-nav::-webkit-scrollbar{display:none}
 .section-nav a{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;text-decoration:none;background:#e2e8f0;color:#475569;white-space:nowrap}
 .section-nav a:hover,.section-nav a.active{background:#1e40af;color:#fff}
-.footer{text-align:center;padding:24px 16px;font-size:12px;color:#94a3b8}
+.footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
 </style>
 </head>
 <body>
-<div class="header"><div class="header-badge">🏙️ BZ Travel · 英文自學講義</div><h1>Is Santiago Worth Visiting?</h1><div class="sub">智利</div><div class="header-meta"><span>15:02</span><span>🏙️ 城市探索</span></div></div>
-<div class="main-wrap"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/9ByeJ2ciOZU" allow="autoplay;encrypted-media;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-<div class="section-nav"><a href="#section-reading" class="active">📖 閱讀</a><a href="#section-collocations">🔗 搭配詞</a><a href="#section-grammar">📐 文法</a><a href="#section-patterns">🧩 句型</a><a href="#section-quiz">📝 測驗</a></div>
-<div id="section-reading" class="section"><div class="section-title"><span>📖</span> 全文閱讀</div><div class="section-sub">點選段落展開，其他段落自動收起</div>
+<div class="header">
+  <div class="header-badge">🏙️ BZ Travel · 英文自學講義</div>
+  <h1>Is Santiago Worth Visiting?</h1>
+  <div class="sub">智利</div>
+  <div class="header-meta">
+    <span>15:02</span>
+    <span>🏙️ 城市探索</span>
+  </div>
+</div>
+<div class="main-wrap">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/9ByeJ2ciOZU" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="section-nav">
+    <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-collocations">🔗 搭配詞</a>
+    <a href="#section-grammar">📐 文法</a>
+    <a href="#section-patterns">🧩 句型</a>
+    <a href="#section-quiz">📝 測驗</a>
+  </div>
+  <div id="section-reading" class="section">
+    <div class="section-title"><span>📖</span> 全文閱讀</div>
+    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Six Days in Santiago</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
         <div class="acc-audio"><audio src="../audio/9ByeJ2ciOZU/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Tresa and Zarko spend six days exploring Santiago, Chile. They describe the city as incredibly dynamic and underrated. Their home base is a cozy boutique hotel in the heart of the Lastarria neighborhood, which they declare is definitely the place to stay. The street is lined with great restaurants, wine bars, artisans, cafes, and local vendors.</div>
+        <div class="para-en">Join us for 6 days exploring Santiago,
+Chile.
+We&#39;ll wander the streets  of the
+bohemian neighborhoods and visit
+must-see locations.
+This underrated South American city is
+incredibly dynamic and we can&#39;t wait to
+show you everything we&#39;re seeing in the
+capital.
+Our home for the next 6  days is
+a cozy boutique hotel right in the heart
+of the Lastarria neighborhood.
+It&#39;s definitely the place to stay.
+
+This street is lined with great
+restaurants, wine bars, artisans and
+cafes, and local vendors.
+In the evening, the area truly comes to
+life.
+&gt;&gt; 
+&gt;&gt; From here, you can easily walk to many
+top tourist destinations.
+You can stroll through the park
+alongside the river or cross over to the
+vibrant bohemian Barrio Bellavista
+neighborhood.
+It is a perfect base for our Santiago
+adventure.
+The Mapocho River cuts right through
+Santiago, naturally dividing Barrio
+Lastarria from Barrio Bellavista.
+After a short walk across the bridge,
+you enter a vibrant open-air gallery
+covered in colorful street art.
+These streets pulse with energy. They&#39;re
+packed tightly with local bars, lively
+pubs, pulsing discos, and sizzling
+street food vendors.
+Barrio Bellavista offers an upscale
+open-air blend of trendy shops and
+fantastic restaurants serving authentic
+Mexican, traditional Chilean, and global
+dishes.
+It&#39;s simply the perfect place to spend
+your evening.
+Despite reading several online warnings,
+we felt totally safe walking around
+tonight.
+Things probably do get pretty wild well
+past midnight, but we&#39;ll be fast asleep
+by then.
+Something that&#39;s fun to do here is to
+take the funic the cable car first
+up to the
+hill and you can really get some good
+great views of the city up there.
+&gt;&gt; 
+&gt;&gt; So, right now we&#39;re walking over to
+get round trip tickets to the
+cable car.
+And
+it&#39;s kind of the late afternoon, so we
+thought it&#39;d be a good time to go.
+Looks like when we come down, if we&#39;re
+thirsty we can have a cold
+cold beer or something.
+Oh, it&#39;s big Zocalo.
+Huh? Got a lot of stuff going on here.
+Okay, we&#39;re on the on the cable car and
+we just started out. For two seniors, it
+was 51,000 which is a like amount
+of $6.
+Right?</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Tresa和Zarko花了六天探索智利的Santiago。他們形容這座城市非常有活力且被低估了。他們的據點是一家位於Lastarria區中心的舒適精品酒店，他們宣稱這絕對是住宿的最佳地點。這條街上遍布著優秀的餐廳、酒吧、手工藝品店、咖啡館和當地攤販。</div>
+        <div class="para-zh">加入我們，用六天的時間探索智利的聖地牙哥。我們會漫步在波西米亞風格的街區，參觀必去的景點。這座被低估的南美城市充滿了驚人的活力，我們迫不及待想帶你看看我們在首都所見到的一切。我們接下來六天的家是一家舒適的精品酒店，就在拉斯塔里亞區的中心地帶。這裡絕對是住宿的首選地點。這條街上遍布著優秀的餐廳、酒吧、手工藝品店、咖啡館和當地攤販。到了晚上，這個地區真正熱鬧起來。從這裡，你可以輕鬆步行到許多頂級旅遊目的地。你可以沿著河邊在公園散步，或過橋前往充滿活力的波西米亞風格的貝亞維斯塔區。它是我們聖地牙哥探險的完美根據地。馬波喬河貫穿聖地牙哥市中心，自然地將拉斯塔里亞區和貝亞維斯塔區分隔開來。走過橋後不遠，你就會進入一個充滿活力的露天畫廊，到處都是色彩繽紛的街頭藝術。這些街道充滿了活力，擠滿了當地的酒吧、熱鬧的小酒館、震耳欲聾的迪斯可舞廳和滋滋作響的路邊小吃攤。貝亞維斯塔區提供了一個高級露天綜合體驗，有時尚商店和供應正宗墨西哥菜、傳統智利菜和國際美食的頂級餐廳。這絕對是度過夜晚的完美地點。儘管在網路上讀到了一些安全警告，我們今晚在外面走動時感到非常安全。午夜過後可能真的會很瘋狂，但那時候我們早就熟睡了。這裡有一件有趣的事，就是先搭乘纜車上山，可以從那裡俯瞰城市的美景。所以我們現在正走去買纜車的來回票。現在是傍晚時分，我們覺得這是個好時間上去。看起來下山的時候，如果口渴了，可以喝杯冰涼的啤酒——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Lastarria: The Perfect Base</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
         <div class="acc-audio"><audio src="../audio/9ByeJ2ciOZU/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">From their hotel in Lastarria, they can easily walk to many top tourist destinations. They can stroll through a park alongside the river or cross a bridge to the vibrant bohemian Barrio Bellavista neighborhood. In the evening, the Lastarria area truly comes to life, making it the perfect starting point for their Santiago adventure.</div>
+        <div class="para-en">niors, it
+was 51,000 which is a like amount
+of $6.
+Right? Yeah, $10 is not really like $800
+or something or $7.
+&gt;&gt; Like $17 for two of us per senior.
+Uh so, we&#39;re going to get a great view
+up here of the city of Santiago.
+From the cable car, you get a
+spectacular 360°
+view of Santiago.
+Up here you see just how massive the
+city of 6 million people is.
+The peak we&#39;re climbing is Cerro San
+Cristobal.
+Besides the cable car, there is a
+vintage funicular that runs from the
+Bellavista neighborhood.
+At the top sits a massive Virgin statue
+and it offers insane views of the
+sprawling city backed by the towering
+Andes.
+The park is absolutely huge. It features
+a zoo, Japanese garden, outdoor pools,
+and hiking trails.
+Locals flock here every weekend to hang
+out, picnic, and cycle.
+There&#39;s a lot here to do on the hills,
+not just the cable cars. There&#39;s
+bungee jumping,
+uh zip-lining,
+a whole host of activities.
+We had a great time and we do strongly
+recommend it.
+So, what do you think so far, Zarco? You
+enjoying the ride?
+We&#39;re almost to the top of the hill
+and there is a hiking trail if you want
+to hike up here. Yes, I&#39;ll be there.
+Okay, we&#39;re coming in.
+When you&#39;re When you&#39;re traveling, what
+we found, if you&#39;re going to be gone for
+like two or three weeks, the best thing
+to do is not pack for two two to three
+weeks of clothes, pack for half of that
+and then in your city, you generally can
+find these laundry services. We always
+do.
+And they charge by the kilogram.
+They usually take overnight.
+They&#39;ll iron,
+wash your clothes beautifully.
+Yeah, and it&#39;s a great way to go.
+&gt;&gt; Good morning. This is our third day in
+Santiago.
+And we&#39;re heading to the central market.
+It&#39;s known It was actually rated by
+National Geographic as the fifth best
+food food market in the world. So, we&#39;re
+going to go over there and it&#39;s uh
+like , which is suggested to go
+about now because you can still still
+see all the stuff coming in and then
+we&#39;ll be there when the locals and
+everybody in the restaurants and all all
+that starts to
+start its hustle and bustle.
+And uh</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">從他們在Lastarria的酒店出發，可以輕鬆步行到許多頂級旅遊景點。他們可以沿著河邊在公園散步，或過橋前往充滿活力的波西米亞風格的Barrio Bellavista社區。到了晚上，Lastarria地區真正熱鬧起來，使其成為他們Santiago探險的完美起點。</div>
+        <div class="para-zh">長者票是51,000，大概相當於6美元。對吧？10美元也不算什麼，不是800美元還是什麼的。我們兩個人大概17美元。所以我們要在這裡欣賞聖地牙哥市的美景。從纜車上，你可以看到聖地牙哥壯觀的360度全景。從這裡你可以看到這座擁有600萬人口的城市有多麼巨大。我們正在攀登的山峰是聖克里斯托瓦爾山。除了纜車，還有一條從貝亞維斯塔區出發的復古纜索鐵路。山頂上矗立著一座巨大的聖母雕像，可以欣賞到以高聳的安第斯山脈為背景、城市綿延不絕的絕美景觀。這個公園非常大，裡面有動物園、日本庭園、戶外游泳池和健行步道。當地人每個週末都會湧入這裡閒晃、野餐和騎自行車。山上有很多活動可以玩，不只是纜車——還有高空彈跳、高空滑索，一整串的活動。我們玩得很開心，強烈推薦。Zarko，你目前覺得怎麼樣？享受這趟旅程嗎？我們快到山頂了，如果你想要的話，也有一條健行步道可以走上來。好的，到了。旅行時我們發現，如果你要離開兩三個星期，最好的辦法不是帶兩三週的衣服，而是只帶一半的量，然後在所在的城市通常可以找到洗衣服務。我們一直都這麼做。他們按公斤計費，通常隔天取件。他們會熨燙，把衣服洗得漂漂亮亮的。這是個好方法。早安，這是我們在聖地牙哥的第三天。我們要去中央市場。它曾被國家地理評選為世界第五佳美食市場。我們要去那裡逛逛——建議大約現在去，因為你還可以看到所有東西正在上架——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Crossing the Mapocho River</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
         <div class="acc-audio"><audio src="../audio/9ByeJ2ciOZU/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The Mapocho River cuts right through Santiago, naturally dividing Barrio Lastarria from Barrio Bellavista. After a short walk across the bridge, visitors enter a vibrant open-air gallery covered in colorful street art. The streets pulse with energy, packed tightly with local bars, lively pubs, pulsing discos, and sizzling street food vendors.</div>
+        <div class="para-en">we&#39;re walking through a beautiful
+park.
+It&#39;s like a 20-minute walk from our
+hotel.
+And
+from our hotel, there&#39;s all kinds of
+different neighborhoods that we&#39;ve been
+checking out.
+So, each day we take a turn.
+One of us gets to pick what what we&#39;re
+going to do for the day.
+Today it was Arkel&#39;s turn and he picked
+the market.
+We have really been impressed with
+Santiago. We&#39;re enjoying it a lot.
+All kinds of cute little neighborhoods,
+different kinds of restaurants and bars,
+um
+nice parks.
+It appears very safe, at least in the
+area we&#39;re at.
+Clean.
+And mid-January, the weather is perfect.
+It&#39;s like 86° F today.
+The Parisian-style building on our left
+is the National Palace of Fine Arts.
+This is the main entrance to the Mercado
+Central.
+Let&#39;s go in and see what&#39;s going on. I
+can already hear the hustle and bustle
+of people in there.
+These busy fish stalls form the real
+beating heart of the market.
+Merchants wearing aprons expertly wield
+knives, slicing through fresh daily
+wares.
+Fish, oysters, mussels, and crabs are
+all thrown onto scales, weighed, and
+then carried off by professional chefs.
+The most serious buying actually happens
+before dawn.
+Top restaurants across Santiago arrive
+extremely early to claim the best
+specimens. Because Chile boasts an
+extraordinary Pacific coastline
+exceeding 6,400 km,
+the rich diversity feeling these stalls
+remains genuinely remarkable.
+Forget sanitized, odorless supermarket
+aisles,
+the strong, unmistakable smell of fresh
+Pacific seafood dominates the entire
+place.
+As restaurants prepare for the lunch
+crowd of tourists and locals,
+&gt;&gt; 
+&gt;&gt; look around.
+The iron columns,
+roof trusses, and the framework were
+manufactured in Glasgow before being
+assembled here.
+This Scottish ironwork has impressively
+stood 150 years.
+Outside, lively fruit vendors line the
+busy street, offering an impressive
+selection ranging from bright
+strawberries to bananas, grapes, and
+peaches.
+While it remains freezing in Europe,
+it&#39;s beautiful summer in Chile.
+This is a central part of the city.
+Santiago&#39;s historic center has three
+pedestrian shopping streets, forming a
+commercial grid.
+But before exploring this area, we must
+first visit another entirely unique
+neighborhood.
+Today we decided to come to Barrio
+Italia.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Mapocho河貫穿Santiago市中心，自然地將Barrio Lastarria和Barrio Bellavista分隔開來。走過橋後短暫的路程，遊客進入一個充滿活力的露天畫廊，到處都是色彩繽紛的街頭藝術。這些街道充滿了活力，擁擠著當地酒吧、熱鬧的酒吧、震耳欲聾的迪斯可和滋滋作響的路邊小吃攤。</div>
+        <div class="para-zh">我們正穿過一個美麗的公園。從酒店步行大約20分鐘。從我們的酒店出發，可以到達各種不同的街區，我們一直在探索。所以每天我們輪流選擇——其中一個人挑選當天要做什麼。今天是Arkel選的，他選了市場。聖地牙哥真的讓我們印象深刻。我們很喜歡這裡——各種可愛的小街區、不同類型的餐廳和酒吧、漂亮的公園。至少在我們所在的區域，看起來非常安全。乾淨。一月中旬，天氣非常完美——今天大約86華氏度。我們左邊這棟巴黎風格的建築是國家美術宮。這是中央市場的主入口。我們進去吧，看看裡面怎麼樣。我已經能聽到裡面人群的喧囂聲了。這些忙碌的魚攤是市場真正跳動的心臟。穿著圍裙的商人熟練地揮舞著刀具，切割著新鮮的每日漁獲。魚、牡蠣、貽貝和螃蟹被扔到秤上稱重，然後被專業廚師帶走。最關鍵的採購實際上是在黎明前進行的。聖地牙哥各地的頂級餐廳會極早到來，搶佔最好的漁獲。因為智利擁有超過6,400公里的非凡太平洋海岸線，這些攤位上的豐富多樣性確實令人驚嘆。忘掉那些消毒過的、無味的超市通道吧——新鮮太平洋海鮮濃烈的、 unmistakable 的氣味主導了整個空間。隨著餐廳開始為午餐時段的遊客和當地人做準備，環顧四周。鐵柱、屋頂桁架和框架是在格拉斯哥製造的，然後在這裡組裝。這些蘇格蘭鐵件已經屹立了150年。外面，熱鬧的水果攤販排列在繁忙的街道上，提供從鮮紅草莓到香蕉、葡萄和——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Bellavista&#39;s Vibrant Nightlife</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
         <div class="acc-audio"><audio src="../audio/9ByeJ2ciOZU/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Barrio Bellavista offers an upscale open-air blend of trendy shops and fantastic restaurants serving authentic Mexican, traditional Chilean, and global dishes. The couple finds it simply the perfect place to spend the evening. Despite reading online warnings about safety, they felt totally safe walking around at night, noting that things probably get wild well past midnight when they are already asleep.</div>
+        <div class="para-en">pedestrian shopping streets, forming a
+commercial grid.
+But before exploring this area, we must
+first visit another entirely unique
+neighborhood.
+Today we decided to come to Barrio
+Italia. This is where the Italians
+immigrated to this area.
+And
+there&#39;s all kinds of shops, restaurants,
+sort of a trendy area.
+&gt;&gt; 
+&gt;&gt; Um
+So, we&#39;re going to show you what this is
+all about. I I did hear it&#39;s one of the
+top areas for tourists to come and enjoy
+the afternoon.
+It&#39;s an Italian neighborhood. A lot of
+the Italians immigrated here and they
+have a lot of Italian restaurants and
+all kinds of shops and bazaars. And uh
+it&#39;s Saturday, so there&#39;s going to be a
+little bit more Saturday market stuff
+going on. We&#39;re walking down Avenida
+Italia right now.
+And when we get to the end, we&#39;re going
+to take a right. So, we&#39;re exploring the
+whole area.
+And look at this. It goes way back in
+there.
+Unlike Lastarria and Bellavista,
+&gt;&gt; 
+&gt;&gt; Barrio Italia is a noticeably quieter,
+much more intimate neighborhood.
+Traditional one-story houses with long
+central hallways, originally family
+workshops,
+&gt;&gt; 
+&gt;&gt; are now beautifully converted into
+boutique clusters.
+Step through one street-level door,
+
+and you&#39;ll easily discover independent
+stores selling handmade jewelry,
+furniture, artisan soaps, ceramics,
+leather goods, and modern Chilean
+fashion.
+Though few Italians remain today, their
+creative legacy lives on.
+This area has truly evolved into
+Santiago&#39;s undisputed hub for
+independent artisan crafts and food.
+This single street running between
+Gorostiaga and Condell overflows with
+antique dealers and furniture restorers
+that are working directly on the
+sidewalk.
+You will find everything from Art Deco
+tables to vintage records.
+Watching these skilled craftsmen
+beautifully restore old pieces in real
+time offers a truly authentic local
+experience.
+Another great place most tourists visit
+in Santiago or you can discover on your
+own exploration is Santa Lucia Hill.
+Resting on the edge of Barrio Lastarria,
+it faces the central part of Santiago.
+This spot was merely a shor</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Barrio Bellavista提供一個高級的露天綜合體驗，有時尚商店和供應正宗墨西哥菜、傳統智利菜和國際美食的頂級餐廳。這對夫婦認為這絕對是度過夜晚的完美地點。儘管在網路上看到一些安全警告，他們晚上走動時感到非常安全，並指出午夜過後可能真的會很熱鬧，但那時他們早已熟睡了。</div>
+        <div class="para-zh">行人購物街，形成了一個商業網格。但在探索這個區域之前，我們必須先參觀另一個完全獨特的街區。今天我們決定來義大利區。這是義大利人移民到這個區域的地方。這裡有各種商店、餐廳，算是個時髦的區域。所以我們要帶你看看這裡的一切。我聽說這是遊客來享受午後的頂級區域之一。這是一個義大利社區。很多義大利人移民到這裡，有很多義大利餐廳和各種商店和市集。今天是星期六，所以會有更多週六市集的活動。我們現在正走在義大利大道上。走到盡頭的時候我們要右轉。所以我們正在探索整個區域。看看這個——一直延伸到很裡面。與拉斯塔里亞和貝亞維斯塔不同，義大利區是一個明顯更安靜、更親密的街區。傳統的單層房屋帶有長長的中央走廊，原本是家庭作坊，現在被精美地改造成精品集群。穿過一扇臨街的門，你會輕鬆發現獨立商店，販售手工珠寶、家具、手工香皂、陶瓷、皮革製品和現代智利時尚。雖然今天已經沒有多少義大利人留下來了，但他們的創意遺產仍然存在。這個區域已經真正發展成聖地牙哥無可爭議的獨立手工藝品和美食中心。這條介於Gorostiaga和Condell之間的街道上，到處都是直接在行人道上工作的古董商和家具修復師。你會找到從裝飾藝術風格的桌子到復古唱片的一切。看著這些技藝精湛的工匠即時修復舊物，提供了一種真正道地的當地體驗。另一個大多數遊客會去參觀——</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Fun Activities in Santiago</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
         <div class="acc-audio"><audio src="../audio/9ByeJ2ciOZU/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">One of the fun activities the video highlights is taking the funicular up to a hill for panoramic views of the city. Santiago offers a mix of urban energy, cultural attractions, and stunning mountain backdrops that make it worth visiting. The couple&#39;s positive experience challenges the perception that Santiago might not be worth a stop on a South American itinerary.</div>
+        <div class="para-en">t walk from
+our hotel.
+Surprisingly, this hill is the dramatic
+remnant of a massive volcano from 15
+million years ago.
+It was originally just bare ugly rocks
+serving as a cemetery.
+&gt;&gt; 
+&gt;&gt; And then it was suddenly transformed
+into a gorgeous French park
+&gt;&gt; 
+&gt;&gt; after 60 prisoners planted over 1,000
+beautiful new green shade trees.
+Once you finally reach the summit, you
+get a full 360°
+panorama of Santiago
+spread out completely flat in every
+direction below you.
+It&#39;s totally worth the climb.
+The city doesn&#39;t have hills or obstacles
+blocking your view,
+&gt;&gt; 
+&gt;&gt; so you see the whole metropolitan bowl
+laid out perfectly like a map.
+Towering beautifully in the distance,
+the snow-capped Andes mountains, they
+rise directly behind the impressive city
+skyline.
+Walking into Cerro Santa Lucia,
+&gt;&gt; 
+&gt;&gt; the impressive Neptune fountain, it
+makes you stop dead in your tracks.
+It was ordered from France. The Roman
+sea god sits high holding his trident
+creating Santiago&#39;s absolute most
+popular photograph spot today.
+The absolute center of Santiago is Plaza
+de Armas.
+For five centuries, it&#39;s been the city&#39;s
+heart.
+Almost every Spanish colonial city
+across South America has one.
+The Spaniards used these exact spots to
+gather and arm themselves during
+attacks,
+which easily explains  the name.
+Inside the plaza sits a massive
+Metropolitan Cathedral.
+Opposite stands a monument of Pedro de
+Valdivia,
+who famously founded the city.
+Gorgeous colonial architecture surrounds
+the square, including the post office,
+history museum, and the town hall.
+In the shaded park, a small plaque marks
+Kilometro Cero.
+It&#39;s officially measuring every distance
+
+in the sprawling capital city.
+We&#39;re two retirees exploring the world.
+If you enjoyed this video, please click
+the like button.
+It helps our channel grow, and we truly
+appreciate it.
+Join us for many more exciting
+destinations.
+Our Chilean adventure continues.
+In the next video, we will tour a winery
+and spend two unforgettable days in
+Valparaiso.
+It&#39;s a vibrant, colorful, and artistic
+coastal city.
+See you in Valparaiso.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">影片中強調的一項有趣活動是搭乘纜車上山，欣賞城市的全景。Santiago融合了城市活力、文化景點和令人驚嘆的山脈背景，使其值得一訪。這對夫婦的正面體驗挑戰了Santiago可能不值得在南美洲行程中停留的看法。</div>
+        <div class="para-zh">從酒店步行即可到達。令人驚訝的是，這座山是1500萬年前一座巨大火山的戲劇性遺跡。它原本只是光禿禿的岩石，被用作墓地。然後在60名囚犯種植了超過1000棵美麗的綠蔭樹之後，它突然被改造成了一座華麗的法式公園。當你最終到達山頂時，你可以看到聖地牙哥完整的360度全景——城市在你腳下向每個方向平坦地延伸開來。完全值得攀登。這座城市沒有山丘或障礙物阻擋你的視線，所以你可以看到整個都會盆地像地圖一樣完美地展現在你面前。遠方美麗地高聳著的是積雪的安第斯山脈，它們直接從令人印象深刻的城市天際線後方升起。走進聖露西亞山，令人印象深刻的海神噴泉會讓你當場停下腳步。它是從法國訂購的。羅馬海神高舉著他的三叉戟，創造了今天聖地牙哥最受歡迎的拍照地點。聖地牙哥的絕對中心是武器廣場。五個世紀以來，它一直是這座城市的心臟。幾乎南美洲每一個西班牙殖民城市都有一個。西班牙人在遭受攻擊時會利用這些地點集結和武裝自己——這很容易解釋它的名字。廣場內有一座巨大的大都會主教座堂。對面矗立著佩德羅·德·瓦爾迪維亞的紀念碑——他創立了這座城市。華麗的殖民時期建築圍繞著廣場，包括郵政局、歷史博物館和市政廳。在蔭涼的公園裡，一塊小牌匾標示著「零公里點」——它正式測量這座廣闊首都的每一個距離。我們是兩位退休人士，正在探索世界。如果你喜歡這部影片，請按讚。這有助於我們的頻道成長，我們非常感謝。加入我們，探索更多精彩的目的地。我們的智利冒險仍在繼續。在下一部影片中——</div>
       </div>
     </div>
-</div>
-<div id="section-collocations" class="section"><div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div><div class="section-sub">點選搭配詞展開，🔊 聽發音</div>
+  </div>
+  <div id="section-collocations" class="section">
+    <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
+    <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
         <span class="acc-label">1. come to life <span class="collo-play" onclick="event.stopPropagation();playAudio('9ByeJ2ciOZU','collo1')">🔊</span></span>
@@ -235,8 +614,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="collo-practice">After the long hike, I was ______ by 9 PM.<br><span class="collo-answer" id="ca8">fast asleep</span></div>
       </div>
     </div>
-</div>
-<div id="section-grammar" class="section"><div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div><div class="section-sub">點選文法點展開說明</div>
+  </div>
+  <div id="section-grammar" class="section">
+    <div class="section-title"><span>📐</span> 文法重點 <span style="font-size:12px;font-weight:400;color:#94a3b8">2 點</span></div>
+    <div class="section-sub">點選文法點展開說明</div>
     <div class="accordion" data-group="grammar">
       <div class="acc-header" onclick="toggleAccordion(this,'grammar','g1')">
         <span class="acc-label">Present Simple for Describing Places</span>
@@ -271,8 +652,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="grammar-practice">用 &#39;Despite&#39; 完成句子：&#39;______ the rain, we still enjoyed our walk through the city.&#39;<br><span class="grammar-answer" id="ga2">&#39;Despite the rain, we still enjoyed our walk through the city.&#39;</span></div>
       </div>
     </div>
-</div>
-<div id="section-patterns" class="section"><div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div><div class="section-sub">點選句型展開範例</div>
+  </div>
+  <div id="section-patterns" class="section">
+    <div class="section-title"><span>🧩</span> 關鍵句型 <span style="font-size:12px;font-weight:400;color:#94a3b8">3 組</span></div>
+    <div class="section-sub">點選句型展開範例與練習</div>
     <div class="accordion" data-group="pattern">
       <div class="acc-header" onclick="toggleAccordion(this,'pattern','pt1')">
         <span class="acc-label">It&#39;s simply the perfect place to spend [time]</span>
@@ -309,20 +692,27 @@ body{background:#f0f4ff;color:#1e293b;font-family:sans-serif;max-width:100vw;ove
         <div class="pattern-practice">用這個句型推薦一個當地活動。<br><span class="pattern-answer" id="pa3">Something that&#39;s fun to do here is to rent a bike and ride along the river.</span></div>
       </div>
     </div>
-</div>
-<div id="section-quiz" class="section"><div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div><div class="section-sub">點選答案即時對答</div><div id="quizContainer"></div></div>
-<div class="footer"><p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p></div>
+  </div>
+  <div id="section-quiz" class="section">
+    <div class="section-title"><span>📝</span> 閱讀測驗 <span style="font-size:12px;font-weight:400;color:#94a3b8">5 題</span></div>
+    <div class="section-sub">點選答案即時對答</div>
+    <div id="quizContainer"></div>
+  </div>
+  <div class="footer">
+    <p>📺 來源：<a href="https://youtube.com/@bztravel" target="_blank">BZ Travel</a></p>
+    <p style="margin-top:4px">Generated by Hermes Agent · 摺疊式學習</p>
+  </div>
 </div>
 <script>
 var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "How many days did Tresa and Zarko spend in Santiago?", "choices": ["2 days", "4 days", "6 days", "8 days"], "answer": 2, "explain": "The video says 'Join us for 6 days exploring Santiago, Chile.'"},{"q": "Which neighborhood is their hotel in?", "choices": ["Bellavista", "Lastarria", "Providencia", "Vitacura"], "answer": 1, "explain": "Their home is a cozy boutique hotel right in the heart of the Lastarria neighborhood."},{"q": "What river divides Lastarria from Bellavista?", "choices": ["The Amazon River", "The Mapocho River", "The Bio-Bio River", "The Maule River"], "answer": 1, "explain": "The Mapocho River cuts right through Santiago, dividing Barrio Lastarria from Barrio Bellavista."},{"q": "How did the couple feel about safety in Santiago?", "choices": ["Very unsafe", "Totally safe", "A little worried", "They didn't go out at night"], "answer": 1, "explain": "Despite reading online warnings, they felt totally safe walking around at night."},{"q": "What does the video suggest is a fun thing to do in Santiago?", "choices": ["Visit the beach", "Take the funicular up a hill", "Go skiing", "Visit a zoo"], "answer": 1, "explain": "Something fun is to take the funicular cable car up to the hill for panoramic views."}];
-var quizState=[];
-function renderQuiz(){var c=document.getElementById("quizContainer");var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
-function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById("qf"+qIdx);var choices=document.querySelectorAll("#qq"+qIdx+" .quiz-choice");for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents="none";if(i===q.answer)choices[i].classList.add("correct");if(i===cIdx&&i!==q.answer)choices[i].classList.add("wrong")}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className="quiz-feedback show "+(ok?"correct":"wrong");fb.innerHTML=(ok?"✅ 正確！":"❌ 答錯了。")+"<br>"+q.explain;updateScore()}
-function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById("quizScore").textContent="📊 "+c+" / "+QUIZ.length+" 題正確"}
-function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById("qf"+i);if(fb){fb.className="quiz-feedback";fb.innerHTML=""}var choices=document.querySelectorAll("#qq"+i+" .quiz-choice");for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className="quiz-choice";choices[j].style.pointerEvents=""}}}}updateScore()
+var quizState = [];
+function renderQuiz(){var c=document.getElementById('quizContainer');var h='<div class="quiz-score" id="quizScore">📊 0 / '+QUIZ.length+' 題正確</div>';for(var i=0;i<QUIZ.length;i++){var q=QUIZ[i];h+='<div class="quiz-question" id="qq'+i+'"><div class="quiz-q">Q'+(i+1)+'. '+q.q+'</div><div class="quiz-choices">';for(var j=0;j<q.choices.length;j++){h+='<div class="quiz-choice" onclick="selectAnswer('+i+','+j+')" id="qc'+i+'_'+j+'">'+q.choices[j]+'</div>'}h+='</div><div class="quiz-feedback" id="qf'+i+'"></div></div>'}h+='<button class="quiz-reset" onclick="resetQuiz()">🔄 重新作答</button>';c.innerHTML=h;resetQuiz()}
+function selectAnswer(qIdx,cIdx){var q=QUIZ[qIdx];var fb=document.getElementById('qf'+qIdx);var choices=document.querySelectorAll('#qq'+qIdx+' .quiz-choice');for(var i=0;i<choices.length;i++){choices[i].style.pointerEvents='none';if(i===q.answer)choices[i].classList.add('correct');if(i===cIdx&&i!==q.answer)choices[i].classList.add('wrong')}var ok=(cIdx===q.answer);quizState[qIdx]=ok;fb.className='quiz-feedback show '+(ok?'correct':'wrong');fb.innerHTML=(ok?'✅ 正確！':'❌ 答錯了。')+'<br>'+q.explain;updateScore()}
+function updateScore(){var c=0;for(var i=0;i<quizState.length;i++)if(quizState[i])c++;document.getElementById('quizScore').textContent='📊 '+c+' / '+QUIZ.length+' 題正確'}
+function resetQuiz(){quizState=[];for(var i=0;i<QUIZ.length;i++){quizState.push(false);var fb=document.getElementById('qf'+i);if(fb){fb.className='quiz-feedback';fb.innerHTML=''}var choices=document.querySelectorAll('#qq'+i+' .quiz-choice');for(var j=0;j<choices.length;j++){if(choices[j]){choices[j].className='quiz-choice';choices[j].style.pointerEvents=''}}}}updateScore()
 renderQuiz();
 </script>
 </body>

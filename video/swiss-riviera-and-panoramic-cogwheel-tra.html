@@ -52,6 +52,12 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .pattern-template{font-size:11px;color:#0891b2;font-weight:600;background:#ecfeff;padding:3px 6px;border-radius:4px;display:inline-block;margin-bottom:6px}
 .pattern-practice{font-size:12px;color:#92400e;background:#fffbeb;padding:6px 8px;border-radius:6px;border-left:3px solid #f59e0b}
 .pattern-answer{display:none;margin-top:4px;color:#059669;font-weight:600}
+.acc-audio audio{width:100%;height:34px;border-radius:6px;margin-bottom:6px}
+.collo-play,.collo-play-sm{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;border-radius:50%;flex-shrink:0}
+.collo-play{width:26px;height:26px;font-size:13px;background:rgba(30,64,175,.1);vertical-align:middle;margin-left:4px}
+.collo-play:active{background:#1e40af;transform:scale(.9)}
+.collo-play-sm{width:22px;height:22px;font-size:11px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}
+.collo-play-sm:active{background:#10b981;transform:scale(.9)}
 .quiz-question{border:1px solid #e2e8f0;border-radius:12px;padding:12px;margin-bottom:10px}
 .quiz-q{font-size:14px;font-weight:600;margin-bottom:6px;line-height:1.4}
 .quiz-choices{display:grid;gap:5px}
@@ -101,55 +107,258 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Montreux: The Swiss Riviera</span>
+        <span class="acc-label">1. Part 1</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p1">
-        <div class="para-en">Welcome to Montreux, where mountains meet the wild breadth of Lake Geneva. The BZ Travel team spends a lazy day on the Swiss Riviera before catching a train up to Zermatt. They wander its fabled promenade — the same path that stirred artists and dreamers for generations. Here, the lake acts like a vast engine of warmth, storing sunlight while the surrounding peaks hold back the northern cold. This fragile balance gives Montreux 20% more sun, where palms, magnolias, and figs thrive at 400 meters.</div>
+        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">Join us today in Montreus for a lazy day
+on the Swiss Riviera before we catch a
+train up to Zerat.
+Our 8-day journey crosses Switzerland by
+panoramic trains, stopping in
+breathtaking towns and alpine valleys
+along the way.
+Welcome to Montreus, where mountains
+meet the wild breath of Lake Geneva.
+Today we wander its fabled prominade.
+The same path that stirred artists and
+dreamers for generations.
+Here the lake acts like a vast engine of
+warmth. Its water storing sunlight while
+the surrounding peaks hold back the
+northern cold.
+That fragile balance gives Montreus 20%
+more sun where palms, magnolia, and figs
+defy altitude and they thrive at 400 m.
+Before us stretches Lake Geneva,
+582
+square kilometers of shifting light and
+mist, Western Europe&#39;s largest alpine
+lake, and it&#39;s so large it creates its
+own small tides and weather.
+Today, we explore Montre&#39;s 7 kilometer
+lakefront prominade.
+It&#39;s one of Europe&#39;s most scenic, lined
+with historic mansions, luxury hotels,
+and gardens facing the calm expanse of
+Lake Geneva.
+Freddy still stands here in bronze, fist
+raised towards the Alps. Montreus loved
+him back. Queen recorded seven albums
+here, and Freddy claimed this lakeside
+town is home. Watching sunsets from his
+apartment above the water.
+What pulled Freddy here?
+The same thing pulling everyone else
+here.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">歡迎來到蒙特勒，群山與廣闊的日內瓦湖在此交會。BZ Travel團隊在瑞士里維埃拉度過悠閒的一天，然後搭火車前往策馬特。他們漫步在傳說中的湖畔步道——同一條啟發了世世代代藝術家和夢想家的路徑。在這裡，湖泊像一台巨大的溫暖引擎，儲存陽光，而周圍的山峰則阻擋了北方的寒冷。這種脆弱的平衡為蒙特勒帶來了多20%的日照，棕櫚樹、木蘭和無花果在海拔400公尺處茁壯生長。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Lake Geneva: Western Europe&#39;s Largest Alpine Lake</span>
+        <span class="acc-label">2. Part 2</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p2">
-        <div class="para-en">Before the travelers stretches Lake Geneva — 582 square kilometers of shifting light and mist. It&#39;s Western Europe&#39;s largest alpine lake, and it&#39;s so large it creates its own small tides and weather. The team explores Montreux&#39;s 7-kilometer lakeside promenade, one of Europe&#39;s most scenic, lined with historic mansions, luxury hotels, and gardens facing the calm expanse of the lake. The microclimate here allows subtropical plants to flourish at an altitude where they normally wouldn&#39;t survive.</div>
+        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">e water.
+What pulled Freddy here?
+The same thing pulling everyone else
+here. Peace. In Montreus, he wasn&#39;t
+Freddy the icon.
+He was just another guy grabbing coffee
+and wandering the prominade.
+Locals didn&#39;t swarm him. They let him
+breathe.
+That quiet freedom meant everything.
+
+In 1991,
+while already fading, he recorded his
+last songs here.
+A winter&#39;s tale was his goodbye.
+Written while staring at this same lake.
+He sings about the blue sky, the
+mountains, the stillness.
+He knew he wouldn&#39;t see many more
+winters. Yet somehow the song feels full
+of life.
+Everything is in French. The French
+food. We went from beer and sausages to
+wine and steaks.
+And everybody speaks French now, not
+German. It really feels like you&#39;re in a
+different country. But it&#39;s the same
+country.
+&gt;&gt; Yeah. Well, the climate&#39;s so different.
+And then Yeah. Everything changed.
+In Montreus, life gathers around the
+lake. The hillside city descends daily
+to restaurants, playgrounds, and bike
+paths. Well, it looks like you can take
+a ride on the lake.
+It&#39;s a cute boat.
+Those boats you see aren&#39;t just pleasure
+craft. Some are commuters. People
+actually take boats to work here,
+crossing between Switzerland and France,
+like others might take a bus.
+And we can tell we&#39;re now in the French
+part of Switzerland with French food and
+a nice glass of wine.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">旅客面前的是日內瓦湖——582平方公里的光影與薄霧變幻。這是西歐最大的高山湖泊，它大到能產生自己的小幅潮汐和天氣。團隊探索了蒙特勒7公里長的湖畔步道——歐洲最美麗的步道之一，沿途是歷史悠久的豪宅、豪華酒店和面向寧靜湖面的花園。這裡的微氣候讓亞熱帶植物得以在通常無法存活的緯度茁壯成長。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Freddie Mercury&#39;s Beloved Escape</span>
+        <span class="acc-label">3. Part 3</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p3">
-        <div class="para-en">Freddie Mercury still stands here in bronze, fist raised toward the Alps. Montreux loved him back. Queen recorded seven albums here, and Freddie claimed this lakeside town as home, watching sunsets from his apartment above the water. What pulled Freddie here? The same thing pulling everyone else — peace. In Montreux, he wasn&#39;t Freddie the icon. He was just another guy grabbing coffee and wandering the promenade. Locals didn&#39;t swarm him. They let him breathe. That quiet freedom meant everything.</div>
+        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">&#39;re now in the French
+part of Switzerland with French food and
+a nice glass of wine. Things are really
+different here.
+Watching that sunset over Lake Geneva,
+one of Europe&#39;s great alpine lakes left
+me speechless.
+Our time here was short, just a stop on
+our rail journey through Switzerland,
+but it&#39;s unforgettable.
+We barely scratched the surface.
+Montreus has so much more to uncover.
+Good night, everyone. Tomorrow is
+another day and we&#39;re going to have
+another incredible train ride to Zerat
+and we&#39;re going to be taking a gondola
+ride up into the high mountains. Stay
+tuned for that one.
+We&#39;re leaving the Swiss Riviera behind
+and rolling into the Rome Valley,
+Switzerland&#39;s fruit basket and wine
+seller.
+This place gets 300 days of sun a year.
+Out the window, vineyards, corn fields,
+and small factories blur past the rhythm
+of everyday Switzerland. The part most
+travelers never notice.
+&gt;&gt; It&#39;s beyond me why Switzerland is so
+prosperous.
+There is no reason.
+You have
+French people, Italians, Germans
+speaking different languages.
+And how come the Italians don&#39;t want to
+be part of Italy? The French don&#39;t want
+to be part of France, the Germans don&#39;t
+be uh France part of Germany,
+how come there are no civil wars, civil
+unrest, divisions?
+Everybody is living together peacefully,
+prosperous.
+does not make no sense.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">佛萊迪·墨裘瑞的銅像仍然矗立在這裡，拳頭高舉面向阿爾卑斯山。蒙特勒也同樣愛戴他。皇后樂團在這裡錄製了七張專輯，佛萊迪將這個湖畔小鎮視為家，在水上的公寓欣賞日落。是什麼吸引了佛萊迪來到這裡？和吸引所有人的原因一樣——平靜。在蒙特勒，他不是佛萊迪巨星。他只是一個喝咖啡、在步道上漫步的普通人。當地人不會蜂擁而上。他們讓他呼吸。那份寧靜的自由彌足珍貴。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. The Panoramic Cogwheel Train to Zermatt</span>
+        <span class="acc-label">4. Part 4</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p4">
-        <div class="para-en">After Montreux, the team boards a panoramic cogwheel train heading to Zermatt. The train climbs through breathtaking alpine scenery, passing vineyards, forests, and mountain villages. Cogwheel technology allows the train to tackle steep grades that normal trains cannot handle. As the train ascends, the landscape transforms from Mediterranean lakeside vegetation to alpine forest and eventually to the rocky, snow-capped peaks that define Switzerland&#39;s iconic mountain scenery.</div>
+        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">?
+Everybody is living together peacefully,
+prosperous.
+does not make no sense. You know,
+everywhere around the world, I mean,
+like even people speaking with a slight
+different difference between the two
+languages, they&#39;re fighting each other.
+Like right now in Russia and Ukraine and
+like right here, there&#39;s no natural
+resources.
+There&#39;s no poetry. Even the countryside
+is looks like landscaped. You know, the
+the fields, the hills, they look like
+golf courses. Everything is beautiful.
+It&#39;s clean, organized.
+The rest of the world we can learn from
+Switzerland.
+And really, this is my own impression,
+you know. I don&#39;t know much about it. I
+don&#39;t live in Switzerland.
+Maybe
+it looks wonderful
+and actually it&#39;s not. As far as I can
+see, people are happy.
+They live great together. They respect
+the government. There is extreme law and
+order. I mean like you don&#39;t see
+graffiti, you don&#39;t see garbage.
+Everything is running like a Swiss
+watch. And I never knew that a country
+of 8 1/2 million
+have a can have a such a great rail
+system, you know, like the the trains
+run every half an hour. You can connect
+pretty much to any part of Switzerland
+and like riding on a train, looking on
+the roads, you don&#39;t see cars because
+actually you you don</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">離開蒙特勒後，團隊登上前往策馬特的全景齒軌火車。火車穿過令人屏息的阿爾卑斯風景，經過葡萄園、森林和山村。齒軌技術使火車能夠應對普通火車無法處理的陡峭坡度。隨著火車攀升，景觀從地中海式的湖畔植被轉變為高山森林，最終到達構成瑞士標誌性山景的岩石和積雪山峰。</div>
       </div>
     </div>
     <div class="accordion" data-group="reading">
       <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. An 8-Day Panoramic Train Journey</span>
+        <span class="acc-label">5. Part 5</span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="reading-p5">
-        <div class="para-en">This journey is part of an 8-day adventure crossing Switzerland by panoramic trains, stopping in breathtaking towns and alpine valleys along the way. From the palm-fringed shores of Lake Geneva to the car-free streets of Zermatt, each segment offers a different chapter of Switzerland&#39;s diverse landscape. The contrast between the mild, almost Mediterranean climate of Montreux and the crisp alpine air of Zermatt showcases Switzerland&#39;s incredible geographical diversity within a single journey.</div>
+        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
+        <div class="para-en">&#39;t need to be
+driving from from place to place because
+the trains are so efficient and not only
+the trains once you get on from the
+train station, you have the buses, the
+everything is connected, everything is
+organized, everything is perfect
+At Visp, we transferred to the
+Matterhorn Godard train, starting the
+steep final leg towards Zerat,
+a true feat of Swiss railway
+engineering.
+&gt;&gt; So, you can see the cog the cog wheel in
+the middle of the track and it grips on
+that so it can pull itself up the hill.
+In the next hour, we rise a thousand
+meters through 15 tunnels and 30
+bridges, defying gravity across 35
+rugged kilometers.
+Our climbing straight up.
+As the valley narrows, steep cliffs rise
+on both sides, restricting sunlight so
+severely that some villages only get 2
+hours in the winter.
+
+We&#39;ve entered Switzerland&#39;s high alpine
+zone where long winters dominate the
+year and human life adapts carefully to
+extreme cold and limited daylight.
+
+Don&#39;t miss our next video. We&#39;re off to
+Zerat, Switzerland&#39;s ski capital.
+We&#39;ll ride cable cars to the top of the
+world. Stare down the real Matterhorn.
+Come along as we travel aboard the
+Glacier Express across Switzerland to
+St. Morates, one of Europe&#39;s most scenic
+and iconic train routes.</div>
         <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
         <div class="para-zh">這段旅程是為期八天、以全景火車穿越瑞士的冒險之旅的一部分，沿途在令人屏息的小鎮和阿爾卑斯山谷停留。從棕櫚樹環繞的日內瓦湖岸到無車的策馬特街道，每一段都展現了瑞士多樣景觀的不同篇章。蒙特勒溫和近乎地中海的氣候與策馬特清新的高山空氣之間的對比，展示了瑞士在一次旅程中驚人的地理多樣性。</div>
       </div>
@@ -160,89 +369,89 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c1')">
-        <span class="acc-label">1. fabled promenade</span>
+        <span class="acc-label">1. fabled promenade <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo1')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c1">
         <div class="collo-meaning">傳說中的步道／濱海大道</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"They wander its fabled promenade that stirred artists and dreamers for generations."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"They wander its fabled promenade that stirred artists and dreamers for generations." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex1')">🔊</span></div>
         <div class="collo-practice">The ______ (傳說中的步道) of Nice is one of the most famous in Europe.<br><span class="collo-answer" id="ca1">fabled promenade</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c2')">
-        <span class="acc-label">2. stir artists and dreamers</span>
+        <span class="acc-label">2. stir artists and dreamers <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo2')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c2">
         <div class="collo-meaning">啟發藝術家和夢想家</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The same path that stirred artists and dreamers for generations."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The same path that stirred artists and dreamers for generations." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex2')">🔊</span></div>
         <div class="collo-practice">The beautiful landscape has ______ (啟發了藝術家) for centuries.<br><span class="collo-answer" id="ca2">stirred artists</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c3')">
-        <span class="acc-label">3. create its own weather</span>
+        <span class="acc-label">3. create its own weather <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo3')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c3">
         <div class="collo-meaning">製造自己的天氣（指大型湖泊的微氣候效應）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Lake Geneva is so large it creates its own small tides and weather."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Lake Geneva is so large it creates its own small tides and weather." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex3')">🔊</span></div>
         <div class="collo-practice">The Great Lakes are so massive they ______ (製造自己的天氣).<br><span class="collo-answer" id="ca3">create their own weather</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c4')">
-        <span class="acc-label">4. a vast engine of warmth</span>
+        <span class="acc-label">4. a vast engine of warmth <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo4')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c4">
         <div class="collo-meaning">一個巨大的溫暖引擎</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The lake acts like a vast engine of warmth, storing sunlight."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The lake acts like a vast engine of warmth, storing sunlight." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex4')">🔊</span></div>
         <div class="collo-practice">During winter, the ocean acts as ______ (一個巨大的溫暖引擎) for coastal towns.<br><span class="collo-answer" id="ca4">a vast engine of warmth</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c5')">
-        <span class="acc-label">5. hold back the cold</span>
+        <span class="acc-label">5. hold back the cold <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo5')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c5">
         <div class="collo-meaning">抵擋寒冷</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"The surrounding peaks hold back the northern cold."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"The surrounding peaks hold back the northern cold." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex5')">🔊</span></div>
         <div class="collo-practice">The mountain range helps ______ (抵擋寒冷) from the north.<br><span class="collo-answer" id="ca5">hold back the cold</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c6')">
-        <span class="acc-label">6. defy altitude</span>
+        <span class="acc-label">6. defy altitude <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo6')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c6">
         <div class="collo-meaning">挑戰海拔極限（在海拔高處生存）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Palms, magnolias, and figs defy altitude and thrive at 400 meters."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Palms, magnolias, and figs defy altitude and thrive at 400 meters." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex6')">🔊</span></div>
         <div class="collo-practice">These alpine flowers ______ (挑戰海拔極限) and bloom above the treeline.<br><span class="collo-answer" id="ca6">defy altitude</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c7')">
-        <span class="acc-label">7. let someone breathe</span>
+        <span class="acc-label">7. let someone breathe <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo7')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c7">
         <div class="collo-meaning">讓某人喘口氣（不打擾，給予空間）</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"Locals didn&#39;t swarm him. They let him breathe."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"Locals didn&#39;t swarm him. They let him breathe." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex7')">🔊</span></div>
         <div class="collo-practice">After the scandal, the media finally started to ______ (放過他，讓他喘口氣).<br><span class="collo-answer" id="ca7">let him breathe</span></div>
       </div>
     </div>
     <div class="accordion" data-group="collo">
       <div class="acc-header" onclick="toggleAccordion(this,'collo','c8')">
-        <span class="acc-label">8. mean everything</span>
+        <span class="acc-label">8. mean everything <span class="collo-play" onclick="event.stopPropagation();playAudio('WTUkFRamohk','collo8')">🔊</span></span>
         <span class="acc-icon">▾</span>
       </div>
       <div class="acc-body" id="collo-c8">
         <div class="collo-meaning">意義重大；代表一切</div>
-        <div class="collo-example"><span class="label">文中例句</span><br>"That quiet freedom meant everything to him."</div>
+        <div class="collo-example"><span class="label">文中例句</span><br>"That quiet freedom meant everything to him." <span class="collo-play-sm" onclick="playAudio('WTUkFRamohk','ex8')">🔊</span></div>
         <div class="collo-practice">Her support during the difficult times ______ (意義重大).<br><span class="collo-answer" id="ca8">meant everything</span></div>
       </div>
     </div>
@@ -351,6 +560,7 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
   </div>
 </div>
 <script>
+var colloAudio=null;function playAudio(vid,name){if(colloAudio){colloAudio.pause();colloAudio.currentTime=0}colloAudio=new Audio('../audio/'+vid+'/'+name+'.mp3');colloAudio.play();colloAudio.onended=function(){colloAudio=null}}
 function toggleAccordion(el,group,id){var body=document.getElementById(group+'-'+id);var isOpen=body.classList.contains('open');var allBodies=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-body');var allHeaders=document.querySelectorAll('.accordion[data-group="'+group+'"] .acc-header');for(var i=0;i<allBodies.length;i++){allBodies[i].classList.remove('open');var audios=allBodies[i].querySelectorAll('audio');for(var a=0;a<audios.length;a++){if(!audios[a].paused){audios[a].pause();audios[a].currentTime=0;}}}for(var i=0;i<allHeaders.length;i++){allHeaders[i].classList.remove('open');}if(!isOpen){body.classList.add('open');el.classList.add('open');}}
 function toggleZh(btn){var zh=btn.nextElementSibling;if(zh.style.display==='block'){zh.style.display='none';btn.innerHTML='📖 \u663e\u793a\u4e2d\u6587\u7ffb\u8bd1';}else{zh.style.display='block';btn.innerHTML='📕 \u9690\u85cf\u4e2d\u6587\u7ffb\u8bd1';}}
 var QUIZ = [{"q": "What unique climate feature does Montreux have?", "choices": ["It is the coldest place in Switzerland", "It has 20% more sun, allowing subtropical plants to grow at 400 meters", "It rains 300 days a year", "It has no seasons"], "answer": 1, "explain": "The video says: 'That fragile balance gives Montreux 20% more sun where palms, magnolias, and figs defy altitude and thrive at 400 meters.'"},{"q": "How large is Lake Geneva?", "choices": ["282 square kilometers", "582 square kilometers", "882 square kilometers", "1,082 square kilometers"], "answer": 1, "explain": "The video states: 'Before us stretches Lake Geneva, 582 square kilometers of shifting light and mist.'"},{"q": "Why did Freddie Mercury love Montreux?", "choices": ["It had the best recording studios in Europe", "It offered peace and locals let him be a normal person", "It was close to his family home", "It had the best nightlife in Switzerland"], "answer": 1, "explain": "The video explains: 'What pulled Freddie here? Peace. In Montreux, he wasn't Freddie the icon. He was just another guy... Locals didn't swarm him. They let him breathe.'"},{"q": "How many albums did Queen record in Montreux?", "choices": ["Three", "Five", "Seven", "Ten"], "answer": 2, "explain": "The video states: 'Queen recorded seven albums here, and Freddie claimed this lakeside town is home.'"},{"q": "What is the purpose of the cogwheel mechanism on the train to Zermatt?", "choices": ["To increase the train's speed", "To allow the train to climb steep grades that normal trains cannot handle", "To reduce noise pollution", "To provide power for the panoramic windows"], "answer": 1, "explain": "Cogwheel (rack railway) technology uses a toothed rack rail to provide traction on steep inclines that would be too steep for standard adhesion-based railways."}];
