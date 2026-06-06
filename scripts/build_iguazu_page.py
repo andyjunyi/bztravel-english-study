@@ -30,40 +30,85 @@ def article_html():
     </div>''')
     return "\n".join(items)
 
+# ===== Vocabulary =====
+vocab = [
+    ("silence", "/ˈsaɪləns/", "動", "使沉默；使安靜"),
+    ("speechless", "/ˈspitʃləs/", "形", "說不出話的"),
+    ("border", "/ˈbɔrdɚ/", "名", "邊界"),
+    ("panoramic", "/ˌpænəˈræmɪk/", "形", "全景的"),
+    ("gradual", "/ˈgrædʒuəl/", "形", "漸進的"),
+    ("reveal", "/rɪˈvil/", "動", "展現；揭露"),
+    ("sheer", "/ʃɪr/", "形", "完全的；陡峭的"),
+    ("scattered", "/ˈskætɚd/", "形", "散布的"),
+    ("prepare", "/prɪˈpɛr/", "動", "準備"),
+    ("radical", "/ˈrædɪkəl/", "形", "激進的；徹底的"),
+    ("elevated", "/ˈɛləˌvetɪd/", "形", "高架的"),
+    ("affordable", "/əˈfɔrdəbəl/", "形", "負擔得起的"),
+    ("converge", "/kənˈvɝdʒ/", "動", "匯聚"),
+    ("plunge", "/plʌndʒ/", "動", "墜落"),
+    ("overwhelming", "/ˌovɚˈwɛlmɪŋ/", "形", "壓倒性的"),
+    ("terrifying", "/ˈtɛrəˌfaɪɪŋ/", "形", "令人恐懼的"),
+    ("deafening", "/ˈdɛfənɪŋ/", "形", "震耳欲聾的"),
+    ("extraordinary", "/ɪkˈstrɔrdəˌnɛri/", "形", "非凡的；卓越的"),
+    ("thrilling", "/ˈθrɪlɪŋ/", "形", "令人興奮的"),
+    ("breathtaking", "/ˈbrɛθˌtekɪŋ/", "形", "令人屏息的"),
+]
+
+def vocab_html():
+    items = []
+    for i, (word, kk, pos, meaning) in enumerate(vocab):
+        idx = i + 1
+        items.append(f'''    <div class="vocab-item">
+      <span class="vocab-num">{idx}</span>
+      <span class="vocab-word">{word}</span>
+      <span class="vocab-kk">{kk}</span>
+      <span class="vocab-pos">（{pos}）</span>
+      <span class="vocab-mean">{meaning}</span>
+    </div>''')
+    return "\n".join(items)
+
 # ===== Collocations HTML =====
 collos = [
     {"phrase": "leave someone speechless", "audio": "collo1",
      "meaning": "讓某人說不出話來（震驚到無法言語）",
      "example": '"There are places in this world that silence you the moment you arrive."',
-     "ex_audio": "ex1", "practice": "The view from the mountaintop ______ (讓我們說不出話).", "answer": "left us speechless"},
+     "example_zh": "世界上有些地方，你一到達就會被震懾得說不出話來。",
+     "ex_audio": "ex1"},
     {"phrase": "sheer overwhelming scale", "audio": "collo2",
      "meaning": "壓倒性的規模；極其龐大的尺度",
      "example": '"The biggest surprise was the sheer overwhelming scale of it all."',
-     "ex_audio": "ex2", "practice": "Visitors are shocked by the ______ (龐大規模) of the Grand Canyon.", "answer": "sheer scale"},
+     "example_zh": "最大的驚喜是那壓倒性的規模。",
+     "ex_audio": "ex2"},
     {"phrase": "as far as the eye can see", "audio": "collo3",
      "meaning": "一望無際；視線所及之處",
      "example": '"275 individual falls scattered across the jungle as far as the eye could see."',
-     "ex_audio": "ex3", "practice": "The desert stretched out ______ (一望無際).", "answer": "as far as the eye could see"},
+     "example_zh": "275條瀑布散布在叢林中，一望無際。",
+     "ex_audio": "ex3"},
     {"phrase": "pressing in from every side", "audio": "collo4",
      "meaning": "從四面八方逼近／湧來",
      "example": '"The jungle pressing in, water moving fast beneath your feet."',
-     "ex_audio": "ex4", "practice": "The crowd was ______ (從四面八方湧來).", "answer": "pressing in from every side"},
+     "example_zh": "叢林從兩側逼近，腳下水流湍急。",
+     "ex_audio": "ex4"},
     {"phrase": "borders on frightening", "audio": "collo5",
      "meaning": "近乎令人害怕",
      "example": '"Raw, deafening, alive in a way that borders on frightening."',
-     "ex_audio": "ex5", "practice": "His obsession with perfection ______ (近乎病態).", "answer": "borders on unhealthy"},
+     "example_zh": "原始、震耳欲聾、充滿生命力，近乎令人害怕。",
+     "ex_audio": "ex5"},
     {"phrase": "beyond description", "audio": "collo6",
      "meaning": "難以形容",
      "example": '"Some things exist beyond description. This is one of them."',
-     "ex_audio": "ex6", "practice": "The beauty of the sunset was ______ (難以形容).", "answer": "beyond description"},
+     "example_zh": "有些事情存在於言語之外。這就是其中之一。",
+     "ex_audio": "ex6"},
     {"phrase": "hammer against", "audio": "collo7",
      "meaning": "猛烈衝擊；猛力撞擊",
      "example": '"The boat hammers against the current at full speed."',
-     "ex_audio": "ex7", "practice": "Waves ______ (猛烈拍打) the rocky shore during the storm.", "answer": "hammered against"},
+     "example_zh": "船隻以全速逆流衝擊。",
+     "ex_audio": "ex7"},
     {"phrase": "hit like a wall", "audio": "collo8",
      "meaning": "像牆一樣迎面襲來",
      "example": '"Noise, white water, cold, hitting like a wall."',
-     "ex_audio": "ex8", "practice": "When he walked outside, the heat ______ (像牆一樣襲來).", "answer": "hit him like a wall"},
+     "example_zh": "噪音、白水、和像牆一樣撞擊過來的冰冷。",
+     "ex_audio": "ex8"},
 ]
 
 def collo_html():
@@ -77,8 +122,11 @@ def collo_html():
       </div>
       <div class="acc-body" id="collo-c{idx}">
         <div class="collo-meaning">{c['meaning']}</div>
-        <div class="collo-example"><span class="label">📌 文中例句</span><br>{c['example']} <span class="collo-play-sm" onclick="playCollo('{c['ex_audio']}')">🔊</span></div>
-        <div class="collo-practice">✏️ {c['practice']}<br><span class="collo-answer" id="ca{idx}">✅ {c['answer']}</span></div>
+        <div class="collo-example">
+          <span class="label">📌 文中例句</span><br>
+          <div class="collo-en">{c['example']} <span class="collo-play-sm" onclick="playCollo('{c['ex_audio']}')">🔊</span></div>
+          <div class="collo-zh">{c['example_zh']}</div>
+        </div>
       </div>
     </div>''')
     return "\n".join(items)
@@ -95,16 +143,17 @@ def grammar_html():
         <div class="grammar-examples">
           <div class="ge-item">
             <div class="ge-from">▸ "Having seen Niagara and stood at the misty edge of Victoria Falls, they arrived expecting something roughly the same."</div>
+            <div class="ge-zh">去過尼加拉瀑布、站過維多利亞瀑布霧氣瀰漫的邊緣之後，他們抵達時心裡預期的大概差不多就是那樣。</div>
             <div class="ge-analysis">→ 'Having seen...' = After they had seen...（完成式分詞構句，強調先發生）<br>→ 'expecting...' = and they expected...（簡單分詞構句，表伴隨狀態）</div>
             <div class="ge-pattern">Having + p.p. + ..., S + V ... → 完成某事之後，主詞做...</div>
           </div>
           <div class="ge-item">
             <div class="ge-from">▸ "The boat hammers against the current, throwing you over rapids."</div>
+            <div class="ge-zh">船隻以全速逆流衝擊，將你拋過急流。</div>
             <div class="ge-analysis">→ 'throwing you over rapids' = and it throws you over rapids<br>→ 表伴隨結果：主動作造成的副效果</div>
             <div class="ge-pattern">S + V + O, V-ing + O → 主詞做某事，因而產生...</div>
           </div>
         </div>
-        <div class="grammar-practice">✏️ ______ (走進房間), she noticed something strange on the table.<br><span class="grammar-answer" id="ga1">✅ Walking into the room / Having walked into the room</span></div>
       </div>
     </div>
 
@@ -118,16 +167,17 @@ def grammar_html():
         <div class="grammar-examples">
           <div class="ge-item">
             <div class="ge-from">▸ "Nothing — not a photograph, not a travel blog, not a single video — prepares you for what Iguazu actually is."</div>
+            <div class="ge-zh">沒有什麼——不是照片、不是旅遊部落格、不是任何影片——能讓你準備好面對伊瓜蘇的真正面貌。</div>
             <div class="ge-analysis">→ 用三個 not 排比強調「沒有任何方式能讓你準備好」<br>→ 比直接說 'No one can prepare you' 更有感染力</div>
             <div class="ge-pattern">Nothing / No + N + ... 強調「沒有任何...能...」</div>
           </div>
           <div class="ge-item">
             <div class="ge-from">▸ "None of them come close."</div>
+            <div class="ge-zh">沒有任何一個能相提並論。</div>
             <div class="ge-analysis">→ 'none... come close' = 沒有任何一個能相提並論<br>→ 口語中極高頻的比較否定用法</div>
             <div class="ge-pattern">None come close = 無人能及</div>
           </div>
         </div>
-        <div class="grammar-practice">✏️ ______ (沒有什麼比賽) is more exciting than the World Cup final.<br><span class="grammar-answer" id="ga2">✅ Nothing / No competition</span></div>
       </div>
     </div>
 
@@ -141,11 +191,11 @@ def grammar_html():
         <div class="grammar-examples">
           <div class="ge-item">
             <div class="ge-from">▸ "At Niagara, you watch from across a river. At Victoria, from across a gorge. At Iguazu, there is no across."</div>
+            <div class="ge-zh">在尼加拉，你隔著河流觀看。在維多利亞，你隔著峽谷觀看。在伊瓜蘇，沒有所謂的「對面」。</div>
             <div class="ge-analysis">→ 三個 'At...' 開頭，前兩個描述其他瀑布的相似點<br>→ 第三個反轉（'there is no across'），達到強烈對比效果</div>
             <div class="ge-pattern">At [A]..., at [B]..., at [C]... (反轉) — 排比對比修辭</div>
           </div>
         </div>
-        <div class="grammar-practice">✏️ In spring, the flowers bloom. In summer, ______ (太陽炙熱). In autumn, the leaves fall.<br><span class="grammar-answer" id="ga3">✅ the sun burns hot</span></div>
       </div>
     </div>'''
 
@@ -159,8 +209,8 @@ def patterns_html():
       <div class="acc-body" id="pattern-pt1">
         <div class="pattern-meaning">世界上有些地方...（強烈推薦的開場句）</div>
         <div class="pattern-example">📌 "There are places in this world that silence you the moment you arrive."</div>
+        <div class="pattern-example-zh">世界上有些地方，你一到達就會被震懾得說不出話來。</div>
         <div class="pattern-template">📐 There are [places/things/people] in this world that [描述] you the moment you [動詞].</div>
-        <div class="pattern-practice">✏️ There are ______ (世界上有些城市) that make you feel at home the moment you step off the plane.<br><span class="pattern-answer" id="pa1">✅ cities in this world</span></div>
       </div>
     </div>
 
@@ -172,8 +222,8 @@ def patterns_html():
       <div class="acc-body" id="pattern-pt2">
         <div class="pattern-meaning">無法用言語形容（表達極致感受）</div>
         <div class="pattern-example">📌 "We wish we had better words. We do not. Some things exist beyond description."</div>
+        <div class="pattern-example-zh">但願我們有更好的詞彙。我們沒有。有些事情存在於言語之外。</div>
         <div class="pattern-template">📐 No words are adequate for [名詞]. / Some things exist beyond [名詞].</div>
-        <div class="pattern-practice">✏️ No words are adequate for ______ (她在婚禮上看起來有多美).<br><span class="pattern-answer" id="pa2">✅ how beautiful she looked at the wedding</span></div>
       </div>
     </div>
 
@@ -185,8 +235,8 @@ def patterns_html():
       <div class="acc-body" id="pattern-pt3">
         <div class="pattern-meaning">如果不在你的...清單上，它應該要在（強烈推薦）</div>
         <div class="pattern-example">📌 "If it's not on your bucket list, it needs to be."</div>
+        <div class="pattern-example-zh">如果它還不在你的願望清單上，它應該要在。</div>
         <div class="pattern-template">📐 If [事物] is not on your [list/schedule/radar], it needs to be.</div>
-        <div class="pattern-practice">✏️ If this restaurant ______ (不在你的名單上), it needs to be.<br><span class="pattern-answer" id="pa3">✅ is not on your list</span></div>
       </div>
     </div>
 
@@ -198,8 +248,8 @@ def patterns_html():
       <div class="acc-body" id="pattern-pt4">
         <div class="pattern-meaning">遙遙領先，後無來者（最高級強調句）</div>
         <div class="pattern-example">📌 "The one that sits above all others with nothing close behind."</div>
+        <div class="pattern-example-zh">穩坐第一，後無來者。</div>
         <div class="pattern-template">📐 [事物] sits above all others with nothing close behind.</div>
-        <div class="pattern-practice">✏️ In terms of service, this company ______ (遙遙領先).<br><span class="pattern-answer" id="pa4">✅ sits above all others with nothing close behind</span></div>
       </div>
     </div>
 
@@ -211,8 +261,8 @@ def patterns_html():
       <div class="acc-body" id="pattern-pt5">
         <div class="pattern-meaning">否定→轉折強調的修辭手法</div>
         <div class="pattern-example">📌 "You do not admire it. You stand inside it, soaked through, and you let it happen to you."</div>
+        <div class="pattern-example-zh">你不是在欣賞它——你站在它裡面，全身濕透，讓它衝擊你。</div>
         <div class="pattern-template">📐 You do not [消極動詞] it — you [積極動詞] it, and you let it [動詞] you.</div>
-        <div class="pattern-practice">✏️ You don't just watch the aurora — ______ (你感受它，讓它包圍你).<br><span class="pattern-answer" id="pa5">✅ you experience it, and you let it surround you</span></div>
       </div>
     </div>'''
 
@@ -300,11 +350,22 @@ body{{
   display:none;font-size:14px;color:#64748b;line-height:1.8;
   padding:10px 12px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6;
 }}
+.vocab-item{{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;
+  padding:8px 0;border-bottom:1px solid #e2e8f0;
+}}
+.vocab-item:last-child{{border-bottom:none}}
+.vocab-num{{font-size:11px;color:#94a3b8;font-weight:600;width:20px;flex-shrink:0}}
+.vocab-word{{font-size:15px;font-weight:700;color:#1e293b}}
+.vocab-kk{{font-size:13px;color:#be123c;font-family:'Arial Unicode MS','Segoe UI',sans-serif}}
+.vocab-pos{{font-size:12px;color:#64748b;background:#f1f5f9;padding:1px 6px;border-radius:4px}}
+.vocab-mean{{font-size:14px;color:#334155}}
 .collo-phrase{{font-size:15px;font-weight:700;color:#1e40af}}
 .collo-meaning{{font-size:13px;color:#64748b;margin-bottom:8px}}
 .collo-example{{font-size:13px;color:#334155;background:#f8fafc;padding:8px 10px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}}
 .collo-example .label{{font-weight:600;color:#10b981;font-size:11px}}
-.collo-practice{{font-size:13px;color:#92400e;background:#fffbeb;padding:8px 10px;border-radius:6px;border-left:3px solid #f59e0b;margin-bottom:4px}}
+.collo-en{{margin-bottom:4px;line-height:1.6}}
+.collo-zh{{color:#059669;font-size:12.5px;line-height:1.6;padding:4px 8px;background:#ecfdf5;border-radius:4px;display:inline-block}}
 .collo-play,.collo-play-sm{{
   display:inline-flex;align-items:center;justify-content:center;
   cursor:pointer;transition:all .2s;border-radius:50%;
@@ -314,28 +375,20 @@ body{{
 .collo-play:active{{background:#1e40af;transform:scale(.9)}}
 .collo-play-sm{{width:24px;height:24px;font-size:12px;background:rgba(16,185,129,.1);vertical-align:middle;margin-left:3px}}
 .collo-play-sm:active{{background:#10b981;transform:scale(.9)}}
-.collo-practice .collo-show-answer{{color:#1e40af;font-weight:700;cursor:pointer;border-bottom:2px dashed #3b82f6}}
-.collo-answer{{display:none;margin-top:4px;color:#059669;font-weight:600;font-size:13px}}
-.collo-answer.show{{display:block}}
 .grammar-point{{font-size:15px;font-weight:700;color:#7c3aed}}
 .grammar-explain{{font-size:13px;color:#64748b;margin-bottom:10px;line-height:1.6}}
 .grammar-examples{{background:#f5f3ff;border-radius:8px;padding:10px 12px;margin-bottom:10px}}
-.ge-item{{margin-bottom:8px}}
+.ge-item{{margin-bottom:12px}}
 .ge-item:last-child{{margin-bottom:0}}
 .ge-from{{font-size:13px;color:#6d28d9;font-style:italic;margin-bottom:2px}}
+.ge-zh{{font-size:12.5px;color:#7c3aed;line-height:1.6;padding:4px 8px;background:#ede9fe;border-radius:4px;margin-bottom:6px;display:inline-block}}
 .ge-analysis{{font-size:12px;color:#475569;line-height:1.5}}
 .ge-analysis br{{display:block;content:'';margin-top:4px}}
 .ge-pattern{{font-size:12px;color:#7c3aed;font-weight:600;margin-top:2px;padding:3px 8px;background:#ede9fe;border-radius:4px;display:inline-block}}
-.grammar-practice{{font-size:13px;color:#92400e;background:#fffbeb;padding:8px 10px;border-radius:6px;border-left:3px solid #f59e0b}}
-.grammar-answer{{display:none;margin-top:4px;color:#059669;font-weight:600}}
-.grammar-answer.show{{display:block}}
-.pattern-formula{{font-size:15px;font-weight:700;color:#0891b2}}
 .pattern-meaning{{font-size:13px;color:#64748b;margin-bottom:6px}}
-.pattern-example{{font-size:13px;color:#334155;background:#ecfeff;padding:8px 10px;border-radius:6px;margin-bottom:6px;border-left:3px solid #06b6d4}}
-.pattern-template{{font-size:12px;color:#0891b2;font-weight:600;background:#ecfeff;padding:4px 8px;border-radius:4px;display:inline-block;margin-bottom:6px}}
-.pattern-practice{{font-size:13px;color:#92400e;background:#fffbeb;padding:8px 10px;border-radius:6px;border-left:3px solid #f59e0b}}
-.pattern-answer{{display:none;margin-top:4px;color:#059669;font-weight:600}}
-.pattern-answer.show{{display:block}}
+.pattern-example{{font-size:13px;color:#334155;background:#ecfeff;padding:8px 10px;border-radius:6px;margin-bottom:4px;border-left:3px solid #06b6d4;line-height:1.6}}
+.pattern-example-zh{{font-size:12.5px;color:#0e7490;background:#cffafe;padding:4px 10px;border-radius:4px;margin-bottom:6px;display:inline-block;line-height:1.6}}
+.pattern-template{{font-size:12px;color:#0891b2;font-weight:600;background:#ecfeff;padding:4px 8px;border-radius:4px;display:inline-block}}
 .quiz-question{{border:1px solid #e2e8f0;border-radius:12px;padding:14px;margin-bottom:12px;transition:all .3s}}
 .quiz-q{{font-size:15px;font-weight:600;margin-bottom:8px;line-height:1.5}}
 .quiz-choices{{display:grid;gap:6px}}
@@ -381,6 +434,7 @@ body{{
 
   <div class="section-nav">
     <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-vocab">📝 字彙</a>
     <a href="#section-collocations">🔗 搭配詞</a>
     <a href="#section-grammar">📐 文法</a>
     <a href="#section-patterns">🧩 句型</a>
@@ -393,6 +447,14 @@ body{{
     <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
 
 {article_html()}
+  </div>
+
+  <!-- ===== VOCABULARY ===== -->
+  <div id="section-vocab" class="section">
+    <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+    <div class="section-sub">從文章中挑選的核心單字</div>
+
+{vocab_html()}
   </div>
 
   <!-- ===== COLLOCATIONS ===== -->
@@ -534,4 +596,18 @@ with open(outpath, "w", encoding="utf-8") as f:
 
 print(f"✅ HTML page generated: {outpath}")
 print(f"   Size: {len(html):,} chars")
-print(f"   Sections: 10 article + 8 collocations + 3 grammar + 5 patterns + 5 quiz")
+
+# Quick validation
+checks = [
+    ("20 vocab items", html.count('vocab-item') == 20),
+    ("10 reading sections", html.count('data-group="reading"') == 10),
+    ("8 collocation items", html.count('data-group="collo"') == 8),
+    ("3 grammar items", html.count('data-group="grammar"') == 3),
+    ("5 pattern items", html.count('data-group="pattern"') == 5),
+    ("Vocab section in nav", 'section-vocab' in html),
+    ("KK phonetics present", '/ˈsaɪləns/' in html),
+    ("Parts of speech present", '動' in html and '形' in html and '名' in html),
+    ("No practice remains", all(t not in html for t in ['collo-practice','grammar-practice','pattern-practice'])),
+]
+for label, ok in checks:
+    print(f"  {'✅' if ok else '❌'} {label}")
