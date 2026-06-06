@@ -72,6 +72,16 @@ body{
   display:none;font-size:14px;color:#64748b;line-height:1.8;
   padding:10px 12px;background:#f8fafc;border-radius:8px;border-left:3px solid #3b82f6;
 }
+.vocab-item{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;
+  padding:8px 0;border-bottom:1px solid #e2e8f0;
+}
+.vocab-item:last-child{border-bottom:none}
+.vocab-num{font-size:11px;color:#94a3b8;font-weight:600;width:20px;flex-shrink:0}
+.vocab-word{font-size:15px;font-weight:700;color:#1e293b}
+.vocab-kk{font-size:13px;color:#be123c;font-family:'Arial Unicode MS','Segoe UI',sans-serif}
+.vocab-pos{font-size:12px;color:#64748b;background:#f1f5f9;padding:1px 6px;border-radius:4px}
+.vocab-mean{font-size:14px;color:#334155}
 .collo-phrase{font-size:15px;font-weight:700;color:#1e40af}
 .collo-meaning{font-size:13px;color:#64748b;margin-bottom:8px}
 .collo-example{font-size:13px;color:#334155;background:#f8fafc;padding:8px 10px;border-radius:6px;margin-bottom:6px;border-left:3px solid #10b981}
@@ -97,7 +107,6 @@ body{
 .ge-analysis{font-size:12px;color:#475569;line-height:1.5}
 .ge-analysis br{display:block;content:'';margin-top:4px}
 .ge-pattern{font-size:12px;color:#7c3aed;font-weight:600;margin-top:2px;padding:3px 8px;background:#ede9fe;border-radius:4px;display:inline-block}
-.pattern-formula{font-size:15px;font-weight:700;color:#0891b2}
 .pattern-meaning{font-size:13px;color:#64748b;margin-bottom:6px}
 .pattern-example{font-size:13px;color:#334155;background:#ecfeff;padding:8px 10px;border-radius:6px;margin-bottom:4px;border-left:3px solid #06b6d4;line-height:1.6}
 .pattern-example-zh{font-size:12.5px;color:#0e7490;background:#cffafe;padding:4px 10px;border-radius:4px;margin-bottom:6px;display:inline-block;line-height:1.6}
@@ -147,6 +156,7 @@ body{
 
   <div class="section-nav">
     <a href="#section-reading" class="active">📖 閱讀</a>
+    <a href="#section-vocab">📝 字彙</a>
     <a href="#section-collocations">🔗 搭配詞</a>
     <a href="#section-grammar">📐 文法</a>
     <a href="#section-patterns">🧩 句型</a>
@@ -313,6 +323,153 @@ Our next stop is Rio de Janeiro, the jewel of South America. Beaches, mountains,
         <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
         <div class="para-zh">伊瓜蘇瀑布——在我們所見過、所經歷過的一切之中，就是它了。穩坐第一，後無來者。如果它還不在你的願望清單上，它應該要在。你不會後悔的。我們希望你感受到我們站在這裡時所感受到的，哪怕只是一小部分。在留言區告訴我們你的想法——我們很樂意聽聽你的心聲。感謝您的收看。我們的下一個目的地是里約熱內盧，南美洲的寶石。沙灘、山脈、基督像俯瞰著一切。地球上最美麗的城市之一。下一支影片見。</div>
       </div>
+    </div>
+  </div>
+
+  <!-- ===== VOCABULARY ===== -->
+  <div id="section-vocab" class="section">
+    <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+    <div class="section-sub">從文章中挑選的核心單字</div>
+
+    <div class="vocab-item">
+      <span class="vocab-num">1</span>
+      <span class="vocab-word">silence</span>
+      <span class="vocab-kk">/ˈsaɪləns/</span>
+      <span class="vocab-pos">（動）</span>
+      <span class="vocab-mean">使沉默；使安靜</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">2</span>
+      <span class="vocab-word">speechless</span>
+      <span class="vocab-kk">/ˈspitʃləs/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">說不出話的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">3</span>
+      <span class="vocab-word">border</span>
+      <span class="vocab-kk">/ˈbɔrdɚ/</span>
+      <span class="vocab-pos">（名）</span>
+      <span class="vocab-mean">邊界</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">4</span>
+      <span class="vocab-word">panoramic</span>
+      <span class="vocab-kk">/ˌpænəˈræmɪk/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">全景的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">5</span>
+      <span class="vocab-word">gradual</span>
+      <span class="vocab-kk">/ˈgrædʒuəl/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">漸進的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">6</span>
+      <span class="vocab-word">reveal</span>
+      <span class="vocab-kk">/rɪˈvil/</span>
+      <span class="vocab-pos">（動）</span>
+      <span class="vocab-mean">展現；揭露</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">7</span>
+      <span class="vocab-word">sheer</span>
+      <span class="vocab-kk">/ʃɪr/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">完全的；陡峭的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">8</span>
+      <span class="vocab-word">scattered</span>
+      <span class="vocab-kk">/ˈskætɚd/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">散布的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">9</span>
+      <span class="vocab-word">prepare</span>
+      <span class="vocab-kk">/prɪˈpɛr/</span>
+      <span class="vocab-pos">（動）</span>
+      <span class="vocab-mean">準備</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">10</span>
+      <span class="vocab-word">radical</span>
+      <span class="vocab-kk">/ˈrædɪkəl/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">激進的；徹底的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">11</span>
+      <span class="vocab-word">elevated</span>
+      <span class="vocab-kk">/ˈɛləˌvetɪd/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">高架的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">12</span>
+      <span class="vocab-word">affordable</span>
+      <span class="vocab-kk">/əˈfɔrdəbəl/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">負擔得起的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">13</span>
+      <span class="vocab-word">converge</span>
+      <span class="vocab-kk">/kənˈvɝdʒ/</span>
+      <span class="vocab-pos">（動）</span>
+      <span class="vocab-mean">匯聚</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">14</span>
+      <span class="vocab-word">plunge</span>
+      <span class="vocab-kk">/plʌndʒ/</span>
+      <span class="vocab-pos">（動）</span>
+      <span class="vocab-mean">墜落</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">15</span>
+      <span class="vocab-word">overwhelming</span>
+      <span class="vocab-kk">/ˌovɚˈwɛlmɪŋ/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">壓倒性的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">16</span>
+      <span class="vocab-word">terrifying</span>
+      <span class="vocab-kk">/ˈtɛrəˌfaɪɪŋ/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">令人恐懼的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">17</span>
+      <span class="vocab-word">deafening</span>
+      <span class="vocab-kk">/ˈdɛfənɪŋ/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">震耳欲聾的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">18</span>
+      <span class="vocab-word">extraordinary</span>
+      <span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">非凡的；卓越的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">19</span>
+      <span class="vocab-word">thrilling</span>
+      <span class="vocab-kk">/ˈθrɪlɪŋ/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">令人興奮的</span>
+    </div>
+    <div class="vocab-item">
+      <span class="vocab-num">20</span>
+      <span class="vocab-word">breathtaking</span>
+      <span class="vocab-kk">/ˈbrɛθˌtekɪŋ/</span>
+      <span class="vocab-pos">（形）</span>
+      <span class="vocab-mean">令人屏息的</span>
     </div>
   </div>
 
