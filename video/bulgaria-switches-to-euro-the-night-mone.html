@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,247 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">The clock is ticking on a century of
-history. Bulgaria is saying goodbye to
-the lit. It&#39;s financial revolution
-happening right before our eyes. Banks
-are resetting, ATMs are flashing, and an
-entire nation is holding its breath.
-Tonight, the familiar bank notes are
-going to vanish, replaced by a new
-European reality. This isn&#39;t just a
-currency swap.  It&#39;s a new
-identity.
-Join us as we navigate the last meal,
-the street parties,
-and that  nervous rush to the
-ATMs at midnight.
-&gt;&gt; Walk down any street and you&#39;ll see the
-signs. There&#39;s doublepriced eggs with
-lev and euros preparing us for the big
-switch.
-It&#39;s time to empty the piggy banks.
-We&#39;re dumping kilos of history into
-these machines.
-We&#39;re saying farewell to the coins that
-have rattled into our pockets for
-decades.
-&gt;&gt; It&#39;s bittersweet. Not everyone is ready
-to let go.
-&gt;&gt; What do you think? It&#39;s going to be good
-or bad?
-be good for going outside the country.
-&gt;&gt; What do you think about the uh losing
-the Bulgarian money? No.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">一個世紀的歷史正在倒數計時。保加利亞正在告別它的國家貨幣——列弗。一場金融革命正在眾人眼前上演。銀行正在重置，提款機正在閃爍，整個國家屏息以待。在這個歷史性的除夕夜，熟悉的紙鈔即將消失，被新的歐洲現實所取代。這不僅僅是貨幣轉換——這是全新的身份認同。保加利亞成為第21個加入歐元區的國家。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Bulgaria Switches to Euro: The Night Money Changed Forever</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">h losing
-the Bulgarian money? No. No more
-Bulgarian money. Are you excited?
-&gt;&gt; No.
-&gt;&gt; No. Why not?
-&gt;&gt; You like it or no? You don&#39;t like it?
-&gt;&gt; No, I like it.
-&gt;&gt; Why not? Huh?
-&gt;&gt; No money is Bulgarian money.
-&gt;&gt; Oh, okay. You&#39;re nostalgic.
-&gt;&gt; This changes everything for us. So this
-is the Bulgarian money, Bulgarian Lev
-right now and this is the euro
-for the first month of 2026. I think
-this is going to be juggling all of this
-together.
-&gt;&gt; Yep.
-And this is the new and this is old.
-To prepare, we grabbed a bank starter
-kit and it&#39;s our first look at the
-freshly minted euro coins and it
-features  that unique local
-twist.
-&gt;&gt; And 20.
-&gt;&gt; That&#39;s neat. It&#39;s the same rider but on
-a different currency.
-&gt;&gt; 20. And this is 20 right here.
-&gt;&gt; As the 21st nation to join the Euro
-zone, Bulgaria, it gets his own stamp.
-I didn&#39;t know  every country
-customized the back. Look, the Madara
-rider is now immortalized  in the
-Euro gold.
-The backs look very similar. And like
-the cool part about it, look at this
-thing right here.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">走在任何一條街上，你都能看到標示——用列弗和歐元標示的雙重價格雞蛋，為大轉換做好準備。是時候清空撲滿，將成公斤的歷史投入硬幣兌換機了。當地人情緒複雜。有些人說這對出國旅行很好。其他人則感到懷舊，為失去保加利亞貨幣而難過。一位老太太簡單地說：「沒有錢是保加利亞的錢。」這句話捕捉了這場轉變的情感重量。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">d like
-the cool part about it, look at this
-thing right here. This is the €2.
-The €2 on the front is just like any
-other euro from any other country.
-And on the back
-it says Bulgaria
-and
-gives a kind of a local flavor to to the
-currency.
-In January, you can use both currencies,
-but like if you use Bulgarian, the
-change they&#39;re going to give you is
-going to be in Euro.
-We couldn&#39;t let this era end without one
-final feast in true Bulgarian style.
-It&#39;s December 31st. We&#39;re soaking in
-tradition at a local folk restaurant.
-Good food and wine and music to honor
-the closing of this chapter. Well, we&#39;re
-here at our last supper and this is New
-Year&#39;s Eve. Tomorrow is a big deal and
-so it&#39;s going to be the last time we pay
-with Lev. Tomorrow everything&#39;s going to
-go to the euro,
-&gt;&gt; you know. It&#39;s almost like feels
-&gt;&gt; surreal, you know.
-So that&#39;s that&#39;s our last supper, guys.
-So we&#39;re in a Bulgarian folk restaurant.
-They call us Mana.
-So, we&#39;re going to have some good
-Bulgarian food.
-&gt;&gt; We&#39;re going to share a bottle of wine.
-And tomorrow, a new day, a new year, new
-currency.
-And
-&gt;&gt; how is going to change? We&#39;ll find out.
-&gt;&gt; Cheers.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">為了做好準備，團隊拿了一份銀行入門套組，第一次看到了剛鑄造的歐元硬幣。歐元區的每個國家都可以在硬幣的本國面刻上自己的標誌。保加利亞選擇了馬達拉騎士——一位古老的歷史人物——如今永恆地刻在歐元金色中。2歐元硬幣上刻有保加利亞的名字和當地特色。雖然每枚硬幣的正面在歐元區各國都是一樣的，但背面訴說著保加利亞獨一無二的故事。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">o have some good
-Bulgarian food.
-&gt;&gt; We&#39;re going to share a bottle of wine.
-And tomorrow, a new day, a new year, new
-currency.
-And
-&gt;&gt; how is going to change? We&#39;ll find out.
-&gt;&gt; Cheers. Happy new Happy New Year,
-everyone.
-&gt;&gt; Happy New Year, Tessa.
-Uh,
-&gt;&gt; this is a typical Bulgarian dish.
-My grandma used to make stuff like that.
-It&#39;s basically is meat with onions
-and it is delicious.
-It&#39;s pork meat with onions.
-The check arrives one last time, handing
-over the bills. We know
-&gt;&gt; this is the last time I&#39;m going to use
-Bulgarian money to buy dinner.
-I&#39;m looking forward to having the euro,
-but I&#39;m going to miss the left. So, I&#39;m
-not going to I&#39;m not going to miss
-having to change money when I travel
-through Europe.
-So, we&#39;ll see.
-1 hour to midnight,
-the streets of Burgus are packed.
-The energy  is rising as
-thousands are gathering in the square to
-witness history.
-&gt;&gt; The vibe is electric. 
-Live music is blasting. Lights are
-flashing.
-We aren&#39;t just celebrating a new year.
-We&#39;re celebrating a new era.
-The clock is ticking down.
-3 2 1 Happy New Year, Bulgaria.
-Welcome to 2026.
-It&#39;s official.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">12月31日，團隊在一家當地民俗餐廳享用了真正的保加利亞風格的最後盛宴。美食、美酒和音樂致敬著一個章節的結束。帳單最後一次以列弗送達。崔莎反思道：「這是我最後一次用保加利亞錢買晚餐。我很期待使用歐元，但我會懷念列弗的。」不需要在歐洲旅行時換匯，是她歡迎的一個好處。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">celebrating a new year.
-We&#39;re celebrating a new era.
-The clock is ticking down.
-3 2 1 Happy New Year, Bulgaria.
-Welcome to 2026.
-It&#39;s official. We&#39;re now citizens of the
-Euro zone. The transition is complete.
-But does the system work?
-We&#39;re running to the nearest ATM to find
-out.
-So there is a it&#39;s not working. It&#39;s
-past midnight.
-Nope.
-&gt;&gt; So tomorrow
-&gt;&gt; the first one failed.
-But here we are at the second bank.
-The the screen lights up. Here&#39;s the
-moment of truth.
-&gt;&gt; English
-withdraw.
-Euro. Euro. All right. or Oh, yeah.
-Get uh get 300. How is this?
-&gt;&gt; I&#39;m shocked.
-&gt;&gt; Here&#39;s my card.
-&gt;&gt; There it is.
-&gt;&gt; Wow. Look at that. Crisp bural notes
-right out of the wall.
-Bulgarian live is officially history. So
-&gt;&gt; it worked.
-&gt;&gt; From collecting coins to digital
-glitches, we watched a currency die.
-Another reborn. It&#39;s a new dawn for
-Bulgaria.
-Thanks for watching this journey. Don&#39;t
-forget to like and subscribe for more
-adventures. See you in the next one.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">距離午夜還有一小時，布爾加斯的街道人山人海。數千人聚集在廣場上見證歷史。氣氛熱烈——現場音樂、閃爍的燈光，慶祝的不只是新年，而是一個新時代。午夜時分，團隊衝向最近的提款機。第一台機器故障了，但第二台亮了起來。歐元紙鈔嶄新地吐了出來。轉換成功了。從收集硬幣到數位故障，他們目睹了一種貨幣的死亡和另一種貨幣的重生。保加利亞的新黎明已經到來。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: M7UL58ZUwPg | 8:13 | 2,503 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">一個世紀的歷史正在倒數計時。保加利亞正在告別它的國家貨幣——列弗。一場金融革命正在眾人眼前上演。銀行正在重置，提款機正在閃爍，整個國家屏息以待。在這個歷史性的除夕夜，熟悉的紙鈔即將消失，被新的歐洲現實所取代。這不僅僅是貨幣轉換——這是全新的身份認同。保加利亞成為第21個加入歐元區的國家。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: The Last Days of the Lev</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The clock is ticking on a century of history. Bulgaria is saying goodbye to the lev. It's a financial revolution happening right before our eyes. Banks are resetting, ATMs are flashing, and an entire nation is holding its breath. Tonight, the familiar banknotes are going to vanish, replaced by a new European reality. This isn't just a currency swap — it's a new identity. Join us as we navigate the last meal, the street parties, and that nervous rush to the ATMs at midnight.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">走在任何一條街上，你都能看到標示——用列弗和歐元標示的雙重價格雞蛋，為大轉換做好準備。是時候清空撲滿，將成公斤的歷史投入硬幣兌換機了。當地人情緒複雜。有些人說這對出國旅行很好。其他人則感到懷舊，為失去保加利亞貨幣而難過。一位老太太簡單地說：「沒有錢是保加利亞的錢。」這句話捕捉了這場轉變的情感重量。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Public Reactions</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Walk down any street and you'll see the signs. Double-priced goods with lev and euros, preparing us for the big switch. It's time to empty the piggy banks — dumping kilos of history into these machines. We're saying farewell to the coins that have rattled in our pockets for decades. It's bittersweet. Not everyone is ready to let go. What do you think — is it going to be good or bad? "It's going to be good for going outside the country." What do you think about losing the Bulgarian money? "No more Bulgarian money. Are you excited?" "No." Some people are nostalgic. That's understandable.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">為了做好準備，團隊拿了一份銀行入門套組，第一次看到了剛鑄造的歐元硬幣。歐元區的每個國家都可以在硬幣的本國面刻上自己的標誌。保加利亞選擇了馬達拉騎士——一位古老的歷史人物——如今永恆地刻在歐元金色中。2歐元硬幣上刻有保加利亞的名字和當地特色。雖然每枚硬幣的正面在歐元區各國都是一樣的，但背面訴說著保加利亞獨一無二的故事。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. The Euro Starter Kit</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">This changes everything for us. This is the Bulgarian lev right now, and this is the euro for the first month of 2026. To prepare, we grabbed a bank starter kit — our first look at the freshly minted euro coins, featuring that unique local twist. As the 21st nation to join the Eurozone, Bulgaria gets its own stamp. I didn't know every country customizes the back. Look — the Madara Rider is now immortalized in Euro gold. And like the cool part about it — look at this €2 coin. The front is just like any other euro from any other country. On the back it says "Bulgaria" and gives a local flavor to the currency. In January, you can use both currencies, but if you use Bulgarian lev, the change they give you back will be in euro.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">12月31日，團隊在一家當地民俗餐廳享用了真正的保加利亞風格的最後盛宴。美食、美酒和音樂致敬著一個章節的結束。帳單最後一次以列弗送達。崔莎反思道：「這是我最後一次用保加利亞錢買晚餐。我很期待使用歐元，但我會懷念列弗的。」不需要在歐洲旅行時換匯，是她歡迎的一個好處。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. The Last Supper in Lev</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We couldn't let this era end without one final feast in true Bulgarian style. It's December 31st. We're soaking in tradition at a local folk restaurant — good food, wine, and music to honor the closing of this chapter. Well, we're here at our last supper and it's New Year's Eve. Tomorrow is a big deal — it's going to be the last time we pay with lev. Everything's going to switch to euro. It almost feels surreal. So we're in a Bulgarian folk restaurant they call a "mehana." We're going to have some good Bulgarian food. We're going to share a bottle of wine. And tomorrow, a new day, a new year, a new currency. Cheers. Happy New Year, everyone. This is a typical Bulgarian dish — my grandma used to make stuff like that. It's basically pork meat with onions and it is delicious. The check arrives one last time. This is the last time I'm going to use Bulgarian money to buy dinner. I'm going to miss the lev, but I won't miss having to change money when I travel through Europe.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">距離午夜還有一小時，布爾加斯的街道人山人海。數千人聚集在廣場上見證歷史。氣氛熱烈——現場音樂、閃爍的燈光，慶祝的不只是新年，而是一個新時代。午夜時分，團隊衝向最近的提款機。第一台機器故障了，但第二台亮了起來。歐元紙鈔嶄新地吐了出來。轉換成功了。從收集硬幣到數位故障，他們目睹了一種貨幣的死亡和另一種貨幣的重生。保加利亞的新黎明已經到來。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Midnight: The Switch</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/M7UL58ZUwPg/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">One hour to midnight, the streets of Burgas are packed. The energy is rising as thousands gather in the square to witness history. The vibe is electric. Live music is blasting. Lights are flashing. We aren't just celebrating a new year — we're celebrating a new era. The clock is ticking down. 3… 2… 1… Happy New Year, Bulgaria. Welcome to 2026. It's official — we're now citizens of the Eurozone. But does the system work? We're running to the nearest ATM to find out. The first one failed. But here we are at the second bank. The screen lights up. Here's the moment of truth — English, withdraw, euro. Get 300. And there it is. Crisp euro notes right out of the wall. Bulgarian lev is officially history. It worked. From collecting coins to digital glitches, we watched a currency die and another reborn. It's a new dawn for Bulgaria.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

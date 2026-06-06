@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,349 +106,130 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">We spend today in Peru&#39;s sacred valley,
-once the heart of the Inca world. We sip
- Chicha that&#39;s made from corn and
-face their tradition of roasted guinea
-pig. Then continue to Cusco, the former
-capital reshaped by Spanish rule.
-&gt;&gt; Hello.
-Hi guys.
-We flew from Lima to Cusco and then took
-a bus straight to the sacred valley.
-Because the valley is lower in elevation
-than Cusco, it&#39;s a great spot to
-acclimatize.
-Our trip starts right here, exploring
-the terrace farms and the ancient
- paths of this former Incan
-agricultural hub.
-Driving  past Andian farmlands
-reveals Quua communities. Locals wear
-bright handwoven alpaca garments and
-traditional bowler hats preserving
-customs entirely distinct from ours.
-We started at Marray to see these huge
-sunken terraces.
-The Incas engineered this spot for
-farming  experiments.
-Temperatures change drastically across
-the different stone levels, helping
-specific plants grow.
-Heading toward the historic site of Pac,
-you quickly realize why corn was vital
-to the Incas.
-The valley floor is blanketed in
-cornfields.
-Everywhere you look, ancient stone
-terraces are lined the mountain sides.
-Amazingly, locals still use them.
-Now, PAC&#39;s 
-impressive ruins, they&#39;re finally coming
-into view.
-&gt;&gt; Welcome to PAC.  We just got here
-and we&#39;re at very high altitude. is an
-archaeological site and we&#39;re going to
-learn all about the Incas and 
-what they did here. But the views here
-are spectacular.
-&gt;&gt; We&#39;re in we&#39;re in the sacred valley and
-you can see all the terraces where they
-grow a lot of vegetables and fruits.
-The Incas use these massive stone
-terraces to grow crops safely.
-The stones kept the plants warm during
-the cold nights.
-The hike up to the very top is a bit
-tough and leaves you breathless, but
-just look at these amazing views.
-At the top, we found the llamas resting,
-and the little baby is just adorable.
-The terraces sweep beautifully along the
-mountains natural contours.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">秘魯的聖谷曾是印加世界的心臟。這片肥沃的山谷位於庫斯科和馬丘比丘之間，是印加帝國的農業、精神和政治中心。旅客從利馬飛到庫斯科，再搭巴士直達山谷。由於山谷海拔比庫斯科低，這裡是適應高海拔環境的絕佳地點。旅程從探索古老的梯田農場和小徑開始，這些曾經養活了一個帝國。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Peru's Sacred Valley: Better Than We Imagined!</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e amazing views.
-At the top, we found the llamas resting,
-and the little baby is just adorable.
-The terraces sweep beautifully along the
-mountains natural contours. It&#39;s one of
-the best preserved spots in the Andes
-Mountains. at the top. Well, like
-halfway up there, there was a manger
-area, kind of a covered area where
-there&#39;s all these llamas. You&#39;ll see
-with the baby was two months old. And
-when I put my hand on the llama, I was
-shocked because my hand like went like
-this far down. So, I was like, &quot;Wow,
-that&#39;s amazing. There&#39;s a lot of thick
-wool on that on that on those alpacas.&quot;
-We are climbing to 14,000 ft now,
-heading toward a high altitude potato
-farm.
-Peru is actually the birthplace of this
-global crop.
-Outside, oxygen thins as we pass
-authentic real life, mudbrick homes, and
-grazing alpacas.
-At this farm, we meet an indigenous
-community that&#39;s been cultivating these
-crops for millennia.
-We were shocked to  discover Peru
-actually has over 4,000 registered
-potato varieties. How many can you name?
-I had no idea they came in so many
-distinct colors and wild shapes. 
-To protect this incredible biodiversity,
-this community even sends their 
-unique seeds all the way to the famous
-global vault in Norway for preservation.
-
-It was fascinating to see how they wash,
-dye, and weave wool using methods that
-are passed  down for centuries.
-They use only natural ingredients and
-intense 
-physical labor to maintain this
-tradition.
-The result is pure art, totally
-different from the mass- prodduced
-synthetic fabrics that we wear everyday.
-Touching the raw fleece reveals the
-distinct difference between alpacas and
-llamas.
-Alpaca fiber feels incredibly soft,
-especially the first shearing, that&#39;s
-known as the baby alpaca.
-Because llama wool is much</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在莫雷，團隊發現了巨大的下沉式梯田，這是印加人為農業實驗而設計的。不同石層的溫度差異極大，使特定作物能在微氣候中茁壯成長。前往皮薩克歷史遺址的路上，谷地鋪滿了玉米田，古老石梯田隨處可見，沿著山坡排列。令人驚嘆的是，當地農民至今仍在使用這些梯田，就像他們的祖先數百年前所做的那樣。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">coarser and
-durable, typically use it for weaving
- sturdy rugs.
-Locals strictly use completely natural
-ingredients  like native plants
-and insects, creating permanent,
-brightly dyed wool.
-To help preserve their culture, we
-bought some incredible pieces. Sargo
-found a scarf and I got a beautiful
-table runner.
-Descending down toward the valley, our
-next stop was Selenus de Marus. An
-incredible site featuring thousands of
-terrace salt pools.
-Locals still use the  exact same
-methods established long before the Inca
-Empire  to harvest this highly
-priced pink salt.
-They channel a naturally salty
-subterranean spring into these shallow
-basins.
-During the dry season, the intense and
-sun evaporates the water, leaving behind
-crystallized salt ready for collection.
-This mineralrich Mars salt is famous
-globally 
-for its unique flavor and health
-benefits, making it a major export for
-those hardworking families.
-Driving through rural Peruvian
-communities, you might spot a red
-plastic bag hanging on a wooden pole.
-This traditional sign advertises the
-local chicharia inside. These rustic
-taverns serve chicha deora. It&#39;s an
-ancient indigenous beer that&#39;s brewed
-from fermented corn.
-&gt;&gt; It&#39;s somewhere, making it the
-perfect time to taste authentic Peruvian
-corn chicha.
-Inside this incredibly unique tavern,
-guinea pigs run everywhere across the
-dirt floor. They quickly drink the t-sha
-we ceremonially pour on the ground.
-Locals actually roast these little
-animals whole. They consider them a
-massive delicacy here in Peru. Honestly,
-I&#39;m not just quite ready to try eating
-them.
-We&#39;re back in Cusco, the ancient capital
-of Peru. After checking into our hotel,
-we headed straight down to the bustling
-local market.
-It&#39;s absolutely packed with massive
-piles of tropical fruits and vegetables.
-&gt;&gt; They have an overabundance of avocado,
-which we know is very expensive here.
- It&#39;s like when you have a salad,
-put like three avocados on it.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">往山谷下行，下一站是馬拉斯鹽田——一個擁有數千個梯田鹽池的令人難以置信的遺址。當地人仍然使用早在印加帝國之前就建立的完全相同的方法來採收這種珍貴的粉紅鹽。他們將天然含鹽的地下泉水引入淺盆中。在旱季，強烈的安第斯陽光蒸發水分，留下結晶鹽以供採集。這種富含礦物質的鹽以其獨特風味聞名全球。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">opical fruits and vegetables.
-&gt;&gt; They have an overabundance of avocado,
-which we know is very expensive here.
- It&#39;s like when you have a salad,
-put like three avocados on it. Wow.
-Every kind of food imaginable.
-This huge market is neatly divided into
-different sections.
-After checking out the fresh fruit
-stands, we&#39;re walking through the main
-vegetable area.
-&gt;&gt; The potato stalls are definitely the
-most impressive thing to see.
-Seeing so many different types of
-potatoes proves just how important they
-are potato.
-&gt;&gt; One fascinating detail is that the
-vendors peel potatoes while waiting for
-the customers. Some people prefer buying
-them already peeled and ready to cook.
-If you ask me, first time potato
-varieties.
-&gt;&gt; While traveling around the world,
-especially visiting exotic places, I
-always love seeing what people eat. Have
-you ever tasted a cow snout or a hoof?
-In Peru, absolutely nothing goes to
-waste. You really have to see the meat
-section.
-&gt;&gt; Everything is completely fresh right
-now. The entire market is spotless. And
-surprisingly, there are no bad smells at
-all from the butchered meat.
-To experience authentic everyday life in
-Cusco, skip the expensive  taxis
-and take public transport instead.
-Riding the local bus is the best way to
-travel like a true resident. 
-It proved to be a fantastic experience
-that was incredibly cheap, highly
-convenient, and it got us exactly where
-we needed.
-Just north of Cusco, the high alitude
-forest produces exceptionally fine aroma
-cacao beans.
-We visited a small-scale factory and
-chocolate museum and observed their
-entire crafting process.
-This boutique operation relies entirely
-on local sourced organic ingredients,
-including that famous pink Mars salt.
-This is actually our second trip to
-Cusco. We first came here on our
-ultimate old cruise and we saw the
-museum, the cathedral, and other spots.
-Feel free to check out that video linked
-in the description below.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">開車經過秘魯鄉村社區時，旅客看到木桿上掛著紅色塑膠袋——這是當地酒館的傳統標誌。這些質樸的小酒館供應奇恰酒，一種用發酵玉米釀造的古老原住民啤酒。在一間極具特色的酒館裡，天竺鼠在泥土地上到處奔跑，當地人將牠們整隻烤熟，視為珍饈。旅客也參觀了庫斯科熙攘的市場，各式各樣的馬鈴薯堆積如山——提醒著人們祕魯是這種全球作物的發源地。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">irst came here on our
-ultimate old cruise and we saw the
-museum, the cathedral, and other spots.
-Feel free to check out that video linked
-in the description below. But today,
-we&#39;re just taking things easy, enjoying
-a rainy stroll through the historical
-center, admiring the amazing colonial
-architecture, and doing a little
-souvenir shopping.
-&gt;&gt; Good morning. And we are in Cusco and
-we&#39;re heading up to see this the llama
-alpaca
-uh
-farm. I guess we&#39;re already climatized
-and uh we&#39;re I think 12,000 ft. The air
-is definitely thin and you lose your
-breath and you notice it. This part of
-the trip is definitely my absolute
-favorite. I had no idea that there were
-so many different types of llamas.
-Just look at all those adorable faces
-and all the cute babies. Getting to
-walk, feed, and pet them is such an
-incredible  experience.
-&gt;&gt; He&#39;s a little shaky. He&#39;s 2 hours old.
-Knowing little about llamas, we&#39;re
-fascinated by their diverse coat colors
-and textures.
-Some look perfectly braided while others
-are short and curly. And look at this
-spotted one. My absolute favorite, of
-course, is the 2-hour old baby. Is
-struggling slightly, but amazingly
- can stand, walk, and
-instinctively follows its mother just so
-soon after  birth.
-If Cusco and the Secret Valley
-captivated you, stay tuned. Our epic
-four-week South American journey is
-continuing.
-You really don&#39;t want to miss our next
-video. We&#39;re taking you straight to the
-absolutely legendary ruins of Machu
-Picchu.
-We will walk through the stunning ruins,
-explore the vibrant town below, and
-discover why this incredible place sits
-at the top of every traveler&#39;s bucket
-list. We&#39;ll be covering the ins and outs
-of exactly  what it takes to get
-up there, and you&#39;ll be part of our
-total amazing journey  there.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">回到庫斯科——秘魯的古都，團隊探索了殖民時期建築、購買紀念品，並像當地人一樣搭乘公共交通。在庫斯科以北，他們參觀了一家使用當地有機食材的巧克力工廠。最精彩的是造訪一個海拔12,000英尺的羊駝和美洲駝農場。能夠近距離走路、餵食和撫摸這些可愛的動物，是一次難以置信的體驗。一隻剛出生兩小時的小美洲駝雖然腳步還有些搖晃，但已經本能地跟隨著母親——這是穿越聖谷這段難忘旅程的完美句點。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: iFd23H04Aeo | 12:45 | 1,535 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">秘魯的聖谷曾是印加世界的心臟。這片肥沃的山谷位於庫斯科和馬丘比丘之間，是印加帝國的農業、精神和政治中心。旅客從利馬飛到庫斯科，再搭巴士直達山谷。由於山谷海拔比庫斯科低，這裡是適應高海拔環境的絕佳地點。旅程從探索古老的梯田農場和小徑開始，這些曾經養活了一個帝國。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Cusco to the Sacred Valley</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We spend today in Peru's Sacred Valley, once the heart of the Inca world. We sip chicha made from corn and face their tradition of roasted guinea pig. Then we continue to Cusco, the former capital reshaped by Spanish rule. We flew from Lima to Cusco and then took a bus straight to the Sacred Valley. Because the valley is lower in elevation than Cusco, it's a great spot to acclimatize. Driving past Andean farmlands reveals Quechua communities — locals wearing bright handwoven alpaca garments and traditional bowler hats, preserving customs entirely distinct from ours. We started at Moray to see these huge sunken terraces. The Incas engineered this spot for farming experiments — temperatures change drastically across the different stone levels, helping specific plants grow. Heading toward the historic site of Pisac, you quickly realize why corn was vital to the Incas. The valley floor is blanketed in cornfields, and ancient stone terraces line the mountainsides. Amazingly, locals still use them.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在莫雷，團隊發現了巨大的下沉式梯田，這是印加人為農業實驗而設計的。不同石層的溫度差異極大，使特定作物能在微氣候中茁壯成長。前往皮薩克歷史遺址的路上，谷地鋪滿了玉米田，古老石梯田隨處可見，沿著山坡排列。令人驚嘆的是，當地農民至今仍在使用這些梯田，就像他們的祖先數百年前所做的那樣。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Hiking Pisac</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The hike up to the very top is a bit tough and leaves you breathless, but just look at these amazing views. At the top, we found the llamas resting, and the little baby is just adorable. The terraces sweep beautifully along the mountain's natural contours. It's one of the best-preserved spots in the Andes Mountains. Halfway up, there was a covered area where there's all these llamas. The baby was two months old. When I put my hand on the llama, I was shocked — my hand sank so far down. There's a lot of thick wool on those alpacas.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">往山谷下行，下一站是馬拉斯鹽田——一個擁有數千個梯田鹽池的令人難以置信的遺址。當地人仍然使用早在印加帝國之前就建立的完全相同的方法來採收這種珍貴的粉紅鹽。他們將天然含鹽的地下泉水引入淺盆中。在旱季，強烈的安第斯陽光蒸發水分，留下結晶鹽以供採集。這種富含礦物質的鹽以其獨特風味聞名全球。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. The Potato Farm & Wool Weaving</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We are climbing to 14,000 ft now, heading toward a high-altitude potato farm. Peru is actually the birthplace of this global crop. At this farm, we meet an indigenous community that's been cultivating these crops for millennia. We were shocked to discover Peru actually has over 4,000 registered potato varieties. To protect this incredible biodiversity, this community even sends their unique seeds all the way to the famous global vault in Norway for preservation. It was fascinating to see how they wash, dye, and weave wool using methods passed down for centuries. The result is pure art, totally different from the mass-produced synthetic fabrics that we wear every day. Alpaca fiber feels incredibly soft — especially the first shearing, known as baby alpaca. Because llama wool is much coarser and more durable, locals typically use it for weaving sturdy rugs. To help preserve their culture, we bought some incredible pieces. Zarko found a scarf and I got a beautiful table runner.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">開車經過秘魯鄉村社區時，旅客看到木桿上掛著紅色塑膠袋——這是當地酒館的傳統標誌。這些質樸的小酒館供應奇恰酒，一種用發酵玉米釀造的古老原住民啤酒。在一間極具特色的酒館裡，天竺鼠在泥土地上到處奔跑，當地人將牠們整隻烤熟，視為珍饈。旅客也參觀了庫斯科熙攘的市場，各式各樣的馬鈴薯堆積如山——提醒著人們祕魯是這種全球作物的發源地。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Maras Salt Pools</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Descending toward the valley, our next stop was the Salinas de Maras — an incredible site featuring thousands of terrace salt pools. Locals still use the exact same methods established long before the Inca Empire to harvest this highly prized pink salt. They channel a naturally salty subterranean spring into these shallow basins. During the dry season, the intense sun evaporates the water, leaving behind crystallized salt ready for collection. This mineral-rich Maras salt is famous globally for its unique flavor and health benefits.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">回到庫斯科——秘魯的古都，團隊探索了殖民時期建築、購買紀念品，並像當地人一樣搭乘公共交通。在庫斯科以北，他們參觀了一家使用當地有機食材的巧克力工廠。最精彩的是造訪一個海拔12,000英尺的羊駝和美洲駝農場。能夠近距離走路、餵食和撫摸這些可愛的動物，是一次難以置信的體驗。一隻剛出生兩小時的小美洲駝雖然腳步還有些搖晃，但已經本能地跟隨著母親——這是穿越聖谷這段難忘旅程的完美句點。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Chicha Tavern & Guinea Pig</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Driving through rural Peruvian communities, you might spot a red plastic bag hanging on a wooden pole — the traditional sign advertising the local chicha tavern inside. These rustic taverns serve chicha de jora, an ancient indigenous beer brewed from fermented corn. Inside this incredibly unique tavern, guinea pigs run everywhere across the dirt floor. They quickly drink the chicha we ceremonially pour on the ground. Locals actually roast these little animals whole — they consider them a massive delicacy here in Peru. Honestly, I'm not quite ready to try eating them.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p7')">
+      <span class="acc-label">7. Cusco Market & Chocolate Museum</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p7">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p7.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We're back in Cusco, the ancient capital of Peru. After checking into our hotel, we headed straight down to the bustling local market — absolutely packed with massive piles of tropical fruits and vegetables. This huge market is neatly divided into different sections. The potato stalls are definitely the most impressive thing to see. Vendors peel potatoes while waiting for customers — some people prefer buying them already peeled and ready to cook. To experience authentic everyday life in Cusco, skip the expensive taxis and take public transport instead. Just north of Cusco, the high-altitude forest produces exceptionally fine aromatic cacao beans. We visited a small-scale factory and chocolate museum and observed their entire crafting process. This boutique operation relies entirely on locally sourced organic ingredients, including that famous pink Maras salt. We first came here on our world cruise and saw the museum, the cathedral, and other spots. But today, we're just taking things easy — enjoying a rainy stroll through the historical center, admiring the amazing colonial architecture, and doing a little souvenir shopping.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p8')">
+      <span class="acc-label">8. The Llama Farm</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p8">
+      <div class="acc-audio"><audio src="../audio/iFd23H04Aeo/p8.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Good morning. We are in Cusco and we're heading up to the llama and alpaca farm. I think we're at about 12,000 ft. The air is definitely thin and you notice it. This part of the trip is definitely my absolute favorite. I had no idea that there were so many different types of llamas. Getting to walk, feed, and pet them is such an incredible experience. He's a little shaky — he's 2 hours old. It is struggling slightly, but amazingly can stand, walk, and instinctively follows its mother just hours after birth. If Cusco and the Sacred Valley captivated you, stay tuned. We're taking you straight to the legendary ruins of Machu Picchu next.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,327 +106,130 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Welcome back to Busy Traveler. In this
-video, we&#39;ll visit Bolivia, Lake
-Titicaca, La Paz, and face altitude
-sickness.
-We just flew from Lima to Juliaca.
-Stepping off the plane at 12,500
-ft, we immediately noticed the
-surprisingly  thin air and low
-oxygen.
-Still in Peru, we&#39;re heading toward the
-Bolivian border,  stopping for
-lunch in Puno.
-As Peru&#39;s folklore capital, Puno is the
-base for exploring Lake Titicaca&#39;s
-floating islands.
-We planned to visit, 
-but our 1-hour flight to Juliaca took 7
-hours.
-Thick fog forced our plane back to Lima
-to refuel and wait.
-Since we missed the islands completely,
-we&#39;re just having a late lunch in Puno.
-It&#39;s a very cute town, and we would
-gladly explore  if we had more
-time.
-We&#39;re having trout from Lake Titicaca.
-Wow. Fresh.
-This rich,  juicy, orange trout,
-surprisingly looks and tastes much more
-like fresh salmon.
-To fight settling altitude sickness, we
-drank coca tea, and we bought some coca
-candy, which mildly improves oxygen
-uptake.
-After eating the most delicious trout
-ever, we left Puno for the Bolivian
-border.
-To our left sits this massive Lake
-Titicaca,
-the world&#39;s highest navigable lake.
-Along the road, farmers work small
-quinoa and potato plots.
-So, we just crossed just left Peru and
-now we&#39;re walking to
-the immigration for Bolivia.
-We picked up another tour guide here in
-Bolivia.
-And
-the air is very thin.
-&gt;&gt; 
-&gt;&gt; Walking this border feels just like
-climbing a mountain.
-You feel the lack of oxygen, profound
-weakness, headaches, and dizziness of
-this high altitude travel.
-Welcome to Copacabana.
-We&#39;re still in
-We&#39;re still in Bolivia, right?
-&gt;&gt; No, we&#39;re in Brazil, Copacabana.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Tresa和Zarko從Lima飛往Juliaca，在12,500英尺的高度下了飛機。他們立刻注意到令人驚訝的稀薄空氣和低氧量。他們的旅程繼續前往玻利維亞邊境，在Puno停下來吃午餐，Puno被稱為秘魯的民俗首府，也是探索的的喀喀湖著名漂浮島嶼的基地。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. From Lima to La Paz: A Journey with an Oxygen Tank</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e lack of oxygen, profound
-weakness, headaches, and dizziness of
-this high altitude travel.
-Welcome to Copacabana.
-We&#39;re still in
-We&#39;re still in Bolivia, right?
-&gt;&gt; No, we&#39;re in Brazil, Copacabana. Oh,
-woohoo.
-There&#39;s our luggage.
-And
-well
-There&#39;s ladies changing money here.
-Okay, this is the line for immigration
-to go to Bolivia.
-After a full day of traveling, we
-finally arrived in Copacabana.
-We&#39;re spending the night here
-&gt;&gt; 
-&gt;&gt; before heading out on an early morning
-tour on Lake Titicaca tomorrow.
-Going out on Lake Titicaca and we&#39;re
-going to go to an island and walk around
-the island, maybe and cruise around Lake
-Titicaca. Unfortunately, it&#39;s a rainy
-day,
-but we&#39;ll make the best of it.
-&gt;&gt; 
-&gt;&gt; And
-I don&#39;t know what all we&#39;re going to do
-today, but
-we know we&#39;re on Lake Titicaca.
-It&#39;s the low season here, so there&#39;s not
-many people.
-Our tour brought us to Isla del Sol.
-It&#39;s a highly populated destination for
-anyone exploring Lake Titicaca from
-Copacabana.
-A key part of the tour involves hiking
-the high ridge between the old ruins
-where our group just dropped and the
-main port.
-&gt;&gt; 
-&gt;&gt; However, looking at that steep climb
-while barely breathing, fighting
-altitude sickness, cold, and unpleasant
-rain, we decided to stay on the boat and
-then meet everyone later.
-The island and tiny town of Yumani
-houses 800 families.
-Besides traditional fishing, thriving
-tourism supports many of the small guest
-houses and hostels.
-This popular hiking destination it gets
-extremely busy during the dry season.
-The group got off on the other side of
-the island.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">原本應該是一小時到Juliaca的航班花了七個小時。濃霧迫使飛機返回Lima加油和等待。結果，他們完全錯過了參觀漂浮島嶼，只能在Puno吃個遲來的午餐。儘管遭遇了這些挫折，他們形容Puno是一個非常可愛的小鎮，如果有更多時間，他們很樂意探索。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">hiking destination it gets
-extremely busy during the dry season.
-The group got off on the other side of
-the island. It was pouring down rain. We
-decided to stay on the boat. So, we got
-off the boat, but uh we got some bad
-news.
-Yesterday, they told us our flight
-from La Paz to Sucre has been canceled.
-The The thing of it is
-because that that flight&#39;s canceled,
-they told us that we have to do a
-10-hour
-555-km
-trip over the mountain in 4x4 vehicles
-because the the road is so washed out
-and it&#39;s so bad, potholes, mudslides,
-uh
-blockages,
-it&#39;s going to take us over 10 hours. And
-uh that is not what we wanted to do. In
-fact, that it&#39;s it&#39;s going to be
-horrible. And so, we&#39;re trying to figure
-out how to get out of here. Getting
-trapped.
-Uh because we definitely don&#39;t want to
-do this 4x4, 10-hour trip. So, we might
-have to do it because if there&#39;s no
-other alternative, however, and of
-course, we&#39;ll show you this whole
-journey, but they were they were going
-to put 10 of us in two 4x4s with our
-luggage with three people in the
-backseat for 10 hours. So, Zarco and I
-said, &quot;No. We&#39;ll rent We&#39;ll rent an
-extra one. We&#39;ll rent a
-a third one because
-this is going to be an all day plus
-it&#39;s going to be a full day of travel
-world where before it was an hour flight
-and we&#39;d have all day to tour around
-Sucre.
-Heading back to Copacabana, the weather
-cleared, the sun emerged,
-and the shoreline views were absolutely
-spectacular.
-We have just b</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在Puno，這對夫婦享用了來自的的喀喀湖的新鮮鱒魚午餐，這是世界上海拔最高的可航行湖泊。鱒魚被形容為豐富、多汁、呈橘色，令人驚訝地看起來和吃起來都更像新鮮的鮭魚。儘管旅途困難，這頓飯成了一個亮點。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">arely touched the tip of
-this massive lake.
-It is so enormous  that has its
-own tides and weather system.
-Resembling an inland sea, Lake Titicaca
-is actually  considered the South
-American birthplace of the Incas.
-Getting off the boat, we head straight
-to our van for the long journey to La
-Paz.
-Driving through Copacabana, I&#39;m
-generally impressed by how charming this
-little town is.
-I would have absolutely loved to explore
-it  more, walking the streets,
-enjoying a local coffee, and soaking in
- the vibrant daily life, and
-doing some shopping.
-The frustrating part about some
-organized travel tours is 
-spending way more time stuck on the road
-than actually exploring the places and
-you end up  enduring hours of
-travel for only brief moments of real
-discovery.
-At this  altitude, there are
-absolutely no trees.
-Riding high on the plateau, it&#39;s just
-endless rocks, sparse grass, and a long
-windy road.
-So, we&#39;re on Lake Titicaca and they&#39;re
-going to put the van
-on one of those barges. The absolute
-most surreal experience of this entire
-trip was definitely crossing the Strait
-of Tiquina.
-There is really no bridge here.
-Local barge operators have famously
-protested against building one for
-years.
-They&#39;re fighting hard to protect their
-historical livelihoods and their daily
-income.
-&gt;&gt; 
-&gt;&gt; That white van with the luggage strapped
-on top is actually our tour van.
-We nervously watched it drive onto a
-primitive barge built primarily from
-wo</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">為了對抗高山症，這對夫婦喝了古柯茶，並購買了古柯糖，這能輕微改善氧氣吸收。穿過邊境進入玻利維亞後，稀薄的空氣變得更加明顯。步行穿越邊境感覺就像爬山一樣，伴隨著嚴重的無力感、頭痛和頭暈。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">oden planks tied or bolted together
-and is powered entirely by two small
-outboard motors.
-These fascinating local ferries are
-essentially just floating wooden
-platforms.
-Driving from the lake and passing
-through the bare highlands, we suddenly
-discover the chaotic, bustling edge of a
-truly massive city.
-Formed exactly like a giant bowl, it
-perfectly holds La Paz,
-the highest altitude major city in the
- world.
-The high area resting right on the rim
-is called El Alto and it  sits
-over 13,600
-ft.
-Steep and winding roads lead down to the
-city center where our hotel sits.
-La Paz features a unique vertical
-society.
-&gt;&gt; 
-&gt;&gt; The wealthier locals live in the warmer,
-westernized valley bottom,
-while the poorer neighborhoods cling to
-the steep, thin air of El Alto.
-Since traditional subways are impossible
-here,
-they built an incredible sky subway
- of clean, quiet cable cars
-for the most spectacular daily commute
-on planet Earth.
-&gt;&gt; 
-&gt;&gt; The oxygen shortages quickly turned into
-a medical crisis. We ordered a tall
-oxygen tank to our room just to sleep,
-and then sadly canceling the rest of our
-Bolivian trip.
-We really regret missing Sucre, Potosi,
-&gt;&gt; 
-&gt;&gt; and especially the famous salt flats.
-Desperately needing lower elevation, we
-booked a flight out to Santiago, Chile
-the very next morning.
-In our next video, we explore Santiago,
-Chile.
-&gt;&gt; 
-&gt;&gt; We spend an entire week enjoying the
-lush parks and vibrant streets of this
-beautiful capital city.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">從秘魯到玻利維亞的邊境過境本身就是一種體驗。他們步行穿過，左側是的的喀喀湖，經過在小型藜麥和馬鈴薯田裡工作的農民。稀薄的空氣使得即使是走路也感覺像劇烈運動。進入玻利維亞後，他們前往Copacabana，高海拔探險仍在繼續。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: R2FO8sojBKo | 11:08 | 1,236 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">Tresa和Zarko從Lima飛往Juliaca，在12,500英尺的高度下了飛機。他們立刻注意到令人驚訝的稀薄空氣和低氧量。他們的旅程繼續前往玻利維亞邊境，在Puno停下來吃午餐，Puno被稱為秘魯的民俗首府，也是探索的的喀喀湖著名漂浮島嶼的基地。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Flying to Juliaca</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Welcome back to Busy Traveler. In this video, we'll visit Bolivia, Lake Titicaca, La Paz, and face altitude sickness. We just flew from Lima to Juliaca. Stepping off the plane at 12,500 ft, we immediately noticed the surprisingly thin air and low oxygen. Still in Peru, we're heading toward the Bolivian border, stopping for lunch in Puno. As Peru's folklore capital, Puno is the base for exploring Lake Titicaca's floating islands. We planned to visit, but our 1-hour flight to Juliaca took 7 hours — thick fog forced our plane back to Lima to refuel and wait. Since we missed the islands completely, we're just having a late lunch in Puno. We're having trout from Lake Titicaca. This rich, juicy, orange trout surprisingly looks and tastes much more like fresh salmon. To fight altitude sickness, we drank coca tea and bought some coca candy, which mildly improves oxygen uptake.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">原本應該是一小時到Juliaca的航班花了七個小時。濃霧迫使飛機返回Lima加油和等待。結果，他們完全錯過了參觀漂浮島嶼，只能在Puno吃個遲來的午餐。儘管遭遇了這些挫折，他們形容Puno是一個非常可愛的小鎮，如果有更多時間，他們很樂意探索。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Crossing into Bolivia</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Walking this border feels just like climbing a mountain. You feel the lack of oxygen, profound weakness, headaches, and dizziness of this high altitude travel. Welcome to Copacabana. We're still in We're still in Bolivia, right? No — we're in Copacabana, Bolivia. After a full day of traveling, we finally arrived. We're spending the night here before heading out on an early morning tour on Lake Titicaca tomorrow.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在Puno，這對夫婦享用了來自的的喀喀湖的新鮮鱒魚午餐，這是世界上海拔最高的可航行湖泊。鱒魚被形容為豐富、多汁、呈橘色，令人驚訝地看起來和吃起來都更像新鮮的鮭魚。儘管旅途困難，這頓飯成了一個亮點。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Isla del Sol & Bad News</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Our tour brought us to Isla del Sol — a highly populated destination for anyone exploring Lake Titicaca from Copacabana. A key part of the tour involves hiking the high ridge between the old ruins and the main port. However, looking at that steep climb while barely breathing, fighting altitude sickness, cold, and unpleasant rain, we decided to stay on the boat. Then we got some bad news. Our flight from La Paz to Sucre was canceled. The The thing of it is because that that flight's canceled, they told us we have to do a 10-hour, 555-km trip over the mountain in 4x4 vehicles — the road is so washed out, potholes, mudslides, blockages, it's going to take over 10 hours. They were going to put 10 of us in two 4x4s with our luggage, three people in the back seat. So Zarco and I said no — we'll rent a third one.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">為了對抗高山症，這對夫婦喝了古柯茶，並購買了古柯糖，這能輕微改善氧氣吸收。穿過邊境進入玻利維亞後，稀薄的空氣變得更加明顯。步行穿越邊境感覺就像爬山一樣，伴隨著嚴重的無力感、頭痛和頭暈。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Lake Titicaca & The Return Journey</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Heading back to Copacabana, the weather cleared, the sun emerged, and the shoreline views were absolutely spectacular. We have just barely touched the tip of this massive lake. It is so enormous that it has its own tides and weather system. Resembling an inland sea, Lake Titicaca is actually considered the South American birthplace of the Incas. The frustrating part about some organized travel tours is spending way more time stuck on the road than actually exploring the places — you end up enduring hours of travel for only brief moments of real discovery.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">從秘魯到玻利維亞的邊境過境本身就是一種體驗。他們步行穿過，左側是的的喀喀湖，經過在小型藜麥和馬鈴薯田裡工作的農民。稀薄的空氣使得即使是走路也感覺像劇烈運動。進入玻利維亞後，他們前往Copacabana，高海拔探險仍在繼續。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Crossing the Strait of Tiquina</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The absolute most surreal experience of this entire trip was crossing the Strait of Tiquina. There is really no bridge here. Local barge operators have famously protested against building one for years — fighting to protect their historical livelihoods and daily income. That white van with the luggage strapped on top is actually our tour van. We nervously watched it drive onto a primitive barge built primarily from wooden planks tied or bolted together, powered entirely by two small outboard motors. These fascinating local ferries are essentially just floating wooden platforms.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p7')">
+      <span class="acc-label">7. La Paz</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p7">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p7.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Driving from the lake and passing through the bare highlands, we suddenly discover the chaotic, bustling edge of a truly massive city. Formed exactly like a giant bowl, it perfectly holds La Paz — the highest altitude major city in the world. The high area resting right on the rim is called El Alto and it sits over 13,600 ft. Steep and winding roads lead down to the city center where our hotel sits. La Paz features a unique vertical society — the wealthier locals live in the warmer, westernized valley bottom, while the poorer neighborhoods cling to the steep, thin air of El Alto. Since traditional subways are impossible here, they built an incredible sky subway of clean, quiet cable cars for the most spectacular daily commute on the planet.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p8')">
+      <span class="acc-label">8. Altitude Crisis & Closing</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p8">
+      <div class="acc-audio"><audio src="../audio/R2FO8sojBKo/p8.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The oxygen shortages quickly turned into a medical crisis. We ordered a tall oxygen tank to our room just to sleep, and then sadly cancelled the rest of our Bolivian trip. We really regret missing Sucre, Potosí, and especially the famous salt flats. Desperately needing lower elevation, we booked a flight out to Santiago, Chile the very next morning. In our next video, we explore Santiago, Chile — spending an entire week enjoying the lush parks and vibrant streets of this beautiful capital city.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

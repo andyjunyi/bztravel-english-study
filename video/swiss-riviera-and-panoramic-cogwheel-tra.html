@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,268 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Join us today in Montreus for a lazy day
-on the Swiss Riviera before we catch a
-train up to Zerat.
-Our 8-day journey crosses Switzerland by
-panoramic trains, stopping in
-breathtaking towns and alpine valleys
-along the way.
-Welcome to Montreus, where mountains
-meet the wild breath of Lake Geneva.
-Today we wander its fabled prominade.
-The same path that stirred artists and
-dreamers for generations.
-Here the lake acts like a vast engine of
-warmth. Its water storing sunlight while
-the surrounding peaks hold back the
-northern cold.
-That fragile balance gives Montreus 20%
-more sun where palms, magnolia, and figs
-defy altitude and they thrive at 400 m.
-Before us stretches Lake Geneva,
-582
-square kilometers of shifting light and
-mist, Western Europe&#39;s largest alpine
-lake, and it&#39;s so large it creates its
-own small tides and weather.
-Today, we explore Montre&#39;s 7 kilometer
-lakefront prominade.
-It&#39;s one of Europe&#39;s most scenic, lined
-with historic mansions, luxury hotels,
-and gardens facing the calm expanse of
-Lake Geneva.
-Freddy still stands here in bronze, fist
-raised towards the Alps. Montreus loved
-him back. Queen recorded seven albums
-here, and Freddy claimed this lakeside
-town is home. Watching sunsets from his
-apartment above the water.
-What pulled Freddy here?
-The same thing pulling everyone else
-here.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">歡迎來到蒙特勒，群山與廣闊的日內瓦湖在此交會。BZ Travel團隊在瑞士里維埃拉度過悠閒的一天，然後搭火車前往策馬特。他們漫步在傳說中的湖畔步道——同一條啟發了世世代代藝術家和夢想家的路徑。在這裡，湖泊像一台巨大的溫暖引擎，儲存陽光，而周圍的山峰則阻擋了北方的寒冷。這種脆弱的平衡為蒙特勒帶來了多20%的日照，棕櫚樹、木蘭和無花果在海拔400公尺處茁壯生長。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Swiss Riviera and Panoramic Cogwheel Train to Zermatt</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e water.
-What pulled Freddy here?
-The same thing pulling everyone else
-here. Peace. In Montreus, he wasn&#39;t
-Freddy the icon.
-He was just another guy grabbing coffee
-and wandering the prominade.
-Locals didn&#39;t swarm him. They let him
-breathe.
-That quiet freedom meant everything.
-
-In 1991,
-while already fading, he recorded his
-last songs here.
-A winter&#39;s tale was his goodbye.
-Written while staring at this same lake.
-He sings about the blue sky, the
-mountains, the stillness.
-He knew he wouldn&#39;t see many more
-winters. Yet somehow the song feels full
-of life.
-Everything is in French. The French
-food. We went from beer and sausages to
-wine and steaks.
-And everybody speaks French now, not
-German. It really feels like you&#39;re in a
-different country. But it&#39;s the same
-country.
-&gt;&gt; Yeah. Well, the climate&#39;s so different.
-And then Yeah. Everything changed.
-In Montreus, life gathers around the
-lake. The hillside city descends daily
-to restaurants, playgrounds, and bike
-paths. Well, it looks like you can take
-a ride on the lake.
-It&#39;s a cute boat.
-Those boats you see aren&#39;t just pleasure
-craft. Some are commuters. People
-actually take boats to work here,
-crossing between Switzerland and France,
-like others might take a bus.
-And we can tell we&#39;re now in the French
-part of Switzerland with French food and
-a nice glass of wine.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">旅客面前的是日內瓦湖——582平方公里的光影與薄霧變幻。這是西歐最大的高山湖泊，它大到能產生自己的小幅潮汐和天氣。團隊探索了蒙特勒7公里長的湖畔步道——歐洲最美麗的步道之一，沿途是歷史悠久的豪宅、豪華酒店和面向寧靜湖面的花園。這裡的微氣候讓亞熱帶植物得以在通常無法存活的緯度茁壯成長。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">&#39;re now in the French
-part of Switzerland with French food and
-a nice glass of wine. Things are really
-different here.
-Watching that sunset over Lake Geneva,
-one of Europe&#39;s great alpine lakes left
-me speechless.
-Our time here was short, just a stop on
-our rail journey through Switzerland,
-but it&#39;s unforgettable.
-We barely scratched the surface.
-Montreus has so much more to uncover.
-Good night, everyone. Tomorrow is
-another day and we&#39;re going to have
-another incredible train ride to Zerat
-and we&#39;re going to be taking a gondola
-ride up into the high mountains. Stay
-tuned for that one.
-We&#39;re leaving the Swiss Riviera behind
-and rolling into the Rome Valley,
-Switzerland&#39;s fruit basket and wine
-seller.
-This place gets 300 days of sun a year.
-Out the window, vineyards, corn fields,
-and small factories blur past the rhythm
-of everyday Switzerland. The part most
-travelers never notice.
-&gt;&gt; It&#39;s beyond me why Switzerland is so
-prosperous.
-There is no reason.
-You have
-French people, Italians, Germans
-speaking different languages.
-And how come the Italians don&#39;t want to
-be part of Italy? The French don&#39;t want
-to be part of France, the Germans don&#39;t
-be uh France part of Germany,
-how come there are no civil wars, civil
-unrest, divisions?
-Everybody is living together peacefully,
-prosperous.
-does not make no sense.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">佛萊迪·墨裘瑞的銅像仍然矗立在這裡，拳頭高舉面向阿爾卑斯山。蒙特勒也同樣愛戴他。皇后樂團在這裡錄製了七張專輯，佛萊迪將這個湖畔小鎮視為家，在水上的公寓欣賞日落。是什麼吸引了佛萊迪來到這裡？和吸引所有人的原因一樣——平靜。在蒙特勒，他不是佛萊迪巨星。他只是一個喝咖啡、在步道上漫步的普通人。當地人不會蜂擁而上。他們讓他呼吸。那份寧靜的自由彌足珍貴。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">?
-Everybody is living together peacefully,
-prosperous.
-does not make no sense. You know,
-everywhere around the world, I mean,
-like even people speaking with a slight
-different difference between the two
-languages, they&#39;re fighting each other.
-Like right now in Russia and Ukraine and
-like right here, there&#39;s no natural
-resources.
-There&#39;s no poetry. Even the countryside
-is looks like landscaped. You know, the
-the fields, the hills, they look like
-golf courses. Everything is beautiful.
-It&#39;s clean, organized.
-The rest of the world we can learn from
-Switzerland.
-And really, this is my own impression,
-you know. I don&#39;t know much about it. I
-don&#39;t live in Switzerland.
-Maybe
-it looks wonderful
-and actually it&#39;s not. As far as I can
-see, people are happy.
-They live great together. They respect
-the government. There is extreme law and
-order. I mean like you don&#39;t see
-graffiti, you don&#39;t see garbage.
-Everything is running like a Swiss
-watch. And I never knew that a country
-of 8 1/2 million
-have a can have a such a great rail
-system, you know, like the the trains
-run every half an hour. You can connect
-pretty much to any part of Switzerland
-and like riding on a train, looking on
-the roads, you don&#39;t see cars because
-actually you you don</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">離開蒙特勒後，團隊登上前往策馬特的全景齒軌火車。火車穿過令人屏息的阿爾卑斯風景，經過葡萄園、森林和山村。齒軌技術使火車能夠應對普通火車無法處理的陡峭坡度。隨著火車攀升，景觀從地中海式的湖畔植被轉變為高山森林，最終到達構成瑞士標誌性山景的岩石和積雪山峰。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">&#39;t need to be
-driving from from place to place because
-the trains are so efficient and not only
-the trains once you get on from the
-train station, you have the buses, the
-everything is connected, everything is
-organized, everything is perfect
-At Visp, we transferred to the
-Matterhorn Godard train, starting the
-steep final leg towards Zerat,
-a true feat of Swiss railway
-engineering.
-&gt;&gt; So, you can see the cog the cog wheel in
-the middle of the track and it grips on
-that so it can pull itself up the hill.
-In the next hour, we rise a thousand
-meters through 15 tunnels and 30
-bridges, defying gravity across 35
-rugged kilometers.
-Our climbing straight up.
-As the valley narrows, steep cliffs rise
-on both sides, restricting sunlight so
-severely that some villages only get 2
-hours in the winter.
-
-We&#39;ve entered Switzerland&#39;s high alpine
-zone where long winters dominate the
-year and human life adapts carefully to
-extreme cold and limited daylight.
-
-Don&#39;t miss our next video. We&#39;re off to
-Zerat, Switzerland&#39;s ski capital.
-We&#39;ll ride cable cars to the top of the
-world. Stare down the real Matterhorn.
-Come along as we travel aboard the
-Glacier Express across Switzerland to
-St. Morates, one of Europe&#39;s most scenic
-and iconic train routes.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這段旅程是為期八天、以全景火車穿越瑞士的冒險之旅的一部分，沿途在令人屏息的小鎮和阿爾卑斯山谷停留。從棕櫚樹環繞的日內瓦湖岸到無車的策馬特街道，每一段都展現了瑞士多樣景觀的不同篇章。蒙特勒溫和近乎地中海的氣候與策馬特清新的高山空氣之間的對比，展示了瑞士在一次旅程中驚人的地理多樣性。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: WTUkFRamohk | 10:20 | 1,259 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">歡迎來到蒙特勒，群山與廣闊的日內瓦湖在此交會。BZ Travel團隊在瑞士里維埃拉度過悠閒的一天，然後搭火車前往策馬特。他們漫步在傳說中的湖畔步道——同一條啟發了世世代代藝術家和夢想家的路徑。在這裡，湖泊像一台巨大的溫暖引擎，儲存陽光，而周圍的山峰則阻擋了北方的寒冷。這種脆弱的平衡為蒙特勒帶來了多20%的日照，棕櫚樹、木蘭和無花果在海拔400公尺處茁壯生長。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Montreux: The Swiss Riviera</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Join us today in Montreux for a lazy day on the Swiss Riviera before we catch a train up to Zermatt. Our 8-day journey crosses Switzerland by panoramic trains, stopping in breathtaking towns and alpine valleys along the way. Welcome to Montreux, where mountains meet the wild breath of Lake Geneva. Today we wander its fabled promenade — the same path that stirred artists and dreamers for generations. Here the lake acts like a vast engine of warmth: its water storing sunlight while the surrounding peaks hold back the northern cold. That fragile balance gives Montreux significantly more sunshine, and palms, magnolia, and figs thrive here at 400 m. Before us stretches Lake Geneva — 582 square kilometers of shifting light and mist, Western Europe's largest alpine lake, so large it creates its own small tides and weather. Today we explore Montreux's 7-kilometer lakefront promenade — one of Europe's most scenic, lined with historic mansions, luxury hotels, and gardens.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">旅客面前的是日內瓦湖——582平方公里的光影與薄霧變幻。這是西歐最大的高山湖泊，它大到能產生自己的小幅潮汐和天氣。團隊探索了蒙特勒7公里長的湖畔步道——歐洲最美麗的步道之一，沿途是歷史悠久的豪宅、豪華酒店和面向寧靜湖面的花園。這裡的微氣候讓亞熱帶植物得以在通常無法存活的緯度茁壯成長。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Freddie Mercury in Montreux</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Freddie Mercury still stands here in bronze, fist raised towards the Alps. Montreux loved him back. Queen recorded seven albums here, and Freddie claimed this lakeside town as home — watching sunsets from his apartment above the water. What pulled Freddie here? Peace. In Montreux, he wasn't Freddie the icon — he was just another guy grabbing coffee and wandering the promenade. Locals didn't swarm him. They let him breathe. That quiet freedom meant everything. In 1991, while already fading, he recorded his last songs here. "A Winter's Tale" was his goodbye — written while staring at this same lake. He sings about the blue sky, the mountains, the stillness. He knew he wouldn't see many more winters. Yet somehow the song feels full of life.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">佛萊迪·墨裘瑞的銅像仍然矗立在這裡，拳頭高舉面向阿爾卑斯山。蒙特勒也同樣愛戴他。皇后樂團在這裡錄製了七張專輯，佛萊迪將這個湖畔小鎮視為家，在水上的公寓欣賞日落。是什麼吸引了佛萊迪來到這裡？和吸引所有人的原因一樣——平靜。在蒙特勒，他不是佛萊迪巨星。他只是一個喝咖啡、在步道上漫步的普通人。當地人不會蜂擁而上。他們讓他呼吸。那份寧靜的自由彌足珍貴。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. French Switzerland</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Everything is in French. The French food. We went from beer and sausages to wine and steaks. And everybody speaks French now, not German. It really feels like you're in a different country — but it's the same country. In Montreux, life gathers around the lake. The hillside city descends daily to restaurants, playgrounds, and bike paths. Some of the boats you see aren't just pleasure craft — people actually commute by boat here, crossing between Switzerland and France like others might take a bus. Our time here was short, just a stop on our rail journey, but it's unforgettable. We barely scratched the surface. Good night, everyone.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">離開蒙特勒後，團隊登上前往策馬特的全景齒軌火車。火車穿過令人屏息的阿爾卑斯風景，經過葡萄園、森林和山村。齒軌技術使火車能夠應對普通火車無法處理的陡峭坡度。隨著火車攀升，景觀從地中海式的湖畔植被轉變為高山森林，最終到達構成瑞士標誌性山景的岩石和積雪山峰。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Zarko's Reflection on Switzerland</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">It's beyond me why Switzerland is so prosperous. You have French people, Italians, Germans speaking different languages. And how come they don't want to be part of their respective countries? How come there are no civil wars, no civil unrest, no divisions? Everybody is living together peacefully, prosperous. Does not make sense. Everywhere around the world, even people speaking with a slight difference between two languages are fighting each other. Yet right here, there are no natural resources. Even the countryside looks landscaped. The fields, the hills look like golf courses. Everything is beautiful, clean, organized. The rest of the world can learn from Switzerland. And I never knew that a country of 8.5 million could have such a great rail system. The trains run every half hour. You can connect to pretty much any part of Switzerland — and riding on a train, looking at the roads, you don't see cars, because you don't need to drive from place to place when the trains are this efficient. Once you get to the train station, you have buses, everything is connected, everything is organized. Everything is perfect.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">這段旅程是為期八天、以全景火車穿越瑞士的冒險之旅的一部分，沿途在令人屏息的小鎮和阿爾卑斯山谷停留。從棕櫚樹環繞的日內瓦湖岸到無車的策馬特街道，每一段都展現了瑞士多樣景觀的不同篇章。蒙特勒溫和近乎地中海的氣候與策馬特清新的高山空氣之間的對比，展示了瑞士在一次旅程中驚人的地理多樣性。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Cogwheel Train to Zermatt</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/WTUkFRamohk/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Leaving the Swiss Riviera behind, we roll into the Rhône Valley — Switzerland's fruit basket and wine cellar. This place gets 300 days of sun a year. Out the window: vineyards, cornfields, and small factories blur past, the rhythm of everyday Switzerland most travelers never notice. At Visp, we transferred to the Matterhorn Gotthard Bahn, starting the steep final leg towards Zermatt — a true feat of Swiss railway engineering. You can see the cog wheel in the middle of the track — it grips on that so it can pull itself up the hill. In the next hour, we rise a thousand meters through 15 tunnels and 30 bridges, defying gravity across 35 rugged kilometers — climbing straight up. As the valley narrows, steep cliffs rise on both sides, restricting sunlight so severely that some villages only get 2 hours of it in winter. We've entered Switzerland's high alpine zone, where long winters dominate the year and human life adapts carefully to extreme cold and limited daylight. Don't miss our next video. We're off to Zermatt, Switzerland's ski capital — cable cars to the top of the world, the real Matterhorn, and the Glacier Express across Switzerland to St. Moritz.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

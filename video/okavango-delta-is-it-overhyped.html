@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,360 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Okavango Delta. Overhyped or the real
-deal? Watch it till the end. We share it
-raw, the amazing, the beautiful, and
-yes, even the disappointing.
-We&#39;re flying camp to camp across
-Bosswana.
-And today we land at our second stop,
-Kugana,
-right in the Okabango Delta.
-A safari in Bosswana costs plenty. And
-the reason, well, the only real way
-between camps is flying.
-&gt;&gt; Hello. Hello.
-&gt;&gt; Hello, sir.
-&gt;&gt; Hi.
-&gt;&gt; Nice to meet you, sir. My name is
-Marshall.
-&gt;&gt; Marshall, you going to be our pilot?
-&gt;&gt; Yes, sir.
-&gt;&gt; All right.
-&gt;&gt; Okay. Let me
-&gt;&gt; Yes. Yes.
-&gt;&gt; Nice to meet you.
-&gt;&gt; From here all the way to Ghana.
-&gt;&gt; Okay.
-&gt;&gt; All right.
-&gt;&gt; All right.
-&gt;&gt; But we have one stop over in Sapur.
-&gt;&gt; No problem. No problem.
-&gt;&gt; I&#39;m here to Savi 40 40 minutes and then
-Savi to Ghana another 45 minutes.
-&gt;&gt; Sounds good.
-&gt;&gt; Sounds like fun.
-&gt;&gt; Easy.
-&gt;&gt; All right.
-&gt;&gt; Yeah. How cool.
-
-&gt;&gt; The Chobi River stretches beneath us.
-We had two unforgettable days at the
-game lodge. Its beauty shining from
-every angle. From
-above or below, it&#39;s breathtaking. And
-our last video tells that tale.
-In small planes, you trade the bumps for
-unbeatable views.
-
-Flying low, you see the land in full
-horizon to horizon. The story of the
-land unfolds.
-
-My pleasure. My pleas. All right.
-&gt;&gt; Thank you, Marshall.
-&gt;&gt; Bye.
-&gt;&gt; Enjoy.
-&gt;&gt; Here&#39;s a departure lounge.
-&gt;&gt; Oh my goodness. We&#39;re being picked up by
-boat.
-This is our transfer from the airport to
-the hotel, the lodge. Heading
-to the lodge. He said 10-minute ride.
-Wow, what a scenery. The Okabango Delta.
-Reachable only by light aircraft or
-boat.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">奧卡萬戈三角洲，被過度吹捧還是貨真價實？看到最後。我們真實呈現，驚人的、美麗的，是的，甚至是令人失望的部分。我們搭飛機在波札那的各個營地之間移動。今天我們降落在第二站，庫加納，就在奧卡萬戈三角洲的中心。波札那的 safari 價格不菲，原因很簡單：往來營地之間唯一真正的方式就是搭飛機。「你好，先生。」「你好。」「很高興見到你，先生。我叫馬歇爾。」「馬歇爾，你要當我們的機長？」「是的，先生。」「好的。」「從這裡一直到加納。」「但我們要在薩普爾中停一站。」「沒問題。」「從薩維到加納還要45分鐘。」「聽起來不錯。」「真酷。」喬貝河在我們下方延伸。我們在野生動物木屋度過了兩天難忘的時光，它的美麗從每一個角度閃耀。從上空或地面看都令人屏息。我們上一部影片講述了那個故事。搭乘小型飛機，你用顛簸換來了無與倫比的視野。飛得低，你看到大地從地平線到地平線的完整面貌。大地的故事在眼前展開。「不客氣。」「謝謝你，馬歇爾。」「再見。」「這裡是離境候機室。」「哦天哪，有人開船來接我們了。」這是我們從機場到飯店、到木屋的接駁。他說十分鐘的船程。哇，這風景。奧卡萬戈三角洲，只能通過輕型飛機或船隻到達。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Okavango Delta: Is It Overhyped?</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ft or
-boat. And here we are.
-
-Glorious.
-
-&gt;&gt; You guys are something.
-&gt;&gt; Hello.
-&gt;&gt; Hello. Hello. Thank you. Thank you for
-the warm, warm welcome.
-&gt;&gt; You guys are amazing. I love you.
-&gt;&gt; Kugana Island Lodge is one of Delta&#39;s
-truly iconic camps. It&#39;s set on its own
-island overlooking the Kugana Lagoon.
-Here, camping takes on a whole new
-meaning.
-12 luxury tented suites redefine the
-idea of a safari tent.
-Our suite is a canvas and thatch
-sanctuary perched on a raised wooden
-deck.
-Floor to ceiling windows open to
-sweeping lagoon views. A romantic canopy
-bed promises comfort after long days in
-the bush. And for indulgence, indoor and
-outdoor showers.
-Step outside and the wilderness is right
-there. Yet every comfort surrounds you.
-
-Now this is camping. Wild, elegant, and
-unforgettable.
-
-We&#39;re in one of the planet&#39;s largest
-inland wetlands, the Okavango Delta.
-During the peak flood,
-seasonal rains from Angola descend into
-Bosswana,
-creating an oasis within the arid
-Kalahari.
-The ecosystem supports more than 400
-bird species along with countless other
-species. Yet, despite its grandeur,
-accessibility is limited.
-99% of the delta is unreachable by
-visitors,
-which leaves only what you can see from
-boat rides through the main canal.
-Hippos. You&#39;ll see plenty, but don&#39;t
-mistake them for harmless.
-Territorial and aggressive, they can
-charge from beneath the surface. Tipping
-small boats with terrifying ease.
-Encountering them too close is a risk
-that no one wants.
-The Oka Vango is marketed as a safari
-hot spot.
-In reality, guides really work hard,
-peering through tall grass, searching
-for sightings near the water.
-Why not celebrate the delta for what it
-is, a bird paradise?
-Elephants, lions, you can spot them
-almost anywhere.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">只能靠輕型飛機或船。我們到了。太棒了。「你們太棒了。」「你好，謝謝你們溫暖的歡迎。」「你們太棒了，我愛你們。」庫加納島木屋是三角洲真正標誌性的營地之一。它坐落在一座獨立島嶼上，俯瞰庫加納潟湖。在這裡，露營有了全新的意義。12間豪華帳篷套房重新定義了safari帳篷的概念。我們的套房是一個帆布和茅草搭建的 sanctuary，架在高起的木質平台上。落地窗面向廣闊的潟湖景觀。一張浪漫的 canopy 床承諾在叢林中的漫長一天後帶來舒適。至於 indulgence，室內和戶外淋浴都有。踏出室外，荒野就在那裡，但所有舒適設施都圍繞著你。現在這才是露營，野性、優雅、令人難忘。我們身處地球上最大的內陸濕地之一，奧卡萬戈三角洲。在洪水高峰期，來自安哥拉的季節性雨水流入波札那，在乾旱的喀拉哈里沙漠中創造了一片綠洲。這個生態系統支持超過400種鳥類以及無數其他物種。然而，儘管它如此壯麗，可及性卻非常有限。99%的三角洲是遊客無法到達的，你只能從主水道的船隻上看到一部分。河馬，你會看到很多，但別以為牠們無害。牠們具有領地意識且具有攻擊性，可以從水面下發動攻擊，輕而易舉地掀翻小船。靠得太近的風險沒有人想要。奧卡萬戈被行銷為safari熱點，但實際上，導遊真的非常努力，透過高高的草叢搜尋，在水邊尋找動物的蹤跡。為什麼不為三角洲的真實面貌喝采呢，它是鳥類的天堂。大象、獅子，你幾乎在任何地方都能看到。但這羽毛的奇觀才是三角洲真正的寶石。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ork hard,
-peering through tall grass, searching
-for sightings near the water.
-Why not celebrate the delta for what it
-is, a bird paradise?
-Elephants, lions, you can spot them
-almost anywhere. But this
-feathered spectacle is the delta&#39;s true
-gem. It&#39;s a unique and unmatched beauty.
-Baby birds learning to fly occasionally
-fall in the water where crocodile are
-waiting for a gift.
-
-The Oka Vango is stunningly beautiful.
-Come for what it is.
-Nature, birds, and the lodg&#39;s charm.
-For leopards and lions, check out our
-earlier safari videos.
-
-It&#39;s and we&#39;re at the camp and they
-have a fire going here. We have our
-coffee and we could hear hippos in the
-distance like pretty much all night.
-We&#39;re in a tent and uh well this morning
-they had the fire going and we&#39;re going
-to do a walk, a bush walk. They&#39;re going
-to take us to a couple different islands
-and then we&#39;re going to walk around the
-island. So, the walk will be kind of
-interesting. We&#39;ve never done that
-before. You could hear the hippos in the
-distance last night and I could hear
-like the guy said what you heard was a
-lion and I did hear something like about
-in the morning. It&#39;s you&#39;re out in
-nature here, middle of Africa and
-Batswana. And it&#39;s different because the
-other places we were at was dry and
-there was not, you know, everything was
-all dry. But here with the river and
-stuff,
-everything is green. You have birds and
-it&#39;s just different. It&#39;s fun to do do
-different places because it&#39;s all
-different.
-&gt;&gt; Potential uh dangerous animals like
-hippos, elephant, and lions.
-uh the one that can pose a threat
-uh your life.
-&gt;&gt; Safari on foot in Africa.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">導遊努力地透過高草叢搜尋，在水邊尋找動物的蹤跡。為什麼不為三角洲的真實面貌喝采呢，它是鳥類的天堂。大象、獅子，你幾乎在任何地方都能看到。但這場羽毛的盛宴才是三角洲真正的寶石，一種獨一無二、無可比擬的美。剛學飛的小鳥偶爾會掉進水裡，那裡的鱷魚正在等待禮物。奧卡萬戈美得令人屏息。為了它的本質而來，大自然、鳥類和營地的魅力。想看花豹和獅子，請看我們之前的safari影片。我們在營地，他們在這裡升起了營火。我們喝著咖啡，整晚都能聽到遠方河馬的聲音。我們在帳篷裡，今天早上他們升了火，我們要去進行一次叢林徒步。他們要帶我們去幾個不同的島嶼，然後我們要在島上走走。這次徒步應該會很有趣，我們以前從沒做過。昨晚你能聽到遠方河馬的聲音，而且我聽到，嚮導說你聽到的是獅子，我確實在大約凌晨時聽到了什麼。你在這裡身處大自然之中，非洲和波札那的中心。這和我們去過的其他地方不同，那些地方很乾燥，到處都是乾的。但在這裡，有河流和植被，一切都是綠色的。你有鳥類，一切都不一樣。去不同的地方很有趣，因為每個地方都不同。「可能會遇到危險動物，像是河馬、大象和獅子，那些可能對你的生命造成威脅的動物。」在非洲進行徒步safari。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e one that can pose a threat
-uh your life.
-&gt;&gt; Safari on foot in Africa. What could go
-wrong?
-
-&gt;&gt; Two armed guides will keep us safe. One
-leading, one watching our backs.
-
-Bones sure tell a story. This hippo was
-ambushed by lions, caught on his way
-back to water.
-Nature&#39;s drama left nothing but a
-skeleton.
-On foot in big game country, the
-exhilaration is unmatched.
-
-Our senses are sharpened.
-Sounds, smells, movements. You&#39;d never
-notice these from a vehicle.
-We are walking at daylight on an open
-island where threats can be seen and
-avoided.
-It&#39;s more of a wilderness hike than
-deliberately stalking dangerous animals.
-
-Look how big he is. He&#39;s huge.
-
-&gt;&gt; Every hippopod revolves around the
-dominant bull.
-At the resting spot, we see his ritual.
-Wide yawns, jaws opening to 180 degrees.
-Those curved ivory canines gleam.
-This isn&#39;t fatigue. It&#39;s dominance.
-His way of saying, &quot;I&#39;m big. I&#39;m armed.
-Stay back.
-
-Sundowner cocktails at what has to be
-the most unique bar. I pinched myself
-just to check if I&#39;m dreaming.
-
-So, Zarko&#39;s going to sit in the front
-and I&#39;m going to sit in the back. And he
-told us we have to be careful with our
-cameras or they&#39;ll fly out, fly off. So,
-we&#39;ll be careful.
-For the full picture, to truly see what
-the Okabango is, there&#39;s only one way.
-It isn&#39;t cheap, but how many times do
-you come here? How many lives do you
-get?
-The truth is, most of the delta is
-inaccessible.
-&gt;&gt; Wow.
-Wow. Awesome.
-&gt;&gt; The only way to grasp its scale is from
-above.
-We climb into a small helicopter. The
-doors are off. Wind blowing in ou</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">那些可能對你的生命造成威脅的動物。在非洲進行徒步safari，會出什麼錯呢？兩名武裝嚮導會保護我們的安全，一位帶路，一位注意後方。骨頭確實訴說著故事。這頭河馬被獅子伏擊，在回水的路上被逮到。大自然的戲劇只留下了一具骨架。在大型動物出沒的區域徒步，那份興奮是無可比擬的。我們的感官變得敏銳，聲音、氣味、動作。這些你從車上永遠不會注意到。我們在白天行走，在一個開放的島嶼上，威脅可以被看見和避免。這更像是一次荒野徒步，而不是刻意追蹤危險動物。「看他有多大，他好巨大。」每個河馬群都以 dominant 的公河馬為中心。在休息點，我們看到了牠的儀式，大張的哈欠，下頜張開到180度，那些彎曲的象牙色犬齒閃閃發光。這不是疲勞，這是支配。牠用這種方式說：「我很大，我有武器，保持距離。」在一個堪稱最獨特的酒吧享用日落雞尾酒，我捏了自己一下，確認我不是在作夢。薩爾科要坐在前面，我要坐在後面。他告訴我們要小心相機，否則它們會飛出去。所以我們會小心。要看到完整的畫面，真正了解奧卡萬戈是什麼，只有一種方式。這不便宜，但你這輩子能來這裡幾次？你能活幾次？事實是，大部分三角洲是無法到達的。「哇，太棒了。」要掌握它的規模，唯一的方式就是從上空俯瞰。我們爬進一架小型直升機，門是拆掉的，風吹在我們臉上。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">r
-faces.
-
-Suddenly, we&#39;re not tourists anymore.
-We&#39;re birds.
-
-Herds of buffalo below look like
-shifting shadows, patterns moving across
-green and blue.
-Elephants march in single file, cutting
-paths through the water.
-Hippos leave silver trails across
-lagoons.
-But it&#39;s not the animals that stop you.
-It&#39;s the land itself.
-
-A desert transformed.
-Floods from Angola spread across the
-Kalahari.
-Veins of blue stitching together a world
-of islands and channels.
-
-It&#39;s one of those rare views you don&#39;t
-just see, you feel it.
-And from this height, the oak of Bongo
-finally makes sense.
-Horizon to horizon is both miracle and a
-masterpiece.
-
-
-talking for a ride.
-&gt;&gt; Hello. Hello.
-&gt;&gt; Is the Okabango overhyped or is it
-wonderful?
-For us, the answer is both. It really
-depends on your expectations.
-Every paradise has its trade-offs.
-arrive for the right reasons and it will
-deliver.
-The birds here are really the show. Next
-time we might skip the animals and come
-back with a bird focused lens on the
-delta.
-
-Kugana Island Lodge nails the five-star
-vibe. Ambience, comfort, location.
-They&#39;re all top class.
-&gt;&gt; But the food honestly disappointing.
-For a premium resort, it shouldn&#39;t be
-this weak. Luxury should taste as good
-as it looks.
-
-If you enjoy traveling with us, join the
-next adventure.
-We&#39;re heading to Morami Game Reserve and
-Camp Kakaaka.
-&gt;&gt; Subscribe so you don&#39;t miss it.
-&gt;&gt; Drop us a comment on your thoughts of
-the Okabango Delta or about your
-experience if you&#39;ve been here.
-It means the world to us and really
-helps keep these journeys going.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">風吹在我們臉上。突然間，我們不再是觀光客了，我們是鳥。下方的水牛群看起來像移動的影子，圖案在綠色和藍色之間移動。大象排成單列行進，在水面上切出路徑。河馬在潟湖上留下銀色的痕跡。但讓你停下來的不是動物，而是大地本身。一片被轉變的沙漠。來自安哥拉的洪水蔓延過喀拉哈里沙漠，藍色的血管將一個由島嶼和水道組成的世界縫合在一起。這是那種你不只是看到、而是感受到的罕見景觀。而從這個高度，奧卡萬戈終於有了意義。從地平線到地平線，既是奇蹟，也是傑作。「載我們一程吧。」「你好。」「奧卡萬戈是被過度吹捧還是很精彩？」對我們來說，答案兩者皆是。這真的取決於你的期望。每個天堂都有它的取捨。帶著正確的理由到來，它就會如實呈現。這裡的鳥類才是真正的主角。下次我們可能會跳過動物，專門帶著鳥類鏡頭回來拍攝三角洲。庫加納島木屋完美呈現了五星級的氛圍,氛圍、舒適度、地點，全都是頂級的。但食物老實說令人失望。對於一個高級度假村來說，不應該這麼平庸。奢華的味道應該和它的外表一樣好。如果你喜歡和我們一起旅行，加入下一場冒險。我們要去莫雷米野生動物保護區和卡卡納卡營地。訂閱才不會錯過。在留言區告訴我們你對奧卡萬戈三角洲的看法，或者如果你去過，分享你的經驗。這對我們意義重大，也真的能幫助這些旅程繼續下去。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: mleW-igGD2k | 16:50 | 4,000 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">奧卡萬戈三角洲，被過度吹捧還是貨真價實？看到最後。我們真實呈現，驚人的、美麗的，是的，甚至是令人失望的部分。我們搭飛機在波札那的各個營地之間移動。今天我們降落在第二站，庫加納，就在奧卡萬戈三角洲的中心。波札那的 safari 價格不菲，原因很簡單：往來營地之間唯一真正的方式就是搭飛機。「你好，先生。」「你好。」「很高興見到你，先生。我叫馬歇爾。」「馬歇爾，你要當我們的機長？」「是的，先生。」「好的。」「從這裡一直到加納。」「但我們要在薩普爾中停一站。」「沒問題。」「從薩維到加納還要45分鐘。」「聽起來不錯。」「真酷。」喬貝河在我們下方延伸。我們在野生動物木屋度過了兩天難忘的時光，它的美麗從每一個角度閃耀。從上空或地面看都令人屏息。我們上一部影片講述了那個故事。搭乘小型飛機，你用顛簸換來了無與倫比的視野。飛得低，你看到大地從地平線到地平線的完整面貌。大地的故事在眼前展開。「不客氣。」「謝謝你，馬歇爾。」「再見。」「這裡是離境候機室。」「哦天哪，有人開船來接我們了。」這是我們從機場到飯店、到木屋的接駁。他說十分鐘的船程。哇，這風景。奧卡萬戈三角洲，只能通過輕型飛機或船隻到達。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Flying to Khwai</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Okavango Delta — overhyped or the real deal? Watch it till the end. We share it raw: the amazing, the beautiful, and yes, even the disappointing. We're flying camp to camp across Botswana. Today we land at our second stop, Khwai, right in the Okavango Delta. A safari in Botswana costs plenty — the only real way between camps is flying. The Chobe River stretches beneath us. We had two unforgettable days at the game lodge and our last video tells that tale. In small planes, you trade the bumps for unbeatable views. Flying low, you see the land in full — horizon to horizon. The story of the land unfolds.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">只能靠輕型飛機或船。我們到了。太棒了。「你們太棒了。」「你好，謝謝你們溫暖的歡迎。」「你們太棒了，我愛你們。」庫加納島木屋是三角洲真正標誌性的營地之一。它坐落在一座獨立島嶼上，俯瞰庫加納潟湖。在這裡，露營有了全新的意義。12間豪華帳篷套房重新定義了safari帳篷的概念。我們的套房是一個帆布和茅草搭建的 sanctuary，架在高起的木質平台上。落地窗面向廣闊的潟湖景觀。一張浪漫的 canopy 床承諾在叢林中的漫長一天後帶來舒適。至於 indulgence，室內和戶外淋浴都有。踏出室外，荒野就在那裡，但所有舒適設施都圍繞著你。現在這才是露營，野性、優雅、令人難忘。我們身處地球上最大的內陸濕地之一，奧卡萬戈三角洲。在洪水高峰期，來自安哥拉的季節性雨水流入波札那，在乾旱的喀拉哈里沙漠中創造了一片綠洲。這個生態系統支持超過400種鳥類以及無數其他物種。然而，儘管它如此壯麗，可及性卻非常有限。99%的三角洲是遊客無法到達的，你只能從主水道的船隻上看到一部分。河馬，你會看到很多，但別以為牠們無害。牠們具有領地意識且具有攻擊性，可以從水面下發動攻擊，輕而易舉地掀翻小船。靠得太近的風險沒有人想要。奧卡萬戈被行銷為safari熱點，但實際上，導遊真的非常努力，透過高高的草叢搜尋，在水邊尋找動物的蹤跡。為什麼不為三角洲的真實面貌喝采呢，它是鳥類的天堂。大象、獅子，你幾乎在任何地方都能看到。但這羽毛的奇觀才是三角洲真正的寶石。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Khwai Island Lodge</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Reachable only by light aircraft or boat. And here we are — glorious. Khwai Island Lodge is one of the Delta's truly iconic camps, set on its own island overlooking the lagoon. 12 luxury tented suites redefine the idea of a safari tent. Our suite is a canvas and thatch sanctuary perched on a raised wooden deck — floor-to-ceiling windows open to sweeping lagoon views, a romantic canopy bed, and indoor and outdoor showers. Step outside and the wilderness is right there. Yet every comfort surrounds you. Now this is camping — wild, elegant, and unforgettable.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">導遊努力地透過高草叢搜尋，在水邊尋找動物的蹤跡。為什麼不為三角洲的真實面貌喝采呢，它是鳥類的天堂。大象、獅子，你幾乎在任何地方都能看到。但這場羽毛的盛宴才是三角洲真正的寶石，一種獨一無二、無可比擬的美。剛學飛的小鳥偶爾會掉進水裡，那裡的鱷魚正在等待禮物。奧卡萬戈美得令人屏息。為了它的本質而來，大自然、鳥類和營地的魅力。想看花豹和獅子，請看我們之前的safari影片。我們在營地，他們在這裡升起了營火。我們喝著咖啡，整晚都能聽到遠方河馬的聲音。我們在帳篷裡，今天早上他們升了火，我們要去進行一次叢林徒步。他們要帶我們去幾個不同的島嶼，然後我們要在島上走走。這次徒步應該會很有趣，我們以前從沒做過。昨晚你能聽到遠方河馬的聲音，而且我聽到，嚮導說你聽到的是獅子，我確實在大約凌晨時聽到了什麼。你在這裡身處大自然之中，非洲和波札那的中心。這和我們去過的其他地方不同，那些地方很乾燥，到處都是乾的。但在這裡，有河流和植被，一切都是綠色的。你有鳥類，一切都不一樣。去不同的地方很有趣，因為每個地方都不同。「可能會遇到危險動物，像是河馬、大象和獅子，那些可能對你的生命造成威脅的動物。」在非洲進行徒步safari。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. The Delta: Birds vs. Big Game</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We're in one of the planet's largest inland wetlands — the Okavango Delta. During peak flood, seasonal rains from Angola descend into Botswana, creating an oasis within the arid Kalahari. The ecosystem supports more than 400 bird species. Yet despite its grandeur, accessibility is limited — 99% of the delta is unreachable by visitors. The Okavango is marketed as a safari hot spot. In reality, guides really work hard, peering through tall grass, searching for sightings near the water. Why not celebrate the delta for what it is — a bird paradise? Elephants and lions you can spot almost anywhere. But this feathered spectacle is the delta's true gem. Baby birds learning to fly occasionally fall in the water where crocodiles are waiting. The Okavango is stunningly beautiful. Come for what it is: nature, birds, and the lodge's charm.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">那些可能對你的生命造成威脅的動物。在非洲進行徒步safari，會出什麼錯呢？兩名武裝嚮導會保護我們的安全，一位帶路，一位注意後方。骨頭確實訴說著故事。這頭河馬被獅子伏擊，在回水的路上被逮到。大自然的戲劇只留下了一具骨架。在大型動物出沒的區域徒步，那份興奮是無可比擬的。我們的感官變得敏銳，聲音、氣味、動作。這些你從車上永遠不會注意到。我們在白天行走，在一個開放的島嶼上，威脅可以被看見和避免。這更像是一次荒野徒步，而不是刻意追蹤危險動物。「看他有多大，他好巨大。」每個河馬群都以 dominant 的公河馬為中心。在休息點，我們看到了牠的儀式，大張的哈欠，下頜張開到180度，那些彎曲的象牙色犬齒閃閃發光。這不是疲勞，這是支配。牠用這種方式說：「我很大，我有武器，保持距離。」在一個堪稱最獨特的酒吧享用日落雞尾酒，我捏了自己一下，確認我不是在作夢。薩爾科要坐在前面，我要坐在後面。他告訴我們要小心相機，否則它們會飛出去。所以我們會小心。要看到完整的畫面，真正了解奧卡萬戈是什麼，只有一種方式。這不便宜，但你這輩子能來這裡幾次？你能活幾次？事實是，大部分三角洲是無法到達的。「哇，太棒了。」要掌握它的規模，唯一的方式就是從上空俯瞰。我們爬進一架小型直升機，門是拆掉的，風吹在我們臉上。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Bush Walk on Foot</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">This morning they had the fire going and we're going to do a bush walk. We've never done that before. Safari on foot in Africa — what could go wrong? Two armed guides will keep us safe. One leading, one watching our backs. Bones sure tell a story. This hippo was ambushed by lions, caught on his way back to water. Nature's drama left nothing but a skeleton. On foot in big game country, the exhilaration is unmatched. Our senses are sharpened — sounds, smells, movements you'd never notice from a vehicle. We are walking at daylight on an open island where threats can be seen and avoided. It's more of a wilderness hike than deliberately stalking dangerous animals. Every hippo pod revolves around the dominant bull. At the resting spot, we see his ritual — wide yawns, jaws opening to 180 degrees. Those curved ivory canines gleam. This isn't fatigue. It's dominance. His way of saying: I'm big, I'm armed, stay back.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">風吹在我們臉上。突然間，我們不再是觀光客了，我們是鳥。下方的水牛群看起來像移動的影子，圖案在綠色和藍色之間移動。大象排成單列行進，在水面上切出路徑。河馬在潟湖上留下銀色的痕跡。但讓你停下來的不是動物，而是大地本身。一片被轉變的沙漠。來自安哥拉的洪水蔓延過喀拉哈里沙漠，藍色的血管將一個由島嶼和水道組成的世界縫合在一起。這是那種你不只是看到、而是感受到的罕見景觀。而從這個高度，奧卡萬戈終於有了意義。從地平線到地平線，既是奇蹟，也是傑作。「載我們一程吧。」「你好。」「奧卡萬戈是被過度吹捧還是很精彩？」對我們來說，答案兩者皆是。這真的取決於你的期望。每個天堂都有它的取捨。帶著正確的理由到來，它就會如實呈現。這裡的鳥類才是真正的主角。下次我們可能會跳過動物，專門帶著鳥類鏡頭回來拍攝三角洲。庫加納島木屋完美呈現了五星級的氛圍,氛圍、舒適度、地點，全都是頂級的。但食物老實說令人失望。對於一個高級度假村來說，不應該這麼平庸。奢華的味道應該和它的外表一樣好。如果你喜歡和我們一起旅行，加入下一場冒險。我們要去莫雷米野生動物保護區和卡卡納卡營地。訂閱才不會錯過。在留言區告訴我們你對奧卡萬戈三角洲的看法，或者如果你去過，分享你的經驗。這對我們意義重大，也真的能幫助這些旅程繼續下去。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Helicopter Flight & Verdict</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/mleW-igGD2k/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">For the full picture, to truly see what the Okavango is, there's only one way — from above. We climb into a small helicopter, doors off, wind blowing in our faces. Suddenly we're not tourists anymore. We're birds. Herds of buffalo below look like shifting shadows. Elephants march in single file, cutting paths through the water. Hippos leave silver trails across lagoons. But it's not the animals that stop you. It's the land itself — a desert transformed. Floods from Angola spread across the Kalahari. Veins of blue stitching together a world of islands and channels. From this height, the Okavango finally makes sense. Horizon to horizon — both miracle and masterpiece. Is the Okavango overhyped or is it wonderful? For us, the answer is both. It really depends on your expectations. Every paradise has its trade-offs. Arrive for the right reasons and it will deliver. The birds here are really the show. Khwai Island Lodge nails the five-star vibe — ambience, comfort, location all top class. But the food was honestly disappointing. For a premium resort, it shouldn't be this weak. Next adventure: we're heading to Moremi Game Reserve and Camp Xakanaxa. Subscribe so you don't miss it.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

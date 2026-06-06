@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,195 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Johannesburg. It often bookends a safari
-adventure. Your choice. Stick close to
-the airport for ease or head into the
-city for a quick taste.
-We&#39;ve had 3 weeks of unforgettable
-safaris, but in this video, we&#39;ll show
-you a little of Johannesburg.
-Living in Bulgaria means that most of
-our trips pass through the Istanbul
-airport.
-It&#39;s probably one of the most travel
-friendly hubs anywhere with direct
-flights to just about every corner of
-the world.
-The Turkish Airlines business lounge is
-one of the best. Seriously impressive.
-It does get crowded though because their
-business class fairs are often much
-cheaper than other airlines, making the
-upgrade tempting for a lot more
-travelers.
-
-After I pinched a nerve on a long haul
-flight, we decided to switch to business
-class for anything over 6 hours.
-There&#39;s a saying, if you don&#39;t fly
-business, your kids will.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">約翰尼斯堡常常是 safari 冒險的起點或終點。旅行者可以選擇：靠近機場以便利為主，或者進城快速體驗一下。經過三週難忘的 safari 後，這部影片展示了約翰尼斯堡的一小部分。住在保加利亞意味著大多數行程都會經過伊斯坦堡機場——這可能是世界上最適合轉機的樞紐之一，有直飛航班到世界各地。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Johannesburg Before the Safari</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">, we decided to switch to business
-class for anything over 6 hours.
-There&#39;s a saying, if you don&#39;t fly
-business, your kids will. So, we figured
-might as well enjoy it ourselves.
-
-We had a meal, watched a movie, drank
-some wine, took a nap, and then suddenly
-we&#39;re there.
-Johannesburg is massive, and it&#39;s not
-exactly tourist friendly. With that
-safety reputation in mind, figuring out
-where to stay kind of had us scratching
-our heads.
-
-Before starting our safari, we stayed
-near the airport at Emperor&#39;s Palace.
-There&#39;s three hotels wrapped around a
-casino. Think of it as Johannesburg&#39;s
-mini version of Las Vegas.
-Hey, we made it to Johannesburg. Our our
-room&#39;s not ready yet, so we have to kill
-a few hours. And by the time we left and
-by the time we got here, it&#39;s like a
-24-hour trip.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">土耳其航空的商務艙貴賓室被形容為最好的之一——令人印象深刻。不過它確實很擁擠，因為他們的商務艙票價通常比其他航空公司便宜很多，使得升等對許多旅客來說很有吸引力。在敘述者在一次長途飛行中神經被壓迫後，他們決定任何超過六小時的飛行都改搭商務艙。有句俗話說：「如果你不搭商務艙，你的孩子會搭。」</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">and
-by the time we got here, it&#39;s like a
-24-hour trip. So, we&#39;re a little tired.
-Really nice hotel. They have some nice
-hotels here. Not too far from the from
-the airport. We just have um this
-evening and then in the morning, early
-in the morning, then we&#39;re flying out to
-Krueger. So, welcome to Johannesburg.
-We&#39;re having local beer and we&#39;ve
-ordered lunch. We got our order. It&#39;s
-crazy big. Like, it looks like a half a
-chicken. We&#39;re shocked. And the plates
-are so hot the guy the waiters couldn&#39;t
-hardly carry the plates over the table.
-I said these fries are African African
-size.
-Oh my gosh. Mosmb beek chicken. So let&#39;s
-find out what what it&#39;s all about.
-&gt;&gt; I don&#39;t I don&#39;t even know where Mosmb
-beek is. We&#39;ll find out.
-&gt;&gt; We stayed at the Piermont D oral Grand.
-It&#39;s a five-star one and everything
-about it was completely over the top.
-&gt;&gt; Excuse me.
-
-&gt;&gt; Hello.
-&gt;&gt; Whoa.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">飛行體驗包括一頓餐點、一部電影、一些葡萄酒和小睡——然後突然就到了。約翰尼斯堡很大，而且不太適合觀光。考慮到它的安全聲譽，決定住在哪裡讓旅行者們傷透了腦筋。他們選擇住在機場附近的皇宮酒店，那裡有三家酒店環繞著一家賭場——約翰尼斯堡的迷你拉斯維加斯。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">stayed at the Piermont D oral Grand.
-It&#39;s a five-star one and everything
-about it was completely over the top.
-&gt;&gt; Excuse me.
-
-&gt;&gt; Hello.
-&gt;&gt; Whoa. Where?
-&gt;&gt; We are at the hotel in Johannesburg.
-&gt;&gt; We&#39;re not in Vegas.
-&gt;&gt; Looks like it.
-&gt;&gt; Since we&#39;re not gamblers, we were a bit
-hesitant to book here.
-They&#39;ve gone all in on the Vegas vibe.
-There&#39;s three hotels and they&#39;re all
-connected to the casino through a food
-and shopping court.
-There&#39;s plenty of dining options and
-it&#39;s a great way to spend the evening.
-Dinner and some people watching along
-the indoor prominade as the world
-strolls by.
-After 3 weeks chasing wildlife back in
-Johannesburg, we figured it was time to
-switch things up and try something
-different.
-We stayed in the</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">皇宮酒店提供了便利和舒適。抵達時房間還沒準備好，所以他們需要在24小時的旅程後打發幾個小時。酒店不錯，離機場不遠，提供了進入叢林前舒適的基地。對於擔心約翰尼斯堡安全的旅行者來說，皇宮酒店提供了一個實用的解決方案——舒適和安全，不必擔心在城市中穿梭的壓力。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Santin area right in
-the city beside a massive mall and the
-Mandela Square.
-And the mall is just huge, full of all
-the usual bigname brands.
-We&#39;re not big shoppers, but the
-steakhouse on the square served a
-fantastic dinner.
-If you&#39;re not exploring Johannesburg,
-and it&#39;s just a pre or post safari stop,
-I&#39;d stick with Emperor&#39;s Palace.
-There&#39;s great food, lively vibe, and
-it&#39;s just minutes from the airport.
-Perfect when your real adventure is
-happening out in the bush and not in the
-city.
-Next up, the start of our safari
-adventure.
-We&#39;re heading into the Cleri Private
-Nature Reserve from Camp George for
-unforgettable game drives.
-There&#39;s wild encounters, stunning
-landscapes. You won&#39;t want to miss
-what&#39;s coming. See you there.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">影片最後提供了實用建議。如果你在safari之前有長時間的轉機停留或一天的空檔，皇宮酒店是一個不錯的選擇。那裡有美食、熱鬧的氛圍，而且離機場只有幾分鐘的路程。當你的真正冒險是在叢林中而不是城市裡時，這是最完美的選擇。接下來，他們的safari冒險即將開始——前往克拉塞里私人自然保護區進行難忘的遊獵。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: kNvUJvkpLH0 | 6:27 | 1,160 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">約翰尼斯堡常常是 safari 冒險的起點或終點。旅行者可以選擇：靠近機場以便利為主，或者進城快速體驗一下。經過三週難忘的 safari 後，這部影片展示了約翰尼斯堡的一小部分。住在保加利亞意味著大多數行程都會經過伊斯坦堡機場——這可能是世界上最適合轉機的樞紐之一，有直飛航班到世界各地。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Istanbul Stopover</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Johannesburg. It often bookends a safari adventure. Your choice: stick close to the airport for ease, or head into the city for a quick taste. We've had 3 weeks of unforgettable safaris, but in this video we'll show you a little of Johannesburg. Living in Bulgaria means most of our trips pass through Istanbul Airport — probably one of the most travel-friendly hubs anywhere, with direct flights to just about every corner of the world. The Turkish Airlines business lounge is one of the best. Seriously impressive. It does get crowded though, because their business class fares are often much cheaper than other airlines. After I pinched a nerve on a long-haul flight, we decided to switch to business class for anything over 6 hours. There's a saying: if you don't fly business, your kids will. So we figured we might as well enjoy it ourselves. We had a meal, watched a movie, drank some wine, took a nap — and then suddenly we were there.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">土耳其航空的商務艙貴賓室被形容為最好的之一——令人印象深刻。不過它確實很擁擠，因為他們的商務艙票價通常比其他航空公司便宜很多，使得升等對許多旅客來說很有吸引力。在敘述者在一次長途飛行中神經被壓迫後，他們決定任何超過六小時的飛行都改搭商務艙。有句俗話說：「如果你不搭商務艙，你的孩子會搭。」</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Emperor's Palace: Airport Stay</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Johannesburg is massive and it's not exactly tourist-friendly. With that safety reputation in mind, figuring out where to stay had us scratching our heads. Before starting our safari, we stayed near the airport at Emperor's Palace — three hotels wrapped around a casino. Think of it as Johannesburg's mini Las Vegas. Hey, we made it to Johannesburg. Our room's not ready yet, so we have to kill a few hours. By the time we got here it had been close to a 24-hour trip, so we're a little tired. Really nice hotel — not too far from the airport. We just have this evening, and then early in the morning we're flying out to Kruger. Welcome to Johannesburg.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">飛行體驗包括一頓餐點、一部電影、一些葡萄酒和小睡——然後突然就到了。約翰尼斯堡很大，而且不太適合觀光。考慮到它的安全聲譽，決定住在哪裡讓旅行者們傷透了腦筋。他們選擇住在機場附近的皇宮酒店，那裡有三家酒店環繞著一家賭場——約翰尼斯堡的迷你拉斯維加斯。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Lunch & Local Food</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We're having local beer and we've ordered lunch. The order is crazy big — it looks like half a chicken. We're shocked. The plates are so hot the waiters could barely carry them to the table. African-sized fries, as we called them. Mozambique chicken. So let's find out what it's all about. I don't even know where Mozambique is. We'll find out.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">皇宮酒店提供了便利和舒適。抵達時房間還沒準備好，所以他們需要在24小時的旅程後打發幾個小時。酒店不錯，離機場不遠，提供了進入叢林前舒適的基地。對於擔心約翰尼斯堡安全的旅行者來說，皇宮酒店提供了一個實用的解決方案——舒適和安全，不必擔心在城市中穿梭的壓力。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Fairlawns & the Vegas Vibe</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We also stayed at Fairlawns Boutique Hotel — a five-star property, and everything about it was completely over the top. Since we're not gamblers, we were a bit hesitant to book at the casino complex. They've gone all in on the Vegas vibe — three hotels all connected to the casino through a food and shopping court. Plenty of dining options and a great way to spend the evening. Dinner and some people-watching along the indoor promenade as the world strolls by.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">影片最後提供了實用建議。如果你在safari之前有長時間的轉機停留或一天的空檔，皇宮酒店是一個不錯的選擇。那裡有美食、熱鬧的氛圍，而且離機場只有幾分鐘的路程。當你的真正冒險是在叢林中而不是城市裡時，這是最完美的選擇。接下來，他們的safari冒險即將開始——前往克拉塞里私人自然保護區進行難忘的遊獵。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Sandton & Recommendation</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/kNvUJvkpLH0/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">After 3 weeks chasing wildlife and back in Johannesburg, we figured it was time to switch things up and try something different. We stayed in the Sandton area — right in the city beside a massive mall and Mandela Square. The mall is huge, full of all the usual big-name brands. We're not big shoppers, but the steakhouse on the square served a fantastic dinner. If you're not exploring Johannesburg and it's just a pre- or post-safari stop, I'd stick with Emperor's Palace. Great food, lively vibe, and just minutes from the airport. Perfect when your real adventure is happening out in the bush and not in the city. Next up: the start of our safari adventure. We're heading into the Klaserie Private Nature Reserve from Camp George for unforgettable game drives. Wild encounters, stunning landscapes — you won't want to miss what's coming. See you there.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

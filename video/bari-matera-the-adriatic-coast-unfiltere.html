@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,477 +106,166 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">There are places that take you by
-surprise.
-Not because you didn&#39;t know they
-existed, but because you thought you
-already understood them.
-You had the picture in your mind. You
-had seen the postcards. You told
-yourself, yes, I know roughly what that
-will be. And then you arrive and
-everything you assumed dissolves.
-That is Puglia.
-We are going to spend time here,
-genuinely exploring, not rushing, not
-checking boxes. And by the end of this
-video, we think you will understand
-exactly why this particular corner of
-Southern Italy has quietly become one of
-the most talked about destinations in
-all of Europe. But first, how we got
-here
-and why.
-One of the things that we love most
-about living in Burgas, Bulgaria, is a
-feeling that took us a while to name.
-When we lived in Seattle on the West
-Coast of the United States, the world
-felt very far away.
-A flight to Hawaii, 6 hours. Mexico,
-roughly the same.
-Europe, most of a day with a connection.
-You planned big trips months in advance
-because every journey was a commitment.
-Here, it&#39;s different, completely
-different. Look at a map of the world
-and find Bulgaria. It&#39;s just kind of at
-a crossroads, close enough to the Middle
-East,  to Asia, to all of Western
-Europe, and even to Africa.
-Istanbul, one of the fastest growing
-aviation hubs on the planet, is just a
-short drive from us. And Sofia,
-Bulgaria&#39;s capital, is only 3 and 1/2
-hours by road. From Sofia, Europe is
-practically next  door. We found
-a flight, Sofia to Bari, Italy, for 33
-euros one way. 33 euros.
-By the time we added luggage, seat
-selection, and the comfort of the exit
-row. The round trip for both of us came
-to about $400 for two people return to
-Sophia.
-It&#39;s April and spring has just arrived
-in Bulgaria.
-The trees are filling out, flowers
-pushing through the soil, that
-particular softness in the air that only
-comes in the weeks before summer settles
-in.
-We had just returned from South America
-and yes,
-you&#39;ll find that Iguazu video link below
-if you haven&#39;t seen it. And in May,
-we&#39;re  heading to China. April
-was supposed to be Oman.
-We had looked forward to it, but the
-region is unsettled right now.
-We have learned over many years of
-travel that some moments  call
-for flexibility.
-So, we looked at the map, looked at the
-weather, and Bari won.
-Warmest temperatures, best sunshine, and
-a place we had visited once before,
-briefly and completely, and we always
-wanted to go back to.
-On our world cruise, we docked in Bari
-for a single afternoon.
-3 hours of act</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">有些地方會讓你感到驚喜。不是因為你不知道它們的存在，而是因為你以為你已經了解它們了。你的腦海裡早有畫面，你看過明信片，你告訴自己：沒錯，我大概知道那是什麼樣子。然後你抵達了，所有你以為的一切瞬間瓦解。這就是普利亞。我們要在這裡好好待一段時間，真正地探索，不匆忙、不打勾。在這支影片結束時，我們希望你會明白為什麼南義大利的這個角落已經悄然成為全歐洲最受討論的目的地之一。但首先，我們怎麼來到這裡，以及為什麼。住在保加利亞布爾加斯，我們最喜歡的一件事，是一種我們花了一段時間才命名的感覺。當我們住在美國西雅圖的時候，世界感覺非常遙遠。飛往夏威夷，六小時。墨西哥，差不多。歐洲，加上轉機要花上大半天。你幾個月前就規劃大旅行，因為每一趟旅程都是一個承諾。但在這裡，完全不一樣了。看看世界地圖，找到保加利亞。它就位於一個十字路口，離中東、亞洲、西歐，甚至非洲都不遠。伊斯坦堡，地球上成長最快的航空樞紐之一，離我們只有短短車程。保加利亞首都索菲亞，開車只需三個半小時。從索菲亞出發，歐洲幾乎就在隔壁。我們找到一張機票，從索菲亞飛往義大利巴里，單程只要33歐元。33歐元。等我們加上行李、選位和出口排的舒適座位後，我們兩人來回總共大約400美元。現在是四月，春天剛降臨保加利亞。樹木正在發芽，花朵破土而出，空氣中有一種只有在夏季到來前幾週才會出現的柔和感。我們剛從南美洲回來，如果你還沒看過，下方有伊瓜蘇瀑布的影片連結。五月我們要去中國。四月本來要去阿曼，我們原本滿心期待，但那個地區現在不太安定。經過多年的旅行，我們學到一個道理：有些時候需要靈活應變。所以我們看了看地圖，看了看天氣，巴里勝出了。最溫暖的氣溫、最好的陽光，而且我們之前去過一次，雖然短暫但完全愛上，一直想再回去。在我們的環球郵輪之旅中，我們在巴里停靠了一個下午，只有三小時。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Bari, Matera & the Adriatic Coast Unfiltered</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e rest of the trip grateful for
-it.
-Well, we made it to Bari. I don&#39;t know
-if I&#39;m minutes from Sophia, but we&#39;re
-here. There&#39;s 
-70 km an hour right now wind and I think
-we were the last flight to land. It was
-a hard landing. That&#39;s the first time
-I&#39;ve been scared, actually really scared
-on a plane. But we&#39;re here and this is
-an absolutely beautiful apartment. We
-got it on booking.com
-&gt;&gt; 
-&gt;&gt; and it&#39;s right in the old town. We&#39;re
-going to go out for a uh walk in a few
-minutes and explore the old town, but
-you couldn&#39;t have beat the location and
-how nice it is. It&#39;s all brand new, all
-renovated.
-Sophia&#39;s a full-size bed, king bed
-and everything is new. I like I like the
-decor.
-So, luckily we&#39;re here for 3 days and so
-we&#39;re going to do a lot of exploring in
-the old town. Plus, we&#39;re going to take
-some side  trips from here, but
-uh we were here for only 3 hours
-uh from the cruise ship, so a big
-difference. We wanted to come back, and
-we are.
-Even has a balcony.
-&gt;&gt; 
-&gt;&gt; Our first walk through the old quarter
-of Bari felt entirely  different
-from August on the cruise.
-Back then, the heat was extraordinary.
-The streets were empty in the middle of
-the day.
-Shutters were closed. The town doing
-what Mediterranean towns have always
-done.
-Resting until the sun loses its edge.
-Now in April, it was different. There
-were fewer tourists.
-A warm wind moving through the narrow
-lanes.
-And a particular kind of quietness that
-felt like an invitation rather than an
-absence.
-The old town  of Bari, the Bari
-Vecchia, is one of those places where
-the architecture itself tells you
-everything.
-These limestone streets,
-some of them barely wide enough for two
-people to pass comfortably, have been
-here for a thousand years.
-The stone walls absorb the light
-differently in every hour of the day.
-Pale gold at noon, deep amber in the
-evening, and at night when the lamps
-come on, the shadows make the whole
-neighborhood feel suspended in time.
-Laundry still hangs from the upper
-balconies.
-Old women sit in doorways watching the
-street with the calm authority of people
-who have been doing exactly this for
-decades.
-That evening, the passeggiata, the
-Italian tradition of the evening walk,
-was in full effect.
-The main street filled with people
-dressed properly for the occasion,
-moving slowly, greeting each other,
-stopping to talk. This is not a
-performance for tourists.
-This is just how life runs here.
-We found a seafood restaurant in the old
-quarter.
-Bari sits on the Adriatic and has been a
-major f</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這讓整趟旅程的其餘部分都充滿感激。好了，我們抵達巴里了。我不知道離索菲亞有多遠，但我們到了。現在風速每小時70公里，我想我們是最後一班降落的飛機。降落很顛簸，這是我第一次在飛機上真的被嚇到。但我們到了，這間公寓超漂亮，我們在Booking.com上訂的，就在老城區裡面。我們等一下要出去走走，探索老城區。地點和品質都無可挑剔，全部都是全新裝潢的。索菲亞是一張標準雙人床，國王尺寸，一切都是新的。我喜歡這個裝潢。幸運的是我們要在這裡待三天，所以我們會好好探索老城區，還要從這裡出發去一些周邊城鎮。之前從郵輪來的時候只有三小時，差太多了。我們一直想再回來，現在終於如願了。還有陽台呢。我們第一次走進巴里老城區的感覺，和八月從郵輪下來時完全不同。那時候熱得不得了，大中午街上空無一人，百葉窗全都拉下來，整個城鎮在做地中海城鎮一直在做的事：休息，直到太陽不那麼刺眼。現在是四月，完全不一樣了。遊客更少，溫暖的風穿過狹窄的小巷，有一種特別的安靜，不像是空無一人，更像是某種邀請。巴里的老城區，巴里維基亞，是那種建築本身就能告訴你一切的地方。這些石灰岩街道，有些窄到連兩個人並排走都有點勉強，已經存在了一千年。石牆在一天中的每個時段都以不同的方式吸收光線。中午是淡金色，傍晚是深琥珀色，到了夜晚燈光亮起時，影子讓整個街區感覺像是靜止在時間裡。衣物仍然掛在上層陽台上，老婦人坐在門口看著街道，帶著那種數十年如一日做著同一件事的人特有的平靜威嚴。那天傍晚，散步時光，義大利人傍晚散步的傳統，正熱烈進行著。主要街道上擠滿了為這個場合精心打扮的人們，他們緩慢地走著，互相打招呼，停下來聊天。這不是給遊客看的表演，這就是這裡的生活方式。我們在老城區找到一間海鮮餐廳。巴里位於亞得里亞海，一直是一個重要的漁港。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e light is better.
-The quiet is real.
-And you can actually stand still for a
-moment and feel where you are.
-Now, most people when they hear the
- name Saint Nicholas, think of
-one thing.
-Red coat, white beard, December,
-presents.
-That association runs so deep that it
-can be hard to remember there was an
-actual person behind it. A 4th century
-bishop from what is now southern Turkey
-who became one of the most reverent
-saints in Christian history. The
-Nicholas of legend, the one we know from
-the stories, was generous beyond
-measure, often giving anonymously, often
-at great personal cost. The gift giver
-image came from him, but so did
-something much  bigger.
-For the Eastern Orthodox world,
-Bulgaria, Greece, Russia, Serbia,
-Saint Nicholas is not a seasonal figure.
-He is one of the most important saints
-in the entire calendar.
-He is a patron of sailors, of travelers,
-of the poor.
-And he, as it happens, the patron saint
-of our own hometown, Burgas.
-Saint Nicholas Day in Burgas is a proper
-celebration, taken seriously, and
-celebrated fully.
-So, standing in front of this Basilica
-in Bari was not a neutral experience for
-us.
-The story of how Saint Nicholas ended up
-in Bari is itself remarkable. He died in
-the 4th century in Myra, in what is now
-Turkey.
-For centuries, his remains rested there,
-but in 1087, a group of sailors from
-Bari, motivated by a mix of devotion
-and, it must be said, commercial
-ambition, sailed to Myra and brought his
-relics back to Puglia.
-The city of Bari built the Basilica
-specifically to hold them. For over 900
-years, pilgrims have been making their
-way here from across the Christian
-world. The Russian connection is
-significant.
-For centuries, the Russian Orthodox
-pilgrims traveled to Bari to pray at the
-tomb of St. Nicholas.
-They contributed financially to the
-Basilica.
-There is a copper plaque near the
-entrance that acknowledges this.
-And in front of the church, in one
-corner, stands a statue of the saint. We
-looked at the inscription beneath it and
-stopped.
-The name was written in Cyrillic.
-Standing in a medieval Italian church
-courtyard,
-reading our own alphabet carved into
-stone,
-was one of those small moments of
-unexpected connection that travel
-sometimes gives you and that you never
-quite forget.
-Inside, the Basilica is everything the
-exterior  promises.
-The crypt, where the relics are kept,
-sits below the main floor. 
-Cool, ancient, lit by candles.
-It&#39;s genuinely a moving space,
-&gt;&gt; 
-&gt;&gt; not because of the art or the
-architecture,
-though</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">光線更好，安靜是真正的安靜。你可以真的站定片刻，感受自己身在何處。大多數人聽到聖尼古拉斯這個名字時，只會想到一件事：紅外套、白鬍子、十二月、禮物。這個聯想如此深刻，以至於很難記得背後曾經有一個真實的人物。一位四世紀的主教，來自現在的土耳其南部，後來成為基督教歷史上最受敬愛的聖人之一。傳說中的尼古拉斯，我們從故事中認識的那位，慷慨至極，經常匿名捐贈，常常付出巨大的個人代價。送禮物的形象來自於他，但還有更重要的東西。對東正教世界，保加利亞、希臘、俄羅斯、塞爾維亞來說，聖尼古拉斯不是一個季節性的人物。他是整個年曆中最重要的聖人之一。他是水手、旅行者、窮人的主保聖人。而他也正好是我們家鄉布爾加斯的主保聖人。布爾加斯的聖尼古拉斯節是一場真正的慶典，被認真看待、被完整慶祝。所以，站在巴里的這座聖殿面前，對我們來說並非一個中性的體驗。聖尼古拉斯最終如何來到巴里的故事本身就很了不起。他在四世紀死於米拉，即現在的土耳其。數世紀以來，他的遺骨一直安放在那裡。但在1087年，一群來自巴里的水手，懷著虔誠與商業企圖的混合動機，航向米拉，將他的聖物帶回了普利亞。巴里城特意建造了這座聖殿來存放它們。九百多年來，朝聖者從基督教世界的各個角落來到這裡。俄羅斯的連結尤其深遠。數世紀以來，俄羅斯東正教朝聖者前往巴里，在聖尼古拉斯的墓前祈禱。他們為聖殿的建造提供了經濟援助。入口附近有一塊銅牌記錄了這一切。而在教堂前方的一個角落，矗立著聖人的雕像。我們看著下方的銘文，停下了腳步。名字是用西里爾字母寫的。站在一座中世紀義大利教堂的庭院裡，讀著刻在石頭上的我們自己的字母，是旅行有時會給你的那種微小而意外的連結時刻，你永遠不會忘記。走進教堂內部，一切都如外觀所承諾的那樣。保存聖物的地下室位於主層下方，涼爽、古老，被燭光照亮。這是一個真正動人的空間，不是因為藝術或建築，儘管</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">the
-bridge, from the viewpoints on either
-side of the cove, you see the whole
-picture at once.
-The vertical cliffs, the old town
-balanced on their edge, the water below
-shifting between green and deep blue
-depending on the light.
-On the left side of the cove, there is a
-small piazza, a kind of open terrace,
-centered on a statue of a man who it
-turned out was born in this town and
-gave Italy one of its most beloved
-songs.
-Domenico Modugno, whose Volare, 
-released in 1958, won the Sanremo
-Festival, won two Grammys, sold millions
-of copies, and became for a generation
-the sound of Italy itself.
-He grew up playing on these cliffs,
-looking at this  water.
-You can understand why the song sounds
-the way it does.
-From the right side of the cove, you get
-the other famous view, the whole beach
-visible below.
-The bridge behind it, the old town
-stacked above.
-It is a composition that nature and
-several centuries of building seem to
-have arrived at together.
-We walked the narrow streets for a
-while. Small boutique hotels with
-sea-facing terraces, 
-restaurants carved directly into the
-cliff face.
-Somewhere below a window, waves crashing
-against the rock.
-There is a beauty here that is
-inseparable from its own imperfection.
-The slightly crooked walls, the uneven
- stone, the buildings that look
-less constructed than grown. It&#39;s not
-polished. That is precisely the point.
-A few minutes further on the train,
-Monopoli.
-These two towns, Polignano and Monopoli,
-were once connected, part of the same
-coastal settlement before they separated
-into distinct identities.
-Today they sit close enough to visit
-together in a single day,
-and the contrast between them is part of
-what makes the combination satisfying.
-Monopoli is a fishing port, seriously
-and historically. The harbor is working.
-It&#39;s not decorative. Fishing vessels
-still come and go.
-The industry that built this town still
-runs in it, though tourism has begun to
-quietly outpace it.
-Walking along the harbor and watching
-the boats, the nets, the fishermen
-moving with a particular unhurried
- certainty of people who have
-done the same work their whole lives.
-This is a different rhythm from
-Polignano&#39;s cliffs
-&gt;&gt; 
-&gt;&gt; and viewpoints.
-The old town here has a charm that
-rewards wandering without an agenda.
-We had lunch, a coffee, sat for a while
-watching people pass.
-Monopoly does not announce itself. It
-does not compete for your attention.
-
-It simply exists gracefully in a way
-that Italian towns of a certain age
-often  do.
-Our last </div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">從橋上、從海灣兩側的觀景點，你可以一眼看到完整的畫面。垂直的懸崖、懸掛在懸崖邊緣的老城鎮、下方隨著光線在綠色和深藍之間變換的海水。在海灣的左側有一個小廣場，一個開放的露台，中央是一座雕像，雕像的主人原來就出生在這個城鎮，他給了義大利一首最受喜愛的歌曲。多米尼科·莫杜尼奧，他的歌曲《Volare》於1958年發行，贏得了聖雷莫音樂節、兩項葛萊美獎，銷售了數百萬張，成為了一整個世代義大利的聲音。他在這些懸崖上長大，看著這片海水。你可以理解為什麼這首歌會是那個樣子。從海灣的右側，你可以看到另一個著名的景觀：整個沙灘在下方清晰可見，後方是橋梁，上方是老城區。這是一個自然與數個世紀的建築共同創造的構圖。我們在狹窄的街道上走了一會兒。有面向大海的小型精品酒店、直接開鑿在懸崖面上的餐廳。窗戶下方的某處，海浪拍打著岩石。這裡有一種與其不完美密不可分的美。略顯歪斜的牆壁、不平整的石頭、看起來與其說是建造出來的更像是長出來的建築。它不精緻，而這正是重點。搭火車再往前幾分鐘，就是莫諾波利。這兩個城鎮，波利尼亞諾和莫諾波利，曾經是相連的，是同一片海岸聚落的一部分，後來才各自發展出不同的身份。今天它們相距不遠，可以在一天內一起造訪，而它們之間的對比正是這個組合令人滿意的一部分。莫諾波利是一個漁港，名副其實，歷史悠久。港口仍在運作中，不是裝飾用的。漁船仍然來來去去。建造這個城鎮的產業仍然在運轉，儘管旅遊業已經悄悄地超越了它。沿著港口散步，看著船隻、漁網和漁民帶著那種一輩子做同一份工作的人才有的從容篤定。這與波利尼亞諾的懸崖和觀景點有著不同的節奏。這裡的老城區有一種獎勵漫無目的漫步的魅力。我們吃了午餐、喝了咖啡，坐了一會兒，看著人們經過。莫諾波利不張揚自己，不爭取你的注意。它只是優雅地存在著，就像義大利那些有一定年歲的城鎮經常做的那樣。我們的最後一站</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">s dressed
-properly.
-Someone nearby was photographing her.
-And she received the attention with
-being the most interesting  thing
-in the room.
-From Altamura, we continue to Matera.
-Nothing prepares you for Matera.
-&gt;&gt; 
-&gt;&gt; The approach is ordinary enough. You&#39;re
-driving through flat farmland. And then
-suddenly, the land opens up
-and you&#39;re looking into a ravine of
-extraordinary depth.
-And built into the walls of that ravine,
-stacked in the layers from the valley
-floor,
-all the way to the ridge,
-&gt;&gt; 
-&gt;&gt; are thousands of dwellings cut directly
-into the rock.
-Stone upon stone upon cave. A city
-growing out of the earth itself, not
-placed on top of it.
-These are  the Sassi di Matera,
-the stone neighborhoods. People have
-been living in these caves 
-continuously
-for longer than almost any other
-inhabited site in the world. Some
-estimates say 9,000 years. This is not a
-number that processes easily.
-&gt;&gt; 
-&gt;&gt; When you are standing on the ridge
-looking down at the layers of carved
-stone,
-you are looking at the longest
-continuously inhabited  human
-settlement in Europe.
-For most of the 20th century, the Sassi
-were considered a national
-embarrassment. In the 1950s, the Italian
-government forcibly relocated the
-remaining residents, tens of thousands
-of people,
-&gt;&gt; 
-&gt;&gt; to new housing built outside the ravine.
-Running water, electricity, modern
-facilities. The caves were abandoned and
-left to crumble.
-The writer Carlo Levi had Matera as a
-disgrace,
-&gt;&gt; 
-&gt;&gt; a place of poverty so extreme that it
-shamed the nation. For decades,
-&gt;&gt; 
-&gt;&gt; the name carried that weight.
-Then, slowly, something shifted. People
-began to look at what had been abandoned
-&gt;&gt; 
-&gt;&gt; and see something extraordinary.
-Architects, historians, artists arrived.
-
-The caves were cleaned, restored, and
-converted. Hotels appeared inside former
-cave dwellings. Restaurants opened in
-spaces  that had been homes a
-century before. In 1993,
-&gt;&gt; 
-&gt;&gt; UNESCO named the Sassi a World Heritage
-Site. In 2019, Matera was a European
-Capital of Culture.
-It has also appeared in film in ways
-that have shaped how the world 
-sees it.
-Mel Gibson chose Matera as the setting
-for Jerusalem in The Passion of the
-Christ.
-More recently, the opening sequence of
-the James Bond film No Time to Die was
-shot here.
-When you walk the streets and recognize
-the light, the angles,  the
-stone, it clicks into place.
-Walking Sassi is not entirely easy. The
-streets  are steep. The
-cobblestones are uneven. There are
-stairs, many of them.
-We recommend taking the walk a</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">穿著得體。旁邊有人在為她拍照，而她接受著這份關注，彷彿自己是房間裡最有趣的存在。從阿爾塔穆拉繼續前進，我們來到了馬泰拉。沒有任何事物能讓你準備好面對馬泰拉。抵達的過程再平常不過，你開車穿過平坦的農田。然後突然間，大地敞開了，你低頭看著一個深不可測的峽谷。而在那個峽谷的岩壁上，從谷底到山脊，層層疊疊著數以千計直接開鑿在岩石中的住所。石頭疊著石頭疊著洞穴。一座從大地本身生長出來的城市，而不是建造在它之上。這就是馬泰拉的薩西，石頭街區。人們在這些洞穴中連續居住的時間，比世界上幾乎任何其他有人居住的遺址都要長。有些估計說是九千年。這不是一個容易消化的數字。當你站在山脊上，俯視著層層的鑿石時，你看到的是歐洲最長的連續人類居住聚落。在二十世紀的大部分時間裡，薩西被視為國家的恥辱。1950年代，義大利政府強制遷移了剩下的居民，數以萬計的人，到峽谷外建造的新住宅區。有自來水、電力和現代設施。洞穴被遺棄，任其崩毀。作家卡洛·列維曾稱馬泰拉為一個恥辱，一個貧窮到令國家蒙羞的地方。數十年來，這個名字背負著那樣的重量。然後，慢慢地，某些東西改變了。人們開始看著那些被遺棄的東西，看到了非凡之處。建築師、歷史學家、藝術家來了。洞穴被清理、修復和改造。飯店出現在曾經的洞穴住所中，餐廳在一個世紀前還是住家的空間裡開張。1993年，聯合國教科文組織將薩西列為世界遺產。2019年，馬泰拉成為歐洲文化之都。它還以深刻影響了世界看待它的方式出現在電影中。梅爾·吉勃遜選擇馬泰拉作為《受難曲》中耶路撒冷的拍攝地。更近期的，詹姆斯·龐德電影《生死交戰》的開場鏡頭也在這裡拍攝。當你走在街道上，認出那些光線、角度和石頭時，一切都瞭然於心。在薩西行走並不容易。街道很陡，鵝卵石不平整，有很多階梯。我們建議慢慢走。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: -SdS5FIRPRQ | 24:14 | 4,548 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">有些地方會讓你感到驚喜。不是因為你不知道它們的存在，而是因為你以為你已經了解它們了。你的腦海裡早有畫面，你看過明信片，你告訴自己：沒錯，我大概知道那是什麼樣子。然後你抵達了，所有你以為的一切瞬間瓦解。這就是普利亞。我們要在這裡好好待一段時間，真正地探索，不匆忙、不打勾。在這支影片結束時，我們希望你會明白為什麼南義大利的這個角落已經悄然成為全歐洲最受討論的目的地之一。但首先，我們怎麼來到這裡，以及為什麼。住在保加利亞布爾加斯，我們最喜歡的一件事，是一種我們花了一段時間才命名的感覺。當我們住在美國西雅圖的時候，世界感覺非常遙遠。飛往夏威夷，六小時。墨西哥，差不多。歐洲，加上轉機要花上大半天。你幾個月前就規劃大旅行，因為每一趟旅程都是一個承諾。但在這裡，完全不一樣了。看看世界地圖，找到保加利亞。它就位於一個十字路口，離中東、亞洲、西歐，甚至非洲都不遠。伊斯坦堡，地球上成長最快的航空樞紐之一，離我們只有短短車程。保加利亞首都索菲亞，開車只需三個半小時。從索菲亞出發，歐洲幾乎就在隔壁。我們找到一張機票，從索菲亞飛往義大利巴里，單程只要33歐元。33歐元。等我們加上行李、選位和出口排的舒適座位後，我們兩人來回總共大約400美元。現在是四月，春天剛降臨保加利亞。樹木正在發芽，花朵破土而出，空氣中有一種只有在夏季到來前幾週才會出現的柔和感。我們剛從南美洲回來，如果你還沒看過，下方有伊瓜蘇瀑布的影片連結。五月我們要去中國。四月本來要去阿曼，我們原本滿心期待，但那個地區現在不太安定。經過多年的旅行，我們學到一個道理：有些時候需要靈活應變。所以我們看了看地圖，看了看天氣，巴里勝出了。最溫暖的氣溫、最好的陽光，而且我們之前去過一次，雖然短暫但完全愛上，一直想再回去。在我們的環球郵輪之旅中，我們在巴里停靠了一個下午，只有三小時。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">There are places that take you by surprise. Not because you didn't know they existed, but because you thought you already understood them. You had the picture in your mind. You had seen the postcards. You told yourself: yes, I know roughly what that will be. And then you arrive and everything you assumed dissolves. That is Puglia. We are going to spend time here, genuinely exploring, not rushing, not checking boxes. And by the end of this video, we think you will understand exactly why this particular corner of Southern Italy has quietly become one of the most talked about destinations in all of Europe.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">這讓整趟旅程的其餘部分都充滿感激。好了，我們抵達巴里了。我不知道離索菲亞有多遠，但我們到了。現在風速每小時70公里，我想我們是最後一班降落的飛機。降落很顛簸，這是我第一次在飛機上真的被嚇到。但我們到了，這間公寓超漂亮，我們在Booking.com上訂的，就在老城區裡面。我們等一下要出去走走，探索老城區。地點和品質都無可挑剔，全部都是全新裝潢的。索菲亞是一張標準雙人床，國王尺寸，一切都是新的。我喜歡這個裝潢。幸運的是我們要在這裡待三天，所以我們會好好探索老城區，還要從這裡出發去一些周邊城鎮。之前從郵輪來的時候只有三小時，差太多了。我們一直想再回來，現在終於如願了。還有陽台呢。我們第一次走進巴里老城區的感覺，和八月從郵輪下來時完全不同。那時候熱得不得了，大中午街上空無一人，百葉窗全都拉下來，整個城鎮在做地中海城鎮一直在做的事：休息，直到太陽不那麼刺眼。現在是四月，完全不一樣了。遊客更少，溫暖的風穿過狹窄的小巷，有一種特別的安靜，不像是空無一人，更像是某種邀請。巴里的老城區，巴里維基亞，是那種建築本身就能告訴你一切的地方。這些石灰岩街道，有些窄到連兩個人並排走都有點勉強，已經存在了一千年。石牆在一天中的每個時段都以不同的方式吸收光線。中午是淡金色，傍晚是深琥珀色，到了夜晚燈光亮起時，影子讓整個街區感覺像是靜止在時間裡。衣物仍然掛在上層陽台上，老婦人坐在門口看著街道，帶著那種數十年如一日做著同一件事的人特有的平靜威嚴。那天傍晚，散步時光，義大利人傍晚散步的傳統，正熱烈進行著。主要街道上擠滿了為這個場合精心打扮的人們，他們緩慢地走著，互相打招呼，停下來聊天。這不是給遊客看的表演，這就是這裡的生活方式。我們在老城區找到一間海鮮餐廳。巴里位於亞得里亞海，一直是一個重要的漁港。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Why Puglia, Why Now</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">One of the things we love most about living in Burgas, Bulgaria, is a feeling that took us a while to name. Look at a map and find Bulgaria — it's at a crossroads, close to the Middle East, Asia, all of Western Europe, and even Africa. Istanbul, one of the fastest growing aviation hubs on the planet, is just a short drive from us. From Sofia, Europe is practically next door. We found a flight — Sofia to Bari — for 33 euros one way. The round trip for both of us came to about $400. It's April, and spring has just arrived in Bulgaria. We had just returned from South America, and in May we're heading to China. April was supposed to be Oman, but the region is unsettled right now. So we looked at the map, looked at the weather, and Bari won.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">光線更好，安靜是真正的安靜。你可以真的站定片刻，感受自己身在何處。大多數人聽到聖尼古拉斯這個名字時，只會想到一件事：紅外套、白鬍子、十二月、禮物。這個聯想如此深刻，以至於很難記得背後曾經有一個真實的人物。一位四世紀的主教，來自現在的土耳其南部，後來成為基督教歷史上最受敬愛的聖人之一。傳說中的尼古拉斯，我們從故事中認識的那位，慷慨至極，經常匿名捐贈，常常付出巨大的個人代價。送禮物的形象來自於他，但還有更重要的東西。對東正教世界，保加利亞、希臘、俄羅斯、塞爾維亞來說，聖尼古拉斯不是一個季節性的人物。他是整個年曆中最重要的聖人之一。他是水手、旅行者、窮人的主保聖人。而他也正好是我們家鄉布爾加斯的主保聖人。布爾加斯的聖尼古拉斯節是一場真正的慶典，被認真看待、被完整慶祝。所以，站在巴里的這座聖殿面前，對我們來說並非一個中性的體驗。聖尼古拉斯最終如何來到巴里的故事本身就很了不起。他在四世紀死於米拉，即現在的土耳其。數世紀以來，他的遺骨一直安放在那裡。但在1087年，一群來自巴里的水手，懷著虔誠與商業企圖的混合動機，航向米拉，將他的聖物帶回了普利亞。巴里城特意建造了這座聖殿來存放它們。九百多年來，朝聖者從基督教世界的各個角落來到這裡。俄羅斯的連結尤其深遠。數世紀以來，俄羅斯東正教朝聖者前往巴里，在聖尼古拉斯的墓前祈禱。他們為聖殿的建造提供了經濟援助。入口附近有一塊銅牌記錄了這一切。而在教堂前方的一個角落，矗立著聖人的雕像。我們看著下方的銘文，停下了腳步。名字是用西里爾字母寫的。站在一座中世紀義大利教堂的庭院裡，讀著刻在石頭上的我們自己的字母，是旅行有時會給你的那種微小而意外的連結時刻，你永遠不會忘記。走進教堂內部，一切都如外觀所承諾的那樣。保存聖物的地下室位於主層下方，涼爽、古老，被燭光照亮。這是一個真正動人的空間，不是因為藝術或建築，儘管</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Arriving in Bari</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Well, we made it to Bari. I don't know if I'm minutes from Sophia, but we're here. There's 70 km/h wind right now and I think we were the last flight to land. It was a hard landing. That's the first time I've been actually scared on a plane. But we're here and this is an absolutely beautiful apartment — right in the old town. We got it on Booking.com. Sophia's a full-size bed, king bed. We're here for 3 days, and we're going to do a lot of exploring. We were here once before for only 3 hours from the cruise ship. Big difference. Our first walk through the old quarter felt entirely different from that August visit. Back then the heat was extraordinary, the streets empty in the middle of the day. Now in April, there were fewer tourists. A warm wind moving through the narrow lanes and a particular quietness that felt like an invitation rather than an absence.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">從橋上、從海灣兩側的觀景點，你可以一眼看到完整的畫面。垂直的懸崖、懸掛在懸崖邊緣的老城鎮、下方隨著光線在綠色和深藍之間變換的海水。在海灣的左側有一個小廣場，一個開放的露台，中央是一座雕像，雕像的主人原來就出生在這個城鎮，他給了義大利一首最受喜愛的歌曲。多米尼科·莫杜尼奧，他的歌曲《Volare》於1958年發行，贏得了聖雷莫音樂節、兩項葛萊美獎，銷售了數百萬張，成為了一整個世代義大利的聲音。他在這些懸崖上長大，看著這片海水。你可以理解為什麼這首歌會是那個樣子。從海灣的右側，你可以看到另一個著名的景觀：整個沙灘在下方清晰可見，後方是橋梁，上方是老城區。這是一個自然與數個世紀的建築共同創造的構圖。我們在狹窄的街道上走了一會兒。有面向大海的小型精品酒店、直接開鑿在懸崖面上的餐廳。窗戶下方的某處，海浪拍打著岩石。這裡有一種與其不完美密不可分的美。略顯歪斜的牆壁、不平整的石頭、看起來與其說是建造出來的更像是長出來的建築。它不精緻，而這正是重點。搭火車再往前幾分鐘，就是莫諾波利。這兩個城鎮，波利尼亞諾和莫諾波利，曾經是相連的，是同一片海岸聚落的一部分，後來才各自發展出不同的身份。今天它們相距不遠，可以在一天內一起造訪，而它們之間的對比正是這個組合令人滿意的一部分。莫諾波利是一個漁港，名副其實，歷史悠久。港口仍在運作中，不是裝飾用的。漁船仍然來來去去。建造這個城鎮的產業仍然在運轉，儘管旅遊業已經悄悄地超越了它。沿著港口散步，看著船隻、漁網和漁民帶著那種一輩子做同一份工作的人才有的從容篤定。這與波利尼亞諾的懸崖和觀景點有著不同的節奏。這裡的老城區有一種獎勵漫無目的漫步的魅力。我們吃了午餐、喝了咖啡，坐了一會兒，看著人們經過。莫諾波利不張揚自己，不爭取你的注意。它只是優雅地存在著，就像義大利那些有一定年歲的城鎮經常做的那樣。我們的最後一站</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Bari Vecchia</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The old town of Bari, the Bari Vecchia, is one of those places where the architecture itself tells you everything. These limestone streets — some barely wide enough for two people to pass comfortably — have been here for a thousand years. The stone walls absorb the light differently at every hour of the day. Pale gold at noon, deep amber in the evening, and at night when the lamps come on, the shadows make the whole neighborhood feel suspended in time. Laundry still hangs from the upper balconies. Old women sit in doorways watching the street with the calm authority of people who have been doing exactly this for decades. That evening, the passeggiata — the Italian tradition of the evening walk — was in full effect. The main street filled with people dressed properly for the occasion, moving slowly, greeting each other, stopping to talk. This is not a performance for tourists. This is just how life runs here.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">穿著得體。旁邊有人在為她拍照，而她接受著這份關注，彷彿自己是房間裡最有趣的存在。從阿爾塔穆拉繼續前進，我們來到了馬泰拉。沒有任何事物能讓你準備好面對馬泰拉。抵達的過程再平常不過，你開車穿過平坦的農田。然後突然間，大地敞開了，你低頭看著一個深不可測的峽谷。而在那個峽谷的岩壁上，從谷底到山脊，層層疊疊著數以千計直接開鑿在岩石中的住所。石頭疊著石頭疊著洞穴。一座從大地本身生長出來的城市，而不是建造在它之上。這就是馬泰拉的薩西，石頭街區。人們在這些洞穴中連續居住的時間，比世界上幾乎任何其他有人居住的遺址都要長。有些估計說是九千年。這不是一個容易消化的數字。當你站在山脊上，俯視著層層的鑿石時，你看到的是歐洲最長的連續人類居住聚落。在二十世紀的大部分時間裡，薩西被視為國家的恥辱。1950年代，義大利政府強制遷移了剩下的居民，數以萬計的人，到峽谷外建造的新住宅區。有自來水、電力和現代設施。洞穴被遺棄，任其崩毀。作家卡洛·列維曾稱馬泰拉為一個恥辱，一個貧窮到令國家蒙羞的地方。數十年來，這個名字背負著那樣的重量。然後，慢慢地，某些東西改變了。人們開始看著那些被遺棄的東西，看到了非凡之處。建築師、歷史學家、藝術家來了。洞穴被清理、修復和改造。飯店出現在曾經的洞穴住所中，餐廳在一個世紀前還是住家的空間裡開張。1993年，聯合國教科文組織將薩西列為世界遺產。2019年，馬泰拉成為歐洲文化之都。它還以深刻影響了世界看待它的方式出現在電影中。梅爾·吉勃遜選擇馬泰拉作為《受難曲》中耶路撒冷的拍攝地。更近期的，詹姆斯·龐德電影《生死交戰》的開場鏡頭也在這裡拍攝。當你走在街道上，認出那些光線、角度和石頭時，一切都瞭然於心。在薩西行走並不容易。街道很陡，鵝卵石不平整，有很多階梯。我們建議慢慢走。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. The Basilica of Saint Nicholas</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Most people when they hear the name Saint Nicholas think of one thing: red coat, white beard, December, presents. But there was an actual person behind it — a 4th century bishop from what is now southern Turkey, one of the most revered saints in Christian history. For the Eastern Orthodox world — Bulgaria, Greece, Russia, Serbia — Saint Nicholas is not a seasonal figure. He is the patron of sailors, of travelers, of the poor. And, as it happens, the patron saint of our own hometown, Burgas. The story of how Saint Nicholas ended up in Bari is remarkable. He died in the 4th century in Myra, in what is now Turkey. In 1087, a group of sailors from Bari sailed to Myra and brought his relics back to Puglia. The city built the Basilica specifically to hold them. For over 900 years, pilgrims have been making their way here from across the Christian world. The Russian connection is significant. For centuries, Russian Orthodox pilgrims traveled to Bari to pray at the tomb of Saint Nicholas. There is a copper plaque near the entrance acknowledging this. And in front of the church, in one corner, stands a statue of the saint. We looked at the inscription beneath it and stopped. The name was written in Cyrillic — our own alphabet, carved into stone in a medieval Italian church courtyard. One of those small moments of unexpected connection that travel sometimes gives you and that you never quite forget.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p7')">
+      <span class="acc-label">7. Polignano a Mare</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p7">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p7.mp3" controls preload="none"></audio></div>
+      <div class="para-en">From the bridge, from the viewpoints on either side of the cove, you see the whole picture at once. The vertical cliffs, the old town balanced on their edge, the water below shifting between green and deep blue depending on the light. On the left side of the cove, there is a small piazza centered on a statue of a man who was born in this town and gave Italy one of its most beloved songs. Domenico Modugno, whose Volare, released in 1958, won the Sanremo Festival, won two Grammys, sold millions of copies, and became for a generation the sound of Italy itself. He grew up playing on these cliffs. You can understand why the song sounds the way it does. There is a beauty here that is inseparable from its own imperfection — the slightly crooked walls, the uneven stone, the buildings that look less constructed than grown. It's not polished. That is precisely the point.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p8')">
+      <span class="acc-label">8. Monopoli</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p8">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p8.mp3" controls preload="none"></audio></div>
+      <div class="para-en">A few minutes further on the train, Monopoli. These two towns — Polignano and Monopoli — were once connected, part of the same coastal settlement. Today they sit close enough to visit together in a single day, and the contrast between them is part of what makes the combination satisfying. Monopoli is a fishing port, seriously and historically. The harbor is working, not decorative. Fishing vessels still come and go. Walking along the harbor watching the boats, the nets, the fishermen moving with the unhurried certainty of people who have done the same work their whole lives. Monopoli does not announce itself. It does not compete for your attention. It simply exists gracefully in a way that Italian towns of a certain age often do.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p9')">
+      <span class="acc-label">9. Altamura</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p9">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p9.mp3" controls preload="none"></audio></div>
+      <div class="para-en">s dressed properly. Someone nearby was photographing her. And she received the attention as though being the most interesting thing in the room was simply expected. Altamura is famous for its bread — considered by many Italians the finest in the country, baked in wood-fired ovens using ancient methods. It is a functioning Italian city: supermarkets, traffic, pharmacies, the kind of ordinary daily life that can feel like a relief after so many hours of looking at extraordinary things.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p10')">
+      <span class="acc-label">10. Matera: The Sassi</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p10">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p10.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Nothing prepares you for Matera. The approach is ordinary enough — you're driving through flat farmland. And then suddenly the land opens up and you're looking into a ravine of extraordinary depth. Built into the walls of that ravine, stacked in layers from the valley floor all the way to the ridge, are thousands of dwellings cut directly into the rock. Stone upon stone upon cave. A city growing out of the Earth itself, not placed on top of it. These are the Sassi di Matera. People have been living in these caves continuously for longer than almost any other inhabited site in the world — some estimates say 9,000 years. When you stand on the ridge looking down, you are looking at the longest continuously inhabited human settlement in Europe.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p11')">
+      <span class="acc-label">11. Matera: Modern History</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p11">
+      <div class="acc-audio"><audio src="../audio/-SdS5FIRPRQ/p11.mp3" controls preload="none"></audio></div>
+      <div class="para-en">For most of the 20th century, the Sassi were considered a national embarrassment. In the 1950s, the Italian government forcibly relocated the remaining residents — tens of thousands of people — to new housing built outside the ravine. The caves were abandoned. The writer Carlo Levi called Matera a disgrace, a place of poverty so extreme it shamed the nation. Then slowly something shifted. Architects, historians, and artists arrived. The caves were cleaned, restored, converted. Hotels appeared inside former cave dwellings. Restaurants opened in spaces that had been homes a century before. In 1993, UNESCO named the Sassi a World Heritage Site. In 2019, Matera was European Capital of Culture. Mel Gibson chose Matera as the setting for Jerusalem in The Passion of the Christ. The opening sequence of the James Bond film No Time to Die was shot here. When you walk the streets and recognize the light, the angles, the stone — it clicks into place.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

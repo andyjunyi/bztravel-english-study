@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,419 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">We&#39;re exploring Berlin in 3 days. We&#39;ll
-do a canal cruise, visit some historic
-sites, go to the Brandenburgg Gate, and
-visit to Potam Sansusi Palace.
-So, let&#39;s dive in.
-We usually book apartments in
-residential areas because they give us a
-clearer read on the city.
-On this trip, we stay near Alexander
-Plots. It&#39;s close to major transit lines
-and it&#39;s easy to reach from the airport.
-There&#39;s metros, trams, and trains that
-connect the entire region from that
-spot,
-&gt;&gt; the post office.
-This neighborhood offers plenty of solid
-food options and a walkable street,
-making it a practical base for exploring
-the day.
-We have some previous videos of
-Bulgaria. Maybe you don&#39;t know, but we
-live in Bulgaria. We retired there. And
-in our previous video, a lot of people
-were asking us about medical insurance
-or how do we get a buy on what we do
-about our medical situation. Most of the
-time we do our checkups in Istanbul, but
-uh we have Global Sigma. It&#39;s a health
-insurance policy. It&#39;s good for anywhere
-in the world. And the reason why we&#39;re
-here in Berlin to begin with is because
-they have a test here, a very advanced
-test that I&#39;m going to do. And so we
-just get on the plane and fly here and
-go do the test. So in Germany, they have
-top-notch doctors and treatment.
-And so that&#39;s why we&#39;re here. Sign
-Global is good for anywhere in the
-world. Actually, it&#39;s perfect for
-traveling and in our situation, but like
-when we&#39;re traveling even, it&#39;s good
-because if you have an injury or sick or
-whatever. I mean, for example, we were
-in Cambodia and one of us got sick, so
-we were able to just go to the doctor.
-Walking along the river, we checked the
-tour boards to see what&#39;s offered.
-There&#39;s a 1-hour route which stays near
-the center, but the three-hour option,
-it covers more canals and it reaches
-residential areas.
-We opted for the 3-hour tour.
-Seeing Museum Island from the water
-helps me piece together the logic behind
-this part of Berlin.
-The canal was mainly used to carry
-freight and its shape still hints at the
-older network that fed this city.
-Moving along it, I get why the early
-planners put so many institutions here.
-The Berlin Dome shows that early 20th
-century push to give the capital a
-ceremonial core.
-The cluster of museums reflects a whole
-era when Prussia tried to organize
-culture in one concentrated spot.
-From the boat, the layout feels clear.
-The city, it finally slows down.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">BZ Travel團隊花了三天探索柏林。他們在亞歷山大廣場附近的住宅區訂了一間公寓，因為這樣能讓他們更清楚地感受這座城市。這個社區提供多樣的美食選擇和適合步行的街道，是一個實用的基地。從那裡，地鐵、電車和火車連接整個區域。柏林的公共交通被形容為極易使用——有了智慧型手機應用程式，在火車、電車和地鐵之間轉乘既簡單又快速。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. 3 Days in Berlin</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">whole
-era when Prussia tried to organize
-culture in one concentrated spot.
-From the boat, the layout feels clear.
-The city, it finally slows down. And now
-I can see how its past still guides it
-in small ways today.
-This part of Berlin is the MIT district
-and the river banks are very popular
-with locals and tourists for walking
-alongside the river, having lunch or a
-drink at many of the restaurants and
-watching the boats go by.
-There is the Freed Spraa train station
-which is a major hub connecting regional
-trains the S and the Yubon and it serves
-as a gateway into the heart of the city.
-We roll past Berlin&#39;s central station
-and it feels like watching the city
-shift gears.
-Then the rice stag shows up right on the
-left.
-That old structure, Holiness Place,
-while the modern bridge stretches toward
-the new Parliament building.
-What a contrast between the old and the
-new architecture.
-The cube building sits here and it plays
-tricks with its angles,
-throwing back bits of sky and river.
-It&#39;s glass box that never looks the
-same.
-Right after we pass the Berlin Central,
-this massive brick complex shows up and
-it&#39;s Europe&#39;s largest university
-teaching hospital.
-It covers pretty much every corner of
-modern medicine and the scale alone
-feels unreal.
-With thousands of scientists and
-professors tied into the university
-research, the place runs on constantly
-updated knowledge.
-From the river, it looks calm, but you
-know, inside is a non-stop machine built
-for handling almost anything you can
-imagine.
-We cruise into a more residential
-stretch.
-And that building with the waveshaped
-balcony, it catches my eye. Uniquely
-designed to offer light flooded
-panoramic views.
-Along this stretch, there&#39;s newer
-residential buildings, and they show how
-common privatelyowned apartments are in
-much of Europe.
-The term can confuse visitors from the
-United States, where apartment usually
-signals a rental.
-Here, the word generally refers to a
-purchased unit, more like a condo in
-American terms.
-It shapes how neighborhoods develop.
-Ownership changes how people invest in
-the buildings around them.
-Old brick warehouses turn into endless
-rows of homes.
-Moving along the river means you&#39;re
-leaving the busy center and we&#39;re
-heading towards Berlin&#39;s middle of
-nowh</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">柏林不僅僅是觀光之旅——Tresa來這裡進行一項先進的醫療檢查，德國擁有頂尖的醫療體系。他們有一個名為Global Sigma的全球健康保險，涵蓋世界任何地方。這對夫妻解釋說，德國有優秀的醫生和治療，這就是為什麼他們選擇柏林進行這項特殊檢查。這讓人一窺全職旅行和在路上管理健康的實際現實。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ere zones.
-You actually catch moments of daily life
-that you wouldn&#39;t see otherwise.
-And to tell you the truth, the
-factories, they look better than
-expected.
-A few small tweaks and big concrete
-boxes, they almost count as
-architecture.
-We got to the edge of Berlin&#39;s
-industrial sprawl and then we just
-turned around back toward Mitt where we
-kick things off.
-Floating along I find out you could
-basically cross all of Europe this way
-from the Black Sea up to the Baltic or
-even Amsterdam.
-I didn&#39;t expect that.
-It&#39;s wild thinking about old canals
-being the real highways, especially
-places like the Netherlands, France, and
-Germany.
-Back then, everything moved by water,
-not road.
-So, river cruising feels sort of classy
-in a way.
-3 hours is the whole tour. Honestly, I
-think 1 hour tour would have been
-enough.
-The stretch outside central Berlin, it&#39;s
-not very exciting.
-But you do get a sense of local life and
-also the neighborhoods.
-Hello.
-&gt;&gt; Making the public transport.
-&gt;&gt; Yeah.
-&gt;&gt; We just jumped on the metro and we came
-over here. Completely different part of
-the city. And believe it or not, it&#39;s so
-easy to get around this city. Like,
-we&#39;ve been taking the trains, the trams,
-and the metros down underneath the city,
-and you really can&#39;t even see where the
-entry is. But with your app, it&#39;s
-extremely easy to figure out how to get
-from one place to the other, and which
-is the best option to get there. But you
-can get all over the city really easy,
-and it&#39;s quick. So, one thing though,
-going from the west side to the east
-side of Berlin, you can definitely tell
-the difference. So, the only transport
-that we haven&#39;t tried yet is the bus.
-We&#39;ve been on the tram, the metro, and
-the train. We&#39;re looking for bus 100.
-It&#39;ll be here in 12 minutes. It&#39;s super
-easy. Zipo just gets on his phone and he
-can find exactly first of all how to get
-to the bus station. Then it tells you
-which bus and the quickest route. And
-this to get there from here, the
-quickest route is the bus.
-Right by the Brandenburgg Gate, those
-crosses and portraits, they remind you
-Berlin isn&#39;t just sightseeing. It&#39;s real
-stories, real loss.
-It&#39;s a memorial for people who died
-trying to escape East Berlin. Being
-here, you don&#39;t just pass through. You
-stop and actually thi</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">三小時的運河遊船提供了柏林獨特的視角。團隊從水面看到博物館島，這有助於理解柏林的這片區域的規劃邏輯。他們經過了柏林大教堂、國會大廈和現代的玻璃立方體建築，它會隨著角度變換光影。進入住宅區時，他們注意到歐洲常見的私有公寓與美國租賃文化的對比。改建成住宅的舊磚造倉庫沿著水道排列。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">nk.
-The Brandenburgg Gate is one of Berlin&#39;s
-main attractions, and it draws tourists
-and locals.
-The area holds significant historic
-weight.
-both from World War II destruction and
-the later division between East and West
-Berlin.
-It&#39;s a symbol of recovery. Where once
-stood devastation,
-now stands unity.
-Visiting Berlin means confronting these
-layers, the impact of the war, the walls
-legacy, and the broader events in German
-history. the gate. It encapsulates much
-of the city&#39;s past in one place.
-&gt;&gt; Another great thing to do while you&#39;re
-in Berlin is to go to the Sanso Sea Park
-and then it&#39;s a 10-minute 15 minute walk
-to the new palace, which we&#39;re doing
-today. It&#39;s really easy to get here. You
-don&#39;t really need a tour. All you have
-to do is take the train RE1
-and follow follow the route. Get off and
-everybody else got off where we did at
-SansoC Park and we&#39;re all walking
-towards the palace now. The train is
-Yeah, the train is less than €5. We got
-the ABC ticket because that covers this
-whole distance from from Berlin all the
-way to here. And so it&#39;s really
-inexpensive.
-a single ticket.
-Um,
-we&#39;ll show you what the palace is like
-when we get there.
-&gt;&gt; 60 minutes.
-&gt;&gt; Actually, Berlin is a fun city. Yes, you
-can go to Brand Borgate
-Rice. We did that yesterday.
-Was kind of crowded a little bit.
-and uh the wall.
-There&#39;s a lot of history,
-but I kind of like this right here. Be
-the nature and the park. And we&#39;re going
-to go check that palace. See if it&#39;s for
-sale.
-We&#39;re at the Pot Stam&#39;s new palace, the
-grand showpiece at the end of the
-Sansusi Park.
-Built to impress, it&#39;s a place where
-royalty pulled out all the stops.
-The scale itself says a lot about what
-Prussian kings wanted us to remember.
-Inside the new palace, the grotto hall
-is probably the most unusual room.
-The walls are covered in shells,
-minerals, stones. It feels more like an
-art project than a hall fit for kings.
-It pulls that classic more is more
-thing. And somehow it works.
-It&#39;s a nice change though from all the
-usual gold everywhere.
-The new palace&#39;s interior is renown for
-its opulent marble halls.
-It&#39;s impressive with the grandeur and
-the scale.
-The bedrooms vary from reserved elegance
-to lavish royal suites
-featuring ornate furniture and elaborate
-textiles.
-A</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">搭乘公共交通穿越城市時，團隊注意到柏林東西兩側的明顯差異。公共交通效率極高——他們嘗試了地鐵、電車和火車，並在布蘭登堡門附近尋找100號公車。在城門處，十字架和肖像提醒人們柏林不只是觀光——它承載著真實的失落與歷史故事。這座城市的過去至今仍在以細微的方式引導著它。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">rtworks covered the space, ranging from
-historical portraits to vibrant
-landscapes, creating a museum-like feel.
-The major highlight is the abundance of
-painted ceilings, fresco that depict
-mythological themes,
-and royal virtues.
-The paintings demonstrate both the
-artistic ambitions and the social status
-of the palace&#39;s residents.
-Each room offers something unique,
-whether an intricate fireplace or rare
-clocks.
-Even the transitions between chambers
-are marked by patterned marble and
-decorative stucco.
-Exploring the palace provides insight
-into the grandeur of Prussian royalty
-and the artistic richness of the 18th
-century.
-We just finished uh the tour through the
-new palace and we got a a combination
-ticket. So, from the new palace, we&#39;re
-going to King King King Frederick&#39;s
-private residence, summer residence, and
-it&#39;s a 2 kilometer walk between the two
-locations.
-It&#39;s very pleasant. It&#39;s not too hot,
-and the trees here are gorgeous. All the
-beautiful fall leaves. Autumn is really
-a nice time to travel in Europe, to be
-honest.
-Sansusi Palace isn&#39;t just a pretty face.
-It was Frederick the Great&#39;s main
-hangout. He actually lived here, unlike
-the new palace which was just for his
-impressive events.
-These gardens are terraces and they
-framed his everyday, not just fancy
-parties.
-So, the king&#39;s private residence. We
-finally made it.
-When you walk through Sans Susi&#39;s summer
-palace, you realize it&#39;s not just fancy
-rooms and show off gold.
-The whole place feels like it was meant
-to actually be lived in, not just stared
-at.
-There&#39;s a sense of balance in how
-everything fits together. From
-the pale gold walls to the striped
-fabrics that somehow look modern even
-after centuries.
-The artwork isn&#39;t applied at random.
-It&#39;s organized, connected.
-The nature creeping through every
-detail. Flowers, animals, even little
-painted fences.
-Frederick the Great. He must have loved
-being surrounded by this kind of
-harmony.
-It&#39;s private, cheerful, and alive, not
-just overwhelming.
-The insight here is that it&#39;s less of a
-display for guests and more of the
-king&#39;s personal escape from formality.
-Subscribe and comment. It does help
-build our travel community.
-We read every message. Liking videos
-actually boosts the channel, letting
-more people join in.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">團隊還參觀了波茨坦和無憂宮——腓特烈大帝的前夏宮。這個聯合國教科文組織世界遺產展示了令人驚嘆的洛可可建築和美麗的梯田葡萄園。三天遊柏林雖然短暫，但歷史、建築、高效的交通和世界級的醫療保健使它成為一個獨特而值得的目的地。運河遊船雖然時間長，但讓他們在旅遊中心之外，真正感受到了當地生活。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: vMYxjauZeF4 | 19:39 | 941 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">BZ Travel團隊花了三天探索柏林。他們在亞歷山大廣場附近的住宅區訂了一間公寓，因為這樣能讓他們更清楚地感受這座城市。這個社區提供多樣的美食選擇和適合步行的街道，是一個實用的基地。從那裡，地鐵、電車和火車連接整個區域。柏林的公共交通被形容為極易使用——有了智慧型手機應用程式，在火車、電車和地鐵之間轉乘既簡單又快速。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction & Base</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We're exploring Berlin in 3 days. We'll do a canal cruise, visit some historic sites, go to the Brandenburg Gate, and visit Potsdam's Sanssouci Palace. Let's dive in. We usually book apartments in residential areas because they give us a clearer read on the city. On this trip, we stay near Alexanderplatz — close to major transit lines and easy to reach from the airport. There's metros, trams, and trains connecting the entire region from that spot. The neighborhood offers plenty of solid food options and a walkable street, making it a practical base for exploring. The reason we're here in Berlin is because they have a very advanced medical test that I'm going to do. In Germany, they have top-notch doctors and treatment. We have a global health insurance policy — it's good for anywhere in the world, which is perfect for our situation.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">柏林不僅僅是觀光之旅——Tresa來這裡進行一項先進的醫療檢查，德國擁有頂尖的醫療體系。他們有一個名為Global Sigma的全球健康保險，涵蓋世界任何地方。這對夫妻解釋說，德國有優秀的醫生和治療，這就是為什麼他們選擇柏林進行這項特殊檢查。這讓人一窺全職旅行和在路上管理健康的實際現實。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Canal Cruise</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Walking along the river, we checked the tour boards — there's a 1-hour route staying near the center, but the 3-hour option covers more canals and reaches residential areas. We opted for the 3-hour tour. Seeing Museum Island from the water helps me piece together the logic behind this part of Berlin. The canal was mainly used to carry freight, and its shape still hints at the older network that fed this city. The Berlin Cathedral shows that early 20th-century push to give the capital a ceremonial core. The cluster of museums reflects a whole era when Prussia tried to organize culture in one concentrated spot. From the boat, the layout feels clear — I can see how its past still guides it today. This part of Berlin is the Mitte district, and the riverbanks are very popular with locals and tourists. There is the Friedrichstraße train station — a major hub connecting regional trains, the S-Bahn and the U-Bahn, serving as a gateway into the heart of the city. We roll past Berlin's central station. Then the Reichstag shows up on the left — that old structure alongside the modern bridge stretching toward the new Parliament building. What a contrast between old and new architecture. Right after the Berlin Central, a massive brick complex shows up — Europe's largest university teaching hospital. Moving along the river means leaving the busy center and heading towards Berlin's quieter zones, where you actually catch moments of daily life you wouldn't see otherwise.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">三小時的運河遊船提供了柏林獨特的視角。團隊從水面看到博物館島，這有助於理解柏林的這片區域的規劃邏輯。他們經過了柏林大教堂、國會大廈和現代的玻璃立方體建築，它會隨著角度變換光影。進入住宅區時，他們注意到歐洲常見的私有公寓與美國租賃文化的對比。改建成住宅的舊磚造倉庫沿著水道排列。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Public Transport & Brandenburg Gate</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We just jumped on the metro and came over here. It's so easy to get around this city — we've been taking the trains, trams, and metros. With your app, it's extremely easy to figure out how to get from one place to the other. One thing though: going from the west side to the east side of Berlin, you can definitely tell the difference. Right by the Brandenburg Gate, those crosses and portraits remind you Berlin isn't just sightseeing — it's real stories, real loss. It's a memorial for people who died trying to escape East Berlin. Being here, you don't just pass through. You stop and actually think. The Brandenburg Gate is one of Berlin's main attractions. The area holds significant historic weight — both from World War II destruction and the later division between East and West Berlin. It's a symbol of recovery. Where once stood devastation, now stands unity. Visiting Berlin means confronting these layers: the impact of the war, the wall's legacy, and the broader events in German history.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">搭乘公共交通穿越城市時，團隊注意到柏林東西兩側的明顯差異。公共交通效率極高——他們嘗試了地鐵、電車和火車，並在布蘭登堡門附近尋找100號公車。在城門處，十字架和肖像提醒人們柏林不只是觀光——它承載著真實的失落與歷史故事。這座城市的過去至今仍在以細微的方式引導著它。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Potsdam: Sanssouci Park & New Palace</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Another great thing to do in Berlin is go to the Sanssouci Park, then it's a 10 to 15-minute walk to the New Palace — and we're doing that today. All you have to do is take the train RE1. The train is less than €5. We're at Potsdam's New Palace — the grand showpiece at the end of Sanssouci Park. Built to impress, it's a place where royalty pulled out all the stops. Inside the New Palace, the grotto hall is probably the most unusual room — walls covered in shells, minerals, and stones. It feels more like an art project than a hall fit for kings. The New Palace's interior is renowned for its opulent marble halls. The bedrooms vary from reserved elegance to lavish royal suites with ornate furniture and elaborate textiles. Artworks cover the space, ranging from historical portraits to vibrant landscapes. The major highlight is the abundance of painted ceilings — frescoes depicting mythological themes and royal virtues. From the New Palace, it's a 2-kilometer walk to King Frederick's private residence, his summer palace. It's very pleasant — not too hot, and the trees are gorgeous. All the beautiful fall leaves.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">團隊還參觀了波茨坦和無憂宮——腓特烈大帝的前夏宮。這個聯合國教科文組織世界遺產展示了令人驚嘆的洛可可建築和美麗的梯田葡萄園。三天遊柏林雖然短暫，但歷史、建築、高效的交通和世界級的醫療保健使它成為一個獨特而值得的目的地。運河遊船雖然時間長，但讓他們在旅遊中心之外，真正感受到了當地生活。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Sanssouci Palace</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/vMYxjauZeF4/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Sanssouci Palace isn't just a pretty face. It was Frederick the Great's main hangout — he actually lived here, unlike the New Palace which was just for impressive events. These terraced gardens framed his everyday life, not just fancy parties. When you walk through Sanssouci's summer palace, you realize it's not just fancy rooms and show-off gold. The whole place feels like it was meant to actually be lived in. There's a sense of balance in how everything fits together — from the pale gold walls to the striped fabrics that somehow look modern even after centuries. The artwork is organized and connected, with nature creeping through every detail: flowers, animals, even little painted fences. It's less of a display for guests and more of the king's personal escape from formality.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

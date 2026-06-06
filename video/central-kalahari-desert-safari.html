@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,264 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Join the journey into the central
-Kalahari
-for 3 days. Laru Latau will be our base.
-Our final safari camp. Final chapter.
-Episode 8 of Africa Unfiltered.
-&gt;&gt; Our plane.
-&gt;&gt; Okay. Is this the terminal one here?
-
-Three weeks in the wild, carried by bush
-planes from camp to camp.
-There&#39;s no airports, no schedules, just
-raw, thrilling flights. It&#39;s the most
-exciting air travel we&#39;ve ever known.
-
-The farther south we fly, leaving the
-Okavango Delta behind, the landscape
-shifts.
-Wetlands fade, and the closer we get to
-the Kalahari, the drier everything
-becomes.
-
-Unlike remote bush camps, Laru Latau
-stands near Kumaga village.
-
-This isn&#39;t untouched wilderness. It&#39;s a
-borderland where people and wildlife
-share the same stage.
-Civilization brushes right up against
-the wild.
-Hello.
-&gt;&gt; Hello. Hello.
-&gt;&gt; I&#39;m Sia.
-&gt;&gt; Sia Zarco. Nice meeting you.
-&gt;&gt; There you go. Nice to meet you.
-&gt;&gt; Okay.
-&gt;&gt; Homemade lemonade.
-&gt;&gt; Homemade lemonade.
-
-That&#39;s our cabin.
-The chalet style cabins are surprisingly
-lovely. They&#39;</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">非洲實錄系列的最後一章帶領旅行者深入喀拉哈里沙漠。在野外度過三週、搭乘小型飛機從一個營地飛到另一個營地後，他們抵達了最後的營地 Laru Latau。越往南飛，奧卡萬戈三角洲逐漸遠去，一切變得越來越乾燥。濕地消失，地貌轉變為更加嚴酷的景觀。與偏遠的叢林營地不同，Laru Latau 靠近庫馬加村莊，這裡是人類與野生動物共享舞台的邊境之地。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Central Kalahari Desert Safari</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">re spacious with high
-thatched roofs and wide glass fronts.
-
-Inside the decor leans upscale, more
-polished than rustic, giving the whole
-place a comfortable, stylish vibe.
-
-The lodge crowns a high river bank.
-Gazing over water holes in a riverbed.
-From our deck, each cabin becomes a
-theater seat for nature&#39;s parade.
-Wildlife crossing right below us.
-The Betty River hasn&#39;t carried much
-water in years.
-In the dry season, wildlife has only a
-few man-made water holes left, filled by
-pumps.
-And that&#39;s where the zebras come.
-Thousands of them, striped and restless,
-all funneling down for survival.
-Watching it feels strange. A migration
-built on artificial water, yet still
-wild, still powerful.
-The lodge is centered around this moment
-where life in the Stark Kalahari gathers
-at one place, one necessity.
-It&#39;s not the lush savannah safari people
-picture. It&#39;s harsher, more real.
-
-It&#39;s a dry riverbed, a desperate thirst,
-and a striped army of zebras keeping the
-cycle alive.
-
-So, like there&#39;s this walkway from the
-the deck down these stairs
-and to a viewing point.
-Never in my life have I seen zebras in
-such numbers.
-They stream in by hundreds.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Laru Latau 的小木屋出乎意料地可愛——寬敞、擁有高茅草屋頂和大片玻璃窗。內部裝潢偏向高級，精緻多於原始，讓整個地方散發舒適時尚的氛圍。營地座落在高高的河岸上，俯瞰著乾涸河床中的水塘。從露台看出去，每間小屋都成了觀賞自然劇場的座位。貝蒂河多年來已沒有多少水流，在乾季，野生動物只能依賴幫浦補給的人工水塘。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">alkway from the
-the deck down these stairs
-and to a viewing point.
-Never in my life have I seen zebras in
-such numbers.
-They stream in by hundreds. A living
-tide of stripes.
-And from the underground hide perched
-just above the water hole, the view is
-unreal.
-You&#39;re eye level with survival. Herds
-jostling, drinking, quarreling, all
-while you watch from the safety of the
-lodge.
-It&#39;s an intimate, almost surreal
-perspective on one of Africa&#39;s great
-spectacles.
-This place sits on the edge of the
-Kalahari.
-Beyond the river&#39;s water holes,
-it&#39;s nothing but parched plains, dry
-scrub, and endless sand.
-
-On the barren flats, a dead elephant
-rests. Only vultures gather. No hyenas,
-no predators.
-3 days and no predators.
-The reason is plain. This land borders
-villages.
-Lions don&#39;t resist easy prey, goats or
-cattle, and locals push them away. or
-worse.
-Among the zebra herd, a confused donkey.
-He likely strayed from a village, now
-thinking that he has stripes.
-In a true predator prey landscape, he&#39;d
-already be gone.
-Lions shadow zebras everywhere else, but
-here, without predators, this odd
-partnership survives.
-It&#39;s strange.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">水塘吸引了成千上萬的斑馬——條紋斑斕、躁動不安，全都為了生存而匯聚於此。觀看這一幕感覺很不真實。這是建立在人工水源上的遷徙，卻仍然狂野而震撼。他們這輩子從未見過這麼多斑馬。牠們成百上千地湧來，形成一波條紋的浪潮。從潛伏在水塘旁的觀測點看出去，景色超乎現實——與生存面對面，獸群推擠、飲水、爭吵，而他們在安全的小屋中觀看這一切。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ady be gone.
-Lions shadow zebras everywhere else, but
-here, without predators, this odd
-partnership survives.
-It&#39;s strange. Kind of an unsettling
-proof of an unbalanced ecosystem.
-A safari in the desert. Feel sad passing
-the dead elephant. Vultures circling.
-Do you see this as tragic or just the
-natural cycle of life?
-
-Here is everything we managed to see in
-three days of drives. Beyond that, it
-was endless desert.
-The rule is clear. Stay on the road,
-even if it&#39;s only sand and scattered
-grass.
-Each drive followed the same loop from
-the lodge through the village, past the
-dry riverbed, circle the water holes,
-and return.
-
-Scenery was pleasant. Some golden
-grasslands, wide horizons, but after a
-while it felt repetitive.
-
-Animals were mostly clustered below the
-lodge in the valley and pumped pools.
-
-Mornings and afternoons became the same.
-Zebra herds plus the hippos and
-crocodiles in the pool. Predictable and
-a little disappointing.
-We came spoiled. Five camps of amazing
-wildlife. From Sabi Sands leopards to
-Mrammy&#39;s dense game.
-Then here mostly zebras at a water hole.
-Honestly, it felt like a let down.
-
-&gt;&gt; Are you sure you need to go there?
-
-&gt;&gt; You going home?</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這個地方位於喀拉哈里的邊緣。水塘之外，只有乾裂的平原、乾燥的灌木和無盡的沙地。在貧瘠的平地上，一頭死去的大象躺在那裡，只有禿鷹聚集。三天過去，沒有發現任何掠食者。這片土地毗鄰村莊，當地人為了保護牲畜而驅趕獅子。在斑馬群中，出現了一頭迷路的驢子——牠很可能從村莊走失，現在以為自己也有條紋。這是一個失衡生態系統的令人不安的證據。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">i Sands leopards to
-Mrammy&#39;s dense game.
-Then here mostly zebras at a water hole.
-Honestly, it felt like a let down.
-
-&gt;&gt; Are you sure you need to go there?
-
-&gt;&gt; You going home? We&#39;re going to
-Johannesburg.
-&gt;&gt; Oh,
-&gt;&gt; our last bush plane ride marks the
-journey home.
-First stop, Maun Batswana, the getaway
-town to safaris.
-Every traveler to the Okavango passes
-through here.
-It&#39;s where wilderness meets the first
-hints of civilization again.
-Well, we&#39;re having lunch before we get
-on a plane to Johannesburg. And they
-brought us here. It looks like the hot
-spot.
-&gt;&gt; This journey ends, but our love for
-Africa only grows.
-Safaris, wildlife, raw nature. We&#39;re
-already dreaming of coming back.
-Africa is huge. Which corner do you
-think we should explore next?
-To contrast Africa, our next series
-takes you on first class panoramic
-trains across Switzerland.
-We&#39;ll ride all four iconic panoramic
-routes and visit the country&#39;s top
-highlights.
-Don&#39;t miss this adventure. Join us as we
-explore Switzerland in style.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">每次車程都沿著相同的路線：從營地穿過村莊，經過乾涸的河床，繞過水塘，然後返回。過了一段時間，感覺變得重複。旅行者們已經被五個營地的驚人野生動物給寵壞了——從薩比沙地的花豹到豐富的獵物——現在水塘邊大多數只是斑馬，感覺有些令人失望。但這種誠實正是讓這個系列如此真實的原因。並非每次 safari 都能帶來不間斷的精彩。喀拉哈里沙漠以其荒涼而靜謐的方式，講述了一個關於生存的不同故事。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: kiz7SmjHVcU | 10:33 | 1,524 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">非洲實錄系列的最後一章帶領旅行者深入喀拉哈里沙漠。在野外度過三週、搭乘小型飛機從一個營地飛到另一個營地後，他們抵達了最後的營地 Laru Latau。越往南飛，奧卡萬戈三角洲逐漸遠去，一切變得越來越乾燥。濕地消失，地貌轉變為更加嚴酷的景觀。與偏遠的叢林營地不同，Laru Latau 靠近庫馬加村莊，這裡是人類與野生動物共享舞台的邊境之地。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Arriving at Laru Latau</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Join the journey into the central Kalahari for 3 days. Laru Latau will be our base — our final safari camp. Final chapter. Episode 8 of Africa Unfiltered. Three weeks in the wild, carried by bush planes from camp to camp. No airports, no schedules, just raw, thrilling flights. The farther south we fly, leaving the Okavango Delta behind, the landscape shifts. Wetlands fade, and the closer we get to the Kalahari, the drier everything becomes. Unlike remote bush camps, Laru Latau stands near Kumaga village. This isn't untouched wilderness. It's a borderland where people and wildlife share the same stage. Civilization brushes right up against the wild.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">Laru Latau 的小木屋出乎意料地可愛——寬敞、擁有高茅草屋頂和大片玻璃窗。內部裝潢偏向高級，精緻多於原始，讓整個地方散發舒適時尚的氛圍。營地座落在高高的河岸上，俯瞰著乾涸河床中的水塘。從露台看出去，每間小屋都成了觀賞自然劇場的座位。貝蒂河多年來已沒有多少水流，在乾季，野生動物只能依賴幫浦補給的人工水塘。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. The Lodge & The Zebra Migration</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The chalet-style cabins are surprisingly lovely — spacious with high thatched roofs and wide glass fronts. Inside the decor leans upscale, more polished than rustic. The lodge crowns a high river bank, gazing over water holes in a riverbed. From our deck, each cabin becomes a theater seat for nature's parade. The Boteti River hasn't carried much water in years. In the dry season, wildlife has only a few man-made water holes left, filled by pumps. And that's where the zebras come. Thousands of them, striped and restless, all funneling down for survival. Watching it feels strange — a migration built on artificial water, yet still wild, still powerful. There's a walkway from the deck down these stairs to a viewing point. Never in my life have I seen zebras in such numbers. They stream in by hundreds — a living tide of stripes. From the underground hide perched just above the water hole, the view is unreal. You're eye level with survival.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">水塘吸引了成千上萬的斑馬——條紋斑斕、躁動不安，全都為了生存而匯聚於此。觀看這一幕感覺很不真實。這是建立在人工水源上的遷徙，卻仍然狂野而震撼。他們這輩子從未見過這麼多斑馬。牠們成百上千地湧來，形成一波條紋的浪潮。從潛伏在水塘旁的觀測點看出去，景色超乎現實——與生存面對面，獸群推擠、飲水、爭吵，而他們在安全的小屋中觀看這一切。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. No Predators: An Unbalanced Ecosystem</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">This place sits on the edge of the Kalahari. Beyond the river's water holes, it's nothing but parched plains, dry scrub, and endless sand. On the barren flats, a dead elephant rests. Only vultures gather. No hyenas, no predators. Three days and no predators. The reason is plain. This land borders villages. Lions don't resist easy prey — goats or cattle — and locals push them away. Or worse. Among the zebra herd, a confused donkey. He likely strayed from a village, now thinking he has stripes. In a true predator-prey landscape, he'd already be gone. Lions shadow zebras everywhere else, but here, without predators, this odd partnership survives. Kind of an unsettling proof of an unbalanced ecosystem. Do you see this as tragic, or just the natural cycle of life?</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">這個地方位於喀拉哈里的邊緣。水塘之外，只有乾裂的平原、乾燥的灌木和無盡的沙地。在貧瘠的平地上，一頭死去的大象躺在那裡，只有禿鷹聚集。三天過去，沒有發現任何掠食者。這片土地毗鄰村莊，當地人為了保護牲畜而驅趕獅子。在斑馬群中，出現了一頭迷路的驢子——牠很可能從村莊走失，現在以為自己也有條紋。這是一個失衡生態系統的令人不安的證據。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Honest Review</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Here is everything we managed to see in three days of drives. Beyond that, it was endless desert. Each drive followed the same loop from the lodge through the village, past the dry riverbed, circling the water holes, and returning. Scenery was pleasant — some golden grasslands, wide horizons — but after a while it felt repetitive. We came spoiled. Five camps of amazing wildlife. From Sabi Sands leopards to Moremi's dense game. Then here — mostly zebras at a water hole. Honestly, it felt like a letdown.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">每次車程都沿著相同的路線：從營地穿過村莊，經過乾涸的河床，繞過水塘，然後返回。過了一段時間，感覺變得重複。旅行者們已經被五個營地的驚人野生動物給寵壞了——從薩比沙地的花豹到豐富的獵物——現在水塘邊大多數只是斑馬，感覺有些令人失望。但這種誠實正是讓這個系列如此真實的原因。並非每次 safari 都能帶來不間斷的精彩。喀拉哈里沙漠以其荒涼而靜謐的方式，講述了一個關於生存的不同故事。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Farewell & What's Next</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/kiz7SmjHVcU/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Our last bush plane ride marks the journey home. First stop, Maun, Botswana — the gateway town to safaris. Every traveler to the Okavango passes through here. It's where wilderness meets the first hints of civilization again. This journey ends, but our love for Africa only grows. Safaris, wildlife, raw nature. We're already dreaming of coming back. Africa is huge. Which corner do you think we should explore next? To contrast Africa, our next series takes you on first-class panoramic trains across Switzerland. We'll ride all four iconic panoramic routes and visit the country's top highlights. Don't miss this adventure.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

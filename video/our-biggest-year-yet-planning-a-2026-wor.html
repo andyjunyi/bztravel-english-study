@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,433 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">We&#39;ve explored over a 100 countries, but
-we&#39;ve never planned a year quite like
-this.
-Welcome back to BZ Travel. I&#39;m Tresa.
-&gt;&gt; And I&#39;m Zak.
-&gt;&gt; And this year, we are actually uh
-planning the entire year of our travels
-and we want to get some of your
-comments. We&#39;re kind of stuck. So, we&#39;re
-going to share some of the tours that we
-already have booked and then some of the
-tours that we&#39;re thinking about doing
-with some of your input. it might help
-us confirm what we&#39;re going to do. Look
-at our calendar is pretty darn full. And
-what we have so far um confirmed is
-we&#39;re going to start from Bulgaria where
-we live and we&#39;re heading in January to
-Peru and Bolivia. We&#39;re doing an
-extensive trip with G Adventures for 15
-days and we&#39;ll be flying to Lima and
-then
-&gt;&gt; and we&#39;re joining U G Adventure. It&#39;s
-the premium National Geographic journeys
-small group tour. We did a world cruise
-9 months and we were supposed to go to
-Machu Picchu but uh they had strike in
-the real world. One of the highlights
-that we definitely wanted to do this
-time is to of course see Machu Picchu.
-And then from there, we&#39;re uh going to
-go to some other really exciting places
-like the Salt Flats, which Saraso&#39;s
-always wanted to see, the beautiful
-reflections of the water, and we&#39;re
-going to be staying in an extremely nice
-place while we&#39;re there. From there,
-we&#39;ll be going to Potosi where where
-we&#39;ll see the silver mines. We&#39;re
-actually going to go inside the mines
-and explore that. We&#39;ll be seeing Lake
-Titikaka and going to Le Paz. All of
-this is high altitude travel. So it will
-be a little bit on the chilly side and
-high altitude. So we might be struggling
-a little bit from there. Then after that
-trip, we&#39;ll get on a flight and we&#39;ll
-fly down to to Santiago. From there,
-we&#39;re going to meet up with Intrepid
-Travel, another small group. They have
-uh four or five different levels of
-travel and we we decided to try their
-premium level. It looks really nice. to
-stay in extremely nice places with
-comfortable uh comfortable transport. So
-from Santiago, we&#39;ll be going to
-Valiparizio.
-We were there on the cruise ship for
-just like a half a day. So this one
-we&#39;ll be exploring for like two days
-staying right in Valaricio.
-Then we&#39;ll fly to Mendoza, Argentina,
-where Zarko is looking forward to that
-trip.
-&gt;&gt; Great wine, great steaks, a place to be.
-Yeah, Mendoza is the home and invention
-of the Mulbeck bre. So, we&#39;ll be
-exploring three wineries there, doing
-some amazing tasting of the Malbeck.
-Then, we&#39;ll f</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在探索了超過100個國家之後，BZ Travel從未計劃過像今年這樣的一年。在這部影片中，Tresa和Zarko分享了他們整個2026年的旅行日曆，並徵求觀眾的意見。他們的行程排得滿滿的——從一月的祕魯和玻利維亞開始，接著是智利、阿根廷、巴西、阿曼或印度、中國和南非。他們已經預訂了幾個由G Adventures和Intrepid Travel等高端旅行社安排的小團行程，並希望觀眾提供建議來填補空缺。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Our Biggest Year Yet: Planning a 2026 World Tour</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">nice lodge there. That will be
-a lot of fun. From there, we&#39;ll drive up
-to Rio and Zo&#39;s been to Rio before. He&#39;s
-looking forward to that.
-&gt;&gt; It&#39;s a fun city.
-&gt;&gt; We&#39;ll spend three days with the group.
-Full city tour, Christ the Redeemer, the
-Sugarloaf Mountain, and a complete city
-tour of Rio. After the tour, then we&#39;re
-going to spend like three more days just
-on our own exploring
-&gt;&gt; Panaima, Copa Cabana.
-They&#39;ll be actually setting up for
-carnival actually that following weekend
-when we leave it will begin. So, we kind
-of plan to leave early because it&#39;ll be
-a crazy time to be there.
-&gt;&gt; Okay.
-&gt;&gt; So, like the the few days after the
-tour, we&#39;re not quite sure what to do in
-Brazil. Looking around, Boozios sounds
-very interesting, but I know that
-there&#39;s some other areas around it. Uh
-many years ago when I was in Rio, I did
-that uh kind of a day trip on the boat
-going to different islands. That was
-fun, too. But anyway,
-if you&#39;re familiar with Trio and have
-some great suggestions for us,
-please
-&gt;&gt; Yeah,
-&gt;&gt; help us out. Help us out.
-&gt;&gt; Please leave some comments to give us
-some ideas.
-&gt;&gt; Comments. Give us some ideas, some
-insights if you have them. And actually
-like also so I like the Brazilian
-barbecues,
-&gt;&gt; the the meat and the barbecue,
-&gt;&gt; the meat, the barbecue.
-&gt;&gt; We&#39;ll show all of that to you as well.
-&gt;&gt; So after that trip, we&#39;re going to fly
-back and that that gets us home about
-midFebruary. We&#39;ll have a couple of
-weeks at home and uh
-&gt;&gt; finish the the videos because like it&#39;s
-very hard to edit videos on the road.
-&gt;&gt; Yeah. So mid-March I it&#39;s still cold in
-in winter here in Bulgaria. So, I think
-we&#39;ll be itching to get back out there
-and we we&#39;re planning on going to Oman.
-&gt;&gt; From here on, nothing is booked yet. So,
-it&#39;s
-yes, we have some ideas, we have some
-plans, but we haven&#39;t pulled the trigger
-yet. So like before we kind of lean very
-strongly towards Oman, we&#39;re considering
-India,
-we&#39;re considering the Philippines,
-but like woman sounds very interesting
-by the way. Kind of like undiscovered
-gem.
-&gt;&gt; Yeah. And we we like to we did do some
-traveling to Dubai and we love that too.
-So, one of the questions that we have
-that maybe you can give us some ideas on
-is when we go there, I&#39;ve noticed that
-some people just rent a car and drive
-themselves around or should we just get
-a a private driver to drive us around to
-the different sites? So, that&#39;s kind of
-where we&#39;re at right now. So, if you
-have any comments or you know somebody
-or if you&#39;re from Oman, we </div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">今年從為期15天的G Adventures國家地理祕魯和玻利維亞之旅開始。亮點包括馬丘比丘、烏尤尼鹽沼、波托西銀礦、的的喀喀湖和拉巴斯——全都在高海拔地區。接下來是智利和阿根廷的Intrepid Travel行程：瓦爾帕萊索、門多薩品酒、布宜諾斯艾利斯探戈，最後從阿根廷和巴西兩側欣賞伊瓜蘇瀑布。行程在里約熱內盧結束，額外三天自由探索科帕卡巴納和伊帕內瑪。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ces and we have only one car. Oh,
-bring back a camel.
-&gt;&gt; So  I can bring a camel. We
-can have it down in the park.
-&gt;&gt; We could do we could do trips on the
-beach. 
-&gt;&gt; Thinking of using Muscat as a base and
-travel from there. It might be a good
-idea, might be a bad we&#39;ll find out.
-And like in order to be at the auction
-at ,
-you have to either spend the night there
-or
-&gt;&gt; get up at in the morning, you know.
- So,
-&gt;&gt; I wonder if it&#39;s worth it. So, after
-Oman, we&#39;re thinking maybe 10 days. We
-come back and then we&#39;ll be home for a
-couple weeks. This is a very aggressive
-travel itinerary, but uh we&#39;re we want
-to go to China and um Zoro found a great
-private 30-day all in like immersive
-tour of China. And so, he&#39;s looked at
-that and maybe he can give him some
-highlights. What I like about the the
-tour is pretty much you see everything
-that there is to be seen in China and
-Tibet, you know, like from the sh the
-Shien, the warriors, the the clay
-figurines to the pandas to going to
-Tibet
-pretty much all all the major things.
-The only thing I&#39;m not too excited about
-is the the Great Wall because we&#39;ve been
-there and it sounds like they&#39;re going
-to take us to the same place where we
-went from the cruise.
-So, but this being a private tour is
-kind of flexible. So, we can probably
-replace it with something else.
-And we used to travel to China couple
-times a year for business before
-retirement.
-But it&#39;s completely different when
-travel for business and a tourist. I
-never been a tourist in China. So like
-that would be
-&gt;&gt; one of the experience.
-&gt;&gt; One of the places that we did when we
-were uh sourcing uh products from China
-is we went to um painting village. We&#39;ll
-we&#39;ll go there if we can. And they
-actually source the most uh oil
-paintings to the world.  And
-there&#39;s artists all over the city. And
-that&#39;s pretty much all they do is do
-paintings. So we want to go back.
-&gt;&gt; That&#39;s a little bit unknown thing. I
-don&#39;t think there&#39;s tourists and people
-that go there.
-&gt;&gt; So it be might be interesting.
-&gt;&gt; But like we&#39;re going to do this after
-actually the tour because uh the the
-tour ends in Hong Kong. We used to have
-an agent in St. Jen and we&#39;ve been to
-Sanjen many times and he&#39;s a good friend
-of ours. We would like to see him again.
-years ago, he took us to this painting
-village where we kind of we fall in
-love, you know, with like there was like
-alleyways, little gallery,
-&gt;&gt; stacks of paintings like this
-&gt;&gt; gallery next to gallery and like I don&#39;t
-know how much is true, but uh someb</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在二月中旬回家剪輯影片後，團隊計劃在三月中旬再次出發。他們正在認真考慮阿曼——被形容為一顆未被發現的寶石，每週五早上在尼茲瓦鎮有迷人的駱駝拍賣。他們在討論要租車還是聘請私人司機。印度和菲律賓也在考慮之中。這對夫妻請觀眾提供關於阿曼路況和必看景點的建議。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">d, and we&#39;re
-going to two cities. One is Nish and
-Belgrade. We&#39;ll be riding our bikes the
-bike paths.
-&gt;&gt; I mean, it&#39;s right next door and we
-haven&#39;t been there. That&#39;s kind of a
-shame.
-&gt;&gt; So, after June, uh we&#39;ll come home for a
-few like another month. And mid July, we
-want to go back to South Africa for
-another safari. This last year we went
-there and I just absolutely fell in love
-with the animals, the beautiful lodges,
-the incredible service.
-&gt;&gt; Nobody beats the private reserves in
-South Africa.
-And the difference between a private
-reserve and a park in in the park you&#39;re
-very restricted the you with 20 other
-vehicles on the road. you cannot get off
-the road.
-Uh, and surprise surprise, the animals
-are not sitting on the sides of the road
-and posing for pictures.
-&gt;&gt; And if you do find an animal, the the
-guides call every other guide and
-there&#39;s like 30 30 vehicles around like
-one lion.
-&gt;&gt; In a private reserve, you have a tracker
-and you go with the Land Cruiser
-straight through the bush,
-&gt;&gt; get right in where the animals are. I
-mean like in in the last safari we have
-a video actually uh the one in Sabis
-Sands. Okay, that&#39;s a very good video by
-the way. You can check it out. We are
-right between the lines and the buffalo.
-&gt;&gt; You still have to drive and look and
-search for
-&gt;&gt; Yeah, it&#39;s a  hunt. It&#39;s a
-hunting.
-&gt;&gt; Yeah, we&#39;ll have we still have to figure
-out which lodges we&#39;re going to stay at.
-We want to try different ones. Uh but
-we&#39;re still pretty set on South Africa.
-&gt;&gt; Like also like uh to be honest with you,
-I was not impressed with Johannesburg.
-you know, there&#39;s not not much to
-&gt;&gt; it&#39;s it&#39;s pretty much all like all of
-the safaris begin.
-&gt;&gt; But like you can fly from Cape Town and
-like you can fly from Cape Town and like
-like when we book it, we&#39;re going to fly
-through Cape Town because like on the
-cruise I was impressed with the
-waterfall.
-&gt;&gt; Yeah. Now it&#39;ll be the dead of winter.
-It&#39;ll be the dead of winter.
-&gt;&gt; So we we have umbrella and coat.
-&gt;&gt; Okay. Now the next one is where we
-really would like some suggestions. I&#39;ve
-been wanting to go to the South Pacific
-for a long time. And when we were on the
-cruise, we actually went to Tahiti and
-Mora, but it was like coming into Mora,
-we were only there for like 4 hours. It
-was crazy. It was the most beautiful
-thing I&#39;ve ever seen coming in. The
-mountains, the green, and I want to go
-back. It&#39;s calling calling us. And I&#39;ve
-been researching ways to to do it. It&#39;s
-an awfully long trip to get there from
-way.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">最令人興奮的計劃之一是為期30天的中國和西藏私人全包旅行。行程涵蓋一切：從西安的兵馬俑到成都的熊貓、萬里長城和西藏。由於他們之前因商務訪問中國，這將是他們第一次以遊客身份體驗中國。他們還想重訪深圳附近的一個畫村，他們曾在那裡採購藝術品並愛上了當地的畫廊。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">s, wouldn&#39;t it be
-kind of cool to go on this freighter and
-go into these small little bays? I&#39;ve
-saw how they actually have to tie up and
-everything by rocks and ropes and you&#39;re
-on this small little barge thing going
-into shore and being met by these um
-villagers that don&#39;t get a lot of
-visitors. So, it&#39;s not like a tourist
-trap at all and we&#39;ll get to explore
-some of these remote islands. Or we
-could take the Oceanana
-luxury cruise ship and, you know, be in
-the lap of luxury cruising along and
-seeing other islands.
-&gt;&gt; I like I rather I rather do the row to
-be more entertaining to see the cargo
-getting unloaded, the local people
-interacting then
-&gt;&gt; performances on a cruise ship.
-&gt;&gt; Yeah. I show the cruise.
-&gt;&gt; So, we want your suggestions. Would you
-like to us to show you what Oceanana on
-a nice cruise ship would be like around
-the South Pacific Islands? Or would you
-enjoy seeing what it would be like on a
-freighter/
-cruise ship going into a small little
-remote island?
-&gt;&gt; What is the name of that?
-&gt;&gt; The Arooni 5.
-&gt;&gt; Aroon 5.
-&gt;&gt; Now, one thing about the Arooni 5 is
-there&#39;s no YouTube videos on it.
-&gt;&gt; I wonder why. I I asked and because that
-actually people are what I heard is
-people are too busy seeing things on the
-islands than recording or the actual
-demographic that go there uh aren&#39;t
-recording. They don&#39;t have YouTube
-channels. So we&#39;re probably going to be
-one of the few if not the only uh
-creators that will be doing a video on
-the Marquesa Islands on long video
-detail.
-&gt;&gt; They have videos. The Arun 5 is putting
-out videos and so are travel agents.
-&gt;&gt; Yeah. But like they&#39;re like
-&gt;&gt; but not travelers on the actual ship. So
-&gt;&gt; yeah, less than a minute. Yeah,
-&gt;&gt; it feels a little risky when you don&#39;t
-see anything on it except for from
-traveling.
-&gt;&gt; No input, no comments, no
-&gt;&gt; Yeah,
-&gt;&gt; you know, you get so used to reading
-comments and making decisions on.
-&gt;&gt; But if you&#39;ve been on that the ship
-&gt;&gt; or know of anybody or any information or
-find a YouTube channel, tell us.
-&gt;&gt; Yes. Yes.
-&gt;&gt; Cuz it&#39;s a long ways to go and it&#39;s a
-it&#39;s kind of taking a risk
- not knowing much. an
-expensive risk too.
-&gt;&gt; Yeah. Yeah. So, but we&#39;ll do it. If you
-recommend, we&#39;ll do it.
-&gt;&gt; We are plann to kind of the end of
-September. That&#39;s correct.
-&gt;&gt; Yes.
-&gt;&gt; So, like we have October, November, and
-December wide open.
-Where should we go?
-&gt;&gt; Yeah, we&#39;re open. We have the whole
-world in front of us. The whole world.
-And when I started looking at these
-trips, that&#39;s how I looked at it. </div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">六月，朋友們將訪問保加利亞，團隊計劃騎電動自行車去塞爾維亞。七月，他們將重返南非進行另一次野生動物獵遊——團隊在上次旅行中愛上了私人野生動物保護區。整部影片中，Tresa和Zarko反覆請求觀眾提供建議：巴西住哪裡、是否在阿曼開車，以及還有哪些隱藏寶石值得造訪。這部影片既是旅行計劃，也是與觀眾的對話。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: 2XgCVknUKvI | 17:45 | 2,447 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在探索了超過100個國家之後，BZ Travel從未計劃過像今年這樣的一年。在這部影片中，Tresa和Zarko分享了他們整個2026年的旅行日曆，並徵求觀眾的意見。他們的行程排得滿滿的——從一月的祕魯和玻利維亞開始，接著是智利、阿根廷、巴西、阿曼或印度、中國和南非。他們已經預訂了幾個由G Adventures和Intrepid Travel等高端旅行社安排的小團行程，並希望觀眾提供建議來填補空缺。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We've explored over 100 countries, but we've never planned a year quite like this. Welcome back to BZ Travel. I'm Tresa, and I'm Zarko. This year, we are actually planning the entire year of our travels and we want to get some of your comments — we're kind of stuck. Our confirmed plans start from Bulgaria in January, heading to Peru and Bolivia. We're doing an extensive 15-day trip with G Adventures — the premium National Geographic Journeys small group tour. One of the highlights we definitely wanted to do this time is of course see Machu Picchu. From there, we'll go to some other really exciting places like the Salt Flats, Potosí for the silver mines, Lake Titicaca, and La Paz. All of this is high altitude travel, so it will be a little chilly and we might struggle a bit.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">今年從為期15天的G Adventures國家地理祕魯和玻利維亞之旅開始。亮點包括馬丘比丘、烏尤尼鹽沼、波托西銀礦、的的喀喀湖和拉巴斯——全都在高海拔地區。接下來是智利和阿根廷的Intrepid Travel行程：瓦爾帕萊索、門多薩品酒、布宜諾斯艾利斯探戈，最後從阿根廷和巴西兩側欣賞伊瓜蘇瀑布。行程在里約熱內盧結束，額外三天自由探索科帕卡巴納和伊帕內瑪。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. South America: Chile & Argentina</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">After Bolivia, we'll fly down to Santiago. From there, we're meeting up with Intrepid Travel — another small group, their premium level. We'll be exploring Valparaíso for two days, then fly to Mendoza, Argentina, where Zarko is looking forward to the great wine and steaks. Mendoza is the home of the Malbec grape, and we'll be exploring three wineries there. Then we'll fly to Buenos Aires and stay at a nice lodge there. From there, we'll drive up to Rio — Zarko's been before and he's looking forward to it. We'll spend three days with the group: Christ the Redeemer, Sugarloaf Mountain, a complete city tour. After the tour, we're going to spend three more days on our own exploring Ipanema and Copacabana. They'll be setting up for Carnival the following weekend when we leave, so we plan to leave early. If you're familiar with Rio and have some great suggestions — particularly around Búzios or the islands — please leave some comments and give us some ideas.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在二月中旬回家剪輯影片後，團隊計劃在三月中旬再次出發。他們正在認真考慮阿曼——被形容為一顆未被發現的寶石，每週五早上在尼茲瓦鎮有迷人的駱駝拍賣。他們在討論要租車還是聘請私人司機。印度和菲律賓也在考慮之中。這對夫妻請觀眾提供關於阿曼路況和必看景點的建議。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Spring: Oman & China</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Mid-March we'll be itching to get back out there. We're planning on going to Oman — it sounds very interesting, kind of like an undiscovered gem. We're also considering India or the Philippines, but Oman is our strong lean. One question we have: should we rent a car and drive ourselves, or get a private driver? Thinking of using Muscat as a base. After Oman, about 10 days, then we'll be home for a couple of weeks. Then we want to go to China — Zarko found a great private 30-day immersive tour. You see everything: Xi'an and the terracotta warriors, the pandas, Tibet — pretty much all the major things. The tour ends in Hong Kong. We used to have an agent in Shenzhen and we've been there many times — we'd love to see him again and revisit the painting village there.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">最令人興奮的計劃之一是為期30天的中國和西藏私人全包旅行。行程涵蓋一切：從西安的兵馬俑到成都的熊貓、萬里長城和西藏。由於他們之前因商務訪問中國，這將是他們第一次以遊客身份體驗中國。他們還想重訪深圳附近的一個畫村，他們曾在那裡採購藝術品並愛上了當地的畫廊。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Summer: Serbia & South Africa Safari</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">After June, we'll come home for about a month, then mid-July we want to go back to South Africa for another safari. I absolutely fell in love with the animals, the beautiful lodges, and the incredible service. Nobody beats the private reserves in South Africa. The difference between a private reserve and a national park: in the park you're very restricted — you're with 20 other vehicles on the road, you cannot get off the road. In a private reserve, you have a tracker and go with the Land Cruiser straight through the bush. We're also thinking of a short Serbia bike trip — riding the bike paths in Niš and Belgrade. It's right next door and we haven't been there. That's kind of a shame.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">六月，朋友們將訪問保加利亞，團隊計劃騎電動自行車去塞爾維亞。七月，他們將重返南非進行另一次野生動物獵遊——團隊在上次旅行中愛上了私人野生動物保護區。整部影片中，Tresa和Zarko反覆請求觀眾提供建議：巴西住哪裡、是否在阿曼開車，以及還有哪些隱藏寶石值得造訪。這部影片既是旅行計劃，也是與觀眾的對話。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Late Year: South Pacific & Open Questions</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/2XgCVknUKvI/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Now the next one is where we'd really like some suggestions. I've been wanting to go to the South Pacific for a long time. On our world cruise we went to Tahiti and Moorea, but we were only there for 4 hours. It was the most beautiful thing I've ever seen. I want to go back. Two options: we could go on the Aranui 5, a freighter that goes into small bays on remote islands — meeting villagers, nothing touristy. Or we could take the Oceania luxury cruise ship and be in the lap of luxury. We're leaning toward the Aranui 5 for the authentic experience, but there's very little traveler content about it online, so it feels like a risk. If you've been on that ship or know of any information, please tell us. We're planning around the end of September. That leaves October, November, and December wide open. Where should we go? We have the whole world in front of us.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

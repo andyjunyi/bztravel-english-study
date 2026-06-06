@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,334 +106,94 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Welcome back again. Three Swiss legends
-await. Zerat, the Mighty Matterhorn, and
-the Glacier Express Ride.
-We&#39;re riding all panoramic trains
-through Switzerland, and today&#39;s journey
-starts in Zerat.
-Zerat has been car-free for decades.
-Visitors must park in TSH 5 km away and
-ride a shuttle train into town.
-Inside Zerat, only electric taxis and
-small electric buses are allowed,
-keeping the streets quiet and the air
-crisp even at altitude.
-Zerat&#39;s renown for its alpine access.
-Cable cars are in all directions.
-We&#39;re heading straight up to the highest
-cable car station in Europe.
-It&#39;s like climbing through stacked up
-worlds.
-Surat sits at 1620 m. Klein Matterhorn
-3,883.
-Swiss cable cars don&#39;t mess around. This
-isn&#39;t Disneyland.
-These gondilas are beasts. They hold 100
-people and run with terrifying
-precision.
-The system hauls 2,000 skiers an hour in
-the winter, but in September, a ghost
-town.
-The matter horns that mountain that&#39;s on
-that table candy bar.
-This place isn&#39;t just pretty, it&#39;s a
-machine.
-There&#39;s 54 lifts, 360 km of trails,
-three mountain zones, and a glacier
-playground up top.
-You can literally ski from Switzerland
-to Italy, cross the border at 3,480 m,
-and be back for lunch. It&#39;s a wild
-setup.
-We&#39;re here in the offse. It&#39;s quiet,
-cold, and perfect. There&#39;s no lines and
-no crowds. Just us and the Alps.
-To reach the Klein Matterhorn, we&#39;ve got
-to switch through three lifts. Each one
-steeper than the last.
-Everywhere you look, there&#39;s chair
-lifts, cable cars, and runs that make
-your stomach drop just watching.
-Some of these slopes are downright
-intimidating.
-No wonder this place ranks some o</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">三個瑞士傳奇等著我們——策馬特、雄偉的馬特洪峰和冰川快車。策馬特已實施無車政策數十年。遊客必須將車停在5公里外，搭乘接駁火車進城。城內只允許電動計程車和小型電動巴士行駛，即使在海拔高處也保持街道安靜和空氣清新。策馬特以其阿爾卑斯通道聞名——纜車通往各個方向，直達歐洲最高的纜車站。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Zermatt, Glacier Express & Matterhorn</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">f the
-top ski spots on the planet.
-From inside the cable car, the views are
-jaw-dropping.
-We&#39;re just sitting there, mouths open,
-spinning in circles, trying to take it
-all in.
-It honestly feels like climbing into the
-sky. But here&#39;s the kicker. You can ski
-this mountain every single day of the
-year. Yeah, actual skiing.
-Not a crusty patch of snow, but 21 km of
-groomed runs across a real glacier.
-In September, while the rest of Europe
-is lounging in t-shirts, Olympic teams
-are up here grinding it out.
-That last stretch to the top, you gain
-nearly 1,000 m of altitude in just 8
-minutes.
-And you feel it. The cable, it just
-floats above this massive emptiness,
-suspended above just glaciers, rock,
-ice, and thin air.
-They are getting the slopes ready.
-&gt;&gt; Oh, did people see that?
-&gt;&gt; Too bad.
-&gt;&gt; That&#39;s just the first dusting. First
-dusting of snow. This is unreal.
-&gt;&gt; The final climb, the Matterhorn Glacier
-Express.
-This beast takes you up Europe&#39;s highest
-cable car stretch. Floating over the
-Theodole glacier, we spot the year round
-ski zone.
-It&#39;s a training mecca for pro racers.
-Then bam, the doors open at 3,883
-m and the air thin, dry, weird. You feel
-it hit your lungs.
-Well, we&#39;re up at the viewing platform.
-There&#39;s people hiking.
-Whoa, look at that. People are actually
-hiking way out there on top of the
-glacier.
-This is the highest part of Europe.
-Hiking in this thin air, that&#39;s madness.
-We&#39;re both gasping for air. It&#39;s cold
-and windy. Would you do this? Not me. No
-chance.
-The panoramic view is remarkable.
-Switzerland on one side, Italy on the
-other, Mont Blanc, the tallest peak in
-the Alps, stands clear</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">團隊前往海拔3,883公尺的小馬特洪峰。瑞士纜車可不是開玩笑的——這些纜車可容納100人，以驚人的精準度運行。要抵達山頂，他們需要轉乘三條纜車，一條比一條陡峭。放眼望去，盡是纜車和讓人胃部翻攪的滑雪道。這個系統冬季每小時運送2,000名滑雪客。從纜車內部望去，景色令人目瞪口呆——他們在原地轉圈，試圖把所有美景都收進眼底。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ly visible to the
-west.
-of vast expanse of snowcovered peaks
-surrounds you.
-The most striking is the Matterhorn.
-Seen here from an uncommon angle, almost
-level with its shoulder.
-This position offers a rare perspective
-of the mountains dramatic north face, a
-nearly vertical wall of rock and ice.
-It is infamous for its difficulty and
-the number of climbers who have perished
-attempting to scale it.
-It&#39;s hard to describe the beauty of this
-place.
-We&#39;re at 12,740
-ft. Yeah. And it&#39;s clearly hard to to
-breathe.
-I&#39;m lightheaded
-and my heart&#39;s pounding
-and I&#39;m ready to go down.
-Heading down. And we can finally breathe
-again.
-Zerat pops back into view. Tiny, cozy,
-full of chalet style hotels.
-It&#39;s quiet now, but winter brings 15,000
-skiers into this sleepy town. It&#39;s got
-that warm alpine vibe.
-Evening walk and dinner ahead. It&#39;s dead
-quiet. Well, it&#39;s the off season.
-Lots of boutique shops.
-&gt;&gt; Our restaurant searching turns into
-window shopping.
-&gt;&gt; Surass boutiques offer high-end winter
-gear, thermal layers, down jackets, ski
-equipment, and luxury Swiss watches.
-Though it&#39;s only early evening, all the
-stores are already closed.
-This reflects the low season. During the
-winter months, these same streets are
-likely bustling with shoppers and open
-well into the night.
-Lot of neat restaurants and hotels,
-mountain shop.
-&gt;&gt; It almost looks like Christmas, doesn&#39;t
-it? too. It
-&gt;&gt; gives you that feeling.
-&gt;&gt; Yeah.
-&gt;&gt; This is the low season. Like it&#39;s after
-the summer and it&#39;s before the ski
-season, so there&#39;s not too many people
-here.
-Ending the day right. Swiss steak,
-French wine, and a warm mountain
-restaurant. Nothing fancy, just
-perfectly.
-This is very cute.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在3,883公尺的高度，空氣稀薄乾燥，直接衝擊你的肺部。全景視野令人驚嘆——一邊是瑞士，另一邊是義大利，西邊可以清楚看到白朗峰。最引人注目的是馬特洪峰本身，從一個不常見的角度觀看，幾乎與它的山肩平行。這個位置提供了其戲劇性北壁的罕見視角——一面幾乎垂直的岩石和冰壁，因許多嘗試攀登它而喪生的登山者數量而惡名昭彰。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ing fancy, just
-perfectly.
-This is very cute. Look at all the
-glass.
-Today we leave Zerat behind and we board
-the Glacier Express. It&#39;s 8 hours of
-pure alpine theater.
-This isn&#39;t just transit, it&#39;s elegance
-on rails.
-First class, panoramic windows, a front
-row seat as the Swiss Alps unfold.
-It&#39;s slow and spectacular.
-All the way to St. Maritz.
-&gt;&gt; This is the kitchen.
-&gt;&gt; Oh,
-chef.
-We step in and it&#39;s clear.
-This train is built for the view. Huge
-glass windows curve into the ceilings.
-It&#39;s less transportation and more glass
-bubble gliding through mountains.
-This train doesn&#39;t just cross
-Switzerland, it conquers it.
-There&#39;s 91 tunnels, 291 bridges, and a
-route carved over half a century. The
-Ober Outpass climbs to 2,33 m, one of
-Europe&#39;s highest rail lines.
-The engineering is as dramatic as the
-landscape.
-The Glacier Express experience is
-notably unhurried, but it&#39;s never
-tedious.
-The slow, continuous movement creates a
-calming rhythm, while the scenery
-outside provides constant visual
-interest.
-Passengers are treated to uninterrupted
-views of Switzerland&#39;s most renown
-landscapes,
-majestic mountains, alpine valleys,
-charming villages, and historic bridges.
-This consistent visual stimulation
-combined with the train&#39;s quiet, smooth
-ride, produces a meditative effect.
-Time seems to pass without notice.
-Rather than boredom, travelers often
-report a sense of relaxation and
-mindfulness. The journey becomes less
-about the destination and more about the
-immersive, peaceful experience along the
-way.
-And we&#39;ve been on the train now for 4
-hours. We have three more hours to go.
-From the Glacier Express, the world
-unfolds in perfect frames.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">登上冰川快車，就像踏入軌道上的優雅世界。頭等艙、全景車窗，前排座位觀賞瑞士阿爾卑斯山的展開。這列火車是為景觀而建——巨大的玻璃窗 curved 延伸到車頂。與其說是交通工具，不如說是一個穿越山脈的玻璃泡泡。路線包括91條隧道和291座橋樑。上阿爾卑斯山口爬升到2,033公尺，是歐洲最高的鐵路路線之一。工程設計和景觀一樣令人屏息。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">unfolds in perfect frames. Meadows
-bathed in sun, gorgeous carved into the
-earth. Villages too picturesque to be
-real.
-It&#39;s a living landscape painting rushing
-quietly past your window.
-Every curve of track reveals a new
-scene.
-We&#39;re not just watching, we&#39;re floating
-through it.
-Then comes the moment, the Lanaser
-vioduct.
-This thing is everywhere. Posters,
-postcards, Instagram, you name it. It&#39;s
-basically the Glacier Express&#39;s prom
-photo.
-136 m curved limestone bridge that just
-disappears into a cliff like it&#39;s no big
-deal.
-Every model train set dreams of this
-shot.
-You&#39;re riding on the image people
-picture when they think Swiss Alps.
-And yeah, it lives up to its hype.
-Seeing and in person, it&#39;s way cooler
-than any filtered photo.
-The train winds through a maze of stone,
-vioaducts arching high, galleries
-slicing cliffs, and tunnels curling back
-on themselves.
-Past Bergen, the real twist begins.
-Loop tunnels that are buried deep into
-the rock spiral the train upward.
-Inside time and direction collapse. Your
-cork screwing through mountain marorrow.
-Then suddenly daylight. The valley is
-now beneath you. The village reappears
-from above like deja vu through glass.
-It&#39;s disorienting in the most beautiful
-way. This just isn&#39;t engineering. It&#39;s
-illusion.
-The term is helical tunnel. A sterile
-name for something that feels like magic
-carved into stone. You haven&#39;t moved
-your seat, but the world flipped beneath
-you.
-In our final chapter of our Swiss
-journey,
-St. Maritz, mountain peaks,
-the legendary Bernina Express,
-and a full sale across Lake Lassern.
-Beauty, drama, and closure. Don&#39;t miss
-the grand finale.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">冰川快車從策馬特到聖莫里茨需要8小時。緩慢而壯觀。這種體驗從容不迫但絕不無聊。乘客可以欣賞到連綿不絕的雄偉山脈、阿爾卑斯山谷、迷人的村莊和歷史悠久的橋樑。持續的視覺刺激加上平穩的行駛產生了冥想般的效果。最後，團隊反思了淡季的寧靜——沒有排隊、沒有人潮，只有他們和阿爾卑斯山。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: jb1RyVyIgCI | 15:31 | 2,150 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">三個瑞士傳奇等著我們——策馬特、雄偉的馬特洪峰和冰川快車。策馬特已實施無車政策數十年。遊客必須將車停在5公里外，搭乘接駁火車進城。城內只允許電動計程車和小型電動巴士行駛，即使在海拔高處也保持街道安靜和空氣清新。策馬特以其阿爾卑斯通道聞名——纜車通往各個方向，直達歐洲最高的纜車站。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Arriving in Zermatt</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Welcome back. Three Swiss legends await: Zermatt, the Mighty Matterhorn, and the Glacier Express ride. Today's journey starts in Zermatt. Zermatt has been car-free for decades. Visitors must park in Täsch, 5 km away, and ride a shuttle train into town. Inside Zermatt, only electric taxis and small electric buses are allowed — keeping the streets quiet and the air crisp even at altitude. Zermatt is renowned for its alpine access. Cable cars go in all directions — we're heading straight up to the highest cable car station in Europe. Zermatt sits at 1,620 m; Klein Matterhorn at 3,883 m. Swiss cable cars don't mess around — these gondolas hold 100 people and run with terrifying precision, hauling 2,000 skiers an hour in winter. This place isn't just pretty, it's a machine. 54 lifts, 360 km of trails, three mountain zones, and a glacier playground up top. You can literally ski from Switzerland to Italy, cross the border at 3,480 m, and be back for lunch. We're here in the off-season — quiet, cold, and perfect. No lines, no crowds. Just us and the Alps.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">團隊前往海拔3,883公尺的小馬特洪峰。瑞士纜車可不是開玩笑的——這些纜車可容納100人，以驚人的精準度運行。要抵達山頂，他們需要轉乘三條纜車，一條比一條陡峭。放眼望去，盡是纜車和讓人胃部翻攪的滑雪道。這個系統冬季每小時運送2,000名滑雪客。從纜車內部望去，景色令人目瞪口呆——他們在原地轉圈，試圖把所有美景都收進眼底。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Klein Matterhorn: Europe's Highest Cable Car</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">To reach the Klein Matterhorn, we switch through three lifts, each one steeper than the last. Everywhere you look: chair lifts, cable cars, and runs that make your stomach drop just watching. No wonder this place ranks among the top ski spots on the planet. You can ski this mountain every single day of the year — not a crusty patch of snow, but 21 km of groomed runs across a real glacier. In September, while the rest of Europe is lounging in t-shirts, Olympic teams are up here grinding it out. The final climb: the Matterhorn Glacier Express. This beast takes you up Europe's highest cable car stretch. Floating over the Theodul glacier, we spot the year-round ski zone — a training mecca for pro racers. Then the doors open at 3,883 m and the air is thin, dry, weird. You feel it hit your lungs. The panoramic view is remarkable. Switzerland on one side, Italy on the other, Mont Blanc — the tallest peak in the Alps — stands clearly visible to the west. A vast expanse of snow-covered peaks surrounds you. The most striking is the Matterhorn, seen from an uncommon angle almost level with its shoulder — offering a rare perspective of the mountain's dramatic north face, a nearly vertical wall of rock and ice, infamous for its difficulty and the number of climbers who have perished attempting to scale it.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在3,883公尺的高度，空氣稀薄乾燥，直接衝擊你的肺部。全景視野令人驚嘆——一邊是瑞士，另一邊是義大利，西邊可以清楚看到白朗峰。最引人注目的是馬特洪峰本身，從一個不常見的角度觀看，幾乎與它的山肩平行。這個位置提供了其戲劇性北壁的罕見視角——一面幾乎垂直的岩石和冰壁，因許多嘗試攀登它而喪生的登山者數量而惡名昭彰。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Zermatt Evening</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Zermatt pops back into view — tiny, cozy, full of chalet-style hotels. It's quiet now, but winter brings 15,000 skiers into this sleepy town. Evening walk and dinner ahead. It's the off-season — lots of boutique shops closed, high-end winter gear, thermal layers, down jackets, ski equipment, and luxury Swiss watches in the windows. This reflects the low season; during the winter months, these same streets are likely bustling well into the night. Ending the day right: Swiss steak, French wine, and a warm mountain restaurant. Nothing fancy, just perfect.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">登上冰川快車，就像踏入軌道上的優雅世界。頭等艙、全景車窗，前排座位觀賞瑞士阿爾卑斯山的展開。這列火車是為景觀而建——巨大的玻璃窗 curved 延伸到車頂。與其說是交通工具，不如說是一個穿越山脈的玻璃泡泡。路線包括91條隧道和291座橋樑。上阿爾卑斯山口爬升到2,033公尺，是歐洲最高的鐵路路線之一。工程設計和景觀一樣令人屏息。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. The Glacier Express</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/jb1RyVyIgCI/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Today we leave Zermatt behind and board the Glacier Express — 8 hours of pure alpine theater. This isn't just transit, it's elegance on rails. First class, panoramic windows, a front-row seat as the Swiss Alps unfold. Slow and spectacular, all the way to St. Moritz. This train doesn't just cross Switzerland, it conquers it. 91 tunnels, 291 bridges, and a route carved over half a century. The Oberalp Pass climbs to 2,033 m — one of Europe's highest rail lines. The engineering is as dramatic as the landscape. The Glacier Express experience is notably unhurried but never tedious. The slow, continuous movement creates a calming rhythm. Time seems to pass without notice. Rather than boredom, travelers often report a sense of relaxation and mindfulness. Then comes the moment: the Landwasser Viaduct. This thing is everywhere — posters, postcards, Instagram. A 136 m curved limestone bridge that disappears into a cliff like it's no big deal. You're riding on the image people picture when they think Swiss Alps. And it lives up to its hype. The train winds through loop tunnels buried deep in the rock, spiraling upward. Inside, time and direction collapse — you're corkscrew through mountain marrow. Then suddenly daylight. The valley is now beneath you. It's disorienting in the most beautiful way.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">冰川快車從策馬特到聖莫里茨需要8小時。緩慢而壯觀。這種體驗從容不迫但絕不無聊。乘客可以欣賞到連綿不絕的雄偉山脈、阿爾卑斯山谷、迷人的村莊和歷史悠久的橋樑。持續的視覺刺激加上平穩的行駛產生了冥想般的效果。最後，團隊反思了淡季的寧靜——沒有排隊、沒有人潮，只有他們和阿爾卑斯山。</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

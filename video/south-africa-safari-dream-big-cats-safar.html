@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,480 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">We spent three weeks and we went on 40
-plus game drives. So join us for the
-ultimate safari.
-We&#39;re up close with Africa&#39;s wildlife
-unfiltered with honest reviews to help
-you plan your own adventure.
-In this video, we take you deep into the
-Claceri Nature Reserve.
-Simba Game George is located in a
-private reserve on the edge of the
-Greater Krueger. It&#39;s a stylish
-exclusive safari lodge with prime access
-to Africa&#39;s most iconic wildlife.
-
-Eight suits total. No crowds here.
-Welcome to Camp George.
-
-It&#39;s hard to believe that this exists in
-the middle of nowhere.
-Step outside and it&#39;s wild Africa.
-Inside, tasteful decor, smart layout,
-pure comfort. So far, we&#39;re loving every
-moment here.
-&gt;&gt; Wow. Outdoor indoor shower.
-&gt;&gt; Yeah, I like the outdoor shower. It&#39;s
-beautiful thatched roof.
-&gt;&gt; Really nicely done.
-From our private deck, there&#39;s a dry
-riverbed, electric fence. We are right
-in untamed nature.
-We&#39;re facing the water hole, enjoying
-lunch. South Africa wine in hand,
-watching baboons outside the fence. It&#39;s
-a perfect prelude to our afternoon
-siesta.
-p.m. Handsome guide, an open top
-Land Cruiser is our first evening game
-drive. Our first encounter, Impala, and
-a small group. They&#39;re the most common
-and they&#39;re found everywhere.
-Here, elephants rule the road. Young
-bulls, they can be cranky and sometimes
-very aggressive.
-But eventually, they decided to let us
-through.
-Where you going, Teresa?
-&gt;&gt; I&#39;m going to find my
-This isn&#39;t a zoo. It&#39;s the wild. And on
-game drives, every bend could reveal
-something incredible.
-Oh my gosh, I can&#39;t believe our luck.
-On our very first game drive, we came
-across something incredibly rare. A
-female leopard with a freshly killed
-Impala,
-bigger than she is.
-
-I&#39;ve never been this close to a leopard
-before.
-She was right beside the vehicle
-dragging the impala toward a tree.
-
-Leopards always stash their kills high
-on a branch to keep the scavengers like
-hyenas and lions from stealing them.
-The strength of these animals is unreal.
-
-This impala was heavier than she is, but
-she still tried to haul it up.
-
-The big horns made it a bit tricky and
-they got stuck in the fork of the tree.
-She&#39;s exhausted, so she finally lay
-beside her prize to rest.
-Unfortunately, during the night, two
-hyenas took her prize.
-When luck&#39;s on your side, it just keeps
-coming.
-
-Up the road, two rhinos are just
-grazing. We spent two weeks in Kenya
-without spotting one.
-
-Their horns are cut to deter poachers,
-but even hornless, they&#39;re massive,
-powerful,
-and incredib</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">經過三週和超過40場的遊獵體驗後，旅行者們分享他們的終極safari體驗。他們帶領觀眾深入克拉塞里自然保護區，辛巴野生動物旅館就坐落在大克魯格地區的邊緣。僅有八間套房，這裡沒有擁擠的人群。旅館時尚而獨特，可以近距離接觸非洲最具代表性的野生動物。很難相信這一切存在於荒野之中。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. South Africa Safari Dream – Big Cats Safari</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">s up the morning sun.
-Scratches on his nose tell of battles
-with rival males.
-Male lions live short, solitary lives,
-constantly fighting for territory and
-the right to mate.
-Good morning from Camp George. This is
-our first breakfast. It&#39;s unbelievable.
-The chef, he made like it&#39;s still hot
-out of the oven. Banana muffins,
-cappuccino,
-like assortment of cheese. And this
-isn&#39;t even our breakfast that we&#39;ve
-ordered yet. That&#39;s coming.
-Feeling very spoiled here. The staff is
-incredible. Okay, we just got our Camp
-George breakfast. Two eggs, bacon,
-sausage, potatoes,
-mushrooms, tomato.
-It&#39;s kind of over the top.
-
-Looks pretty good. We have an amazing
-chef here.
-A safari day is similar to a lion&#39;s
-life. Hunt, sleep, and eat.
-6 hours chasing prey, 8 hours dead
-asleep, 10 hours relaxing in the shade,
-and of course eating.
-I think Lions have the perfect work life
-balance figured out.
-&gt;&gt; What do you think about Camp George?
-&gt;&gt; Well, this is our I don&#39;t know, fourth
-meal. And the chef is amazing. He&#39;s
-making everything from scratch. Bread,
-like banana muffins,
-&gt;&gt; everything&#39;s gourmet.
-&gt;&gt; Everything that goes on the meal, it&#39;s
-from scratch.
-&gt;&gt; Gourmet. Gourmet. gourmet food. Yeah,
-it&#39;s wonderful.
-&gt;&gt; Delicious.
-&gt;&gt; A small This is a small camp. Only eight
-units and so it&#39;s not that many guests
-and there&#39;s
-a lot of staff waiting on you hand and
-foot.
-These are just a little order, a starter
-&gt;&gt; before the lunch.
-&gt;&gt; Yeah.
-&gt;&gt; What is cream cheese on bread?
-&gt;&gt; No, like a little canope.
-Um tapa tapa.
-&gt;&gt; A little tapa. It doesn&#39;t look like a
-&gt;&gt; salad that you&#39;re familiar with. This is
-African a South African style.
-&gt;&gt; Where&#39;s the lettuce? There&#39;s no lettuce.
-&gt;&gt; It&#39;s like has bacon, chicken,
-&gt;&gt; his homemade croutons, and
-&gt;&gt; how the
-&gt;&gt; maybe a little bit of lettuce at the
-bottom.
-&gt;&gt; It&#39;s in the afternoon. We&#39;re back
-on the game drive and scanning the bush
-for action.
-Uh, elephants are mixed feeders. So,
-hey, they eat the full salad buffet.
-Right. So, now if I was to break this
-open here so that you guys can see
-what&#39;s going on on the inside there. All
-right. So, let&#39;s just take a few pieces
-from the inside here. You can see a
-piece of a leaf.
-&gt;&gt; All right.
-&gt;&gt; Yeah.
-&gt;&gt; Right. So, there&#39;s a leaf there.
-&gt;&gt; And um let&#39;s see what else we can find.
-Usually, it&#39;s like it&#39;s quite
-interesting. You can find some roots.
-Just finding some more leaves.
-Here&#39;s a piece of a branch.
-Small piece of a branch.
-&gt;&gt; All right. That&#39;s not convincing enough
-there. Here&#39;s some bark.
-&gt;&gt; Wow. Beautiful.
-&gt;</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">喬治營地融合了現代舒適與狂野非洲。踏出戶外，你就置身於未馴服的大自然中；室內則是品味裝潢和純粹的舒適。從私人露台可以看到乾涸的河床和將營地與荒野隔開的電網。旅行者們面對水塘享用午餐，手拿南非葡萄酒，看著圍欄外的狒狒。這是下午小憩前完美的序幕，為下一場遊獵做準備。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">makes a nice ember and when you
-blow on it, it heats up and then then
-you put dry stuff like dry grass on top
-of that and then you&#39;ll see you&#39;ll start
-to fire quite nicely.
-Fantastic.
-Lazy hippos. They&#39;ll start getting they
-they&#39;ll start moving around a little bit
-later. Once it starts getting dark, once
-the sun sets, that&#39;s when they start
-aiming to move out of the water. They&#39;ll
-see them they&#39;ll move as the afternoon
-progresses. As it gets later around
-sunset, they move towards the water&#39;s
-edge and then just b their time and wait
-until they feel safe enough to
-eventually actually climb out of the
-water and then go about their nightly
-routine grazing and looking for grass
-and nutrition.
-&gt;&gt; They stay in the water to protect their
-skin or
-&gt;&gt; Yes, that&#39;s exactly what it is. So
-they&#39;re quite susceptible to sunburn. Um
-so what they do is they stay in the
-water like this which minimizes sunburn.
-And then but they but also that being
-said they do some very often they go lie
-on the banks and they have another
-natural way of actually looking after
-themselves in terms of the sun. They
-secrete an oil which is only found in
-hippo skin and it&#39;s actually pink in
-color. Now, this oil almost sweats out
-of the skin of the hippo and protects
-them against harmful UV rays, but it&#39;s
-more of an antiseptic than anything else
-actually. So, this antiseptic helps them
-to keep their wounds clean because of
-the hippo&#39;s nature of being in water so
-much and so often um that their wounds
-are can can be susceptible to infection.
-Now, this oil that they secrete actually
-just helps to flush that out and to keep
-it clean. So that antiseptic oil cleans
-the wounds and keeps them from getting
-algile infections or from getting
-infected from staying in stagnant water
-like
-now wilderbeast is actually a direct
-translation
-um from the Africans word vibbe.
-So vibbeas, wild cow or wild cattle
-vibbeas,
-right? So
-beast groups like this, they&#39;re usually
-accompanied by other animals. Doesn&#39;t
-seem like it today, but usually they are
-accompanied by things like animals like
-zebra. Um sometimes even giraffe. It&#39;s
-quite a popular playing game to be
-followed around with. Um especially with
-zebra. Zebra tend to like b the beast
-quite a lot. They both eat different
-parts of the grass. So the wilderbeast
-will eat the shorter stumps at the
-bottom, whereas the zebra will eat the
-longer pieces at the top.
-Not far from the wild beast, we spot
-zebras. They&#39;re nervous, wired, and
-ready to bolt.
-They never relax.
-They&#39;</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在第一次遊獵中，旅行者們遇到了極為罕見的一幕——一頭雌性花豹帶著一頭剛殺死的黑斑羚，這獵物比牠自己還大。牠就在車輛旁邊，拖著黑斑羚朝一棵樹走去。這些動物的力量超乎現實。不幸的是，夜間兩隻鬣狗偷走了牠的戰利品。沿路而上，兩頭犀牛在吃草——牠們的角被割掉以阻止盜獵者，但即使沒有角，牠們仍然龐大、強壯且極其威嚴。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">here&#39;s
-a spike in testosterone and the spike in
-testosterone causes the elephant to
-basically become very irritable,
-extremely unpredictable and um yeah,
-very aggressive at times as well. The
-only thing that&#39;s going through this
-elephant&#39;s mind at this given time is
-one thing and that&#39;s the ladies. All
-right? So, if you get between him and
-the ladies, then uh you are going to
-come into second place. I can tell you
-that much. He&#39;ll move you out the way.
-Um now, that&#39;s that smell that you&#39;re
-smelling there. It&#39;s very disgusting.
-So, bear yourselves. Well, bear with me
-here.
-&gt;&gt; Our guide is incredible. Calm,
-sharpeyed, and patient. He knows every
-bird by name, every pile of dung by
-species. I&#39;m not exaggerating.
-Okay, the chef just delivered his
-homemade bread. And this is what you
-call, he invented it, by the way, a
-butter candle. The candle, he lit the
-candle and it&#39;s going to melt the butter
-so that we can put it on his homemade
-bread.
-C. That&#39;s a first for us. Well, like I
-said, he invented it. You have to come
-here to get it.
-Melted butter.
-&gt;&gt; That&#39;s ingenious.
-The sun creeps over the bush and it&#39;s a
-cold morning.
-We&#39;re wrapped in blankets and hot water
-bottles in our laps. We&#39;re back out
-hunting for adventure.
-Elephants. They eat up to 16 hours
-daily.
-This young mill digs up wild potatoes
-with his foot and then lifts them up
-with his trunk.
-The most versatile overwork tool in the
-animal kingdom.
-It&#39;s both brute force and delica
-precision allin one.
-At that moment, another male appeared,
-ears flapping like sails, walking
-straight toward us.
-He seems determined to confront the
-other male.
-He isn&#39;t slowing down and he&#39;s coming
-right towards us.
-Time slows. Our cameras shake. Our
-hearts are pounding.
-Nobody says a word.
-They look gentle and often they are
-until you push too close.
-Then come the warnings, the head shake,
-ears flare, trunks raises, or even a
-bluff charge.
-It&#39;s not aggression. Just a clear back
-off
-out here. You listen.
-This bull, he came right to my side of
-the vehicle.
-I could hear his slow, deep breaths.
-I swear he looked me straight in the
-eye.
-The guide whispered, &quot;Don&#39;t move.&quot;
-He lifted his trunk to smell us. the tip
-right in front of me,
-close enough to touch.
-I didn&#39;t dare. I was too scared to even
-record it.
-With his curiosity satisfied, he turned
-and chased the other melow away from the
-bush roots.
-Being near an elephant changes you. You
-feel humbled, alive, part of something
-older and bigger than yourself.
-It&#39;s winter, the dry seaso</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">safari的一天反映了獅子的生活：狩獵、睡覺和吃東西。清晨早早開始遊獵，接著是美食早餐。喬治營地的廚師從頭開始製作一切——香蕉鬆餅、卡布奇諾、雞蛋、培根，全都是美食級的。旅行者們學到了有趣的知識：河馬分泌一種粉紅色的防腐油來保護皮膚，角馬和斑馬吃草的不同部位，大象的糞便可以用來生火。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">male leopard, the son of the
-female from our first drive
-on his own now. An inexperienced hunter.
-He&#39;s unlucky with Impalis.
-We watch him stalk right beside us.
-Muscles low,
-eyes locked.
-Not stalking an analopee, but on a few
-big birds.
-Even the small kills matter when you&#39;re
-learning to survive.
-
-So far, every single game drive has been
-incredible.
-Right here,
-there&#39;s one right there on the rail.
-An electric fence circles the lodge.
-It&#39;s built to stop the elephants.
-They&#39;re the real wrecking crew out here.
-Other animals, they can just sneak or
-hop right over.
-We made great friends along the way,
-sharing drives, stories, and crazy
-adventures.
-This is the Kudo. It&#39;s a common analopee
-in southern Africa and it&#39;s a favorite
-source of meat. It&#39;s tender and mild.
-Males grow long spiral horns. The
-females lack horns but have large
-sensitive ears for detecting predators.
-Their white stripes are natural
-camouflage helping them blend with tree
-branches and the light. Their
-predators include lions, leopards,
-hyenas, and wild dogs.
-Kudos are alert, fast, and they&#39;re
-extremely difficult to catch.
-
-On our last drive from Camp George, the
-guide took us to a hyena den.
-Two pups. Yes, even hyena babies are
-ridiculously cute.
-
-They are tumbling around outside the
-hole.
-For an hour, we watch them chase,
-wrestle, and argue over who&#39;s boss.
-Hyenas get a bad rap, but they&#39;re
-actually Africa&#39;s most successful large
-predator.
-Forget lions and leopards. Hyenas do
-most of their own hunting. And here&#39;s
-the twist. Their society is run by the
-females.
-Even the lowest ranking female outranks
-the highest male.
-
-Born with teeth, these cubs are already
-fierce. Their
-bite is among the strongest in the
-animal kingdom, able to crush bones and
-digest them completely.
-
-The mother appeared, silent and
-watchful, but she stopped short of the
-den.
-In an instant, the pups vanished
-underground, perhaps sensing her mood.
-Seeking peace, she chose the center of
-the road as her resting place, lying in
-the open, soaking up what is left of the
-evening sun.
-On the way back, we passed a sleeping
-lion, completely unfaced by our
-presence.
-I don&#39;t know if all lodges in South
-Africa are like this. But here, there
-hasn&#39;t been a single dull moment. Every
-drive has been epic.
-Later, we spotted this male animal just
-casually walking along the road.
-Lions, they love using the roads. It&#39;s
-the easiest way to cover distance, which
-makes them easier to track.
-
-Sometimes guys will follow their tracks
-for miles to find t</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">克拉塞里自然保護區實現了大型貓科動物邂逅的承諾。一頭英俊的獅子鼻子上的抓痕訴說著與競爭雄獅的戰鬥，享受著早晨的陽光。花豹展示了令人難以置信的力量，將比自身重兩倍的獵物拖上樹枝。荒野成為了一齣戲劇——每一個轉彎都可能展現出不可思議的景象。旅行者們感到無比幸運能見證這些時刻，他們對非洲的熱愛隨著每一次邂逅而增長。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: F_MhHEQ6MmE | 25:31 | 2,501 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">經過三週和超過40場的遊獵體驗後，旅行者們分享他們的終極safari體驗。他們帶領觀眾深入克拉塞里自然保護區，辛巴野生動物旅館就坐落在大克魯格地區的邊緣。僅有八間套房，這裡沒有擁擠的人群。旅館時尚而獨特，可以近距離接觸非洲最具代表性的野生動物。很難相信這一切存在於荒野之中。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Camp George</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We spent three weeks and went on 40+ game drives. Join us for the ultimate safari — up close with Africa's wildlife, unfiltered, with honest reviews to help you plan your own adventure. In this video, we take you deep into the Klaserie Nature Reserve. Camp George is located in a private reserve on the edge of the Greater Kruger. It's a stylish, exclusive safari lodge with prime access to Africa's most iconic wildlife. Eight suites total — no crowds here. Step outside and it's wild Africa. Inside: tasteful decor, smart layout, pure comfort. From our private deck, there's a dry riverbed and an electric fence. We're right in untamed nature — facing the water hole, South Africa wine in hand, watching baboons outside the fence. A perfect prelude to our afternoon siesta.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">喬治營地融合了現代舒適與狂野非洲。踏出戶外，你就置身於未馴服的大自然中；室內則是品味裝潢和純粹的舒適。從私人露台可以看到乾涸的河床和將營地與荒野隔開的電網。旅行者們面對水塘享用午餐，手拿南非葡萄酒，看著圍欄外的狒狒。這是下午小憩前完美的序幕，為下一場遊獵做準備。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. First Drive: Female Leopard</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">At 4 p.m., our guide and an open-top Land Cruiser kick off our first evening game drive. First encounter: impala, a small group — the most common animal, found everywhere. Here, elephants rule the road. Young bulls can be cranky and sometimes very aggressive — but eventually they let us through. On our very first game drive, something incredibly rare: a female leopard with a freshly killed impala — bigger than she is. I've never been this close to a leopard before. She was right beside the vehicle dragging the impala toward a tree. The big horns got stuck in the fork of the tree. She's exhausted, so she finally lay beside her prize to rest. Unfortunately, during the night, two hyenas took her prize. Up the road, two rhinos just grazing. We spent two weeks in Kenya without spotting one. Their horns are cut to deter poachers, but even hornless, they're massive and incredibly powerful.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在第一次遊獵中，旅行者們遇到了極為罕見的一幕——一頭雌性花豹帶著一頭剛殺死的黑斑羚，這獵物比牠自己還大。牠就在車輛旁邊，拖著黑斑羚朝一棵樹走去。這些動物的力量超乎現實。不幸的是，夜間兩隻鬣狗偷走了牠的戰利品。沿路而上，兩頭犀牛在吃草——牠們的角被割掉以阻止盜獵者，但即使沒有角，牠們仍然龐大、強壯且極其威嚴。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Camp George: Food & Life Between Drives</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Good morning from Camp George. This is our first breakfast — unbelievable. The chef made banana muffins fresh from the oven, cappuccino, an assortment of cheese. And that's not even the breakfast we ordered yet. Feeling very spoiled. The staff is incredible. A safari day is similar to a lion's life: hunt, sleep, eat. 6 hours chasing, 8 hours asleep, 10 hours relaxing in the shade. Lions have the perfect work-life balance figured out. The camp has only 8 units, so it's not many guests but a lot of staff waiting on you hand and foot. The chef makes everything from scratch — bread, banana muffins, gourmet everything. He even invented a "butter candle": he lights a candle so the butter melts slowly for dipping his homemade bread. That's a first for us. Hippos secrete a pink oil from their skin — it's an antiseptic that protects them against harmful UV rays and keeps their wounds clean. This keeps them from getting algal infections from staying in stagnant water. "Wildebeest" is a direct translation from the Afrikaans word meaning "wild cattle." Beast groups like this are usually accompanied by other animals — especially zebra. Wildebeest eat the shorter grass stumps at the bottom, while zebras eat the longer pieces at the top. A perfect partnership.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">safari的一天反映了獅子的生活：狩獵、睡覺和吃東西。清晨早早開始遊獵，接著是美食早餐。喬治營地的廚師從頭開始製作一切——香蕉鬆餅、卡布奇諾、雞蛋、培根，全都是美食級的。旅行者們學到了有趣的知識：河馬分泌一種粉紅色的防腐油來保護皮膚，角馬和斑馬吃草的不同部位，大象的糞便可以用來生火。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Musth Elephant & Close Encounter</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">There's a spike in testosterone that causes the elephant to become very irritable, extremely unpredictable, and very aggressive. The only thing going through this elephant's mind is one thing — the ladies. If you get between him and the ladies, you'll come into second place. He'll move you out of the way. This bull came right to my side of the vehicle. I could hear his slow, deep breaths. I swear he looked me straight in the eye. The guide whispered: "Don't move." He lifted his trunk to smell us — the tip right in front of me, close enough to touch. I didn't dare. I was too scared to even record it. With his curiosity satisfied, he turned and chased the other male away. Being near an elephant changes you. You feel humbled, alive, part of something older and bigger than yourself. The elephant's trunk is the most versatile tool in the animal kingdom — both brute force and delicate precision, all in one.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">克拉塞里自然保護區實現了大型貓科動物邂逅的承諾。一頭英俊的獅子鼻子上的抓痕訴說著與競爭雄獅的戰鬥，享受著早晨的陽光。花豹展示了令人難以置信的力量，將比自身重兩倍的獵物拖上樹枝。荒野成為了一齣戲劇——每一個轉彎都可能展現出不可思議的景象。旅行者們感到無比幸運能見證這些時刻，他們對非洲的熱愛隨著每一次邂逅而增長。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Young Leopard & Hyena Den</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/F_MhHEQ6MmE/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">It's winter, the dry season. A male leopard — the son of the female from our first drive — is on his own now, an inexperienced hunter. He's unlucky with impalas. We watch him stalk right beside us — muscles low, eyes locked. Not stalking an antelope, but a few big birds. Even small kills matter when you're learning to survive. An electric fence circles the lodge to stop the elephants — the real wrecking crew. Other animals can just sneak or hop right over. This is the Kudu — a common antelope in southern Africa and a favorite source of meat. Males grow long spiral horns. The females lack horns but have large sensitive ears for detecting predators. White stripes provide natural camouflage. Kudus are alert, fast, and extremely difficult to catch. On our last drive from Camp George, the guide took us to a hyena den — two pups. Ridiculously cute. For an hour, we watched them chase, wrestle, and argue over who's boss. Hyenas are actually Africa's most successful large predator. Their society is run by females. Born with teeth, these cubs are already fierce. On the way back, we passed a sleeping lion — completely unfazed by our presence. Every drive has been epic. Lions love using the roads — the easiest way to cover distance, which makes them easier to track. 【Note: 原始逐字稿在此截斷，結尾描述不完整。】</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

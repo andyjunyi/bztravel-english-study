@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,383 +106,130 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Join us today for an incredible tour of
-Lima, Peru. We&#39;ll be tasting 
-authentic Pisco, wandering through the
-historic city center, exploring Bohemian
-neighborhoods, and taking in the
-breathtaking Love Park.
-To truly understand the heartbeat of the
-culture, we hired a private guide to
-show us Lema&#39;s most famous spots.
-Exploring a city with the local is
-simply the best way to do it. That
-personal connection is irreplaceable.
-You&#39;re not just following a flag or
-staring out of a crowded bus window.
-You&#39;re with a local who knows the
-absolute ins and outs of their city.
-&gt;&gt; Welcome to the Love Park, a romantic
-place. You know, we had a Peruan artist
-called Victor Delpin. This Peruven
-artist traveled around the world. But
-when he arrived to Spain, Barcelona, he
-fall in love about the gu park
-in Barcelona, right? But when this
-Peruvian artist Victor Delinim come back
-to Peru,
-&gt;&gt; okay,
-&gt;&gt; he decide to use this place to make a
-similar park.
-&gt;&gt; Oh,
-&gt;&gt; you can see the shape, the color.
-&gt;&gt; Yeah, you can see the color, the
-designs. Park Delmore or the love park
-is arguably Lima&#39;s top destination. It&#39;s
-nestled right on top of a cliff and it&#39;s
-offering sweeping, incredible views of
-the Pacific Ocean and the upscale Mir
-Flores neighborhood.
-The park features colorful undulating
-walls covered in beautiful mosaics and
-each tile design carries a different
-meaning about life and romance.
-&gt;&gt; Well, look at the surfers out there. A
-lot of surfers. Oh, they put their name
-on it. get the names of them, the date.
-They take the keys, ask for a wish, and
-throw to the cliff.
-&gt;&gt; Lovers come here to lock their hearts
-together on the fences, and then they
-just throw away the key.
-&gt;&gt; The meaning of
-is let&#39;s love each other.
-Right in the center, the space is
-dominated by a massive passionate
-sculpture called El Bessel or the Kiss.
-&gt;&gt; Down there are restaurants and stuff or
-&gt;&gt; Yes. And the the building in the middle
-of the ocean is a restaurant so popular
-called Rosa Nautica.
-&gt;&gt; Play has good seafood, I bet.
-&gt;&gt; Yes.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">為了真正了解利馬的脈動，旅客聘請了一位私人導遊來帶他們參觀城市最著名的景點。和當地人一起探索城市無疑是最棒的方式——那種人與人之間的連結是無可取代的。他們不是跟著旗子走，也不是擠在遊覽車上看風景，而是透過一個對城市瞭若指掌的人的眼睛來體驗利馬。旅程從令人屏息的愛情公園開始，它坐落在俯瞰太平洋的懸崖上。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Exploring LIMA Like a Local</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ing in the middle
-of the ocean is a restaurant so popular
-called Rosa Nautica.
-&gt;&gt; Play has good seafood, I bet.
-&gt;&gt; Yes. So good. In the evening have a
-beautiful view, good food. Oh, it&#39;s
-amazing in the place.
-&gt;&gt; And this cold water have a lot of
-seaweed and the seaweed gives the color
-green to the ocean.
-&gt;&gt; Oh, okay.
-&gt;&gt; And also guys, this seaweed is the food
-of a small fish.
-&gt;&gt; Mhm.
-&gt;&gt; And a small fish is the food of biggest
-fish.
-&gt;&gt; Yeah. So, there&#39;s a lot of fish out
-there.
-&gt;&gt; We have more than 700 kind of fishes
-here.
-&gt;&gt; Oh, wow.
-&gt;&gt; And the water is cold. For example, in
-winter the w the temperature of the
-water is 16 Celsius.
-in summer
-24.  No, we are in the beginning.
-So,
-&gt;&gt; Mir Flores is probably the most
-prestigious and prosperous district in
-Lima. It&#39;s incredibly safe, pristine,
-and beautiful. It features lush parks,
-luxury five-star hotels, high-end
-restaurants,  and the famous
-Lumar Shopping Mall.
-But there it is, of course, another side
-to Lima. Further out, you&#39;ll find much
-poorer FLLA style neighborhoods. These
-are the areas that traditional tourists
-rarely ever see. Next, the Bohemian
-heart of Lima, the Baranco district.
-It&#39;s located right next to Mira Flores.
-This vibrant, affluent neighborhood has
-historically been home to  the
-city&#39;s artists and intellectuals. It&#39;s
-packed with striking street murals and
-cozy cafes.
-The buildings here have a much more
-traditional  colonial feel.
-&gt;&gt; Look, that&#39;s the the frog.
-&gt;&gt; Oh, the frog. Yeah. Okay, I see the
-frog. Yeah.
-&gt;&gt; Represent the shaman.
-&gt;&gt; Oh,
-&gt;&gt; look under the frog. You can see a lot
-of plants with that native plants that
-people prepare.
-I will explain you now. If you see under
-you see the smoke
-the smoke go to the go to the heaven
-exactly to the sun and the moon because
-the native used to believe in many gods
-believe in the m in the in the mother
-earth in the sun in the moon right and
-this native used to prepare this drink
-because they said that this drink
-connect them and they can get divine
-message from their god.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">愛情公園可以說是利馬的頂級景點。它坐落在高檔的米拉弗洛雷斯區的懸崖上，享有太平洋的遼闊景觀。公園擁有色彩繽紛的波浪狀牆面，覆蓋著美麗的馬賽克，每個瓷磚設計都承載著關於生活和愛情的不同含義。戀人們來到這裡，在欄杆上鎖上掛鎖，然後把鑰匙丟掉。公園中央矗立著一座名為「吻」的巨大雕塑。附近的米拉弗洛雷斯區安全、純淨，充滿了綠意盎然的公園、豪華酒店和高級餐廳。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">sed to prepare this drink
-because they said that this drink
-connect them and they can get divine
-message from their god. No guys, this
-way.
-&gt;&gt; Do they still make it?
-&gt;&gt; Yes, they still make it.
-&gt;&gt; Like a truck.
-&gt;&gt; Yeah, I bet it is.
-&gt;&gt; Yeah. Similar similar similar.
-&gt;&gt; It&#39;s a 
-Can we try it somewhere?
-&gt;&gt; I think Yeah. But
-&gt;&gt; I I wouldn&#39;t recommend it.
-&gt;&gt; Exactly. I don&#39;t recommend.
-&gt;&gt; It&#39;s a psychedelic. Evidently, you could
-tell it&#39;s a psychedelic.
-&gt;&gt; It&#39;s a
-&gt;&gt; Yeah. If you think if you could think it
-does that to your head. 
-There are countless murals scattered
-around Baranco and every single wall
-tells a different story. Artists, they
-paint directly on the streets to make
-their work completely accessible,
-sharing local history and culture with
-everyone who walks by. Right in front of
-us is a famous Poente de los Spirals,
-the bridge of size. Local legend says
-that if you can hold your breath the
-entire time you cross the bridge and
-make a wish, that wish will come true.
-So naturally, we have to give it a try.
-Time to take a deep breath and wish for
-something special.
-I made  it.
-Are you still holding your breath? I
-managed to hold my breath all the way
-across. The final verdict, my wish is
-definitely coming true. As for Zarko, he
-didn&#39;t quite make it to the other side
-without taking a breath. Sorry, Zarko.
-Better luck next time.
-&gt;&gt; All our dishes have started.
-&gt;&gt; Okay.
-&gt;&gt; Did the potatoes come from here?
-&gt;&gt; Huh?
-&gt;&gt; Did the potatoes originate from here?
-&gt;&gt; Did they originate from here? The
-potatoes? Okay. Well, because I know you
-have I read that there the seeds they&#39;re
-keeping the seeds in the vault that&#39;s in
-um uh Norway.
-&gt;&gt; Yeah. Yeah. Yeah.
-&gt;&gt; Oh, that&#39;s beautiful.
-&gt;&gt; Wow.
-&gt;&gt; Blue color, yellow, red.
-&gt;&gt; Wow.
-&gt;&gt; How cool is that?
-&gt;&gt; This drink is so healthy.
-&gt;&gt; Okay.
-&gt;&gt; Because to in a cooking pot, you put the
-you put the corn the yellow. No, the
-pineapple,
-red, green apple, passion fruit, and you
-boil together.
-&gt;&gt; Oh,
-&gt;&gt; and you get this drink.
-&gt;&gt; Wow.
-&gt;&gt; Kora.
-&gt;&gt; Kora.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">接下來，他們參觀了巴蘭科——利馬的波希米亞之心。這個充滿活力的街區歷來是城市藝術家和知識分子的家園。街道上布滿了引人注目的壁畫和舒適的咖啡館。每一面牆都在訴說著不同的故事。藝術家直接在街頭作畫，讓每個路過的人都能欣賞他們的作品。這裡著名的地標是嘆息橋。當地傳說，如果你能屏住呼吸走完整座橋並許個願望，那個願望就會實現。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ed, green apple, passion fruit, and you
-boil together.
-&gt;&gt; Oh,
-&gt;&gt; and you get this drink.
-&gt;&gt; Wow.
-&gt;&gt; Kora.
-&gt;&gt; Kora. What is that?
-&gt;&gt; Kora. Kora. It means stuff. It&#39;s made
-with a fermentation of the corn.
-&gt;&gt; Oh, kora.
-&gt;&gt; Yeah. They use corn a lot.
-&gt;&gt; Continuing our tour, we head into the
-historic Lima City Center. The stunning
-building passing that&#39;s on our right is
-the Palace of Justice.
-It has impressive classical European
-architecture. You&#39;d be forgiven for
-thinking it was plucked straight out of
-Paris.
-Perhaps the most famous hotel in the
-entire city is the historic Grand Hotel
-Boulevard.
-This place has hosted an incredible
-roster of famous guests. John F.
-Kennedy, Richard Nixon, Ernest
-Hemingway, John Wayne, and Clark Gable.
-The hotel is still fully operational
-today.
-The hotel lobby is absolutely
-magnificent, featuring intricate
-stonework and grand marble columns. But
-the true showstopper is when you look up
-at the spectacular 
-stained glass dome, which beautifully
-filters the bright Peruvian sunlight.
-&gt;&gt; 
-&gt;&gt; want this car.
-&gt;&gt; History and nostalgia are around every
-corner here. From the pristine Model T
-Ford to the beautifully ornate vintage
-elevator.
-&gt;&gt; They kept it.
-&gt;&gt; One of the one of the oldest elevators.
-We even spotted an antique reception
-ledger. Checking into a luxury hotel
-before the age of computers was
-certainly a different experience.
-&gt;&gt; Look at the old boxes they have for the
-keys.
-The hotel faces Plaza San Martin,
-arguably the second most important
-square in Lima. It&#39;s surrounded by
-gorgeous architecture, including the
-Grand Cologne Theater, but the focal
-point is the bronze monument in the
-center dedicated to Joseé San Martin.
-He&#39;s a monumental figure in this part of
-the world, famous for liberating Peru,
-Argentina, and other 
-parts of South America from Spanish
-rule. You&#39;ll see his name on streets and
-squares all over the continent.
-When you&#39;re in Peru, trying Pisco is an
-absolute must.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">繼續深入利馬歷史中心，旅客經過了令人印象深刻的司法宮和著名的玻利瓦爾大飯店。這家歷史悠久的飯店接待過許多著名賓客，包括約翰·F·甘迺迪、理查·尼克森、厄尼斯特·海明威、約翰·韋恩和克拉克·蓋博。大廳有著精緻的石雕、宏偉的大理石柱，以及一個壯觀的彩繪玻璃穹頂，美麗地過濾了秘魯的燦爛陽光。古董登記簿和復古電梯讓人一窺那個已逝去的奢華旅行年代。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">re in Peru, trying Pisco is an
-absolute must. It&#39;s a distilled grape
-spirit very similar to Italian grapa or
-our own Bulgarian rakia.
-But instead of drinking it straight,
-Peruvians masterly blend it into
-cocktails. The most famous, of course,
-is the Pisco Sour. We decided to do a
-proper piece tasting so we could sample
- a few different variations.
-&gt;&gt; Okay, one shot.
-One, two, three, four, five. Swallow.
- Take
-and smile. Perfect.
-&gt;&gt; This is the tornado.
-&gt;&gt; Tastes like custer. 
-So here we are right in the middle of
-the action, Plaza de Armis, the main
-square in Lima. This place is a historic
-core of the city of kings, dating all
-the way back to 1535.
-That big building on one side is the
-presidential palace. It&#39;s got a huge
-fence around it, mainly because the
-square gets pretty lively with protests
-and political rallies.
-Over on the right is a Lima Cathedral.
-It&#39;s absolutely massive, packed with
-history, and it&#39;s actually where
-Francisco Pizaro was buried. The coolest
-part is looking around all these bright
-yellow colonial buildings. They&#39;ve got
-these amazing dark wooden balconies
-hanging off of them which have a really
-cool Spanish moorish vibe.
-Just hanging out here by the big bronze
-fountain in the middle. You can
-genuinely feel how old and important
-this place is.
-Right in the middle of the modern city
-Sisa Huaka Puklana. This is a massive
-towering pre-Incinka archeological
-complex that&#39;s made entirely of adobe
-mud bricks. That wraps up our time in
-Lima.  Join us in our next video
-as we catch a flight high up into the
-breathtaking Andes mountains. We&#39;ll be
-exploring historic Inca capital of
-Cusco, visiting a traditional potato
-farming and craft community, and hanging
-out with some adorable alpacas.
-We&#39;ll even stop at a local spa in
- the Sacred Valley where guinea
-pigs, a traditional Andian delicacy, run
-right across the kitchen floor. You
-won&#39;t want to  miss it.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">造訪秘魯不能不品嚐皮斯可酒——一種蒸餾葡萄烈酒。旅客進行了一場正式的皮斯可品酒會，品嚐了多種不同風味，包括著名的皮斯可酸酒。接著他們參觀了武器廣場，這個主要廣場的歷史可追溯到1535年。廣場周圍是明亮的黃色殖民建築，带有深色木製陽台，廣場上有總統府和埋葬著法蘭西斯科·皮薩羅的利馬大教堂。一座巨大的前印加土坯建築群——普克拉納遺址——就矗立在現代城市中心，令人驚嘆地提醒著人們秘魯層層累積的歷史。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: kZSdNRqXoMs | 12:31 | 1,179 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">為了真正了解利馬的脈動，旅客聘請了一位私人導遊來帶他們參觀城市最著名的景點。和當地人一起探索城市無疑是最棒的方式——那種人與人之間的連結是無可取代的。他們不是跟著旗子走，也不是擠在遊覽車上看風景，而是透過一個對城市瞭若指掌的人的眼睛來體驗利馬。旅程從令人屏息的愛情公園開始，它坐落在俯瞰太平洋的懸崖上。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction & Love Park</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Join us today for an incredible tour of Lima, Peru. We'll be tasting authentic Pisco, wandering through the historic city center, exploring bohemian neighborhoods, and taking in the breathtaking Love Park. To truly understand the heartbeat of the culture, we hired a private guide to show us Lima's most famous spots. Welcome to the Love Park, a romantic place. We had a Peruvian artist called Víctor Delfín. This Peruvian artist traveled around the world. But when he arrived in Spain, Barcelona, he fell in love with the Güell Park in Barcelona. When this Peruvian artist Víctor Delfín came back to Peru, he decided to use this place to make a similar park. Park del Amor, or the Love Park, is arguably Lima's top destination. It's nestled right on top of a cliff, offering sweeping, incredible views of the Pacific Ocean and the upscale Miraflores neighborhood. The park features colorful undulating walls covered in beautiful mosaics, and each tile design carries a different meaning about life and romance. Right in the center, the space is dominated by a massive passionate sculpture called El Beso — The Kiss.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">愛情公園可以說是利馬的頂級景點。它坐落在高檔的米拉弗洛雷斯區的懸崖上，享有太平洋的遼闊景觀。公園擁有色彩繽紛的波浪狀牆面，覆蓋著美麗的馬賽克，每個瓷磚設計都承載著關於生活和愛情的不同含義。戀人們來到這裡，在欄杆上鎖上掛鎖，然後把鑰匙丟掉。公園中央矗立著一座名為「吻」的巨大雕塑。附近的米拉弗洛雷斯區安全、純淨，充滿了綠意盎然的公園、豪華酒店和高級餐廳。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Miraflores & Ocean Life</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Miraflores is probably the most prestigious and prosperous district in Lima. It's incredibly safe, pristine, and beautiful — featuring lush parks, luxury five-star hotels, high-end restaurants, and the famous Larcomar Shopping Mall. But there is, of course, another side to Lima. Further out, you'll find much poorer favela-style neighborhoods that traditional tourists rarely ever see. And this cold water has a lot of seaweed, and the seaweed gives the color green to the ocean. The seaweed is the food of a small fish, and a small fish is the food of bigger fish. We have more than 700 kinds of fish here, and the water is cold — 16 degrees Celsius in winter, 24 in summer.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">接下來，他們參觀了巴蘭科——利馬的波希米亞之心。這個充滿活力的街區歷來是城市藝術家和知識分子的家園。街道上布滿了引人注目的壁畫和舒適的咖啡館。每一面牆都在訴說著不同的故事。藝術家直接在街頭作畫，讓每個路過的人都能欣賞他們的作品。這裡著名的地標是嘆息橋。當地傳說，如果你能屏住呼吸走完整座橋並許個願望，那個願望就會實現。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Barranco: The Bohemian District</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Next, the bohemian heart of Lima, the Barranco district. It's located right next to Miraflores. This vibrant neighborhood has historically been home to the city's artists and intellectuals — packed with striking street murals and cozy cafes. The buildings here have a much more traditional colonial feel. There are countless murals scattered around Barranco and every single wall tells a different story. Artists paint directly on the streets to make their work completely accessible, sharing local history and culture with everyone who walks by. Right in front of us is the famous Puente de los Suspiros — the Bridge of Sighs. Local legend says that if you can hold your breath the entire time you cross the bridge and make a wish, that wish will come true. I managed to hold my breath all the way across. The final verdict — my wish is definitely coming true. As for Zarko, he didn't quite make it without taking a breath. Better luck next time.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">繼續深入利馬歷史中心，旅客經過了令人印象深刻的司法宮和著名的玻利瓦爾大飯店。這家歷史悠久的飯店接待過許多著名賓客，包括約翰·F·甘迺迪、理查·尼克森、厄尼斯特·海明威、約翰·韋恩和克拉克·蓋博。大廳有著精緻的石雕、宏偉的大理石柱，以及一個壯觀的彩繪玻璃穹頂，美麗地過濾了秘魯的燦爛陽光。古董登記簿和復古電梯讓人一窺那個已逝去的奢華旅行年代。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Local Food & Drinks</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">This drink is so healthy. In a cooking pot, you put the corn — the yellow — no, the pineapple, red and green apple, passion fruit — and you boil together. And you get this drink. It's made with fermented corn. They use corn a lot here.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">造訪秘魯不能不品嚐皮斯可酒——一種蒸餾葡萄烈酒。旅客進行了一場正式的皮斯可品酒會，品嚐了多種不同風味，包括著名的皮斯可酸酒。接著他們參觀了武器廣場，這個主要廣場的歷史可追溯到1535年。廣場周圍是明亮的黃色殖民建築，带有深色木製陽台，廣場上有總統府和埋葬著法蘭西斯科·皮薩羅的利馬大教堂。一座巨大的前印加土坯建築群——普克拉納遺址——就矗立在現代城市中心，令人驚嘆地提醒著人們秘魯層層累積的歷史。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Historic Lima City Center</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Continuing our tour, we head into the historic Lima City Center. The stunning building on our right is the Palace of Justice — impressive classical European architecture. You'd be forgiven for thinking it was plucked straight out of Paris. Perhaps the most famous hotel in the entire city is the historic Gran Hotel Bolívar. This place has hosted an incredible roster of famous guests — John F. Kennedy, Richard Nixon, Ernest Hemingway, John Wayne, and Clark Gable. The hotel lobby is absolutely magnificent, featuring intricate stonework and grand marble columns. The true showstopper is when you look up at the spectacular stained glass dome, which beautifully filters the bright Peruvian sunlight. The hotel faces Plaza San Martín, arguably the second most important square in Lima. The focal point is the bronze monument dedicated to José de San Martín — famous for liberating Peru, Argentina, and other parts of South America from Spanish rule.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p7')">
+      <span class="acc-label">7. Pisco Tasting & Plaza de Armas</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p7">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p7.mp3" controls preload="none"></audio></div>
+      <div class="para-en">When you're in Peru, trying Pisco is an absolute must. It's a distilled grape spirit very similar to Italian grappa or our own Bulgarian rakia. But instead of drinking it straight, Peruvians masterly blend it into cocktails. The most famous, of course, is the Pisco Sour. We decided to do a proper Pisco tasting so we could sample a few different variations. So here we are right in the middle of the action, Plaza de Armas — the main square in Lima, the historic core of the City of Kings, dating all the way back to 1535. The presidential palace sits on one side with a huge fence around it, mainly because the square gets pretty lively with protests and political rallies. Over on the right is the Lima Cathedral — absolutely massive, packed with history, and actually where Francisco Pizarro was buried. The coolest part is looking at these bright yellow colonial buildings with amazing dark wooden balconies — a really cool Spanish Moorish vibe. Right in the middle of the modern city: Huaca Pucllana. This is a massive towering pre-Inca archaeological complex made entirely of adobe mud bricks.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p8')">
+      <span class="acc-label">8. Closing Thoughts</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p8">
+      <div class="acc-audio"><audio src="../audio/kZSdNRqXoMs/p8.mp3" controls preload="none"></audio></div>
+      <div class="para-en">That wraps up our time in Lima. Join us in our next video as we catch a flight high up into the breathtaking Andes mountains. We'll be exploring the historic Inca capital of Cusco, visiting a traditional potato farming and craft community, and hanging out with some adorable alpacas. You won't want to miss it.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

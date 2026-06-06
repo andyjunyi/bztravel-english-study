@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,340 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">After a week in Santiago, we are heading
-to Valparaiso, an unparalleled art
-lovers paradise.
-On the way, we stopped in the Casablanca
-Valley.
-It sits perfectly midway between
-Santiago and Valparaiso.
-Just 100 km from the capital, it 
-makes an absolutely perfect day trip.
-We visited the Casas del Bosque winery,
-&gt;&gt; 
-&gt;&gt; toured the estate, and bought some
-bottles.
-This entire  area is covered in
-vineyards producing famous Chilean white
-wines.
-The strong marine influence sweeping in
-from the Pacific Ocean brings cool
-breezes,
-&gt;&gt; 
-&gt;&gt; morning mist, and moderate temperatures.
-This climate is ideal for producing
-highly aromatic whites  and
-fruity reds.
-We happily tasted some excellent
-Carmenere, Chardonnay, and crisp
-Sauvignon Blanc.
-We absolutely love Chilean Sauvignon
-Blanc. It is incredibly smooth,
-dangerously easy to drink, and perfect
-for summer.
-Though relatively small for South
-America, they export most of their wine.
-Beyond standard tanks and oak barrels,
-we saw unique egg-shaped concrete
-vessels.
-Nestled between the Andes and the
-Pacific, this valley&#39;s breezy climate
-creates world-class wine.
-Located about 120 km northwest of
-Santiago on  the central Chilean
-coast, Valparaiso is the country&#39;s
-second largest  metropolitan
-area.
-Imagine a city that tumbles down 45
-hills toward  the Pacific Ocean,
-where every wall is a canvas, every
-staircase a mosaic, and  every
-alleyway hides a story.
-Welcome to Valparaiso.
-You&#39;re not going to believe our room
-here. Come on in and I&#39;ll show you.
-Valparaiso.
-&gt;&gt; gosh, you&#39;re not going to believe this
-room.
-We were offered an upgrade, and of
-course we took it.
-And it wasn&#39;t much.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在前往Valparaíso的路上，Tresa和Zarko在Casablanca山谷停留，這個山谷正好位於Santiago和Valparaíso的中間。這個地區遍布葡萄園，生產著名的智利白葡萄酒。來自太平洋的強烈海洋影響帶來涼爽的微風、清晨的薄霧和溫和的溫度，為生產高香氣的白葡萄酒和果味紅酒創造了理想條件。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Valparaíso: Chile's Wildest, Most Colorful City</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">&gt; gosh, you&#39;re not going to believe this
-room.
-We were offered an upgrade, and of
-course we took it.
-And it wasn&#39;t much. I think it was $30
-for an upgrade,
-but we were shocked.
-It&#39;s a beautiful room. It has an
-incredible amount of room to sit. Plus,
-look at this view. The view actually
-looks like the picture, the Pacific
-Ocean
-of Valparaiso and also Viña del Mar in
-the distance.
-Wow.
-Look how cute this bathroom is.
-&gt;&gt; 
-&gt;&gt; It&#39;s huge. We have a shower and a big
-tub and everything.
-Anyway, we&#39;re going to have fun here.
-We&#39;re here for two nights, so we&#39;re
-really going to enjoy it.
-&gt;&gt; 
-&gt;&gt; This is a city where the houses are
-painted in phosphorescent pinks, 
-jade greens, and butter yellows.
-We were here 2 years ago during our
-world cruise.
-We have another video of this place.
-We will put the link in the description
-below. 
-We fell completely in love during our
-first visit. So, here  we are.
-Where rickety funiculars from the 1880s
-still haul passengers up impossible
-incline.
-And where pirates once plundered
-churches for gold.
-and the seat of Chile&#39;s National
-Congress.
-But numbers do  not capture its
-soul.
-Valpo is a feeling.
-The smell of fresh empanadas 
-drifting from a hillside kitchen.
-The sound of a street musician&#39;s guitar
-echoing through a cobblestone passage.
-The sight of a giant mural appearing
-around a bend you did not expect to
-turn.
-It is chaotic, gritty, poetic, and
-utterly alive.
-The street art movement bloomed in
-secret
-&gt;&gt; 
-&gt;&gt; and in defiance.
-On September  11th, 1973,
-General Augusto Pinochet, born in
-Valparaiso in 1915,  seized power
-in a military coup.
-Within days, Pablo Neruda died under
-highly suspicious  circumstances.
-The dictatorship banned all forms of
-political art.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這對夫婦參觀了Casas del Bosque酒莊，參觀了莊園並購買了幾瓶酒。他們品嚐了優秀的Carmenere、Chardonnay和清爽的Sauvignon Blanc。他們特別喜愛智利的Sauvignon Blanc，形容它極為順滑、好喝到危險，非常適合夏天。他們還注意到在標準的儲存槽和橡木桶之外，還使用了獨特的蛋形混凝土容器來釀酒。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Pinochet, born in
-Valparaiso in 1915,  seized power
-in a military coup.
-Within days, Pablo Neruda died under
-highly suspicious  circumstances.
-The dictatorship banned all forms of
-political art. And those caught 
-defying the order risked being
-disappeared, tortured, killed, 
-and erased.
-But Valpo&#39;s narrow, hidden streets
- and winding stairways offered
-something that Santiago&#39;s wide
-boulevards did not, concealment.
-An underground network of artists formed
-in the city 
-painting powerful political messages on
-the walls of back alleys and forgotten
-passages.
-&gt;&gt; 
-&gt;&gt; They worked at night, risked their
-lives, and watched their murals get
-painted over when discovered by 
-military police.
-After Pinochet&#39;s fall, Valparaiso&#39;s
-local government did  something
-remarkable and virtually unique in
-Chile.
-It legalized  street art as a
-celebration of freedom of expression.
-Everywhere else in the country, graffiti
-and murals remain permitted only under
-formal commission.
-Possibly in the story of these
-How long have you been working on it?
-One week. One week in Valparaiso?
-Are you using your phone like
-So this is new? On my Instagram. But
-this is what, 2 years ago? What did you
-do first? Yeah.
-In Valpo, the streets themselves became
-open galleries.
-The local government directly funded
-artists to create new works. 
-Hotels, shops, and restaurants began
-competing to have the best murals
-painted on their walls.
-Amicable rivalries developed between
-street art crews over who could produce
-the most stunning  pieces.
-The result is a city where art is not
-confined to museums or galleries.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Valparaíso被形容為無與倫比的藝術愛好者天堂。位於Santiago西北約120公里的智利中部海岸，是該國第二大都市區。這座城市沿著45座山丘向太平洋傾瀉而下，形成了戲劇性且色彩繽紛的景觀，數百年來一直啟發著藝術家和創意人士。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e result is a city where art is not
-confined to museums or galleries. It is
-the city. You cannot walk 10 
-steps or Cerro Concepción without
-encountering a mural that stops you in
-your tracks. 
-Entire buildings are wrapped in color.
-Staircases become mosaics.
-Retaining walls  become portals
-into surrealist dreamscapes.
-Art lovers will instantly fall for this
-city.
-Creative expression covers everywhere.
-Every single mural and street 
-painting tells a story.
-You just have to stop, examine the
-details, and absorb the real meaning
-here.
-Independent bookshops, 
-quirky local galleries, and boutiques
-run by local designers line its streets.
-Valparaiso has always attracted those
-who live outside convention.
-It is the cultural capital of Chile.
-Creative types with tattoos, piercings,
-and guitars occupy its parks, and live
-music venues feature everything from
-traditional Chilean folk to Latin
-fusion.
-The  vibe has been compared to
-Barcelona&#39;s, but unlike Barcelona,
-Valparaíso retains a raw, unpolished
-edge, a gritty authenticity interspersed
-with hints of faded grandeur.
-&gt;&gt; 
-&gt;&gt; These 29 steps are painted to resemble
-black and white piano keys, accompanied
-by murals of Beethoven himself.
-The piano stairs are just one of dozens
-of painted stairways.
-Victorian homes that once housed
-European merchants now lean precariously
-into ravines.
-It is beautiful precisely because it is
- imperfect. Valparaíso is not a
-city you visit. It is a city that
-happens to you.
-&gt;&gt; 
-&gt;&gt; It sneaks under your skin through its
-colo</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在Valparaíso，每面牆都是一塊畫布，每段樓梯都是一幅馬賽克，每條小巷都藏著一個故事。這座城市充滿活力的街頭藝術場景世界聞名，色彩繽紛的壁畫遍布整個山丘社區的建築物。海洋背景、依附在陡峭山坡上的彩色房屋以及充滿藝術氣息的街道的結合，營造出智利其他任何地方都無法比擬的氛圍。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">rs, its stories, its sounds, and its
-defiant creativity.
-It is a place where a devastating
-earthquake reshaped the city&#39;s
-geography,
-where the opening of a canal on the
-other side of the continent collapsed
- an economy,
-where a dictatorship tried to silence
-art and failed, where European
-immigrants 
-paint the walls in every color
-imaginable.
-Elegant government buildings stand next
-to rusting corrugated iron shacks.
- Riding one of these creaking,
-century-old contraptions is a rite of
-passage for any visitor.
-The wooden cabins groan and sway as they
-ascend, and when the doors open at the
-top, the entire bay unfolds before you.
-This is a city that takes century-old
-funiculars to get home from work and
-named a street after Beethoven just so
-someone could  paint a piano on
-his stairs.
-Ah, there&#39;s our van waiting at the
-bottom.
-What do you think about vibrant
-Valparaíso? 
-Drop your comments below.
-If you enjoyed  this journey,
-please click the like button. It truly
-means the world to us and we appreciate
-it.
-Now, we&#39;re heading to the airport flying
-straight  east over the towering
-Andes into Argentina.
-Next video, we explore beautiful
-Mendoza, Argentina. We survived an epic
-welcome where our van acted like a boat
-plowing through flooded roads to reach
-our hotel.
-The reward  was spectacular time.
-We will show you endless rolling 
-vineyards, the world&#39;s greatest wines,
-and an authentic mouth-watering
-Argentine asado.
-Come experience the true home of
-legendary Malbec.
-See you in Mendoza. Do not miss it.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這對夫婦住在一間擁有城市絕佳景觀的非凡房間裡。Valparaíso獨特的地理環境——建在俯瞰太平洋的45座陡峭山丘上——意味著幾乎從任何角度看到的景色都很壯觀。這座城市的波西米亞精神、藝術能量和戲劇性的環境使其成為南美洲最令人難忘的目的地之一。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: hsuOrmwA8ME | 10:57 | 2,391 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在前往Valparaíso的路上，Tresa和Zarko在Casablanca山谷停留，這個山谷正好位於Santiago和Valparaíso的中間。這個地區遍布葡萄園，生產著名的智利白葡萄酒。來自太平洋的強烈海洋影響帶來涼爽的微風、清晨的薄霧和溫和的溫度，為生產高香氣的白葡萄酒和果味紅酒創造了理想條件。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Casablanca Valley Wine Stop</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">After a week in Santiago, we are heading to Valparaíso, an unparalleled art lover's paradise. On the way, we stopped in the Casablanca Valley — sitting perfectly midway between Santiago and Valparaíso, just 100 km from the capital, making it an absolutely perfect day trip. We visited the Casas del Bosque winery, toured the estate, and bought some bottles. This entire area is covered in vineyards producing famous Chilean white wines. The strong marine influence from the Pacific brings cool breezes, morning mist, and moderate temperatures — ideal for highly aromatic whites and fruity reds. We happily tasted some excellent Carmenere, Chardonnay, and crisp Sauvignon Blanc. Chilean Sauvignon Blanc is incredibly smooth, dangerously easy to drink, and perfect for summer.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">這對夫婦參觀了Casas del Bosque酒莊，參觀了莊園並購買了幾瓶酒。他們品嚐了優秀的Carmenere、Chardonnay和清爽的Sauvignon Blanc。他們特別喜愛智利的Sauvignon Blanc，形容它極為順滑、好喝到危險，非常適合夏天。他們還注意到在標準的儲存槽和橡木桶之外，還使用了獨特的蛋形混凝土容器來釀酒。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Arriving in Valparaíso</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Located about 120 km northwest of Santiago on the central Chilean coast, Valparaíso is the country's second largest metropolitan area. Imagine a city that tumbles down 45 hills toward the Pacific Ocean, where every wall is a canvas, every staircase a mosaic, and every alleyway hides a story. Welcome to Valparaíso. You're not going to believe our room here. We were offered an upgrade, and of course we took it. It wasn't much — I think it was $30 for an upgrade, but we were shocked. A beautiful room with an incredible amount of space. And the view actually looks like the picture: the Pacific Ocean and Valparaíso, with Viña del Mar visible in the distance. This is a city where houses are painted in phosphorescent pinks, jade greens, and butter yellows. Where rickety funiculars from the 1880s still haul passengers up impossible inclines. And where pirates once plundered churches for gold. Valpo is a feeling — the smell of fresh empanadas drifting from a hillside kitchen, the sound of a street musician's guitar echoing through a cobblestone passage. Chaotic, gritty, poetic, and utterly alive.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">Valparaíso被形容為無與倫比的藝術愛好者天堂。位於Santiago西北約120公里的智利中部海岸，是該國第二大都市區。這座城市沿著45座山丘向太平洋傾瀉而下，形成了戲劇性且色彩繽紛的景觀，數百年來一直啟發著藝術家和創意人士。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. The Street Art Movement & Pinochet</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The street art movement bloomed in secret and in defiance. On September 11th, 1973, General Augusto Pinochet — born in Valparaíso in 1915 — seized power in a military coup. Within days, Pablo Neruda died under highly suspicious circumstances. The dictatorship banned all forms of political art. Those caught defying the order risked being disappeared, tortured, killed, and erased. But Valpo's narrow, hidden streets and winding stairways offered something Santiago's wide boulevards did not: concealment. An underground network of artists formed, painting powerful political messages on the walls of back alleys and forgotten passages. They worked at night, risked their lives, and watched their murals get painted over when discovered by military police. After Pinochet's fall, Valparaíso's local government did something remarkable and virtually unique in Chile: it legalized street art as a celebration of freedom of expression. Everywhere else in the country, graffiti and murals remain permitted only under formal commission.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在Valparaíso，每面牆都是一塊畫布，每段樓梯都是一幅馬賽克，每條小巷都藏著一個故事。這座城市充滿活力的街頭藝術場景世界聞名，色彩繽紛的壁畫遍布整個山丘社區的建築物。海洋背景、依附在陡峭山坡上的彩色房屋以及充滿藝術氣息的街道的結合，營造出智利其他任何地方都無法比擬的氛圍。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. A Living Gallery</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">In Valpo, the streets themselves became open galleries. The local government directly funded artists to create new works. Hotels, shops, and restaurants began competing to have the best murals on their walls. The result is a city where art is not confined to museums or galleries. You cannot walk 10 steps on Cerro Concepción without encountering a mural that stops you in your tracks. Entire buildings are wrapped in color. Staircases become mosaics. Retaining walls become portals into surrealist dreamscapes. These 29 steps are painted to resemble black and white piano keys, accompanied by murals of Beethoven himself. The piano stairs are just one of dozens of painted stairways. Victorian homes that once housed European merchants now lean precariously into ravines. It is beautiful precisely because it is imperfect.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">這對夫婦住在一間擁有城市絕佳景觀的非凡房間裡。Valparaíso獨特的地理環境——建在俯瞰太平洋的45座陡峭山丘上——意味著幾乎從任何角度看到的景色都很壯觀。這座城市的波西米亞精神、藝術能量和戲劇性的環境使其成為南美洲最令人難忘的目的地之一。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Closing Thoughts</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/hsuOrmwA8ME/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Valparaíso is not a city you visit. It is a city that happens to you. It sneaks under your skin through its colors, its stories, its sounds, and its defiant creativity. A place where a devastating earthquake reshaped the city's geography, where the opening of a canal on the other side of the continent collapsed an economy, where a dictatorship tried to silence art and failed. Riding one of these creaking, century-old funiculars is a rite of passage for any visitor. The wooden cabins groan and sway as they ascend, and when the doors open at the top, the entire bay unfolds before you. What do you think about vibrant Valparaíso? Drop your comments below. Next video: Mendoza, Argentina — endless rolling vineyards, the world's greatest wines, and an authentic mouth-watering Argentine asado. See you in Mendoza.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

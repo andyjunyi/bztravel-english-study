@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,375 +106,130 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Welcome back to BC Travel. It&#39;s 2026
-and we&#39;re escaping the freezing
-Bulgarian winter for an epic South
-American adventure.
-But getting out of snowy Sophia turned
-into quite the frozen challenge.
-Let the journey begin.
-We traded snow for sunshine, 
-ancient ruins, and vibrant cultures.
-Over the next few weeks,  we&#39;re
-taking you along to explore the
-breathtaking heights of Machu Picchu,
-the colorful streets of Chile,
-
-Tango and Buenoseries,
-and  the thundering waters of
-Iguaza Falls.
-But before we could enjoy these
-incredible sites, we had to survive
-delayed connecting flights, endless
-layovers, and the ultimate worldwide
-travel nightmare,
-losing our luggage.
-Our flight was supposed to leave an hour
-and a half ago from Sophia,
-but it&#39;s snowing. But that&#39;s not the
-main problem. The main problem is the
-conveyor belt that hooks to the plane is
-stuck and they can&#39;t get it out of the
-plane. So that we have to wait here
-until they can fix that. Then after that
-then we have to get in the queue for
-deicing.
-Then we take off. We&#39;ve already missed
-our connecting flight at this point to
-Lima from Amsterdam. There&#39;s there&#39;s a
-possibility we could miss our National
-Geographic tour out of that from Lima to
-Cusco.
-So, we&#39;ll let you know what happens when
-we get to Amsterdam.
-Right now, we&#39;re just sitting here on
-the plane. After hours stuck on the icy
-tarmac, dealing with the broken luggage
-conveyor belt and endless winter
-deicing, our plane had finally lifted
-off. Next stop, Amsterdam. We were
-already way behind our scheduled
-timeline.
-At least the warm breakfast offered a
-brief moment of comfort among the chaos.
-Well, we made it to Amsterdam and
-unfortunately we did miss our connecting
-flight to Lima. So, we turned in our
-passports and because we&#39;re flying
-business class, I think they&#39;re short on
-seats. Anyway, we&#39;ll let you know what
-happens like what flight they&#39;re going
-to put us on, if they find another seat
-for us, where we&#39;re going to spend the
-night in Amsterdam. reality hit hard. We
-completely missed our connecting flight
-to Lima.
-&gt;&gt; Yes. Uh we had to change our we had to
-change our flight uh because we missed
-our connecting flight.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">2026年，BZ Travel團隊正逃離保加利亞的嚴寒冬季，準備展開一場史詩級的南美洲探險。但要離開白雪皚皚的索菲亞卻成了一項冰冷的挑戰。他們的航班因為一條無法從飛機上取下的故障輸送帶而延誤。接著還得排隊等候除冰。等到起飛時，他們已經錯過了前往利馬的轉機航班。原本應該簡單的旅程迅速演變成一場旅行惡夢。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. 10 Days in the Same Clothes! Flight & Baggage Disaster</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">o change our we had to
-change our flight uh because we missed
-our connecting flight. So we&#39;re going to
-be arriving at a different airline and
-time into Lima.
-So we need to let our our transfer know
-and also our and our hotel.
-Okay. We have an update. Uh after like
-about an hour after about an hour
-working with a guy at the service desk
-and we had a couple choices, but the
-first one of the first options they gave
-us was to go the following day on the
-same flight and put us up in a hotel.
-But after him looking at that flight,
-there wasn&#39;t any business class seats
-available. So he spent like an hour
-having to go through and find the a
-flight that would work for us. So he
-gave us the option of of going and
-waiting here for 7 hours and in the
-business lounge. It&#39;s not too bad, but
-we we&#39;re here for 7 hours and then we&#39;re
-going to change from KM to uh Air Europa
-and then we have a 2 and 1/2 hour flight
-to Madrid. So, we have to backtrack back
-to Madrid.
-2 and 1/2 hour layover in Madrid.
-
-Then we&#39;re going to get on that flight
-there to direct to Lima. But it&#39;s
-another 12 hours. 12 and 1 half hour
-flight, which won&#39;t be bad because we
-have business class. We can lay down
-and, you know, sleep and stuff like
-that. So,
-&gt;&gt; glass of wine.
-&gt;&gt; Yeah. A couple glasses of wine and pass
-out.
-&gt;&gt; Watch some money. 
-&gt;&gt; Now, this is a lesson learned. We
-generally do travel a day before a tour
-or whatever, but you never know what
-could happen, you know. Um,
-&gt;&gt; we have friends that miss the cruise.
-&gt;&gt; We do have friends that actually miss
-their cruise because they travel the
-same day as the cruise. Always go a day
-before. You never know what&#39;s going to
-happen, especially in the winter time.
-&gt;&gt; Traveling winter in Europe, always
-don&#39;t count on
-schedule. Don&#39;t count on specific times.
-After 25 hours, multiple airline
-changes, and one exceptionally long
-lounge wait, we finally had our new
-tickets.
-We boarded an Air Europa flight to
-Madrid.
-Exhausted but hopeful. From there, we
-would catch another flight down to Peru.
-of everybody.
-&gt;&gt; Settling into business class made the</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在結冰的停機坪上困了幾個小時後，飛機終於起飛前往阿姆斯特丹。抵達史基浦機場時，殘酷的現實迎面襲來——他們完全錯過了前往利馬的轉機。在服務櫃檯，一位地勤人員花了一個小時尋找替代方案。選擇有限：他們可以在貴賓室等七個小時，然後搭乘荷航到馬德里轉歐羅巴航空，再飛往利馬——為了抵達南美洲，他們得先繞回歐洲。學到一課：永遠要在旅行團出發前一天抵達，特別是在冬天。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">long journey to Lima much more bearable.
-We enjoyed dinner and watched movies,
-slept on a lay flat seat,
-and then we woke up to a beautiful hazy
-sunrise as we finally descended into
-Peru.
-The worst part was over, or so we
-mistakenly thought.
-After all those different changes, like
-from changing from one airline to
-another to try to get here, we&#39;re not
-sure our luggage is going to make it.
-Staring at an empty carousel is
-heartbreaking. After 36 hours of travel,
-we left the airport empty-handed inside
-our Uber.
-&gt;&gt; Okay, we finally are in the Uber and
-we&#39;re heading to the hotel without
-luggage
-&gt;&gt; in Lima.
-&gt;&gt; In Lima. And we actually left uh well,
-we&#39;ve been we&#39;ve been traveling 36
-hours. Okay, that&#39;s a long time. And we
-got to we got we got to Lima and our
-luggage didn&#39;t arrive and we went to the
-service desk and he could not track it
-down.
-&gt;&gt; Two hours spent. We were at two hours at
-the service desk and the guy tried but
-he couldn&#39;t track it down because for
-one thing we we were scheduled on KM and
-then he diverted us to a different
-Europa Airlines. You can&#39;t find the
-luggage. So I was telling Zarco I can&#39;t
-I can&#39;t do a tour of Peru, Bolivia and
-&gt;&gt; Chile, Argentina, Brazil.
-&gt;&gt; I can&#39;t do this tour without luggage. I
-just can&#39;t. And tomorrow morning we&#39;re
-departing for Cusco uh and we&#39;re doing a
-road trip all over the Sacred Valley and
-all over the darn place. And uh the guy
-at the service desk said he&#39;ll track us
-down just he&#39;ll what&#39;s me and find me
-and get the luggage. But we&#39;ll see. I&#39;m
-just hoping and we think it&#39;s possible
-that that luggage is going to come in on
-KLM&#39;s flight this evening. the one that
-we were supposed to get on that we
-missed yesterday. It only comes once a
-day. So, let&#39;s hope it comes in tonight
-at and everything will be equal.
-&gt;&gt; Those are the challenges you get when
-you travel.
-Not every time goes perfect, but like it
-is what it is. So, eventually we&#39;ll get
-our luggage. I know that.
-&gt;&gt; We made it to our hotel. We&#39;re in a
-beautiful boutique hotel in Mera Flores,
-which is kind of a trendy, very nice
-area of Lima. And uh well, we woke up
-this morning hoping that our bags would
-have been delivered to our room, but
-they weren&#39;t.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">經過25小時的旅行和多次轉換航空公司後，他們終於降落在利馬——筋疲力竭但仍滿懷希望。但站在空蕩蕩的行李轉盤前，令人心碎。他們的行李沒有抵達。儘管在服務櫃檯花了兩個小時，地勤人員因為多次轉機而無法追蹤到行李。崔莎崩潰了——她無法想像沒有行李要怎麼走完秘魯、玻利維亞、智利、阿根廷和巴西的多國行程。他們兩手空空地離開了機場。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">well, we woke up
-this morning hoping that our bags would
-have been delivered to our room, but
-they weren&#39;t. And so I got a hold of
-KLM,
-but they said they don&#39;t take voice me
-voice they don&#39;t take voice calls
-anymore to be in the queue for a
-WhatsApp message. So, the WhatsApp
-message, actually, you&#39;re not going to
-believe this. This was last night, by
-the way, when I got here. No. Yeah. And
-so, like the WhatsApp
-message I sent off yesterday morning
-from the airport at in the morning.
-And this I&#39;m in a queue and this
-morning, this morning they&#39;re asking me
-if I still if I still need help. Okay.
-And I said, &quot;Yes, I do.&quot; And they&#39;re
-saying that we&#39;ll we&#39;ll keep you in the
-queue then, which has now been over like
-25 hours in the queue. Has anybody ever
-been in a phone queue, customer service
-queue that long? 20 25 hours. So anyway,
-that&#39;s not getting us any help.
-Fortunately though, when we checked in
-last night, the customer service agent
-at the front desk reminded us, which I
-had hardly forgot, that we had booked
-two extra nights before our trip departs
-because our flights were kind of tricky.
-So, we actually have today on our own,
-hoping our flight, our baggies will get
-here before tomorrow because tomorrow is
-when we actually leave for our trip to
-Cusco.
-And on their app, they it shows they
-still looking for our luggage. So, it&#39;s
-kind of scary. I&#39;m not sure I can do a
-a trip to Cusco without without
-anything. Like, no coats, no tennis
-shoes, like nothing. This is all I have.
-It&#39;s been four four trips to the airport
-and it&#39;s day number four and we still
-don&#39;t have our bag. We got one. And
-unfortunately that that bag has all of
-our warm warm weather stuff for when we
-get to Argentina. The other bag that&#39;s
-lost is a bag that has our coats, our
-hiking shoes, everything we need for
-Machu Picchu,
-&gt;&gt; and it&#39;s still lost. So, they&#39;re
-thinking it&#39;ll come in this afternoon on
-KM. And they said they&#39;ll mail it or
-ship it or fly it to Cusco. We&#39;ll see.
-By the way, that&#39;s the same story we
-hear every single day. They think
-they&#39;re going to be on this flight on
-air Europa.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">回到米拉弗洛雷斯的飯店，他們醒來時希望行李已經在夜間送達。但並沒有。航空公司只接受WhatsApp訊息而不接聽語音電話，讓溝通變得異常緩慢。日復一日，行李始終沒有送達。連續十天，他們穿著同樣的衣服。影片記錄了挫折感、無盡的等待，以及當一切出錯時旅行者不得不採取的創意解決方案。這是一個對長途旅行挑戰的真實寫照。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">t on
-air Europa. You we come to the airport,
-we
-argue with people to get us in by
-luggage claim and there is no bag.
-&gt;&gt; Without our main luggage, we still
-explored the stunning sacred valley,
-local artisan markets,  and
-breathtaking ancient terraces.
-We&#39;ve been gone for a week and our trip
-brought us back to Lima. We did get a
-call like two days ago from uh Air
-Europa saying that they found our bag
-with a picture. Thank gosh. And then I
-said, &quot;Okay, well, let&#39;s not take a
-chance sending it to Cusco and then
-getting lost again.&quot; So, we had them
-deliver it to the hotel here in Lima is
-here. I haven&#39;t opened it yet, but uh we
-actually have been a week in the same
-clothes, same shoes, same socks and
-underwear that we left to the airport
-over a week ago, like 10 days ago. So,
-while we were traveling, we actually had
-to wash our underwear and socks and
-everything else uh in the in the shower.
-and we couldn&#39;t send anything to the
-laundry because all we had was the
-clothes on back. Fortunately, uh the
-little suitcase that we did get had a
-few shirts which got us by and I ended
-up having to buy um a pair of pants and
-a coat, but other than that, we&#39;ve
-pretty much had the same clothes. So,
-we&#39;re so happy to see this bag. Uh let
-me show you what it looks like. I
-haven&#39;t opened it yet. I can&#39;t wait. We
-still have another week of cold weather
-in high altitude. So, we&#39;re going to
-need these sweaters and these coats that
-are in there, umbrellas, shoes,
-everything that we needed this last
-week, but we got by without it. Here it
-is.
-There&#39;s our bag. So happy. And we&#39;re
-looking at the tags. It did end up being
-transferred to air Europa. So, they&#39;re
-kind of the culprit has rush. Actually,
-we flew business class. They had a big
-priority tagging on a bus that&#39;s been
-ripped off.
-&gt;&gt; Back in Lima, we finally reunited with
-our luggage. The nightmare is finally
-over. In the next video, join us as we
-properly explore Peru&#39;s amazing capital.
-We tour this stunning historic center
-and celebrate our survival with an
-amazing traditional Pisco tasting. You
-don&#39;t want to miss it.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">儘管開局如同噩夢，團隊仍然堅持前進。這部影片是給每位旅行者的警示：永遠在行程前一天出發、絕對不要把貴重物品全部託運、隨身行李要帶一套換洗衣物，並為突發狀況做好準備。歐洲冬季旅行難以預測——行程隨時可能被打亂。但冒險仍在繼續，因為對這些旅行者來說，即使行李遺失也無法阻止他們體驗南美洲的奇妙。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: Fd0cTlKWqfY | 13:06 | 2,270 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">2026年，BZ Travel團隊正逃離保加利亞的嚴寒冬季，準備展開一場史詩級的南美洲探險。但要離開白雪皚皚的索菲亞卻成了一項冰冷的挑戰。他們的航班因為一條無法從飛機上取下的故障輸送帶而延誤。接著還得排隊等候除冰。等到起飛時，他們已經錯過了前往利馬的轉機航班。原本應該簡單的旅程迅速演變成一場旅行惡夢。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Leaving Bulgaria</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Welcome back to BZ Travel. It's 2026 and we're escaping the freezing Bulgarian winter for an epic South American adventure. But getting out of snowy Sofia turned into quite the frozen challenge. Let the journey begin. We traded snow for sunshine, ancient ruins, and vibrant cultures. Over the next few weeks, we're taking you along to explore the breathtaking heights of Machu Picchu, the colorful streets of Chile, Tango and Buenos Aires, and the thundering waters of Iguazú Falls. But before we could enjoy these incredible sites, we had to survive delayed connecting flights, endless layovers, and the ultimate worldwide travel nightmare — losing our luggage.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在結冰的停機坪上困了幾個小時後，飛機終於起飛前往阿姆斯特丹。抵達史基浦機場時，殘酷的現實迎面襲來——他們完全錯過了前往利馬的轉機。在服務櫃檯，一位地勤人員花了一個小時尋找替代方案。選擇有限：他們可以在貴賓室等七個小時，然後搭乘荷航到馬德里轉歐羅巴航空，再飛往利馬——為了抵達南美洲，他們得先繞回歐洲。學到一課：永遠要在旅行團出發前一天抵達，特別是在冬天。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Stuck on the Tarmac in Sofia</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Our flight was supposed to leave an hour and a half ago from Sofia, but it's snowing. But that's not the main problem. The main problem is the conveyor belt that hooks to the plane is stuck and they can't get it out. So we have to wait until they can fix that. Then after that, we have to get in the queue for de-icing. Then we take off. We've already missed our connecting flight at this point to Lima from Amsterdam. There's a possibility we could miss our National Geographic tour from Lima to Cusco. After hours stuck on the icy tarmac dealing with the broken luggage conveyor belt and endless winter de-icing, our plane had finally lifted off. Next stop: Amsterdam.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">經過25小時的旅行和多次轉換航空公司後，他們終於降落在利馬——筋疲力竭但仍滿懷希望。但站在空蕩蕩的行李轉盤前，令人心碎。他們的行李沒有抵達。儘管在服務櫃檯花了兩個小時，地勤人員因為多次轉機而無法追蹤到行李。崔莎崩潰了——她無法想像沒有行李要怎麼走完秘魯、玻利維亞、智利、阿根廷和巴西的多國行程。他們兩手空空地離開了機場。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Amsterdam: Missed Connection</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Well, we made it to Amsterdam and unfortunately we did miss our connecting flight to Lima. Reality hit hard. We had to change our flight because we missed our connecting flight. So we're going to be arriving on a different airline and time into Lima. We need to let our transfer know and also our hotel. After about an hour working with a guy at the service desk, we had a couple of choices. The first option was to go the following day on the same flight and be put up in a hotel — but there weren't any business class seats available. So he spent an hour finding a flight that would work for us. He gave us the option of waiting here for 7 hours in the business lounge, then switching from KLM to Air Europa for a 2.5-hour flight to Madrid. Then a 2.5-hour layover in Madrid, followed by a direct 12.5-hour flight to Lima. It's a long journey, but we have business class so we can lay down and sleep. Glass of wine and pass out.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">回到米拉弗洛雷斯的飯店，他們醒來時希望行李已經在夜間送達。但並沒有。航空公司只接受WhatsApp訊息而不接聽語音電話，讓溝通變得異常緩慢。日復一日，行李始終沒有送達。連續十天，他們穿著同樣的衣服。影片記錄了挫折感、無盡的等待，以及當一切出錯時旅行者不得不採取的創意解決方案。這是一個對長途旅行挑戰的真實寫照。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Travel Lesson Learned</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">This is a lesson learned. We generally do travel a day before a tour, but you never know what could happen — especially in winter. We have friends who actually missed their cruise because they traveled the same day. Always go a day before. Don't count on specific times when traveling in winter in Europe.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">儘管開局如同噩夢，團隊仍然堅持前進。這部影片是給每位旅行者的警示：永遠在行程前一天出發、絕對不要把貴重物品全部託運、隨身行李要帶一套換洗衣物，並為突發狀況做好準備。歐洲冬季旅行難以預測——行程隨時可能被打亂。但冒險仍在繼續，因為對這些旅行者來說，即使行李遺失也無法阻止他們體驗南美洲的奇妙。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Lima: No Luggage</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">After all those different airline changes, we're not sure our luggage is going to make it. Staring at an empty carousel is heartbreaking. After 36 hours of travel, we left the airport empty-handed. Two hours spent at the service desk. The guy tried but he couldn't track it down — because we were originally scheduled on KLM and then diverted to Air Europa. I told Zarko I can't do a tour of Peru, Bolivia, Chile, Argentina, and Brazil without luggage. I just can't. And tomorrow morning we're departing for Cusco.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p7')">
+      <span class="acc-label">7. Days of Waiting</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p7">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p7.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We woke up this morning hoping that our bags would have been delivered to our room, but they weren't. I got a hold of KLM, but they said they don't take voice calls anymore — you have to be in a WhatsApp queue. The WhatsApp message I sent yesterday morning at the airport? This morning, after 25 hours in the queue, they're asking me if I still need help. It's day number four and we still don't have our bag. We got one — unfortunately that bag has all of our warm-weather stuff for Argentina. The other bag — the one with our coats, hiking shoes, everything we need for Machu Picchu — is still lost.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p8')">
+      <span class="acc-label">8. Reunion & Closing</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p8">
+      <div class="acc-audio"><audio src="../audio/Fd0cTlKWqfY/p8.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Without our main luggage, we still explored the stunning Sacred Valley, local artisan markets, and breathtaking ancient terraces. A week later, back in Lima, we got a call from Air Europa saying they found our bag and sent a picture. Thank goodness. I had them deliver it to the hotel here in Lima rather than risk sending it to Cusco and getting lost again. We actually spent a week in the same clothes, same shoes, same socks and underwear that we left for the airport over 10 days ago. While traveling, we had to wash our underwear and socks in the shower. We couldn't send anything to the laundry because all we had was the clothes on our back. Back in Lima, we finally reunited with our luggage. The nightmare is finally over. In the next video, join us as we properly explore Peru's amazing capital — touring the historic center and celebrating our survival with an amazing traditional Pisco tasting. You don't want to miss it.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

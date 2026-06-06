@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,384 +106,94 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Come along to Inter Laken, one of
-Switzerland&#39;s famous destinations, and
-ride on the Golden Pass Express.
-We&#39;re spending 8 days riding every
-panoramic train across Switzerland,
-stopping in postcard perfect places
-along the way.
-We&#39;ve just rolled in to enter Lakeen
-from Lousern. If you missed that ride,
-check out our previous video for the
-full scenic trip.
-Well, we just got here to the hotel from
-was about a 10-minute walk from the
-train.
-This city is literally sandwiched
-between two legs with mountains wrapping
-around it. Like nature went all in on
-the drama.
-Everywhere I look, paragliders are
-floating down from the cliffs.
-At first, we thought it was some
-festival thing, but nope. Just Tuesday
-in Inner Laken.
-Dozens of tandem flights, safety
-briefings, Swiss precision everywhere.
-It looks epic, but still leaping off a
-perfectly solid mountain. I&#39;d probably
-freeze halfway to the edge.
-Look at this bus. The windows are
-screaming. I&#39;m clean. The reflection.
-Wow. Interlac and small, super walkable,
-and every hotel, they hand you a free
-bus pass.
-You&#39;re not going to believe the weather.
-This is the best weather you could
-absolutely hope for. And two weeks
-before our trip when we were planning
-it, I kept looking at the weather every
-single day. And it was pouring down rain
-all day, every day for the last two
-weeks. I packed raincoats, umbrellas,
-waterproof shoes, and just pretty much
-prepared for the worst. And we got here,
-and even the waiter said, &quot;This is
-unbelievable. You&#39;re the most luckiest
-couple in the world to be here at this
-time.&quot; And it&#39;s so easy to get seduced
-by weather like this. Cuz well, you take
-it for granted. You think I&#39;m here one
-day and I think it&#39;s like this all the
-time.
-&gt;&gt; Oh, yeah. What is your first impression
-of Inter Lakeen?
-&gt;&gt; It&#39;s beautiful. Interlagen. What? I
-can&#39;t believe it&#39;s like in a valley and
-you&#39;re surrounded by all these mountains
-with some snowcapped mountains.
-&gt;&gt; Wow.
-&gt;&gt; They have different percentages from 6%
-to 40%.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">團隊從盧塞恩抵達因特拉肯。這座城市 literally 夾在兩座湖泊之間，群山環繞——大自然把戲劇效果發揮到了極致。因特拉肯是瑞士最著名的目的地之一。無論你往哪裡看，都有滑翔傘從懸崖上飄落下來。起初團隊以為是什麼節日活動，但其實只是因特拉肯的星期二。幾十組雙人飛行、安全簡報，瑞士精準隨處可見。雖然從一座完好的山上跳下去是另一回事，但看起來確實很壯觀。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Interlaken's Best: Funicular, Lakes and Golden Pass Express</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ese mountains
-with some snowcapped mountains.
-&gt;&gt; Wow.
-&gt;&gt; They have different percentages from 6%
-to 40%. Holy moly.
-&gt;&gt; Well, you don&#39;t have the cookies like
-you do in the Netherlands.
-&gt;&gt; Oh, they have a creams. The paragliding
-was about $200 for 1 hour, but the
-actual ride itself is 20 minutes.
-The weight limit is 225 lbs. So
-&gt;&gt; 220
-&gt;&gt; 220 lb 220 lbs.
-&gt;&gt; Yeah.
-&gt;&gt; So you got to be fairly light. Most of
-the people that are doing it are women.
-&gt;&gt; These days,
-&gt;&gt; these days young kids are women. Most
-guys these days are way over 250 pounds.
-You can&#39;t skip the phonicular ride. It
-climbs straight up the mountain and it
-rewards you with unreal views over Inner
-Laken and both lakes.
-The finicular here is no joke. It&#39;s
-steep.
-Like, hang on to your seat. Steep.
-It climbs the mountain at an angle that
-feels more roller coaster than a train.
-You even shoot through a tunnel halfway
-up, which adds to the drama.
-The engineering is nuts. Smooth, quiet,
-and precise.
-By the time you reach the top, your ears
-pop, your jaws drop, and you&#39;re
-wondering, &quot;How did they ever build this
-thing?&quot;
-Well, we made it at the top of the
-finicular
-&gt;&gt; and we are very high
-&gt;&gt; and the views are spectacular.
-Oh man,
-we&#39;re making our way over there to that
-landing that&#39;s hanging out over the
-ledge
-and we&#39;re going to check it out. But
-you&#39;re so high up you can see these
-beautiful snowcap mountains. What I
-can&#39;t believe is how blue the sky is.
-It&#39;s beautiful.
-At the top of Harderkung,
-there&#39;s even a restaurant.
-A perfect spot to grab a beer or hot
-chocolate and just zone out at that
-view.
-&gt;&gt; And there&#39;s the walkway.
-Wow.
-&gt;&gt; The platform juts straight off the
-cliff. Nothing but air beneath you.
-Mountains all around. Lakes glimmering
-below.
-It&#39;s wild, breathtaking,
-and seriously makes you question Swiss
-engineering sanity.
-What have you
-How do you suppose those people over
-there get to their cabins? I don&#39;t see a
-road.
-&gt;&gt; There&#39;s a road.
-&gt;&gt; Oh man.
-&gt;&gt; And this goes like that.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">出發前兩週，天氣預報顯示每天都在下雨。團隊打包了雨衣、雨傘和防水鞋，做好了最壞的打算。但當他們抵達時，天氣卻完美無缺。連服務生都說：「這太不可思議了。你們是世界上最幸運的情侶，能在這個時間來到這裡。」團隊反思說，人很容易被完美的天氣迷惑，然後視為理所當然。陽光讓因特拉肯著名的景色變得絕對令人驚嘆。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">I don&#39;t see a
-road.
-&gt;&gt; There&#39;s a road.
-&gt;&gt; Oh man.
-&gt;&gt; And this goes like that. It goes this
-way.
-&gt;&gt; Imagine living up there. It looks
-amazing now, but winter living on a
-mountain like that only in Switzerland.
-So beautiful. It&#39;s unescribable.
-From up here, the geography finally
-makes sense.
-Thoon on one side, Brent on the other,
-and Interle right in the middle.
-Snowy peaks, blue lakes, and that skinny
-river connecting them. It&#39;s like
-nature&#39;s perfect layout.
-get an idea of how steep it is. This is
-definitely worth it. It&#39;s one of those
-experiences that sticks with you,
-especially on a day like this.
-Inter Lake has it all. Hiking trails,
-shimmering lakes, and in winter,
-worldass skiing just minutes away.
-Summer&#39;s lively, winter&#39;s pure postcard
-perfection.
-This trip&#39;s all about panoramic trains,
-but I&#39;d happily come back just to slow
-down here.
-It&#39;s a kind of town that feels genuinely
-Swiss, peaceful, tidy, and surrounded by
-ridiculous beauty.
-Easily one of the best spots we&#39;ve seen.
-I&#39;m standing on our deck of our hotel
-room and these guys are coming right
-down in front of us. This is the thing
-to do here. Like you you you do the
-paraselling. This and the finicular that
-we did yesterday are the two things that
-are
-hard to do here.
-They&#39;re waving at me. Love it. Okay.
-They literally jump off cliffs with a
-parachute and a smile. I&#39;m out.
-Would you do it?
-Brave enough to fly like that?
-And we have the landing spot right here,
-right down below us.
-Good morning. And how would you like to
-wake up to a view like this? It&#39;s
-beautiful. And today we&#39;re going to be
-taking the Golden Pass Express. It&#39;s a
-panoramic train that&#39;s going to take us
-to Montus, which is the French part of
-Switzerland. Right now we&#39;re in the
-German part of Switzerland. And last
-night we had sausage and German beer.
-And tonight we&#39;ll have wine and
-hopefully a beautiful French dinner.
-I read somewhere that they even have
-palm trees.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">因特拉肯有幾條纜車可以將遊客載往全景觀景台。這座城市小巧且極適合步行，每家酒店都會給客人一張免費的巴士通行證。從高處俯瞰，兩座湖泊——圖恩湖和布里恩茨湖——的景色壯麗無比，碧綠的湖水與綠色的山谷和白雪覆蓋的山峰形成對比。齒軌纜車本身就是工程奇蹟，以瑞士式的精準攀爬陡峭的坡度。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">mewhere that they even have
-palm trees. They call it the Swiss
-Rivera.
-Montro is famous with
-Freddy Mercury used to live there.
-There&#39;s a monument there. Like our hotel
-is going to be right on the shore of
-Lake Geneva. We&#39;re going to take a walk
-there. We&#39;re going to see the monument
-of Freddy Mercury. If there is a museum
-or something, we&#39;ll check it out. But
-the big part about traveling to
-Switzerland is those panoramic trains
-with the great views like four to
-ceiling windows. We&#39;re going first class
-and we&#39;re taking it with us.
-&gt;&gt; It&#39;s time to say goodbye to Inner Laken.
-The Golden Pass Express is next.
-The Golden Pass Express
-isn&#39;t just transport.
-It&#39;s a front row seat to Switzerland
-changing moods
-in 3 hours. You go from Alpine Peaks to
-Riviera vibes.
-The ride starts along Lake Thoon. It&#39;s
-deep teal water and tiny villages
-sliding past like scenes from a
-painting.
-Out here, the landscape is dotted with
-these huge wooden homes. They&#39;re tall,
-slanted roofs, wide balconies, and
-bright flowers hanging under every
-window.
-The cows graze nearby and we keep asking
-ourselves, do they share those massive
-homes or is there a barn we can&#39;t see?
-The countryside feels timeless. Every
-meadow is carefully kept. Every village
-is perfectly placed.
-We&#39;ve seen plenty of rural beauty
-before, but this this is something else
-entirely.
-Passing these wide green fields and
-misty mountains, we see cows everywhere
-with bells shining as they graze.
-In Switzerland, they&#39;re more than
-livestock. They&#39;re a tradition, economy,
-and pride.
-The milk and cheese they produce are as
-much as a symbol as the Alps themselves.
-We&#39;re in Spiceman.
-And at this point, they&#39;re going to
-actually change the cogs on the train so
-that we can start climbing steeper for
-the rest of the trip.
-They&#39;ve engineered a process where they
-can literally just change out the wheels
-on the train and no one even knows it&#39;s
-happening.
-What do you think, Zo?
-&gt;&gt; I like it.
-&gt;&gt; Look closely.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">金色山口快車是瑞士風景最美的全景列車路線之一。從盧塞恩經因特拉肯到蒙特勒，旅程帶領乘客穿越八個瑞士邦。列車擁有現代化的全景車廂，從地板到天花板的窗戶提供無障礙的景觀視野。路線穿過伯爾尼高地的心臟地帶，沿途可以看到著名的艾格峰、僧侶峰和少女峰。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ws it&#39;s
-happening.
-What do you think, Zo?
-&gt;&gt; I like it.
-&gt;&gt; Look closely. You&#39;ll notice double rails
-built for different track widths and
-terrain. After we left Weissman, you can
-really tell we&#39;re doing some major
-climbing now.
-&gt;&gt; Oh, look at this.
-Gosh, the valleys, even high in the
-mountains, everything looks perfectly
-kept.
-Is it nature or maintenance? Either way,
-Switzerland&#39;s beauty is everywhere.
-Finally living up to the hype.
-We&#39;re doing some switchbacks now. Going
-straight up.
-&gt;&gt; Must be some great ski here.
-&gt;&gt; Oh my gosh.
-Traveling doesn&#39;t get any better than
-this.
-Massive windows framing the Alps, a
-Swiss cheese platter in front of you,
-and an ice cold local beer to finish it
-off.
-Switchbacks.
-We&#39;re going down the mountain now. And
-honestly, the view hasn&#39;t changed. It&#39;s
-still ridiculous.
-Switzerland doesn&#39;t really have a bad
-side, does it?
-&gt;&gt; That&#39;s
-&gt;&gt; Yeah, they have an airport right there.
-The train glides right through a ski
-resort. It&#39;s just one of more than 350
-that are scattered across Switzerland&#39;s
-endless winter playground.
-We&#39;re coming into Shat
-and believe it or not, now we&#39;re in
-Frenchland. One turn and suddenly the
-mountain ends. Straight below, Lake
-Geneva spreads out like an endless
-shimmering sea. Oh, palm trees.
-Yep. Different climate here.
-&gt;&gt; It&#39;s very weird.
-&gt;&gt; Now I see why they call it the Swiss
-Riviera.
-The cows and meadows are gone, replaced
-by vineyards and palm trees.
-The climate changes. The buildings
-change. It feels like you&#39;ve crossed
-borders.
-We&#39;ve crossed into the French side. Same
-country. Totally different world.
-Look at this vineyard.
-&gt;&gt; Wow. Looks like little Italy. Looks like
-it&#39;s so different.
-&gt;&gt; The climate must really change here
-on Lake Geneva.
-In our next episode, our Swiss train
-adventure continues.
-We&#39;ll explore Montreus and then ride on
-to Zerat.
-Join us as we keep rolling through
-Switzerland and beyond.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">因特拉肯是為期八天、搭乘每條瑞士全景火車的旅程的一部分。團隊沿途在明信片般完美的地方停留，體驗瑞士傳奇的鐵路系統。從金色山口快車到攀爬周圍山峰的纜車，瑞士的交通和目的地本身一樣是體驗的一部分。瑞士人不只是開車——他們滑行，每一段旅程都變成一場風景冒險。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: BW50QKcpii4 | 16:35 | 1,466 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">團隊從盧塞恩抵達因特拉肯。這座城市 literally 夾在兩座湖泊之間，群山環繞——大自然把戲劇效果發揮到了極致。因特拉肯是瑞士最著名的目的地之一。無論你往哪裡看，都有滑翔傘從懸崖上飄落下來。起初團隊以為是什麼節日活動，但其實只是因特拉肯的星期二。幾十組雙人飛行、安全簡報，瑞士精準隨處可見。雖然從一座完好的山上跳下去是另一回事，但看起來確實很壯觀。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Arriving in Interlaken</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Come along to Interlaken, one of Switzerland's famous destinations, and ride on the Golden Pass Express. We're spending 8 days riding every panoramic train across Switzerland, stopping in postcard-perfect places along the way. We've just rolled in to Interlaken from Lucerne. This city is literally sandwiched between two lakes with mountains wrapping around it — like nature went all in on the drama. Everywhere I look, paragliders are floating down from the cliffs. At first we thought it was some festival thing, but nope — just Tuesday in Interlaken. Dozens of tandem flights, Swiss precision everywhere. Interlaken: small, super walkable, and every hotel hands you a free bus pass. The weather we got was unbelievable — the waiter said we were the luckiest couple in the world to be there at that time.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">出發前兩週，天氣預報顯示每天都在下雨。團隊打包了雨衣、雨傘和防水鞋，做好了最壞的打算。但當他們抵達時，天氣卻完美無缺。連服務生都說：「這太不可思議了。你們是世界上最幸運的情侶，能在這個時間來到這裡。」團隊反思說，人很容易被完美的天氣迷惑，然後視為理所當然。陽光讓因特拉肯著名的景色變得絕對令人驚嘆。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Paragliding & Funicular</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The paragliding was about $200 for 1 hour — the actual ride itself is 20 minutes, with a weight limit of around 220 lbs. Most of the people doing it are women. These days most guys are way over 250 pounds. You can't skip the funicular ride — it climbs straight up the mountain and rewards you with unreal views over Interlaken and both lakes. The funicular here is no joke: it climbs the mountain at an angle that feels more roller coaster than train. You shoot through a tunnel halfway up. Smooth, quiet, and precise. By the time you reach the top, your ears pop, your jaw drops. At the top of Harder Kulm, there's even a restaurant — a perfect spot to grab a beer or hot chocolate and zone out at that view. The platform juts straight off the cliff. Nothing but air beneath you. Mountains all around. Lakes glimmering below.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">因特拉肯有幾條纜車可以將遊客載往全景觀景台。這座城市小巧且極適合步行，每家酒店都會給客人一張免費的巴士通行證。從高處俯瞰，兩座湖泊——圖恩湖和布里恩茨湖——的景色壯麗無比，碧綠的湖水與綠色的山谷和白雪覆蓋的山峰形成對比。齒軌纜車本身就是工程奇蹟，以瑞士式的精準攀爬陡峭的坡度。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. The View from the Top</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">From up here, the geography finally makes sense. Thun on one side, Brienz on the other, and Interlaken right in the middle. Snowy peaks, blue lakes, and that skinny river connecting them. It's like nature's perfect layout. Indescribable. Interlaken has it all — hiking trails, shimmering lakes, and in winter, world-class skiing just minutes away. Summer's lively, winter's pure postcard perfection. It's a kind of town that feels genuinely Swiss: peaceful, tidy, and surrounded by ridiculous beauty. Easily one of the best spots we've seen.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">金色山口快車是瑞士風景最美的全景列車路線之一。從盧塞恩經因特拉肯到蒙特勒，旅程帶領乘客穿越八個瑞士邦。列車擁有現代化的全景車廂，從地板到天花板的窗戶提供無障礙的景觀視野。路線穿過伯爾尼高地的心臟地帶，沿途可以看到著名的艾格峰、僧侶峰和少女峰。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Golden Pass Express to Montreux</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/BW50QKcpii4/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Good morning. Today we're taking the Golden Pass Express — a panoramic train going to Montreux, the French part of Switzerland. Right now we're in the German part, where last night we had sausage and German beer. Tonight we'll have wine and hopefully a beautiful French dinner. Montreux is famous — Freddie Mercury used to live there. There's a monument. Our hotel will be right on the shore of Lake Geneva. The Golden Pass Express isn't just transport — it's a front-row seat to Switzerland changing moods in 3 hours. You go from alpine peaks to Riviera vibes. The ride starts along Lake Thun, deep teal water and tiny villages sliding past like scenes from a painting. Huge wooden homes with slanted roofs, wide balconies, and bright flowers under every window. The countryside feels timeless. We're in Spiez. At this point they're going to actually change the cogs on the train so we can start climbing steeper. They've engineered a process where they can literally just change out the wheels — and no one even knows it's happening. One turn and suddenly the mountain ends. Straight below, Lake Geneva spreads out like an endless shimmering sea. Palm trees. Yes, really. Now I see why they call it the Swiss Riviera. The cows and meadows are gone, replaced by vineyards and palm trees. Same country. Totally different world.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">因特拉肯是為期八天、搭乘每條瑞士全景火車的旅程的一部分。團隊沿途在明信片般完美的地方停留，體驗瑞士傳奇的鐵路系統。從金色山口快車到攀爬周圍山峰的纜車，瑞士的交通和目的地本身一樣是體驗的一部分。瑞士人不只是開車——他們滑行，每一段旅程都變成一場風景冒險。</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,268 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Welcome back to Busy Travel. We&#39;re just
-two retirees spending our days traveling
-around the world and today we&#39;re taking
-you to the epic Machu Picchu. It&#39;s one
-of the seven wonders of the world and
-crossing this off the bucket list after
-all these years feels amazing.
-Thanks for joining us.
-The only way to get to Awas Calientes is
-by train, which is the  busy base
-camp town that&#39;s right below Machu
-Picchu.
-If you&#39;re visiting Machu Picchu, Agos
-Calientes is exactly where you will
-stay. It was originally built by
-railroad workers, and this bustling town
-is now completely focusing on hosting
-tourists. is filled with host, hotels,
-and restaurants. You arrive here by
-train from Cusco or Olan Titambbo. From
-this convenient base, a dedicated
-shuttle bus will easily  take you
-straight up to Machu Picchu.
-
-&gt;&gt; 
-&gt;&gt; which
-way. 
-&gt;&gt; Waking up to cloudy skies with our bus
-tickets ready. We really worried thick
-fog might completely cover Machu 
-Picchu.
-The scenic bus is an absolutely
-unforgettable adventure on its own. For
-30 minutes, we climbed straight up the
-mountain on an incredibly steep road. We
-navigated intense switchbacks,
-completely surrounded by beautiful
-towering mountains, thick rolling mist,
-and fluffly white rain clouds.
-&gt;&gt; All right, ladies and gentlemen, welcome
-to Machu.
-&gt;&gt; At 8,000 ft, these incredibly mountains
-literally touch the sky.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">Tresa和Zarko，兩位環遊世界的退休人士，終於造訪了馬丘比丘——世界七大奇蹟之一，也是他們長久以來的願望清單項目。到達該遺址的唯一方式是經由熱水鎮(Aguas Calientes)，這是一個由鐵路工人建立的繁華基地小鎮，現在完全專注於接待遊客。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Is Machu Picchu Worth the Journey?</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">s, thick rolling mist,
-and fluffly white rain clouds.
-&gt;&gt; All right, ladies and gentlemen, welcome
-to Machu.
-&gt;&gt; At 8,000 ft, these incredibly mountains
-literally touch the sky. Why would
-anyone build a city up here?
-Spanish concquistadors never found Machu
-Picchu, leaving the site totally intact.
-Amazingly, a young 11-year-old boy named
-Pablito first guided the American
-explorer Haram Bingham to these hidden
-ruins in 1911.
-Bingham initially removed thousands of
-artifacts, including ancient mummies,
-ceramics, and silver, taking them all
-the way to Yale University. Naturally,
-Peru wanted its historical treasures
-back. After a long legal battle, the
-artifacts were finally returned in 2011.
-Everybody&#39;s going, &quot;Oh my god.
-Wow, it&#39;s huge.
-Wow. There it is. Legendary Machu
-Picchu. It&#39;s more beautiful than I
-imagined. Surrounded by sharp peaks
- and passing clouds, this
-absolutely dramatic view just leaves
-your mouth wide open.
-&gt;&gt; This is something.
-&gt;&gt; Oh, I love the way you The more you
-walk, the more you see.
-&gt;&gt; Yeah.
-&gt;&gt; You forget you&#39;re walking.
-&gt;&gt; Built as an Inca Emperor&#39;s royal estate,
-it has 750 support staff, artisans, and
-religious officials.
-I can&#39;t believe we&#39;re here.
-&gt;&gt; Reaching the top reveals the sheer size
-of this ancient site.
-It features over 150 unique buildings,
-including baz houses and temples.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">遊客從庫斯科或奧揚泰坦博搭乘火車抵達熱水鎮。從這個便利的基地，專車接駁巴士可以輕鬆地將遊客直接送上山到馬丘比丘。小鎮裡充滿了青年旅館、酒店和餐廳，是通往古代印加堡壘的門戶。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">e.
-&gt;&gt; Reaching the top reveals the sheer size
-of this ancient site.
-It features over 150 unique buildings,
-including baz houses and temples. The
-city was cleverly split into a terrace
-agricultural zone and an impressive
-urban sector with plazas.
-Not long after reaching the top,
-fastmoving clouds completely covered the
-site.
-Our guide mentioned that just yesterday,
-
-thick clouds hit Machu Picchu all day,
-leaving almost nothing visible.
-&gt;&gt; Keep this weather risk in mind when
-scheduling your trip, as you might
-arrive in this iconic big picture view.
-Visiting during the rainy season is a
-gamble, but we&#39;ve been incredibly lucky
-so far. We waited patiently at the top
-for the clouds to pass before descending
-to explore.
-&gt;&gt; This is Ini Punku, the iconic sungate,
-serving as a citadel&#39;s primary control
-point and ceremonial entrance.
-The Inc elite probably used it for
-important rituals. Moving past the gate,
-we&#39;re exploring the ancient residential
-pathways and ruins.
-This incredible stone agricultural
-terraces help reduce soil erosion while
-creating specialized microclimates
-so the Inca could grow diverse crops at
-different temperatures.
-Because it sits right on the
-mountaintop, the city features different
-levels that are connected by over a
-hundred distinct flights of stairs.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">前往馬丘比丘的觀光巴士之旅本身就被形容為一次難忘的冒險。在30分鐘內，他們沿著極度陡峭的道路直線上山，經歷了密集的髮夾彎。他們完全被美麗的高聳山脈、濃厚的翻滾雲霧和 fluffy 的白色雨雲所包圍。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">the city features different
-levels that are connected by over a
-hundred distinct flights of stairs. Many
-of them are carved from a single solid
-granite slab.
-What really puzzles me is how this
-beautiful, laborintensive site was just
-abandoned only 100 years after being
-built.
-It&#39;s amazing that the Spanish
-conquestadors never found Machu Picchu.
-Nestled high in the dense cloud forest,
-the city was deliberately hidden by the
-Incas.  They destroyed frills and
-kept it secret.
-Since it was abandoned by the 1530s and
-totally self-sufficient with its own
-terraces and water systems,
-there was no active supply lines for the
-Spanish to follow into these steep,
-difficult mountains.
-It&#39;s truly mind-blowing to see these
-huge stones fitting together so
-perfectly that a knife blade cannon even
-slip between them. Even with modern
-technology, building this  today
-would be incredibly difficult. The Inca
-didn&#39;t use wheels or steel.
-Hundreds of men used levers and log
-rollers to move the heavy granite,
- then painstakingly
-shaped each block using bronze tools,
-
-sand, and harder stones.
-We&#39;re visiting during January&#39;s low
-season. The clearest views, though,
-happen from May to September.
-But because high season tickets sell out
-months ahead,  January is
-beautifully peaceful here.
-Is flying across the globe to visit
-Machu Picchu actually worth the hype?
-Yes, definitely.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在8,000英尺的高度，山巒 literally 觸及天空。這對夫婦驚嘆為什麼有人會在這個海拔建造一座城市。西班牙征服者從未找到馬丘比丘，使得該遺址完全完好無損。令人驚奇的是，一個名叫Pablito的11歲男孩在1911年首先引導美國探險家Hiram Bingham來到這些隱藏的廢墟。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ut because high season tickets sell out
-months ahead,  January is
-beautifully peaceful here.
-Is flying across the globe to visit
-Machu Picchu actually worth the hype?
-Yes, definitely. This extraordinarily
-amazing site showcases impressive Inca
-engineering
-providing sweeping uncapturable
-panoramic views. It offers a truly
-powerful connection to a lost
-civilization.
-To supply the city, long canals brought
-fresh spring water directly into the
-center, perfectly fed gravity powered
-fountains, and they were used for both
-drinking and bathing.
-You have three distinct circuit choices
-here. As the most comprehensive option,
-circuit 2 guides you completely through
-both the upper and the lower ruins.
-If you enjoyed this video, please click
-the like button. It really helps our
-channel and  we do appreciate it.
-To travel to other destinations 
-around the world with us, simply
-subscribe and click the notification
-bell.
-We&#39;re busy travel and we&#39;re busy
-traveling the globe.
-Join us in the next video as we travel
-to Bolivia.
-We&#39;ll visit the famous Lake Tittikaka
-and explore Le Pa, widely known as the
-highest altitude capital in the world.
-Make sure you do not miss this
-incredible journey.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">儘管最初擔心濃霧可能會遮蓋遺址，但最終的體驗超出了預期。影片暗示馬丘比丘絕對值得這段旅程——艱難的交通、高海拔和付出的努力，當你站在被雲霧和群山環繞的古老石頭間時，一切都值得了。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: F09ZsBdvRtM | 8:41 | 2,534 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">Tresa和Zarko，兩位環遊世界的退休人士，終於造訪了馬丘比丘——世界七大奇蹟之一，也是他們長久以來的願望清單項目。到達該遺址的唯一方式是經由熱水鎮(Aguas Calientes)，這是一個由鐵路工人建立的繁華基地小鎮，現在完全專注於接待遊客。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Getting to Aguas Calientes</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Welcome back to Busy Travel. We're just two retirees spending our days traveling around the world, and today we're taking you to the epic Machu Picchu. It's one of the seven wonders of the world, and crossing this off the bucket list after all these years feels amazing. The only way to get to Aguas Calientes is by train. It is the busy base camp town right below Machu Picchu. It was originally built by railroad workers, and this bustling town is now completely focused on hosting tourists — filled with hostels, hotels, and restaurants. You arrive here by train from Cusco or Ollantaytambo. From this convenient base, a dedicated shuttle bus will take you straight up to Machu Picchu.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">遊客從庫斯科或奧揚泰坦博搭乘火車抵達熱水鎮。從這個便利的基地，專車接駁巴士可以輕鬆地將遊客直接送上山到馬丘比丘。小鎮裡充滿了青年旅館、酒店和餐廳，是通往古代印加堡壘的門戶。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. The Bus Ride Up & First Views</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Waking up to cloudy skies with our bus tickets ready, we really worried thick fog might completely cover Machu Picchu. The scenic bus is an absolutely unforgettable adventure on its own. For 30 minutes, we climbed straight up the mountain on an incredibly steep road — navigating intense switchbacks, completely surrounded by beautiful towering mountains, thick rolling mist, and fluffly white rain clouds. At 8,000 ft, these incredibly mountains literally touch the sky. Why would anyone build a city up here? Spanish conquistadors never found Machu Picchu, leaving the site totally intact. Amazingly, a young 11-year-old boy named Pablito first guided the American explorer Hiram Bingham to these hidden ruins in 1911. Bingham initially removed thousands of artifacts — ancient mummies, ceramics, and silver — taking them all the way to Yale University. After a long legal battle, the artifacts were finally returned in 2011. Legendary Machu Picchu. It's more beautiful than I imagined. Surrounded by sharp peaks and passing clouds, this absolutely dramatic view just leaves your mouth wide open.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">前往馬丘比丘的觀光巴士之旅本身就被形容為一次難忘的冒險。在30分鐘內，他們沿著極度陡峭的道路直線上山，經歷了密集的髮夾彎。他們完全被美麗的高聳山脈、濃厚的翻滾雲霧和 fluffy 的白色雨雲所包圍。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Exploring the Ruins</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Built as an Inca Emperor's royal estate, it has 750 support staff, artisans, and religious officials. Reaching the top reveals the sheer size of this ancient site. It features over 150 unique buildings, including bathhouses and temples. The city was cleverly split into a terrace agricultural zone and an impressive urban sector with plazas. Not long after reaching the top, fast-moving clouds completely covered the site. Our guide mentioned that just yesterday, thick clouds hit Machu Picchu all day, leaving almost nothing visible. Keep this weather risk in mind when scheduling your trip. Visiting during the rainy season is a gamble, but we've been incredibly lucky so far. This is Inti Punku, the iconic Sun Gate, serving as the citadel's primary control point and ceremonial entrance. The Inca elite probably used it for important rituals. These incredible stone agricultural terraces help reduce soil erosion while creating specialized microclimates so the Inca could grow diverse crops at different temperatures.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在8,000英尺的高度，山巒 literally 觸及天空。這對夫婦驚嘆為什麼有人會在這個海拔建造一座城市。西班牙征服者從未找到馬丘比丘，使得該遺址完全完好無損。令人驚奇的是，一個名叫Pablito的11歲男孩在1911年首先引導美國探險家Hiram Bingham來到這些隱藏的廢墟。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Engineering & History</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Because it sits right on the mountaintop, the city features different levels connected by over a hundred distinct flights of stairs — many of them carved from a single solid granite slab. What really puzzles me is how this beautiful, labor-intensive site was just abandoned only 100 years after being built. The city was deliberately hidden by the Incas. They destroyed the trails and kept it secret. Since it was abandoned by the 1530s and totally self-sufficient with its own terraces and water systems, there were no active supply lines for the Spanish to follow into these steep, difficult mountains. It's truly mind-blowing to see these huge stones fitting together so perfectly that a knife blade cannot even slip between them. Even with modern technology, building this today would be incredibly difficult. The Inca didn't use wheels or steel — hundreds of men used levers and log rollers to move the heavy granite, then painstakingly shaped each block using bronze tools, sand, and harder stones.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">儘管最初擔心濃霧可能會遮蓋遺址，但最終的體驗超出了預期。影片暗示馬丘比丘絕對值得這段旅程——艱難的交通、高海拔和付出的努力，當你站在被雲霧和群山環繞的古老石頭間時，一切都值得了。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Visiting Tips & Closing</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/F09ZsBdvRtM/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We're visiting during January's low season. The clearest views happen from May to September. But because high season tickets sell out months ahead, January is beautifully peaceful here. Is flying across the globe to visit Machu Picchu actually worth the hype? Yes, definitely. This extraordinarily amazing site showcases impressive Inca engineering providing sweeping, breathtaking panoramic views. It offers a truly powerful connection to a lost civilization. To supply the city, long canals brought fresh spring water directly into the center, fed gravity-powered fountains, and were used for both drinking and bathing. You have three distinct circuit choices here — as the most comprehensive option, Circuit 2 guides you completely through both the upper and the lower ruins. Join us in the next video as we travel to Bolivia. We'll visit Lake Titicaca and explore La Paz, widely known as the highest altitude capital in the world. Don't miss it.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

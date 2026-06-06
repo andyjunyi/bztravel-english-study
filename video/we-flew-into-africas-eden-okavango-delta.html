@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,277 +106,94 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Our
-journey takes us to the Mormmy Game
-Reserve at the heart of the Okabango
-Delta.
-Often described as Africa&#39;s Garden of
-Eden.
-For the next 3 days, our home is Camp
-Kakanaka,
-one of the best known safari camps.
-Perched on the Kakanaka Lagoon,
-surrounded by prime wildlife right in
-the heart of the reserve.
-The only way to hop between camps is by
-these small bush planes lifting off dirt
-air strips.
-It&#39;s a quirky, unforgettable part of the
-safari experience.
-The magic isn&#39;t just getting there. It&#39;s
-how flying low, the world stretches wide
-beneath you.
-The Oka Bongo Delta. It unfolds as a
-horizon to horizon masterpiece. Painted
-in water, grass, and light.
-It feels alive, shifting, endless. Even
-the flight becomes a safari.
-There&#39;s herds of elephants below, a
-buffalo herd scattering, hippos breaking
-the surface. From the air, the Okavango
-is pure poetry.
-
-
-We&#39;re welcomed with warm smiles, voices
-rising in song before being shown around
-the camp.
-&gt;&gt; It&#39;s got that out of Africa charm.
-Timber buildings blending rustic beauty
-with modern charm.
-The atmosphere is l</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">旅程帶領旅行者來到奧卡萬戈三角洲核心的莫雷米野生動物保護區——一個常被稱為非洲伊甸園的地方。接下來三天，他們的家是卡卡納卡營地，這是知名的 safari 營地之一，坐落在卡卡納卡潟湖邊，四周環繞著豐富的野生動物。往來營地的唯一方式是乘坐小型叢林飛機，從泥土跑道起飛。這是 safari 體驗中奇特且令人難忘的一部分，連飛行本身也成了一場 safari。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. We Flew Into Africa's Eden | Okavango Delta Safari</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">aidback, unhurried,
-and it&#39;s timeless.
-From the lounge and dining rooms, river
-views stretch wide.
-It feels authentic, simple yet elegant.
-The kind of place that shows your pulse
-the moment you arrive.
-There are 11 canvas tents here. All
-raised on decks facing the lagoon.
-Don&#39;t be fooled by tents. These have
-bathrooms, real beds, verandas, and
-plenty of thoughtful comfort.
-It&#39;s late July, the peak flood season.
-Water spreads into channels and pans,
-turning the plains into a patchwork of
-wetlands.
-
-Strangely, this is called the dry
-season.
-Wow.
-Wildlife crowd around permanent water
-channels and lagoons, especially as the
-flood plains recede.
-The result, dense concentrations of
-animals packed into one place, making
-game viewing here spectacular, sometimes
-overwhelming. and unforgettable.
-
-Every game drive feels like a hunt. Raw
-nature up close in the animal kingdom.
-What really grabs you here isn&#39;t the
-animals. You&#39;ll see those across Africa.
-It&#39;s the landscape.
-The Kakanaka area hits you with a
-background that feels almost unreal.
-A mosaic of water and land all stitched
-together.
-Forests brush up against savannah.
-Waterways snake through seasonal flood
-planes.
-
-And the best part,
-you can take it all in with one sweeping
-look.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在奧卡萬戈三角洲低空飛行時，世界在你腳下寬闊地展開。三角洲像一幅從地平線到地平線的傑作，由水、草和光線繪製而成。它充滿生命力、變幻莫測、無邊無際。成群的大象在下方漫步，水牛群四散奔逃，河馬浮出水面。從空中看，奧卡萬戈就是純粹的詩篇。魔力不僅在於抵達目的地——更在於旅程本身，看著地貌隨著每一分鐘的飛行而變換。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">all stitched
-together.
-Forests brush up against savannah.
-Waterways snake through seasonal flood
-planes.
-
-And the best part,
-you can take it all in with one sweeping
-look. A single vista that packs every
-ecosystem into one frame.
-Safaris deliver something no other
-journey can. Proximity.
-Being close enough to meet a lion&#39;s
-stare is unsettling,
-thrilling, unforgettable.
-
-He&#39;s just there, a predator built for
-power, yet calm, just lying in the grass
-beside our vehicle.
-His
-brother rolls onto his back like a lazy
-dog, reminding us this is their normal
-for us. It&#39;s extraordinary.
-
-And in this moment, I feel a strange mix
-of humility and connection. We&#39;re not at
-the zoo. We&#39;re in their world.
-
-The wild accepts us for a brief instant
-and it changes how you see everything.
-
-At lunch, we get a visit. Oscar the
-Hippo, Camp Kakanaka&#39;s most famous
-resident.
-&gt;&gt; Wow.
-&gt;&gt; That&#39;s the closest I&#39;ve ever been to a
-hippo.
-&gt;&gt; Yeah. All of us. Okay.
-&gt;&gt; This is crazy.
-
-The camp is Oscar&#39;s turf. He&#39;s a wild
-hippo evicted from his pod by a dominant
-male.
-
-Instead of sulking, he may and
-knock home.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">抵達時，旅行者們受到溫暖的笑容和歌聲的歡迎。營地散發著真實的「遠離非洲」魅力，木造建築融合了原始之美與現代舒適。氛圍悠閒、從容，彷彿不受時間影響。這裡有11頂帆布帳篷，全都建在面向潟湖的平台上。這些不是普通的帳篷——它們有浴室、真正的床、陽台和許多貼心的舒適設施。感覺真實、簡單卻優雅。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ay and
-knock home. Staff call him the resident
-mascot, letting him grace freely by the
-lagoon.
-
-He&#39;s found safety here.
-And we found the most unforgettable
-neighbor a safari camp could have.
-
-Hippos, they don&#39;t share well. The big
-bull kicks younger guys out. There&#39;s
-fights and all.
-Oscar, he&#39;s one of those unlucky
-bachelors who was evicted from the pod.
-
-Spotting this endangered ground horn
-bill is special. They breathe slowly,
-just one chick every 9 years.
-
-Mori is among the most stunning safari
-destinations.
-Dream like in beauty where trees
-silhouette against the pink skies.
-
-Batswana is vast. Endless sky makes
-every sunrise and sunset unforgettable.
-When the night falls, Oscar he steps
-from the lagoon and he grazes among the
-tents.
-
-As long as you give him space, he&#39;s no
-threat. His grunts echo, his water
-splashes, frogs croak, and somewhere far
-off, a lion roars.
-At Kakanaka, even bedtime feels wild.
-Wrapped in sounds that no hotel could
-ever replicate.
-
-No complaints from us. We&#39;ve run into
-plenty of wildlife,
-
-but our guide says the floods are higher
-this year, so sightings aren&#39;t as good
-as usual.
-
-Still standing here, I see why they call
-it the Garden of Eden.
-A male water buck.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">卡卡納卡營地的每次遊獵都像一場狩獵。這裡真正吸引人的不僅是動物，還有景觀——水和陸地交織而成的馬賽克。如此近距離地與獅子對視，令人不安、刺激且難以忘懷。午餐時，奧斯卡河馬來訪，他是營地最有名的居民。奧斯卡是一隻被優勢雄性趕出群體的野生河馬，他在營地附近找到了安全之所。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">r
-this year, so sightings aren&#39;t as good
-as usual.
-
-Still standing here, I see why they call
-it the Garden of Eden.
-A male water buck. The white ring on his
-backside is unmistakable.
-Nature&#39;s own bullseye.
-His coat is oily, foul smelling, yet he
-never strays from rivers and marshes.
-Crocodiles lurk along the water&#39;s edge.
-Believe it or not, one can grab an
-elephant&#39;s trunk while drinking and with
-violent thrashing, tear it clean off.
-We spotted something gut-wrenching.
-A young elephant missing its trunk.
-Does single loss mean struggle with
-water, food, and social life?
-Few trunkless calves make it past
-weaning. Most never see adulthood.
-Are safaris overrated or unforgettable?
-Tell us in the comments. We actually
-read them all.
-
-&gt;&gt; We&#39;re busy traveling the world, going on
-cruises, safaris, road trips, you name
-it.
-&gt;&gt; Join us on these unfiltered journeys.
-Hit subscribe, drop a like, and come
-along on the ride with us.
-
-Next, the central Kalahari.
-Our journey closes at Laru Latau Camp,
-the last chapter of our African story.
-Join us for a finale you won&#39;t forget.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">並非每次目擊都是美好的。旅行者們發現了一頭失去象鼻的小象——很可能是被鱷魚咬掉的。失去象鼻的小象很少能撐過斷奶期，大多數無法長大成年。這是一個令人心痛的事實，提醒人們大自然不是迪士尼電影。然而站在那裡，敘述者明白了為什麼人們稱這裡為伊甸園。奧卡萬戈三角洲提供的是原始、不加修飾的體驗，沒有任何照片能夠真正捕捉。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: bqC_TPAP8L4 | 11:26 | 3,081 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">旅程帶領旅行者來到奧卡萬戈三角洲核心的莫雷米野生動物保護區——一個常被稱為非洲伊甸園的地方。接下來三天，他們的家是卡卡納卡營地，這是知名的 safari 營地之一，坐落在卡卡納卡潟湖邊，四周環繞著豐富的野生動物。往來營地的唯一方式是乘坐小型叢林飛機，從泥土跑道起飛。這是 safari 體驗中奇特且令人難忘的一部分，連飛行本身也成了一場 safari。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Flying into the Delta</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Our journey takes us to the Moremi Game Reserve at the heart of the Okavango Delta — often described as Africa's Garden of Eden. For the next 3 days, our home is Camp Xakanaxa, one of the best-known safari camps, perched on the Xakanaxa Lagoon and surrounded by prime wildlife right in the heart of the reserve. The only way to hop between camps is by small bush planes lifting off dirt airstrips — a quirky, unforgettable part of the safari experience. Flying low, the world stretches wide beneath you. The Okavango Delta unfolds as a horizon-to-horizon masterpiece, painted in water, grass, and light. Even the flight becomes a safari — herds of elephants below, a buffalo herd scattering, hippos breaking the surface. From the air, the Okavango is pure poetry.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在奧卡萬戈三角洲低空飛行時，世界在你腳下寬闊地展開。三角洲像一幅從地平線到地平線的傑作，由水、草和光線繪製而成。它充滿生命力、變幻莫測、無邊無際。成群的大象在下方漫步，水牛群四散奔逃，河馬浮出水面。從空中看，奧卡萬戈就是純粹的詩篇。魔力不僅在於抵達目的地——更在於旅程本身，看著地貌隨著每一分鐘的飛行而變換。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Camp Xakanaxa & The Landscape</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We're welcomed with warm smiles and voices rising in song. The camp has that out-of-Africa charm — timber buildings blending rustic beauty with modern comfort. The atmosphere is laid-back, unhurried, and timeless. From the lounge and dining rooms, river views stretch wide. It feels authentic, simple yet elegant. The kind of place that slows your pulse the moment you arrive. There are 11 canvas tents here, all raised on decks facing the lagoon. Don't be fooled by "tents" — these have bathrooms, real beds, verandas, and plenty of thoughtful comfort. What really grabs you here isn't just the animals. It's the landscape. The Xakanaxa area hits you with a backdrop that feels almost unreal — a mosaic of water and land. Forests brush up against savannah. Waterways snake through seasonal flood plains. And the best part: you can take it all in with one sweeping look. A single vista that packs every ecosystem into one frame.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">抵達時，旅行者們受到溫暖的笑容和歌聲的歡迎。營地散發著真實的「遠離非洲」魅力，木造建築融合了原始之美與現代舒適。氛圍悠閒、從容，彷彿不受時間影響。這裡有11頂帆布帳篷，全都建在面向潟湖的平台上。這些不是普通的帳篷——它們有浴室、真正的床、陽台和許多貼心的舒適設施。感覺真實、簡單卻優雅。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Lions & Oscar the Hippo</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Safaris deliver something no other journey can: proximity. Being close enough to meet a lion's stare is unsettling, thrilling, unforgettable. He's just there — a predator built for power, yet calm, just lying in the grass beside our vehicle. His brother rolls onto his back like a lazy dog, reminding us this is their normal. For us, it's extraordinary. In this moment, I feel a strange mix of humility and connection. We're not at the zoo. We're in their world. At lunch, we get a visit. Oscar the Hippo — Camp Xakanaxa's most famous resident. That's the closest I've ever been to a hippo. The camp is Oscar's turf. He's a wild hippo evicted from his pod by a dominant male. Instead of going elsewhere, he made it his home. Staff call him the resident mascot, letting him graze freely by the lagoon. He's found safety here. And we found the most unforgettable neighbor a safari camp could have.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">卡卡納卡營地的每次遊獵都像一場狩獵。這裡真正吸引人的不僅是動物，還有景觀——水和陸地交織而成的馬賽克。如此近距離地與獅子對視，令人不安、刺激且難以忘懷。午餐時，奧斯卡河馬來訪，他是營地最有名的居民。奧斯卡是一隻被優勢雄性趕出群體的野生河馬，他在營地附近找到了安全之所。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Wildlife & The Waterbuck</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/bqC_TPAP8L4/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">We've run into plenty of wildlife, but our guide says the floods are higher this year, so sightings aren't as good as usual. Still standing here, I see why they call it the Garden of Eden. Spotting this endangered ground hornbill is special — they breed slowly, just one chick every 9 years. Moremi is among the most stunning safari destinations. Dream-like in beauty, where trees silhouette against the pink skies. Botswana is vast. Endless sky makes every sunrise and sunset unforgettable. A male waterbuck. The white ring on his backside is unmistakable — nature's own bullseye. His coat is oily and foul-smelling, yet he never strays from rivers and marshes. Crocodiles lurk along the water's edge. We spotted something gut-wrenching: a young elephant missing its trunk. Few trunkless calves make it past weaning. Most never see adulthood. Are safaris overrated or unforgettable? Tell us in the comments. We actually read them all.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">並非每次目擊都是美好的。旅行者們發現了一頭失去象鼻的小象——很可能是被鱷魚咬掉的。失去象鼻的小象很少能撐過斷奶期，大多數無法長大成年。這是一個令人心痛的事實，提醒人們大自然不是迪士尼電影。然而站在那裡，敘述者明白了為什麼人們稱這裡為伊甸園。奧卡萬戈三角洲提供的是原始、不加修飾的體驗，沒有任何照片能夠真正捕捉。</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

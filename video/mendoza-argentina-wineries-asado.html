@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,399 +106,130 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Welcome to BZ Travel.
-Today, we explore South America&#39;s wine
-capital, home for Malbec and Asado.
-To cross the Andes range, you can brave
-a risky mountain pass or face a
-turbulent flight.
-We are flying from Santiago to Mendoza.
-We chose the 1-hour flight.
-So, we&#39;re going from the airport to our
-hotel and they&#39;re having a major storm
-here in Mendoza.
-With hail.
-Yeah, we went from 36 to to 20° C.
-It&#39;s and it&#39;s dark out.
-Mendoza is a desert, one of Argentina&#39;s
-driest spots with only 8 in of rain a
-year. So,  this storm is hard to
-believe.
-&gt;&gt; 
-&gt;&gt; Feels like the whole year&#39;s worth is
-coming down right now. All people are
-hiding under the bridge.
-Look at these cars are going to get
-washed away.
-Mendoza sits at the foot of the Andes
-and that location makes it a global
-hotspot for severe hailstorms.
-Cold mountain air from the Andes
-collides with warm, humid air pushing in
-from the Atlantic and the result is
-massive, powerful storm cells.
-But look closely at the sidewalk edges
-and you&#39;ll notice something interesting.
-
-There are deep, open concrete trenches
-running along almost every street in the
-city.
-These aren&#39;t drainage ditches in the
-traditional sense.
-Most of the year, they actually carry
-water from the Andes snowmelt to
-irrigate the trees planted along every
-street in Mendoza.
-Our guide mentioned that hailstones in
-Mendoza can reach the size of tennis
-balls, which causes massive damage to
-vehicles.
-So, locals have a simple solution. Every
-person here keeps a heavy blanket in
-their car specifically to throw over it
-during a hail storm.
-The annual rainfall in Mendoza averages
-only about 8 in per year.
-Like all of it is falling right now.
-What surprises us most though is that
-traffic is still moving. People aren&#39;t
-stopping. They&#39;re not panicking. They
-are just driving. Wow, it&#39;s well a
-bicycle. Yeah.
-Something.
-That&#39;s crazy.
-I did it.
-You did it.
-Look at this. Just look. That is not a
-puddle. That is not flooding. That</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">歡迎來到BZ Travel。今天，我們探索南美洲的葡萄酒首都——馬爾貝克和炭烤肉的故鄉。要穿越安第斯山脈，你可以選擇冒險通過危險的山口，或面對顛簸的飛行。我們從聖地牙哥飛往門多薩。我們選擇了一小時的航班。所以，我們正在從機場前往酒店的路上，門多薩這裡正在下大暴風雨——還有冰雹。對，氣溫從36度降到了20度，外面天黑了。門多薩是沙漠，阿根廷最乾燥的地區之一，每年只有8英寸的降雨量。所以這場暴風雨讓人難以置信。感覺一整年的雨量都在這一刻傾瀉而下。所有人都在橋下躲雨。看這些車，它們快要被沖走了。門多薩位於安第斯山脈腳下，這個地理位置使它成為全球強烈冰雹風暴的熱點。來自安第斯山脈的寒冷空氣與來自大西洋的溫暖潮濕空氣碰撞，產生了巨大的、強勁的暴風雨雲團。但仔細看人行道邊緣，你會注意到一些有趣的事情。沿著城市幾乎每條街道，都有深邃的露天混凝土溝渠。這些不是傳統意義上的排水溝。一年中大部分時間，它們實際上是將安第斯山脈的融雪水引到門多薩每條街道上的樹木進行灌溉。我們的導遊提到，門多薩的冰雹可以達到網球大小，會對車輛造成巨大損壞。所以當地人有一個簡單的解決方案：這裡每個人的車上都備有一條厚毯子，專門在冰雹風暴時蓋在車上。門多薩的年降雨量平均每年只有8英寸左右。就像所有雨量都在此刻傾瀉而下。最讓我們驚訝的是，交通仍然在運轉。人們沒有停下來，沒有驚慌，他們就只是繼續開車。哇，還有一輛腳踏車。太瘋狂了。看看這個。那不是在積水——</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Mendoza Argentina: Wineries & Asado</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">is a
-moving river on a city street and those
-cars are just driving through it.
-Electric buses.
-This looks a little bit too deep.
-At this point I&#39;m genuinely wondering,
-are we even going to make it out
-tonight?
-We have a dinner and a tour tomorrow but
-looking at this street  I&#39;m not
-so sure.
-Look at this one here.
-Oh my gosh. That was the Oh and that&#39;s a
-big tree. It took down power lines.
-Look at this tree.
-1 hour later, street&#39;s almost dry like
-it never happened.
-The dining experience in Argentina is
-one you&#39;ll remember for a long time.
-Restaurants here usually keep the
-kitchen completely open and the grill
-master will gladly show you the whole
-process. Long charcoal grills loaded
-with all kinds of meat and sausages
-sizzling and filling the air with an
-incredible aroma.
-Meat here is almost as culturally
-important as wine. The asado is what
-Argentinians call their barbecue and
-it&#39;s truly in a league of its own. No
-gas grills, no shortcuts,
-just charcoal, quality meat, and a
-master at the grill.
-Be careful, it&#39;s very hot.
-&gt;&gt; Yeah, it&#39;s very hot. Next to the main
-grill, there&#39;s a dedicated charcoal oven
-and it&#39;s what makes the Argentine method
-stand out. Most people think barbecue
-means lighting charcoal and cooking
-directly.
-Here they heat the coals in the oven
-first, then transfer them to the grill.
-The meat cooks over perfectly prepared
-heat.
-When the grill master pulled a fresh
-piece off the fire, he held it up to
-show us the juiciness,
-then explained that every type of meat
-has its own technique.
-Different heat, different timing,
-different position on the grill.
-Dinner in Argentina is a cultural
-experience, not just a meal.
-We sat family style with our new friends
-we made on this tour through South
-America.
-The Malbec kept flowing and the meat
-kept coming. Multiple cuts, all grilled
-to perfection with chimichurri sauce
-that tied everything together.
-I had my first Tomahawk steak here.
-&gt;&gt; 
-&gt;&gt; A massive cut with the full rib bone
-still attached, juicy and perfectly
-done.
-But what stood out most was the pace and
-the atmosphere.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">那是城市街道上的一條流動河流，而那些車就這麼開過去。電動巴士。這個看起來有點太深了。到這個時候，我真的在想，我們今晚還能不能出得去？我們明天還有晚餐和行程，但看著這條街，我不太確定了。看看這棵樹。哦，天啊。那是一棵大樹，它壓斷了電線。一小時後，街道幾乎乾了，好像什麼都沒發生過一樣。阿根廷的用餐體驗你會記得很久。餐廳通常把廚房完全開放，烤肉大師會很樂意向你展示整個過程。長長的炭火烤架上擺滿了各種肉類和香腸，滋滋作響，空氣中充滿了令人難以置信的香氣。在這裡，肉幾乎和葡萄酒一樣具有文化重要性。Asado——阿根廷人稱之為他們的烤肉——確實獨樹一幟。沒有瓦斯烤爐，沒有捷徑——只有炭火、優質的肉和一位烤肉大師。小心，非常燙。對，很燙。在主烤架旁邊，有一個專門的炭火爐——這正是阿根廷方法與眾不同的原因。大多數人認為烤肉就是點燃炭火直接烤。但在這裡，他們先在爐子裡加熱煤炭，然後再轉移到烤架上。肉是在完美準備好的熱源上烤熟的。當烤肉大師從火上取下一塊新鮮的肉時，他舉起來讓我們看肉汁的程度，然後解釋說每一種肉都有各自的技術——不同的火候、不同的時間、烤架上不同的位置。在阿根廷，晚餐是一種文化體驗，而不只是一頓飯。我們和這趟南美之旅結交的新朋友一起圍坐在家庭式的餐桌旁。馬爾貝克葡萄酒不斷斟上，肉也不斷送上來——多種部位，全部烤得恰到好處，配上奇米丘里醬，把所有味道融合在一起。我在這裡第一次吃到了戰斧牛排——</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">the full rib bone
-still attached, juicy and perfectly
-done.
-But what stood out most was the pace and
-the atmosphere. Argentinians don&#39;t rush
-dinner. It&#39;s social time.
-Restaurants here typically don&#39;t fill up
-until p.m. For us, that took some
-adjusting. At p.m. back home, we
-are already in bed.
-After a dinner like that, a walk was
-exactly what we needed and there is no
-better place to walk in Mendoza than
-Avenida Aristides.
-It&#39;s still relatively early and the
-avenue is already alive.
-Young people are just starting to come
-out, groups forming, tables filling up
-slowly.
-I can only imagine what this place looks
-like at midnight.
-Our guide told us that&#39;s when it really
-peaks. Restaurants, bars, and pubs
-completely packed. And most places stay
-open well past that.
-The avenue feels brand new, clean,
-well-lit, and buzzing with energy.
-This is clearly where the city comes to
-life at night. And we are just at the
-beginning  of it.
-Good morning from Mendoza.
-Today we&#39;re visiting three wineries.
-So yes, wine tasting for breakfast is
-officially on the schedule.
-And look at the streets, completely dry.
-No puddles, no trace of that storm.
-If we didn&#39;t see it yesterday, we&#39;d
-never believe it happened.
-So this little winery, Casa Aurora, the
-guy, he lives in uh the States. He&#39;s in
-the a financial guru whatever, but he
-bought these wineries for a hobby.
-And he took it over after many years of
-being dilapidated.
-And he has a lot of bottles sent home.
-It&#39;s really quite beautiful.
-Our first stop is a boutique winery,
-small by Mendoza standards. That&#39;s one
-style you&#39;ll find here.
-But Mendoza has 1,200 wineries in total,
-ranging from these small estates all the
-way up to massive operations that fill
-supermarket 
-shelves in 80 countries.
-This region alone produces 70% 
-of all the wine in Argentina.
-Mendoza&#39;s best known for Malbec, but
-they grow and produce many other
-varieties here, too.
-&gt;&gt; 
-&gt;&gt; The only problem with all of this, it&#39;s
-morning and honestly our 
-bodies are still asking for coffee, not
-wine.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">整根肋骨仍然附著，多汁且完美火候。但最突出的是節奏和氛圍。阿根廷人不急著吃完晚餐——這是社交時間。餐廳通常要到晚上才開始有人。對我們來說，這需要一些調整——在家鄉，晚上我們已經上床睡覺了。吃完這樣的晚餐，散步正是我們需要的，而在門多薩沒有比阿里斯蒂德斯大道更適合散步的地方了。時間還算早，但大道已經活躍起來了。年輕人剛開始出門，群體聚攏，桌子慢慢被佔滿。我只能想像午夜時分這裡會是什麼樣子。我們的導遊告訴我們，那時候才是真正的高峰——餐廳、酒吧、酒館全部爆滿，而且大多數店家會營業到很晚。這條大道感覺嶄新、乾淨、燈光明亮、充滿活力。這顯然是這座城市夜晚甦醒的地方，而我們才剛剛開始。早安，門多薩。今天我們要參觀三家酒莊。沒錯，早餐品酒正式列入行程。看看街道——完全乾了。沒有水坑，沒有那場暴風雨的任何痕跡。如果我們昨天沒親眼看到，我們絕對不會相信發生過暴風雨。這是一家小型酒莊Casa Aurora，主人住在美國，是什麼金融大師之類的，但他買下這些酒莊當作興趣。他在多年廢棄之後接手了這裡。他寄了很多酒回家。真的很美。我們的第一站是一家精品酒莊——以門多薩的標準來說算是小型。這只是你在這裡能找到的一種風格。但門多薩總共有1,200家酒莊，從這些小型莊園一直到供應80個國家超市貨架的大型企業。僅這一個地區就生產了阿根廷所有葡萄酒的70%。門多薩最出名的是馬爾貝克，但他們也在這裡種植和生產許多其他品種。唯一的問題是——</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ning and honestly our 
-bodies are still asking for coffee, not
-wine. But here we  are.
-The owner of this winery is Peter
-Dartley,
-the former vice chairman of Pequot
-Capital, one of the largest hedge funds
-in the world.
-His four vineyards are named Jamila,
-Naoki, Lauren and Owen, after each of
-his grandchildren.
-Not a bad hobby for retirement.
-Down in the basement is a private vault.
-Perfect temperature, perfect humidity,
-built for aging wine in the bottle.
-This is Peter&#39;s personal collection and
-none of it is for sale.
-Every now and then he ships some out for
-a special event or maybe just to impress
-a few friends.
-Speaking of collecting,
-what do you collect? Drop it in the
-comments below.
-We collect memories.
-Look at those fermentation tanks on the
- right. Concrete, not steel.
-Huge. Not what most we picture when we
-think winemaking.
-Wow, that&#39;s a beautiful room.
-Y&#39;all. Oh, wow.
-Beautiful. 
-Well, check them.
-Ready for this?
-&gt;&gt; 
-&gt;&gt; Okay.
-So, it looks like we&#39;re going to try
-three different  wines. A Malbec,
-a blend, and a Cabernet Sauvignon. Oh,
-Cabernet Sauvignon. It&#39;s in the
-morning. We&#39;re not really in the mood
-for it, but we&#39;ll try.
-&gt;&gt; 
-&gt;&gt; Okay.
-So, our first tasting is 
-a blend. It&#39;s a It&#39;s a Malbec, but it&#39;s
-a blend from three different 
-three different uh vineyards.
-So, let&#39;s try it. Judging wine at this
-hour is not easy.
-But honestly, they were pretty good.
-The winery also has a retail shop and a
-restaurant on site.
-And when you think about the fact that
-this whole place was once completely
-abandoned, what they&#39;ve built here is
-genuinely  impressive.
-Mendoza has 150,000 hectares of
-vineyards, and every single one depends
-on snowmelt from the Andes.
-That water fills rivers and reservoirs,
-then flows through gravity-fed trenches
-directly into the vineyards.
-Winemakers just open a small gate, and
-the water floods right in.
-Okay, we&#39;re about to go into our second
-winery
-out of the three, and
-it&#39;s a totally diffe</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">老實說，我們的身體還在要咖啡，不是葡萄酒。但我們就在這裡了。這家酒莊的主人是Peter Dartley——Pequot Capital的前副主席，這是世界上最大的對沖基金之一。他的四個葡萄園分別以他每個孫子的名字命名：Jamila、Naoki、Lauren和Owen。退休後有這樣的興趣愛好還不錯。地下室裡有一個私人酒窖——完美的溫度、完美的濕度，專為瓶陳而建。這是Peter的個人收藏，全部非賣品。他只是偶爾運一些出去用於特殊活動，或者只是為了給幾個朋友留下深刻印象。說到收藏——你收藏什麼？在下面的留言區告訴我們。我們收藏回憶。看右邊那些發酵槽——是水泥的，不是鋼的。非常大。不是大多數人想像的釀酒場景。哇，這房間真美。各位，哦，哇。太美了。準備好了嗎？好了。看來我們要品嚐三種不同的酒——一款馬爾貝克、一款調和酒、一款卡本內蘇維濃。哦，卡本內蘇維濃。現在是早上，我們實在沒什麼心情喝，但還是試試吧。好了，第一款品的是調和酒——是馬爾貝克，但來自三個不同的葡萄園。來試試吧。在這個時間品酒可不容易。但老實說，它們相當不錯。酒莊還附設零售店和餐廳。考慮到這裡曾經完全廢棄，他們所建造的一切著實令人印象深刻。門多薩有15萬公頃的葡萄園，每一座都依賴安第斯山脈的融雪水。這些水注入河流和水庫，然後通過重力供水渠道直接流入葡萄園。釀酒師只需要打開一個小閘門，水就會直接灌進來。好了，我們準備去第二家酒莊了——</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">rent feel.
-Piatelli Vineyards.
-This winery is owned by another
-American, John Malinski from Minnesota.
-Unlike the first winery, they use a drip
-irrigation system here for the vines.
-The reservoir on the property makes
-everything look beautiful, and that
-fountain isn&#39;t just decorative. It
-aerates the water to keep it from going
-stagnant. Wow, what a
-nice view.
-Huge vineyard.
-We tasted more wines here  and
-they were good.
-But what really stood out was the
-setting. Beautiful  landscaping,
-open views, birds everywhere.
-The grounds alone make this winery worth
-visiting.
-&gt;&gt; 
-&gt;&gt; Now we&#39;re heading to lunch at Chamera
-Bistro inside Achaval Ferrer, one of the
-most prestigious wineries in Mendoza.
-The owner is Yuri Shefler,
-a Russian-born billionaire who also owns
-the Stoli Group, the company behind
-Stolichnaya Vodka.
-He acquired this estate to expand their
-luxury wine portfolio.
-Our third and final winery and here
-we&#39;re going to have a four-course lunch
-with pairings of different wines. Sun&#39;s
-finally coming out.
-Oh, I like it. This is  very
-pretty.
-Look at the view of the vineyard.
-Wow. And we&#39;re we&#39;re starting with a
-glass.
-&gt;&gt; 
-&gt;&gt; Got the asado going.
-&gt;&gt; 
-&gt;&gt; Oh, wow.
-It&#39;s like a
-Michelin-star restaurant.
-Chamera Bistro serves a full
-multi-course menu with wines paired to
-every single course.
-From the appetizer straight through to
-dessert.
-Everything was delicious. Michelin-level
-presentation and taste.
-Honestly, one of the best lunches we&#39;ve
-ever had.
-&gt;&gt; 
-&gt;&gt; We didn&#39;t get a full winery tour,
-but there&#39;s a lookout window at the back
-of the restaurant where you can see the
-fermentation tanks.
-Very impressive operation.
-When money is no object and the passion
-is there, the results speak for
-themselves.
-Mendoza was incredible.
-But Buenos Aires is next and that city
-is on a completely different level.
-One of our favorite places in the world
-and we made the most of every hour
-there. Join us for that one.
-See you in Buenos Aires.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">不同的感覺。Piatelli Vineyards。這家酒莊由另一位美國人John Malinski（來自明尼蘇達）擁有。與第一家酒莊不同，他們在這裡使用滴灌系統灌溉葡萄藤。莊園裡的水庫讓一切看起來很美，那個噴泉不只是裝飾——它為水曝氣，防止水質停滯。哇，景色真好。廣闊的葡萄園。我們在這裡品嚐了更多酒，味道都不錯。但真正突出的是環境——美麗的園林景觀、開闊的視野、鳥兒到處都是。光是這片庭園就讓這家酒莊值得一訪。現在我們要去Achaval Ferrer內的Chamera Bistro吃午餐——這是門多薩最負盛名的酒莊之一。主人是Yuri Shefler，一位俄羅斯出生的億萬富翁，他也擁有Stoli Group——Stolichnaya伏特加的公司。他收購這座莊園是為了擴充他們的奢華葡萄酒組合。這是我們的第三家也是最後一家酒莊，我們要在這裡享用搭配不同葡萄酒的四道菜午餐。太陽終於出來了。哦，我喜歡。這真美。看看葡萄園的景色。哇。我們先來一杯。炭烤肉開始了。哦，哇。就像米其林星級餐廳一樣。Chamera Bistro提供完整的多道菜菜單，每道菜都配有不同的葡萄酒——從開胃菜一直到甜點。每一樣都美味極了——米其林水準的呈現和口感。老實說，這是我們吃過最好的午餐之一。我們沒有參觀完整的酒莊，但餐廳後面有一個觀景窗，可以看到發酵槽。非常令人印象深刻的規模。當金錢不是問題、而熱情又到位的時候，結果自然不言而喻。門多薩太棒了。但接下來是布宜諾斯艾利斯——那是一個完全不同層次的城市。它是我們在世界上最喜歡的地方之一，我們充分利用了在那裡的每一小時。加入我們——</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: gK8KeV3atMs | 13:55 | 13,600 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">歡迎來到BZ Travel。今天，我們探索南美洲的葡萄酒首都——馬爾貝克和炭烤肉的故鄉。要穿越安第斯山脈，你可以選擇冒險通過危險的山口，或面對顛簸的飛行。我們從聖地牙哥飛往門多薩。我們選擇了一小時的航班。所以，我們正在從機場前往酒店的路上，門多薩這裡正在下大暴風雨——還有冰雹。對，氣溫從36度降到了20度，外面天黑了。門多薩是沙漠，阿根廷最乾燥的地區之一，每年只有8英寸的降雨量。所以這場暴風雨讓人難以置信。感覺一整年的雨量都在這一刻傾瀉而下。所有人都在橋下躲雨。看這些車，它們快要被沖走了。門多薩位於安第斯山脈腳下，這個地理位置使它成為全球強烈冰雹風暴的熱點。來自安第斯山脈的寒冷空氣與來自大西洋的溫暖潮濕空氣碰撞，產生了巨大的、強勁的暴風雨雲團。但仔細看人行道邊緣，你會注意到一些有趣的事情。沿著城市幾乎每條街道，都有深邃的露天混凝土溝渠。這些不是傳統意義上的排水溝。一年中大部分時間，它們實際上是將安第斯山脈的融雪水引到門多薩每條街道上的樹木進行灌溉。我們的導遊提到，門多薩的冰雹可以達到網球大小，會對車輛造成巨大損壞。所以當地人有一個簡單的解決方案：這裡每個人的車上都備有一條厚毯子，專門在冰雹風暴時蓋在車上。門多薩的年降雨量平均每年只有8英寸左右。就像所有雨量都在此刻傾瀉而下。最讓我們驚訝的是，交通仍然在運轉。人們沒有停下來，沒有驚慌，他們就只是繼續開車。哇，還有一輛腳踏車。太瘋狂了。看看這個。那不是在積水——</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Arriving in a Storm</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Welcome to BZ Travel. Today, we explore South America's wine capital, home of Malbec and Asado. To cross the Andes range, you can brave a risky mountain pass or face a turbulent flight. We chose the 1-hour flight from Santiago to Mendoza. We're going from the airport to our hotel and they're having a major storm here in Mendoza — with hail. We went from 36 to to 20°C. It's and it's dark out. Mendoza is a desert, one of Argentina's driest spots with only 8 inches of rain a year, so this storm is hard to believe. It feels like the whole year's worth is coming down right now. Mendoza sits at the foot of the Andes and that location makes it a global hotspot for severe hailstorms. Cold mountain air from the Andes collides with warm, humid air pushing in from the Atlantic, and the result is massive, powerful storm cells. Our guide mentioned hailstones here can reach the size of tennis balls. So locals have a simple solution: everyone keeps a heavy blanket in their car specifically to throw over it during a hailstorm.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">那是城市街道上的一條流動河流，而那些車就這麼開過去。電動巴士。這個看起來有點太深了。到這個時候，我真的在想，我們今晚還能不能出得去？我們明天還有晚餐和行程，但看著這條街，我不太確定了。看看這棵樹。哦，天啊。那是一棵大樹，它壓斷了電線。一小時後，街道幾乎乾了，好像什麼都沒發生過一樣。阿根廷的用餐體驗你會記得很久。餐廳通常把廚房完全開放，烤肉大師會很樂意向你展示整個過程。長長的炭火烤架上擺滿了各種肉類和香腸，滋滋作響，空氣中充滿了令人難以置信的香氣。在這裡，肉幾乎和葡萄酒一樣具有文化重要性。Asado——阿根廷人稱之為他們的烤肉——確實獨樹一幟。沒有瓦斯烤爐，沒有捷徑——只有炭火、優質的肉和一位烤肉大師。小心，非常燙。對，很燙。在主烤架旁邊，有一個專門的炭火爐——這正是阿根廷方法與眾不同的原因。大多數人認為烤肉就是點燃炭火直接烤。但在這裡，他們先在爐子裡加熱煤炭，然後再轉移到烤架上。肉是在完美準備好的熱源上烤熟的。當烤肉大師從火上取下一塊新鮮的肉時，他舉起來讓我們看肉汁的程度，然後解釋說每一種肉都有各自的技術——不同的火候、不同的時間、烤架上不同的位置。在阿根廷，晚餐是一種文化體驗，而不只是一頓飯。我們和這趟南美之旅結交的新朋友一起圍坐在家庭式的餐桌旁。馬爾貝克葡萄酒不斷斟上，肉也不斷送上來——多種部位，全部烤得恰到好處，配上奇米丘里醬，把所有味道融合在一起。我在這裡第一次吃到了戰斧牛排——</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Irrigation Trenches</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Look closely at the sidewalk edges and you'll notice something interesting. There are deep, open concrete trenches running along almost every street in the city. Most of the year, they actually carry water from the Andes snowmelt to irrigate the trees planted along every street in Mendoza. That is not a puddle, that is not flooding — that is a moving river on a city street, and those cars are just driving through it. One hour later, the street is almost dry, like it never happened.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">整根肋骨仍然附著，多汁且完美火候。但最突出的是節奏和氛圍。阿根廷人不急著吃完晚餐——這是社交時間。餐廳通常要到晚上才開始有人。對我們來說，這需要一些調整——在家鄉，晚上我們已經上床睡覺了。吃完這樣的晚餐，散步正是我們需要的，而在門多薩沒有比阿里斯蒂德斯大道更適合散步的地方了。時間還算早，但大道已經活躍起來了。年輕人剛開始出門，群體聚攏，桌子慢慢被佔滿。我只能想像午夜時分這裡會是什麼樣子。我們的導遊告訴我們，那時候才是真正的高峰——餐廳、酒吧、酒館全部爆滿，而且大多數店家會營業到很晚。這條大道感覺嶄新、乾淨、燈光明亮、充滿活力。這顯然是這座城市夜晚甦醒的地方，而我們才剛剛開始。早安，門多薩。今天我們要參觀三家酒莊。沒錯，早餐品酒正式列入行程。看看街道——完全乾了。沒有水坑，沒有那場暴風雨的任何痕跡。如果我們昨天沒親眼看到，我們絕對不會相信發生過暴風雨。這是一家小型酒莊Casa Aurora，主人住在美國，是什麼金融大師之類的，但他買下這些酒莊當作興趣。他在多年廢棄之後接手了這裡。他寄了很多酒回家。真的很美。我們的第一站是一家精品酒莊——以門多薩的標準來說算是小型。這只是你在這裡能找到的一種風格。但門多薩總共有1,200家酒莊，從這些小型莊園一直到供應80個國家超市貨架的大型企業。僅這一個地區就生產了阿根廷所有葡萄酒的70%。門多薩最出名的是馬爾貝克，但他們也在這裡種植和生產許多其他品種。唯一的問題是——</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. The Argentine Asado</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The dining experience in Argentina is one you'll remember for a long time. Restaurants keep the kitchen completely open and the grill master will gladly show you the whole process. Long charcoal grills loaded with all kinds of meat and sausages, sizzling and filling the air with an incredible aroma. Next to the main grill, there's a dedicated charcoal oven — and it's what makes the Argentine method stand out. Most people think barbecue means lighting charcoal and cooking directly. Here they heat the coals in the oven first, then transfer them to the grill. The meat cooks over perfectly prepared heat. Dinner in Argentina is a cultural experience, not just a meal. We sat family style with our new friends. The Malbec kept flowing and the meat kept coming. I had my first Tomahawk steak here — a massive cut with the full rib bone still attached, juicy and perfectly done. But what stood out most was the pace and the atmosphere. Argentinians don't rush dinner. Restaurants here typically don't fill up until p.m. For us, that took some adjusting.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">老實說，我們的身體還在要咖啡，不是葡萄酒。但我們就在這裡了。這家酒莊的主人是Peter Dartley——Pequot Capital的前副主席，這是世界上最大的對沖基金之一。他的四個葡萄園分別以他每個孫子的名字命名：Jamila、Naoki、Lauren和Owen。退休後有這樣的興趣愛好還不錯。地下室裡有一個私人酒窖——完美的溫度、完美的濕度，專為瓶陳而建。這是Peter的個人收藏，全部非賣品。他只是偶爾運一些出去用於特殊活動，或者只是為了給幾個朋友留下深刻印象。說到收藏——你收藏什麼？在下面的留言區告訴我們。我們收藏回憶。看右邊那些發酵槽——是水泥的，不是鋼的。非常大。不是大多數人想像的釀酒場景。哇，這房間真美。各位，哦，哇。太美了。準備好了嗎？好了。看來我們要品嚐三種不同的酒——一款馬爾貝克、一款調和酒、一款卡本內蘇維濃。哦，卡本內蘇維濃。現在是早上，我們實在沒什麼心情喝，但還是試試吧。好了，第一款品的是調和酒——是馬爾貝克，但來自三個不同的葡萄園。來試試吧。在這個時間品酒可不容易。但老實說，它們相當不錯。酒莊還附設零售店和餐廳。考慮到這裡曾經完全廢棄，他們所建造的一切著實令人印象深刻。門多薩有15萬公頃的葡萄園，每一座都依賴安第斯山脈的融雪水。這些水注入河流和水庫，然後通過重力供水渠道直接流入葡萄園。釀酒師只需要打開一個小閘門，水就會直接灌進來。好了，我們準備去第二家酒莊了——</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Avenida Aristides at Night</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">After a dinner like that, a walk was exactly what we needed, and there is no better place to walk in Mendoza than Avenida Aristides. It's still relatively early and the avenue is already alive. Young people are just starting to come out, groups forming, tables filling up slowly. Our guide told us that's when it really peaks — restaurants, bars, and pubs completely packed, most places staying open well past midnight. This is clearly where the city comes to life at night.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">不同的感覺。Piatelli Vineyards。這家酒莊由另一位美國人John Malinski（來自明尼蘇達）擁有。與第一家酒莊不同，他們在這裡使用滴灌系統灌溉葡萄藤。莊園裡的水庫讓一切看起來很美，那個噴泉不只是裝飾——它為水曝氣，防止水質停滯。哇，景色真好。廣闊的葡萄園。我們在這裡品嚐了更多酒，味道都不錯。但真正突出的是環境——美麗的園林景觀、開闊的視野、鳥兒到處都是。光是這片庭園就讓這家酒莊值得一訪。現在我們要去Achaval Ferrer內的Chamera Bistro吃午餐——這是門多薩最負盛名的酒莊之一。主人是Yuri Shefler，一位俄羅斯出生的億萬富翁，他也擁有Stoli Group——Stolichnaya伏特加的公司。他收購這座莊園是為了擴充他們的奢華葡萄酒組合。這是我們的第三家也是最後一家酒莊，我們要在這裡享用搭配不同葡萄酒的四道菜午餐。太陽終於出來了。哦，我喜歡。這真美。看看葡萄園的景色。哇。我們先來一杯。炭烤肉開始了。哦，哇。就像米其林星級餐廳一樣。Chamera Bistro提供完整的多道菜菜單，每道菜都配有不同的葡萄酒——從開胃菜一直到甜點。每一樣都美味極了——米其林水準的呈現和口感。老實說，這是我們吃過最好的午餐之一。我們沒有參觀完整的酒莊，但餐廳後面有一個觀景窗，可以看到發酵槽。非常令人印象深刻的規模。當金錢不是問題、而熱情又到位的時候，結果自然不言而喻。門多薩太棒了。但接下來是布宜諾斯艾利斯——那是一個完全不同層次的城市。它是我們在世界上最喜歡的地方之一，我們充分利用了在那裡的每一小時。加入我們——</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Winery 1: Casa Aurora</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Good morning from Mendoza. Today we're visiting three wineries — wine tasting for breakfast is officially on the schedule. Look at the streets: completely dry. No trace of that storm. Our first stop is Casa Aurora, a boutique winery. The owner is Peter Dartley, the former vice chairman of Pequot Capital, one of the largest hedge funds in the world. His four vineyards are named Jamila, Naoki, Lauren, and Owen — after each of his grandchildren. Down in the basement is a private vault, perfect temperature and humidity, built for aging wine in the bottle. None of it is for sale. The fermentation tanks are concrete, not steel. Not what most we picture when we think winemaking. We tried three wines — a Malbec blend, and a Cabernet Sauvignon. It's a It's a Malbec, but it's a blend from three different three different vineyards. Judging wine at this hour is not easy, but honestly, they were pretty good.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p7')">
+      <span class="acc-label">7. Winery 2: Piatelli Vineyards</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p7">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p7.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Our second winery, Piatelli Vineyards, is a totally diffe rent feel. This winery is owned by another American, John Malinski from Minnesota. Unlike the first winery, they use a drip irrigation system here. The reservoir on the property makes everything look beautiful, and that fountain isn't just decorative — it aerates the water to keep it from going stagnant. What really stood out was the setting: beautiful landscaping, open views, birds everywhere.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p8')">
+      <span class="acc-label">8. Winery 3: Achaval Ferrer & Chamera Bistro</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p8">
+      <div class="acc-audio"><audio src="../audio/gK8KeV3atMs/p8.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Now we're heading to lunch at Chamera Bistro inside Achaval Ferrer, one of the most prestigious wineries in Mendoza. The owner is Yuri Shefler, a Russian-born billionaire who also owns the Stoli Group behind Stolichnaya Vodka. Our third and final winery — a four-course lunch with wine pairings for every course. Chamera Bistro serves Michelin-level presentation and taste. Honestly, one of the best lunches we've ever had. When money is no object and the passion is there, the results speak for themselves. Mendoza was incredible. But Buenos Aires is next and that city is on a completely different level. One of our favorite places in the world — see you in Buenos Aires.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

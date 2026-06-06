@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,402 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Batswana raw and unfiltered hyper
-paradise. Cruise the Chobi River with us
-and see for yourself.
-We&#39;re ready for Bosswana to blow our
-minds.
-Brochures and Instagram don&#39;t cut it.
-It&#39;s time to experience the real thing.
-For the next 3 days, we&#39;re calling Chobi
-Game Lodge our home.
-And we&#39;re in an open safari vehicle.
-Love it. For our transfer,
-once we get to the park, we&#39;ll be going
-through the like basically safari to get
-to the lodge.
-Welcome to Toby National Park in
-Boswana. We just arrived at the park
-gate and our driver is registering us
-into the park. We have two nights at the
-Toby game lodge, which is a five-star uh
-game lodge. And on our way here, we went
-through the border from Zimbabwe to
-Baswana. And near the border, we saw a
-bridge. And at that bridge, there&#39;s that
-intersection right there where in that
-corner, there&#39;s four different countries
-that share that border. Namibia, Zambia,
-Zimbabwe, and Bosswana. And the bridge
-actually goes to Namibia, which we found
-very interesting. We&#39;re on the way to
-the lodge and we&#39;re just now seeing um
-that shy
-&gt;&gt; an elephant.
-&gt;&gt; Yeah, he&#39;s shy. He&#39;s a little bit upset.
-He&#39;s not sure what to do.
-It&#39;s winter in Africa. The land is dry,
-brown, almost bare.
-The only green that&#39;s left clings
-stubbornly to the tops of trees and
-bushes.
-The Toby Game Lodge is the only lodge
-inside the park.
-It&#39;s more boutique hotel than bush camp.
-It&#39;s a luxury oasis on the riverbanks,
-right on the edge of this vast 4,500
-square mile wilderness.
-
-&gt;&gt; Hi.
-&gt;&gt; Got some orange juice and lemonade.
-&gt;&gt; Okay.
-&gt;&gt; Thank you.
-
-&gt;&gt; Elizabeth Taylor and Richard Burton
-married here in the 70s.
-Today, the lodge has 44 riverfacing
-rooms, plus four suites, blending luxury
-with nature.
-Lounges, bars, a riverside bulma, and
-swimming pool all sit among lush
-gardens.
-Well, we just arrived and got into our
-room and we had to rush to lunch because
-they had only had like 10 minutes left
-before we could have our lunch.
-Everything is included.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">波札那——原始而無濾鏡的野生天堂。和我們一起沿著丘比河巡航，親眼見證。我們準備好讓波札那震撼我們的心靈。旅遊手冊和Instagram不夠看——是時候體驗真實的一切了。接下來三天，我們把丘比野生動物旅館當作我們的家。我們乘坐開放式遊獵車輛，太棒了。在前往公園的路上，我們基本上會以遊獵的方式前往旅館。歡迎來到波札那的丘比國家公園。我們剛到達公園入口，司機正在為我們辦理入園登記。我們在丘比野生動物旅館住兩晚，這是一家五星級野生動物旅館。在來這裡的路上，我們從辛巴威穿越邊境進入波札那。在邊境附近，我們看到一座橋。在那座橋的那個交叉口，四個不同國家的邊界匯聚於此——納米比亞、尚比亞、辛巴威和波札那。那座橋實際上是通往納米比亞的，我們覺得非常有趣。我們正在前往旅館的路上，剛剛看到一頭害羞的大象。對，牠很害羞，有點不安，不知道該怎麼辦。現在是非洲的冬天。大地乾燥、棕黃、幾乎光禿。僅存的綠色頑固地附著在樹木和灌木的頂端。丘比野生動物旅館是公園內唯一的旅館。與其說是叢林營地，不如說是精品酒店——河岸上的奢華綠洲，就在這片4500平方英里的廣闊荒野邊緣。嗨。來點柳橙汁和檸檬水。謝謝。伊莉莎白·泰勒和理查·波頓在70年代曾在這裡結婚。如今，旅館擁有44間面向河流的客房和四間套房，將奢華與大自然融為一體。休息室、酒吧、河畔涼亭和游泳池都坐落在鬱鬱蔥蔥的花園中。我們剛到達並進入房間，然後就得趕去吃午餐了，因為他們只剩下10分鐘了——</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Is Chobe Overhyped? Real Botswana Safari</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">ot into our
-room and we had to rush to lunch because
-they had only had like 10 minutes left
-before we could have our lunch.
-Everything is included. They had a huge
-menu to choose from and wine, alcohol,
-all your drinks, everything, your mini
-bar, everything is included, including
-your laundry.
-So, uh, so far our first impression is,
-wow, it&#39;s a beautiful property. I think
-we&#39;re going to get spoiled. And they
-also told us to be careful not to walk
-around the property because there&#39;s
-animals that can can come right up. Uh
-the fence blocks elephants but nothing
-else. So we got to we have to be
-escorted.
-
-As soon as we finish our lunch, then
-we&#39;re going to start our first uh game
-drive.
-&gt;&gt; Cheers everyone.
-&gt;&gt; Cheers.
-&gt;&gt; Our first river safari. And these sleek
-boats, they run on solar power.
-So, we&#39;re on an electric boat and it&#39;s
-extremely quiet.
-&gt;&gt; Oh, welcome everyone.
-&gt;&gt; Thank you.
-&gt;&gt; Every guide here is a woman. Strength,
-knowledge, and empowerment right here in
-Africa. I absolutely love it.
-&gt;&gt; So, we&#39;re on the Chobi River, and on my
-right hand side is Namibia and the left
-hand side is Busan.
-&gt;&gt; He looks harmless, right? Yet crocodiles
-kill hundreds every year. Mostly
-fishermen and kids bathing along the
-rivers.
-Bosswana is elephant country. No
-question.
-Over 130,000 roam here, more than
-anywhere else in Africa.
-In Chobi National Park alone, estimates
-run as high as 50,000.
-And from the river it shows.
-Herd after herd descends to drink. The
-banks alive with a movement.
-Mothers guard their calves. Sisters and
-ants guard the edges.
-Babies stumble at the water&#39;s edge,
-splashing, playing, still learning what
-their trunks are for.
-This tiny calf, barely 2 weeks old,
-kneels awkwardly to drink. He&#39;s clumsy,
-determined,
-unforgettable.
-Have you ever seen anything that
-adorable?
-
-These family moments make me forget just
-how many elephants can gather here.
-
-Then on the far bank, a crocodile rests,
-sleeping maybe.
-On land, lions dominate.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">我們必須趕快去吃午餐，因為他們只剩下10分鐘可以用餐。一切全包。他們有豐富的菜單可以選擇，還有葡萄酒、烈酒——所有飲料、你的迷你吧、一切——包括洗衣——全部都包含在內。所以到目前為止，我們的第一印象是——哇，這是一個美麗的地方。我覺得我們會被寵壞的。他們還告訴我們要小心，不要在園區內隨意走動，因為動物可能會直接靠近。圍欄可以擋住大象，但擋不住其他動物。所以我們必須有護送。一吃完午餐，我們就要開始第一次遊獵之旅。大家乾杯。乾杯。我們第一次的河流遊獵。這些流線型船隻使用太陽能動力。所以我們在一艘電動船上，非常安靜。哦，歡迎大家。謝謝。這裡的每一位導遊都是女性——力量、知識和賦權，就在非洲這裡。我絕對喜歡這一點。我們在丘比河上，我的右手邊是納米比亞，左手邊是波札那。牠看起來無害，對吧？但鱷魚每年殺死數百人，大多數是漁民和在河邊洗澡的小孩。波札那是大象之國，毫無疑問。超過13萬頭大象在這裡活動，比非洲任何地方都多。僅丘比國家公園內，估計就有高達5萬頭。從河上看起來非常明顯。一群又一群的大象來到河邊喝水。河岸上充滿了動靜。母親守護著小象，阿姨們守護著邊緣。小象在河邊跌跌撞撞，潑水、玩耍，還在學習自己的鼻子有什麼用。這頭才兩週大的小象笨拙地跪下來喝水——牠笨拙、堅定、令人難忘。你見過這麼可愛的東西嗎？這些家庭的時刻讓我忘記了這裡聚集了多少大象。然後在遠岸，一條鱷魚正在休息——</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">me forget just
-how many elephants can gather here.
-
-Then on the far bank, a crocodile rests,
-sleeping maybe.
-On land, lions dominate. In water,
-crocodiles rule. Would you ever swim
-here? Not a chance.
-The elephants are leaving. Mom must
-wait. The baby, he&#39;s just too busy
-rolling in the sand.
-Dust baths coat their hides, protecting
-them from the sun and the insects. Their
-skin is 2 and 1/2 cm thick is still
-sensitive enough to feel the tickle of a
-single fly.
-During the dry season, life gathers at
-the river&#39;s edge.
-This is our first safari from the water,
-and being on a silent electric boat
-feels surreal.
-No engine noise, just the sounds of
-Africa, the wind, birds, and hippos
-grunting somewhere downstream.
-Across the distance, half a dozen safari
-vehicles crowd the road.
-They&#39;re all pointing towards lions
-resting in the grass,
-but they can&#39;t get closer. National park
-rules keep vehicles on the road.
-From here, we&#39;re drifting silently. The
-view feels more natural, more intimate.
-across the river that&#39;s Namibia.
-
-And there&#39;s even a sister lodge over
-there doing the same style of safaris.
-How wild is that? Two countries, one
-river, and the same animals everyone
-came to see.
-Meet the African fish eagle. At first
-glance, it could pass for the American
-bald eagle.
-Same sharp contrast of colors.
-But what&#39;s their relation, if any? What
-do you think?
-
-Now, this is something unforgettable.
-The Chobi River. It&#39;s one of the few
-places where elephants swim.
-Did you know they&#39;re strong swimmers?
-It&#39;s fascinating to watch. Led by the
-matriarch, they form a single line,
-trunks sticking out like snorkels.
-The youngest trail behind, not the tiny
-babies, but still it&#39;s enough to make
-you worry.
-And just like that, they cross from
-Batswana to Namibia.
-No borders, no visas.
-On the Namibian side, the banks open
-into the grassland.
-You have to wonder, how often do they
-just wander back and forth like this?
-The timing couldn&#39;t be better.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">讓我忘記了這裡聚集了多少大象。然後在遠岸，一條鱷魚正在休息，可能正在睡覺。在陸地上，獅子稱霸。在水中，鱷魚統治。你會在這種地方游泳嗎？門都沒有。大象們要離開了。媽媽必須等待。但寶寶太忙了，牠正在沙裡打滾。沙浴覆蓋在牠們的皮膚上，保護牠們免受陽光和昆蟲的侵害。牠們的皮膚有2.5公分厚，但仍然敏感到能感覺到一隻蒼蠅的搔癢。在乾季，生命聚集在河岸邊。這是我們第一次在水上進行遊獵，身處安靜的電動船上感覺超現實。沒有引擎噪音，只有非洲的聲音——風、鳥鳴，還有河馬在下游某處發出的咕嚕聲。遠方，五六輛遊獵車輛擠在道路上。它們都指向草叢中休息的獅子——但它們無法靠近。國家公園的規則要求車輛留在道路上。從這裡，我們靜靜地漂流。視野感覺更自然、更親密。河對面就是納米比亞。那邊甚至還有一個姊妹旅館，做著同樣風格的遊獵。這多狂野啊？兩個國家、一條河流，同樣是大家來看的動物。認識一下非洲魚鷹。乍看之下，牠可能會被誤認為美國白頭鷹——同樣鮮明的顏色對比。但她們有什麼關係嗎？你怎麼看？現在，這是令人難忘的一幕。丘比河是少數幾處大象會游泳的地方之一。你知道牠們是游泳高手嗎？看著牠們非常迷人。在母象的帶領下，牠們排成一條直線，鼻子像呼吸管一樣伸出水面。最年輕的跟在後面——不是剛出生的小寶寶，但還是讓人有點擔心。就這樣，牠們從波札那游到了納米比亞。沒有邊界，沒有簽證。在納米比亞那一側，河岸延伸進了大草原。你會不禁好奇，牠們是不是經常這樣來回穿梭——</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">he grassland.
-You have to wonder, how often do they
-just wander back and forth like this?
-The timing couldn&#39;t be better. Sunset
-approaches. The light turning golden.
-The river shimmers. The elephant
-silhouetted in the glow.
-Africa at its finest.
-
-The nature show is indescribable.
-
-We&#39;re so close. It feels like we&#39;re a
-part of the herd.
-This is what wild means. This is what
-real feels like.
-In Bosswana, elephants still roam as
-they always have, undomemesticated,
-unchanged.
-They love dust baths. Watch closely. She
-scoops sand with her foot, then uses her
-trunk to toss it across her back.
-Tusk, trunk, foot, every part is a tool.
-Simple, ancient, and just perfect.
-
-At night, you almost forget you&#39;re in
-the wild, except for the river
-glistening outside and the sounds of
-nature all around. With great food and
-good wine, it&#39;s the perfect end to a
-perfect day.
-&gt;&gt; Cheers.
-
-It&#39;s our morning land game drive. And if
-this had been our first safari, we&#39;d be
-thrilled.
-But after Clisseri and Sabi Sands, maybe
-our expectations are too high.
-In national parks, you can&#39;t leave the
-road, even if it&#39;s just dead grass or
-even a dry river bed. And animals don&#39;t
-exactly line up to pose.
-We saw the usual suspects, but no big
-drama. There&#39;s no predators.
-Still, that&#39;s the hunt. It&#39;s not a zoo.
-What do you think? Is it fair to compare
-the private reserves with the national
-parks?
-The lodge sits inside the park, so
-visitors drop by like this gang of
-mongoose tearing up the lawn for lunch.
-This is right in front of our room.
-That&#39;s crazy.
-
-&gt;&gt; Beautifully ugly. That&#39;s the wthog.
-Usually shy, they avoid people.
-But this guy, he acts like he owns the
-place. Lodge groundskeeper, mowing the
-lawn one snortful at a time.
-Little elephants can nurse for nearly 5
-years.
-The boys stick around until their
-teenage years.
-Then mom and aunties kick them out to
-fend for themselves.
-Safari drives are unpredictable.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">大草原。你會不禁好奇，牠們是不是經常這樣來回穿梭？時機再好不過了。夕陽將至，光線變得金黃。河水閃閃發光。大象在餘暉中形成剪影。非洲最美好的時刻。大自然的展演難以形容。我們如此接近，感覺就像我們是象群的一部分。這就是「野生」的意義。這就是「真實」的感覺。在波札那，大象仍然像自古以來那樣自由漫步——未經馴化、未曾改變。牠們喜歡沙浴。仔細看——她用腳鏟起沙子，然後用鼻子把沙子甩到背上。象牙、鼻子、腳——每一個部位都是工具。簡單、古老、完美。到了晚上，你幾乎忘記自己身處野外——除了窗外閃閃發光的河流和四處傳來的自然之聲。配上美食和好酒，這是完美一天的完美結束。乾杯。這是我們的早晨陸地遊獵。如果這是我們第一次遊獵，我們會很興奮。但在克魯格國家公園和薩比沙地之後，也許我們的期望太高了。在國家公園裡，你不能離開道路——即使旁邊只是枯草或乾涸的河床。動物也不會排好隊讓你拍照。我們看到了常見的動物，但沒有什麼大場面——沒有掠食者。不過，這就是狩獵。這不是動物園。你覺得呢？把私人保護區和國家公園相比較，公平嗎？旅館就在公園裡，所以經常有訪客順道拜訪——就像這群貓鼬一樣，在草坪上翻找午餐。這就在我們的房間前面。太瘋狂了。疣豬——漂亮得醜陋。通常牠們很害羞，會避開人類。但這傢伙好像他才是這裡的主人——旅館的園丁，一邊打呼嚕一邊修剪草坪。小象可以哺乳將近五年。公象會待到十幾歲，然後媽媽和阿姨們會把牠們踢出去讓牠們自己生存。遊獵是不可預測的。你永遠不知道轉角處會出現什麼。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">nties kick them out to
-fend for themselves.
-Safari drives are unpredictable. You
-just never know what&#39;s around the
-corner.
-
-And that&#39;s the thrill. The rarer the
-sighting, the bigger reward when it
-happens.
-Our
-trophies are photos hunting for that
-perfect shot.
-
-Would you go on safari? Take the bumps,
-the dust, and the cold mornings. or just
-go to the zoo.
-
-For us, there&#39;s no contest. We love the
-whole experience. The rudded tracks, the
-waiting, the chase.
-
-Because when something finally steps
-into view, when the wild reveals itself,
-it feels like pure magic.
-
-We really enjoyed the boat rides. Seeing
-elephant families up close from the
-river, it feels different and that&#39;s
-unique to hear.
-Yes, you can see elephants everywhere,
-but not like this.
-They&#39;re smart, emotional, their babies
-downright adorable.
-Yet, the locals say their numbers are
-becoming unmanageable.
-Elephants eat destructively, tearing
-habitats apart, tilting nature&#39;s
-balance.
-Honestly, I&#39;m not sure how to feel about
-it or what the solution could be. What
-do you think it could be?
-
-After years in the rat race, retirement
-means one thing for us, and that&#39;s
-travel.
-We cruise, join small groups, go
-independent, and chase safaris.
-
-Check out the rest of our channel. Hit
-like and leave us a comment. We love
-reading them.
-If you&#39;re young and still working,
-invest wisely. Retirement travel is
-worth it.
-
-We started out uh here at the Toby Game
-Lodge right here
-and then we&#39;re going to travel around to
-to three other lodges,
-four in total by flying in small planes.
-
-
-
-You guys are something.
-
-&gt;&gt; Make sure you catch the next one. We&#39;re
-heading to the Okabango Delta. We&#39;ll be
-walking and boat safaris.
-The base camp, the five-star Kugana
-Island Lodge
-with just eight luxury tents. It&#39;s
-small, exclusive, and it&#39;s
-unforgettable.
-
-
-
-See you in the Delta.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">然後媽媽和阿姨們會把牠們踢出去讓牠們自己生存。遊獵是不可預測的。你永遠不知道轉角處會出現什麼。而這正是它的刺激所在——看到越稀有，發生時的收穫就越大。我們的戰利品是照片——我們在捕捉那個完美的鏡頭。你會去遊獵嗎？忍受顛簸、灰塵和寒冷的早晨——還是直接去動物園？對我們來說，這根本不用比。我們熱愛整個體驗——崎嶇的小徑、等待、追逐。因為當某樣東西最終出現在視野中，當野生世界展現在你面前時，那感覺就像純粹的魔法。我們真的很喜歡乘船。從河上近距離觀看大象家族，感覺很不一樣——這是這裡獨有的體驗。沒錯，到處都能看到大象，但不是像這個樣子。牠們很聰明、有感情，牠們的寶寶可愛極了。然而，當地人說牠們的數量正在變得難以管理。大象破壞性地進食，撕裂棲息地，打破自然界的平衡。老實說，我不知道該如何看待這件事，也不知道解決方案會是什麼。你覺得呢？經過多年的職場競賽，退休對我們來說意味著一件事——那就是旅行。我們搭郵輪、參加小團、自由行、追尋遊獵。來看看我們頻道的其他內容。按讚並留言給我們——我們喜歡閱讀它們。如果你還年輕還在工作，請明智地投資。退休旅行值得等待。我們從丘比野生動物旅館出發，然後將乘坐小型飛機前往另外三個旅館——總共四個。你們真是太棒了。記得要看下一部。我們要去奧卡萬戈三角洲了。我們會進行徒步和獨木舟遊獵。根據地是五星級的Kugana Island Lodge，只有八間豪華帳篷。小巧、獨特、令人難忘。我們三角洲見。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: g3ACqCX0m-w | 18:39 | 9,096 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">波札那——原始而無濾鏡的野生天堂。和我們一起沿著丘比河巡航，親眼見證。我們準備好讓波札那震撼我們的心靈。旅遊手冊和Instagram不夠看——是時候體驗真實的一切了。接下來三天，我們把丘比野生動物旅館當作我們的家。我們乘坐開放式遊獵車輛，太棒了。在前往公園的路上，我們基本上會以遊獵的方式前往旅館。歡迎來到波札那的丘比國家公園。我們剛到達公園入口，司機正在為我們辦理入園登記。我們在丘比野生動物旅館住兩晚，這是一家五星級野生動物旅館。在來這裡的路上，我們從辛巴威穿越邊境進入波札那。在邊境附近，我們看到一座橋。在那座橋的那個交叉口，四個不同國家的邊界匯聚於此——納米比亞、尚比亞、辛巴威和波札那。那座橋實際上是通往納米比亞的，我們覺得非常有趣。我們正在前往旅館的路上，剛剛看到一頭害羞的大象。對，牠很害羞，有點不安，不知道該怎麼辦。現在是非洲的冬天。大地乾燥、棕黃、幾乎光禿。僅存的綠色頑固地附著在樹木和灌木的頂端。丘比野生動物旅館是公園內唯一的旅館。與其說是叢林營地，不如說是精品酒店——河岸上的奢華綠洲，就在這片4500平方英里的廣闊荒野邊緣。嗨。來點柳橙汁和檸檬水。謝謝。伊莉莎白·泰勒和理查·波頓在70年代曾在這裡結婚。如今，旅館擁有44間面向河流的客房和四間套房，將奢華與大自然融為一體。休息室、酒吧、河畔涼亭和游泳池都坐落在鬱鬱蔥蔥的花園中。我們剛到達並進入房間，然後就得趕去吃午餐了，因為他們只剩下10分鐘了——</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Arriving at Chobe</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Botswana — raw and unfiltered. Cruise the Chobe River with us and see for yourself. We're ready for Botswana to blow our minds. Brochures and Instagram don't cut it — it's time to experience the real thing. For the next 3 days, we're calling Chobe Game Lodge our home. Welcome to Chobe National Park in Botswana. We just arrived at the park gate and our driver is registering us into the park. We have two nights at the Chobe Game Lodge — a five-star property. Near the border with Zimbabwe, we saw the bridge at the intersection where four different countries share a border: Namibia, Zambia, Zimbabwe, and Botswana.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">我們必須趕快去吃午餐，因為他們只剩下10分鐘可以用餐。一切全包。他們有豐富的菜單可以選擇，還有葡萄酒、烈酒——所有飲料、你的迷你吧、一切——包括洗衣——全部都包含在內。所以到目前為止，我們的第一印象是——哇，這是一個美麗的地方。我覺得我們會被寵壞的。他們還告訴我們要小心，不要在園區內隨意走動，因為動物可能會直接靠近。圍欄可以擋住大象，但擋不住其他動物。所以我們必須有護送。一吃完午餐，我們就要開始第一次遊獵之旅。大家乾杯。乾杯。我們第一次的河流遊獵。這些流線型船隻使用太陽能動力。所以我們在一艘電動船上，非常安靜。哦，歡迎大家。謝謝。這裡的每一位導遊都是女性——力量、知識和賦權，就在非洲這裡。我絕對喜歡這一點。我們在丘比河上，我的右手邊是納米比亞，左手邊是波札那。牠看起來無害，對吧？但鱷魚每年殺死數百人，大多數是漁民和在河邊洗澡的小孩。波札那是大象之國，毫無疑問。超過13萬頭大象在這裡活動，比非洲任何地方都多。僅丘比國家公園內，估計就有高達5萬頭。從河上看起來非常明顯。一群又一群的大象來到河邊喝水。河岸上充滿了動靜。母親守護著小象，阿姨們守護著邊緣。小象在河邊跌跌撞撞，潑水、玩耍，還在學習自己的鼻子有什麼用。這頭才兩週大的小象笨拙地跪下來喝水——牠笨拙、堅定、令人難忘。你見過這麼可愛的東西嗎？這些家庭的時刻讓我忘記了這裡聚集了多少大象。然後在遠岸，一條鱷魚正在休息——</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Chobe Game Lodge</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The Chobe Game Lodge is the only lodge inside the park — more boutique hotel than bush camp, a luxury oasis on the riverbanks at the edge of this vast 4,500-square-mile wilderness. Elizabeth Taylor and Richard Burton married here in the 1970s. Today the lodge has 44 river-facing rooms plus four suites, with lounges, bars, a riverside boma, and a swimming pool among lush gardens. Everything is included — huge menu, wine, alcohol, mini bar, even laundry. First impression: wow, beautiful property. We're going to get spoiled. They warned us to be careful walking around the property because animals can come right up — the fence blocks elephants but nothing else, so we have to be escorted. Our first river safari. These sleek boats run on solar power — an electric boat, extremely quiet. Every guide here is a woman. Strength, knowledge, and empowerment right here in Africa. We're on the Chobe River: Namibia on one side, Botswana on the other.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">讓我忘記了這裡聚集了多少大象。然後在遠岸，一條鱷魚正在休息，可能正在睡覺。在陸地上，獅子稱霸。在水中，鱷魚統治。你會在這種地方游泳嗎？門都沒有。大象們要離開了。媽媽必須等待。但寶寶太忙了，牠正在沙裡打滾。沙浴覆蓋在牠們的皮膚上，保護牠們免受陽光和昆蟲的侵害。牠們的皮膚有2.5公分厚，但仍然敏感到能感覺到一隻蒼蠅的搔癢。在乾季，生命聚集在河岸邊。這是我們第一次在水上進行遊獵，身處安靜的電動船上感覺超現實。沒有引擎噪音，只有非洲的聲音——風、鳥鳴，還有河馬在下游某處發出的咕嚕聲。遠方，五六輛遊獵車輛擠在道路上。它們都指向草叢中休息的獅子——但它們無法靠近。國家公園的規則要求車輛留在道路上。從這裡，我們靜靜地漂流。視野感覺更自然、更親密。河對面就是納米比亞。那邊甚至還有一個姊妹旅館，做著同樣風格的遊獵。這多狂野啊？兩個國家、一條河流，同樣是大家來看的動物。認識一下非洲魚鷹。乍看之下，牠可能會被誤認為美國白頭鷹——同樣鮮明的顏色對比。但她們有什麼關係嗎？你怎麼看？現在，這是令人難忘的一幕。丘比河是少數幾處大象會游泳的地方之一。你知道牠們是游泳高手嗎？看著牠們非常迷人。在母象的帶領下，牠們排成一條直線，鼻子像呼吸管一樣伸出水面。最年輕的跟在後面——不是剛出生的小寶寶，但還是讓人有點擔心。就這樣，牠們從波札那游到了納米比亞。沒有邊界，沒有簽證。在納米比亞那一側，河岸延伸進了大草原。你會不禁好奇，牠們是不是經常這樣來回穿梭——</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Elephant Country</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Botswana is elephant country — no question. Over 130,000 roam here, more than anywhere else in Africa. In Chobe National Park alone, estimates run as high as 50,000. And from the river it shows. Herd after herd descends to drink. The banks alive with movement. Mothers guard their calves. Sisters and aunts guard the edges. Babies stumble at the water's edge — splashing, playing, still learning what their trunks are for. This tiny calf, barely 2 weeks old, kneels awkwardly to drink. Clumsy, determined, unforgettable. These family moments make me forget just how many elephants can gather here. Elephants love dust baths. She scoops sand with her foot, then uses her trunk to toss it across her back. Their skin is 2.5 cm thick, yet still sensitive enough to feel the tickle of a single fly.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">大草原。你會不禁好奇，牠們是不是經常這樣來回穿梭？時機再好不過了。夕陽將至，光線變得金黃。河水閃閃發光。大象在餘暉中形成剪影。非洲最美好的時刻。大自然的展演難以形容。我們如此接近，感覺就像我們是象群的一部分。這就是「野生」的意義。這就是「真實」的感覺。在波札那，大象仍然像自古以來那樣自由漫步——未經馴化、未曾改變。牠們喜歡沙浴。仔細看——她用腳鏟起沙子，然後用鼻子把沙子甩到背上。象牙、鼻子、腳——每一個部位都是工具。簡單、古老、完美。到了晚上，你幾乎忘記自己身處野外——除了窗外閃閃發光的河流和四處傳來的自然之聲。配上美食和好酒，這是完美一天的完美結束。乾杯。這是我們的早晨陸地遊獵。如果這是我們第一次遊獵，我們會很興奮。但在克魯格國家公園和薩比沙地之後，也許我們的期望太高了。在國家公園裡，你不能離開道路——即使旁邊只是枯草或乾涸的河床。動物也不會排好隊讓你拍照。我們看到了常見的動物，但沒有什麼大場面——沒有掠食者。不過，這就是狩獵。這不是動物園。你覺得呢？把私人保護區和國家公園相比較，公平嗎？旅館就在公園裡，所以經常有訪客順道拜訪——就像這群貓鼬一樣，在草坪上翻找午餐。這就在我們的房間前面。太瘋狂了。疣豬——漂亮得醜陋。通常牠們很害羞，會避開人類。但這傢伙好像他才是這裡的主人——旅館的園丁，一邊打呼嚕一邊修剪草坪。小象可以哺乳將近五年。公象會待到十幾歲，然後媽媽和阿姨們會把牠們踢出去讓牠們自己生存。遊獵是不可預測的。你永遠不知道轉角處會出現什麼。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Elephants Swimming & Sunset</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Now, this is something unforgettable. The Chobe River is one of the few places where elephants swim. Did you know they're strong swimmers? Led by the matriarch, they form a single line, trunks sticking out like snorkels. And just like that, they cross from Botswana to Namibia. No borders, no visas. On the Namibian side, the banks open into the grassland. You have to wonder how often they just wander back and forth like this. Sunset approaches — the light turning golden, the river shimmering, the elephant silhouetted in the glow. Africa at its finest. In Botswana, elephants still roam as they always have — undomesticated, unchanged. This is what wild means. This is what real feels like.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">然後媽媽和阿姨們會把牠們踢出去讓牠們自己生存。遊獵是不可預測的。你永遠不知道轉角處會出現什麼。而這正是它的刺激所在——看到越稀有，發生時的收穫就越大。我們的戰利品是照片——我們在捕捉那個完美的鏡頭。你會去遊獵嗎？忍受顛簸、灰塵和寒冷的早晨——還是直接去動物園？對我們來說，這根本不用比。我們熱愛整個體驗——崎嶇的小徑、等待、追逐。因為當某樣東西最終出現在視野中，當野生世界展現在你面前時，那感覺就像純粹的魔法。我們真的很喜歡乘船。從河上近距離觀看大象家族，感覺很不一樣——這是這裡獨有的體驗。沒錯，到處都能看到大象，但不是像這個樣子。牠們很聰明、有感情，牠們的寶寶可愛極了。然而，當地人說牠們的數量正在變得難以管理。大象破壞性地進食，撕裂棲息地，打破自然界的平衡。老實說，我不知道該如何看待這件事，也不知道解決方案會是什麼。你覺得呢？經過多年的職場競賽，退休對我們來說意味著一件事——那就是旅行。我們搭郵輪、參加小團、自由行、追尋遊獵。來看看我們頻道的其他內容。按讚並留言給我們——我們喜歡閱讀它們。如果你還年輕還在工作，請明智地投資。退休旅行值得等待。我們從丘比野生動物旅館出發，然後將乘坐小型飛機前往另外三個旅館——總共四個。你們真是太棒了。記得要看下一部。我們要去奧卡萬戈三角洲了。我們會進行徒步和獨木舟遊獵。根據地是五星級的Kugana Island Lodge，只有八間豪華帳篷。小巧、獨特、令人難忘。我們三角洲見。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Land Game Drives & Honest Verdict</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/g3ACqCX0m-w/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">It's our morning land game drive. And if this had been our first safari, we'd be thrilled. But after Klaserie and Sabi Sands, maybe our expectations are too high. In national parks, you can't leave the road. Animals don't exactly line up to pose. We saw the usual suspects, but no big drama. Still, that's the hunt. It's not a zoo. We really enjoyed the boat rides. Seeing elephant families up close from the river — it feels different, and that's unique to this place. Yes, you can see elephants everywhere, but not like this. They're smart, emotional, their babies downright adorable. Yet the locals say their numbers are becoming unmanageable. Elephants eat destructively, tearing habitats apart, tilting nature's balance. I'm not sure what the solution could be. What do you think? After years in the rat race, retirement means one thing for us: travel. We cruise, join small groups, go independent, and chase safaris. If you're young and still working, invest wisely — retirement travel is worth it. Make sure you catch the next one. We're heading to the Okavango Delta — walking and boat safaris at the five-star Khwai Island Lodge with just eight luxury tents. Small, exclusive, and unforgettable. See you in the Delta.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

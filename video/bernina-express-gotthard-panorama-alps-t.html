@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,467 +106,106 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Welcome back  to BC Travel. We
-roam the world and you&#39;re part of the
-journey.
-This adventure  covers
-Switzerland end to end. Exploring St.
-Maritz, riding the Bernina and Godhard
-trains, crossing Lake Lassern, and we
-conclude our travels  in St.
-Gallen.
-Located high in Switzerland&#39;s 
-Encanden Valley, St. Maritz has earned
-its reputation as the playground 
-of the elite.
-Known for world-class skiing, designer
- boutiques, and 300 sunny days
-each year, it remains one  of the
-most premier and enduring mountain
-destinations for winter sports and
-luxury travel enthusiasts worldwide.
-We have a full day here to explore and
-we&#39;re going to go up and see it from a
-fernicular.
-It&#39;s a really highend kind of
-expensive
-town and they have a lot of skiing here
-in the winter time.
-&gt;&gt; I think it&#39;s all about skiing.
-&gt;&gt; Yeah, there it&#39;s all about skiing. and
-they have ski lifts all over the place.
-&gt;&gt; And right now we&#39;re kind of in a soldier
-a a season where there&#39;s no skiing and
-it&#39;s not really summer anymore. So
-&gt;&gt; totally the off season. It&#39;s very quiet.
-But I would imagine in the ski season
-it&#39;s completely packed.
-They&#39;ve had world ski championships
-here. I think they had the Olympics at
-one point.
-It&#39;s a big time ski place. Snow ski
-place.
-&gt;&gt; All the stores are closed. 
-&gt;&gt; You can tell it&#39;s off season. Nobody&#39;s
-here.
-St. Maritz doesn&#39;t mess around.
-88 lifts cover  this massive ski
-playground.
-From finiculars to high-speed chairs to
-those awkward little button lifts for
-beginners, it&#39;s all here.
-And the runs
-350 
-km of snowpack glory stretching across
-one of the world&#39;s most famous mountain
-playgrounds.
-&gt;&gt; It&#39;s really a small town. It&#39;s just all
-skis. This is where we stop on the
-train. But from here you can go all the
-way up and then end up clear up up there
-too. We&#39;re going to take this finicular
-up. But this is all set up for winter
-tourism for skiing 
-all over the place up there. There&#39;s
-this one takes you to one landing and
-you get on another one. You go up and
-you can go all over the mountains.
-You&#39;re up there.
-&gt;&gt; Can I come with you?
-&gt;&gt; Yeah. Come on in.
-The finicular connects the city&#39;s valley
-floor up to 2,46
-m roughly in 20 minutes.
-It begins inside a long tunnel
-constructed years ago before emerging
-among new hillside developments. 
-The surrounding homes are distinctly
-modern, featuring sharp architecture and
-lake views. 
-It&#39;s a big contrast to the region&#39;s
-traditional chalet style.
-
-This area clearly represents St.
-Marissa&#39;s high-end contemporary face.
-Lake St. Ma</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">這場冒險橫跨了整個瑞士——探索聖莫里茨、搭乘伯連納快車和哥達全景列車、橫越盧塞恩湖，最後在聖加侖結束。位於瑞士恩加丁山谷高處的聖莫里茨，贏得了精英階層遊樂場的美譽。以世界級滑雪、設計師精品店和每年300個晴天聞名，它仍然是冬季運動和奢華旅行首屈一指的山區目的地。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Bernina Express & Gotthard Panorama: Alps to Lakes</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">.
-&gt;&gt; You could you could spend all day just
-skiing different slopes
-all over the mountain.
-It&#39;s amazing. Look at these neat
-specialized equipment.
-Oh, wow. Look at this.
-a restaurant.
-That looks kind of inviting, doesn&#39;t it?
-&gt;&gt; There&#39;s another ski lift up over there.
-&gt;&gt; Jeez, this a skier&#39;s heaven.
-Once you&#39;re up here, you going to stay
-up here all day, hike and ski.
-There is quite a beautiful view here.
-&gt;&gt; How they go to the
-&gt;&gt; Okay. So, we took a finicular to here
-and then from here you can take a cable
-car.
-&gt;&gt; During the winter the lifts move about
-20,000 people hourly.
-During the off season, it&#39;s closer to
-200 per day. Mostly the visitors are
-enjoying the panoramic mountain 
-views.
-It&#39;s all about the view.
-&gt;&gt; I can imagine it be gorgeous skiing up
-here if you&#39;re a skier.
-&gt;&gt; Outside the ski  season, the
-lifts don&#39;t rest. Hikers and mountain
-bikers take over the slopes.
-The current cable car system 
-first opened in 1954.
-And then it got a serious modern
-faceelift during the 1990s.
-It still runs smooth as ever.
-During the summer and the fall, 
-the crews are maintaining every ski run.
-Heavy equipment move across the slopes
-and the lake that supplies snow machines
- is completely filled.
-This ensures that everything is ready
-for the early winter snow season.
-&gt;&gt; Rocking and rolling.
-300 m above sea level. The air sharpens
-here. The black runs  drop steep
-and fast. Once carved by the Olympic
-legends.
-We&#39;re at about 9,000 ft at this point.
-And they have this walkway.
-Holy moly.
-That you can really see everything.
-Check this out.
-&gt;&gt; Spectacular, huh?
-&gt;&gt; Looking for a restaurant with a view?
-Try this. It&#39;s probably the highest
-place we&#39;ve ever eaten.
-Perched on the top station, this
-panoramic  spot is one of eastern
-Switzerland&#39;s highest year round dining
-location.
-The views unreal.
-Snowcapped peaks, a turquoise lake
-below, and air  so clear it feels
-fake.
-It&#39;s hard to imagine  this place
-packed with skiers flying down those
-slopes.
-Now we go back down  and tomorrow
-the Bernina Express.
-Next up, we&#39;re hopping on the Bernina
-Express. A worldrenown panoramic train
-connects St. Maritz to Toronto. It
-crosses dramatic alpine landscapes.
-They built this  line between
-1908 and 1910. No modern machines, just
-grit and muscle.
-It climbs to 2,253
-m at Opisio Bernina.  That&#39;s one
-of Europe&#39;s highest crossings.
-There&#39;s no cog wheels here, just pure
-traction, handling a 7% grade.
-For context, most railways  panic
-at three. This one just keeps climbing.
-At high elevations, the </div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">團隊在淡季——夏冬之交——造訪聖莫里茨，小鎮幾乎空無一人。大多數商店都關門了，街道很安靜。但基礎設施令人瞠目結舌：88條滑雪纜車、350公里的滑雪道，以及20分鐘內從谷底上升到2,460公尺的纜車。纜車從一條長隧道內開始，然後出現在現代化的山坡開發區和壯麗的湖景前。聖莫里茨湖在夏天變成鮮豔的藍色，冬天則完全結冰，自1907年以來舉辦賽馬活動。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">t hiking trails snaking
-in every direction.
-Hiking in Switzerland isn&#39;t extreme.
-It&#39;s just what people do.
-Families, kids, even grandparents,
-they&#39;re all with walking poles.
-The signs, they&#39;re unreal. Everything is
-timed, marked, and mapped.
-You can literally hop off this train,
-hike to the next station. And the sign
-tells you exactly how long it&#39;ll take.
-Now we&#39;re going down a very steep hill,
-quickly doing a full turn.
-We&#39;re doing switchbacks. We&#39;ve already
-been by this lake before, but we did a
-full switch back and now we&#39;re going by
-it again at a lower level.
-As the Bernina Express descends towards
-Italy, the scenery transitions 
-dramatically.
-Stoneuilt villages appear, fields grow
-greener,  and the rock stratda
-shift to warmer reddish tones.
-The vegetation thickens, giving way to
-chestnut and decidious  trees.
-marking a clear ecological and cultural
-shift from the alpine environment of
-Switzerland to the Mediterranean
-foothills of northern  Italy.
-And then comes the wild part. The train
-starts looping like it&#39;s lost its mind.
-This is the famous Brucio spiral 
-vioideuct.
-It&#39;s a perfect stone circle that lets
-the Bernina Express  drop
-altitude without going too steep.
-It&#39;s pure old school engineering 
-genius built long before computers.
-And just like that, we&#39;re in Italy.
-Vineyards and fields.
-The train rolls straight through
-Toronto,  right past a church
-like a street car.
-Then reality hits.  Two-hour wait
-for the Bernina Express bus. Offse life.
-Still, once on board,  the ride
-along Lake Ko, tight switchbacks,
-mountain passes, and hairpin climbs was
-wild,  beautiful, and
-unforgettable.
-Lugano looks gorgeous. 
-But after a long travel day, 
-it&#39;s just dinner, wine, and sleep.
-Tomorrow,  another journey awaits
-us at dawn.
-Good morning. We are on the Got Power
-Panoramic Express drain and we have like
-almost floor to ceiling windows. They&#39;re
-curved so you can see all the way up
-into the mountains as you go along the
-way. It&#39;s a three-hour journey and we&#39;re
-going from Lugano to Lousern. Three
-hours on the train and two hours on a
-boat. We&#39;re going to actually cross
-cross the lake which will be fantastic.
-So, we&#39;re going to be going through um a
-long tunnel that used to be the longest
-tunnel in the world and also spiral
-tunnels, which is very interesting. So,
-it&#39;s going to be a great trip and we&#39;re
-going right over the over the Alps.
-This train track was built in the 1800s.
-A lot of history here, but there was
-&gt;&gt; there was this vision to to connect one
-side o</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">伯連納快車是一條世界聞名的全景列車，連接聖莫里茨和義大利的提拉諾。建於1908年至1910年間，沒有現代機器——只有毅力和體力——它爬升到奧斯皮齊奧伯連納的2,253公尺，是歐洲最高的鐵路交叉點之一。這列火車沒有齒輪——純靠牽引力應付7%的坡度。在高海拔地區，它穿過一片荒蕪、幾乎像月球表面的岩石區和殘雪。火車會停下來讓乘客拍照，健行步道向各個方向蜿蜒而去。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">Italian because they speak Italian. They
-are growing a lot of wine and they have
-a lot of pasta and pizza.
-And then when we get to the German part
-of uh Switzerland,
-they have a lot of meat and potatoes.
-and beer. Beer, meat, and potatoes.
-&gt;&gt; So, there&#39;s the drill head that they
-used to make the tunnel.
-&gt;&gt; It&#39;s huge.
-&gt;&gt; And the tunnel is 15 km long. It at one
-time was the longest tunnel 
-&gt;&gt; and it goes right through the Alps.
-&gt;&gt; Used to take 15 or 50 hours to get them
-along
-&gt;&gt; without the tunnel. And they
-&gt;&gt; She&#39;s lying. She&#39;s lying. They felt that
-basically Switzerland would be left
-behind if they didn&#39;t connect
-Mediterranean 
-&gt;&gt; through the Alps to the other part of
-Switzerland. So they engineered a 15 km
-
-&gt;&gt; tunnel and it took them 8 years to
-build.
-We have a a tour guide on board 
-explaining everything as we move along
-the way.
-Swiss train engineering. When there&#39;s a
-mountain in the way, they don&#39;t go
-around or over it.  They just
-punch straight through.
-Then you pop out on the north side and
-it feels like another world.
-Passing the BS  China vioaduct.
-Unreal.
-The bridge  clings to the cliffs
-for miles.
-It&#39;s massive, almost terrifying, and
-absolutely beautiful.
-You can only imagine the view from up
-there.
-If you&#39;ve ever driven that stretch, drop
-a comment below. I&#39;d love to know what
-it&#39;s like.
-Uh we finished our journey on the train
-and now we&#39;re heading over to the boat
-and the boat&#39;s going to take us across
-Lake Lassern to uh Lassern where we&#39;re
-going to spend the night.
-&gt;&gt; What&#39;s really nice is when we checked
-into the train, they took our luggage so
-we don&#39;t have to deal with the luggage
-until we get on the other side of the
-lake.
-Oh, that was a beautiful.
-&gt;&gt; Yeah. There goes our train.
-The Godard Panoramic Express.
-This isn&#39;t some tourist cruise. It&#39;s a
-real boat.
-Locals actually use it to get between
-towns and around the lake. And today
-we&#39;re just part of their commute.
-Lakes of Switzerland are on another
-level.
-The mountains, they dive straight into
-the deep blue water.
-Meadows spill down the slopes
-and cows graze near storybook chalets.
-It looks fake, like a perfect postcard
-that somehow came alive.
-The full ride takes about 3 hours. And
-honestly, it&#39;s the most relaxing part of
-our whole journey.
-On the panoramic trains, the scenery
-races by. Here it drifts past slowly,
-almost hypnotic. Every view more
-beautiful than the last.
-Viewing Switzerland from the lake offers
-a deeper perspective.
-You glide past tiny towns, hikers
-returning, locals com</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">接下來是哥達全景列車，穿越瑞士戲劇性的阿爾卑斯心臟地帶。旅程帶領乘客穿過91條隧道和291座橋樑，這條路線花費了超過半個世紀才開鑿出來。上阿爾卑斯山口爬升到2,033公尺，是歐洲最高的鐵路路線之一。工程設計與景觀一樣令人驚嘆。緩慢而持續的移動產生了平靜的節奏，而窗外的景色則提供了持續的視覺享受——雄偉的山脈、阿爾卑斯山谷、迷人的村莊和歷史悠久的橋樑。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">t in person, it&#39;s more way
-more. We didn&#39;t think a whole country
-could look this perfect.
-Maybe we&#39;re wearing rosecolored glasses.
-Who knows?
-Everything seems spotless, balanced,
-almost too good.
-As we near the end of Lake Lassern, the
-towns grow,
-hills fill with farmhouses, and life
-feels busier.
-You can tell the city&#39;s close, but even
-that chaos looks picture ready.
-And here we are, Lucern again.
-Right where this whole Swiss adventure
-began a week ago.
-We&#39;ve got a full video about Lassern, so
-check that out if you haven&#39;t yet.
-Tonight is just for rest because
-tomorrow, the last train ride awaits.
-Good morning. This is our last day on
-our grand tour of Switzerland by train.
-And this morning, we left Lucern and
-we&#39;re heading to St. gallon and we&#39;re on
-the Voler Pan Express train, 3 hours.
-We&#39;re going to see uh the longest
-viaduck and the high or the highest
-viaduct in Switzerland as well as the
-longest walking bridge.
-This isn&#39;t a fancy panoramic 
-train, just a regular commuter line.
-No curved windows, but the same killer
-view.
-Clouds roll in  as we pass Lake
-Zurich&#39;s upper end and spot the longest
-walkable wooden bridge over 800 meters
-long.
-It&#39;s pedestrian only. Super popular with
-hikers, especially at  sunset.
-I bet those views are unreal.
-We arrived at St. gallon, our last stop
-on our uh grand journey around
-Switzerland. And it&#39;s Sunday, believe it
-or not, in Switzerland. On Sunday, they
-close everything. They want everyone to
-to stay home and rest. As a matter of
-fact, you&#39;re not even allowed to mow
-your lawn. And if everything is closed,
-well, then you&#39;re going to stay home.
-So, we&#39;re on this beautiful walking
-street in St. Gallon, the old town. and
-not one thing is open. So, it&#39;s kind of
-interesting. But, you know, we&#39;ve been
-to places where they had uh siestas for
-a few hours, but on Sunday in
-Switzerland, everything is shut down.
-And you really see it here because it&#39;s
-a beautiful old town walking street with
-lots of beautiful boutique shops and
-nothing open.
-&gt;&gt; Unfortunately, we&#39;re here on a Sunday.
-our last day and I wanted to buy some
-chocolate. 
-&gt;&gt; I have to buy it at the airport.
-
-But look at these cute shops. It&#39;s
-really
-amazing.
-The top thing to see in St. Gallon is
-the Abbey Library.
-And luckily it&#39;s open on  Sunday,
-so we&#39;re heading there.
-The Abbey Library in St. Gallen is one
-of the oldest libraries in the world.
-It was founded way back in 612.
-Walking inside feels like 
-stepping straight into someone&#39;s fantasy
-of what a library should </div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">乘船橫越盧塞恩湖，團隊從另一個角度體驗瑞士的風景。湖泊像一台巨大的溫暖引擎，儲存陽光，而周圍的山峰則阻擋了北方的寒冷。旅程在聖加侖結束，這裡有著名的修道院區和圖書館。在整個旅程中，持續的視覺刺激加上火車安靜平穩的行駛，產生了冥想般的效果。瑞士著名的全景列車確實提供了一種難忘的方式來體驗阿爾卑斯山。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: CIpEEV4szag | 27:15 | 2,770 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">這場冒險橫跨了整個瑞士——探索聖莫里茨、搭乘伯連納快車和哥達全景列車、橫越盧塞恩湖，最後在聖加侖結束。位於瑞士恩加丁山谷高處的聖莫里茨，贏得了精英階層遊樂場的美譽。以世界級滑雪、設計師精品店和每年300個晴天聞名，它仍然是冬季運動和奢華旅行首屈一指的山區目的地。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. St. Moritz: Off-Season Exploration</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Welcome back to BZ Travel. We roam the world and you're part of the journey. This adventure covers Switzerland end to end — exploring St. Moritz, riding the Bernina and Gotthard trains, crossing Lake Lucerne, and concluding our travels in St. Gallen. Located high in Switzerland's Engadin Valley, St. Moritz has earned its reputation as the playground of the elite — known for world-class skiing, designer boutiques, and 300 sunny days each year. We have a full day here to explore and we're going to go up via the funicular. St. Moritz has 88 lifts covering this massive ski playground, from funiculars to high-speed chairs to button lifts for beginners. 350 km of snowpack stretching across one of the world's most famous mountain playgrounds. Right now it's the off-season — very quiet, stores are closed. But in ski season, this place is completely packed. They've had world ski championships here.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">團隊在淡季——夏冬之交——造訪聖莫里茨，小鎮幾乎空無一人。大多數商店都關門了，街道很安靜。但基礎設施令人瞠目結舌：88條滑雪纜車、350公里的滑雪道，以及20分鐘內從谷底上升到2,460公尺的纜車。纜車從一條長隧道內開始，然後出現在現代化的山坡開發區和壯麗的湖景前。聖莫里茨湖在夏天變成鮮豔的藍色，冬天則完全結冰，自1907年以來舉辦賽馬活動。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. Cable Car to Klein Matterhorn Heights</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">The funicular connects the city's valley floor up to 2,460 m in roughly 20 minutes. It begins inside a long tunnel before emerging among new hillside developments — featuring sharp architecture and lake views. A big contrast to the region's traditional chalet style. During the winter the lifts move about 20,000 people hourly. During the off-season, it's closer to 200 per day. Outside ski season, hikers and mountain bikers take over the slopes. The current cable car system first opened in 1954 and got a serious facelift during the 1990s. Looking for a restaurant with a view? Try this — it's probably the highest place we've ever eaten. Perched on the top station, one of eastern Switzerland's highest year-round dining locations. Snowcapped peaks, a turquoise lake below, and air so clear it feels fake.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">伯連納快車是一條世界聞名的全景列車，連接聖莫里茨和義大利的提拉諾。建於1908年至1910年間，沒有現代機器——只有毅力和體力——它爬升到奧斯皮齊奧伯連納的2,253公尺，是歐洲最高的鐵路交叉點之一。這列火車沒有齒輪——純靠牽引力應付7%的坡度。在高海拔地區，它穿過一片荒蕪、幾乎像月球表面的岩石區和殘雪。火車會停下來讓乘客拍照，健行步道向各個方向蜿蜒而去。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. The Bernina Express</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Next up, we're hopping on the Bernina Express — a world-renowned panoramic train connecting St. Moritz to Tirano, Italy. It crosses dramatic alpine landscapes built between 1908 and 1910, no modern machines, just grit and muscle. It climbs to 2,253 m at Ospizio Bernina — one of Europe's highest crossings. No cog wheels here, just pure traction handling a 7% grade. For context, most railways panic at three percent. As the Bernina Express descends towards Italy, the scenery transitions dramatically. Stone-built villages appear, fields grow greener, and the rock strata shift to warmer reddish tones. The vegetation thickens, giving way to chestnut and deciduous trees — marking a clear ecological and cultural shift from the alpine environment of Switzerland to the Mediterranean foothills of northern Italy. Then comes the wild part: the famous Brusio spiral viaduct. A perfect stone circle that lets the Bernina Express drop altitude without going too steep — pure old-school engineering genius built long before computers. And just like that, we're in Italy. The train rolls straight through Tirano, right past a church like a streetcar. Then a two-hour wait for the Bernina Express bus. Once on board, the ride along Lake Como — tight switchbacks, mountain passes, and hairpin climbs — was wild, beautiful, and unforgettable.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">接下來是哥達全景列車，穿越瑞士戲劇性的阿爾卑斯心臟地帶。旅程帶領乘客穿過91條隧道和291座橋樑，這條路線花費了超過半個世紀才開鑿出來。上阿爾卑斯山口爬升到2,033公尺，是歐洲最高的鐵路路線之一。工程設計與景觀一樣令人驚嘆。緩慢而持續的移動產生了平靜的節奏，而窗外的景色則提供了持續的視覺享受——雄偉的山脈、阿爾卑斯山谷、迷人的村莊和歷史悠久的橋樑。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. Gotthard Panorama Express & Lake Lucerne</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Good morning. We are on the Gotthard Panorama Express train and we have almost floor-to-ceiling curved windows — you can see all the way up into the mountains as you go along. It's a three-hour journey from Lugano to Lucerne, then two hours on a boat crossing the lake. We're going through the Gotthard Tunnel — once the longest tunnel in the world, 15 km straight through the Alps. It took 8 years to build. Switzerland felt it couldn't connect the Mediterranean Italian-speaking side to the German-speaking side any other way. Swiss train engineering: when there's a mountain in the way, they don't go around or over it — they punch straight through. Passing the Biaschina Viaduct — unreal. The bridge clings to the cliffs for miles. It's massive, almost terrifying, and absolutely beautiful. We finished our journey on the train and now we're heading over to the boat to cross Lake Lucerne. What's really nice is they took our luggage when we checked in — we don't have to deal with it until we get on the other side of the lake. The Gotthard Panoramic Express boat is a real working boat. Locals actually use it to get between towns. Lakes of Switzerland are on another level. The mountains dive straight into the deep blue water. Meadows spill down the slopes and cows graze near storybook chalets. It looks fake — like a perfect postcard that somehow came alive.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">乘船橫越盧塞恩湖，團隊從另一個角度體驗瑞士的風景。湖泊像一台巨大的溫暖引擎，儲存陽光，而周圍的山峰則阻擋了北方的寒冷。旅程在聖加侖結束，這裡有著名的修道院區和圖書館。在整個旅程中，持續的視覺刺激加上火車安靜平穩的行駛，產生了冥想般的效果。瑞士著名的全景列車確實提供了一種難忘的方式來體驗阿爾卑斯山。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Final Day: St. Gallen</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/CIpEEV4szag/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Good morning — this is our last day on our grand tour of Switzerland by train. We left Lucerne and we're heading to St. Gallen on the Voralpen-Express, 3 hours. We're going to see the longest viaduct and the highest viaduct in Switzerland, as well as the longest walking bridge. This isn't a fancy panoramic train, just a regular commuter line — no curved windows, but the same killer view. We spot the longest walkable wooden bridge, over 800 meters long, pedestrian only. Super popular with hikers, especially at sunset. We arrived at St. Gallen on a Sunday. In Switzerland on Sunday, they close everything. You're not even allowed to mow your lawn. It's a beautiful old town walking street with lovely boutique shops — and nothing is open. Unfortunately, we're here on our last day and I wanted to buy some chocolate. I'll have to buy it at the airport. The top thing to see in St. Gallen is the Abbey Library — one of the oldest libraries in the world, founded in 612. Walking inside feels like stepping straight into someone's fantasy of what a library should be. 【Note: 原始逐字稿在此截斷，結尾描述不完整。】</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">

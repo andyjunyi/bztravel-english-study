@@ -79,7 +79,10 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
 .footer{text-align:center;padding:24px 16px 16px;font-size:12px;color:#94a3b8}
 .footer a{color:#3b82f6;text-decoration:none}
 @media(max-width:480px){.header h1{font-size:17px}.section{padding:12px}.acc-header{padding:8px 10px}.acc-label{font-size:12px}}
-</style>
+
+@font-face{font-family:NotoSansTC;src:url(../fonts/NotoSansTC-VF.ttf) format(truetype);font-weight:100 900}
+body{font-family:NotoSansTC,Segoe UI,sans-serif}
+@media print{.acc-body{display:block!important}.para-zh{display:block!important}.para-zh-toggle{display:none!important}.acc-icon{display:none!important}.quiz-choice{pointer-events:none!important}.quiz-feedback{display:block!important}.collo-play,.collo-play-sm,audio,.quiz-reset{display:none!important}.video-wrap iframe,.section-nav{display:none!important}.header{padding:20px 16px 30px!important}.header::after{height:0!important}.video-wrap{margin-top:0!important;box-shadow:none!important}.section{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid}*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}}</style>
 </head>
 <body>
 <div class="header">
@@ -103,264 +106,118 @@ body{background:#f0f4ff;color:#1e293b;font-family:'Segoe UI',system-ui,-apple-sy
     <a href="#section-quiz">📝 測驗</a>
   </div>
   <div id="section-reading" class="section">
-    <div class="section-title"><span>📖</span> 全文閱讀</div>
-    <div class="section-sub">點選段落標題展開，其他段落自動收起</div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
-        <span class="acc-label">1. Part 1</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p1">
-        <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p1.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">In this video, we take you to Victoria
-Falls. It&#39;s one of Earth&#39;s rawest, most
-violent, most beautiful sites.
-Join us as we stroll the rim of Victoria
-Falls, then relax on a sunset cruise
-along the Zambzi River.
-Victoria Falls sits right where
-Zimbabwe, Zambia, and Namibia come
-together. Nature&#39;s border and
-spectacular all-in-one.
-The city of Victoria Falls thrives under
-the shadow of its namesake.
-This one destination pumps 15% into
-Zimbabwe&#39;s GDP.
-
-Nearly every household is connected to
-tourism. 90% of the residents working in
-hotels, guiding or hospitality.
-Here the falls are both spectacular and
-survival.
-&gt;&gt; Victoria Falls National Park.
-Victoria Falls is different from any
-waterfall you&#39;ve ever seen.
-Others tumble off cliffs. This one,
-the Zambzi flows gently for a thousand
-kilometers,
-then drops suddenly into a crack in the
-Earth&#39;s crust.
-From a helicopter, you really see it. It
-doesn&#39;t fall over, it falls in.
-A chasm carved by ancient volcanoes and
-time.
-That&#39;s what sets it apart.
-The mist, smoke that thunders, as locals
-call it</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">維多利亞瀑布是地球上最原始、最猛烈、最美麗的景點之一。旅行者沿著瀑布邊緣漫步，隨後在尚比西河上享受日落遊船。維多利亞瀑布位於辛巴威、尚比亞和納米比亞的交界處——大自然與壯麗景觀的完美結合。維多利亞瀑布城在其同名瀑布的陰影下蓬勃發展，這個單一目的地為辛巴威的GDP貢獻了15%。</div>
-      </div>
+  <div class="section-title"><span>📖</span> 全文閱讀</div>
+  <div class="section-sub">點選段落標題展開內容，點選其他段落自動收起</div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p1')">
+      <span class="acc-label">1. Victoria Falls & Zambezi Sunset Cruise</span>
+      <span class="acc-icon">▾</span>
     </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
-        <span class="acc-label">2. Part 2</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p2">
-        <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p2.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">, rises to astonishing heights,
-sometimes as tall as New York&#39;s Empire
-State Building.
-
-Can you believe the power?
-The drop is staggering over 100 m
-straight down.
-The thunder that follows is so immense
-it can be heard from 40 kilometers away,
-echoing through the land.
-
-For travelers, Victoria Falls is a
-bucket list destination.
-
-On the Zimbabian side, jungle trails
-lead to numbered viewpoints where you
-can stare directly into the wall of the
-falling water.
-It&#39;s no surprise it&#39;s one of seven
-natural wonders of the world.
-
-The mist creates a rainforest ecosystem,
-lush and dripping.
-But be aware, without a poncho, you&#39;re
-getting drenched.
-
-So green like everywhere. Everywhere
-else is dry, dry, dry. And here it&#39;s
-like a jumble.
-Yeah, it&#39;s beautiful.
-I&#39;ve stood before many waterfalls, yet
-none rival the raw power of this.
-You just walk along and then you can go
-off these sides and get different views
-of it. Whoa.
-With
-&gt;&gt; the sun shining on it.
-My gosh,
-that&#39;s a lot of water.
-&gt;&gt; It&#39;s a curtain of water nearly 2
-kilometers wide.
-Half a billion lers tumbling every
-minute.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">維多利亞瀑布與你所見過的任何瀑布都不同。其他瀑布從懸崖邊傾瀉而下，而維多利亞瀑布——尚比西河平靜地流淌了一千公里，然後突然墜入地殼的一條裂縫中。從直升機上你才能真正看到：它不是流下來，而是流進去。一個由古代火山和時間共同雕刻而成的深淵，這就是它的與眾不同之處。落差超過100公尺，雷鳴般的轟響在40公里外都能聽到。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
-        <span class="acc-label">3. Part 3</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p3">
-        <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p3.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">on lers tumbling every
-minute. The roar, the spray, the force.
-This is Victoria Falls,
-among the most powerful waterfalls on
-the planet.
-So, like there&#39;s so much mist. It&#39;s like
-it&#39;s pouring down rain. It&#39;s unreal.
-I&#39;m lost for words. Seeing this leaves
-me speechless.
-You can&#39;t really get a sense of how big
-it is till you walk along.
-&gt;&gt; Yeah.
-&gt;&gt; Over a mile.
-&gt;&gt; How many?
-&gt;&gt; Over a mile.
-&gt;&gt; Over a mile.
-&gt;&gt; Yeah,
-&gt;&gt; it&#39;s over a mile.
-&gt;&gt; Oh,
-talk about a drop off.
-&gt;&gt; It&#39;s like straight down.
-&gt;&gt; Across the gorge lies Zambia.
-And at the end of the trail stands the
-famous bridge, an iron arc that connects
-the two countries across the roar of
-Victoria Falls.
-And this is the zipline here. You can go
-over the garage.
-&gt;&gt; You can walk out to the middle of the
-bridge.
-But if you want to cross, it requires a
-Zambian visa and a Zimbabwean multiple
-entry.
-After the last viewing of the
-waterfalls, now we&#39;re just taking a
-short walk through the rainforest.
-And you can tell everything is green.
-It&#39;s like a jungle here.
-It&#39;s a rainforest.
-Incredibly different microclimate.
-&gt;&gt; Did you have fun?
-&gt;&gt; Oh, it&#39;s definitely something you have
-to do.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在辛巴威一側，叢林小徑通向編號的觀景點，你可以直接凝視傾瀉而下的水牆。水霧創造了一個雨林生態系統，鬱鬱蔥蔥、濕潤欲滴。沒有雨衣，你一定會全身濕透。對比非常明顯——其他地方乾燥棕黃，但這裡是茂密的叢林。站在瀑布前，敘述者說：「我去過許多瀑布，但沒有一個能與這座的原始力量相比。」</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
-        <span class="acc-label">4. Part 4</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p4">
-        <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p4.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">erent microclimate.
-&gt;&gt; Did you have fun?
-&gt;&gt; Oh, it&#39;s definitely something you have
-to do. It&#39;s like for sure a thing you
-can do if you can afford it. It&#39;s
-nothing like the pictures of the videos.
-To experience it is worthwhile. It&#39;s
-spectacular. I loved every minute. As
-we&#39;re hiking to the exit, you can see
-that this is the rainforest and then
-immediately it turns dry.
-This is the normal U environment during
-the winter.
-
-Zambzi Explorer. We&#39;re on the middle
-deck
-and everything&#39;s included.
-A sunset cruise on the Zambzi.
-Glass in hand and the horizon is on
-fire.
-It&#39;s almost impossible to imagine this
-peaceful river soon plunging into the
-chaos of the Victoria Falls.
-There he is enjoying life,
-&gt;&gt; enjoying retirement.
-&gt;&gt; Yes, you are.
-&gt;&gt; Relaxing, scenic, simple. The perfect
-way to spend.
-There&#39;s all different kinds of uh
-&gt;&gt; tours you can take depending on your
-whatever you choose. It&#39;s like almost a
-dugout. These have these pontoons.
-The scale of the Zambbezzi takes you by
-surprise.
-Wide waters stretch between Zambia and
-Zimbabwe
-with riverfront lodges glimmering on the
-Zambian banks.
-
-Far ahead, the mist of Victoria Falls
-towers into the sky.
-Boats keep their distance.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">在尚比西探險者號上的日落遊船是結束一天的完美方式。手持酒杯，地平線燃燒如火。很難想像這條平靜的河流很快就會衝入維多利亞瀑布的混亂之中。寬闊的水域在尚比亞和辛巴威之間延伸，尚比亞岸邊的河畔小屋閃爍著光芒。遠方，維多利亞瀑布的水霧聳入天際。沿岸，河馬浮出水面，大象剝食樹枝——狂野的非洲在平靜的水域旁生機勃勃。</div>
-      </div>
-    </div>
-    <div class="accordion" data-group="reading">
-      <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
-        <span class="acc-label">5. Part 5</span>
-        <span class="acc-icon">▾</span>
-      </div>
-      <div class="acc-body" id="reading-p5">
-        <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p5.mp3" controls preload="none" onerror="this.style.display='none'"></audio></div>
-        <div class="para-en">erfront lodges glimmering on the
-Zambian banks.
-
-Far ahead, the mist of Victoria Falls
-towers into the sky.
-Boats keep their distance. Yet along the
-shores, hippo surface and elephants
-strip trees. Wild Africa alive beside
-the calm waters.
-
-
-This is a Zimbabwe. Most tourists see
-two days here for the falls. But the
-real country is different. Rich land, a
-broken economy, a people who&#39;ve endured
-war, genocide, and hunger.
-
-&gt;&gt; The British carved out southern Rhdesia,
-and by the 1960s, Rhdesia had railroads,
-mines, factories, and some of Africa&#39;s
-most productive farmland. White farmers,
-less than 1% of the population, ran
-commercial farms that fed the world.
-Rhdesia was the bread basket of Africa.
-Independence came in 1980.
-Robert McGabi rose promising prosperity.
-Instead came land seizures, collapse,
-starvation, and hyperinflation.
-Zimbabwe&#39;s $100 trillion note became
-worthless.
-In the next video, join us. We&#39;ll be in
-Batswana&#39;s Chobi National Park.
-3 days of boat safaris and land game
-drives.
-Don&#39;t miss this epic adventure. See you
-there.</div>
-        <button class="para-zh-toggle" onclick="toggleZh(this)">显示中文翻译</button>
-        <div class="para-zh">影片也觸及了辛巴威複雜的歷史。大多數遊客只為了瀑布在這裡待兩天，但真正的國家是不同的——土地富饒，經濟破碎，人民經歷了戰爭和苦難。曾經被稱為羅德西亞，它是非洲的糧倉，擁有富饒的農場。1980年獨立後，土地掠奪導致了崩潰、飢荒和惡性通貨膨脹。辛巴威的100兆元紙幣變得一文不值，這是一個國家在其自然奇觀之外掙扎的嚴酷提醒。</div>
-      </div>
+    <div class="acc-body" id="reading-p1">
+      <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p1.mp3" controls preload="none"></audio></div>
+      <div class="para-en">BZ Travel English Study | video_id: kC1OAiEQKeQ | 10:37 | 2,736 views</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">維多利亞瀑布是地球上最原始、最猛烈、最美麗的景點之一。旅行者沿著瀑布邊緣漫步，隨後在尚比西河上享受日落遊船。維多利亞瀑布位於辛巴威、尚比亞和納米比亞的交界處——大自然與壯麗景觀的完美結合。維多利亞瀑布城在其同名瀑布的陰影下蓬勃發展，這個單一目的地為辛巴威的GDP貢獻了15%。</div>
     </div>
   </div>
-  <div id="section-collocations" class="section">
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p2')">
+      <span class="acc-label">2. Introduction: Where Three Countries Meet</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p2">
+      <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p2.mp3" controls preload="none"></audio></div>
+      <div class="para-en">In this video, we take you to Victoria Falls — one of Earth's rawest, most violent, most beautiful sites. Join us as we stroll the rim of Victoria Falls, then relax on a sunset cruise along the Zambezi River. Victoria Falls sits right where Zimbabwe and Zambia come together — nature's border and spectacular all-in-one. The city of Victoria Falls thrives under the shadow of its namesake. This one destination pumps 15% into Zimbabwe's GDP. Nearly every household is connected to tourism — 90% of residents working in hotels, guiding, or hospitality. Here the falls are both spectacular and survival.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">維多利亞瀑布與你所見過的任何瀑布都不同。其他瀑布從懸崖邊傾瀉而下，而維多利亞瀑布——尚比西河平靜地流淌了一千公里，然後突然墜入地殼的一條裂縫中。從直升機上你才能真正看到：它不是流下來，而是流進去。一個由古代火山和時間共同雕刻而成的深淵，這就是它的與眾不同之處。落差超過100公尺，雷鳴般的轟響在40公里外都能聽到。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p3')">
+      <span class="acc-label">3. The Falls: What Makes Them Different</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p3">
+      <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p3.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Victoria Falls is different from any waterfall you've ever seen. Others tumble off cliffs. This one — the Zambezi — flows gently for a thousand kilometers, then drops suddenly into a crack in the Earth's crust. From a helicopter, you really see it: it doesn't fall over, it falls in. A chasm carved by ancient volcanoes and time. That's what sets it apart. The mist — "Mosi-oa-Tunya," the smoke that thunders, as locals call it — rises to astonishing heights, sometimes as tall as New York's Empire State Building. The drop is staggering, over 100 m straight down. The thunder that follows can be heard 40 kilometers away. On the Zimbabwean side, jungle trails lead to numbered viewpoints where you can stare directly into the wall of falling water. It's no surprise it's one of the seven natural wonders of the world. The mist creates a rainforest ecosystem, lush and dripping — but be aware, without a poncho, you're getting drenched.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在辛巴威一側，叢林小徑通向編號的觀景點，你可以直接凝視傾瀉而下的水牆。水霧創造了一個雨林生態系統，鬱鬱蔥蔥、濕潤欲滴。沒有雨衣，你一定會全身濕透。對比非常明顯——其他地方乾燥棕黃，但這裡是茂密的叢林。站在瀑布前，敘述者說：「我去過許多瀑布，但沒有一個能與這座的原始力量相比。」</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p4')">
+      <span class="acc-label">4. Walking the Rim</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p4">
+      <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p4.mp3" controls preload="none"></audio></div>
+      <div class="para-en">It's a curtain of water nearly 2 kilometers wide. Half a billion liters tumbling every minute. The roar, the spray, the force — this is Victoria Falls, among the most powerful waterfalls on the planet. I've stood before many waterfalls, yet none rival the raw power of this. You just walk along and go off to the sides for different views. I'm lost for words. You can't really get a sense of how big it is until you walk along — over a mile wide, straight down. Across the gorge lies Zambia. At the end of the trail stands the famous bridge — an iron arc connecting the two countries across the roar of Victoria Falls. There's a zipline here too. You can go over the gorge. You can walk out to the middle of the bridge, but if you want to cross, it requires a Zambian visa and a Zimbabwean multiple entry.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">在尚比西探險者號上的日落遊船是結束一天的完美方式。手持酒杯，地平線燃燒如火。很難想像這條平靜的河流很快就會衝入維多利亞瀑布的混亂之中。寬闊的水域在尚比亞和辛巴威之間延伸，尚比亞岸邊的河畔小屋閃爍著光芒。遠方，維多利亞瀑布的水霧聳入天際。沿岸，河馬浮出水面，大象剝食樹枝——狂野的非洲在平靜的水域旁生機勃勃。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p5')">
+      <span class="acc-label">5. The Rainforest & Microclimate</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p5">
+      <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p5.mp3" controls preload="none"></audio></div>
+      <div class="para-en">After the last viewing of the waterfalls, we're taking a short walk through the rainforest. Everything is green. It's like a jungle. Incredibly different microclimate. It's definitely something you have to do — it's nothing like the pictures or the videos. To experience it is worthwhile. It's spectacular. As we're hiking to the exit, you can see that this is the rainforest — and then immediately it turns dry. This is the normal, arid environment during the winter.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">影片也觸及了辛巴威複雜的歷史。大多數遊客只為了瀑布在這裡待兩天，但真正的國家是不同的——土地富饒，經濟破碎，人民經歷了戰爭和苦難。曾經被稱為羅德西亞，它是非洲的糧倉，擁有富饒的農場。1980年獨立後，土地掠奪導致了崩潰、飢荒和惡性通貨膨脹。辛巴威的100兆元紙幣變得一文不值，這是一個國家在其自然奇觀之外掙扎的嚴酷提醒。</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p6')">
+      <span class="acc-label">6. Zambezi Sunset Cruise</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p6">
+      <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p6.mp3" controls preload="none"></audio></div>
+      <div class="para-en">Zambezi Explorer. We're on the middle deck and everything's included. A sunset cruise on the Zambezi — glass in hand and the horizon is on fire. It's almost impossible to imagine this peaceful river soon plunging into the chaos of Victoria Falls. The scale of the Zambezi takes you by surprise. Wide waters stretch between Zambia and Zimbabwe with riverfront lodges glimmering on the Zambian banks. Far ahead, the mist of Victoria Falls towers into the sky. Boats keep their distance. Yet along the shores, hippos surface and elephants strip trees. Wild Africa alive beside the calm waters.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+  <div class="accordion" data-group="reading">
+    <div class="acc-header" onclick="toggleAccordion(this,'reading','p7')">
+      <span class="acc-label">7. Zimbabwe: History & Context</span>
+      <span class="acc-icon">▾</span>
+    </div>
+    <div class="acc-body" id="reading-p7">
+      <div class="acc-audio"><audio src="../audio/kC1OAiEQKeQ/p7.mp3" controls preload="none"></audio></div>
+      <div class="para-en">This is Zimbabwe. Most tourists see two days here for the falls. But the real country is different — rich land, a broken economy, a people who've endured war, genocide, and hunger. The British carved out southern Rhodesia, and by the 1960s, Rhodesia had railroads, mines, factories, and some of Africa's most productive farmland. White farmers, less than 1% of the population, ran commercial farms that fed the world. Rhodesia was the breadbasket of Africa. Independence came in 1980. Robert Mugabe rose, promising prosperity. Instead came land seizures, collapse, starvation, and hyperinflation. Zimbabwe's $100 trillion note became worthless. In the next video, join us in Botswana's Chobe National Park — 3 days of boat safaris and land game drives. See you there.</div>
+      <button class="para-zh-toggle" onclick="toggleZh(this)">📖 顯示中文翻譯</button>
+      <div class="para-zh">（翻譯待更新）</div>
+    </div>
+  </div>
+</div><div <div id="section-vocab" class="section">
+  <div class="section-title"><span>📝</span> 精選字彙 <span style="font-size:13px;font-weight:400;color:#94a3b8">20 字</span></div>
+  <div class="section-sub">從文章中挑選的核心單字</div>
+  <div class="vocab-item"><span class="vocab-num">1</span><span class="vocab-word">theory</span><span class="vocab-kk">/ˈθɪri/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">理論；說法</span></div>
+  <div class="vocab-item"><span class="vocab-num">2</span><span class="vocab-word">reasonable</span><span class="vocab-kk">/ˈrizənəbəl/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">合理的</span></div>
+  <div class="vocab-item"><span class="vocab-num">3</span><span class="vocab-word">extraordinary</span><span class="vocab-kk">/ɪkˈstrɔrdəˌnɛri/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">非凡的</span></div>
+  <div class="vocab-item"><span class="vocab-num">4</span><span class="vocab-word">security</span><span class="vocab-kk">/səˈkjʊrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">安全；保全</span></div>
+  <div class="vocab-item"><span class="vocab-num">5</span><span class="vocab-word">flagship</span><span class="vocab-kk">/ˈflæɡˌʃɪp/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">旗艦店</span></div>
+  <div class="vocab-item"><span class="vocab-num">6</span><span class="vocab-word">drone</span><span class="vocab-kk">/droʊn/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">無人機</span></div>
+  <div class="vocab-item"><span class="vocab-num">7</span><span class="vocab-word">precisely</span><span class="vocab-kk">/prɪˈsaɪsli/</span><span class="vocab-pos">（副）</span><span class="vocab-mean">精確地</span></div>
+  <div class="vocab-item"><span class="vocab-num">8</span><span class="vocab-word">infrastructure</span><span class="vocab-kk">/ˈɪnfrəˌstrʌktʃər/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">基礎建設</span></div>
+  <div class="vocab-item"><span class="vocab-num">9</span><span class="vocab-word">revolution</span><span class="vocab-kk">/ˌrɛvəˈluʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">革命</span></div>
+  <div class="vocab-item"><span class="vocab-num">10</span><span class="vocab-word">autonomous</span><span class="vocab-kk">/ɔˈtɑnəməs/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">自動的；自主的</span></div>
+  <div class="vocab-item"><span class="vocab-num">11</span><span class="vocab-word">dominate</span><span class="vocab-kk">/ˈdɑməˌnet/</span><span class="vocab-pos">（動）</span><span class="vocab-mean">主導；支配</span></div>
+  <div class="vocab-item"><span class="vocab-num">12</span><span class="vocab-word">commute</span><span class="vocab-kk">/kəˈmjut/</span><span class="vocab-pos">（名/動）</span><span class="vocab-mean">通勤</span></div>
+  <div class="vocab-item"><span class="vocab-num">13</span><span class="vocab-word">retirement</span><span class="vocab-kk">/rɪˈtaɪərmənt/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休</span></div>
+  <div class="vocab-item"><span class="vocab-num">14</span><span class="vocab-word">pension</span><span class="vocab-kk">/ˈpɛnʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">退休金；養老金</span></div>
+  <div class="vocab-item"><span class="vocab-num">15</span><span class="vocab-word">unexpected</span><span class="vocab-kk">/ˌʌnɪkˈspɛktɪd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">出乎意料的</span></div>
+  <div class="vocab-item"><span class="vocab-num">16</span><span class="vocab-word">genuine</span><span class="vocab-kk">/ˈdʒɛnjuɪn/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">真誠的；真正的</span></div>
+  <div class="vocab-item"><span class="vocab-num">17</span><span class="vocab-word">perspective</span><span class="vocab-kk">/pərˈspɛktɪv/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">觀點；視角</span></div>
+  <div class="vocab-item"><span class="vocab-num">18</span><span class="vocab-word">contradiction</span><span class="vocab-kk">/ˌkɑntrəˈdɪkʃən/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">矛盾</span></div>
+  <div class="vocab-item"><span class="vocab-num">19</span><span class="vocab-word">prosperity</span><span class="vocab-kk">/prɑˈspɛrəti/</span><span class="vocab-pos">（名）</span><span class="vocab-mean">繁榮</span></div>
+  <div class="vocab-item"><span class="vocab-num">20</span><span class="vocab-word">unfiltered</span><span class="vocab-kk">/ʌnˈfɪltɚd/</span><span class="vocab-pos">（形）</span><span class="vocab-mean">未過濾的；真實的</span></div>
+</div>
+
+id="section-collocations" class="section">
     <div class="section-title"><span>🔗</span> 實用搭配詞 <span style="font-size:12px;font-weight:400;color:#94a3b8">8 組</span></div>
     <div class="section-sub">點選搭配詞展開完整內容</div>
     <div class="accordion" data-group="collo">
